@@ -9876,13 +9876,13 @@ int a=0;
 int b=0;
 int c=0;
 int k=0;
-int anio=15;
-int mes=9;
-int diasem=3;
-int dia=8;
-int hora=18;
-int minuto=30;
-int segundo=0;
+int anio=16;
+int mes=01;
+int diasem=0;
+int dia=01;
+int hora=00;
+int minuto=00;
+int segundo=00;
 
 # 50
 rtccTime RtccTime;
@@ -9934,10 +9934,11 @@ RtccWriteDate(&RtccDate,1);
 (RTCCFGbits.RTCEN=1);
 }
 
-# 111
-void Read_RTC(void)
+# 112
+void Read_RTC(void){
 
-{
+
+
 RtccReadTime(&RtccTime);
 segundo_u=(RtccTime.f.sec & 0x0F);
 segundo_d=((RtccTime.f.sec & 0xF0)>>4);
@@ -9989,11 +9990,11 @@ anio=anio_d*10+anio_u;
 #pragma config WPDIS=OFF
 
 # 36 "main.c"
-void caratula(void)
-{
+void caratula(void){
+
 lcd_comand(0b00001100);
 lcd_gotoxy(1,1);
-lcd_putrs("UNIMIC");
+lcd_putrs("UNTREF");
 sprintf(buffer2,"%02u/%02u/%02u",dia,mes,anio);
 lcd_gotoxy(9,1);
 lcd_putrs(buffer2);
@@ -10004,7 +10005,7 @@ b=b++;
 if(b<7)
 {
 lcd_gotoxy(1,1);
-lcd_putrs("UNIMIC");
+lcd_putrs("UNTREF");
 }
 if(b>6)
 {
@@ -10014,9 +10015,9 @@ lcd_putrs("      ");
 }
 }
 
-# 67
-void Setup(void)
-{
+# 66
+void Setup(void){
+
 OSCTUNEbits.INTSRC=1;
 OSCTUNEbits.PLLEN=0;
 OSCCONbits.IRCF0=1;
@@ -10039,28 +10040,106 @@ RTCCFGbits.RTCWREN=1;
 T1CONbits.T1OSCEN=1;
 Write_RTC();
 lcd_init();
-lcd_comand(0b00001100);
+
+lcd_comand(0b00001110);
+
+
 LATBbits.LATB1 = 0;;
 LATBbits.LATB0 = 0;;
 }
 
-# 101
-int main(void)
-{
+# 104
+int main(void){
+
+
+int cr_x = 1;
+int cr_y = 1;
+
 Setup();
-while(1)
-{
+while(1){
+
 Read_RTC();
 caratula();
 
-if(PORTAbits.RA1 == 0)
-{
+
+lcd_setcursor_vb(1, 1);
+
+lcd_gotoxy(cr_x,cr_y);
+
+if(PORTAbits.RA1 == 0){
+
+# 127
+if(cr_x == 16 && cr_y == 1){
+cr_x = 0;
+cr_y = 2;
+}
+else if(cr_x == 16 && cr_y == 2){
+cr_x = 0;
+cr_y = 1;
+}
+cr_x++;
+_delay((unsigned long)((98)*(8000000/4000.0)));
 LATBbits.LATB1 = !LATBbits.LATB1;;
+
 }
 else LATBbits.LATB1 = 0;;
 
 if(PORTAbits.RA0 == 0)
 {
+
+
+if(cr_x == 9 && cr_y == 1){
+
+dia+=10;
+}
+else if(cr_x == 10 && cr_y == 1){
+
+dia++;
+}
+else if(cr_x == 12 && cr_y == 1){
+
+mes+=10;
+}
+else if(cr_x == 13 && cr_y == 1){
+
+mes++;
+}
+else if(cr_x == 15 && cr_y == 1){
+
+anio+=10;
+}
+else if(cr_x == 16 && cr_y == 1){
+
+anio++;
+}
+else if(cr_x == 1 && cr_y == 2){
+
+hora+=10;
+}
+else if(cr_x == 2 && cr_y == 2){
+
+hora++;
+}
+else if(cr_x == 4 && cr_y == 2){
+
+minuto+=10;
+}
+else if(cr_x == 5 && cr_y == 2){
+
+minuto++;
+}
+else if(cr_x == 7 && cr_y == 2){
+
+segundo+=10;
+}
+else if(cr_x == 8 && cr_y == 2){
+
+segundo++;
+}
+
+Write_RTC();
+
+_delay((unsigned long)((98)*(8000000/4000.0)));
 LATBbits.LATB0 = 1;;
 }
 else LATBbits.LATB0 = 0;;

@@ -33,6 +33,12 @@ int selection;
 int menu;
 int submenu;
 
+
+void lcd_write(int column, int row, char* string){
+    lcd_gotoxy(column, row);        
+    lcd_putrs(string);
+}
+
 void setup(void){
     
     OSCTUNEbits.INTSRC=1;       //setea el oscilador de 32768 para el RTC
@@ -72,66 +78,56 @@ void setup(void){
 }
 
 void home(void){
-    lcd_comand(0b00000001);
-    lcd_comand(0b00001100);    //Enciende display sin cursor
-    lcd_gotoxy(1,1);        
-    lcd_putrs(" UNIMIC");
+    lcd_init();
+    lcd_write(1,1,"X28");
     sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
-    lcd_gotoxy(1,2);
-    lcd_putrs(buffer1);
+    lcd_write(1,2,buffer1);
     sprintf(buffer1,"%02u:%02u",hora,minuto);
-    lcd_gotoxy(12,2);
-    lcd_putrs(buffer1); 
+    lcd_write(12,2,buffer1);
 }
 
-void menu_home(void){
+void menu_home(void){    
     
     lcd_init();
-    lcd_gotoxy(2,1);
-    lcd_putrs("Menu1");
-    lcd_gotoxy(2,2);
-    lcd_putrs("Menu2");
-    lcd_gotoxy(10,1);
-    lcd_putrs("Menu3");
-    lcd_gotoxy(10,2);
-    lcd_putrs("Menu4");
+    lcd_write(2,1,"Activar");
+    lcd_write(2,2,"Reloj");
+    lcd_write(10,1,"Pin");
+    lcd_write(10,2,"Alarma");   
+    
 }
 
 void menu_iterator(void){
     
     switch(selection){
+        
         case 1:
-            lcd_gotoxy(1,1);
-            lcd_putrs(">");
+            lcd_write(1,1,">");
             selection = 2;
             select = 1;
-            lcd_gotoxy(9,2);
-            lcd_putrs(" ");
+            lcd_write(9,2," ");
             break;
+            
         case 2:
-            lcd_gotoxy(1,2);
-            lcd_putrs(">");
+            lcd_write(1,2,">");
             selection = 3;
             select = 2;
-            lcd_gotoxy(1,1);
-            lcd_putrs(" ");
+            lcd_write(1,1," ");
             break;
+            
         case 3:
-            lcd_gotoxy(9,1);
-            lcd_putrs(">");
+            lcd_write(9,1,">");
             selection = 4;
             select = 3;
-            lcd_gotoxy(1,2);
-            lcd_putrs(" ");
+            lcd_write(1,2," ");
             break;
+            
         case 4:
-            lcd_gotoxy(9,2);
-            lcd_putrs(">");
+            lcd_write(9,2,">");
             selection = 1;
             select = 4;
-            lcd_gotoxy(9,1);
-            lcd_putrs(" ");
+            lcd_write(9,1," ");
             break;
+            
     }
     
 }
@@ -139,19 +135,17 @@ void menu_iterator(void){
 void menu_submenu_iterator(void){
     
     switch(select_op){
+        
         case 1:
-            lcd_gotoxy(9,1);
-            lcd_putrs(">");
+            lcd_write(9,1,">");
             select_op = 2;
-            lcd_gotoxy(9,2);
-            lcd_putrs(" ");
+            lcd_write(9,2," ");
             break;
+            
         case 2:
-            lcd_gotoxy(9,2);
-            lcd_putrs(">");
+            lcd_write(9,2,">");
             select_op = 1;
-            lcd_gotoxy(9,1);
-            lcd_putrs(" ");
+            lcd_write(9,1," ");
             break;
     }
     
@@ -159,9 +153,11 @@ void menu_submenu_iterator(void){
 
 void button_A(void){
     
-    if(menu == 0){        
+    if(menu == 0){     
+        
         menu_home();
-        menu = 1;        
+        menu = 1;   
+        
     } else {
         
         if (submenu == 0){   
@@ -174,48 +170,63 @@ void button_A(void){
     }    
 }
 
+void menu_submenu_activate(void){
+    
+    lcd_init();
+    lcd_write(1,1,"Activar");
+    lcd_write(10,1,"SI");
+    lcd_write(10,2,"NO");
+    
+}
+
+void menu_submenu_clock(void){
+    
+    lcd_init();
+    lcd_write(1,1,"Reloj");
+    lcd_write(10,1,"Fecha");
+    lcd_write(10,2,"Hora");
+    
+}
+
+void menu_submenu_pin(void){
+    
+    lcd_init();
+    lcd_write(1,1,"Pin");
+    lcd_write(10,1,"Cambiar");
+    lcd_write(10,2,"Reset");
+    
+}
+
+void menu_submenu_alarm(void){
+    
+    lcd_init();
+    lcd_write(1,1,"Alarma");
+    lcd_write(10,1,"Volumen");
+    lcd_write(10,2,"Tono");
+    
+}
+
 void button_B(void){
     
     switch(select)
     {
         case 1:
-            lcd_init();
-            lcd_gotoxy(1,1);
-            lcd_putrs("Clock");
-            lcd_gotoxy(10,1);
-            lcd_putrs("Date");
-            lcd_gotoxy(10,2);
-            lcd_putrs("Time");
+            menu_submenu_activate();
             submenu = 1;
             break;
-        case 2:
-            lcd_init();
-            lcd_gotoxy(1,1);
-            lcd_putrs("Menu 2");
-            lcd_gotoxy(10,1);
-            lcd_putrs("Option1");
-            lcd_gotoxy(10,2);
-            lcd_putrs("Option2");
+            
+        case 2:            
+            menu_submenu_clock();
             submenu = 1;
             break;
+            
         case 3:
-            lcd_init();
-            lcd_gotoxy(1,1);
-            lcd_putrs("Menu 3");
-            lcd_gotoxy(10,1);
-            lcd_putrs("Option1");
-            lcd_gotoxy(10,2);
-            lcd_putrs("Option2");
+            menu_submenu_pin();
             submenu = 1;
             break;
+            
         case 4:
-            lcd_init();
-            lcd_gotoxy(1,1);
-            lcd_putrs("Menu 4");
-            lcd_gotoxy(10,1);
-            lcd_putrs("Option1");
-            lcd_gotoxy(10,2);
-            lcd_putrs("Option2");
+            menu_submenu_alarm();
             submenu = 1;
             break;
     }

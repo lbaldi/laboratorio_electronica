@@ -5,9 +5,9 @@ ___awdiv@counter 5 0 COMRAM 1
 _a 2D 0 COMRAM 1
 _b 2F 0 COMRAM 1
 _c 31 0 COMRAM 1
-_i 37 0 COMRAM 1
-_j 39 0 COMRAM 1
-_k 3B 0 COMRAM 1
+_i 33 0 COMRAM 1
+_j 35 0 COMRAM 1
+_k 37 0 COMRAM 1
 sprintf@f F 0 COMRAM 1
 ___lwdiv@counter 7 0 COMRAM 1
 __S0 10000 0 ABS 0
@@ -16,29 +16,29 @@ __S2 0 0 ABS 0
 __CFG_DSWDTPS$G2 0 0 ABS 0
 __Hintentry 0 0 ABS 0
 __Lintentry 0 0 ABS 0
-_dia 58 0 COMRAM 1
+_dia 52 0 COMRAM 1
 __end_of___awdiv 19C2 0 CODE 0
-_mes 5A 0 COMRAM 1
+_mes 58 0 COMRAM 1
 __end_of_lcd_comand 1E80 0 CODE 0
 __size_of_RtccWriteDate 0 0 ABS 0
 __size_of_RtccWriteTime 0 0 ABS 0
 lcd_init@i 5 0 COMRAM 1
 _flag 2E0 -284 COMRAM 1
-_hora 35 0 COMRAM 1
+_hora 56 0 COMRAM 1
 _main 11A0 0 CODE 0
-_anio 56 0 COMRAM 1
+_anio 50 0 COMRAM 1
 ___sp 0 0 STACK 2
 start 0 0 CODE 0
 lcd_gotoxy@x 6 0 COMRAM 1
 _RtccWrOn 1E60 0 CODE 0
 _lcd_gotoxy 1DE2 0 CODE 0
 _Delay100TCYx 1E4E 0 CODE 0
-_minuto_d 52 0 COMRAM 1
-_RtccDate 41 0 COMRAM 1
+_minuto_d 4C 0 COMRAM 1
+_RtccDate 3B 0 COMRAM 1
 _TRISA F92 0 ABS 0
 _TRISB F93 0 ABS 0
 _TRISC F94 0 ABS 0
-_RtccTime 45 0 COMRAM 1
+_RtccTime 3F 0 COMRAM 1
 __Hirdata 0 0 CODE 0
 __Lirdata 0 0 CODE 0
 __HRAM 0 0 ABS 0
@@ -55,7 +55,7 @@ _Rtcc_read_TimeDate 70 0 BANK0 1
 ?___lwmod 8 0 COMRAM 1
 __Hbigram 0 0 ABS 0
 __Lbigram 0 0 ABS 0
-_mes_d 50 0 COMRAM 1
+_mes_d 4A 0 COMRAM 1
 __Hrparam 0 0 COMRAM 1
 __Lrparam 0 0 COMRAM 1
 __Hram 0 0 ABS 0
@@ -69,7 +69,7 @@ __Lsfr 0 0 ABS 0
 __Hbss 0 0 RAM 1
 __CFG_STVREN$ON 0 0 ABS 0
 __Lbss 0 0 RAM 1
-_mes_u 51 0 COMRAM 1
+_mes_u 4B 0 COMRAM 1
 ___param_bank 10 0 ABS 0
 __Hnvrram 0 0 COMRAM 1
 __Lnvrram 0 0 COMRAM 1
@@ -77,7 +77,7 @@ __end_of_lcd_putrs 1C64 0 CODE 0
 _Setup 1CFC 0 CODE 0
 ?_sprintf D 0 COMRAM 1
 RtccWriteDate@tempYear 7 0 COMRAM 1
-_segundo_d 54 0 COMRAM 1
+_segundo_d 4E 0 COMRAM 1
 _ADCON0 FC2 0 ABS 0
 __end_of_lcd_send_byte 1DBA 0 CODE 0
 _ANCON0 F48 0 ABS 0
@@ -88,7 +88,7 @@ _PIE3bits FA3 0 ABS 0
 main@cr_y 25 0 COMRAM 1
 sprintf@ap 1B 0 COMRAM 1
 _LATBbits F8A 0 ABS 0
-_minuto_u 53 0 COMRAM 1
+_minuto_u 4D 0 COMRAM 1
 __Hintsave_regs 0 0 BIGRAM 1
 __Lintsave_regs 0 0 BIGRAM 1
 _lcd_init 1A50 0 CODE 0
@@ -121,7 +121,7 @@ __HnvFARRAM 0 0 FARRAM 0
 __LnvFARRAM 0 0 FARRAM 0
 __HnvCOMRAM 0 0 ABS 0
 __LnvCOMRAM 0 0 ABS 0
-__pnvCOMRAM 49 0 COMRAM 1
+__pnvCOMRAM 43 0 COMRAM 1
 __end_of_Read_RTC 192C 0 CODE 0
 lcd_send_byte@n 3 0 COMRAM 1
 _RtccWriteDate 14F8 0 CODE 0
@@ -130,23 +130,23 @@ __end_of_Delay1KTCYx 1E4E 0 CODE 0
 __size_of_RtccReadDate 0 0 ABS 0
 __end_of_dpowers F0B 0 SMALLCONST 0
 __size_of_RtccReadTime 0 0 ABS 0
-_hora_d 4E 0 COMRAM 1
-_anio_d 49 0 COMRAM 1
+_hora_d 48 0 COMRAM 1
+_anio_d 43 0 COMRAM 1
 RtccWriteDate@di 3 0 COMRAM 1
 __Hdata 0 0 ABS 0
 __Ldata 0 0 ABS 0
 __end_of_lcd_setcursor_vb 1E3C 0 CODE 0
 stackhi EBF 0 ABS 0
 sprintf@sp D 0 COMRAM 1
-_diasem 33 0 COMRAM 1
-_hora_u 4F 0 COMRAM 1
+_diasem 54 0 COMRAM 1
+_hora_u 49 0 COMRAM 1
 __Htemp 0 0 COMRAM 1
 __Ltemp 0 0 COMRAM 1
 stacklo 8C 0 ABS 0
 RtccWriteDate@tempHourWDay C 0 COMRAM 1
 __Hrbit 0 0 COMRAM 1
 __Lrbit 0 0 COMRAM 1
-_anio_u 4A 0 COMRAM 1
+_anio_u 44 0 COMRAM 1
 __Hinit 0 0 CODE 0
 __Linit 0 0 CODE 0
 __Hintcodelo 0 0 CODE 0
@@ -155,7 +155,7 @@ ___wmul 1DBA 0 CODE 0
 __Hrbss 0 0 COMRAM 1
 __end_of_main 13B0 0 CODE 0
 __Lrbss 0 0 COMRAM 1
-_minuto 3D 0 COMRAM 1
+_minuto 5A 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 sprintf@width 21 0 COMRAM 1
@@ -170,9 +170,9 @@ RtccWriteDate@tempDayMonth A 0 COMRAM 1
 RtccWriteTime@tempHourWDay A 0 COMRAM 1
 _RtccWriteTime 163E 0 CODE 0
 ___wmul@multiplicand 3 0 COMRAM 1
-_segundo_u 55 0 COMRAM 1
+_segundo_u 4F 0 COMRAM 1
 __CFG_PLLDIV$1 0 0 ABS 0
-_dia_semana 4B 0 COMRAM 1
+_dia_semana 45 0 COMRAM 1
 RtccWriteTime@wasOn 5 0 COMRAM 1
 RtccWriteDate@wasWrEn 9 0 COMRAM 1
 lcd_setcursor_vb@visible 6 0 COMRAM 1
@@ -263,7 +263,7 @@ _OSCTUNEbits F9B 0 ABS 0
 __end_of__initialization 1D7E 0 CODE 0
 ___rparam_used 1 0 ABS 0
 __end_of___lwdiv 1C10 0 CODE 0
-_fecha_d 4C 0 COMRAM 1
+_fecha_d 46 0 COMRAM 1
 __CFG_WPCFG$OFF 0 0 ABS 0
 _RtccReadDate 19C2 0 CODE 0
 __Hidata 0 0 CODE 0
@@ -289,11 +289,11 @@ __LcstackCOMRAM 0 0 ABS 0
 __CFG_OSC$INTOSC 0 0 ABS 0
 __pcstackCOMRAM 1 0 COMRAM 1
 __end_of_lcd_send_nibble 1B46 0 CODE 0
-_fecha_u 4D 0 COMRAM 1
+_fecha_u 47 0 COMRAM 1
 _sprintf F3C 0 CODE 0
 __Hspace_1 2E1 0 ABS 0
 __Lspace_1 0 0 ABS 0
-_segundo 3F 0 COMRAM 1
+_segundo 39 0 COMRAM 1
 __Hsmallconst F3C 0 SMALLCONST 0
 __Lsmallconst F00 0 SMALLCONST 0
 __psmallconst F00 0 SMALLCONST 0
@@ -448,7 +448,7 @@ __HdataCOMRAM 0 0 ABS 0
 __LdataCOMRAM 0 0 ABS 0
 __size_of_Read_RTC 0 0 ABS 0
 __size_of___lwmod 0 0 ABS 0
-__pdataCOMRAM 56 0 COMRAM 1
+__pdataCOMRAM 50 0 COMRAM 1
 lcd_comand@d 5 0 COMRAM 1
 __size_of_Setup 0 0 ABS 0
 __end_of___wmul 1DE2 0 CODE 0
@@ -483,46 +483,46 @@ smallconst F00 F3B SMALLCONST F00 0
 config FFF8 FFFF CONFIG FFF8 0
 cstackCOMRAM 1 5C COMRAM 1 1
 bssBANK0 60 8B BANK0 60 1
-text3 F3C 1E85 CODE F3C 0
+text3 F3C 1E8B CODE F3C 0
 %locals
-dist/default/production\laboratorio_electronica.production.obj
+dist/default/production\PIC_LED.production.obj
 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
-C:\Users\ADMINI~1\AppData\Local\Temp\s69g.
-1451 1D44 0 CODE 0
-1453 1D44 0 CODE 0
-1456 1D44 0 CODE 0
-1555 1D44 0 CODE 0
-1556 1D48 0 CODE 0
-1557 1D4A 0 CODE 0
-1558 1D4A 0 CODE 0
-1559 1D4C 0 CODE 0
-1560 1D4E 0 CODE 0
-1563 1D50 0 CODE 0
-1566 1D52 0 CODE 0
-1567 1D56 0 CODE 0
-1568 1D58 0 CODE 0
-1569 1D58 0 CODE 0
-1570 1D5A 0 CODE 0
-1571 1D5C 0 CODE 0
-1576 1D5E 0 CODE 0
-1577 1D60 0 CODE 0
-1578 1D62 0 CODE 0
-1579 1D64 0 CODE 0
-1580 1D66 0 CODE 0
-1581 1D68 0 CODE 0
-1582 1D6A 0 CODE 0
-1583 1D6E 0 CODE 0
-1584 1D72 0 CODE 0
-1585 1D72 0 CODE 0
-1586 1D74 0 CODE 0
-1587 1D78 0 CODE 0
-1588 1D7A 0 CODE 0
-1589 1D7C 0 CODE 0
-1595 1D7E 0 CODE 0
-1597 1D7E 0 CODE 0
-1598 1D80 0 CODE 0
-1599 1D82 0 CODE 0
-1600 1D84 0 CODE 0
+C:\Users\gonza\AppData\Local\Temp\sbc.
+1463 1D44 0 CODE 0
+1465 1D44 0 CODE 0
+1468 1D44 0 CODE 0
+1576 1D44 0 CODE 0
+1577 1D48 0 CODE 0
+1578 1D4A 0 CODE 0
+1579 1D4A 0 CODE 0
+1580 1D4C 0 CODE 0
+1581 1D4E 0 CODE 0
+1584 1D50 0 CODE 0
+1587 1D52 0 CODE 0
+1588 1D56 0 CODE 0
+1589 1D58 0 CODE 0
+1590 1D58 0 CODE 0
+1591 1D5A 0 CODE 0
+1592 1D5C 0 CODE 0
+1597 1D5E 0 CODE 0
+1598 1D60 0 CODE 0
+1599 1D62 0 CODE 0
+1600 1D64 0 CODE 0
+1601 1D66 0 CODE 0
+1602 1D68 0 CODE 0
+1603 1D6A 0 CODE 0
+1604 1D6E 0 CODE 0
+1605 1D72 0 CODE 0
+1606 1D72 0 CODE 0
+1607 1D74 0 CODE 0
+1608 1D78 0 CODE 0
+1609 1D7A 0 CODE 0
+1610 1D7C 0 CODE 0
+1616 1D7E 0 CODE 0
+1618 1D7E 0 CODE 0
+1619 1D80 0 CODE 0
+1620 1D82 0 CODE 0
+1621 1D84 0 CODE 0
 main.c
 104 11A0 0 CODE 0
 107 11A0 0 CODE 0
@@ -589,7 +589,7 @@ main.c
 202 139A 0 CODE 0
 111 13AA 0 CODE 0
 206 13AC 0 CODE 0
-C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+Unimic/unmc_01/sources/unmc_lcd_216.c
 210 1E28 0 CODE 0
 211 1E2A 0 CODE 0
 212 1E3A 0 CODE 0
@@ -710,13 +710,13 @@ C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
 29 1C06 0 CODE 0
 30 1C06 0 CODE 0
 31 1C0E 0 CODE 0
-C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+Unimic/unmc_01/sources/unmc_lcd_216.c
 221 1C10 0 CODE 0
 223 1C10 0 CODE 0
 224 1C12 0 CODE 0
 223 1C3C 0 CODE 0
 226 1C62 0 CODE 0
-C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+Unimic/unmc_01/sources/unmc_lcd_216.c
 172 1CB0 0 CODE 0
 173 1CB2 0 CODE 0
 175 1CB4 0 CODE 0
@@ -729,7 +729,7 @@ C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
 186 1CE2 0 CODE 0
 173 1CE4 0 CODE 0
 187 1CFA 0 CODE 0
-C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+Unimic/unmc_01/sources/unmc_lcd_216.c
 158 1DE2 0 CODE 0
 161 1DE4 0 CODE 0
 162 1DEA 0 CODE 0
@@ -762,7 +762,7 @@ main.c
 94 1D3E 0 CODE 0
 95 1D40 0 CODE 0
 96 1D42 0 CODE 0
-C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+Unimic/unmc_01/sources/unmc_lcd_216.c
 119 1A50 0 CODE 0
 122 1A50 0 CODE 0
 123 1A52 0 CODE 0
@@ -790,11 +790,11 @@ C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
 11 1E3E 0 CODE 0
 12 1E46 0 CODE 0
 13 1E4C 0 CODE 0
-C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+Unimic/unmc_01/sources/unmc_lcd_216.c
 189 1E72 0 CODE 0
 190 1E74 0 CODE 0
 191 1E7E 0 CODE 0
-C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+Unimic/unmc_01/sources/unmc_lcd_216.c
 86 1D88 0 CODE 0
 88 1D8A 0 CODE 0
 93 1D8C 0 CODE 0
@@ -810,7 +810,7 @@ C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
 113 1DA8 0 CODE 0
 114 1DB0 0 CODE 0
 115 1DB8 0 CODE 0
-C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+Unimic/unmc_01/sources/unmc_lcd_216.c
 25 1AD0 0 CODE 0
 27 1AD2 0 CODE 0
 28 1AEA 0 CODE 0
@@ -826,7 +826,7 @@ C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
 11 1E50 0 CODE 0
 12 1E58 0 CODE 0
 13 1E5E 0 CODE 0
-C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h
+Unimic/unmc_01/headers\unmc_rtcc_01.h
 74 13B0 0 CODE 0
 76 13B0 0 CODE 0
 78 13B4 0 CODE 0
@@ -967,31 +967,31 @@ C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
 39 1E6A 0 CODE 0
 45 1E6E 0 CODE 0
 46 1E70 0 CODE 0
-C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h
-112 1854 0 CODE 0
-116 1854 0 CODE 0
-117 1860 0 CODE 0
-118 1866 0 CODE 0
-119 186E 0 CODE 0
-120 1874 0 CODE 0
-121 187C 0 CODE 0
-122 1882 0 CODE 0
-123 188A 0 CODE 0
-124 1896 0 CODE 0
-125 189C 0 CODE 0
-126 18A4 0 CODE 0
-127 18AA 0 CODE 0
-128 18B2 0 CODE 0
-129 18B6 0 CODE 0
-130 18BC 0 CODE 0
-132 18C4 0 CODE 0
-133 18D4 0 CODE 0
-134 18E4 0 CODE 0
-135 18F4 0 CODE 0
-136 1904 0 CODE 0
-137 190A 0 CODE 0
-138 191A 0 CODE 0
-139 192A 0 CODE 0
+Unimic/unmc_01/headers\unmc_rtcc_01.h
+111 1854 0 CODE 0
+114 1854 0 CODE 0
+115 1860 0 CODE 0
+116 1866 0 CODE 0
+117 186E 0 CODE 0
+118 1874 0 CODE 0
+119 187C 0 CODE 0
+120 1882 0 CODE 0
+121 188A 0 CODE 0
+122 1896 0 CODE 0
+123 189C 0 CODE 0
+124 18A4 0 CODE 0
+125 18AA 0 CODE 0
+126 18B2 0 CODE 0
+127 18B6 0 CODE 0
+128 18BC 0 CODE 0
+130 18C4 0 CODE 0
+131 18D4 0 CODE 0
+132 18E4 0 CODE 0
+133 18F4 0 CODE 0
+134 1904 0 CODE 0
+135 190A 0 CODE 0
+136 191A 0 CODE 0
+137 192A 0 CODE 0
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c
 23 1B46 0 CODE 0
 29 1B46 0 CODE 0

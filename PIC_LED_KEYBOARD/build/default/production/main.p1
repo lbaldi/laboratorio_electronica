@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"144 C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\rtcc.h
+"144 ../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\rtcc.h
 [s S1028 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
 [n S1028 . year rsvd mday mon hour wday sec min ]
 "142
@@ -17,11 +17,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 "126
 [u S1025 `S1026 1 `uc -> 4 `i `ui -> 2 `i `ul 1 ]
 [n S1025 . f b w l ]
-"19 C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\delays.h
+"19 ../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\delays.h
 [v _Delay10TCYx `(v ~T0 @X0 0 ef1`uc ]
 "31
 [v _Delay1KTCYx `(v ~T0 @X0 0 ef1`uc ]
-"680 C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\rtcc.h
+"680 ../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\rtcc.h
 [v _RtccWrOn `(v ~T0 @X0 0 ef ]
 "7920 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
 [s S533 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -52,10 +52,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S532 . . . . . . . . . ]
 "7958
 [v _PIE3bits `VS532 ~T0 @X0 0 e@4003 ]
-"99 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h
+"99 Unimic/unmc_01/headers\unmc_rtcc_01.h
 [c E7337 0 1 .. ]
 [n E7337 _BOOL FALSE TRUE  ]
-"676 C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\rtcc.h
+"676 ../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\rtcc.h
 [v _RtccWriteTime `(E7337 ~T0 @X0 0 ef2`*CS1023`E7337 ]
 "674
 [v _RtccWriteDate `(E7337 ~T0 @X0 0 ef2`*CS1025`E7337 ]
@@ -67,7 +67,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S174 . . ]
 "2420
 [v _RTCCFGbits `VS174 ~T0 @X0 0 e@3903 ]
-"656 C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\rtcc.h
+"656 ../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\rtcc.h
 [v _RtccReadTime `(v ~T0 @X0 0 ef1`*S1023 ]
 "654
 [v _RtccReadDate `(v ~T0 @X0 0 ef1`*S1025 ]
@@ -127,7 +127,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S843 . . . . . . ]
 "13166
 [v _T1CONbits `VS843 ~T0 @X0 0 e@4045 ]
-"103 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_lcd_216.h
+"103 Unimic/unmc_01/headers\unmc_lcd_216.h
 [v _lcd_init `(v ~T0 @X0 0 ef ]
 "106
 [v _lcd_comand `(v ~T0 @X0 0 ef1`uc ]
@@ -163,10 +163,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S445 . . . . . . . . . . ]
 "6401
 [v _LATBbits `VS445 ~T0 @X0 0 e@3978 ]
-"104 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_lcd_216.h
+"104 Unimic/unmc_01/headers\unmc_lcd_216.h
 [v _lcd_gotoxy `(v ~T0 @X0 0 ef2`uc`uc ]
 "109
 [v _lcd_putrs `(v ~T0 @X0 0 ef1`*Cuc ]
+"206 C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
 "6232 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
 [s S436 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S436 . LATA0 LATA1 LATA2 LATA3 . LATA5 LATA6 LATA7 ]
@@ -237,9 +239,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S394 . . . . . . . . . . . . ]
 "5344
 [v _PORTAbits `VS394 ~T0 @X0 0 e@3968 ]
-"206 C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"5791 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
+"5791
 [s S416 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S416 . RC0 RC1 RC2 . RC4 RC5 RC6 RC7 ]
 "5801
@@ -6963,164 +6963,164 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18f26j50.h: 17686: extern volatile __bit nWRITE @ (((unsigned) &SSP1STAT)*8) + 2;
 [; ;pic18f26j50.h: 17688: extern volatile __bit nWRITE1 @ (((unsigned) &SSP1STAT)*8) + 2;
 [; ;pic18f26j50.h: 17690: extern volatile __bit nWRITE2 @ (((unsigned) &SSP2STAT)*8) + 2;
-[; ;adc.h: 2008: union ADCResult
-[; ;adc.h: 2009: {
-[; ;adc.h: 2010: int lr;
-[; ;adc.h: 2011: char br[2];
-[; ;adc.h: 2012: };
-[; ;adc.h: 2014: char BusyADC (void);
-[; ;adc.h: 2016: void ConvertADC (void);
-[; ;adc.h: 2018: void CloseADC(void);
-[; ;adc.h: 2026: int ReadADC(void);
-[; ;adc.h: 2059: void OpenADC ( unsigned char ,
-[; ;adc.h: 2060: unsigned char ,
-[; ;adc.h: 2061: unsigned int );
-[; ;adc.h: 2084: void SetChanADC(unsigned char );
-[; ;adc.h: 2100: void SelChanConvADC( unsigned char );
-[; ;ancomp.h: 202: void Close_ancomp1( void );
-[; ;ancomp.h: 203: void Open_ancomp1(unsigned char config);
-[; ;ancomp.h: 204: void Close_ancomp2( void );
-[; ;ancomp.h: 205: void Open_ancomp2(unsigned char config);
-[; ;spi.h: 236: void OpenSPI1( unsigned char sync_mode,
-[; ;spi.h: 237: unsigned char bus_mode,
-[; ;spi.h: 238: unsigned char smp_phase );
-[; ;spi.h: 240: signed char WriteSPI1( unsigned char data_out );
-[; ;spi.h: 242: void getsSPI1( unsigned char *rdptr, unsigned char length );
-[; ;spi.h: 244: void putsSPI1( unsigned char *wrptr );
-[; ;spi.h: 246: unsigned char ReadSPI1( void );
-[; ;spi.h: 441: void OpenSPI2( unsigned char sync_mode,
-[; ;spi.h: 442: unsigned char bus_mode,
-[; ;spi.h: 443: unsigned char smp_phase );
-[; ;spi.h: 445: signed char WriteSPI2( unsigned char data_out );
-[; ;spi.h: 447: void getsSPI2( unsigned char *rdptr, unsigned char length );
-[; ;spi.h: 449: void putsSPI2( unsigned char *wrptr );
-[; ;spi.h: 451: unsigned char ReadSPI2( void );
-[; ;can2510.h: 414: void CAN2510Initialize(  unsigned int configuration,
-[; ;can2510.h: 415: unsigned char brp,
-[; ;can2510.h: 416: unsigned char interruptFlags,
-[; ;can2510.h: 417: unsigned char SPI_syncMode,
-[; ;can2510.h: 418: unsigned char SPI_busMode,
-[; ;can2510.h: 419: unsigned char SPI_smpPhase );
-[; ;can2510.h: 421: signed char CAN2510Init(  unsigned long BufferConfig,
-[; ;can2510.h: 422: unsigned long BitTimeConfig,
-[; ;can2510.h: 423: unsigned char interruptEnables,
-[; ;can2510.h: 424: unsigned char SPI_syncMode,
-[; ;can2510.h: 425: unsigned char SPI_busMode,
-[; ;can2510.h: 426: unsigned char SPI_smpPhase );
-[; ;can2510.h: 428: void CAN2510Enable( void );
-[; ;can2510.h: 430: void CAN2510Disable( void );
-[; ;can2510.h: 432: void CAN2510Reset( void );
-[; ;can2510.h: 434: void CAN2510SetMode(  unsigned char mode );
-[; ;can2510.h: 436: unsigned char CAN2510ReadMode( void );
-[; ;can2510.h: 438: unsigned char CAN2510ReadStatus( void );
-[; ;can2510.h: 440: unsigned char CAN2510ErrorState( void );
-[; ;can2510.h: 442: unsigned char CAN2510InterruptStatus( void );
-[; ;can2510.h: 444: void CAN2510InterruptEnable( unsigned char interruptFlags );
-[; ;can2510.h: 446: unsigned char CAN2510ByteRead(  unsigned char addr );
-[; ;can2510.h: 448: void CAN2510ByteWrite(  unsigned char addr,  unsigned char value );
-[; ;can2510.h: 450: void CAN2510SequentialRead(  unsigned char *DataArray,
-[; ;can2510.h: 451: unsigned char CAN2510addr,
-[; ;can2510.h: 452: unsigned char numbytes );
-[; ;can2510.h: 454: void CAN2510SequentialWrite(  unsigned char *DataArray,
-[; ;can2510.h: 455: unsigned char CAN2510addr,
-[; ;can2510.h: 456: unsigned char numbytes );
-[; ;can2510.h: 458: void CAN2510BitModify(  unsigned char address,
-[; ;can2510.h: 459: unsigned char mask,
-[; ;can2510.h: 460: unsigned char data );
-[; ;can2510.h: 462: void CAN2510SetSingleMaskStd(  unsigned char maskNum,  unsigned int mask );
-[; ;can2510.h: 464: void CAN2510SetSingleMaskXtd(  unsigned char maskNum,  unsigned long mask );
-[; ;can2510.h: 466: void CAN2510SetSingleFilterStd(  unsigned char filterNum,  unsigned int filter );
-[; ;can2510.h: 468: void CAN2510SetSingleFilterXtd(  unsigned char filterNum,  unsigned long filter );
-[; ;can2510.h: 470: signed char CAN2510SetMsgFilterStd(  unsigned char bufferNum,
-[; ;can2510.h: 471: unsigned int mask,
-[; ;can2510.h: 472: unsigned int *filters );
-[; ;can2510.h: 474: signed char CAN2510SetMsgFilterXtd(  unsigned char bufferNum,
-[; ;can2510.h: 475: unsigned long mask,
-[; ;can2510.h: 476: unsigned long *filters );
-[; ;can2510.h: 478: signed char CAN2510WriteStd(  unsigned int msgId,
-[; ;can2510.h: 479: unsigned char msgPriority,
-[; ;can2510.h: 480: unsigned char numBytes,
-[; ;can2510.h: 481: unsigned char *data );
-[; ;can2510.h: 483: signed char CAN2510WriteXtd(  unsigned long msgId,
-[; ;can2510.h: 484: unsigned char msgPriority,
-[; ;can2510.h: 485: unsigned char numBytes,
-[; ;can2510.h: 486: unsigned char *data );
-[; ;can2510.h: 488: void CAN2510LoadBufferStd(  unsigned char bufferNum,
-[; ;can2510.h: 489: unsigned int msgId,
-[; ;can2510.h: 490: unsigned char numBytes,
-[; ;can2510.h: 491: unsigned char *data );
-[; ;can2510.h: 493: void CAN2510LoadBufferXtd(  unsigned char bufferNum,
-[; ;can2510.h: 494: unsigned long msgId,
-[; ;can2510.h: 495: unsigned char numBytes,
-[; ;can2510.h: 496: unsigned char *data );
-[; ;can2510.h: 498: void CAN2510LoadRTRStd(  unsigned char bufferNum,
-[; ;can2510.h: 499: unsigned int msgId,
-[; ;can2510.h: 500: unsigned char numBytes );
-[; ;can2510.h: 502: void CAN2510LoadRTRXtd(  unsigned char bufferNum,
-[; ;can2510.h: 503: unsigned long msgId,
-[; ;can2510.h: 504: unsigned char numBytes );
-[; ;can2510.h: 506: void CAN2510SetBufferPriority(  unsigned char bufferNum,
-[; ;can2510.h: 507: unsigned char bufferPriority );
-[; ;can2510.h: 509: void CAN2510SendBuffer(  unsigned char bufferNumber );
-[; ;can2510.h: 511: signed char CAN2510WriteBuffer(  unsigned char bufferNum );
-[; ;can2510.h: 513: unsigned char CAN2510DataReady(  unsigned char bufferNum );
-[; ;can2510.h: 515: unsigned char CAN2510DataRead(  unsigned char bufferNum,
-[; ;can2510.h: 516: unsigned long *msgId,
-[; ;can2510.h: 517: unsigned char *numBytes,
-[; ;can2510.h: 518: unsigned char *data );
-[; ;capture.h: 64: union capstatus
-[; ;capture.h: 65: {
-[; ;capture.h: 73: struct
-[; ;capture.h: 74: {
-[; ;capture.h: 77: unsigned Cap1OVF:1;
-[; ;capture.h: 82: unsigned Cap2OVF:1;
-[; ;capture.h: 115: };
-[; ;capture.h: 117: unsigned :8;
-[; ;capture.h: 119: };
-[; ;capture.h: 121: extern union capstatus CapStatus;
-[; ;capture.h: 123: union CapResult
-[; ;capture.h: 124: {
-[; ;capture.h: 125: unsigned int lc;
-[; ;capture.h: 126: char bc[2];
-[; ;capture.h: 127: };
-[; ;capture.h: 474: void OpenCapture1 ( unsigned char config);
-[; ;capture.h: 475: unsigned int ReadCapture1 (void);
-[; ;capture.h: 476: void CloseCapture1 (void);
-[; ;capture.h: 484: void OpenCapture2 ( unsigned char config);
-[; ;capture.h: 485: unsigned int ReadCapture2 (void);
-[; ;capture.h: 486: void CloseCapture2 (void);
-[; ;compare.h: 385: void OpenCompare1(unsigned char config,unsigned int period);
-[; ;compare.h: 386: void CloseCompare1(void);
-[; ;compare.h: 392: void OpenCompare2(unsigned char config, unsigned int period);
-[; ;compare.h: 393: void CloseCompare2(void);
-[; ;ctmu.h: 374: void OpenCTMU(unsigned char config1,unsigned char config2,unsigned char config3);
-[; ;ctmu.h: 379: void CurrentControlCTMU(unsigned char config);
-[; ;ctmu.h: 380: void CloseCTMU(void);
-[; ;dpslp.h: 49: typedef union
-[; ;dpslp.h: 50: {
-[; ;dpslp.h: 51: struct
-[; ;dpslp.h: 52: {
-[; ;dpslp.h: 53: unsigned char DS_POR:1;
-[; ;dpslp.h: 54: unsigned char DS_MCLR:1;
-[; ;dpslp.h: 55: unsigned char DS_RTC:1;
-[; ;dpslp.h: 56: unsigned char DS_WDT:1;
-[; ;dpslp.h: 57: unsigned char DS_FLT:1;
-[; ;dpslp.h: 58: unsigned char DS_INT0:1;
-[; ;dpslp.h: 59: unsigned char DS_BOR:1;
-[; ;dpslp.h: 60: unsigned char DS_ULP:1;
-[; ;dpslp.h: 61: }WK_SRC;
-[; ;dpslp.h: 63: unsigned char WKSRC;
-[; ;dpslp.h: 65: }SRC;
-[; ;dpslp.h: 68: typedef struct
-[; ;dpslp.h: 69: {
-[; ;dpslp.h: 70: unsigned char Reg0;
-[; ;dpslp.h: 71: unsigned char Reg1;
-[; ;dpslp.h: 72: }CONTEXT;
-[; ;dpslp.h: 164: extern void DeepSleepWakeUpSource(SRC* ptr);
-[; ;dpslp.h: 165: extern void GotoDeepSleep( unsigned int config);
-[; ;dpslp.h: 166: extern signed char IsResetFromDeepSleep( void );
-[; ;dpslp.h: 167: extern void ReadDSGPR( CONTEXT* ptr );
-[; ;dpslp.h: 171: extern void ULPWakeUpEnable( void );
+[; ;plib\adc.h: 2008: union ADCResult
+[; ;plib\adc.h: 2009: {
+[; ;plib\adc.h: 2010: int lr;
+[; ;plib\adc.h: 2011: char br[2];
+[; ;plib\adc.h: 2012: };
+[; ;plib\adc.h: 2014: char BusyADC (void);
+[; ;plib\adc.h: 2016: void ConvertADC (void);
+[; ;plib\adc.h: 2018: void CloseADC(void);
+[; ;plib\adc.h: 2026: int ReadADC(void);
+[; ;plib\adc.h: 2059: void OpenADC ( unsigned char ,
+[; ;plib\adc.h: 2060: unsigned char ,
+[; ;plib\adc.h: 2061: unsigned int );
+[; ;plib\adc.h: 2084: void SetChanADC(unsigned char );
+[; ;plib\adc.h: 2100: void SelChanConvADC( unsigned char );
+[; ;plib\ancomp.h: 202: void Close_ancomp1( void );
+[; ;plib\ancomp.h: 203: void Open_ancomp1(unsigned char config);
+[; ;plib\ancomp.h: 204: void Close_ancomp2( void );
+[; ;plib\ancomp.h: 205: void Open_ancomp2(unsigned char config);
+[; ;plib\spi.h: 236: void OpenSPI1( unsigned char sync_mode,
+[; ;plib\spi.h: 237: unsigned char bus_mode,
+[; ;plib\spi.h: 238: unsigned char smp_phase );
+[; ;plib\spi.h: 240: signed char WriteSPI1( unsigned char data_out );
+[; ;plib\spi.h: 242: void getsSPI1( unsigned char *rdptr, unsigned char length );
+[; ;plib\spi.h: 244: void putsSPI1( unsigned char *wrptr );
+[; ;plib\spi.h: 246: unsigned char ReadSPI1( void );
+[; ;plib\spi.h: 441: void OpenSPI2( unsigned char sync_mode,
+[; ;plib\spi.h: 442: unsigned char bus_mode,
+[; ;plib\spi.h: 443: unsigned char smp_phase );
+[; ;plib\spi.h: 445: signed char WriteSPI2( unsigned char data_out );
+[; ;plib\spi.h: 447: void getsSPI2( unsigned char *rdptr, unsigned char length );
+[; ;plib\spi.h: 449: void putsSPI2( unsigned char *wrptr );
+[; ;plib\spi.h: 451: unsigned char ReadSPI2( void );
+[; ;plib\can2510.h: 414: void CAN2510Initialize(  unsigned int configuration,
+[; ;plib\can2510.h: 415: unsigned char brp,
+[; ;plib\can2510.h: 416: unsigned char interruptFlags,
+[; ;plib\can2510.h: 417: unsigned char SPI_syncMode,
+[; ;plib\can2510.h: 418: unsigned char SPI_busMode,
+[; ;plib\can2510.h: 419: unsigned char SPI_smpPhase );
+[; ;plib\can2510.h: 421: signed char CAN2510Init(  unsigned long BufferConfig,
+[; ;plib\can2510.h: 422: unsigned long BitTimeConfig,
+[; ;plib\can2510.h: 423: unsigned char interruptEnables,
+[; ;plib\can2510.h: 424: unsigned char SPI_syncMode,
+[; ;plib\can2510.h: 425: unsigned char SPI_busMode,
+[; ;plib\can2510.h: 426: unsigned char SPI_smpPhase );
+[; ;plib\can2510.h: 428: void CAN2510Enable( void );
+[; ;plib\can2510.h: 430: void CAN2510Disable( void );
+[; ;plib\can2510.h: 432: void CAN2510Reset( void );
+[; ;plib\can2510.h: 434: void CAN2510SetMode(  unsigned char mode );
+[; ;plib\can2510.h: 436: unsigned char CAN2510ReadMode( void );
+[; ;plib\can2510.h: 438: unsigned char CAN2510ReadStatus( void );
+[; ;plib\can2510.h: 440: unsigned char CAN2510ErrorState( void );
+[; ;plib\can2510.h: 442: unsigned char CAN2510InterruptStatus( void );
+[; ;plib\can2510.h: 444: void CAN2510InterruptEnable( unsigned char interruptFlags );
+[; ;plib\can2510.h: 446: unsigned char CAN2510ByteRead(  unsigned char addr );
+[; ;plib\can2510.h: 448: void CAN2510ByteWrite(  unsigned char addr,  unsigned char value );
+[; ;plib\can2510.h: 450: void CAN2510SequentialRead(  unsigned char *DataArray,
+[; ;plib\can2510.h: 451: unsigned char CAN2510addr,
+[; ;plib\can2510.h: 452: unsigned char numbytes );
+[; ;plib\can2510.h: 454: void CAN2510SequentialWrite(  unsigned char *DataArray,
+[; ;plib\can2510.h: 455: unsigned char CAN2510addr,
+[; ;plib\can2510.h: 456: unsigned char numbytes );
+[; ;plib\can2510.h: 458: void CAN2510BitModify(  unsigned char address,
+[; ;plib\can2510.h: 459: unsigned char mask,
+[; ;plib\can2510.h: 460: unsigned char data );
+[; ;plib\can2510.h: 462: void CAN2510SetSingleMaskStd(  unsigned char maskNum,  unsigned int mask );
+[; ;plib\can2510.h: 464: void CAN2510SetSingleMaskXtd(  unsigned char maskNum,  unsigned long mask );
+[; ;plib\can2510.h: 466: void CAN2510SetSingleFilterStd(  unsigned char filterNum,  unsigned int filter );
+[; ;plib\can2510.h: 468: void CAN2510SetSingleFilterXtd(  unsigned char filterNum,  unsigned long filter );
+[; ;plib\can2510.h: 470: signed char CAN2510SetMsgFilterStd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 471: unsigned int mask,
+[; ;plib\can2510.h: 472: unsigned int *filters );
+[; ;plib\can2510.h: 474: signed char CAN2510SetMsgFilterXtd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 475: unsigned long mask,
+[; ;plib\can2510.h: 476: unsigned long *filters );
+[; ;plib\can2510.h: 478: signed char CAN2510WriteStd(  unsigned int msgId,
+[; ;plib\can2510.h: 479: unsigned char msgPriority,
+[; ;plib\can2510.h: 480: unsigned char numBytes,
+[; ;plib\can2510.h: 481: unsigned char *data );
+[; ;plib\can2510.h: 483: signed char CAN2510WriteXtd(  unsigned long msgId,
+[; ;plib\can2510.h: 484: unsigned char msgPriority,
+[; ;plib\can2510.h: 485: unsigned char numBytes,
+[; ;plib\can2510.h: 486: unsigned char *data );
+[; ;plib\can2510.h: 488: void CAN2510LoadBufferStd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 489: unsigned int msgId,
+[; ;plib\can2510.h: 490: unsigned char numBytes,
+[; ;plib\can2510.h: 491: unsigned char *data );
+[; ;plib\can2510.h: 493: void CAN2510LoadBufferXtd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 494: unsigned long msgId,
+[; ;plib\can2510.h: 495: unsigned char numBytes,
+[; ;plib\can2510.h: 496: unsigned char *data );
+[; ;plib\can2510.h: 498: void CAN2510LoadRTRStd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 499: unsigned int msgId,
+[; ;plib\can2510.h: 500: unsigned char numBytes );
+[; ;plib\can2510.h: 502: void CAN2510LoadRTRXtd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 503: unsigned long msgId,
+[; ;plib\can2510.h: 504: unsigned char numBytes );
+[; ;plib\can2510.h: 506: void CAN2510SetBufferPriority(  unsigned char bufferNum,
+[; ;plib\can2510.h: 507: unsigned char bufferPriority );
+[; ;plib\can2510.h: 509: void CAN2510SendBuffer(  unsigned char bufferNumber );
+[; ;plib\can2510.h: 511: signed char CAN2510WriteBuffer(  unsigned char bufferNum );
+[; ;plib\can2510.h: 513: unsigned char CAN2510DataReady(  unsigned char bufferNum );
+[; ;plib\can2510.h: 515: unsigned char CAN2510DataRead(  unsigned char bufferNum,
+[; ;plib\can2510.h: 516: unsigned long *msgId,
+[; ;plib\can2510.h: 517: unsigned char *numBytes,
+[; ;plib\can2510.h: 518: unsigned char *data );
+[; ;plib\capture.h: 64: union capstatus
+[; ;plib\capture.h: 65: {
+[; ;plib\capture.h: 73: struct
+[; ;plib\capture.h: 74: {
+[; ;plib\capture.h: 77: unsigned Cap1OVF:1;
+[; ;plib\capture.h: 82: unsigned Cap2OVF:1;
+[; ;plib\capture.h: 115: };
+[; ;plib\capture.h: 117: unsigned :8;
+[; ;plib\capture.h: 119: };
+[; ;plib\capture.h: 121: extern union capstatus CapStatus;
+[; ;plib\capture.h: 123: union CapResult
+[; ;plib\capture.h: 124: {
+[; ;plib\capture.h: 125: unsigned int lc;
+[; ;plib\capture.h: 126: char bc[2];
+[; ;plib\capture.h: 127: };
+[; ;plib\capture.h: 474: void OpenCapture1 ( unsigned char config);
+[; ;plib\capture.h: 475: unsigned int ReadCapture1 (void);
+[; ;plib\capture.h: 476: void CloseCapture1 (void);
+[; ;plib\capture.h: 484: void OpenCapture2 ( unsigned char config);
+[; ;plib\capture.h: 485: unsigned int ReadCapture2 (void);
+[; ;plib\capture.h: 486: void CloseCapture2 (void);
+[; ;plib\compare.h: 385: void OpenCompare1(unsigned char config,unsigned int period);
+[; ;plib\compare.h: 386: void CloseCompare1(void);
+[; ;plib\compare.h: 392: void OpenCompare2(unsigned char config, unsigned int period);
+[; ;plib\compare.h: 393: void CloseCompare2(void);
+[; ;plib\ctmu.h: 374: void OpenCTMU(unsigned char config1,unsigned char config2,unsigned char config3);
+[; ;plib\ctmu.h: 379: void CurrentControlCTMU(unsigned char config);
+[; ;plib\ctmu.h: 380: void CloseCTMU(void);
+[; ;plib\dpslp.h: 49: typedef union
+[; ;plib\dpslp.h: 50: {
+[; ;plib\dpslp.h: 51: struct
+[; ;plib\dpslp.h: 52: {
+[; ;plib\dpslp.h: 53: unsigned char DS_POR:1;
+[; ;plib\dpslp.h: 54: unsigned char DS_MCLR:1;
+[; ;plib\dpslp.h: 55: unsigned char DS_RTC:1;
+[; ;plib\dpslp.h: 56: unsigned char DS_WDT:1;
+[; ;plib\dpslp.h: 57: unsigned char DS_FLT:1;
+[; ;plib\dpslp.h: 58: unsigned char DS_INT0:1;
+[; ;plib\dpslp.h: 59: unsigned char DS_BOR:1;
+[; ;plib\dpslp.h: 60: unsigned char DS_ULP:1;
+[; ;plib\dpslp.h: 61: }WK_SRC;
+[; ;plib\dpslp.h: 63: unsigned char WKSRC;
+[; ;plib\dpslp.h: 65: }SRC;
+[; ;plib\dpslp.h: 68: typedef struct
+[; ;plib\dpslp.h: 69: {
+[; ;plib\dpslp.h: 70: unsigned char Reg0;
+[; ;plib\dpslp.h: 71: unsigned char Reg1;
+[; ;plib\dpslp.h: 72: }CONTEXT;
+[; ;plib\dpslp.h: 164: extern void DeepSleepWakeUpSource(SRC* ptr);
+[; ;plib\dpslp.h: 165: extern void GotoDeepSleep( unsigned int config);
+[; ;plib\dpslp.h: 166: extern signed char IsResetFromDeepSleep( void );
+[; ;plib\dpslp.h: 167: extern void ReadDSGPR( CONTEXT* ptr );
+[; ;plib\dpslp.h: 171: extern void ULPWakeUpEnable( void );
 [; ;stddef.h: 2: typedef int ptrdiff_t;
 [; ;stddef.h: 3: typedef unsigned size_t;
 [; ;stddef.h: 4: typedef unsigned short wchar_t;
@@ -7524,292 +7524,292 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;GenericTypeDefs.h: 545: BYTE b63:1;
 [; ;GenericTypeDefs.h: 546: } bits;
 [; ;GenericTypeDefs.h: 547: } QWORD_VAL;
-[; ;flash.h: 113: extern void ReadFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
-[; ;flash.h: 120: extern void EraseFlash(unsigned long startaddr, unsigned long endaddr);
-[; ;flash.h: 122: extern void WriteBlockFlash(unsigned long startaddr, unsigned char num_blocks, unsigned char *flash_array);
-[; ;flash.h: 124: extern void WriteBytesFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
-[; ;flash.h: 127: extern void WriteWordFlash(unsigned long startaddr, unsigned int data);
-[; ;i2c.h: 244: void OpenI2C1( unsigned char sync_mode, unsigned char slew );
-[; ;i2c.h: 264: unsigned char ReadI2C1( void );
-[; ;i2c.h: 279: signed char WriteI2C1( unsigned char data_out );
-[; ;i2c.h: 294: signed char getsI2C1( unsigned char *rdptr, unsigned char length );
-[; ;i2c.h: 297: signed char putsI2C1( unsigned char *wrptr );
-[; ;i2c.h: 305: signed char EEAckPolling1( unsigned char control );
-[; ;i2c.h: 308: signed char EEByteWrite1( unsigned char control,
-[; ;i2c.h: 309: unsigned char address,
-[; ;i2c.h: 310: unsigned char data );
-[; ;i2c.h: 313: signed int EECurrentAddRead1( unsigned char control );
-[; ;i2c.h: 316: signed char EEPageWrite1( unsigned char control,
-[; ;i2c.h: 317: unsigned char address,
-[; ;i2c.h: 318: unsigned char *wrptr );
-[; ;i2c.h: 321: signed int EERandomRead1( unsigned char control, unsigned char address );
-[; ;i2c.h: 324: signed char EESequentialRead1( unsigned char control,
-[; ;i2c.h: 325: unsigned char address,
-[; ;i2c.h: 326: unsigned char *rdptr,
-[; ;i2c.h: 327: unsigned char length );
-[; ;mwire.h: 200: void OpenMwire1( unsigned char sync_mode );
-[; ;mwire.h: 203: unsigned char ReadMwire1( unsigned char high_byte,
-[; ;mwire.h: 204: unsigned char low_byte );
-[; ;mwire.h: 219: signed char WriteMwire1( unsigned char data_out );
-[; ;mwire.h: 234: void getsMwire1( unsigned char *rdptr, unsigned char length );
-[; ;portb.h: 126: void OpenPORTB( unsigned char config);
-[; ;portb.h: 176: void OpenRB0INT( unsigned char config);
-[; ;portb.h: 194: void OpenRB1INT( unsigned char config);
-[; ;portb.h: 211: void OpenRB2INT( unsigned char config);
-[; ;portb.h: 230: void OpenRB3INT( unsigned char config);
-[; ;pwm.h: 85: union PWMDC
-[; ;pwm.h: 86: {
-[; ;pwm.h: 87: unsigned int lpwm;
-[; ;pwm.h: 88: char bpwm[2];
-[; ;pwm.h: 89: };
-[; ;pwm.h: 467: void OpenPWM1 ( char period);
-[; ;pwm.h: 468: void SetDCPWM1 ( unsigned int duty_cycle);
-[; ;pwm.h: 474: void SetOutputPWM1 ( unsigned char output_config,
-[; ;pwm.h: 475: unsigned char pwm_mode);
-[; ;pwm.h: 477: void ClosePWM1 (void);
-[; ;pwm.h: 485: void OpenPWM2 ( char period);
-[; ;pwm.h: 486: void SetDCPWM2( unsigned int duty_cycle);
-[; ;pwm.h: 492: void ClosePWM2 (void);
-[; ;reset.h: 16: char isMCLR(void);
-[; ;reset.h: 17: void StatusReset(void);
-[; ;reset.h: 18: char isPOR(void);
-[; ;reset.h: 19: char isWU(void);
-[; ;reset.h: 22: char isBOR(void);
-[; ;reset.h: 26: char isWDTTO(void);
-[; ;reset.h: 27: char isWDTWU(void);
-[; ;reset.h: 31: char isLVD(void);
-[; ;rtcc.h: 43: typedef union _WORD_VAL
-[; ;rtcc.h: 44: {
-[; ;rtcc.h: 45: unsigned int Val;
-[; ;rtcc.h: 46: unsigned char v[2];
-[; ;rtcc.h: 47: struct
-[; ;rtcc.h: 48: {
-[; ;rtcc.h: 49: unsigned char LB;
-[; ;rtcc.h: 50: unsigned char HB;
-[; ;rtcc.h: 51: } byte;
-[; ;rtcc.h: 52: struct
-[; ;rtcc.h: 53: {
-[; ;rtcc.h: 54: unsigned char b0:1;
-[; ;rtcc.h: 55: unsigned char b1:1;
-[; ;rtcc.h: 56: unsigned char b2:1;
-[; ;rtcc.h: 57: unsigned char b3:1;
-[; ;rtcc.h: 58: unsigned char b4:1;
-[; ;rtcc.h: 59: unsigned char b5:1;
-[; ;rtcc.h: 60: unsigned char b6:1;
-[; ;rtcc.h: 61: unsigned char b7:1;
-[; ;rtcc.h: 62: unsigned char b8:1;
-[; ;rtcc.h: 63: unsigned char b9:1;
-[; ;rtcc.h: 64: unsigned char b10:1;
-[; ;rtcc.h: 65: unsigned char b11:1;
-[; ;rtcc.h: 66: unsigned char b12:1;
-[; ;rtcc.h: 67: unsigned char b13:1;
-[; ;rtcc.h: 68: unsigned char b14:1;
-[; ;rtcc.h: 69: unsigned char b15:1;
-[; ;rtcc.h: 70: } bits;
-[; ;rtcc.h: 71: } WORD_VAL, WORD_BITS;
-[; ;rtcc.h: 75: typedef enum
-[; ;rtcc.h: 76: {
-[; ;rtcc.h: 77: RTCCFG_MASK_RTCEN = 0x80,
-[; ;rtcc.h: 78: RTCCFG_MASK_FRZ = 0x40,
-[; ;rtcc.h: 79: RTCCFG_MASK_RTCWREN = 0x20,
-[; ;rtcc.h: 80: RTCCFG_MASK_RTCSYNC = 0x10,
-[; ;rtcc.h: 81: RTCCFG_MASK_HALFSEC = 0x08,
-[; ;rtcc.h: 82: RTCCFG_MASK_RTCOE = 0x04,
-[; ;rtcc.h: 83: RTCCFG_MASK_RTCPTR = 0x03
-[; ;rtcc.h: 84: }RTCCFG_MASK;
-[; ;rtcc.h: 89: typedef enum
-[; ;rtcc.h: 90: {
-[; ;rtcc.h: 91: ALRMCFG_MASK_ALRMEN = 0x80,
-[; ;rtcc.h: 92: ALRMCFG_MASK_CHIME = 0x40,
-[; ;rtcc.h: 93: ALRMCFG_MASK_AMASK = 0x3c,
-[; ;rtcc.h: 94: ALRMCFG_MASK_ALRMPTR = 0x03
-[; ;rtcc.h: 95: }ALRMCFG_MASK;
-[; ;rtcc.h: 100: typedef enum
-[; ;rtcc.h: 101: {
-[; ;rtcc.h: 102: RTCCPTR_MASK_SECMIN = 0x00,
-[; ;rtcc.h: 103: RTCCPTR_MASK_HRSWEEK = 0x01,
-[; ;rtcc.h: 104: RTCCPTR_MASK_DAYMON = 0x02,
-[; ;rtcc.h: 105: RTCCPTR_MASK_YEAR = 0x03
-[; ;rtcc.h: 106: }RTCCPTR_MASK;
-[; ;rtcc.h: 110: typedef union
-[; ;rtcc.h: 111: {
-[; ;rtcc.h: 112: struct
-[; ;rtcc.h: 113: {
-[; ;rtcc.h: 114: unsigned char rsvd;
-[; ;rtcc.h: 115: unsigned char sec;
-[; ;rtcc.h: 116: unsigned char min;
-[; ;rtcc.h: 117: unsigned char hour;
-[; ;rtcc.h: 118: }f;
-[; ;rtcc.h: 119: unsigned char b[4];
-[; ;rtcc.h: 120: unsigned int w[2];
-[; ;rtcc.h: 121: unsigned long l;
-[; ;rtcc.h: 122: }rtccTime;
-[; ;rtcc.h: 125: typedef union
-[; ;rtcc.h: 126: {
-[; ;rtcc.h: 127: struct
-[; ;rtcc.h: 128: {
-[; ;rtcc.h: 129: unsigned char wday;
-[; ;rtcc.h: 130: unsigned char mday;
-[; ;rtcc.h: 131: unsigned char mon;
-[; ;rtcc.h: 132: unsigned char year;
-[; ;rtcc.h: 133: }f;
-[; ;rtcc.h: 134: unsigned char b[4];
-[; ;rtcc.h: 135: unsigned int w[2];
-[; ;rtcc.h: 136: unsigned long l;
-[; ;rtcc.h: 137: }rtccDate;
-[; ;rtcc.h: 141: typedef union
-[; ;rtcc.h: 142: {
-[; ;rtcc.h: 143: struct
-[; ;rtcc.h: 144: {
-[; ;rtcc.h: 145: unsigned char year;
-[; ;rtcc.h: 146: unsigned char rsvd;
-[; ;rtcc.h: 147: unsigned char mday;
-[; ;rtcc.h: 148: unsigned char mon;
-[; ;rtcc.h: 149: unsigned char hour;
-[; ;rtcc.h: 150: unsigned char wday;
-[; ;rtcc.h: 151: unsigned char sec;
-[; ;rtcc.h: 152: unsigned char min;
-[; ;rtcc.h: 153: }f;
-[; ;rtcc.h: 154: unsigned char b[8];
-[; ;rtcc.h: 155: unsigned int w[4];
-[; ;rtcc.h: 156: unsigned long l[2];
-[; ;rtcc.h: 157: }rtccTimeDate;
-[; ;rtcc.h: 162: typedef enum
-[; ;rtcc.h: 163: {
-[; ;rtcc.h: 164: RTCC_RPT_HALF_SEC,
-[; ;rtcc.h: 165: RTCC_RPT_SEC,
-[; ;rtcc.h: 166: RTCC_RPT_TEN_SEC,
-[; ;rtcc.h: 167: RTCC_RPT_MIN,
-[; ;rtcc.h: 168: RTCC_RPT_TEN_MIN,
-[; ;rtcc.h: 169: RTCC_RPT_HOUR,
-[; ;rtcc.h: 170: RTCC_RPT_DAY,
-[; ;rtcc.h: 171: RTCC_RPT_WEEK,
-[; ;rtcc.h: 172: RTCC_RPT_MON,
-[; ;rtcc.h: 173: RTCC_RPT_YEAR
-[; ;rtcc.h: 174: }rtccRepeat;
-[; ;rtcc.h: 646: extern void RtccInitClock(void) ;
-[; ;rtcc.h: 648: extern void RtccReadAlrmDate(rtccDate* pDt) ;
-[; ;rtcc.h: 650: extern void RtccReadAlrmTime(rtccTime* pTm);
-[; ;rtcc.h: 652: extern void RtccReadAlrmTimeDate(rtccTimeDate* pTD) ;
-[; ;rtcc.h: 654: extern void RtccReadDate(rtccDate* pDt) ;
-[; ;rtcc.h: 656: extern void RtccReadTime(rtccTime* pTm) ;
-[; ;rtcc.h: 658: extern void RtccReadTimeDate(rtccTimeDate* pTD) ;
-[; ;rtcc.h: 660: extern void RtccSetAlarmRpt(rtccRepeat rpt, BOOL dsblAlrm) ;
-[; ;rtcc.h: 662: extern void RtccSetAlarmRptCount(unsigned char rptCnt, BOOL dsblAlrm) ;
-[; ;rtcc.h: 664: extern void RtccSetCalibration(int drift) ;
-[; ;rtcc.h: 666: extern void RtccSetChimeEnable(BOOL enable, BOOL dsblAlrm) ;
-[; ;rtcc.h: 668: extern BOOL RtccWriteAlrmDate(const rtccDate* pDt) ;
-[; ;rtcc.h: 670: extern BOOL RtccWriteAlrmTime(const rtccTime* pTm) ;
-[; ;rtcc.h: 672: extern BOOL RtccWriteAlrmTimeDate(const rtccTimeDate* pTD) ;
-[; ;rtcc.h: 674: extern BOOL RtccWriteDate(const rtccDate* pDt , BOOL di);
-[; ;rtcc.h: 676: extern BOOL RtccWriteTime(const rtccTime* pTm , BOOL di) ;
-[; ;rtcc.h: 678: extern BOOL RtccWriteTimeDate(const rtccTimeDate* pTD , BOOL di) ;
-[; ;rtcc.h: 680: extern void RtccWrOn(void);
-[; ;rtcc.h: 687: void Open_RTCC(void);
-[; ;rtcc.h: 688: void Close_RTCC(void);
-[; ;rtcc.h: 689: unsigned char update_RTCC(void);
-[; ;sw_i2c.h: 97: void SWStopI2C ( void );
-[; ;sw_i2c.h: 98: void SWStartI2C ( void );
-[; ;sw_i2c.h: 99: void SWRestartI2C ( void );
-[; ;sw_i2c.h: 100: void SWStopI2C ( void );
-[; ;sw_i2c.h: 102: signed char SWAckI2C( void );
-[; ;sw_i2c.h: 103: signed char Clock_test( void );
-[; ;sw_i2c.h: 104: signed int SWReadI2C( void );
-[; ;sw_i2c.h: 105: signed char SWWriteI2C(  unsigned char data_out );
-[; ;sw_i2c.h: 106: signed char SWGetsI2C(  unsigned char *rdptr,  unsigned char length );
-[; ;sw_i2c.h: 107: signed char SWPutsI2C(  unsigned char *wrptr );
-[; ;sw_spi.h: 84: void OpenSWSPI(void);
-[; ;sw_spi.h: 87: char WriteSWSPI( char output);
-[; ;sw_spi.h: 90: void SetCSSWSPI(void);
-[; ;sw_spi.h: 93: void ClearCSSWSPI(void);
-[; ;sw_uart.h: 47: void OpenUART(void);
-[; ;sw_uart.h: 49: unsigned char ReadUART(void);
-[; ;sw_uart.h: 51: void WriteUART( unsigned char);
-[; ;sw_uart.h: 53: void getsUART( char *, unsigned char);
-[; ;sw_uart.h: 55: void putsUART( char *);
-[; ;sw_uart.h: 79: extern void DelayRXBitUART (void);
-[; ;sw_uart.h: 80: extern void DelayRXHalfBitUART(void);
-[; ;sw_uart.h: 81: extern void DelayTXBitUART (void);
-[; ;timers.h: 36: union Timers
-[; ;timers.h: 37: {
-[; ;timers.h: 38: unsigned int lt;
-[; ;timers.h: 39: char bt[2];
-[; ;timers.h: 40: };
-[; ;timers.h: 118: void OpenTimer0 ( unsigned char config);
-[; ;timers.h: 119: void CloseTimer0 (void);
-[; ;timers.h: 120: unsigned int ReadTimer0 (void);
-[; ;timers.h: 121: void WriteTimer0 ( unsigned int timer0);
-[; ;timers.h: 185: void OpenTimer1 ( unsigned char config, unsigned char config1);
-[; ;timers.h: 186: void CloseTimer1 (void);
-[; ;timers.h: 187: unsigned int ReadTimer1 (void);
-[; ;timers.h: 188: void WriteTimer1 ( unsigned int timer1);
-[; ;timers.h: 325: void OpenTimer2 ( unsigned char config);
-[; ;timers.h: 326: void CloseTimer2 (void);
-[; ;timers.h: 452: void OpenTimer3 ( unsigned char config, unsigned char config1);
-[; ;timers.h: 453: void CloseTimer3 (void);
-[; ;timers.h: 454: unsigned int ReadTimer3 (void);
-[; ;timers.h: 455: void WriteTimer3 ( unsigned int timer3);
-[; ;timers.h: 541: void OpenTimer4 ( unsigned char config);
-[; ;timers.h: 542: void CloseTimer4 (void);
-[; ;timers.h: 1179: void SetTmrCCPSrc( unsigned char );
-[; ;usart.h: 200: union USART1
-[; ;usart.h: 201: {
-[; ;usart.h: 202: unsigned char val;
-[; ;usart.h: 203: struct
-[; ;usart.h: 204: {
-[; ;usart.h: 205: unsigned RX_NINE:1;
-[; ;usart.h: 206: unsigned TX_NINE:1;
-[; ;usart.h: 207: unsigned FRAME_ERROR:1;
-[; ;usart.h: 208: unsigned OVERRUN_ERROR:1;
-[; ;usart.h: 209: unsigned fill:4;
-[; ;usart.h: 210: };
-[; ;usart.h: 211: };
-[; ;usart.h: 212: extern union USART1 USART1_Status;
-[; ;usart.h: 214: void Open1USART ( unsigned char config, unsigned int spbrg);
-[; ;usart.h: 244: char Read1USART (void);
-[; ;usart.h: 245: void Write1USART ( char data);
-[; ;usart.h: 246: void gets1USART ( char *buffer, unsigned char len);
-[; ;usart.h: 247: void puts1USART ( char *data);
-[; ;usart.h: 248: void putrs1USART ( const  char *data);
-[; ;usart.h: 305: union USART2
-[; ;usart.h: 306: {
-[; ;usart.h: 307: unsigned char val;
-[; ;usart.h: 308: struct
-[; ;usart.h: 309: {
-[; ;usart.h: 310: unsigned RX_NINE:1;
-[; ;usart.h: 311: unsigned TX_NINE:1;
-[; ;usart.h: 312: unsigned FRAME_ERROR:1;
-[; ;usart.h: 313: unsigned OVERRUN_ERROR:1;
-[; ;usart.h: 314: unsigned fill:4;
-[; ;usart.h: 315: };
-[; ;usart.h: 316: };
-[; ;usart.h: 317: extern union USART2 USART2_Status;
-[; ;usart.h: 318: void Open2USART ( unsigned char config, unsigned int spbrg);
-[; ;usart.h: 333: char Read2USART (void);
-[; ;usart.h: 334: void Write2USART ( char data);
-[; ;usart.h: 335: void gets2USART ( char *buffer, unsigned char len);
-[; ;usart.h: 336: void puts2USART ( char *data);
-[; ;usart.h: 337: void putrs2USART ( const  char *data);
-[; ;usart.h: 660: void baud1USART ( unsigned char baudconfig);
-[; ;usart.h: 665: void baud2USART ( unsigned char baudconfig);
-[; ;xlcd.h: 87: void OpenXLCD( unsigned char);
-[; ;xlcd.h: 92: void SetCGRamAddr( unsigned char);
-[; ;xlcd.h: 97: void SetDDRamAddr( unsigned char);
-[; ;xlcd.h: 102: unsigned char BusyXLCD(void);
-[; ;xlcd.h: 107: unsigned char ReadAddrXLCD(void);
-[; ;xlcd.h: 112: char ReadDataXLCD(void);
-[; ;xlcd.h: 117: void WriteCmdXLCD( unsigned char);
-[; ;xlcd.h: 122: void WriteDataXLCD( char);
-[; ;xlcd.h: 132: void putsXLCD( char *);
-[; ;xlcd.h: 137: void putrsXLCD(const char *);
-[; ;xlcd.h: 140: extern void DelayFor18TCY(void);
-[; ;xlcd.h: 141: extern void DelayPORXLCD(void);
-[; ;xlcd.h: 142: extern void DelayXLCD(void);
-[; ;delays.h: 13: void Delay1TCYx(unsigned char);
-[; ;delays.h: 19: void Delay10TCYx(unsigned char);
-[; ;delays.h: 25: void Delay100TCYx(unsigned char);
-[; ;delays.h: 31: void Delay1KTCYx(unsigned char);
-[; ;delays.h: 37: void Delay10KTCYx(unsigned char);
+[; ;plib\flash.h: 113: extern void ReadFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
+[; ;plib\flash.h: 120: extern void EraseFlash(unsigned long startaddr, unsigned long endaddr);
+[; ;plib\flash.h: 122: extern void WriteBlockFlash(unsigned long startaddr, unsigned char num_blocks, unsigned char *flash_array);
+[; ;plib\flash.h: 124: extern void WriteBytesFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
+[; ;plib\flash.h: 127: extern void WriteWordFlash(unsigned long startaddr, unsigned int data);
+[; ;plib\i2c.h: 244: void OpenI2C1( unsigned char sync_mode, unsigned char slew );
+[; ;plib\i2c.h: 264: unsigned char ReadI2C1( void );
+[; ;plib\i2c.h: 279: signed char WriteI2C1( unsigned char data_out );
+[; ;plib\i2c.h: 294: signed char getsI2C1( unsigned char *rdptr, unsigned char length );
+[; ;plib\i2c.h: 297: signed char putsI2C1( unsigned char *wrptr );
+[; ;plib\i2c.h: 305: signed char EEAckPolling1( unsigned char control );
+[; ;plib\i2c.h: 308: signed char EEByteWrite1( unsigned char control,
+[; ;plib\i2c.h: 309: unsigned char address,
+[; ;plib\i2c.h: 310: unsigned char data );
+[; ;plib\i2c.h: 313: signed int EECurrentAddRead1( unsigned char control );
+[; ;plib\i2c.h: 316: signed char EEPageWrite1( unsigned char control,
+[; ;plib\i2c.h: 317: unsigned char address,
+[; ;plib\i2c.h: 318: unsigned char *wrptr );
+[; ;plib\i2c.h: 321: signed int EERandomRead1( unsigned char control, unsigned char address );
+[; ;plib\i2c.h: 324: signed char EESequentialRead1( unsigned char control,
+[; ;plib\i2c.h: 325: unsigned char address,
+[; ;plib\i2c.h: 326: unsigned char *rdptr,
+[; ;plib\i2c.h: 327: unsigned char length );
+[; ;plib\mwire.h: 200: void OpenMwire1( unsigned char sync_mode );
+[; ;plib\mwire.h: 203: unsigned char ReadMwire1( unsigned char high_byte,
+[; ;plib\mwire.h: 204: unsigned char low_byte );
+[; ;plib\mwire.h: 219: signed char WriteMwire1( unsigned char data_out );
+[; ;plib\mwire.h: 234: void getsMwire1( unsigned char *rdptr, unsigned char length );
+[; ;plib\portb.h: 126: void OpenPORTB( unsigned char config);
+[; ;plib\portb.h: 176: void OpenRB0INT( unsigned char config);
+[; ;plib\portb.h: 194: void OpenRB1INT( unsigned char config);
+[; ;plib\portb.h: 211: void OpenRB2INT( unsigned char config);
+[; ;plib\portb.h: 230: void OpenRB3INT( unsigned char config);
+[; ;plib\pwm.h: 85: union PWMDC
+[; ;plib\pwm.h: 86: {
+[; ;plib\pwm.h: 87: unsigned int lpwm;
+[; ;plib\pwm.h: 88: char bpwm[2];
+[; ;plib\pwm.h: 89: };
+[; ;plib\pwm.h: 467: void OpenPWM1 ( char period);
+[; ;plib\pwm.h: 468: void SetDCPWM1 ( unsigned int duty_cycle);
+[; ;plib\pwm.h: 474: void SetOutputPWM1 ( unsigned char output_config,
+[; ;plib\pwm.h: 475: unsigned char pwm_mode);
+[; ;plib\pwm.h: 477: void ClosePWM1 (void);
+[; ;plib\pwm.h: 485: void OpenPWM2 ( char period);
+[; ;plib\pwm.h: 486: void SetDCPWM2( unsigned int duty_cycle);
+[; ;plib\pwm.h: 492: void ClosePWM2 (void);
+[; ;plib\reset.h: 16: char isMCLR(void);
+[; ;plib\reset.h: 17: void StatusReset(void);
+[; ;plib\reset.h: 18: char isPOR(void);
+[; ;plib\reset.h: 19: char isWU(void);
+[; ;plib\reset.h: 22: char isBOR(void);
+[; ;plib\reset.h: 26: char isWDTTO(void);
+[; ;plib\reset.h: 27: char isWDTWU(void);
+[; ;plib\reset.h: 31: char isLVD(void);
+[; ;plib\rtcc.h: 43: typedef union _WORD_VAL
+[; ;plib\rtcc.h: 44: {
+[; ;plib\rtcc.h: 45: unsigned int Val;
+[; ;plib\rtcc.h: 46: unsigned char v[2];
+[; ;plib\rtcc.h: 47: struct
+[; ;plib\rtcc.h: 48: {
+[; ;plib\rtcc.h: 49: unsigned char LB;
+[; ;plib\rtcc.h: 50: unsigned char HB;
+[; ;plib\rtcc.h: 51: } byte;
+[; ;plib\rtcc.h: 52: struct
+[; ;plib\rtcc.h: 53: {
+[; ;plib\rtcc.h: 54: unsigned char b0:1;
+[; ;plib\rtcc.h: 55: unsigned char b1:1;
+[; ;plib\rtcc.h: 56: unsigned char b2:1;
+[; ;plib\rtcc.h: 57: unsigned char b3:1;
+[; ;plib\rtcc.h: 58: unsigned char b4:1;
+[; ;plib\rtcc.h: 59: unsigned char b5:1;
+[; ;plib\rtcc.h: 60: unsigned char b6:1;
+[; ;plib\rtcc.h: 61: unsigned char b7:1;
+[; ;plib\rtcc.h: 62: unsigned char b8:1;
+[; ;plib\rtcc.h: 63: unsigned char b9:1;
+[; ;plib\rtcc.h: 64: unsigned char b10:1;
+[; ;plib\rtcc.h: 65: unsigned char b11:1;
+[; ;plib\rtcc.h: 66: unsigned char b12:1;
+[; ;plib\rtcc.h: 67: unsigned char b13:1;
+[; ;plib\rtcc.h: 68: unsigned char b14:1;
+[; ;plib\rtcc.h: 69: unsigned char b15:1;
+[; ;plib\rtcc.h: 70: } bits;
+[; ;plib\rtcc.h: 71: } WORD_VAL, WORD_BITS;
+[; ;plib\rtcc.h: 75: typedef enum
+[; ;plib\rtcc.h: 76: {
+[; ;plib\rtcc.h: 77: RTCCFG_MASK_RTCEN = 0x80,
+[; ;plib\rtcc.h: 78: RTCCFG_MASK_FRZ = 0x40,
+[; ;plib\rtcc.h: 79: RTCCFG_MASK_RTCWREN = 0x20,
+[; ;plib\rtcc.h: 80: RTCCFG_MASK_RTCSYNC = 0x10,
+[; ;plib\rtcc.h: 81: RTCCFG_MASK_HALFSEC = 0x08,
+[; ;plib\rtcc.h: 82: RTCCFG_MASK_RTCOE = 0x04,
+[; ;plib\rtcc.h: 83: RTCCFG_MASK_RTCPTR = 0x03
+[; ;plib\rtcc.h: 84: }RTCCFG_MASK;
+[; ;plib\rtcc.h: 89: typedef enum
+[; ;plib\rtcc.h: 90: {
+[; ;plib\rtcc.h: 91: ALRMCFG_MASK_ALRMEN = 0x80,
+[; ;plib\rtcc.h: 92: ALRMCFG_MASK_CHIME = 0x40,
+[; ;plib\rtcc.h: 93: ALRMCFG_MASK_AMASK = 0x3c,
+[; ;plib\rtcc.h: 94: ALRMCFG_MASK_ALRMPTR = 0x03
+[; ;plib\rtcc.h: 95: }ALRMCFG_MASK;
+[; ;plib\rtcc.h: 100: typedef enum
+[; ;plib\rtcc.h: 101: {
+[; ;plib\rtcc.h: 102: RTCCPTR_MASK_SECMIN = 0x00,
+[; ;plib\rtcc.h: 103: RTCCPTR_MASK_HRSWEEK = 0x01,
+[; ;plib\rtcc.h: 104: RTCCPTR_MASK_DAYMON = 0x02,
+[; ;plib\rtcc.h: 105: RTCCPTR_MASK_YEAR = 0x03
+[; ;plib\rtcc.h: 106: }RTCCPTR_MASK;
+[; ;plib\rtcc.h: 110: typedef union
+[; ;plib\rtcc.h: 111: {
+[; ;plib\rtcc.h: 112: struct
+[; ;plib\rtcc.h: 113: {
+[; ;plib\rtcc.h: 114: unsigned char rsvd;
+[; ;plib\rtcc.h: 115: unsigned char sec;
+[; ;plib\rtcc.h: 116: unsigned char min;
+[; ;plib\rtcc.h: 117: unsigned char hour;
+[; ;plib\rtcc.h: 118: }f;
+[; ;plib\rtcc.h: 119: unsigned char b[4];
+[; ;plib\rtcc.h: 120: unsigned int w[2];
+[; ;plib\rtcc.h: 121: unsigned long l;
+[; ;plib\rtcc.h: 122: }rtccTime;
+[; ;plib\rtcc.h: 125: typedef union
+[; ;plib\rtcc.h: 126: {
+[; ;plib\rtcc.h: 127: struct
+[; ;plib\rtcc.h: 128: {
+[; ;plib\rtcc.h: 129: unsigned char wday;
+[; ;plib\rtcc.h: 130: unsigned char mday;
+[; ;plib\rtcc.h: 131: unsigned char mon;
+[; ;plib\rtcc.h: 132: unsigned char year;
+[; ;plib\rtcc.h: 133: }f;
+[; ;plib\rtcc.h: 134: unsigned char b[4];
+[; ;plib\rtcc.h: 135: unsigned int w[2];
+[; ;plib\rtcc.h: 136: unsigned long l;
+[; ;plib\rtcc.h: 137: }rtccDate;
+[; ;plib\rtcc.h: 141: typedef union
+[; ;plib\rtcc.h: 142: {
+[; ;plib\rtcc.h: 143: struct
+[; ;plib\rtcc.h: 144: {
+[; ;plib\rtcc.h: 145: unsigned char year;
+[; ;plib\rtcc.h: 146: unsigned char rsvd;
+[; ;plib\rtcc.h: 147: unsigned char mday;
+[; ;plib\rtcc.h: 148: unsigned char mon;
+[; ;plib\rtcc.h: 149: unsigned char hour;
+[; ;plib\rtcc.h: 150: unsigned char wday;
+[; ;plib\rtcc.h: 151: unsigned char sec;
+[; ;plib\rtcc.h: 152: unsigned char min;
+[; ;plib\rtcc.h: 153: }f;
+[; ;plib\rtcc.h: 154: unsigned char b[8];
+[; ;plib\rtcc.h: 155: unsigned int w[4];
+[; ;plib\rtcc.h: 156: unsigned long l[2];
+[; ;plib\rtcc.h: 157: }rtccTimeDate;
+[; ;plib\rtcc.h: 162: typedef enum
+[; ;plib\rtcc.h: 163: {
+[; ;plib\rtcc.h: 164: RTCC_RPT_HALF_SEC,
+[; ;plib\rtcc.h: 165: RTCC_RPT_SEC,
+[; ;plib\rtcc.h: 166: RTCC_RPT_TEN_SEC,
+[; ;plib\rtcc.h: 167: RTCC_RPT_MIN,
+[; ;plib\rtcc.h: 168: RTCC_RPT_TEN_MIN,
+[; ;plib\rtcc.h: 169: RTCC_RPT_HOUR,
+[; ;plib\rtcc.h: 170: RTCC_RPT_DAY,
+[; ;plib\rtcc.h: 171: RTCC_RPT_WEEK,
+[; ;plib\rtcc.h: 172: RTCC_RPT_MON,
+[; ;plib\rtcc.h: 173: RTCC_RPT_YEAR
+[; ;plib\rtcc.h: 174: }rtccRepeat;
+[; ;plib\rtcc.h: 646: extern void RtccInitClock(void) ;
+[; ;plib\rtcc.h: 648: extern void RtccReadAlrmDate(rtccDate* pDt) ;
+[; ;plib\rtcc.h: 650: extern void RtccReadAlrmTime(rtccTime* pTm);
+[; ;plib\rtcc.h: 652: extern void RtccReadAlrmTimeDate(rtccTimeDate* pTD) ;
+[; ;plib\rtcc.h: 654: extern void RtccReadDate(rtccDate* pDt) ;
+[; ;plib\rtcc.h: 656: extern void RtccReadTime(rtccTime* pTm) ;
+[; ;plib\rtcc.h: 658: extern void RtccReadTimeDate(rtccTimeDate* pTD) ;
+[; ;plib\rtcc.h: 660: extern void RtccSetAlarmRpt(rtccRepeat rpt, BOOL dsblAlrm) ;
+[; ;plib\rtcc.h: 662: extern void RtccSetAlarmRptCount(unsigned char rptCnt, BOOL dsblAlrm) ;
+[; ;plib\rtcc.h: 664: extern void RtccSetCalibration(int drift) ;
+[; ;plib\rtcc.h: 666: extern void RtccSetChimeEnable(BOOL enable, BOOL dsblAlrm) ;
+[; ;plib\rtcc.h: 668: extern BOOL RtccWriteAlrmDate(const rtccDate* pDt) ;
+[; ;plib\rtcc.h: 670: extern BOOL RtccWriteAlrmTime(const rtccTime* pTm) ;
+[; ;plib\rtcc.h: 672: extern BOOL RtccWriteAlrmTimeDate(const rtccTimeDate* pTD) ;
+[; ;plib\rtcc.h: 674: extern BOOL RtccWriteDate(const rtccDate* pDt , BOOL di);
+[; ;plib\rtcc.h: 676: extern BOOL RtccWriteTime(const rtccTime* pTm , BOOL di) ;
+[; ;plib\rtcc.h: 678: extern BOOL RtccWriteTimeDate(const rtccTimeDate* pTD , BOOL di) ;
+[; ;plib\rtcc.h: 680: extern void RtccWrOn(void);
+[; ;plib\rtcc.h: 687: void Open_RTCC(void);
+[; ;plib\rtcc.h: 688: void Close_RTCC(void);
+[; ;plib\rtcc.h: 689: unsigned char update_RTCC(void);
+[; ;plib\sw_i2c.h: 97: void SWStopI2C ( void );
+[; ;plib\sw_i2c.h: 98: void SWStartI2C ( void );
+[; ;plib\sw_i2c.h: 99: void SWRestartI2C ( void );
+[; ;plib\sw_i2c.h: 100: void SWStopI2C ( void );
+[; ;plib\sw_i2c.h: 102: signed char SWAckI2C( void );
+[; ;plib\sw_i2c.h: 103: signed char Clock_test( void );
+[; ;plib\sw_i2c.h: 104: signed int SWReadI2C( void );
+[; ;plib\sw_i2c.h: 105: signed char SWWriteI2C(  unsigned char data_out );
+[; ;plib\sw_i2c.h: 106: signed char SWGetsI2C(  unsigned char *rdptr,  unsigned char length );
+[; ;plib\sw_i2c.h: 107: signed char SWPutsI2C(  unsigned char *wrptr );
+[; ;plib\sw_spi.h: 84: void OpenSWSPI(void);
+[; ;plib\sw_spi.h: 87: char WriteSWSPI( char output);
+[; ;plib\sw_spi.h: 90: void SetCSSWSPI(void);
+[; ;plib\sw_spi.h: 93: void ClearCSSWSPI(void);
+[; ;plib\sw_uart.h: 47: void OpenUART(void);
+[; ;plib\sw_uart.h: 49: unsigned char ReadUART(void);
+[; ;plib\sw_uart.h: 51: void WriteUART( unsigned char);
+[; ;plib\sw_uart.h: 53: void getsUART( char *, unsigned char);
+[; ;plib\sw_uart.h: 55: void putsUART( char *);
+[; ;plib\sw_uart.h: 79: extern void DelayRXBitUART (void);
+[; ;plib\sw_uart.h: 80: extern void DelayRXHalfBitUART(void);
+[; ;plib\sw_uart.h: 81: extern void DelayTXBitUART (void);
+[; ;plib\timers.h: 36: union Timers
+[; ;plib\timers.h: 37: {
+[; ;plib\timers.h: 38: unsigned int lt;
+[; ;plib\timers.h: 39: char bt[2];
+[; ;plib\timers.h: 40: };
+[; ;plib\timers.h: 118: void OpenTimer0 ( unsigned char config);
+[; ;plib\timers.h: 119: void CloseTimer0 (void);
+[; ;plib\timers.h: 120: unsigned int ReadTimer0 (void);
+[; ;plib\timers.h: 121: void WriteTimer0 ( unsigned int timer0);
+[; ;plib\timers.h: 185: void OpenTimer1 ( unsigned char config, unsigned char config1);
+[; ;plib\timers.h: 186: void CloseTimer1 (void);
+[; ;plib\timers.h: 187: unsigned int ReadTimer1 (void);
+[; ;plib\timers.h: 188: void WriteTimer1 ( unsigned int timer1);
+[; ;plib\timers.h: 325: void OpenTimer2 ( unsigned char config);
+[; ;plib\timers.h: 326: void CloseTimer2 (void);
+[; ;plib\timers.h: 452: void OpenTimer3 ( unsigned char config, unsigned char config1);
+[; ;plib\timers.h: 453: void CloseTimer3 (void);
+[; ;plib\timers.h: 454: unsigned int ReadTimer3 (void);
+[; ;plib\timers.h: 455: void WriteTimer3 ( unsigned int timer3);
+[; ;plib\timers.h: 541: void OpenTimer4 ( unsigned char config);
+[; ;plib\timers.h: 542: void CloseTimer4 (void);
+[; ;plib\timers.h: 1179: void SetTmrCCPSrc( unsigned char );
+[; ;plib\usart.h: 200: union USART1
+[; ;plib\usart.h: 201: {
+[; ;plib\usart.h: 202: unsigned char val;
+[; ;plib\usart.h: 203: struct
+[; ;plib\usart.h: 204: {
+[; ;plib\usart.h: 205: unsigned RX_NINE:1;
+[; ;plib\usart.h: 206: unsigned TX_NINE:1;
+[; ;plib\usart.h: 207: unsigned FRAME_ERROR:1;
+[; ;plib\usart.h: 208: unsigned OVERRUN_ERROR:1;
+[; ;plib\usart.h: 209: unsigned fill:4;
+[; ;plib\usart.h: 210: };
+[; ;plib\usart.h: 211: };
+[; ;plib\usart.h: 212: extern union USART1 USART1_Status;
+[; ;plib\usart.h: 214: void Open1USART ( unsigned char config, unsigned int spbrg);
+[; ;plib\usart.h: 244: char Read1USART (void);
+[; ;plib\usart.h: 245: void Write1USART ( char data);
+[; ;plib\usart.h: 246: void gets1USART ( char *buffer, unsigned char len);
+[; ;plib\usart.h: 247: void puts1USART ( char *data);
+[; ;plib\usart.h: 248: void putrs1USART ( const  char *data);
+[; ;plib\usart.h: 305: union USART2
+[; ;plib\usart.h: 306: {
+[; ;plib\usart.h: 307: unsigned char val;
+[; ;plib\usart.h: 308: struct
+[; ;plib\usart.h: 309: {
+[; ;plib\usart.h: 310: unsigned RX_NINE:1;
+[; ;plib\usart.h: 311: unsigned TX_NINE:1;
+[; ;plib\usart.h: 312: unsigned FRAME_ERROR:1;
+[; ;plib\usart.h: 313: unsigned OVERRUN_ERROR:1;
+[; ;plib\usart.h: 314: unsigned fill:4;
+[; ;plib\usart.h: 315: };
+[; ;plib\usart.h: 316: };
+[; ;plib\usart.h: 317: extern union USART2 USART2_Status;
+[; ;plib\usart.h: 318: void Open2USART ( unsigned char config, unsigned int spbrg);
+[; ;plib\usart.h: 333: char Read2USART (void);
+[; ;plib\usart.h: 334: void Write2USART ( char data);
+[; ;plib\usart.h: 335: void gets2USART ( char *buffer, unsigned char len);
+[; ;plib\usart.h: 336: void puts2USART ( char *data);
+[; ;plib\usart.h: 337: void putrs2USART ( const  char *data);
+[; ;plib\usart.h: 660: void baud1USART ( unsigned char baudconfig);
+[; ;plib\usart.h: 665: void baud2USART ( unsigned char baudconfig);
+[; ;plib\xlcd.h: 87: void OpenXLCD( unsigned char);
+[; ;plib\xlcd.h: 92: void SetCGRamAddr( unsigned char);
+[; ;plib\xlcd.h: 97: void SetDDRamAddr( unsigned char);
+[; ;plib\xlcd.h: 102: unsigned char BusyXLCD(void);
+[; ;plib\xlcd.h: 107: unsigned char ReadAddrXLCD(void);
+[; ;plib\xlcd.h: 112: char ReadDataXLCD(void);
+[; ;plib\xlcd.h: 117: void WriteCmdXLCD( unsigned char);
+[; ;plib\xlcd.h: 122: void WriteDataXLCD( char);
+[; ;plib\xlcd.h: 132: void putsXLCD( char *);
+[; ;plib\xlcd.h: 137: void putrsXLCD(const char *);
+[; ;plib\xlcd.h: 140: extern void DelayFor18TCY(void);
+[; ;plib\xlcd.h: 141: extern void DelayPORXLCD(void);
+[; ;plib\xlcd.h: 142: extern void DelayXLCD(void);
+[; ;plib\delays.h: 13: void Delay1TCYx(unsigned char);
+[; ;plib\delays.h: 19: void Delay10TCYx(unsigned char);
+[; ;plib\delays.h: 25: void Delay100TCYx(unsigned char);
+[; ;plib\delays.h: 31: void Delay1KTCYx(unsigned char);
+[; ;plib\delays.h: 37: void Delay10KTCYx(unsigned char);
 [; ;pic18.h: 18: __attribute__((__unsupported__("The flash_write routine is no longer supported. Please use the peripheral library functions: WriteBytesFlash, WriteBlockFlash or WriteWordFlash"))) void flash_write(const unsigned char *, unsigned int, __far unsigned c
 [; ;pic18.h: 42: extern void __nop(void);
 [; ;pic18.h: 161: extern __nonreentrant void _delay(unsigned long);
@@ -7859,7 +7859,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;headers\unmc_lcd_216.h: 107: void lcd_setcursor_vb(int8 visible, int8 blink);
 [; ;headers\unmc_lcd_216.h: 108: void lcd_puts(char *ptr);
 [; ;headers\unmc_lcd_216.h: 109: void lcd_putrs(const char *ptr);
-"16 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h
+"16 Unimic/unmc_01/headers\unmc_rtcc_01.h
 [v _RtccTimeDate `S1027 ~T0 @X0 1 e ]
 [v _RtccAlrmTimeDate `S1027 ~T0 @X0 1 e ]
 [v _Rtcc_read_TimeDate `S1027 ~T0 @X0 1 e ]
@@ -7954,27 +7954,27 @@ Version 3.2 HI-TECH Software Intermediate Code
 "39
 [v _mes `i ~T0 @X0 1 e ]
 [i _mes
--> 1 `i
+-> 9 `i
 ]
-[; ;headers\unmc_rtcc_01.h: 39: int mes=01;
+[; ;headers\unmc_rtcc_01.h: 39: int mes=9;
 "40
 [v _diasem `i ~T0 @X0 1 e ]
 [i _diasem
--> 0 `i
+-> 2 `i
 ]
-[; ;headers\unmc_rtcc_01.h: 40: int diasem=0;
+[; ;headers\unmc_rtcc_01.h: 40: int diasem=2;
 "41
 [v _dia `i ~T0 @X0 1 e ]
 [i _dia
--> 1 `i
+-> 6 `i
 ]
-[; ;headers\unmc_rtcc_01.h: 41: int dia=01;
+[; ;headers\unmc_rtcc_01.h: 41: int dia=6;
 "42
 [v _hora `i ~T0 @X0 1 e ]
 [i _hora
--> 0 `i
+-> 18 `i
 ]
-[; ;headers\unmc_rtcc_01.h: 42: int hora=00;
+[; ;headers\unmc_rtcc_01.h: 42: int hora=18;
 "43
 [v _minuto `i ~T0 @X0 1 e ]
 [i _minuto
@@ -7986,7 +7986,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _segundo
 -> 0 `i
 ]
-[; ;headers\unmc_rtcc_01.h: 44: int segundo=00;
+[; ;headers\unmc_rtcc_01.h: 44: int segundo=0;
 "50
 [v _RtccTime `S1023 ~T0 @X0 1 e ]
 [; ;headers\unmc_rtcc_01.h: 50: rtccTime RtccTime;
@@ -7997,8 +7997,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _RtccDate `S1025 ~T0 @X0 1 e ]
 [; ;headers\unmc_rtcc_01.h: 52: rtccDate RtccDate;
 "54
-[v _buffer2 `uc ~T0 @X0 -> 20 `i e ]
-[; ;headers\unmc_rtcc_01.h: 54: unsigned char buffer2[20];
+[v _buffer1 `uc ~T0 @X0 -> 20 `i e ]
+[; ;headers\unmc_rtcc_01.h: 54: unsigned char buffer1[20];
 "56
 [v _DelayFor18TCY `(v ~T0 @X0 1 ef ]
 "57
@@ -8116,83 +8116,85 @@ Version 3.2 HI-TECH Software Intermediate Code
 "102
 [e :UE 1037 ]
 }
-"112
+"111
 [v _Read_RTC `(v ~T0 @X0 1 ef ]
+"113
 {
-[; ;headers\unmc_rtcc_01.h: 112: void Read_RTC(void){
+[; ;headers\unmc_rtcc_01.h: 111: void Read_RTC(void)
+[; ;headers\unmc_rtcc_01.h: 113: {
 [e :U _Read_RTC ]
 [f ]
-[; ;headers\unmc_rtcc_01.h: 116: RtccReadTime(&RtccTime);
-"116
+[; ;headers\unmc_rtcc_01.h: 114: RtccReadTime(&RtccTime);
+"114
 [e ( _RtccReadTime (1 &U _RtccTime ]
-[; ;headers\unmc_rtcc_01.h: 117: segundo_u=(RtccTime.f.sec & 0x0F);
-"117
+[; ;headers\unmc_rtcc_01.h: 115: segundo_u=(RtccTime.f.sec & 0x0F);
+"115
 [e = _segundo_u -> & -> . . _RtccTime 0 1 `i -> 15 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 118: segundo_d=((RtccTime.f.sec & 0xF0)>>4);
-"118
+[; ;headers\unmc_rtcc_01.h: 116: segundo_d=((RtccTime.f.sec & 0xF0)>>4);
+"116
 [e = _segundo_d -> >> & -> . . _RtccTime 0 1 `i -> 240 `i -> 4 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 119: minuto_u=(RtccTime.f.min & 0x0F);
-"119
+[; ;headers\unmc_rtcc_01.h: 117: minuto_u=(RtccTime.f.min & 0x0F);
+"117
 [e = _minuto_u -> & -> . . _RtccTime 0 2 `i -> 15 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 120: minuto_d=((RtccTime.f.min & 0xF0)>>4);
-"120
+[; ;headers\unmc_rtcc_01.h: 118: minuto_d=((RtccTime.f.min & 0xF0)>>4);
+"118
 [e = _minuto_d -> >> & -> . . _RtccTime 0 2 `i -> 240 `i -> 4 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 121: hora_u=(RtccTime.f.hour & 0x0F);
-"121
+[; ;headers\unmc_rtcc_01.h: 119: hora_u=(RtccTime.f.hour & 0x0F);
+"119
 [e = _hora_u -> & -> . . _RtccTime 0 3 `i -> 15 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 122: hora_d=((RtccTime.f.hour & 0xF0)>>4);
-"122
+[; ;headers\unmc_rtcc_01.h: 120: hora_d=((RtccTime.f.hour & 0xF0)>>4);
+"120
 [e = _hora_d -> >> & -> . . _RtccTime 0 3 `i -> 240 `i -> 4 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 123: RtccReadDate(&RtccDate);
-"123
+[; ;headers\unmc_rtcc_01.h: 121: RtccReadDate(&RtccDate);
+"121
 [e ( _RtccReadDate (1 &U _RtccDate ]
-[; ;headers\unmc_rtcc_01.h: 124: fecha_u=(RtccDate.f.mday & 0x0F);
-"124
+[; ;headers\unmc_rtcc_01.h: 122: fecha_u=(RtccDate.f.mday & 0x0F);
+"122
 [e = _fecha_u -> & -> . . _RtccDate 0 1 `i -> 15 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 125: fecha_d=((RtccDate.f.mday & 0xF0)>>4);
-"125
+[; ;headers\unmc_rtcc_01.h: 123: fecha_d=((RtccDate.f.mday & 0xF0)>>4);
+"123
 [e = _fecha_d -> >> & -> . . _RtccDate 0 1 `i -> 240 `i -> 4 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 126: mes_u=(RtccDate.f.mon & 0x0F);
-"126
+[; ;headers\unmc_rtcc_01.h: 124: mes_u=(RtccDate.f.mon & 0x0F);
+"124
 [e = _mes_u -> & -> . . _RtccDate 0 2 `i -> 15 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 127: mes_d=((RtccDate.f.mon & 0xF0)>>4);
-"127
+[; ;headers\unmc_rtcc_01.h: 125: mes_d=((RtccDate.f.mon & 0xF0)>>4);
+"125
 [e = _mes_d -> >> & -> . . _RtccDate 0 2 `i -> 240 `i -> 4 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 128: dia_semana=RtccDate.f.wday;
-"128
+[; ;headers\unmc_rtcc_01.h: 126: dia_semana=RtccDate.f.wday;
+"126
 [e = _dia_semana . . _RtccDate 0 0 ]
-[; ;headers\unmc_rtcc_01.h: 129: anio_u=(RtccDate.f.year & 0x0F);
-"129
+[; ;headers\unmc_rtcc_01.h: 127: anio_u=(RtccDate.f.year & 0x0F);
+"127
 [e = _anio_u -> & -> . . _RtccDate 0 3 `i -> 15 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 130: anio_d=((RtccDate.f.year & 0xF0)>>4);
-"130
+[; ;headers\unmc_rtcc_01.h: 128: anio_d=((RtccDate.f.year & 0xF0)>>4);
+"128
 [e = _anio_d -> >> & -> . . _RtccDate 0 3 `i -> 240 `i -> 4 `i `uc ]
-[; ;headers\unmc_rtcc_01.h: 132: segundo=segundo_d*10+segundo_u;
-"132
+[; ;headers\unmc_rtcc_01.h: 130: segundo=segundo_d*10+segundo_u;
+"130
 [e = _segundo + * -> _segundo_d `i -> 10 `i -> _segundo_u `i ]
-[; ;headers\unmc_rtcc_01.h: 133: minuto=minuto_d*10+minuto_u;
-"133
+[; ;headers\unmc_rtcc_01.h: 131: minuto=minuto_d*10+minuto_u;
+"131
 [e = _minuto + * -> _minuto_d `i -> 10 `i -> _minuto_u `i ]
-[; ;headers\unmc_rtcc_01.h: 134: hora=hora_d*10+hora_u;
-"134
+[; ;headers\unmc_rtcc_01.h: 132: hora=hora_d*10+hora_u;
+"132
 [e = _hora + * -> _hora_d `i -> 10 `i -> _hora_u `i ]
-[; ;headers\unmc_rtcc_01.h: 135: dia=fecha_d*10+fecha_u;
-"135
+[; ;headers\unmc_rtcc_01.h: 133: dia=fecha_d*10+fecha_u;
+"133
 [e = _dia + * -> _fecha_d `i -> 10 `i -> _fecha_u `i ]
-[; ;headers\unmc_rtcc_01.h: 136: diasem=dia_semana;
-"136
+[; ;headers\unmc_rtcc_01.h: 134: diasem=dia_semana;
+"134
 [e = _diasem -> _dia_semana `i ]
-[; ;headers\unmc_rtcc_01.h: 137: mes=mes_d*10+mes_u;
-"137
+[; ;headers\unmc_rtcc_01.h: 135: mes=mes_d*10+mes_u;
+"135
 [e = _mes + * -> _mes_d `i -> 10 `i -> _mes_u `i ]
-[; ;headers\unmc_rtcc_01.h: 138: anio=anio_d*10+anio_u;
-"138
+[; ;headers\unmc_rtcc_01.h: 136: anio=anio_d*10+anio_u;
+"136
 [e = _anio + * -> _anio_d `i -> 10 `i -> _anio_u `i ]
-[; ;headers\unmc_rtcc_01.h: 139: }
-"139
+[; ;headers\unmc_rtcc_01.h: 137: }
+"137
 [e :UE 1038 ]
 }
-"15 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_config_01.h
+"15 Unimic/unmc_01/headers\unmc_config_01.h
 [p x CPUDIV=OSC1 ]
 "16
 [p x CP0=OFF ]
@@ -8234,7 +8236,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p x WPCFG=OFF ]
 "36
 [p x WPDIS=OFF ]
-"14 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_inout_02.h
+"14 Unimic/unmc_01/headers\unmc_inout_02.h
 [v _key `uc ~T0 @X0 1 e ]
 [; ;headers\unmc_inout_02.h: 14: char key;
 "30 main.c
@@ -8247,902 +8249,974 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _selection `i ~T0 @X0 1 e ]
 [; ;main.c: 32: int selection;
 "33
+[v _menu `i ~T0 @X0 1 e ]
+[; ;main.c: 33: int menu;
+"34
 [v _submenu `i ~T0 @X0 1 e ]
-[; ;main.c: 33: int submenu;
-"35
-[v _Setup `(v ~T0 @X0 1 ef ]
+[; ;main.c: 34: int submenu;
+"36
+[v _setup `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 35: void Setup(void){
-[e :U _Setup ]
+[; ;main.c: 36: void setup(void){
+[e :U _setup ]
 [f ]
-[; ;main.c: 37: OSCTUNEbits.INTSRC=1;
-"37
-[e = . . _OSCTUNEbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 38: OSCTUNEbits.PLLEN=0;
+[; ;main.c: 38: OSCTUNEbits.INTSRC=1;
 "38
-[e = . . _OSCTUNEbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 39: OSCCONbits.IRCF0=1;
+[e = . . _OSCTUNEbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 39: OSCTUNEbits.PLLEN=0;
 "39
-[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
-[; ;main.c: 40: OSCCONbits.IRCF1=1;
+[e = . . _OSCTUNEbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 40: OSCCONbits.IRCF0=1;
 "40
-[e = . . _OSCCONbits 1 4 -> -> 1 `i `uc ]
-[; ;main.c: 41: OSCCONbits.IRCF2=1;
+[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
+[; ;main.c: 41: OSCCONbits.IRCF1=1;
 "41
-[e = . . _OSCCONbits 1 5 -> -> 1 `i `uc ]
-[; ;main.c: 42: OSCCONbits.SCS0=0;
+[e = . . _OSCCONbits 1 4 -> -> 1 `i `uc ]
+[; ;main.c: 42: OSCCONbits.IRCF2=1;
 "42
-[e = . . _OSCCONbits 1 0 -> -> 0 `i `uc ]
-[; ;main.c: 43: OSCCONbits.SCS1=0;
+[e = . . _OSCCONbits 1 5 -> -> 1 `i `uc ]
+[; ;main.c: 43: OSCCONbits.SCS0=0;
 "43
-[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
-[; ;main.c: 44: TRISA = 0b11110000;
+[e = . . _OSCCONbits 1 0 -> -> 0 `i `uc ]
+[; ;main.c: 44: OSCCONbits.SCS1=0;
 "44
-[e = _TRISA -> -> 240 `i `uc ]
-[; ;main.c: 45: TRISB = 0;
+[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
+[; ;main.c: 45: TRISA = 0b11110000;
 "45
-[e = _TRISB -> -> 0 `i `uc ]
-[; ;main.c: 46: TRISC = 0b00000111;
+[e = _TRISA -> -> 240 `i `uc ]
+[; ;main.c: 46: TRISB = 0;
 "46
+[e = _TRISB -> -> 0 `i `uc ]
+[; ;main.c: 47: TRISC = 0b00000111;
+"47
 [e = _TRISC -> -> 7 `i `uc ]
-[; ;main.c: 50: ANCON0=0b11111111;
-"50
+[; ;main.c: 51: ANCON0=0b11111111;
+"51
 [e = _ANCON0 -> -> 255 `i `uc ]
-[; ;main.c: 52: ANCON1=0b11111111;
-"52
-[e = _ANCON1 -> -> 255 `i `uc ]
-[; ;main.c: 53: ADCON0=0b00101101;
+[; ;main.c: 53: ANCON1=0b11111111;
 "53
-[e = _ADCON0 -> -> 45 `i `uc ]
-[; ;main.c: 54: ADCON1=0b00010000;
+[e = _ANCON1 -> -> 255 `i `uc ]
+[; ;main.c: 54: ADCON0=0b00101101;
 "54
-[e = _ADCON1 -> -> 16 `i `uc ]
-[; ;main.c: 55: RTCCFGbits.RTCEN=1;
+[e = _ADCON0 -> -> 45 `i `uc ]
+[; ;main.c: 55: ADCON1=0b00010000;
 "55
-[e = . . _RTCCFGbits 0 7 -> -> 1 `i `uc ]
-[; ;main.c: 56: RTCCFGbits.RTCWREN=1;
+[e = _ADCON1 -> -> 16 `i `uc ]
+[; ;main.c: 56: RTCCFGbits.RTCEN=1;
 "56
-[e = . . _RTCCFGbits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 57: T1CONbits.T1OSCEN=1;
+[e = . . _RTCCFGbits 0 7 -> -> 1 `i `uc ]
+[; ;main.c: 57: RTCCFGbits.RTCWREN=1;
 "57
-[e = . . _T1CONbits 0 3 -> -> 1 `i `uc ]
-[; ;main.c: 58: Write_RTC();
+[e = . . _RTCCFGbits 0 5 -> -> 1 `i `uc ]
+[; ;main.c: 58: T1CONbits.T1OSCEN=1;
 "58
-[e ( _Write_RTC ..  ]
-[; ;main.c: 59: lcd_init();
+[e = . . _T1CONbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 59: Write_RTC();
 "59
-[e ( _lcd_init ..  ]
-[; ;main.c: 60: lcd_comand(0b00001100);
+[e ( _Write_RTC ..  ]
+[; ;main.c: 60: lcd_init();
 "60
-[e ( _lcd_comand (1 -> -> 12 `i `uc ]
-[; ;main.c: 61: LATBbits.LATB1 = 1;;
+[e ( _lcd_init ..  ]
+[; ;main.c: 61: lcd_comand(0b00001100);
 "61
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-[; ;main.c: 62: LATBbits.LATB0 = 1;;
+[e ( _lcd_comand (1 -> -> 12 `i `uc ]
+[; ;main.c: 62: LATBbits.LATB1 = 1;;
 "62
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+[; ;main.c: 63: LATBbits.LATB0 = 1;;
+"63
 [e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 65: select = 1;
-"65
-[e = _select -> 1 `i ]
-[; ;main.c: 66: selection = 1;
+[; ;main.c: 66: select = 1;
 "66
-[e = _selection -> 1 `i ]
-[; ;main.c: 67: submenu = 0;
+[e = _select -> 1 `i ]
+[; ;main.c: 67: selection = 1;
 "67
-[e = _submenu -> 0 `i ]
-[; ;main.c: 68: select_op = 1;
+[e = _selection -> 1 `i ]
+[; ;main.c: 68: menu = 0;
 "68
-[e = _select_op -> 1 `i ]
-[; ;main.c: 70: }
+[e = _menu -> 0 `i ]
+[; ;main.c: 69: submenu = 0;
+"69
+[e = _submenu -> 0 `i ]
+[; ;main.c: 70: select_op = 1;
 "70
+[e = _select_op -> 1 `i ]
+[; ;main.c: 72: }
+"72
 [e :UE 1039 ]
 }
-"72
-[v _Menu_Home `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 72: void Menu_Home(void){
-[e :U _Menu_Home ]
-[f ]
-[; ;main.c: 74: lcd_init();
 "74
-[e ( _lcd_init ..  ]
-[; ;main.c: 75: lcd_gotoxy(2,1);
+[v _home `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 74: void home(void){
+[e :U _home ]
+[f ]
+[; ;main.c: 75: lcd_comand(0b00000001);
 "75
-[e ( _lcd_gotoxy (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 76: lcd_putrs("Menu1");
+[e ( _lcd_comand (1 -> -> 1 `i `uc ]
+[; ;main.c: 76: lcd_comand(0b00001100);
 "76
-[e ( _lcd_putrs (1 :s 1C ]
-[; ;main.c: 77: lcd_gotoxy(2,2);
+[e ( _lcd_comand (1 -> -> 12 `i `uc ]
+[; ;main.c: 77: lcd_gotoxy(1,1);
 "77
-[e ( _lcd_gotoxy (2 , -> -> 2 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 78: lcd_putrs("Menu2");
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 78: lcd_putrs(" UNIMIC");
 "78
-[e ( _lcd_putrs (1 :s 2C ]
-[; ;main.c: 79: lcd_gotoxy(10,1);
+[e ( _lcd_putrs (1 :s 1C ]
+[; ;main.c: 79: sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
 "79
-[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 80: lcd_putrs("Menu3");
+[e ( _sprintf (1 , , , (. , &U _buffer1 :s 2C _dia _mes _anio ]
+[; ;main.c: 80: lcd_gotoxy(1,2);
 "80
-[e ( _lcd_putrs (1 :s 3C ]
-[; ;main.c: 81: lcd_gotoxy(10,2);
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 81: lcd_putrs(buffer1);
 "81
-[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 82: lcd_putrs("Menu4");
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[; ;main.c: 82: sprintf(buffer1,"%02u:%02u",hora,minuto);
 "82
-[e ( _lcd_putrs (1 :s 4C ]
-[; ;main.c: 83: }
+[e ( _sprintf (1 , , (. , &U _buffer1 :s 3C _hora _minuto ]
+[; ;main.c: 83: lcd_gotoxy(12,2);
 "83
+[e ( _lcd_gotoxy (2 , -> -> 12 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 84: lcd_putrs(buffer1);
+"84
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[; ;main.c: 85: }
+"85
 [e :UE 1040 ]
 }
-"85
-[v _Menu_Iterator `(v ~T0 @X0 1 ef ]
+"87
+[v _menu_home `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 85: void Menu_Iterator(void){
-[e :U _Menu_Iterator ]
+[; ;main.c: 87: void menu_home(void){
+[e :U _menu_home ]
 [f ]
-[; ;main.c: 87: switch(selection){
-"87
-[e $U 1043  ]
-{
-[; ;main.c: 88: case 1:
-"88
-[e :U 1044 ]
-[; ;main.c: 89: lcd_gotoxy(1,1);
+[; ;main.c: 89: lcd_init();
 "89
-[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 90: lcd_putrs(">");
+[e ( _lcd_init ..  ]
+[; ;main.c: 90: lcd_gotoxy(2,1);
 "90
-[e ( _lcd_putrs (1 :s 5C ]
-[; ;main.c: 91: selection = 2;
+[e ( _lcd_gotoxy (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 91: lcd_putrs("Menu1");
 "91
-[e = _selection -> 2 `i ]
-[; ;main.c: 92: select = 1;
+[e ( _lcd_putrs (1 :s 4C ]
+[; ;main.c: 92: lcd_gotoxy(2,2);
 "92
-[e = _select -> 1 `i ]
-[; ;main.c: 93: lcd_gotoxy(9,2);
+[e ( _lcd_gotoxy (2 , -> -> 2 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 93: lcd_putrs("Menu2");
 "93
-[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 94: lcd_putrs(" ");
+[e ( _lcd_putrs (1 :s 5C ]
+[; ;main.c: 94: lcd_gotoxy(10,1);
 "94
-[e ( _lcd_putrs (1 :s 6C ]
-[; ;main.c: 95: break;
+[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 95: lcd_putrs("Menu3");
 "95
-[e $U 1042  ]
-[; ;main.c: 96: case 2:
+[e ( _lcd_putrs (1 :s 6C ]
+[; ;main.c: 96: lcd_gotoxy(10,2);
 "96
-[e :U 1045 ]
-[; ;main.c: 97: lcd_gotoxy(1,2);
+[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 97: lcd_putrs("Menu4");
 "97
-[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 98: lcd_putrs(">");
-"98
 [e ( _lcd_putrs (1 :s 7C ]
-[; ;main.c: 99: selection = 3;
-"99
-[e = _selection -> 3 `i ]
-[; ;main.c: 100: select = 2;
-"100
-[e = _select -> 2 `i ]
-[; ;main.c: 101: lcd_gotoxy(1,1);
-"101
-[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 102: lcd_putrs(" ");
-"102
-[e ( _lcd_putrs (1 :s 8C ]
-[; ;main.c: 103: break;
-"103
-[e $U 1042  ]
-[; ;main.c: 104: case 3:
-"104
-[e :U 1046 ]
-[; ;main.c: 105: lcd_gotoxy(9,1);
-"105
-[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 106: lcd_putrs(">");
-"106
-[e ( _lcd_putrs (1 :s 9C ]
-[; ;main.c: 107: selection = 4;
-"107
-[e = _selection -> 4 `i ]
-[; ;main.c: 108: select = 3;
-"108
-[e = _select -> 3 `i ]
-[; ;main.c: 109: lcd_gotoxy(1,2);
-"109
-[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 110: lcd_putrs(" ");
-"110
-[e ( _lcd_putrs (1 :s 10C ]
-[; ;main.c: 111: break;
-"111
-[e $U 1042  ]
-[; ;main.c: 112: case 4:
-"112
-[e :U 1047 ]
-[; ;main.c: 113: lcd_gotoxy(9,2);
-"113
-[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 114: lcd_putrs(">");
-"114
-[e ( _lcd_putrs (1 :s 11C ]
-[; ;main.c: 115: selection = 1;
-"115
-[e = _selection -> 1 `i ]
-[; ;main.c: 116: select = 4;
-"116
-[e = _select -> 4 `i ]
-[; ;main.c: 117: lcd_gotoxy(9,1);
-"117
-[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 118: lcd_putrs(" ");
-"118
-[e ( _lcd_putrs (1 :s 12C ]
-[; ;main.c: 119: break;
-"119
-[e $U 1042  ]
-"120
-}
-[; ;main.c: 120: }
-[e $U 1042  ]
-"87
-[e :U 1043 ]
-[e [\ _selection , $ -> 1 `i 1044
- , $ -> 2 `i 1045
- , $ -> 3 `i 1046
- , $ -> 4 `i 1047
- 1042 ]
-"120
-[e :U 1042 ]
-[; ;main.c: 122: }
-"122
+[; ;main.c: 98: }
+"98
 [e :UE 1041 ]
 }
-"124
-[v _Menu_Submenu_Iterator `(v ~T0 @X0 1 ef ]
+"100
+[v _menu_iterator `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 124: void Menu_Submenu_Iterator(void){
-[e :U _Menu_Submenu_Iterator ]
+[; ;main.c: 100: void menu_iterator(void){
+[e :U _menu_iterator ]
 [f ]
-[; ;main.c: 126: switch(select_op){
-"126
-[e $U 1050  ]
+[; ;main.c: 102: switch(selection){
+"102
+[e $U 1044  ]
 {
-[; ;main.c: 127: case 1:
-"127
-[e :U 1051 ]
-[; ;main.c: 128: lcd_gotoxy(9,1);
-"128
+[; ;main.c: 103: case 1:
+"103
+[e :U 1045 ]
+[; ;main.c: 104: lcd_gotoxy(1,1);
+"104
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 105: lcd_putrs(">");
+"105
+[e ( _lcd_putrs (1 :s 8C ]
+[; ;main.c: 106: selection = 2;
+"106
+[e = _selection -> 2 `i ]
+[; ;main.c: 107: select = 1;
+"107
+[e = _select -> 1 `i ]
+[; ;main.c: 108: lcd_gotoxy(9,2);
+"108
+[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 109: lcd_putrs(" ");
+"109
+[e ( _lcd_putrs (1 :s 9C ]
+[; ;main.c: 110: break;
+"110
+[e $U 1043  ]
+[; ;main.c: 111: case 2:
+"111
+[e :U 1046 ]
+[; ;main.c: 112: lcd_gotoxy(1,2);
+"112
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 113: lcd_putrs(">");
+"113
+[e ( _lcd_putrs (1 :s 10C ]
+[; ;main.c: 114: selection = 3;
+"114
+[e = _selection -> 3 `i ]
+[; ;main.c: 115: select = 2;
+"115
+[e = _select -> 2 `i ]
+[; ;main.c: 116: lcd_gotoxy(1,1);
+"116
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 117: lcd_putrs(" ");
+"117
+[e ( _lcd_putrs (1 :s 11C ]
+[; ;main.c: 118: break;
+"118
+[e $U 1043  ]
+[; ;main.c: 119: case 3:
+"119
+[e :U 1047 ]
+[; ;main.c: 120: lcd_gotoxy(9,1);
+"120
 [e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 121: lcd_putrs(">");
+"121
+[e ( _lcd_putrs (1 :s 12C ]
+[; ;main.c: 122: selection = 4;
+"122
+[e = _selection -> 4 `i ]
+[; ;main.c: 123: select = 3;
+"123
+[e = _select -> 3 `i ]
+[; ;main.c: 124: lcd_gotoxy(1,2);
+"124
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 125: lcd_putrs(" ");
+"125
+[e ( _lcd_putrs (1 :s 13C ]
+[; ;main.c: 126: break;
+"126
+[e $U 1043  ]
+[; ;main.c: 127: case 4:
+"127
+[e :U 1048 ]
+[; ;main.c: 128: lcd_gotoxy(9,2);
+"128
+[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 2 `i `uc ]
 [; ;main.c: 129: lcd_putrs(">");
 "129
-[e ( _lcd_putrs (1 :s 13C ]
-[; ;main.c: 130: select_op = 2;
-"130
-[e = _select_op -> 2 `i ]
-[; ;main.c: 131: lcd_gotoxy(9,2);
-"131
-[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 132: lcd_putrs(" ");
-"132
 [e ( _lcd_putrs (1 :s 14C ]
-[; ;main.c: 133: break;
-"133
-[e $U 1049  ]
-[; ;main.c: 134: case 2:
-"134
-[e :U 1052 ]
-[; ;main.c: 135: lcd_gotoxy(9,2);
-"135
-[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 136: lcd_putrs(">");
-"136
-[e ( _lcd_putrs (1 :s 15C ]
-[; ;main.c: 137: select_op = 1;
-"137
-[e = _select_op -> 1 `i ]
-[; ;main.c: 138: lcd_gotoxy(9,1);
-"138
+[; ;main.c: 130: selection = 1;
+"130
+[e = _selection -> 1 `i ]
+[; ;main.c: 131: select = 4;
+"131
+[e = _select -> 4 `i ]
+[; ;main.c: 132: lcd_gotoxy(9,1);
+"132
 [e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 139: lcd_putrs(" ");
+[; ;main.c: 133: lcd_putrs(" ");
+"133
+[e ( _lcd_putrs (1 :s 15C ]
+[; ;main.c: 134: break;
+"134
+[e $U 1043  ]
+"135
+}
+[; ;main.c: 135: }
+[e $U 1043  ]
+"102
+[e :U 1044 ]
+[e [\ _selection , $ -> 1 `i 1045
+ , $ -> 2 `i 1046
+ , $ -> 3 `i 1047
+ , $ -> 4 `i 1048
+ 1043 ]
+"135
+[e :U 1043 ]
+[; ;main.c: 137: }
+"137
+[e :UE 1042 ]
+}
 "139
-[e ( _lcd_putrs (1 :s 16C ]
-[; ;main.c: 140: break;
-"140
-[e $U 1049  ]
+[v _menu_submenu_iterator `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 139: void menu_submenu_iterator(void){
+[e :U _menu_submenu_iterator ]
+[f ]
+[; ;main.c: 141: switch(select_op){
 "141
-}
-[; ;main.c: 141: }
-[e $U 1049  ]
-"126
-[e :U 1050 ]
-[e [\ _select_op , $ -> 1 `i 1051
- , $ -> 2 `i 1052
- 1049 ]
-"141
-[e :U 1049 ]
-[; ;main.c: 143: }
+[e $U 1051  ]
+{
+[; ;main.c: 142: case 1:
+"142
+[e :U 1052 ]
+[; ;main.c: 143: lcd_gotoxy(9,1);
 "143
-[e :UE 1048 ]
-}
+[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 144: lcd_putrs(">");
+"144
+[e ( _lcd_putrs (1 :s 16C ]
+[; ;main.c: 145: select_op = 2;
 "145
-[v _Button_A `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 145: void Button_A(void){
-[e :U _Button_A ]
-[f ]
-[; ;main.c: 147: if (submenu == 0){
+[e = _select_op -> 2 `i ]
+[; ;main.c: 146: lcd_gotoxy(9,2);
+"146
+[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 147: lcd_putrs(" ");
 "147
-[e $ ! == _submenu -> 0 `i 1054  ]
-{
-[; ;main.c: 148: Menu_Iterator();
-"148
-[e ( _Menu_Iterator ..  ]
-"149
-}
-[e :U 1054 ]
-[; ;main.c: 149: }
-[; ;main.c: 151: if (submenu == 1){
-"151
-[e $ ! == _submenu -> 1 `i 1055  ]
-{
-[; ;main.c: 152: Menu_Submenu_Iterator();
-"152
-[e ( _Menu_Submenu_Iterator ..  ]
-"153
-}
-[e :U 1055 ]
-[; ;main.c: 153: }
-[; ;main.c: 155: }
-"155
-[e :UE 1053 ]
-}
-"157
-[v _Button_B `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 157: void Button_B(void){
-[e :U _Button_B ]
-[f ]
-[; ;main.c: 159: switch(select)
-"159
-[e $U 1058  ]
-[; ;main.c: 160: {
-"160
-{
-[; ;main.c: 161: case 1:
-"161
-[e :U 1059 ]
-[; ;main.c: 162: lcd_init();
-"162
-[e ( _lcd_init ..  ]
-[; ;main.c: 163: lcd_gotoxy(1,1);
-"163
-[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 164: lcd_putrs("Menu 1");
-"164
 [e ( _lcd_putrs (1 :s 17C ]
-[; ;main.c: 165: lcd_gotoxy(10,1);
-"165
-[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 166: lcd_putrs("Option1");
-"166
+[; ;main.c: 148: break;
+"148
+[e $U 1050  ]
+[; ;main.c: 149: case 2:
+"149
+[e :U 1053 ]
+[; ;main.c: 150: lcd_gotoxy(9,2);
+"150
+[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 151: lcd_putrs(">");
+"151
 [e ( _lcd_putrs (1 :s 18C ]
-[; ;main.c: 167: lcd_gotoxy(10,2);
-"167
-[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 168: lcd_putrs("Option2");
-"168
+[; ;main.c: 152: select_op = 1;
+"152
+[e = _select_op -> 1 `i ]
+[; ;main.c: 153: lcd_gotoxy(9,1);
+"153
+[e ( _lcd_gotoxy (2 , -> -> 9 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 154: lcd_putrs(" ");
+"154
 [e ( _lcd_putrs (1 :s 19C ]
-[; ;main.c: 169: submenu = 1;
+[; ;main.c: 155: break;
+"155
+[e $U 1050  ]
+"156
+}
+[; ;main.c: 156: }
+[e $U 1050  ]
+"141
+[e :U 1051 ]
+[e [\ _select_op , $ -> 1 `i 1052
+ , $ -> 2 `i 1053
+ 1050 ]
+"156
+[e :U 1050 ]
+[; ;main.c: 158: }
+"158
+[e :UE 1049 ]
+}
+"160
+[v _button_A `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 160: void button_A(void){
+[e :U _button_A ]
+[f ]
+[; ;main.c: 162: if(menu == 0){
+"162
+[e $ ! == _menu -> 0 `i 1055  ]
+{
+[; ;main.c: 163: menu_home();
+"163
+[e ( _menu_home ..  ]
+[; ;main.c: 164: menu = 1;
+"164
+[e = _menu -> 1 `i ]
+"165
+}
+[; ;main.c: 165: } else {
+[e $U 1056  ]
+[e :U 1055 ]
+{
+[; ;main.c: 167: if (submenu == 0){
+"167
+[e $ ! == _submenu -> 0 `i 1057  ]
+{
+[; ;main.c: 168: menu_iterator();
+"168
+[e ( _menu_iterator ..  ]
 "169
-[e = _submenu -> 1 `i ]
-[; ;main.c: 170: break;
-"170
-[e $U 1057  ]
-[; ;main.c: 171: case 2:
+}
+[e :U 1057 ]
+[; ;main.c: 169: }
+[; ;main.c: 171: if (submenu == 1){
 "171
-[e :U 1060 ]
-[; ;main.c: 172: lcd_init();
+[e $ ! == _submenu -> 1 `i 1058  ]
+{
+[; ;main.c: 172: menu_submenu_iterator();
 "172
-[e ( _lcd_init ..  ]
-[; ;main.c: 173: lcd_gotoxy(1,1);
+[e ( _menu_submenu_iterator ..  ]
 "173
-[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 174: lcd_putrs("Menu 2");
+}
+[e :U 1058 ]
 "174
-[e ( _lcd_putrs (1 :s 20C ]
-[; ;main.c: 175: lcd_gotoxy(10,1);
+}
+[e :U 1056 ]
+[; ;main.c: 173: }
+[; ;main.c: 174: }
+[; ;main.c: 175: }
 "175
-[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 176: lcd_putrs("Option1");
-"176
-[e ( _lcd_putrs (1 :s 21C ]
-[; ;main.c: 177: lcd_gotoxy(10,2);
+[e :UE 1054 ]
+}
 "177
-[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 178: lcd_putrs("Option2");
-"178
-[e ( _lcd_putrs (1 :s 22C ]
-[; ;main.c: 179: submenu = 1;
+[v _button_B `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 177: void button_B(void){
+[e :U _button_B ]
+[f ]
+[; ;main.c: 179: switch(select)
 "179
-[e = _submenu -> 1 `i ]
-[; ;main.c: 180: break;
+[e $U 1061  ]
+[; ;main.c: 180: {
 "180
-[e $U 1057  ]
-[; ;main.c: 181: case 3:
+{
+[; ;main.c: 181: case 1:
 "181
-[e :U 1061 ]
+[e :U 1062 ]
 [; ;main.c: 182: lcd_init();
 "182
 [e ( _lcd_init ..  ]
 [; ;main.c: 183: lcd_gotoxy(1,1);
 "183
 [e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 184: lcd_putrs("Menu 3");
+[; ;main.c: 184: lcd_putrs("Clock");
 "184
-[e ( _lcd_putrs (1 :s 23C ]
+[e ( _lcd_putrs (1 :s 20C ]
 [; ;main.c: 185: lcd_gotoxy(10,1);
 "185
 [e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 186: lcd_putrs("Option1");
+[; ;main.c: 186: lcd_putrs("Date");
 "186
-[e ( _lcd_putrs (1 :s 24C ]
+[e ( _lcd_putrs (1 :s 21C ]
 [; ;main.c: 187: lcd_gotoxy(10,2);
 "187
 [e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 188: lcd_putrs("Option2");
+[; ;main.c: 188: lcd_putrs("Time");
 "188
-[e ( _lcd_putrs (1 :s 25C ]
+[e ( _lcd_putrs (1 :s 22C ]
 [; ;main.c: 189: submenu = 1;
 "189
 [e = _submenu -> 1 `i ]
 [; ;main.c: 190: break;
 "190
-[e $U 1057  ]
-[; ;main.c: 191: case 4:
+[e $U 1060  ]
+[; ;main.c: 191: case 2:
 "191
-[e :U 1062 ]
+[e :U 1063 ]
 [; ;main.c: 192: lcd_init();
 "192
 [e ( _lcd_init ..  ]
 [; ;main.c: 193: lcd_gotoxy(1,1);
 "193
 [e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 194: lcd_putrs("Menu 4");
+[; ;main.c: 194: lcd_putrs("Menu 2");
 "194
-[e ( _lcd_putrs (1 :s 26C ]
+[e ( _lcd_putrs (1 :s 23C ]
 [; ;main.c: 195: lcd_gotoxy(10,1);
 "195
 [e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 1 `i `uc ]
 [; ;main.c: 196: lcd_putrs("Option1");
 "196
-[e ( _lcd_putrs (1 :s 27C ]
+[e ( _lcd_putrs (1 :s 24C ]
 [; ;main.c: 197: lcd_gotoxy(10,2);
 "197
 [e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 2 `i `uc ]
 [; ;main.c: 198: lcd_putrs("Option2");
 "198
-[e ( _lcd_putrs (1 :s 28C ]
+[e ( _lcd_putrs (1 :s 25C ]
 [; ;main.c: 199: submenu = 1;
 "199
 [e = _submenu -> 1 `i ]
 [; ;main.c: 200: break;
 "200
-[e $U 1057  ]
+[e $U 1060  ]
+[; ;main.c: 201: case 3:
 "201
-}
-[; ;main.c: 201: }
-[e $U 1057  ]
-"159
-[e :U 1058 ]
-[e [\ _select , $ -> 1 `i 1059
- , $ -> 2 `i 1060
- , $ -> 3 `i 1061
- , $ -> 4 `i 1062
- 1057 ]
-"201
-[e :U 1057 ]
-[; ;main.c: 203: }
+[e :U 1064 ]
+[; ;main.c: 202: lcd_init();
+"202
+[e ( _lcd_init ..  ]
+[; ;main.c: 203: lcd_gotoxy(1,1);
 "203
-[e :UE 1056 ]
-}
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 204: lcd_putrs("Menu 3");
+"204
+[e ( _lcd_putrs (1 :s 26C ]
+[; ;main.c: 205: lcd_gotoxy(10,1);
 "205
-[v _Button_C `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 205: void Button_C(void){
-[e :U _Button_C ]
-[f ]
-[; ;main.c: 206: lcd_putrs("C");
+[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 206: lcd_putrs("Option1");
 "206
-[e ( _lcd_putrs (1 :s 29C ]
-[; ;main.c: 207: }
+[e ( _lcd_putrs (1 :s 27C ]
+[; ;main.c: 207: lcd_gotoxy(10,2);
 "207
-[e :UE 1063 ]
-}
+[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 208: lcd_putrs("Option2");
+"208
+[e ( _lcd_putrs (1 :s 28C ]
+[; ;main.c: 209: submenu = 1;
 "209
-[v _Button_D `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 209: void Button_D(void){
-[e :U _Button_D ]
-[f ]
-[; ;main.c: 211: Menu_Home();
+[e = _submenu -> 1 `i ]
+[; ;main.c: 210: break;
+"210
+[e $U 1060  ]
+[; ;main.c: 211: case 4:
 "211
-[e ( _Menu_Home ..  ]
-[; ;main.c: 212: submenu = 0;
+[e :U 1065 ]
+[; ;main.c: 212: lcd_init();
 "212
-[e = _submenu -> 0 `i ]
-[; ;main.c: 214: }
+[e ( _lcd_init ..  ]
+[; ;main.c: 213: lcd_gotoxy(1,1);
+"213
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 214: lcd_putrs("Menu 4");
 "214
-[e :UE 1064 ]
-}
+[e ( _lcd_putrs (1 :s 29C ]
+[; ;main.c: 215: lcd_gotoxy(10,1);
+"215
+[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 216: lcd_putrs("Option1");
 "216
-[v _Button_Star `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 216: void Button_Star(void){
-[e :U _Button_Star ]
-[f ]
-[; ;main.c: 217: lcd_putrs("*");
-"217
 [e ( _lcd_putrs (1 :s 30C ]
-[; ;main.c: 218: }
+[; ;main.c: 217: lcd_gotoxy(10,2);
+"217
+[e ( _lcd_gotoxy (2 , -> -> 10 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 218: lcd_putrs("Option2");
 "218
-[e :UE 1065 ]
-}
-"220
-[v _Button_Hash `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 220: void Button_Hash(void){
-[e :U _Button_Hash ]
-[f ]
-[; ;main.c: 221: lcd_putrs("#");
-"221
 [e ( _lcd_putrs (1 :s 31C ]
-[; ;main.c: 222: }
-"222
+[; ;main.c: 219: submenu = 1;
+"219
+[e = _submenu -> 1 `i ]
+[; ;main.c: 220: break;
+"220
+[e $U 1060  ]
+"221
+}
+[; ;main.c: 221: }
+[e $U 1060  ]
+"179
+[e :U 1061 ]
+[e [\ _select , $ -> 1 `i 1062
+ , $ -> 2 `i 1063
+ , $ -> 3 `i 1064
+ , $ -> 4 `i 1065
+ 1060 ]
+"221
+[e :U 1060 ]
+[; ;main.c: 223: }
+"223
+[e :UE 1059 ]
+}
+"225
+[v _button_C `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 225: void button_C(void){
+[e :U _button_C ]
+[f ]
+[; ;main.c: 226: menu_home();
+"226
+[e ( _menu_home ..  ]
+[; ;main.c: 227: submenu = 0;
+"227
+[e = _submenu -> 0 `i ]
+[; ;main.c: 228: }
+"228
 [e :UE 1066 ]
 }
-"224
-[v _Keyboard_Control `(v ~T0 @X0 1 ef ]
+"230
+[v _button_D `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 224: void Keyboard_Control(void){
-[e :U _Keyboard_Control ]
+[; ;main.c: 230: void button_D(void){
+[e :U _button_D ]
 [f ]
-[; ;main.c: 226: LATAbits.LATA0=1;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=0;
-"226
+[; ;main.c: 231: home();
+"231
+[e ( _home ..  ]
+[; ;main.c: 232: menu = 0;
+"232
+[e = _menu -> 0 `i ]
+[; ;main.c: 233: submenu = 0;
+"233
+[e = _submenu -> 0 `i ]
+[; ;main.c: 234: }
+"234
+[e :UE 1067 ]
+}
+"236
+[v _button_asterisk `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 236: void button_asterisk(void){
+[e :U _button_asterisk ]
+[f ]
+[; ;main.c: 237: lcd_putrs("*");
+"237
+[e ( _lcd_putrs (1 :s 32C ]
+[; ;main.c: 238: }
+"238
+[e :UE 1068 ]
+}
+"240
+[v _button_hash `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 240: void button_hash(void){
+[e :U _button_hash ]
+[f ]
+[; ;main.c: 241: lcd_putrs("#");
+"241
+[e ( _lcd_putrs (1 :s 33C ]
+[; ;main.c: 242: }
+"242
+[e :UE 1069 ]
+}
+"244
+[v _keyboard_control `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 244: void keyboard_control(void){
+[e :U _keyboard_control ]
+[f ]
+[; ;main.c: 246: LATAbits.LATA0=1;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=0;
+"246
 [e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 227: {
-"227
+[; ;main.c: 247: {
+"247
 {
-[; ;main.c: 228: if (PORTAbits.RA5==1){key=1;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA5==1){};}
-"228
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1068  ]
+[; ;main.c: 248: if (PORTAbits.RA5==1){key=1;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(PORTAbits.RA5==1){};}
+"248
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1071  ]
 {
 [e = _key -> -> 1 `i `uc ]
-[e ( _sprintf (1 , (. , &U _buffer2 :s 32C -> _key `i ]
-[e ( _lcd_putrs (1 -> &U _buffer2 `*Cuc ]
-[e $U 1069  ]
-[e :U 1070 ]
-{
-}
-[e :U 1069 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1070  ]
-[e :U 1071 ]
-}
-[e :U 1068 ]
-[; ;main.c: 229: if (PORTAbits.RA7==1){key=2;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA7==1){};}
-"229
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1072  ]
-{
-[e = _key -> -> 2 `i `uc ]
-[e ( _sprintf (1 , (. , &U _buffer2 :s 33C -> _key `i ]
-[e ( _lcd_putrs (1 -> &U _buffer2 `*Cuc ]
-[e $U 1073  ]
-[e :U 1074 ]
-{
-}
+[e ( _sprintf (1 , (. , &U _buffer1 :s 34C -> _key `i ]
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[e $U 1072  ]
 [e :U 1073 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1074  ]
-[e :U 1075 ]
+{
 }
 [e :U 1072 ]
-[; ;main.c: 230: if (PORTAbits.RA6==1){key=3;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA6==1){};}
-"230
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1076  ]
-{
-[e = _key -> -> 3 `i `uc ]
-[e ( _sprintf (1 , (. , &U _buffer2 :s 34C -> _key `i ]
-[e ( _lcd_putrs (1 -> &U _buffer2 `*Cuc ]
-[e $U 1077  ]
-[e :U 1078 ]
-{
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1073  ]
+[e :U 1074 ]
 }
+[e :U 1071 ]
+[; ;main.c: 249: if (PORTAbits.RA7==1){key=2;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(PORTAbits.RA7==1){};}
+"249
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1075  ]
+{
+[e = _key -> -> 2 `i `uc ]
+[e ( _sprintf (1 , (. , &U _buffer1 :s 35C -> _key `i ]
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[e $U 1076  ]
 [e :U 1077 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1078  ]
-[e :U 1079 ]
+{
 }
 [e :U 1076 ]
-[; ;main.c: 231: if (PORTCbits.RC2==1){key=11;Button_A();while(PORTCbits.RC2==1){};}
-"231
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1080  ]
-{
-[e = _key -> -> 11 `i `uc ]
-[e ( _Button_A ..  ]
-[e $U 1081  ]
-[e :U 1082 ]
-{
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1077  ]
+[e :U 1078 ]
 }
+[e :U 1075 ]
+[; ;main.c: 250: if (PORTAbits.RA6==1){key=3;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(PORTAbits.RA6==1){};}
+"250
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1079  ]
+{
+[e = _key -> -> 3 `i `uc ]
+[e ( _sprintf (1 , (. , &U _buffer1 :s 36C -> _key `i ]
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[e $U 1080  ]
 [e :U 1081 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1082  ]
-[e :U 1083 ]
+{
 }
 [e :U 1080 ]
-"232
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1081  ]
+[e :U 1082 ]
 }
-[; ;main.c: 232: }
-[; ;main.c: 234: LATAbits.LATA0=0;LATAbits.LATA1=1;LATAbits.LATA2=0;LATAbits.LATA3=0;
-"234
+[e :U 1079 ]
+[; ;main.c: 251: if (PORTCbits.RC2==1){key=11;button_A();while(PORTCbits.RC2==1){};}
+"251
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1083  ]
+{
+[e = _key -> -> 11 `i `uc ]
+[e ( _button_A ..  ]
+[e $U 1084  ]
+[e :U 1085 ]
+{
+}
+[e :U 1084 ]
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1085  ]
+[e :U 1086 ]
+}
+[e :U 1083 ]
+"252
+}
+[; ;main.c: 252: }
+[; ;main.c: 254: LATAbits.LATA0=0;LATAbits.LATA1=1;LATAbits.LATA2=0;LATAbits.LATA3=0;
+"254
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 235: {
-"235
+[; ;main.c: 255: {
+"255
 {
-[; ;main.c: 236: if (PORTAbits.RA5==1){key=4;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA5==1){};}
-"236
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1084  ]
+[; ;main.c: 256: if (PORTAbits.RA5==1){key=4;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(PORTAbits.RA5==1){};}
+"256
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1087  ]
 {
 [e = _key -> -> 4 `i `uc ]
-[e ( _sprintf (1 , (. , &U _buffer2 :s 35C -> _key `i ]
-[e ( _lcd_putrs (1 -> &U _buffer2 `*Cuc ]
-[e $U 1085  ]
-[e :U 1086 ]
-{
-}
-[e :U 1085 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1086  ]
-[e :U 1087 ]
-}
-[e :U 1084 ]
-[; ;main.c: 237: if (PORTAbits.RA7==1){key=5;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA7==1){};}
-"237
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1088  ]
-{
-[e = _key -> -> 5 `i `uc ]
-[e ( _sprintf (1 , (. , &U _buffer2 :s 36C -> _key `i ]
-[e ( _lcd_putrs (1 -> &U _buffer2 `*Cuc ]
-[e $U 1089  ]
-[e :U 1090 ]
-{
-}
+[e ( _sprintf (1 , (. , &U _buffer1 :s 37C -> _key `i ]
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[e $U 1088  ]
 [e :U 1089 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1090  ]
-[e :U 1091 ]
+{
 }
 [e :U 1088 ]
-[; ;main.c: 238: if (PORTAbits.RA6==1){key=6;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA6==1){};}
-"238
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1092  ]
-{
-[e = _key -> -> 6 `i `uc ]
-[e ( _sprintf (1 , (. , &U _buffer2 :s 37C -> _key `i ]
-[e ( _lcd_putrs (1 -> &U _buffer2 `*Cuc ]
-[e $U 1093  ]
-[e :U 1094 ]
-{
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1089  ]
+[e :U 1090 ]
 }
+[e :U 1087 ]
+[; ;main.c: 257: if (PORTAbits.RA7==1){key=5;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(PORTAbits.RA7==1){};}
+"257
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1091  ]
+{
+[e = _key -> -> 5 `i `uc ]
+[e ( _sprintf (1 , (. , &U _buffer1 :s 38C -> _key `i ]
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[e $U 1092  ]
 [e :U 1093 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1094  ]
-[e :U 1095 ]
+{
 }
 [e :U 1092 ]
-[; ;main.c: 239: if (PORTCbits.RC2==1){key=12;Button_B();while(PORTCbits.RC2==1){};}
-"239
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1096  ]
-{
-[e = _key -> -> 12 `i `uc ]
-[e ( _Button_B ..  ]
-[e $U 1097  ]
-[e :U 1098 ]
-{
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1093  ]
+[e :U 1094 ]
 }
+[e :U 1091 ]
+[; ;main.c: 258: if (PORTAbits.RA6==1){key=6;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(PORTAbits.RA6==1){};}
+"258
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1095  ]
+{
+[e = _key -> -> 6 `i `uc ]
+[e ( _sprintf (1 , (. , &U _buffer1 :s 39C -> _key `i ]
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[e $U 1096  ]
 [e :U 1097 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1098  ]
-[e :U 1099 ]
+{
 }
 [e :U 1096 ]
-"240
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1097  ]
+[e :U 1098 ]
 }
-[; ;main.c: 240: }
-[; ;main.c: 242: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=1;LATAbits.LATA3=0;
-"242
+[e :U 1095 ]
+[; ;main.c: 259: if (PORTCbits.RC2==1){key=12;button_B();while(PORTCbits.RC2==1){};}
+"259
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1099  ]
+{
+[e = _key -> -> 12 `i `uc ]
+[e ( _button_B ..  ]
+[e $U 1100  ]
+[e :U 1101 ]
+{
+}
+[e :U 1100 ]
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1101  ]
+[e :U 1102 ]
+}
+[e :U 1099 ]
+"260
+}
+[; ;main.c: 260: }
+[; ;main.c: 262: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=1;LATAbits.LATA3=0;
+"262
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 243: {
-"243
+[; ;main.c: 263: {
+"263
 {
-[; ;main.c: 244: if (PORTAbits.RA5==1){key=7;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA5==1){};}
-"244
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1100  ]
+[; ;main.c: 264: if (PORTAbits.RA5==1){key=7;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(PORTAbits.RA5==1){};}
+"264
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1103  ]
 {
 [e = _key -> -> 7 `i `uc ]
-[e ( _sprintf (1 , (. , &U _buffer2 :s 38C -> _key `i ]
-[e ( _lcd_putrs (1 -> &U _buffer2 `*Cuc ]
-[e $U 1101  ]
-[e :U 1102 ]
-{
-}
-[e :U 1101 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1102  ]
-[e :U 1103 ]
-}
-[e :U 1100 ]
-[; ;main.c: 245: if (PORTAbits.RA7==1){key=8;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA7==1){};}
-"245
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1104  ]
-{
-[e = _key -> -> 8 `i `uc ]
-[e ( _sprintf (1 , (. , &U _buffer2 :s 39C -> _key `i ]
-[e ( _lcd_putrs (1 -> &U _buffer2 `*Cuc ]
-[e $U 1105  ]
-[e :U 1106 ]
-{
-}
+[e ( _sprintf (1 , (. , &U _buffer1 :s 40C -> _key `i ]
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[e $U 1104  ]
 [e :U 1105 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1106  ]
-[e :U 1107 ]
+{
 }
 [e :U 1104 ]
-[; ;main.c: 246: if (PORTAbits.RA6==1){key=9;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA6==1){};}
-"246
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1108  ]
-{
-[e = _key -> -> 9 `i `uc ]
-[e ( _sprintf (1 , (. , &U _buffer2 :s 40C -> _key `i ]
-[e ( _lcd_putrs (1 -> &U _buffer2 `*Cuc ]
-[e $U 1109  ]
-[e :U 1110 ]
-{
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1105  ]
+[e :U 1106 ]
 }
+[e :U 1103 ]
+[; ;main.c: 265: if (PORTAbits.RA7==1){key=8;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(PORTAbits.RA7==1){};}
+"265
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1107  ]
+{
+[e = _key -> -> 8 `i `uc ]
+[e ( _sprintf (1 , (. , &U _buffer1 :s 41C -> _key `i ]
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[e $U 1108  ]
 [e :U 1109 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1110  ]
-[e :U 1111 ]
+{
 }
 [e :U 1108 ]
-[; ;main.c: 247: if (PORTCbits.RC2==1){key=13;Button_C();while(PORTCbits.RC2==1){};}
-"247
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1112  ]
-{
-[e = _key -> -> 13 `i `uc ]
-[e ( _Button_C ..  ]
-[e $U 1113  ]
-[e :U 1114 ]
-{
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1109  ]
+[e :U 1110 ]
 }
+[e :U 1107 ]
+[; ;main.c: 266: if (PORTAbits.RA6==1){key=9;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(PORTAbits.RA6==1){};}
+"266
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1111  ]
+{
+[e = _key -> -> 9 `i `uc ]
+[e ( _sprintf (1 , (. , &U _buffer1 :s 42C -> _key `i ]
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[e $U 1112  ]
 [e :U 1113 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1114  ]
-[e :U 1115 ]
+{
 }
 [e :U 1112 ]
-"248
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1113  ]
+[e :U 1114 ]
 }
-[; ;main.c: 248: }
-[; ;main.c: 250: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=1;
-"250
+[e :U 1111 ]
+[; ;main.c: 267: if (PORTCbits.RC2==1){key=13;button_C();while(PORTCbits.RC2==1){};}
+"267
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1115  ]
+{
+[e = _key -> -> 13 `i `uc ]
+[e ( _button_C ..  ]
+[e $U 1116  ]
+[e :U 1117 ]
+{
+}
+[e :U 1116 ]
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1117  ]
+[e :U 1118 ]
+}
+[e :U 1115 ]
+"268
+}
+[; ;main.c: 268: }
+[; ;main.c: 270: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=1;
+"270
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
-[; ;main.c: 251: {
-"251
+[; ;main.c: 271: {
+"271
 {
-[; ;main.c: 252: if (PORTAbits.RA5==1){key=14;Button_Star();while(PORTAbits.RA5==1){};}
-"252
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1116  ]
+[; ;main.c: 272: if (PORTAbits.RA5==1){key=14;button_asterisk();while(PORTAbits.RA5==1){};}
+"272
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1119  ]
 {
 [e = _key -> -> 14 `i `uc ]
-[e ( _Button_Star ..  ]
-[e $U 1117  ]
-[e :U 1118 ]
-{
-}
-[e :U 1117 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1118  ]
-[e :U 1119 ]
-}
-[e :U 1116 ]
-[; ;main.c: 253: if (PORTAbits.RA7==1){key=0;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA7==1){};}
-"253
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1120  ]
-{
-[e = _key -> -> 0 `i `uc ]
-[e ( _sprintf (1 , (. , &U _buffer2 :s 41C -> _key `i ]
-[e ( _lcd_putrs (1 -> &U _buffer2 `*Cuc ]
-[e $U 1121  ]
-[e :U 1122 ]
-{
-}
+[e ( _button_asterisk ..  ]
+[e $U 1120  ]
 [e :U 1121 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1122  ]
-[e :U 1123 ]
+{
 }
 [e :U 1120 ]
-[; ;main.c: 254: if (PORTAbits.RA6==1){key=15;Button_Hash();while(PORTAbits.RA6==1){};}
-"254
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1124  ]
-{
-[e = _key -> -> 15 `i `uc ]
-[e ( _Button_Hash ..  ]
-[e $U 1125  ]
-[e :U 1126 ]
-{
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1121  ]
+[e :U 1122 ]
 }
+[e :U 1119 ]
+[; ;main.c: 273: if (PORTAbits.RA7==1){key=0;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(PORTAbits.RA7==1){};}
+"273
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1123  ]
+{
+[e = _key -> -> 0 `i `uc ]
+[e ( _sprintf (1 , (. , &U _buffer1 :s 43C -> _key `i ]
+[e ( _lcd_putrs (1 -> &U _buffer1 `*Cuc ]
+[e $U 1124  ]
 [e :U 1125 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1126  ]
-[e :U 1127 ]
+{
 }
 [e :U 1124 ]
-[; ;main.c: 255: if (PORTCbits.RC2==1){key=16;Button_D();while(PORTCbits.RC2==1){};}
-"255
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1128  ]
-{
-[e = _key -> -> 16 `i `uc ]
-[e ( _Button_D ..  ]
-[e $U 1129  ]
-[e :U 1130 ]
-{
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1125  ]
+[e :U 1126 ]
 }
+[e :U 1123 ]
+[; ;main.c: 274: if (PORTAbits.RA6==1){key=15;button_hash();while(PORTAbits.RA6==1){};}
+"274
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1127  ]
+{
+[e = _key -> -> 15 `i `uc ]
+[e ( _button_hash ..  ]
+[e $U 1128  ]
 [e :U 1129 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1130  ]
-[e :U 1131 ]
+{
 }
 [e :U 1128 ]
-"256
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1129  ]
+[e :U 1130 ]
 }
-[; ;main.c: 256: }
-[; ;main.c: 258: _delay((unsigned long)((98)*(8000000/4000.0)));
-"258
+[e :U 1127 ]
+[; ;main.c: 275: if (PORTCbits.RC2==1){key=16;button_D();while(PORTCbits.RC2==1){};}
+"275
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1131  ]
+{
+[e = _key -> -> 16 `i `uc ]
+[e ( _button_D ..  ]
+[e $U 1132  ]
+[e :U 1133 ]
+{
+}
+[e :U 1132 ]
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1133  ]
+[e :U 1134 ]
+}
+[e :U 1131 ]
+"276
+}
+[; ;main.c: 276: }
+[; ;main.c: 278: _delay((unsigned long)((98)*(8000000/4000.0)));
+"278
 [e ( __delay (1 -> * -> -> 98 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 260: }
-"260
-[e :UE 1067 ]
+[; ;main.c: 280: }
+"280
+[e :UE 1070 ]
 }
-"262
+"282
 [v _main `(i ~T0 @X0 1 ef ]
 {
-[; ;main.c: 262: int main(void){
+[; ;main.c: 282: int main(void){
 [e :U _main ]
 [f ]
-[; ;main.c: 264: Setup();
-"264
-[e ( _Setup ..  ]
-[; ;main.c: 265: Menu_Home();
-"265
-[e ( _Menu_Home ..  ]
-[; ;main.c: 266: while(1){Keyboard_Control();}
-"266
-[e :U 1134 ]
+[; ;main.c: 283: setup();
+"283
+[e ( _setup ..  ]
+[; ;main.c: 284: home();
+"284
+[e ( _home ..  ]
+[; ;main.c: 285: while(1){keyboard_control();}
+"285
+[e :U 1137 ]
 {
-[e ( _Keyboard_Control ..  ]
+[e ( _keyboard_control ..  ]
 }
-[e :U 1133 ]
-[e $U 1134  ]
-[e :U 1135 ]
-[; ;main.c: 267: return 0;
-"267
+[e :U 1136 ]
+[e $U 1137  ]
+[e :U 1138 ]
+[; ;main.c: 286: return 0;
+"286
 [e ) -> 0 `i ]
-[e $UE 1132  ]
-[; ;main.c: 269: }
-"269
-[e :UE 1132 ]
+[e $UE 1135  ]
+[; ;main.c: 287: }
+"287
+[e :UE 1135 ]
 }
 [p f _sprintf 8422404 ]
-[a 32C 37 48 49 117 0 ]
-[a 33C 37 48 49 117 0 ]
+[a 3C 37 48 50 117 58 37 48 50 117 0 ]
+[a 2C 37 48 50 117 47 37 48 50 117 47 37 48 50 117 0 ]
 [a 34C 37 48 49 117 0 ]
 [a 35C 37 48 49 117 0 ]
 [a 36C 37 48 49 117 0 ]
@@ -9151,34 +9225,36 @@ Version 3.2 HI-TECH Software Intermediate Code
 [a 39C 37 48 49 117 0 ]
 [a 40C 37 48 49 117 0 ]
 [a 41C 37 48 49 117 0 ]
-[a 29C 67 0 ]
-[a 5C 62 0 ]
-[a 7C 62 0 ]
-[a 9C 62 0 ]
-[a 11C 62 0 ]
-[a 13C 62 0 ]
-[a 15C 62 0 ]
-[a 4C 77 101 110 117 52 0 ]
-[a 26C 77 101 110 117 32 52 0 ]
-[a 3C 77 101 110 117 51 0 ]
-[a 23C 77 101 110 117 32 51 0 ]
-[a 2C 77 101 110 117 50 0 ]
-[a 19C 79 112 116 105 111 110 50 0 ]
-[a 22C 79 112 116 105 111 110 50 0 ]
+[a 42C 37 48 49 117 0 ]
+[a 43C 37 48 49 117 0 ]
+[a 20C 67 108 111 99 107 0 ]
+[a 21C 68 97 116 101 0 ]
+[a 22C 84 105 109 101 0 ]
+[a 1C 32 85 78 73 77 73 67 0 ]
+[a 8C 62 0 ]
+[a 10C 62 0 ]
+[a 12C 62 0 ]
+[a 14C 62 0 ]
+[a 16C 62 0 ]
+[a 18C 62 0 ]
+[a 7C 77 101 110 117 52 0 ]
+[a 29C 77 101 110 117 32 52 0 ]
+[a 6C 77 101 110 117 51 0 ]
+[a 26C 77 101 110 117 32 51 0 ]
+[a 5C 77 101 110 117 50 0 ]
 [a 25C 79 112 116 105 111 110 50 0 ]
 [a 28C 79 112 116 105 111 110 50 0 ]
-[a 20C 77 101 110 117 32 50 0 ]
-[a 1C 77 101 110 117 49 0 ]
-[a 18C 79 112 116 105 111 110 49 0 ]
-[a 21C 79 112 116 105 111 110 49 0 ]
+[a 31C 79 112 116 105 111 110 50 0 ]
+[a 23C 77 101 110 117 32 50 0 ]
+[a 4C 77 101 110 117 49 0 ]
 [a 24C 79 112 116 105 111 110 49 0 ]
 [a 27C 79 112 116 105 111 110 49 0 ]
-[a 17C 77 101 110 117 32 49 0 ]
-[a 30C 42 0 ]
-[a 31C 35 0 ]
-[a 6C 32 0 ]
-[a 8C 32 0 ]
-[a 10C 32 0 ]
-[a 12C 32 0 ]
-[a 14C 32 0 ]
-[a 16C 32 0 ]
+[a 30C 79 112 116 105 111 110 49 0 ]
+[a 32C 42 0 ]
+[a 33C 35 0 ]
+[a 9C 32 0 ]
+[a 11C 32 0 ]
+[a 13C 32 0 ]
+[a 15C 32 0 ]
+[a 17C 32 0 ]
+[a 19C 32 0 ]

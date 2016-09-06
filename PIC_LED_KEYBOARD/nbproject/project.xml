@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>unmc_Demo</name>
+            <name>PIC_LED_KEYBOARD</name>
             <creation-uuid>1660ff80-2516-407c-8199-94091fdd83b5</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>

@@ -4,10 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>C:/Archivos de programa/Unimic/unmc_01/headers/unmc_lcd_216.h</itemPath>
-      <itemPath>C:/Archivos de programa/Unimic/unmc_01/headers/unmc_config_01.h</itemPath>
-      <itemPath>C:/Archivos de programa/Unimic/unmc_01/headers/unmc_rtcc_01.h</itemPath>
-      <itemPath>C:/Archivos de programa/Unimic/unmc_01/headers/unmc_inout_01.h</itemPath>
+      <itemPath>Unimic/unmc_01/headers/unmc_config_01.h</itemPath>
+      <itemPath>Unimic/unmc_01/headers/unmc_inout_01.h</itemPath>
+      <itemPath>Unimic/unmc_01/headers/unmc_lcd_216.h</itemPath>
+      <itemPath>Unimic/unmc_01/headers/unmc_rtcc_01.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -17,7 +17,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>main.c</itemPath>
-      <itemPath>C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c</itemPath>
+      <itemPath>Unimic/unmc_01/sources/unmc_lcd_216.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -26,8 +26,8 @@
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>C:/Archivos de programa/Unimic/unmc_01/headers</Elem>
-    <Elem>C:/Archivos de programa/Unimic/unmc_01/sources</Elem>
+    <Elem>Unimic/unmc_01/headers</Elem>
+    <Elem>Unimic/unmc_01/sources</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -68,7 +68,7 @@
         <property key="asmlist" value="true"/>
         <property key="define-macros" value=""/>
         <property key="extra-include-directories"
-                  value="C:\Archivos de programa\Unimic\unmc_01\headers;C:\Archivos de programa\Microchip\xc8\v1.32\include\plib"/>
+                  value="Unimic\unmc_01\headers;..\..\..\..\..\Program Files (x86)\Microchip\xc8\v1.34\include\plib"/>
         <property key="identifier-length" value="255"/>
         <property key="operation-mode" value="free"/>
         <property key="opt-xc8-compiler-strict_ansi" value="false"/>
@@ -152,7 +152,7 @@
         <property key="periphComp4.gte" value="gt"/>
         <property key="periphComp5.gte" value="gt"/>
         <property key="periphComp6.gte" value="gt"/>
-        <property key="tracecontrol.include.timestamp" value="false"/>
+        <property key="tracecontrol.include.timestamp" value="summarydataenabled"/>
         <property key="tracecontrol.select" value="0"/>
         <property key="tracecontrol.stallontracebufferfull" value="false"/>
         <property key="tracecontrol.timestamp" value="0"/>
@@ -213,10 +213,6 @@
                   value="report"/>
         <property key="warningmessagebreakoptions.W0013_CORE_STACK_UNDERFLOW_RESET"
                   value="report"/>
-        <property key="warningmessagebreakoptions.W0014_CORE_STACK_OVERFLOW"
-                  value="report"/>
-        <property key="warningmessagebreakoptions.W0015_CORE_STACK_UNDERFLOW"
-                  value="report"/>
         <property key="warningmessagebreakoptions.W0101_SIM_UPDATE_FAILED"
                   value="report"/>
         <property key="warningmessagebreakoptions.W0102_SIM_PERIPH_MISSING"
@@ -224,6 +220,8 @@
         <property key="warningmessagebreakoptions.W0103_SIM_PERIPH_FAILED"
                   value="report"/>
         <property key="warningmessagebreakoptions.W0104_SIM_FAILED_TO_INIT_TOOL"
+                  value="report"/>
+        <property key="warningmessagebreakoptions.W0105_SIM_INVALID_FIELD"
                   value="report"/>
         <property key="warningmessagebreakoptions.W0201_ADC_NO_STIMULUS_FILE"
                   value="report"/>

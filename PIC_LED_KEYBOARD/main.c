@@ -1,6 +1,6 @@
 /*******************************************************************************
  *
- *                Unimic 01 Version 1.1   10 September 2015
+ *                Unimic 01 Version 1.1   6 September 2016
  *
  *******************************************************************************
  * FileName:        main.c
@@ -30,9 +30,10 @@
 int select;
 int select_op;
 int selection;
+int menu;
 int submenu;
 
-void Setup(void){
+void setup(void){
     
     OSCTUNEbits.INTSRC=1;       //setea el oscilador de 32768 para el RTC
     OSCTUNEbits.PLLEN=0;        //desactiva PLL
@@ -64,12 +65,26 @@ void Setup(void){
     // Setup Global Variables
     select = 1;
     selection = 1;
+    menu = 0;
     submenu = 0;
     select_op = 1;
-
+    
 }
 
-void Menu_Home(void){
+void home(void){
+    lcd_comand(0b00000001);
+    lcd_comand(0b00001100);    //Enciende display sin cursor
+    lcd_gotoxy(1,1);        
+    lcd_putrs(" UNIMIC");
+    sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
+    lcd_gotoxy(1,2);
+    lcd_putrs(buffer1);
+    sprintf(buffer1,"%02u:%02u",hora,minuto);
+    lcd_gotoxy(12,2);
+    lcd_putrs(buffer1); 
+}
+
+void menu_home(void){
     
     lcd_init();
     lcd_gotoxy(2,1);
@@ -82,7 +97,7 @@ void Menu_Home(void){
     lcd_putrs("Menu4");
 }
 
-void Menu_Iterator(void){
+void menu_iterator(void){
     
     switch(selection){
         case 1:
@@ -118,10 +133,10 @@ void Menu_Iterator(void){
             lcd_putrs(" ");
             break;
     }
-
+    
 }
 
-void Menu_Submenu_Iterator(void){
+void menu_submenu_iterator(void){
     
     switch(select_op){
         case 1:
@@ -142,33 +157,38 @@ void Menu_Submenu_Iterator(void){
     
 }
 
-void Button_A(void){
+void button_A(void){
     
-    if (submenu == 0){   
-        Menu_Iterator();
-    }
-    
-    if (submenu == 1){
-        Menu_Submenu_Iterator();
-    }
-
+    if(menu == 0){        
+        menu_home();
+        menu = 1;        
+    } else {
+        
+        if (submenu == 0){   
+            menu_iterator();
+        }
+        
+        if (submenu == 1){
+            menu_submenu_iterator();
+        }        
+    }    
 }
 
-void Button_B(void){
+void button_B(void){
     
     switch(select)
-        {
+    {
         case 1:
             lcd_init();
             lcd_gotoxy(1,1);
-            lcd_putrs("Menu 1");
+            lcd_putrs("Clock");
             lcd_gotoxy(10,1);
-            lcd_putrs("Option1");
+            lcd_putrs("Date");
             lcd_gotoxy(10,2);
-            lcd_putrs("Option2");
+            lcd_putrs("Time");
             submenu = 1;
-       break;
-       case 2:
+            break;
+        case 2:
             lcd_init();
             lcd_gotoxy(1,1);
             lcd_putrs("Menu 2");
@@ -177,8 +197,8 @@ void Button_B(void){
             lcd_gotoxy(10,2);
             lcd_putrs("Option2");
             submenu = 1;
-       break;
-       case 3:
+            break;
+        case 3:
             lcd_init();
             lcd_gotoxy(1,1);
             lcd_putrs("Menu 3");
@@ -187,8 +207,8 @@ void Button_B(void){
             lcd_gotoxy(10,2);
             lcd_putrs("Option2");
             submenu = 1;
-       break;
-       case 4:
+            break;
+        case 4:
             lcd_init();
             lcd_gotoxy(1,1);
             lcd_putrs("Menu 4");
@@ -197,73 +217,71 @@ void Button_B(void){
             lcd_gotoxy(10,2);
             lcd_putrs("Option2");
             submenu = 1;
-       break;
+            break;
     }
-
+    
 }
 
-void Button_C(void){
-    lcd_putrs("C");
-}
-
-void Button_D(void){
-      
-    Menu_Home();
+void button_C(void){
+    menu_home();
     submenu = 0;
-  
 }
 
-void Button_Star(void){
+void button_D(void){    
+    home();
+    menu = 0;
+    submenu = 0;    
+}
+
+void button_asterisk(void){
     lcd_putrs("*");
 }
 
-void Button_Hash(void){
+void button_hash(void){
     lcd_putrs("#");
 }
 
-void Keyboard_Control(void){
+void keyboard_control(void){
     
     row1=1;row2=0;row3=0;row4=0;
     {
-        if (column1==1){key=1;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(column1==1){};}
-        if (column2==1){key=2;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(column2==1){};}
-        if (column3==1){key=3;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(column3==1){};}
-        if (column4==1){key=11;Button_A();while(column4==1){};}
+        if (column1==1){key=1;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(column1==1){};}
+        if (column2==1){key=2;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(column2==1){};}
+        if (column3==1){key=3;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(column3==1){};}
+        if (column4==1){key=11;button_A();while(column4==1){};}
     }
-
+    
     row1=0;row2=1;row3=0;row4=0;
     {
-        if (column1==1){key=4;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(column1==1){};}
-        if (column2==1){key=5;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(column2==1){};}
-        if (column3==1){key=6;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(column3==1){};}
-        if (column4==1){key=12;Button_B();while(column4==1){};}
+        if (column1==1){key=4;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(column1==1){};}
+        if (column2==1){key=5;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(column2==1){};}
+        if (column3==1){key=6;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(column3==1){};}
+        if (column4==1){key=12;button_B();while(column4==1){};}
     }
-
+    
     row1=0;row2=0;row3=1;row4=0;
     {
-        if (column1==1){key=7;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(column1==1){};}
-        if (column2==1){key=8;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(column2==1){};}
-        if (column3==1){key=9;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(column3==1){};}
-        if (column4==1){key=13;Button_C();while(column4==1){};}
+        if (column1==1){key=7;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(column1==1){};}
+        if (column2==1){key=8;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(column2==1){};}
+        if (column3==1){key=9;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(column3==1){};}
+        if (column4==1){key=13;button_C();while(column4==1){};}
     }
-
+    
     row1=0;row2=0;row3=0;row4=1;
     {
-        if (column1==1){key=14;Button_Star();while(column1==1){};}
-        if (column2==1){key=0;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(column2==1){};}
-        if (column3==1){key=15;Button_Hash();while(column3==1){};}
-        if (column4==1){key=16;Button_D();while(column4==1){};}
+        if (column1==1){key=14;button_asterisk();while(column1==1){};}
+        if (column2==1){key=0;sprintf(buffer1,"%01u",key);lcd_putrs(buffer1);while(column2==1){};}
+        if (column3==1){key=15;button_hash();while(column3==1){};}
+        if (column4==1){key=16;button_D();while(column4==1){};}
     }
-
-    __delay_ms(98);             // 98ms retardo maximo para esta funcion
-
+    
+    __delay_ms(98);             // 98ms is the maximum admitted delay
+    
 }
 
-int main(void){
-    
-    Setup();
-    Menu_Home();
-    while(1){Keyboard_Control();}
+int main(void){    
+    setup();
+    home();
+    while(1){keyboard_control();}
     return 0;
-
 }

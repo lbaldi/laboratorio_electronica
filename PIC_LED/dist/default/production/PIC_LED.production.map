@@ -3,19 +3,19 @@ Microchip MPLAB XC8 Compiler V1.34 ()
 Linker command line:
 
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.34\dat\en_msgs.txt -cs \
-  -h+dist/default/production\laboratorio_electronica.production.sym \
-  --cmf=dist/default/production\laboratorio_electronica.production.cmf -z \
-  -Q18F26J50 -oC:\Users\ADMINI~1\AppData\Local\Temp\s69g.6 \
-  -Mdist/default/production/laboratorio_electronica.production.map -E1 \
-  -ver=XC8 -ASTACK=08Ch-0ebfh -pstack=STACK -ACODE=00h-0FFF7h \
-  -ACONST=00h-0FFF7h -ASMALLCONST=0F00h-0FFFhx240,0FF00h-0FFF7h \
-  -AMEDIUMCONST=0F00h-0FFF7h -ACOMRAM=01h-05Fh -AABS1=00h-0EBFh \
-  -ABIGRAM=01h-0EBFh -ARAM=060h-0FFh,0100h-01FFhx13,0E00h-0EBFh \
-  -ABANK0=060h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
-  -ABANK3=0300h-03FFh -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh \
-  -ABANK6=0600h-06FFh -ABANK7=0700h-07FFh -ABANK8=0800h-08FFh \
-  -ABANK9=0900h-09FFh -ABANK10=0A00h-0AFFh -ABANK11=0B00h-0BFFh \
-  -ABANK12=0C00h-0CFFh -ABANK13=0D00h-0DFFh -ABANK14=0E00h-0EBFh \
+  -h+dist/default/production\PIC_LED.production.sym \
+  --cmf=dist/default/production\PIC_LED.production.cmf -z -Q18F26J50 \
+  -oC:\Users\gonza\AppData\Local\Temp\sbc.6 \
+  -Mdist/default/production/PIC_LED.production.map -E1 -ver=XC8 \
+  -ASTACK=08Ch-0ebfh -pstack=STACK -ACODE=00h-0FFF7h -ACONST=00h-0FFF7h \
+  -ASMALLCONST=0F00h-0FFFhx240,0FF00h-0FFF7h -AMEDIUMCONST=0F00h-0FFF7h \
+  -ACOMRAM=01h-05Fh -AABS1=00h-0EBFh -ABIGRAM=01h-0EBFh \
+  -ARAM=060h-0FFh,0100h-01FFhx13,0E00h-0EBFh -ABANK0=060h-0FFh \
+  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
+  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
+  -ABANK7=0700h-07FFh -ABANK8=0800h-08FFh -ABANK9=0900h-09FFh \
+  -ABANK10=0A00h-0AFFh -ABANK11=0B00h-0BFFh -ABANK12=0C00h-0CFFh \
+  -ABANK13=0D00h-0DFFh -ABANK14=0E00h-0EBFh \
   -ASFR=0EC0h-0EFFh,0F00h-0F5Fh,0F60h-0FFFh \
   -preset_vec=00h,intcode,intcodelo,powerup,init,end_init -pramtop=0F00h \
   -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST -pconst=CONST \
@@ -25,8 +25,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\ADMINI~1\AppData\Local\Temp\s69g.obj \
-  dist/default/production\laboratorio_electronica.production.obj 
+  C:\Users\gonza\AppData\Local\Temp\sbc.obj \
+  dist/default/production\PIC_LED.production.obj 
 
 Object code version is 3.11
 
@@ -38,10 +38,10 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ADMINI~1\AppData\Local\Temp\s69g.obj
+C:\Users\gonza\AppData\Local\Temp\sbc.obj
                 end_init                              0        0        4        0       0
                 config                             FFF8     FFF8        8     FFF8       0
-dist/default/production\laboratorio_electronica.production.obj
+dist/default/production\PIC_LED.production.obj
                 smallconst                          F00      F00       3C      780       0
                 text25                             19C2     19C2       8E      79E       0
                 text24                             1B46     1B46       6E      79E       0
@@ -71,12 +71,12 @@ dist/default/production\laboratorio_electronica.production.obj
                 text0                              11A0     11A0      210      79E       0
                 cstackCOMRAM                          1        1       28        1       1
                 bssBANK0                             60       60       2C       60       1
-                dataCOMRAM                           56       56        6        1       1
-                bssCOMRAM                            29       29       20        1       1
+                dataCOMRAM                           50       50        C        1       1
+                bssCOMRAM                            29       29       1A        1       1
                 bitbssCOMRAM                        2E0       5C        1        1       1     8
                 cinit                              1D44     1D44       44      79E       0
-                nvCOMRAM                             49       49        D        1       1
-                idataCOMRAM                        1E80     1E80        6      79E       0
+                nvCOMRAM                             43       43        D        1       1
+                idataCOMRAM                        1E80     1E80        C      79E       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -110,7 +110,7 @@ TOTAL           Name                               Link     Load   Length     Sp
                 text1                              1E28     1E28       14         0
                 text0                              11A0     11A0      210         0
                 cinit                              1D44     1D44       44         0
-                idataCOMRAM                        1E80     1E80        6         0
+                idataCOMRAM                        1E80     1E80        C         0
 
         CLASS   CONST          
 
@@ -121,10 +121,10 @@ TOTAL           Name                               Link     Load   Length     Sp
 
         CLASS   COMRAM         
                 cstackCOMRAM                          1        1       28         1
-                dataCOMRAM                           56       56        6         1
-                bssCOMRAM                            29       29       20         1
+                dataCOMRAM                           50       50        C         1
+                bssCOMRAM                            29       29       1A         1
                 bitbssCOMRAM                        2E0       5C        1         1
-                nvCOMRAM                             49       49        D         1
+                nvCOMRAM                             43       43        D         1
 
         CLASS   ABS1           
 
@@ -180,7 +180,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 cstackCOMRAM                   000001  00005C  00005D         1       1  COMRAM  
                 bssBANK0                       000060  00002C  00008C        60       1  BANK0   
                 smallconst                     000F00  00003C  000F3C       780       0  SMALLCON
-                text3                          000F3C  000F4A  001E86       79E       0  CODE    
+                text3                          000F3C  000F50  001E8C       79E       0  CODE    
                 config                         00FFF8  000008  010000      FFF8       0  CONFIG  
 
 
@@ -205,14 +205,14 @@ UNUSED ADDRESS RANGES
         BIGRAM           0005D-0005F               3
                          0008C-00EBF             E34
         CODE             00004-00EFF             EFC
-                         01E86-0FFF7            E172
+                         01E8C-0FFF7            E16C
         COMRAM           0005D-0005F               3
         CONST            00004-00EFF             EFC
-                         01E86-0FFF7            E172
-        MEDIUMCONST      01E86-0FFF7            E172
+                         01E8C-0FFF7            E16C
+        MEDIUMCONST      01E8C-0FFF7            E16C
         RAM              0008C-00EBF             100
         SFR              00EC0-00FFF              60
-        SMALLCONST       01E86-0FFF7             100
+        SMALLCONST       01E8C-0FFF7             100
         STACK            0008C-00EBF             E34
 
                                   Symbol Table
@@ -265,10 +265,10 @@ _RTCVALH                   (abs)         00F99
 _RTCVALL                   (abs)         00F98
 _Read_RTC                  text23        01854
 _RtccAlrmTimeDate          bssBANK0      00060
-_RtccDate                  bssCOMRAM     00041
+_RtccDate                  bssCOMRAM     0003B
 _RtccReadDate              text25        019C2
 _RtccReadTime              text24        01B46
-_RtccTime                  bssCOMRAM     00045
+_RtccTime                  bssCOMRAM     0003F
 _RtccTimeDate              bssBANK0      00068
 _RtccTimeVal               bssCOMRAM     00029
 _RtccWrOn                  text22        01E60
@@ -564,9 +564,9 @@ __pbssBANK0                bssBANK0      00060
 __pbssCOMRAM               bssCOMRAM     00029
 __pcinit                   cinit         01D44
 __pcstackCOMRAM            cstackCOMRAM  00001
-__pdataCOMRAM              dataCOMRAM    00056
+__pdataCOMRAM              dataCOMRAM    00050
 __pidataCOMRAM             idataCOMRAM   01E80
-__pnvCOMRAM                nvCOMRAM      00049
+__pnvCOMRAM                nvCOMRAM      00043
 __psmallconst              smallconst    00F00
 __ptext0                   text0         011A0
 __ptext1                   text1         01E28
@@ -623,28 +623,28 @@ __size_of_main             (abs)         00000
 __size_of_sprintf          (abs)         00000
 __smallconst               smallconst    00F00
 _a                         bssCOMRAM     0002D
-_anio                      dataCOMRAM    00056
-_anio_d                    nvCOMRAM      00049
-_anio_u                    nvCOMRAM      0004A
+_anio                      dataCOMRAM    00050
+_anio_d                    nvCOMRAM      00043
+_anio_u                    nvCOMRAM      00044
 _b                         bssCOMRAM     0002F
 _buffer2                   bssBANK0      00078
 _c                         bssCOMRAM     00031
 _caratula                  text2         0174A
-_dia                       dataCOMRAM    00058
-_dia_semana                nvCOMRAM      0004B
-_diasem                    bssCOMRAM     00033
+_dia                       dataCOMRAM    00052
+_dia_semana                nvCOMRAM      00045
+_diasem                    dataCOMRAM    00054
 _dpowers                   smallconst    00F01
-_fecha_d                   nvCOMRAM      0004C
-_fecha_u                   nvCOMRAM      0004D
+_fecha_d                   nvCOMRAM      00046
+_fecha_u                   nvCOMRAM      00047
 _flag                      bitbssCOMRAM  002E0
-_hora                      bssCOMRAM     00035
-_hora_d                    nvCOMRAM      0004E
-_hora_u                    nvCOMRAM      0004F
-_i                         bssCOMRAM     00037
+_hora                      dataCOMRAM    00056
+_hora_d                    nvCOMRAM      00048
+_hora_u                    nvCOMRAM      00049
+_i                         bssCOMRAM     00033
 _isdigit                   text4         01E06
 _isdigit$1822              cstackCOMRAM  00002
-_j                         bssCOMRAM     00039
-_k                         bssCOMRAM     0003B
+_j                         bssCOMRAM     00035
+_k                         bssCOMRAM     00037
 _lcd_comand                text14        01E72
 _lcd_gotoxy                text10        01DE2
 _lcd_init                  text12        01A50
@@ -654,15 +654,15 @@ _lcd_send_byte             text15        01D88
 _lcd_send_nibble           text16        01AD0
 _lcd_setcursor_vb          text1         01E28
 _main                      text0         011A0
-_mes                       dataCOMRAM    0005A
-_mes_d                     nvCOMRAM      00050
-_mes_u                     nvCOMRAM      00051
-_minuto                    bssCOMRAM     0003D
-_minuto_d                  nvCOMRAM      00052
-_minuto_u                  nvCOMRAM      00053
-_segundo                   bssCOMRAM     0003F
-_segundo_d                 nvCOMRAM      00054
-_segundo_u                 nvCOMRAM      00055
+_mes                       dataCOMRAM    00058
+_mes_d                     nvCOMRAM      0004A
+_mes_u                     nvCOMRAM      0004B
+_minuto                    dataCOMRAM    0005A
+_minuto_d                  nvCOMRAM      0004C
+_minuto_u                  nvCOMRAM      0004D
+_segundo                   bssCOMRAM     00039
+_segundo_d                 nvCOMRAM      0004E
+_segundo_u                 nvCOMRAM      0004F
 _sprintf                   text3         00F3C
 end_of_initialization      cinit         01D7E
 intlevel0                  text          00000
@@ -737,7 +737,7 @@ Total ram usage:        5 bytes
 
  *************** function _lcd_setcursor_vb *****************
  Defined at:
-		line 210 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+		line 210 in file "Unimic/unmc_01/sources/unmc_lcd_216.c"
  Parameters:    Size  Location     Type
   visible         1    wreg     unsigned char 
   blink           1    4[COMRAM] unsigned char 
@@ -966,7 +966,7 @@ Total ram usage:        7 bytes
 
  *************** function _lcd_putrs *****************
  Defined at:
-		line 221 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+		line 221 in file "Unimic/unmc_01/sources/unmc_lcd_216.c"
  Parameters:    Size  Location     Type
   ptr             2    8[COMRAM] PTR const unsigned char 
 		 -> STR_5(7), STR_4(7), buffer2(20), STR_1(7), 
@@ -997,7 +997,7 @@ Total ram usage:        2 bytes
 
  *************** function _lcd_putc *****************
  Defined at:
-		line 172 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+		line 172 in file "Unimic/unmc_01/sources/unmc_lcd_216.c"
  Parameters:    Size  Location     Type
   c               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1029,7 +1029,7 @@ Total ram usage:        1 bytes
 
  *************** function _lcd_gotoxy *****************
  Defined at:
-		line 158 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+		line 158 in file "Unimic/unmc_01/sources/unmc_lcd_216.c"
  Parameters:    Size  Location     Type
   x               1    wreg     unsigned char 
   y               1    4[COMRAM] unsigned char 
@@ -1095,7 +1095,7 @@ Total ram usage:        0 bytes
 
  *************** function _lcd_init *****************
  Defined at:
-		line 119 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+		line 119 in file "Unimic/unmc_01/sources/unmc_lcd_216.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1157,7 +1157,7 @@ Total ram usage:        1 bytes
 
  *************** function _lcd_comand *****************
  Defined at:
-		line 189 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+		line 189 in file "Unimic/unmc_01/sources/unmc_lcd_216.c"
  Parameters:    Size  Location     Type
   d               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1188,7 +1188,7 @@ Total ram usage:        1 bytes
 
  *************** function _lcd_send_byte *****************
  Defined at:
-		line 86 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+		line 86 in file "Unimic/unmc_01/sources/unmc_lcd_216.c"
  Parameters:    Size  Location     Type
   address         1    wreg     unsigned char 
   n               1    2[COMRAM] unsigned char 
@@ -1224,7 +1224,7 @@ Total ram usage:        2 bytes
 
  *************** function _lcd_send_nibble *****************
  Defined at:
-		line 25 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+		line 25 in file "Unimic/unmc_01/sources/unmc_lcd_216.c"
  Parameters:    Size  Location     Type
   nibble          1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1283,7 +1283,7 @@ Total ram usage:        1 bytes
 
  *************** function _Write_RTC *****************
  Defined at:
-		line 74 in file "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h"
+		line 74 in file "Unimic/unmc_01/headers\unmc_rtcc_01.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1453,7 +1453,7 @@ Total ram usage:        0 bytes
 
  *************** function _Read_RTC *****************
  Defined at:
-		line 112 in file "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h"
+		line 111 in file "Unimic/unmc_01/headers\unmc_rtcc_01.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1578,11 +1578,17 @@ C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c estimated size: 111
 
-C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h
-		_Read_RTC      		CODE           	1854	0000	217
-		_Write_RTC     		CODE           	13B0	0000	329
+Unimic/unmc_01/sources/unmc_lcd_216.c
+		_lcd_comand    		CODE           	1E72	0000	15
+		_lcd_putc      		CODE           	1CB0	0000	77
+		_lcd_putrs     		CODE           	1C10	0000	85
+		_lcd_send_byte 		CODE           	1D88	0000	51
+		_lcd_setcursor_		CODE           	1E28	0000	21
+		_lcd_gotoxy    		CODE           	1DE2	0000	37
+		_lcd_send_nibbl		CODE           	1AD0	0000	119
+		_lcd_init      		CODE           	1A50	0000	129
 
-C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h estimated size: 546
+Unimic/unmc_01/sources/unmc_lcd_216.c estimated size: 534
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
 		_isdigit       		CODE           	1E06	0000	35
@@ -1611,6 +1617,12 @@ C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c estimated size: 19
 
+Unimic/unmc_01/headers\unmc_rtcc_01.h
+		_Read_RTC      		CODE           	1854	0000	217
+		_Write_RTC     		CODE           	13B0	0000	329
+
+Unimic/unmc_01/headers\unmc_rtcc_01.h estimated size: 546
+
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
 		_sprintf       		CODE           	0F3C	0000	613
 
@@ -1620,18 +1632,6 @@ C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate
 		_RtccWriteDate 		CODE           	14F8	0000	327
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c estimated size: 327
-
-C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-		_lcd_comand    		CODE           	1E72	0000	15
-		_lcd_putc      		CODE           	1CB0	0000	77
-		_lcd_putrs     		CODE           	1C10	0000	85
-		_lcd_send_byte 		CODE           	1D88	0000	51
-		_lcd_setcursor_		CODE           	1E28	0000	21
-		_lcd_gotoxy    		CODE           	1DE2	0000	37
-		_lcd_send_nibbl		CODE           	1AD0	0000	119
-		_lcd_init      		CODE           	1A50	0000	129
-
-C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c estimated size: 534
 
 main.c
 		_main          		CODE           	11A0	0000	529

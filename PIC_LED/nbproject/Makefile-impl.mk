@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=laboratorio_electronica
+PROJECTNAME=PIC_LED
 
 # Active Configuration
 DEFAULTCONF=default

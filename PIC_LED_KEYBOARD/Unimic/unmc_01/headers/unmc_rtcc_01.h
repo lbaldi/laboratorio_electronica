@@ -35,12 +35,12 @@ int a=0;
 int b=0;
 int c=0;
 int k=0;
-int anio=15;                //año 2013 -> 00001110
+int anio=16;                //año 2013 -> 00001110
 int mes=9;                  //mes enero-> 00000001 (1) .... dici-> 00001100 (12)
-int diasem=3;               //0 Dom , 1 Lun , 2 Mar......, 6 Sab
-int dia=8;                  //dia 01 -> 00000001.....31 -> 00011111
+int diasem=2;               //0 Dom , 1 Lun , 2 Mar......, 6 Sab
+int dia=6;                  //dia 01 -> 00000001.....31 -> 00011111
 int hora=18;                 //hora 00 -> 00000000.....24 -> 00011000
-int minuto=30;               //variables de numeros enteros que permiten
+int minuto=00;               //variables de numeros enteros que permiten
 int segundo=0;              //representar los valores en el LCD
 
 
@@ -51,7 +51,7 @@ rtccTime RtccTime; // Inicializa la estructura de tiempo
 rtccTime RtccTimeVal;
 rtccDate RtccDate;//Inicializa la estructura de Fecha
 
-unsigned char buffer2[20];
+unsigned char buffer1[20];
 
 void DelayFor18TCY(void)
 {

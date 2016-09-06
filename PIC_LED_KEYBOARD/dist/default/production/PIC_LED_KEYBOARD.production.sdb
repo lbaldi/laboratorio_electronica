@@ -152,11 +152,13 @@ RTCCPTR_MASK_YEAR 3
 [v _RtccWriteTime RtccWriteTime `(E7337  1 e 1 0 ]
 "21 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
 [v _RtccWrOn RtccWrOn `(v  1 e 0 0 ]
-"36 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-[v _caratula caratula `(v  1 e 0 0 ]
-"56
+"30 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+[v _Home Home `(v  1 e 0 0 ]
+"44
 [v _Setup Setup `(v  1 e 0 0 ]
-"91
+"74
+[v _Write_Keyboard Write_Keyboard `(v  1 e 0 0 ]
+"112
 [v _main main `(i  1 e 2 0 ]
 "14 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_inout_02.h
 [v _key key `uc  1 e 1 0 ]
@@ -417,26 +419,26 @@ RTCCPTR_MASK_YEAR 3
 ]
 [u S361 . 1 `S329 1 . 1 0 `S338 1 . 1 0 `S340 1 . 1 0 `S343 1 . 1 0 `S346 1 . 1 0 `S349 1 . 1 0 `S352 1 . 1 0 `S355 1 . 1 0 `S358 1 . 1 0 ]
 [v _LATBbits LATBbits `VES361  1 e 1 @3978 ]
-[s S1441 . 1 `uc 1 ALRMPTR 1 0 :2:0 
+[s S1443 . 1 `uc 1 ALRMPTR 1 0 :2:0 
 `uc 1 AMASK 1 0 :4:2 
 `uc 1 CHIME 1 0 :1:6 
 `uc 1 ALRMEN 1 0 :1:7 
 ]
 "6740
-[s S1446 . 1 `uc 1 ALRMPTR0 1 0 :1:0 
+[s S1448 . 1 `uc 1 ALRMPTR0 1 0 :1:0 
 `uc 1 ALRMPTR1 1 0 :1:1 
 `uc 1 AMASK0 1 0 :1:2 
 `uc 1 AMASK1 1 0 :1:3 
 `uc 1 AMASK2 1 0 :1:4 
 `uc 1 AMASK3 1 0 :1:5 
 ]
-[u S1453 . 1 `S1441 1 . 1 0 `S1446 1 . 1 0 ]
-[v _ALRMCFGbits ALRMCFGbits `VES1453  1 e 1 @3985 ]
+[u S1455 . 1 `S1443 1 . 1 0 `S1448 1 . 1 0 ]
+[v _ALRMCFGbits ALRMCFGbits `VES1455  1 e 1 @3985 ]
 "6794
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "6850
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-[s S984 . 1 `uc 1 TRISB0 1 0 :1:0 
+[s S986 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
 `uc 1 TRISB3 1 0 :1:3 
@@ -446,8 +448,8 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 TRISB7 1 0 :1:7 
 ]
 "6867
-[u S993 . 1 `S984 1 . 1 0 ]
-[v _TRISBbits TRISBbits `VES993  1 e 1 @3987 ]
+[u S995 . 1 `S986 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES995  1 e 1 @3987 ]
 "6911
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
 "7055
@@ -553,7 +555,7 @@ RTCCPTR_MASK_YEAR 3
 ]
 [u S238 . 1 `S225 1 . 1 0 `S231 1 . 1 0 ]
 [v _OSCCONbits OSCCONbits `VES238  1 e 1 @4051 ]
-[s S1248 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S1250 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -563,7 +565,7 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "14949
-[s S1257 . 1 `uc 1 . 1 0 :1:0 
+[s S1259 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -572,18 +574,23 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S1266 . 1 `uc 1 . 1 0 :6:0 
+[s S1268 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S1283 . 1 `S1248 1 . 1 0 `S1257 1 . 1 0 `S1266 1 . 1 0 `S1257 1 . 1 0 `S1266 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES1283  1 e 1 @4082 ]
+[u S1285 . 1 `S1250 1 . 1 0 `S1259 1 . 1 0 `S1268 1 . 1 0 `S1259 1 . 1 0 `S1268 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES1285  1 e 1 @4082 ]
 "354 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
 [v _dpowers dpowers `C[5]ui  1 s 10 dpowers ]
-"91 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+"112 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"132
+"128
+} 0
+"74
+[v _Write_Keyboard Write_Keyboard `(v  1 e 0 0 ]
+{
+"110
 } 0
 "492 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -646,10 +653,133 @@ RTCCPTR_MASK_YEAR 3
 [v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
 "31
 } 0
-"36 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-[v _caratula caratula `(v  1 e 0 0 ]
+"44 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+[v _Setup Setup `(v  1 e 0 0 ]
 {
-"48
+"72
+} 0
+"119 C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+[v _lcd_init lcd_init `(v  1 e 0 0 ]
+{
+"120
+[v lcd_init@i i `uc  1 a 1 4 ]
+"156
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
+[v _Delay1KTCYx Delay1KTCYx `(v  1 e 0 0 ]
+{
+[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay1KTCYx@unit unit `uc  1 a 1 0 ]
+"13
+} 0
+"74 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h
+[v _Write_RTC Write_RTC `(v  1 e 0 0 ]
+{
+"102
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"42
+} 0
+"34 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
+[v _RtccWriteTime RtccWriteTime `(E7337  1 e 1 0 ]
+{
+[s S1363 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+"36
+[s S1366 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S1383 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1363 1 byte 2 0 `S1366 1 bits 2 0 ]
+[v RtccWriteTime@tempHourWDay tempHourWDay `S1383  1 a 2 9 ]
+"37
+[v RtccWriteTime@tempMinSec tempMinSec `S1383  1 a 2 7 ]
+"40
+[v RtccWriteTime@wasWrEn wasWrEn `E7121  1 a 1 6 ]
+"42
+[v RtccWriteTime@wasAlrm wasAlrm `E7121  1 a 1 5 ]
+"41
+[v RtccWriteTime@wasOn wasOn `E7121  1 a 1 4 ]
+[s S35 . 4 `uc 1 rsvd 1 0 `uc 1 sec 1 1 `uc 1 min 1 2 `uc 1 hour 1 3 ]
+"34
+[u S40 . 4 `S35 1 f 4 0 `[4]uc 1 b 4 0 `[2]ui 1 w 4 0 `ul 1 l 4 0 ]
+[v RtccWriteTime@pTm pTm `*.39CS40  1 p 2 0 ]
+[v RtccWriteTime@di di `E7121  1 p 1 2 ]
+"113
+} 0
+"35 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
+[v _RtccWriteDate RtccWriteDate `(E7337  1 e 1 0 ]
+{
+[s S1363 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+"37
+[s S1366 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S1383 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1363 1 byte 2 0 `S1366 1 bits 2 0 ]
+[v RtccWriteDate@tempHourWDay tempHourWDay `S1383  1 a 2 11 ]
+"38
+[v RtccWriteDate@tempDayMonth tempDayMonth `S1383  1 a 2 9 ]
+"39
+[v RtccWriteDate@tempYear tempYear `S1383  1 a 2 6 ]
+"41
+[v RtccWriteDate@wasWrEn wasWrEn `E7121  1 a 1 8 ]
+"43
+[v RtccWriteDate@wasAlrm wasAlrm `E7121  1 a 1 5 ]
+"42
+[v RtccWriteDate@wasOn wasOn `E7121  1 a 1 4 ]
+[s S45 . 4 `uc 1 wday 1 0 `uc 1 mday 1 1 `uc 1 mon 1 2 `uc 1 year 1 3 ]
+"35
+[u S50 . 4 `S45 1 f 4 0 `[4]uc 1 b 4 0 `[2]ui 1 w 4 0 `ul 1 l 4 0 ]
+[v RtccWriteDate@pDt pDt `*.39CS50  1 p 2 0 ]
+[v RtccWriteDate@di di `E7121  1 p 1 2 ]
+"118
+} 0
+"21 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
+[v _RtccWrOn RtccWrOn `(v  1 e 0 0 ]
+{
+"46
+} 0
+"30 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+[v _Home Home `(v  1 e 0 0 ]
+{
+"42
 } 0
 "221 C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
 [v _lcd_putrs lcd_putrs `(v  1 e 0 0 ]
@@ -678,27 +808,7 @@ RTCCPTR_MASK_YEAR 3
 [v lcd_gotoxy@x x `uc  1 a 1 5 ]
 "168
 } 0
-"56 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-[v _Setup Setup `(v  1 e 0 0 ]
-{
-"84
-} 0
-"119 C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-[v _lcd_init lcd_init `(v  1 e 0 0 ]
-{
-"120
-[v lcd_init@i i `uc  1 a 1 4 ]
-"156
-} 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
-[v _Delay1KTCYx Delay1KTCYx `(v  1 e 0 0 ]
-{
-[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
-[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
-[v Delay1KTCYx@unit unit `uc  1 a 1 0 ]
-"13
-} 0
-"189 C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
+"189
 [v _lcd_comand lcd_comand `(v  1 e 0 0 ]
 {
 [v lcd_comand@d d `uc  1 a 1 wreg ]
@@ -732,107 +842,4 @@ RTCCPTR_MASK_YEAR 3
 [v Delay100TCYx@unit unit `uc  1 a 1 wreg ]
 [v Delay100TCYx@unit unit `uc  1 a 1 0 ]
 "13
-} 0
-"74 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h
-[v _Write_RTC Write_RTC `(v  1 e 0 0 ]
-{
-"102
-} 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
-[v ___awdiv __awdiv `(i  1 e 2 0 ]
-{
-"11
-[v ___awdiv@quotient quotient `i  1 a 2 6 ]
-"12
-[v ___awdiv@sign sign `uc  1 a 1 5 ]
-[v ___awdiv@counter counter `uc  1 a 1 4 ]
-"8
-[v ___awdiv@dividend dividend `i  1 p 2 0 ]
-[v ___awdiv@divisor divisor `i  1 p 2 2 ]
-"42
-} 0
-"34 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-[v _RtccWriteTime RtccWriteTime `(E7337  1 e 1 0 ]
-{
-[s S1361 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
-"36
-[s S1364 . 2 `uc 1 b0 1 0 :1:0 
-`uc 1 b1 1 0 :1:1 
-`uc 1 b2 1 0 :1:2 
-`uc 1 b3 1 0 :1:3 
-`uc 1 b4 1 0 :1:4 
-`uc 1 b5 1 0 :1:5 
-`uc 1 b6 1 0 :1:6 
-`uc 1 b7 1 0 :1:7 
-`uc 1 b8 1 1 :1:0 
-`uc 1 b9 1 1 :1:1 
-`uc 1 b10 1 1 :1:2 
-`uc 1 b11 1 1 :1:3 
-`uc 1 b12 1 1 :1:4 
-`uc 1 b13 1 1 :1:5 
-`uc 1 b14 1 1 :1:6 
-`uc 1 b15 1 1 :1:7 
-]
-[u S1381 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1361 1 byte 2 0 `S1364 1 bits 2 0 ]
-[v RtccWriteTime@tempHourWDay tempHourWDay `S1381  1 a 2 9 ]
-"37
-[v RtccWriteTime@tempMinSec tempMinSec `S1381  1 a 2 7 ]
-"40
-[v RtccWriteTime@wasWrEn wasWrEn `E7121  1 a 1 6 ]
-"42
-[v RtccWriteTime@wasAlrm wasAlrm `E7121  1 a 1 5 ]
-"41
-[v RtccWriteTime@wasOn wasOn `E7121  1 a 1 4 ]
-[s S35 . 4 `uc 1 rsvd 1 0 `uc 1 sec 1 1 `uc 1 min 1 2 `uc 1 hour 1 3 ]
-"34
-[u S40 . 4 `S35 1 f 4 0 `[4]uc 1 b 4 0 `[2]ui 1 w 4 0 `ul 1 l 4 0 ]
-[v RtccWriteTime@pTm pTm `*.39CS40  1 p 2 0 ]
-[v RtccWriteTime@di di `E7121  1 p 1 2 ]
-"113
-} 0
-"35 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-[v _RtccWriteDate RtccWriteDate `(E7337  1 e 1 0 ]
-{
-[s S1361 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
-"37
-[s S1364 . 2 `uc 1 b0 1 0 :1:0 
-`uc 1 b1 1 0 :1:1 
-`uc 1 b2 1 0 :1:2 
-`uc 1 b3 1 0 :1:3 
-`uc 1 b4 1 0 :1:4 
-`uc 1 b5 1 0 :1:5 
-`uc 1 b6 1 0 :1:6 
-`uc 1 b7 1 0 :1:7 
-`uc 1 b8 1 1 :1:0 
-`uc 1 b9 1 1 :1:1 
-`uc 1 b10 1 1 :1:2 
-`uc 1 b11 1 1 :1:3 
-`uc 1 b12 1 1 :1:4 
-`uc 1 b13 1 1 :1:5 
-`uc 1 b14 1 1 :1:6 
-`uc 1 b15 1 1 :1:7 
-]
-[u S1381 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1361 1 byte 2 0 `S1364 1 bits 2 0 ]
-[v RtccWriteDate@tempHourWDay tempHourWDay `S1381  1 a 2 11 ]
-"38
-[v RtccWriteDate@tempDayMonth tempDayMonth `S1381  1 a 2 9 ]
-"39
-[v RtccWriteDate@tempYear tempYear `S1381  1 a 2 6 ]
-"41
-[v RtccWriteDate@wasWrEn wasWrEn `E7121  1 a 1 8 ]
-"43
-[v RtccWriteDate@wasAlrm wasAlrm `E7121  1 a 1 5 ]
-"42
-[v RtccWriteDate@wasOn wasOn `E7121  1 a 1 4 ]
-[s S45 . 4 `uc 1 wday 1 0 `uc 1 mday 1 1 `uc 1 mon 1 2 `uc 1 year 1 3 ]
-"35
-[u S50 . 4 `S45 1 f 4 0 `[4]uc 1 b 4 0 `[2]ui 1 w 4 0 `ul 1 l 4 0 ]
-[v RtccWriteDate@pDt pDt `*.39CS50  1 p 2 0 ]
-[v RtccWriteDate@di di `E7121  1 p 1 2 ]
-"118
-} 0
-"21 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
-[v _RtccWrOn RtccWrOn `(v  1 e 0 0 ]
-{
-"46
 } 0

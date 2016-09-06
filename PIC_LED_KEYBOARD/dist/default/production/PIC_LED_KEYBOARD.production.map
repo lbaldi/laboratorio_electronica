@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.34\dat\en_msgs.txt -cs \
   -h+dist/default/production\PIC_LED_KEYBOARD.production.sym \
   --cmf=dist/default/production\PIC_LED_KEYBOARD.production.cmf -z \
-  -Q18F26J50 -oC:\Users\ADMINI~1\AppData\Local\Temp\s30o.6 \
+  -Q18F26J50 -oC:\Users\ADMINI~1\AppData\Local\Temp\s3hs.6 \
   -Mdist/default/production/PIC_LED_KEYBOARD.production.map -E1 -ver=XC8 \
   -ASTACK=084h-0ebfh -pstack=STACK -ACODE=00h-0FFF7h -ACONST=00h-0FFF7h \
   -ASMALLCONST=0F00h-0FFFhx240,0FF00h-0FFF7h -AMEDIUMCONST=0F00h-0FFF7h \
@@ -25,7 +25,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\ADMINI~1\AppData\Local\Temp\s30o.obj \
+  C:\Users\ADMINI~1\AppData\Local\Temp\s3hs.obj \
   dist/default/production\PIC_LED_KEYBOARD.production.obj 
 
 Object code version is 3.11
@@ -38,71 +38,73 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ADMINI~1\AppData\Local\Temp\s30o.obj
+C:\Users\ADMINI~1\AppData\Local\Temp\s3hs.obj
                 end_init                              0        0        4        0       0
                 config                             FFF8     FFF8        8     FFF8       0
 dist/default/production\PIC_LED_KEYBOARD.production.obj
                 smallconst                          F00      F00       32      780       0
-                text21                             1C64     1C64       12      799       0
-                text20                             15C6     15C6      146      799       0
-                text19                             170C     170C      10C      799       0
-                text18                             1818     1818       96      799       0
-                text17                             147E     147E      148      799       0
-                text16                             1C52     1C52       12      799       0
-                text15                             192E     192E       76      799       0
-                text14                             1B78     1B78       32      799       0
-                text13                             1C76     1C76        E      799       0
-                text12                             1C40     1C40       12      799       0
-                text11                             18AE     18AE       80      799       0
-                text10                             1AEC     1AEC       48      799       0
-                text9                              1BFA     1BFA       24      799       0
-                text8                              1AA0     1AA0       4C      799       0
-                text7                              1A00     1A00       54      799       0
-                text6                              1BD2     1BD2       28      799       0
-                text5                              19A4     19A4       5C      799       0
-                text4                              1A54     1A54       4C      799       0
-                text3                              1BAA     1BAA       28      799       0
-                text2                              1C1E     1C1E       22      799       0
-                text1                              121A     121A      264      799       0
-                text0                               F32      F32      2E8      799       0
+                text22                             1C6A     1C6A       12      799       0
+                text21                             1920     1920       76      799       0
+                text20                             1B6A     1B6A       32      799       0
+                text19                             1C7C     1C7C        E      799       0
+                text18                             1BEC     1BEC       24      799       0
+                text17                             1A92     1A92       4C      799       0
+                text16                             19F2     19F2       54      799       0
+                text15                             1BC4     1BC4       28      799       0
+                text14                             1C58     1C58       12      799       0
+                text13                             15B8     15B8      146      799       0
+                text12                             16FE     16FE      10C      799       0
+                text11                             180A     180A       96      799       0
+                text10                             1470     1470      148      799       0
+                text9                              1C46     1C46       12      799       0
+                text8                              18A0     18A0       80      799       0
+                text7                              1ADE     1ADE       48      799       0
+                text6                              1996     1996       5C      799       0
+                text5                              1A46     1A46       4C      799       0
+                text4                              1B9C     1B9C       28      799       0
+                text3                              1C10     1C10       22      799       0
+                text2                              120C     120C      264      799       0
+                text1                               F32      F32      2DA      799       0
+                text0                              1C32     1C32       14      799       0
                 cstackCOMRAM                         2A       2A       20        1       1
                 bssBANK0                             60       60       24       60       1
                 dataCOMRAM                           57       57        6        1       1
                 bssCOMRAM                             1        1       29        1       1
                 bitbssCOMRAM                        2E8       5D        1        1       1     8
-                cinit                              1B34     1B34       44      799       0
+                cinit                              1B26     1B26       44      799       0
                 nvCOMRAM                             4A       4A        D        1       1
-                idataCOMRAM                        1C84     1C84        6      799       0
+                idataCOMRAM                        1C8A     1C8A        6      799       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 end_init                              0        0        4         0
-                text21                             1C64     1C64       12         0
-                text20                             15C6     15C6      146         0
-                text19                             170C     170C      10C         0
-                text18                             1818     1818       96         0
-                text17                             147E     147E      148         0
-                text16                             1C52     1C52       12         0
-                text15                             192E     192E       76         0
-                text14                             1B78     1B78       32         0
-                text13                             1C76     1C76        E         0
-                text12                             1C40     1C40       12         0
-                text11                             18AE     18AE       80         0
-                text10                             1AEC     1AEC       48         0
-                text9                              1BFA     1BFA       24         0
-                text8                              1AA0     1AA0       4C         0
-                text7                              1A00     1A00       54         0
-                text6                              1BD2     1BD2       28         0
-                text5                              19A4     19A4       5C         0
-                text4                              1A54     1A54       4C         0
-                text3                              1BAA     1BAA       28         0
-                text2                              1C1E     1C1E       22         0
-                text1                              121A     121A      264         0
-                text0                               F32      F32      2E8         0
-                cinit                              1B34     1B34       44         0
-                idataCOMRAM                        1C84     1C84        6         0
+                text22                             1C6A     1C6A       12         0
+                text21                             1920     1920       76         0
+                text20                             1B6A     1B6A       32         0
+                text19                             1C7C     1C7C        E         0
+                text18                             1BEC     1BEC       24         0
+                text17                             1A92     1A92       4C         0
+                text16                             19F2     19F2       54         0
+                text15                             1BC4     1BC4       28         0
+                text14                             1C58     1C58       12         0
+                text13                             15B8     15B8      146         0
+                text12                             16FE     16FE      10C         0
+                text11                             180A     180A       96         0
+                text10                             1470     1470      148         0
+                text9                              1C46     1C46       12         0
+                text8                              18A0     18A0       80         0
+                text7                              1ADE     1ADE       48         0
+                text6                              1996     1996       5C         0
+                text5                              1A46     1A46       4C         0
+                text4                              1B9C     1B9C       28         0
+                text3                              1C10     1C10       22         0
+                text2                              120C     120C      264         0
+                text1                               F32      F32      2DA         0
+                text0                              1C32     1C32       14         0
+                cinit                              1B26     1B26       44         0
+                idataCOMRAM                        1C8A     1C8A        6         0
 
         CLASS   CONST          
 
@@ -172,7 +174,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 bssCOMRAM                      000001  00005D  00005E         1       1  COMRAM  
                 bssBANK0                       000060  000024  000084        60       1  BANK0   
                 smallconst                     000F00  000032  000F32       780       0  SMALLCON
-                text0                          000F32  000D58  001C8A       799       0  CODE    
+                text1                          000F32  000D5E  001C90       799       0  CODE    
                 config                         00FFF8  000008  010000      FFF8       0  CONFIG  
 
 
@@ -197,14 +199,14 @@ UNUSED ADDRESS RANGES
         BIGRAM           0005E-0005F               2
                          00084-00EBF             E3C
         CODE             00004-00EFF             EFC
-                         01C8A-0FFF7            E36E
+                         01C90-0FFF7            E368
         COMRAM           0005E-0005F               2
         CONST            00004-00EFF             EFC
-                         01C8A-0FFF7            E36E
-        MEDIUMCONST      01C8A-0FFF7            E36E
+                         01C90-0FFF7            E368
+        MEDIUMCONST      01C90-0FFF7            E368
         RAM              00084-00EBF             100
         SFR              00EC0-00FFF              60
-        SMALLCONST       01C8A-0FFF7             100
+        SMALLCONST       01C90-0FFF7             100
         STACK            00084-00EBF             E3C
 
                                   Symbol Table
@@ -236,9 +238,10 @@ _ADCON1                    (abs)         00FC1
 _ALRMCFGbits               (abs)         00F91
 _ANCON0                    (abs)         00F48
 _ANCON1                    (abs)         00F49
-_Delay100TCYx              text16        01C52
-_Delay1KTCYx               text12        01C40
+_Delay100TCYx              text22        01C6A
+_Delay1KTCYx               text9         01C46
 _EECON2                    (abs)         00FA7
+_Home                      text15        01BC4
 _INTCONbits                (abs)         00FF2
 _LATAbits                  (abs)         00F89
 _LATBbits                  (abs)         00F8A
@@ -257,17 +260,18 @@ _RtccDate                  bssCOMRAM     00022
 _RtccTime                  bssCOMRAM     00026
 _RtccTimeDate              bssCOMRAM     00001
 _RtccTimeVal               bssCOMRAM     00009
-_RtccWrOn                  text21        01C64
-_RtccWriteDate             text20        015C6
-_RtccWriteTime             text19        0170C
+_RtccWrOn                  text14        01C58
+_RtccWriteDate             text13        015B8
+_RtccWriteTime             text12        016FE
 _Rtcc_read_TimeDate        bssBANK0      00068
-_Setup                     text10        01AEC
+_Setup                     text7         01ADE
 _T1CONbits                 (abs)         00FCD
 _TRISA                     (abs)         00F92
 _TRISB                     (abs)         00F93
 _TRISBbits                 (abs)         00F93
 _TRISC                     (abs)         00F94
-_Write_RTC                 text17        0147E
+_Write_Keyboard            text1         00F32
+_Write_RTC                 text10        01470
 __CFG_CP0$OFF              (abs)         00000
 __CFG_CPUDIV$OSC1          (abs)         00000
 __CFG_DSBOREN$OFF          (abs)         00000
@@ -376,6 +380,7 @@ __Htext19                  text19        00000
 __Htext2                   text2         00000
 __Htext20                  text20        00000
 __Htext21                  text21        00000
+__Htext22                  text22        00000
 __Htext3                   text3         00000
 __Htext4                   text4         00000
 __Htext5                   text5         00000
@@ -470,6 +475,7 @@ __Ltext19                  text19        00000
 __Ltext2                   text2         00000
 __Ltext20                  text20        00000
 __Ltext21                  text21        00000
+__Ltext22                  text22        00000
 __Ltext3                   text3         00000
 __Ltext4                   text4         00000
 __Ltext5                   text5         00000
@@ -480,7 +486,7 @@ __Ltext9                   text9         00000
 __S0                       (abs)         10000
 __S1                       (abs)         00084
 __S2                       (abs)         00000
-___awdiv                   text18        01818
+___awdiv                   text11        0180A
 ___awdiv@counter           cstackCOMRAM  0002E
 ___awdiv@dividend          cstackCOMRAM  0002A
 ___awdiv@divisor           cstackCOMRAM  0002C
@@ -488,95 +494,98 @@ ___awdiv@quotient          cstackCOMRAM  00030
 ___awdiv@sign              cstackCOMRAM  0002F
 ___inthi_sp                stack         00000
 ___intlo_sp                stack         00000
-___lwdiv                   text5         019A4
+___lwdiv                   text6         01996
 ___lwdiv@counter           cstackCOMRAM  00030
 ___lwdiv@dividend          cstackCOMRAM  0002A
 ___lwdiv@divisor           cstackCOMRAM  0002C
 ___lwdiv@quotient          cstackCOMRAM  0002E
-___lwmod                   text4         01A54
+___lwmod                   text5         01A46
 ___lwmod@counter           cstackCOMRAM  00035
 ___lwmod@dividend          cstackCOMRAM  00031
 ___lwmod@divisor           cstackCOMRAM  00033
 ___param_bank              (abs)         00010
 ___rparam_used             (abs)         00001
 ___sp                      stack         00000
-___wmul                    text3         01BAA
+___wmul                    text4         01B9C
 ___wmul@multiplicand       cstackCOMRAM  0002C
 ___wmul@multiplier         cstackCOMRAM  0002A
 ___wmul@product            cstackCOMRAM  0002E
 __accesstop                (abs)         00060
 __activetblptr             (abs)         00002
-__end_of_Delay100TCYx      text16        01C64
-__end_of_Delay1KTCYx       text12        01C52
+__end_of_Delay100TCYx      text22        01C7C
+__end_of_Delay1KTCYx       text9         01C58
+__end_of_Home              text15        01BEC
 __end_of_LCD_INIT_STRING   smallconst    00F0F
-__end_of_RtccWrOn          text21        01C76
-__end_of_RtccWriteDate     text20        0170C
-__end_of_RtccWriteTime     text19        01818
-__end_of_Setup             text10        01B34
-__end_of_Write_RTC         text17        015C6
-__end_of___awdiv           text18        018AE
-__end_of___lwdiv           text5         01A00
-__end_of___lwmod           text4         01AA0
-__end_of___wmul            text3         01BD2
-__end_of__initialization   cinit         01B6E
-__end_of_caratula          text6         01BFA
+__end_of_RtccWrOn          text14        01C6A
+__end_of_RtccWriteDate     text13        016FE
+__end_of_RtccWriteTime     text12        0180A
+__end_of_Setup             text7         01B26
+__end_of_Write_Keyboard    text1         0120C
+__end_of_Write_RTC         text10        015B8
+__end_of___awdiv           text11        018A0
+__end_of___lwdiv           text6         019F2
+__end_of___lwmod           text5         01A92
+__end_of___wmul            text4         01BC4
+__end_of__initialization   cinit         01B60
 __end_of_dpowers           smallconst    00F0B
-__end_of_isdigit           text2         01C40
-__end_of_lcd_comand        text13        01C84
-__end_of_lcd_gotoxy        text9         01C1E
-__end_of_lcd_init          text11        0192E
-__end_of_lcd_putc          text8         01AEC
-__end_of_lcd_putrs         text7         01A54
-__end_of_lcd_send_byte     text14        01BAA
-__end_of_lcd_send_nibble   text15        019A4
-__end_of_main              text0         0121A
-__end_of_sprintf           text1         0147E
-__initialization           cinit         01B34
+__end_of_isdigit           text3         01C32
+__end_of_lcd_comand        text19        01C8A
+__end_of_lcd_gotoxy        text18        01C10
+__end_of_lcd_init          text8         01920
+__end_of_lcd_putc          text17        01ADE
+__end_of_lcd_putrs         text16        01A46
+__end_of_lcd_send_byte     text20        01B9C
+__end_of_lcd_send_nibble   text21        01996
+__end_of_main              text0         01C46
+__end_of_sprintf           text2         01470
+__initialization           cinit         01B26
 __mediumconst              mediumconst   00000
 __pbitbssCOMRAM            bitbssCOMRAM  002E8
 __pbssBANK0                bssBANK0      00060
 __pbssCOMRAM               bssCOMRAM     00001
-__pcinit                   cinit         01B34
+__pcinit                   cinit         01B26
 __pcstackCOMRAM            cstackCOMRAM  0002A
 __pdataCOMRAM              dataCOMRAM    00057
-__pidataCOMRAM             idataCOMRAM   01C84
+__pidataCOMRAM             idataCOMRAM   01C8A
 __pnvCOMRAM                nvCOMRAM      0004A
 __psmallconst              smallconst    00F00
-__ptext0                   text0         00F32
-__ptext1                   text1         0121A
-__ptext10                  text10        01AEC
-__ptext11                  text11        018AE
-__ptext12                  text12        01C40
-__ptext13                  text13        01C76
-__ptext14                  text14        01B78
-__ptext15                  text15        0192E
-__ptext16                  text16        01C52
-__ptext17                  text17        0147E
-__ptext18                  text18        01818
-__ptext19                  text19        0170C
-__ptext2                   text2         01C1E
-__ptext20                  text20        015C6
-__ptext21                  text21        01C64
-__ptext3                   text3         01BAA
-__ptext4                   text4         01A54
-__ptext5                   text5         019A4
-__ptext6                   text6         01BD2
-__ptext7                   text7         01A00
-__ptext8                   text8         01AA0
-__ptext9                   text9         01BFA
+__ptext0                   text0         01C32
+__ptext1                   text1         00F32
+__ptext10                  text10        01470
+__ptext11                  text11        0180A
+__ptext12                  text12        016FE
+__ptext13                  text13        015B8
+__ptext14                  text14        01C58
+__ptext15                  text15        01BC4
+__ptext16                  text16        019F2
+__ptext17                  text17        01A92
+__ptext18                  text18        01BEC
+__ptext19                  text19        01C7C
+__ptext2                   text2         0120C
+__ptext20                  text20        01B6A
+__ptext21                  text21        01920
+__ptext22                  text22        01C6A
+__ptext3                   text3         01C10
+__ptext4                   text4         01B9C
+__ptext5                   text5         01A46
+__ptext6                   text6         01996
+__ptext7                   text7         01ADE
+__ptext8                   text8         018A0
+__ptext9                   text9         01C46
 __ramtop                   ramtop        00F00
 __size_of_Delay100TCYx     (abs)         00000
 __size_of_Delay1KTCYx      (abs)         00000
+__size_of_Home             (abs)         00000
 __size_of_RtccWrOn         (abs)         00000
 __size_of_RtccWriteDate    (abs)         00000
 __size_of_RtccWriteTime    (abs)         00000
 __size_of_Setup            (abs)         00000
+__size_of_Write_Keyboard   (abs)         00000
 __size_of_Write_RTC        (abs)         00000
 __size_of___awdiv          (abs)         00000
 __size_of___lwdiv          (abs)         00000
 __size_of___lwmod          (abs)         00000
 __size_of___wmul           (abs)         00000
-__size_of_caratula         (abs)         00000
 __size_of_isdigit          (abs)         00000
 __size_of_lcd_comand       (abs)         00000
 __size_of_lcd_gotoxy       (abs)         00000
@@ -595,7 +604,6 @@ _anio_u                    nvCOMRAM      0004B
 _b                         bssCOMRAM     0000F
 _buffer2                   bssBANK0      00070
 _c                         bssCOMRAM     00011
-_caratula                  text6         01BD2
 _dia                       dataCOMRAM    00059
 _dia_semana                nvCOMRAM      0004C
 _diasem                    bssCOMRAM     00013
@@ -607,19 +615,19 @@ _hora                      bssCOMRAM     00015
 _hora_d                    nvCOMRAM      0004F
 _hora_u                    nvCOMRAM      00050
 _i                         bssCOMRAM     00017
-_isdigit                   text2         01C1E
-_isdigit$2039              cstackCOMRAM  0002B
+_isdigit                   text3         01C10
+_isdigit$2041              cstackCOMRAM  0002B
 _j                         bssCOMRAM     00019
 _k                         bssCOMRAM     0001B
 _key                       bssCOMRAM     00021
-_lcd_comand                text13        01C76
-_lcd_gotoxy                text9         01BFA
-_lcd_init                  text11        018AE
-_lcd_putc                  text8         01AA0
-_lcd_putrs                 text7         01A00
-_lcd_send_byte             text14        01B78
-_lcd_send_nibble           text15        0192E
-_main                      text0         00F32
+_lcd_comand                text19        01C7C
+_lcd_gotoxy                text18        01BEC
+_lcd_init                  text8         018A0
+_lcd_putc                  text17        01A92
+_lcd_putrs                 text16        019F2
+_lcd_send_byte             text20        01B6A
+_lcd_send_nibble           text21        01920
+_main                      text0         01C32
 _mes                       dataCOMRAM    0005B
 _mes_d                     nvCOMRAM      00051
 _mes_u                     nvCOMRAM      00052
@@ -629,8 +637,8 @@ _minuto_u                  nvCOMRAM      00054
 _segundo                   bssCOMRAM     0001F
 _segundo_d                 nvCOMRAM      00055
 _segundo_u                 nvCOMRAM      00056
-_sprintf                   text1         0121A
-end_of_initialization      cinit         01B6E
+_sprintf                   text2         0120C
+end_of_initialization      cinit         01B60
 intlevel0                  text          00000
 intlevel1                  text          00000
 intlevel2                  text          00000
@@ -657,20 +665,51 @@ sprintf@width              cstackCOMRAM  00046
 stackhi                    (abs)         00EBF
 stacklo                    (abs)         00084
 start                      init          00000
-start_initialization       cinit         01B34
+start_initialization       cinit         01B26
 
 
 FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 91 in file "main.c"
+		line 112 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
-                  2  148[None  ] int 
+                  2  215[None  ] int 
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels required when called:    6
+ This function calls:
+		_Home
+		_Setup
+		_Write_Keyboard
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _Write_Keyboard *****************
+ Defined at:
+		line 74 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
  Registers used:
 		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
@@ -683,14 +722,13 @@ FUNCTION INFORMATION:
       Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        1 bytes
- Hardware stack levels required when called:    6
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
  This function calls:
-		_Setup
-		_caratula
 		_lcd_putrs
 		_sprintf
  This function is called by:
-		Startup code after reset
+		_main
  This function uses a non-reentrant model
 
 
@@ -737,7 +775,7 @@ Total ram usage:       19 bytes
 		___wmul
 		_isdigit
  This function is called by:
-		_main
+		_Write_Keyboard
  This function uses a non-reentrant model
 
 
@@ -861,139 +899,9 @@ Total ram usage:        7 bytes
  This function uses a non-reentrant model
 
 
- *************** function _caratula *****************
- Defined at:
-		line 36 in file "main.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        0 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    5
- This function calls:
-		_lcd_comand
-		_lcd_gotoxy
-		_lcd_putrs
- This function is called by:
-		_main
- This function uses a non-reentrant model
-
-
- *************** function _lcd_putrs *****************
- Defined at:
-		line 221 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
- Parameters:    Size  Location     Type
-  ptr             2    8[COMRAM] PTR const unsigned char 
-		 -> STR_17(2), STR_16(2), STR_14(2), STR_13(2), 
-		 -> STR_9(2), STR_5(2), buffer2(20), STR_1(17), 
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        2 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    4
- This function calls:
-		_lcd_putc
- This function is called by:
-		_caratula
-		_main
- This function uses a non-reentrant model
-
-
- *************** function _lcd_putc *****************
- Defined at:
-		line 172 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
- Parameters:    Size  Location     Type
-  c               1    wreg     unsigned char 
- Auto vars:     Size  Location     Type
-  c               1    7[COMRAM] unsigned char 
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, status,2, status,0, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        1 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    3
- This function calls:
-		_lcd_gotoxy
-		_lcd_send_byte
- This function is called by:
-		_lcd_putrs
-		_lcd_puts
- This function uses a non-reentrant model
-
-
- *************** function _lcd_gotoxy *****************
- Defined at:
-		line 158 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
- Parameters:    Size  Location     Type
-  x               1    wreg     unsigned char 
-  y               1    4[COMRAM] unsigned char 
- Auto vars:     Size  Location     Type
-  x               1    5[COMRAM] unsigned char 
-  address         1    6[COMRAM] unsigned char 
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, status,2, status,0, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        3 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    2
- This function calls:
-		_lcd_send_byte
- This function is called by:
-		_caratula
-		_lcd_putc
- This function uses a non-reentrant model
-
-
  *************** function _Setup *****************
  Defined at:
-		line 56 in file "main.c"
+		line 44 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1082,132 +990,6 @@ Total ram usage:        1 bytes
  This function is called by:
 		_lcd_init
 		_DelayPORXLCD
- This function uses a non-reentrant model
-
-
- *************** function _lcd_comand *****************
- Defined at:
-		line 189 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
- Parameters:    Size  Location     Type
-  d               1    wreg     unsigned char 
- Auto vars:     Size  Location     Type
-  d               1    4[COMRAM] unsigned char 
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, status,2, status,0, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        1 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    2
- This function calls:
-		_lcd_send_byte
- This function is called by:
-		_caratula
-		_Setup
- This function uses a non-reentrant model
-
-
- *************** function _lcd_send_byte *****************
- Defined at:
-		line 86 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
- Parameters:    Size  Location     Type
-  address         1    wreg     unsigned char 
-  n               1    2[COMRAM] unsigned char 
- Auto vars:     Size  Location     Type
-  address         1    3[COMRAM] unsigned char 
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, status,2, status,0, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        2 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    1
- This function calls:
-		_Delay100TCYx
-		_lcd_send_nibble
- This function is called by:
-		_lcd_init
-		_lcd_gotoxy
-		_lcd_putc
-		_lcd_comand
-		_lcd_setcursor_vb
- This function uses a non-reentrant model
-
-
- *************** function _lcd_send_nibble *****************
- Defined at:
-		line 25 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
- Parameters:    Size  Location     Type
-  nibble          1    wreg     unsigned char 
- Auto vars:     Size  Location     Type
-  nibble          1    1[COMRAM] unsigned char 
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, status,2, status,0
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        2 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_lcd_send_byte
-		_lcd_init
- This function uses a non-reentrant model
-
-
- *************** function _Delay100TCYx *****************
- Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c"
- Parameters:    Size  Location     Type
-  unit            1    wreg     unsigned char 
- Auto vars:     Size  Location     Type
-  unit            1    0[COMRAM] unsigned char 
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        1 bytes
- Hardware stack levels used:    1
- This function calls:
-		Nothing
- This function is called by:
-		_lcd_send_byte
  This function uses a non-reentrant model
 
 
@@ -1380,92 +1162,349 @@ Total ram usage:        0 bytes
  This function uses a non-reentrant model
 
 
+ *************** function _Home *****************
+ Defined at:
+		line 30 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_lcd_comand
+		_lcd_gotoxy
+		_lcd_putrs
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _lcd_putrs *****************
+ Defined at:
+		line 221 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+ Parameters:    Size  Location     Type
+  ptr             2    8[COMRAM] PTR const unsigned char 
+		 -> STR_17(2), STR_16(2), STR_14(2), STR_13(2), 
+		 -> STR_9(2), STR_5(2), buffer2(20), STR_1(17), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_lcd_putc
+ This function is called by:
+		_Home
+		_Write_Keyboard
+ This function uses a non-reentrant model
+
+
+ *************** function _lcd_putc *****************
+ Defined at:
+		line 172 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+ Parameters:    Size  Location     Type
+  c               1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  c               1    7[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_gotoxy
+		_lcd_send_byte
+ This function is called by:
+		_lcd_putrs
+		_lcd_puts
+ This function uses a non-reentrant model
+
+
+ *************** function _lcd_gotoxy *****************
+ Defined at:
+		line 158 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+ Parameters:    Size  Location     Type
+  x               1    wreg     unsigned char 
+  y               1    4[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  x               1    5[COMRAM] unsigned char 
+  address         1    6[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_lcd_send_byte
+ This function is called by:
+		_Home
+		_lcd_putc
+ This function uses a non-reentrant model
+
+
+ *************** function _lcd_comand *****************
+ Defined at:
+		line 189 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+ Parameters:    Size  Location     Type
+  d               1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  d               1    4[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_lcd_send_byte
+ This function is called by:
+		_Home
+		_Setup
+ This function uses a non-reentrant model
+
+
+ *************** function _lcd_send_byte *****************
+ Defined at:
+		line 86 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+ Parameters:    Size  Location     Type
+  address         1    wreg     unsigned char 
+  n               1    2[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  address         1    3[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_Delay100TCYx
+		_lcd_send_nibble
+ This function is called by:
+		_lcd_init
+		_lcd_gotoxy
+		_lcd_putc
+		_lcd_comand
+		_lcd_setcursor_vb
+ This function uses a non-reentrant model
+
+
+ *************** function _lcd_send_nibble *****************
+ Defined at:
+		line 25 in file "C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c"
+ Parameters:    Size  Location     Type
+  nibble          1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  nibble          1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_lcd_send_byte
+		_lcd_init
+ This function uses a non-reentrant model
+
+
+ *************** function _Delay100TCYx *****************
+ Defined at:
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c"
+ Parameters:    Size  Location     Type
+  unit            1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  unit            1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_lcd_send_byte
+ This function uses a non-reentrant model
+
+
 
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
-		_Delay1KTCYx   		CODE           	1C40	0000	19
+		_Delay1KTCYx   		CODE           	1C46	0000	19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c estimated size: 19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-		_RtccWriteTime 		CODE           	170C	0000	269
+		_RtccWriteTime 		CODE           	16FE	0000	269
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c estimated size: 269
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
-		___lwmod       		CODE           	1A54	0000	77
+		___lwmod       		CODE           	1A46	0000	77
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c estimated size: 77
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
-		_RtccWrOn      		CODE           	1C64	0000	19
+		_RtccWrOn      		CODE           	1C58	0000	19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c estimated size: 19
 
 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h
-		_Write_RTC     		CODE           	147E	0000	329
+		_Write_RTC     		CODE           	1470	0000	329
 
 C:/Archivos de programa/Unimic/unmc_01/headers\unmc_rtcc_01.h estimated size: 329
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
-		_isdigit       		CODE           	1C1E	0000	35
+		_isdigit       		CODE           	1C10	0000	35
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c estimated size: 35
 
 shared
 		_dpowers       		SMALLCONST     	0F01	0000	11
 		_LCD_INIT_STRIN		SMALLCONST     	0F0B	0000	5
-		__initializatio		CODE           	1B34	0000	59
+		__initializatio		CODE           	1B26	0000	59
 
 shared estimated size: 75
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
-		___lwdiv       		CODE           	19A4	0000	93
+		___lwdiv       		CODE           	1996	0000	93
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c estimated size: 93
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
-		___awdiv       		CODE           	1818	0000	151
+		___awdiv       		CODE           	180A	0000	151
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c estimated size: 151
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
-		_Delay100TCYx  		CODE           	1C52	0000	19
+		_Delay100TCYx  		CODE           	1C6A	0000	19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c estimated size: 19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
-		_sprintf       		CODE           	121A	0000	613
+		_sprintf       		CODE           	120C	0000	613
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c estimated size: 613
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-		_RtccWriteDate 		CODE           	15C6	0000	327
+		_RtccWriteDate 		CODE           	15B8	0000	327
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c estimated size: 327
 
 C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c
-		_lcd_comand    		CODE           	1C76	0000	15
-		_lcd_putc      		CODE           	1AA0	0000	77
-		_lcd_putrs     		CODE           	1A00	0000	85
-		_lcd_send_byte 		CODE           	1B78	0000	51
-		_lcd_gotoxy    		CODE           	1BFA	0000	37
-		_lcd_send_nibbl		CODE           	192E	0000	119
-		_lcd_init      		CODE           	18AE	0000	129
+		_lcd_comand    		CODE           	1C7C	0000	15
+		_lcd_putc      		CODE           	1A92	0000	77
+		_lcd_putrs     		CODE           	19F2	0000	85
+		_lcd_send_byte 		CODE           	1B6A	0000	51
+		_lcd_gotoxy    		CODE           	1BEC	0000	37
+		_lcd_send_nibbl		CODE           	1920	0000	119
+		_lcd_init      		CODE           	18A0	0000	129
 
 C:/Archivos de programa/Unimic/unmc_01/sources/unmc_lcd_216.c estimated size: 513
 
 main.c
-		_main          		CODE           	0F32	0000	745
-		_Setup         		CODE           	1AEC	0000	73
-		_caratula      		CODE           	1BD2	0000	41
+		_main          		CODE           	1C32	0000	21
+		_Setup         		CODE           	1ADE	0000	73
+		_Home          		CODE           	1BC4	0000	41
+		_Write_Keyboard		CODE           	0F32	0000	731
 
-main.c estimated size: 859
+main.c estimated size: 866
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
-		___wmul        		CODE           	1BAA	0000	41
+		___wmul        		CODE           	1B9C	0000	41
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c estimated size: 41
 

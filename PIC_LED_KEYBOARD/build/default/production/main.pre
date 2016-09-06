@@ -9992,9 +9992,9 @@ anio=anio_d*10+anio_u;
 # 14 "C:/Archivos de programa/Unimic/unmc_01/headers\unmc_inout_02.h"
 char key;
 
-# 36 "main.c"
-void caratula(void)
-{
+# 30 "main.c"
+void Home(void){
+
 lcd_comand(0b00001100);
 lcd_gotoxy(1,1);
 lcd_putrs("UNIMIC  TECLADO ");
@@ -10007,9 +10007,8 @@ lcd_gotoxy(1,2);
 
 }
 
-# 56
-void Setup(void)
-{
+void Setup(void){
+
 OSCTUNEbits.INTSRC=1;
 OSCTUNEbits.PLLEN=0;
 OSCCONbits.IRCF0=1;
@@ -10038,15 +10037,7 @@ LATBbits.LATB1 = 1;;
 LATBbits.LATB0 = 1;;
 }
 
-# 91
-int main(void)
-{
-Setup();
-caratula();
-while(1)
-{
-
-
+void Write_Keyboard(void){
 
 LATAbits.LATA0=1;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=0;
 {
@@ -10055,6 +10046,7 @@ if (PORTAbits.RA7==1){key=2;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while
 if (PORTAbits.RA6==1){key=3;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA6==1){};}
 if (PORTCbits.RC2==1){key=11;lcd_putrs("A");while(PORTCbits.RC2==1){};}
 }
+
 LATAbits.LATA0=0;LATAbits.LATA1=1;LATAbits.LATA2=0;LATAbits.LATA3=0;
 {
 if (PORTAbits.RA5==1){key=4;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA5==1){};}
@@ -10062,6 +10054,7 @@ if (PORTAbits.RA7==1){key=5;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while
 if (PORTAbits.RA6==1){key=6;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA6==1){};}
 if (PORTCbits.RC2==1){key=12;lcd_putrs("B");while(PORTCbits.RC2==1){};}
 }
+
 LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=1;LATAbits.LATA3=0;
 {
 if (PORTAbits.RA5==1){key=7;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA5==1){};}
@@ -10069,6 +10062,7 @@ if (PORTAbits.RA7==1){key=8;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while
 if (PORTAbits.RA6==1){key=9;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while(PORTAbits.RA6==1){};}
 if (PORTCbits.RC2==1){key=13;lcd_putrs("C");while(PORTCbits.RC2==1){};}
 }
+
 LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=1;
 {
 if (PORTAbits.RA5==1){key=14;lcd_putrs("*");while(PORTAbits.RA5==1){};}
@@ -10076,8 +10070,25 @@ if (PORTAbits.RA7==1){key=0;sprintf(buffer2,"%01u",key);lcd_putrs(buffer2);while
 if (PORTAbits.RA6==1){key=15;lcd_putrs("#");while(PORTAbits.RA6==1){};}
 if (PORTCbits.RC2==1){key=16;lcd_putrs("D");while(PORTCbits.RC2==1){};}
 }
+
 _delay((unsigned long)((98)*(8000000/4000.0)));
 
 }
+
+int main(void){
+
+Setup();
+
+Home();
+
+while(1){
+
+
+
+
+Write_Keyboard();
+}
+
 return 0;
+
 }

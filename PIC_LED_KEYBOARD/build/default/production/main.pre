@@ -9771,69 +9771,6 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 7 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdarg.h"
-typedef void * va_list[1];
-
-#pragma intrinsic(__va_start)
-extern void * __va_start(void);
-
-#pragma intrinsic(__va_arg)
-extern void * __va_arg(void *, ...);
-
-# 24 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h"
-extern int errno;
-
-# 55
-struct __prbuf
-{
-char * ptr;
-void (* func)(char);
-};
-
-# 17 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\conio.h"
-extern int errno;
-
-
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-# 31
-extern char * cgets(char *);
-extern void cputs(const char *);
-
-# 100 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h"
-extern int cprintf(char *, ...);
-#pragma printf_check(cprintf)
-
-
-
-extern int _doprnt(struct __prbuf *, const register char *, register va_list);
-
-
-# 192
-#pragma printf_check(vprintf) const
-#pragma printf_check(vsprintf) const
-
-extern char * gets(char *);
-extern int puts(const char *);
-extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
-extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
-extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
-extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
-extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
-extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
-
-#pragma printf_check(printf) const
-#pragma printf_check(sprintf) const
-extern int sprintf(char *, const char *, ...);
-extern int printf(const char *, ...);
-
 # 33 "Unimic/unmc_01/headers\unmc_lcd_216.h"
 typedef unsigned char int8;
 typedef unsigned int int16;
@@ -9991,17 +9928,111 @@ anio=anio_d*10+anio_u;
 # 14 "Unimic/unmc_01/headers\unmc_inout_02.h"
 char key;
 
-# 30 "main.c"
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdarg.h"
+typedef void * va_list[1];
+
+#pragma intrinsic(__va_start)
+extern void * __va_start(void);
+
+#pragma intrinsic(__va_arg)
+extern void * __va_arg(void *, ...);
+
+# 24 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h"
+extern int errno;
+
+# 55
+struct __prbuf
+{
+char * ptr;
+void (* func)(char);
+};
+
+# 17 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\conio.h"
+extern int errno;
+
+
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+# 31
+extern char * cgets(char *);
+extern void cputs(const char *);
+
+# 100 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h"
+extern int cprintf(char *, ...);
+#pragma printf_check(cprintf)
+
+
+
+extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+
+
+# 192
+#pragma printf_check(vprintf) const
+#pragma printf_check(vsprintf) const
+
+extern char * gets(char *);
+extern int puts(const char *);
+extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+
+#pragma printf_check(printf) const
+#pragma printf_check(sprintf) const
+extern int sprintf(char *, const char *, ...);
+extern int printf(const char *, ...);
+
+# 22 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\string.h"
+extern void * memcpy(void *, const void *, size_t);
+extern void * memmove(void *, const void *, size_t);
+extern void * memset(void *, int, size_t);
+
+# 42
+extern char * strcat(char *, const char *);
+extern char * strcpy(char *, const char *);
+extern char * strncat(char *, const char *, size_t);
+extern char * strncpy(char *, const char *, size_t);
+extern char * strdup(const char *);
+extern char * strtok(char *, const char *);
+
+
+extern int memcmp(const void *, const void *, size_t);
+extern int strcmp(const char *, const char *);
+extern int stricmp(const char *, const char *);
+extern int strncmp(const char *, const char *, size_t);
+extern int strnicmp(const char *, const char *, size_t);
+extern void * memchr(const void *, int, size_t);
+extern size_t strcspn(const char *, const char *);
+extern char * strpbrk(const char *, const char *);
+extern size_t strspn(const char *, const char *);
+extern char * strstr(const char *, const char *);
+extern char * stristr(const char *, const char *);
+extern char * strerror(int);
+extern size_t strlen(const char *);
+extern char * strchr(const char *, int);
+extern char * strichr(const char *, int);
+extern char * strrchr(const char *, int);
+extern char * strrichr(const char *, int);
+
+# 32 "main.c"
 int state;
 int menu_selector;
 int menu_selected;
 int submenu_selector;
-char* pin;
-char* pin_input;
+char pin[5];
+char pin_input[5];
 
-# 46
+# 48
 int activity;
-
 
 void lcd_write(int column, int row, char* string){
 lcd_gotoxy(column, row);
@@ -10041,7 +10072,7 @@ LATBbits.LATB0 = 1;;
 menu_selected = 1;
 menu_selector = 1;
 submenu_selector = 1;
-pin = "1234";
+strcpy(pin, "1234");
 }
 
 void home_clock_refresh(void){
@@ -10053,7 +10084,6 @@ lcd_write(9,2,buffer1);
 
 }
 
-
 void activity_home(void){
 
 activity = 0;
@@ -10062,16 +10092,15 @@ lcd_write(1,1,"X28");
 
 }
 
-
 void activity_pin(void){
 
 activity = 1;
+strcpy(pin_input, "");
 lcd_init();
 lcd_write(1,1,"Ingrese su PIN:");
 lcd_gotoxy(1,2);
 lcd_comand(0b00001111);
 }
-
 
 void activity_menu(void){
 
@@ -10083,7 +10112,6 @@ lcd_write(10,1,"Pin");
 lcd_write(10,2,"Alarma");
 
 }
-
 
 void action_menu_selector(void){
 
@@ -10121,7 +10149,6 @@ break;
 
 }
 
-
 void action_submenu_selector(void){
 
 switch(submenu_selector){
@@ -10141,7 +10168,6 @@ break;
 
 }
 
-
 void activity_submenu_activation(void){
 
 activity = 4;
@@ -10151,7 +10177,6 @@ lcd_write(10,1,"SI");
 lcd_write(10,2,"NO");
 
 }
-
 
 void activity_submenu_clock(void){
 
@@ -10163,7 +10188,6 @@ lcd_write(10,2,"Hora");
 
 }
 
-
 void activity_submenu_pin(void){
 
 activity = 5;
@@ -10173,7 +10197,6 @@ lcd_write(10,1,"Cambiar");
 lcd_write(10,2,"Reset");
 
 }
-
 
 void activity_submenu_alarm(void){
 
@@ -10185,17 +10208,17 @@ lcd_write(10,2,"Tono");
 
 }
 
-
 void pin_input_validator(void){
 
-if(1){
+int comparision = strcmp(pin, pin_input);
+
+if( comparision == 0 ){
 activity_menu();
 }
 else{
 activity_pin();
 }
 }
-
 
 void button_A(void){
 
@@ -10218,7 +10241,6 @@ break;
 }
 
 }
-
 
 void button_B(void){
 
@@ -10247,7 +10269,6 @@ break;
 
 }
 
-
 void button_C(void){
 
 if(activity != 0 && activity != 1){
@@ -10256,18 +10277,15 @@ activity_menu();
 
 }
 
-
 void button_D(void){
 
 activity_home();
 
 }
 
-
 void button_asterisk(void){
 lcd_putrs("*");
 }
-
 
 void button_hash(void){
 
@@ -10277,12 +10295,16 @@ pin_input_validator();
 
 }
 
-
 void button_number(void){
 
 if(activity == 1){
 
 lcd_putrs("*");
+sprintf(buffer1, "%01u", key);
+strcat(pin_input, buffer1);
+
+
+
 
 } else {
 
@@ -10292,7 +10314,6 @@ lcd_putrs(buffer1);
 }
 
 }
-
 
 void keyboard_control(void){
 
@@ -10331,7 +10352,6 @@ if (PORTCbits.RC2==1){key=16;button_D();while(PORTCbits.RC2==1){};}
 _delay((unsigned long)((98)*(8000000/4000.0)));
 
 }
-
 
 int main(void){
 

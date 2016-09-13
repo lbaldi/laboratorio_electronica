@@ -28,15 +28,23 @@
 
 // Global Variables
 int state;
-int locked;
-int select;
-int select_op;
-int selection;
-int activity_pin;
-int activity_menu;
-int activity_submenu;
+int menu_selector;
+int menu_selected;
+int submenu_selector;
 char* pin;
 char* pin_input;
+
+/* ACTIVIDADES
+ * #0 INITIAL
+ * #1 PIN
+ * #2 MENU
+ * #3 CLOCK
+ * #4 ACTIVATION
+ * #5 PIN CONFIG
+ * #6 ALARM
+ */
+int activity;
+
 
 void lcd_write(int column, int row, char* string){
     lcd_gotoxy(column, row);
@@ -73,13 +81,9 @@ void setup(void){
     LED_3_On;
 
     // Setup Global Variables
-    locked = 1;
-    select = 1;
-    selection = 1;
-    activity_pin = 0;
-    activity_menu = 0;
-    activity_submenu = 0;
-    select_op = 1;
+    menu_selected = 1;
+    menu_selector = 1;
+    submenu_selector = 1;
     pin = "1234";
 }
 
@@ -92,23 +96,29 @@ void home_clock_refresh(void){
 
 }
 
-void home(void){
-
+//DONE
+void activity_home(void){
+    
+    activity = 0;
     lcd_init();
     lcd_write(1,1,"X28");
 
 }
 
-void menu_pin(void){
+//DONE
+void activity_pin(void){
 
+    activity = 1;
     lcd_init();
     lcd_write(1,1,"Ingrese su PIN:");
     lcd_gotoxy(1,2);
     lcd_comand(0b00001111);
 }
 
-void menu_submenu(void){
+//DONE
+void activity_menu(void){
 
+    activity = 2;
     lcd_init();
     lcd_write(2,1,"Activar");
     lcd_write(2,2,"Reloj");
@@ -117,35 +127,36 @@ void menu_submenu(void){
 
 }
 
-void menu_iterator(void){
+//DONE
+void action_menu_selector(void){
 
-    switch(selection){
+    switch(menu_selector){
 
         case 1:
             lcd_write(1,1,">");
-            selection = 2;
-            select = 1;
+            menu_selector = 2;
+            menu_selected = 1;
             lcd_write(9,2," ");
             break;
 
         case 2:
             lcd_write(1,2,">");
-            selection = 3;
-            select = 2;
+            menu_selector = 3;
+            menu_selected = 2;
             lcd_write(1,1," ");
             break;
 
         case 3:
             lcd_write(9,1,">");
-            selection = 4;
-            select = 3;
+            menu_selector = 4;
+            menu_selected = 3;
             lcd_write(1,2," ");
             break;
 
         case 4:
             lcd_write(9,2,">");
-            selection = 1;
-            select = 4;
+            menu_selector = 1;
+            menu_selected = 4;
             lcd_write(9,1," ");
             break;
 
@@ -153,27 +164,30 @@ void menu_iterator(void){
 
 }
 
-void menu_submenu_iterator(void){
+//DONE
+void action_submenu_selector(void){
 
-    switch(select_op){
+    switch(submenu_selector){
 
         case 1:
             lcd_write(9,1,">");
-            select_op = 2;
+            submenu_selector = 2;
             lcd_write(9,2," ");
             break;
 
         case 2:
             lcd_write(9,2,">");
-            select_op = 1;
+            submenu_selector = 1;
             lcd_write(9,1," ");
             break;
     }
 
 }
 
-void menu_submenu_activate(void){
+//DONE
+void activity_submenu_activation(void){
 
+    activity = 4;
     lcd_init();
     lcd_write(1,1,"Activar");
     lcd_write(10,1,"SI");
@@ -181,8 +195,10 @@ void menu_submenu_activate(void){
 
 }
 
-void menu_submenu_clock(void){
+//DONE
+void activity_submenu_clock(void){
 
+    activity = 3;
     lcd_init();
     lcd_write(1,1,"Reloj");
     lcd_write(10,1,"Fecha");
@@ -190,8 +206,10 @@ void menu_submenu_clock(void){
 
 }
 
-void menu_submenu_pin(void){
+//DONE
+void activity_submenu_pin(void){
 
+    activity = 5;
     lcd_init();
     lcd_write(1,1,"Pin");
     lcd_write(10,1,"Cambiar");
@@ -199,8 +217,10 @@ void menu_submenu_pin(void){
 
 }
 
-void menu_submenu_alarm(void){
+//DONE
+void activity_submenu_alarm(void){
 
+    activity = 6;
     lcd_init();
     lcd_write(1,1,"Alarma");
     lcd_write(10,1,"Volumen");
@@ -208,112 +228,102 @@ void menu_submenu_alarm(void){
 
 }
 
+//DONE
 void pin_input_validator(void){
-    //if(pin == pin_input){
+    // @TODO if(pin == pin_input){
     if(1){
-       // @TODO REVISAR ESTADO
-        locked = 0;
-        activity_pin = 0;
-        activity_submenu = 1;
-        menu_submenu();
+        activity_menu();
+    }
+    else{
+        activity_pin();
     }
 }
 
+//DONE
 void button_A(void){
+    
+    switch(activity){
 
-    if(activity_pin == 0){
+        case 0:
+            activity_pin();
+            break;
 
-        menu_pin();
-        activity_pin = 1;
+        case 1:
+            break;
 
-    } else if (locked == 0){
+        case 2:
+            action_menu_selector();
+            break;
 
-        if (activity_menu == 0) {
-
-            menu_submenu();
-            activity_menu = 1;
-
-        } else {
-
-            if (activity_submenu == 0){
-                menu_iterator();
-            }
-
-            if (activity_submenu == 1){
-                menu_submenu_iterator();
-            }
-        }
-
+        default: 
+            action_submenu_selector();
+            break;
     }
-
-
+    
 }
 
+//DONE
 void button_B(void){
 
-    if(locked == 0){
+    if(activity == 2){
 
-        switch(select){
+        switch(menu_selected){
 
             case 1:
-                menu_submenu_activate();
-                activity_submenu = 1;
+                activity_submenu_activation();
                 break;
 
             case 2:
-                menu_submenu_clock();
-                activity_submenu = 1;
+                activity_submenu_clock();
                 break;
 
             case 3:
-                menu_submenu_pin();
-                activity_submenu = 1;
+                activity_submenu_pin();
                 break;
 
             case 4:
-                menu_submenu_alarm();
-                activity_submenu = 1;
+                activity_submenu_alarm();
                 break;
         }
 
     }
-
+    
 }
 
+//DONE
 void button_C(void){
 
-    if(locked == 0){
-        menu_submenu();
-        activity_submenu = 0;
+    if(activity != 0 && activity != 1){
+        activity_menu();
     }
 
 }
 
+//DONE
 void button_D(void){
 
-    home();
-    activity_pin = 0;
-    locked = 1;
-    activity_menu = 0;
-    activity_submenu = 0;
+    activity_home();
 
 }
 
+// @TODO
 void button_asterisk(void){
     lcd_putrs("*");
 }
 
+//DONE
 void button_hash(void){
 
-    if(activity_pin == 1){
+    if(activity == 1){
         pin_input_validator();
     }
 
 }
 
+//DONE
 void button_number(void){
 
-    if(activity_pin == 1){
+    if(activity == 1){
         
         lcd_putrs("*");
         
@@ -326,6 +336,7 @@ void button_number(void){
 
 }
 
+//DONE
 void keyboard_control(void){
 
     row1=1;row2=0;row3=0;row4=0;
@@ -364,14 +375,15 @@ void keyboard_control(void){
 
 }
 
+//DONE
 int main(void){
 
     setup();
-    home();
+    activity_home();
     while(1){
         Read_RTC();
         keyboard_control();
-        if(activity_pin == 0 && activity_menu == 0 && activity_submenu == 0){home_clock_refresh();}
+        if(activity == 0){home_clock_refresh();}
     }
 
     return 0;

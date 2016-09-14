@@ -28,6 +28,8 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "unmc_inout_01.h"
+
 // Global Variables
 int state;
 int menu_selected;
@@ -102,6 +104,20 @@ void home_clock_refresh(void){
     sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
     lcd_write(9,2,buffer1);
     
+}
+
+void home_state_refresh(void){
+
+    if(state == 1){
+        sprintf(buffer1,"ACT:OK");
+        LED_2_On;                
+    }
+    else{
+        sprintf(buffer1,"ACT:NO");
+        LED_2_Off;
+    }
+    lcd_write(1,2,buffer1);
+
 }
 
 void action_menu_selector_0(void){
@@ -286,31 +302,61 @@ void button_A(void){
     
 }
 
+void button_B_menu(void){
+    
+    switch(menu_selected){
+            
+        case 0:
+            activity_submenu_activation();
+            break;
+
+        case 1:
+            activity_submenu_clock();
+            break;
+
+        case 2:
+            activity_submenu_pin();
+            break;
+
+        case 3:
+            activity_submenu_alarm();
+            break;
+
+    }
+}
+
+void button_B_submenu_activation(void){
+   
+    switch(submenu_selected){
+            
+        case 0:
+            state = 1;
+            break;
+
+        case 1:
+            state = 0;
+            break;
+
+    }
+    
+    activity_home();
+    
+}
+
 void button_B(void){
     
     reset_home_callback();
     
-    if(activity == 2){
+    switch(activity){
         
-        switch(menu_selected){
+        case 2:
+            button_B_menu();
+            break;
             
-            case 0:
-                activity_submenu_activation();
-                break;
-                
-            case 1:
-                activity_submenu_clock();
-                break;
-                
-            case 2:
-                activity_submenu_pin();
-                break;
-                
-            case 3:
-                activity_submenu_alarm();
-                break;
-        }
-        
+        case 4:
+            button_B_submenu_activation();
+            break;
+    
     }
     
 }
@@ -439,7 +485,10 @@ int main(void){
         
         keyboard_control();
         
-        if(activity == 0){home_clock_refresh();}
+        if(activity == 0){
+            home_clock_refresh();
+            home_state_refresh();
+        }
         
     }
     

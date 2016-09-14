@@ -10023,7 +10023,7 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 32 "main.c"
+# 34 "main.c"
 int state;
 int menu_selected;
 int submenu_selected;
@@ -10032,7 +10032,7 @@ char pin_input[5];
 int home_callback;
 int home_callback_delay;
 
-# 49
+# 51
 int activity;
 
 void lcd_write(int column, int row, char* string){
@@ -10088,6 +10088,20 @@ sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
 lcd_write(9,1,buffer1);
 sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
 lcd_write(9,2,buffer1);
+
+}
+
+void home_state_refresh(void){
+
+if(state == 1){
+sprintf(buffer1,"ACT:OK");
+LATBbits.LATB1 = 1;;
+}
+else{
+sprintf(buffer1,"ACT:NO");
+LATBbits.LATB1 = 0;;
+}
+lcd_write(1,2,buffer1);
 
 }
 
@@ -10273,11 +10287,7 @@ break;
 
 }
 
-void button_B(void){
-
-reset_home_callback();
-
-if(activity == 2){
+void button_B_menu(void){
 
 switch(menu_selected){
 
@@ -10296,7 +10306,41 @@ break;
 case 3:
 activity_submenu_alarm();
 break;
+
 }
+}
+
+void button_B_submenu_activation(void){
+
+switch(submenu_selected){
+
+case 0:
+state = 1;
+break;
+
+case 1:
+state = 0;
+break;
+
+}
+
+activity_home();
+
+}
+
+void button_B(void){
+
+reset_home_callback();
+
+switch(activity){
+
+case 2:
+button_B_menu();
+break;
+
+case 4:
+button_B_submenu_activation();
+break;
 
 }
 
@@ -10426,7 +10470,10 @@ Read_RTC();
 
 keyboard_control();
 
-if(activity == 0){home_clock_refresh();}
+if(activity == 0){
+home_clock_refresh();
+home_state_refresh();
+}
 
 }
 

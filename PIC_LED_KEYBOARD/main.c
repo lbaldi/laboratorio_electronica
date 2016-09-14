@@ -35,6 +35,8 @@ int menu_selected;
 int submenu_selector;
 char pin[5];
 char pin_input[5];
+int home_callback;
+int home_callback_delay;
 
 /* ACTIVIDADES
  * #0 INITIAL
@@ -82,10 +84,17 @@ void setup(void){
     LED_3_On;
     
     // Setup Global Variables
+    home_callback_delay = 50;
     menu_selected = 1;
     menu_selector = 1;
     submenu_selector = 1;
     strcpy(pin, "1234");
+}
+
+void reset_home_callback(void){
+
+    home_callback = home_callback_delay;
+
 }
 
 void home_clock_refresh(void){
@@ -235,6 +244,8 @@ void pin_input_validator(void){
 
 void button_A(void){
     
+    reset_home_callback();
+    
     switch(activity){
         
         case 0:
@@ -256,6 +267,8 @@ void button_A(void){
 }
 
 void button_B(void){
+    
+    reset_home_callback();
     
     if(activity == 2){
         
@@ -284,6 +297,8 @@ void button_B(void){
 
 void button_C(void){
     
+    reset_home_callback();
+    
     if(activity != 0 && activity != 1){
         activity_menu();
     }
@@ -292,15 +307,24 @@ void button_C(void){
 
 void button_D(void){
     
+    reset_home_callback();
+    
     activity_home();
     
 }
+
 // @TODO
 void button_asterisk(void){
+    
+    reset_home_callback();
+    
     lcd_putrs("*");
+
 }
 
 void button_hash(void){
+ 
+    reset_home_callback();
     
     if(activity == 1){
         pin_input_validator();
@@ -309,6 +333,8 @@ void button_hash(void){
 }
 
 void button_number(void){
+    
+    reset_home_callback();
     
     if(activity == 1){
         
@@ -363,15 +389,41 @@ void keyboard_control(void){
     
 }
 
+void check_home_callback(void){
+    
+    if(activity != 0){
+        
+        home_callback--;
+        
+        if(home_callback == 0){
+
+            reset_home_callback();
+
+            activity_home();
+
+        }
+    }
+
+}
+
 int main(void){
     
     setup();
+    
     activity_home();
+
     while(1){
+        
+        check_home_callback();
+        
         Read_RTC();
+        
         keyboard_control();
+        
         if(activity == 0){home_clock_refresh();}
+
     }
     
     return 0;
+
 }

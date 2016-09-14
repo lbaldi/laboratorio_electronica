@@ -10030,8 +10030,10 @@ int menu_selected;
 int submenu_selector;
 char pin[5];
 char pin_input[5];
+int home_callback;
+int home_callback_delay;
 
-# 48
+# 50
 int activity;
 
 void lcd_write(int column, int row, char* string){
@@ -10069,10 +10071,17 @@ LATBbits.LATB1 = 1;;
 LATBbits.LATB0 = 1;;
 
 
+home_callback_delay = 50;
 menu_selected = 1;
 menu_selector = 1;
 submenu_selector = 1;
 strcpy(pin, "1234");
+}
+
+void reset_home_callback(void){
+
+home_callback = home_callback_delay;
+
 }
 
 void home_clock_refresh(void){
@@ -10222,6 +10231,8 @@ activity_pin();
 
 void button_A(void){
 
+reset_home_callback();
+
 switch(activity){
 
 case 0:
@@ -10243,6 +10254,8 @@ break;
 }
 
 void button_B(void){
+
+reset_home_callback();
 
 if(activity == 2){
 
@@ -10271,6 +10284,8 @@ break;
 
 void button_C(void){
 
+reset_home_callback();
+
 if(activity != 0 && activity != 1){
 activity_menu();
 }
@@ -10279,15 +10294,24 @@ activity_menu();
 
 void button_D(void){
 
+reset_home_callback();
+
 activity_home();
 
 }
 
+
 void button_asterisk(void){
+
+reset_home_callback();
+
 lcd_putrs("*");
+
 }
 
 void button_hash(void){
+
+reset_home_callback();
 
 if(activity == 1){
 pin_input_validator();
@@ -10297,14 +10321,13 @@ pin_input_validator();
 
 void button_number(void){
 
+reset_home_callback();
+
 if(activity == 1){
 
 lcd_putrs("*");
 sprintf(buffer1, "%01u", key);
 strcat(pin_input, buffer1);
-
-
-
 
 } else {
 
@@ -10353,15 +10376,41 @@ _delay((unsigned long)((98)*(8000000/4000.0)));
 
 }
 
+void check_home_callback(void){
+
+if(activity != 0){
+
+home_callback--;
+
+if(home_callback == 0){
+
+reset_home_callback();
+
+activity_home();
+
+}
+}
+
+}
+
 int main(void){
 
 setup();
+
 activity_home();
+
 while(1){
+
+check_home_callback();
+
 Read_RTC();
+
 keyboard_control();
+
 if(activity == 0){home_clock_refresh();}
+
 }
 
 return 0;
+
 }

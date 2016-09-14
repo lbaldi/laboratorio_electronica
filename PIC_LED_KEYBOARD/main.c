@@ -30,17 +30,16 @@
 
 // Global Variables
 int state;
-int menu_selector;
 int menu_selected;
-int submenu_selector;
+int submenu_selected;
 char pin[5];
 char pin_input[5];
 int home_callback;
 int home_callback_delay;
 
-/* ACTIVIDADES
- * #0 INITIAL
- * #1 PIN
+/* ACTIVITIES
+ * #0 HOME
+ * #1 PIN ACCESS
  * #2 MENU
  * #3 CLOCK
  * #4 ACTIVATION
@@ -85,16 +84,15 @@ void setup(void){
     
     // Setup Global Variables
     home_callback_delay = 50;
-    menu_selected = 1;
-    menu_selector = 1;
-    submenu_selector = 1;
+    menu_selected = 0;
+    submenu_selected = 0;
     strcpy(pin, "1234");
 }
 
 void reset_home_callback(void){
-
+    
     home_callback = home_callback_delay;
-
+    
 }
 
 void home_clock_refresh(void){
@@ -103,6 +101,54 @@ void home_clock_refresh(void){
     lcd_write(9,1,buffer1);
     sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
     lcd_write(9,2,buffer1);
+    
+}
+
+void action_menu_selector_0(void){
+    lcd_write(1,1,">");
+    menu_selected = 0;
+    lcd_write(9,2," ");
+}
+
+void action_menu_selector_1(void){
+    lcd_write(1,2,">");
+    menu_selected = 1;
+    lcd_write(1,1," ");
+}
+
+void action_menu_selector_2(void){
+    lcd_write(9,1,">");
+    menu_selected = 2;
+    lcd_write(1,2," ");
+}
+
+void action_menu_selector_3(void){
+    lcd_write(9,2,">");
+    menu_selected = 3;
+    lcd_write(9,1," ");
+}
+
+void action_menu_selector(void){
+    
+    switch(menu_selected){
+        
+        case 0:
+            action_menu_selector_1();
+            break;
+            
+        case 1:
+            action_menu_selector_2();
+            break;
+            
+        case 2:
+            action_menu_selector_3();
+            break;
+            
+        case 3:
+            action_menu_selector_0();
+            break;
+            
+    }
     
 }
 
@@ -132,59 +178,32 @@ void activity_menu(void){
     lcd_write(2,2,"Reloj");
     lcd_write(10,1,"Pin");
     lcd_write(10,2,"Alarma");
+    action_menu_selector_0();
     
 }
 
-void action_menu_selector(void){
-    
-    switch(menu_selector){
-        
-        case 1:
-            lcd_write(1,1,">");
-            menu_selector = 2;
-            menu_selected = 1;
-            lcd_write(9,2," ");
-            break;
-            
-        case 2:
-            lcd_write(1,2,">");
-            menu_selector = 3;
-            menu_selected = 2;
-            lcd_write(1,1," ");
-            break;
-            
-        case 3:
-            lcd_write(9,1,">");
-            menu_selector = 4;
-            menu_selected = 3;
-            lcd_write(1,2," ");
-            break;
-            
-        case 4:
-            lcd_write(9,2,">");
-            menu_selector = 1;
-            menu_selected = 4;
-            lcd_write(9,1," ");
-            break;
-            
-    }
-    
+void action_submenu_selector_0(void){
+    lcd_write(9,1,">");
+    submenu_selected = 0;
+    lcd_write(9,2," ");
+}
+
+void action_submenu_selector_1(void){
+    lcd_write(9,2,">");
+    submenu_selected = 1;
+    lcd_write(9,1," ");
 }
 
 void action_submenu_selector(void){
     
-    switch(submenu_selector){
+    switch(submenu_selected){
         
-        case 1:
-            lcd_write(9,1,">");
-            submenu_selector = 2;
-            lcd_write(9,2," ");
+        case 0:
+            action_submenu_selector_1();
             break;
             
-        case 2:
-            lcd_write(9,2,">");
-            submenu_selector = 1;
-            lcd_write(9,1," ");
+        case 1:
+            action_submenu_selector_0();
             break;
     }
     
@@ -197,7 +216,7 @@ void activity_submenu_activation(void){
     lcd_write(1,1,"Activar");
     lcd_write(10,1,"SI");
     lcd_write(10,2,"NO");
-    
+    action_submenu_selector_0();
 }
 
 void activity_submenu_clock(void){
@@ -207,6 +226,7 @@ void activity_submenu_clock(void){
     lcd_write(1,1,"Reloj");
     lcd_write(10,1,"Fecha");
     lcd_write(10,2,"Hora");
+    action_submenu_selector_0();
     
 }
 
@@ -217,7 +237,7 @@ void activity_submenu_pin(void){
     lcd_write(1,1,"Pin");
     lcd_write(10,1,"Cambiar");
     lcd_write(10,2,"Reset");
-    
+    action_submenu_selector_0();
 }
 
 void activity_submenu_alarm(void){
@@ -227,7 +247,7 @@ void activity_submenu_alarm(void){
     lcd_write(1,1,"Alarma");
     lcd_write(10,1,"Volumen");
     lcd_write(10,2,"Tono");
-    
+    action_submenu_selector_0();
 }
 
 void pin_input_validator(void){
@@ -274,19 +294,19 @@ void button_B(void){
         
         switch(menu_selected){
             
-            case 1:
+            case 0:
                 activity_submenu_activation();
                 break;
                 
-            case 2:
+            case 1:
                 activity_submenu_clock();
                 break;
                 
-            case 3:
+            case 2:
                 activity_submenu_pin();
                 break;
                 
-            case 4:
+            case 3:
                 activity_submenu_alarm();
                 break;
         }
@@ -313,17 +333,16 @@ void button_D(void){
     
 }
 
-// @TODO
 void button_asterisk(void){
     
     reset_home_callback();
     
-    lcd_putrs("*");
-
+    // lcd_putrs("*");
+    
 }
 
 void button_hash(void){
- 
+    
     reset_home_callback();
     
     if(activity == 1){
@@ -345,7 +364,7 @@ void button_number(void){
     } else {
         
         sprintf(buffer1,"%01u",key);
-        lcd_putrs(buffer1);
+        // lcd_putrs(buffer1);
         
     }
     
@@ -396,14 +415,14 @@ void check_home_callback(void){
         home_callback--;
         
         if(home_callback == 0){
-
+            
             reset_home_callback();
-
+            
             activity_home();
-
+            
         }
     }
-
+    
 }
 
 int main(void){
@@ -411,7 +430,7 @@ int main(void){
     setup();
     
     activity_home();
-
+    
     while(1){
         
         check_home_callback();
@@ -421,9 +440,9 @@ int main(void){
         keyboard_control();
         
         if(activity == 0){home_clock_refresh();}
-
+        
     }
     
     return 0;
-
+    
 }

@@ -5,9 +5,9 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.34\dat\en_msgs.txt -cs \
   -h+dist/default/production\PIC_LED_KEYBOARD.production.sym \
   --cmf=dist/default/production\PIC_LED_KEYBOARD.production.cmf -z \
-  -Q18F26J50 -oC:\Users\ADMINI~1\AppData\Local\Temp\s498.6 \
+  -Q18F26J50 -oC:\Users\ADMINI~1\AppData\Local\Temp\s4jg.6 \
   -Mdist/default/production/PIC_LED_KEYBOARD.production.map -E1 -ver=XC8 \
-  -ASTACK=09Ch-0ebfh -pstack=STACK -ACODE=00h-0FFF7h -ACONST=00h-0FFF7h \
+  -ASTACK=0A5h-0ebfh -pstack=STACK -ACODE=00h-0FFF7h -ACONST=00h-0FFF7h \
   -ASMALLCONST=0F00h-0FFFhx240,0FF00h-0FFF7h -AMEDIUMCONST=0F00h-0FFF7h \
   -ACOMRAM=01h-05Fh -AABS1=00h-0EBFh -ABIGRAM=01h-0EBFh \
   -ARAM=060h-0FFh,0100h-01FFhx13,0E00h-0EBFh -ABANK0=060h-0FFh \
@@ -25,7 +25,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\ADMINI~1\AppData\Local\Temp\s498.obj \
+  C:\Users\ADMINI~1\AppData\Local\Temp\s4jg.obj \
   dist/default/production\PIC_LED_KEYBOARD.production.obj 
 
 Object code version is 3.11
@@ -38,158 +38,182 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ADMINI~1\AppData\Local\Temp\s498.obj
+C:\Users\ADMINI~1\AppData\Local\Temp\s4jg.obj
                 end_init                              0        0        4        0       0
                 config                             FFF8     FFF8        8     FFF8       0
 dist/default/production\PIC_LED_KEYBOARD.production.obj
-                smallconst                          F00      F00       A2      780       0
-                text57                             1900     1900       8E      7D1       0
-                text56                             1B7A     1B7A       6E      7D1       0
-                text55                             16FA     16FA       DE      7D1       0
-                text54                             258E     258E       12      7D1       0
-                text53                             257C     257C       12      7D1       0
-                text52                             1A90     1A90       76      7D1       0
-                text51                             23DA     23DA       32      7D1       0
-                text50                             1A10     1A10       80      7D1       0
-                text49                             24BA     24BA       24      7D1       0
-                text48                             1FD4     1FD4       4C      7D1       0
-                text47                             1E98     1E98       54      7D1       0
-                text46                             253E     253E       18      7D1       0
-                text45                             2468     2468       2A      7D1       0
-                text44                             25C2     25C2        A      7D1       0
-                text43                             2500     2500       22      7D1       0
-                text42                             1DE6     1DE6       5C      7D1       0
-                text41                             1F88     1F88       4C      7D1       0
-                text40                             2492     2492       28      7D1       0
-                text39                             24DE     24DE       22      7D1       0
-                text38                              FA2      FA2      264      7D1       0
-                text37                             186E     186E       92      7D1       0
-                text36                             1E42     1E42       56      7D1       0
-                text35                             2286     2286       42      7D1       0
-                text34                             2244     2244       42      7D1       0
-                text33                             2202     2202       42      7D1       0
-                text32                             21C0     21C0       42      7D1       0
-                text31                             20B0     20B0       48      7D1       0
-                text30                             217E     217E       42      7D1       0
-                text29                             213C     213C       42      7D1       0
-                text28                             240C     240C       30      7D1       0
-                text27                             25A0     25A0        E      7D1       0
-                text26                             23A8     23A8       32      7D1       0
-                text25                             1F3A     1F3A       4E      7D1       0
-                text24                             22C8     22C8       40      7D1       0
-                text23                             1D80     1D80       66      7D1       0
-                text22                             1D1A     1D1A       66      7D1       0
-                text21                             1CB4     1CB4       66      7D1       0
-                text20                             1C4E     1C4E       66      7D1       0
-                text19                             2068     2068       48      7D1       0
-                text18                             2308     2308       3A      7D1       0
-                text17                             2342     2342       34      7D1       0
-                text16                             198E     198E       82      7D1       0
-                text15                             2522     2522       1C      7D1       0
-                text14                             25B8     25B8        A      7D1       0
-                text13                             25CC     25CC        6      7D1       0
-                text12                             1EEC     1EEC       4E      7D1       0
-                text11                             2376     2376       32      7D1       0
-                text10                             2556     2556       14      7D1       0
-                text9                              2020     2020       48      7D1       0
-                text8                              1BE8     1BE8       66      7D1       0
-                text7                              1206     1206      156      7D1       0
-                text6                              256A     256A       12      7D1       0
-                text5                              14A8     14A8      146      7D1       0
-                text4                              15EE     15EE      10C      7D1       0
-                text3                              17D8     17D8       96      7D1       0
-                text2                              135C     135C      14C      7D1       0
-                text1                              1B06     1B06       74      7D1       0
-                text0                              243C     243C       2C      7D1       0
-                cstackCOMRAM                         26       26       24        1       1
-                bssBANK0                             60       60       3A       60       1
-                dataCOMRAM                           55       55        A        1       1
-                bssCOMRAM                             1        1       25        1       1
+                smallconst                          F00      F00       E4      780       0
+                text69                             1A1A     1A1A       8E      7F2       0
+                text68                             1D0C     1D0C       6E      7F2       0
+                text67                             1750     1750       FC      7F2       0
+                text66                             29D0     29D0       12      7F2       0
+                text65                             29BE     29BE       12      7F2       0
+                text64                             1C26     1C26       76      7F2       0
+                text63                             27AC     27AC       32      7F2       0
+                text62                             1B2A     1B2A       80      7F2       0
+                text61                             28E0     28E0       24      7F2       0
+                text60                             231E     231E       4C      7F2       0
+                text59                             209E     209E       54      7F2       0
+                text58                             297E     297E       18      7F2       0
+                text57                             286A     286A       2A      7F2       0
+                text56                             2A04     2A04        A      7F2       0
+                text55                             2926     2926       22      7F2       0
+                text54                             2042     2042       5C      7F2       0
+                text53                             22D2     22D2       4C      7F2       0
+                text52                             2894     2894       28      7F2       0
+                text51                             2904     2904       22      7F2       0
+                text50                              FE4      FE4      264      7F2       0
+                text49                             1988     1988       92      7F2       0
+                text48                             2196     2196       52      7F2       0
+                text47                             2144     2144       52      7F2       0
+                text46                             20F2     20F2       52      7F2       0
+                text45                             184C     184C       A6      7F2       0
+                text44                             2616     2616       42      7F2       0
+                text43                             25D4     25D4       42      7F2       0
+                text42                             2592     2592       42      7F2       0
+                text41                             2550     2550       42      7F2       0
+                text40                             23FA     23FA       48      7F2       0
+                text39                             250E     250E       42      7F2       0
+                text38                             24CC     24CC       42      7F2       0
+                text37                             280E     280E       30      7F2       0
+                text36                             29E2     29E2        E      7F2       0
+                text35                             2442     2442       46      7F2       0
+                text34                             2284     2284       4E      7F2       0
+                text33                             2658     2658       40      7F2       0
+                text32                             1F78     1F78       66      7F2       0
+                text31                             1F12     1F12       66      7F2       0
+                text30                             1EAC     1EAC       66      7F2       0
+                text29                             1E46     1E46       66      7F2       0
+                text28                             23B2     23B2       48      7F2       0
+                text27                             270C     270C       3A      7F2       0
+                text26                             1DE0     1DE0       66      7F2       0
+                text25                             1D7A     1D7A       66      7F2       0
+                text24                             27DE     27DE       30      7F2       0
+                text23                             26D2     26D2       3A      7F2       0
+                text22                             2698     2698       3A      7F2       0
+                text21                             2236     2236       4E      7F2       0
+                text20                             2996     2996       16      7F2       0
+                text19                             2746     2746       34      7F2       0
+                text18                             1FDE     1FDE       64      7F2       0
+                text17                             1AA8     1AA8       82      7F2       0
+                text16                             2948     2948       1C      7F2       0
+                text15                             29FA     29FA        A      7F2       0
+                text14                             2A0E     2A0E        6      7F2       0
+                text13                             21E8     21E8       4E      7F2       0
+                text12                             277A     277A       32      7F2       0
+                text11                             2964     2964       1A      7F2       0
+                text10                             28BC     28BC       24      7F2       0
+                text9                              236A     236A       48      7F2       0
+                text8                              1C9C     1C9C       70      7F2       0
+                text7                              13A8     13A8      156      7F2       0
+                text6                              29AC     29AC       12      7F2       0
+                text5                              14FE     14FE      146      7F2       0
+                text4                              1644     1644      10C      7F2       0
+                text3                              18F2     18F2       96      7F2       0
+                text2                              1248     1248      160      7F2       0
+                text1                              1BAA     1BAA       7C      7F2       0
+                text0                              283E     283E       2C      7F2       0
+                cstackCOMRAM                         2A       2A       25        1       1
+                bssBANK0                             60       60       3E       60       1
+                dataCOMRAM                           4F       4F        A        1       1
+                bssCOMRAM                             1        1       29        1       1
                 bitbssCOMRAM                        2F8       5F        1        1       1     8
-                cinit                              20F8     20F8       44      7D1       0
-                nvBANK0                              9A       9A        2       60       1
-                nvCOMRAM                             4A       4A        B        1       1
-                idataCOMRAM                        25AE     25AE        A      7D1       0
+                cinit                              2488     2488       44      7F2       0
+                nvBANK0                              9E       9E        7       60       1
+                nvCOMRAM                             59       59        6        1       1
+                idataCOMRAM                        29F0     29F0        A      7F2       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 end_init                              0        0        4         0
-                text57                             1900     1900       8E         0
-                text56                             1B7A     1B7A       6E         0
-                text55                             16FA     16FA       DE         0
-                text54                             258E     258E       12         0
-                text53                             257C     257C       12         0
-                text52                             1A90     1A90       76         0
-                text51                             23DA     23DA       32         0
-                text50                             1A10     1A10       80         0
-                text49                             24BA     24BA       24         0
-                text48                             1FD4     1FD4       4C         0
-                text47                             1E98     1E98       54         0
-                text46                             253E     253E       18         0
-                text45                             2468     2468       2A         0
-                text44                             25C2     25C2        A         0
-                text43                             2500     2500       22         0
-                text42                             1DE6     1DE6       5C         0
-                text41                             1F88     1F88       4C         0
-                text40                             2492     2492       28         0
-                text39                             24DE     24DE       22         0
-                text38                              FA2      FA2      264         0
-                text37                             186E     186E       92         0
-                text36                             1E42     1E42       56         0
-                text35                             2286     2286       42         0
-                text34                             2244     2244       42         0
-                text33                             2202     2202       42         0
-                text32                             21C0     21C0       42         0
-                text31                             20B0     20B0       48         0
-                text30                             217E     217E       42         0
-                text29                             213C     213C       42         0
-                text28                             240C     240C       30         0
-                text27                             25A0     25A0        E         0
-                text26                             23A8     23A8       32         0
-                text25                             1F3A     1F3A       4E         0
-                text24                             22C8     22C8       40         0
-                text23                             1D80     1D80       66         0
-                text22                             1D1A     1D1A       66         0
-                text21                             1CB4     1CB4       66         0
-                text20                             1C4E     1C4E       66         0
-                text19                             2068     2068       48         0
-                text18                             2308     2308       3A         0
-                text17                             2342     2342       34         0
-                text16                             198E     198E       82         0
-                text15                             2522     2522       1C         0
-                text14                             25B8     25B8        A         0
-                text13                             25CC     25CC        6         0
-                text12                             1EEC     1EEC       4E         0
-                text11                             2376     2376       32         0
-                text10                             2556     2556       14         0
-                text9                              2020     2020       48         0
-                text8                              1BE8     1BE8       66         0
-                text7                              1206     1206      156         0
-                text6                              256A     256A       12         0
-                text5                              14A8     14A8      146         0
-                text4                              15EE     15EE      10C         0
-                text3                              17D8     17D8       96         0
-                text2                              135C     135C      14C         0
-                text1                              1B06     1B06       74         0
-                text0                              243C     243C       2C         0
-                cinit                              20F8     20F8       44         0
-                idataCOMRAM                        25AE     25AE        A         0
+                text69                             1A1A     1A1A       8E         0
+                text68                             1D0C     1D0C       6E         0
+                text67                             1750     1750       FC         0
+                text66                             29D0     29D0       12         0
+                text65                             29BE     29BE       12         0
+                text64                             1C26     1C26       76         0
+                text63                             27AC     27AC       32         0
+                text62                             1B2A     1B2A       80         0
+                text61                             28E0     28E0       24         0
+                text60                             231E     231E       4C         0
+                text59                             209E     209E       54         0
+                text58                             297E     297E       18         0
+                text57                             286A     286A       2A         0
+                text56                             2A04     2A04        A         0
+                text55                             2926     2926       22         0
+                text54                             2042     2042       5C         0
+                text53                             22D2     22D2       4C         0
+                text52                             2894     2894       28         0
+                text51                             2904     2904       22         0
+                text50                              FE4      FE4      264         0
+                text49                             1988     1988       92         0
+                text48                             2196     2196       52         0
+                text47                             2144     2144       52         0
+                text46                             20F2     20F2       52         0
+                text45                             184C     184C       A6         0
+                text44                             2616     2616       42         0
+                text43                             25D4     25D4       42         0
+                text42                             2592     2592       42         0
+                text41                             2550     2550       42         0
+                text40                             23FA     23FA       48         0
+                text39                             250E     250E       42         0
+                text38                             24CC     24CC       42         0
+                text37                             280E     280E       30         0
+                text36                             29E2     29E2        E         0
+                text35                             2442     2442       46         0
+                text34                             2284     2284       4E         0
+                text33                             2658     2658       40         0
+                text32                             1F78     1F78       66         0
+                text31                             1F12     1F12       66         0
+                text30                             1EAC     1EAC       66         0
+                text29                             1E46     1E46       66         0
+                text28                             23B2     23B2       48         0
+                text27                             270C     270C       3A         0
+                text26                             1DE0     1DE0       66         0
+                text25                             1D7A     1D7A       66         0
+                text24                             27DE     27DE       30         0
+                text23                             26D2     26D2       3A         0
+                text22                             2698     2698       3A         0
+                text21                             2236     2236       4E         0
+                text20                             2996     2996       16         0
+                text19                             2746     2746       34         0
+                text18                             1FDE     1FDE       64         0
+                text17                             1AA8     1AA8       82         0
+                text16                             2948     2948       1C         0
+                text15                             29FA     29FA        A         0
+                text14                             2A0E     2A0E        6         0
+                text13                             21E8     21E8       4E         0
+                text12                             277A     277A       32         0
+                text11                             2964     2964       1A         0
+                text10                             28BC     28BC       24         0
+                text9                              236A     236A       48         0
+                text8                              1C9C     1C9C       70         0
+                text7                              13A8     13A8      156         0
+                text6                              29AC     29AC       12         0
+                text5                              14FE     14FE      146         0
+                text4                              1644     1644      10C         0
+                text3                              18F2     18F2       96         0
+                text2                              1248     1248      160         0
+                text1                              1BAA     1BAA       7C         0
+                text0                              283E     283E       2C         0
+                cinit                              2488     2488       44         0
+                idataCOMRAM                        29F0     29F0        A         0
 
         CLASS   CONST          
 
         CLASS   SMALLCONST     
-                smallconst                          F00      F00       A2         0
+                smallconst                          F00      F00       E4         0
 
         CLASS   MEDIUMCONST    
 
         CLASS   COMRAM         
-                cstackCOMRAM                         26       26       24         1
-                dataCOMRAM                           55       55        A         1
-                bssCOMRAM                             1        1       25         1
+                cstackCOMRAM                         2A       2A       25         1
+                dataCOMRAM                           4F       4F        A         1
+                bssCOMRAM                             1        1       29         1
                 bitbssCOMRAM                        2F8       5F        1         1
-                nvCOMRAM                             4A       4A        B         1
+                nvCOMRAM                             59       59        6         1
 
         CLASS   ABS1           
 
@@ -198,8 +222,8 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   RAM            
 
         CLASS   BANK0          
-                bssBANK0                             60       60       3A         1
-                nvBANK0                              9A       9A        2         1
+                bssBANK0                             60       60       3E         1
+                nvBANK0                              9E       9E        7         1
 
         CLASS   BANK1          
 
@@ -244,16 +268,16 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 
                 reset_vec                      000000  000004  000004         0       0  CODE    
                 bssCOMRAM                      000001  00005F  000060         1       1  COMRAM  
-                bssBANK0                       000060  00003C  00009C        60       1  BANK0   
-                smallconst                     000F00  0000A2  000FA2       780       0  SMALLCON
-                text38                         000FA2  001630  0025D2       7D1       0  CODE    
+                bssBANK0                       000060  000045  0000A5        60       1  BANK0   
+                smallconst                     000F00  0000E4  000FE4       780       0  SMALLCON
+                text50                         000FE4  001A30  002A14       7F2       0  CODE    
                 config                         00FFF8  000008  010000      FFF8       0  CONFIG  
 
 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
-        BANK0            0009C-000FF              64
+        BANK0            000A5-000FF              5B
         BANK1            00100-001FF             100
         BANK10           00A00-00AFF             100
         BANK11           00B00-00BFF             100
@@ -268,728 +292,804 @@ UNUSED ADDRESS RANGES
         BANK7            00700-007FF             100
         BANK8            00800-008FF             100
         BANK9            00900-009FF             100
-        BIGRAM           0009C-00EBF             E24
+        BIGRAM           000A5-00EBF             E1B
         CODE             00004-00EFF             EFC
-                         025D2-0FFF7            DA26
+                         02A14-0FFF7            D5E4
         CONST            00004-00EFF             EFC
-                         025D2-0FFF7            DA26
-        MEDIUMCONST      025D2-0FFF7            DA26
-        RAM              0009C-00EBF             100
+                         02A14-0FFF7            D5E4
+        MEDIUMCONST      02A14-0FFF7            D5E4
+        RAM              000A5-00EBF             100
         SFR              00EC0-00FFF              60
-        SMALLCONST       025D2-0FFF7             100
-        STACK            0009C-00EBF             E24
+        SMALLCONST       02A14-0FFF7             100
+        STACK            000A5-00EBF             E1B
 
                                   Symbol Table
 
-?___awdiv                             cstackCOMRAM  00026
-?___lwdiv                             cstackCOMRAM  00026
-?___lwmod                             cstackCOMRAM  0002D
-?___wmul                              cstackCOMRAM  00026
-?_sprintf                             cstackCOMRAM  00032
-?_strcmp                              cstackCOMRAM  00026
-Delay100TCYx@unit                     cstackCOMRAM  00026
-Delay1KTCYx@unit                      cstackCOMRAM  00026
-RtccReadDate@pDt                      cstackCOMRAM  00026
-RtccReadDate@rTD0                     cstackCOMRAM  00030
-RtccReadDate@rTD1                     cstackCOMRAM  00028
-RtccReadTime@pTm                      cstackCOMRAM  00026
-RtccReadTime@rTD0                     cstackCOMRAM  00030
-RtccReadTime@rTD1                     cstackCOMRAM  00028
-RtccWriteDate@di                      cstackCOMRAM  00028
-RtccWriteDate@pDt                     cstackCOMRAM  00026
-RtccWriteDate@tempDayMonth            cstackCOMRAM  0002F
-RtccWriteDate@tempHourWDay            cstackCOMRAM  00031
-RtccWriteDate@tempYear                cstackCOMRAM  0002C
-RtccWriteDate@wasAlrm                 cstackCOMRAM  0002B
-RtccWriteDate@wasOn                   cstackCOMRAM  0002A
-RtccWriteDate@wasWrEn                 cstackCOMRAM  0002E
-RtccWriteTime@di                      cstackCOMRAM  00028
-RtccWriteTime@pTm                     cstackCOMRAM  00026
-RtccWriteTime@tempHourWDay            cstackCOMRAM  0002F
-RtccWriteTime@tempMinSec              cstackCOMRAM  0002D
-RtccWriteTime@wasAlrm                 cstackCOMRAM  0002B
-RtccWriteTime@wasOn                   cstackCOMRAM  0002A
-RtccWriteTime@wasWrEn                 cstackCOMRAM  0002C
-_ADCON0                               (abs)         00FC2
-_ADCON1                               (abs)         00FC1
-_ALRMCFGbits                          (abs)         00F91
-_ANCON0                               (abs)         00F48
-_ANCON1                               (abs)         00F49
-_Delay100TCYx                         text53        0257C
-_Delay1KTCYx                          text54        0258E
-_EECON2                               (abs)         00FA7
-_INTCONbits                           (abs)         00FF2
-_LATAbits                             (abs)         00F89
-_LATBbits                             (abs)         00F8A
-_LCD_INIT_STRING                      smallconst    00F0B
-_OSCCONbits                           (abs)         00FD3
-_OSCTUNEbits                          (abs)         00F9B
-_PIE3bits                             (abs)         00FA3
-_PORTAbits                            (abs)         00F80
-_PORTCbits                            (abs)         00F82
-_RTCCFG                               (abs)         00F3F
-_RTCCFGbits                           (abs)         00F3F
-_RTCVALH                              (abs)         00F99
-_RTCVALL                              (abs)         00F98
-_Read_RTC                             text55        016FA
-_RtccAlrmTimeDate                     bssBANK0      00060
-_RtccDate                             bssCOMRAM     0001E
-_RtccReadDate                         text57        01900
-_RtccReadTime                         text56        01B7A
-_RtccTime                             bssCOMRAM     00022
-_RtccTimeDate                         bssBANK0      00068
-_RtccTimeVal                          bssBANK0      00078
-_RtccWrOn                             text6         0256A
-_RtccWriteDate                        text5         014A8
-_RtccWriteTime                        text4         015EE
-_Rtcc_read_TimeDate                   bssBANK0      00070
-_T1CONbits                            (abs)         00FCD
-_TRISA                                (abs)         00F92
-_TRISB                                (abs)         00F93
-_TRISBbits                            (abs)         00F93
-_TRISC                                (abs)         00F94
-_Write_RTC                            text2         0135C
-__CFG_CP0$OFF                         (abs)         00000
-__CFG_CPUDIV$OSC1                     (abs)         00000
-__CFG_DSBOREN$OFF                     (abs)         00000
-__CFG_DSWDTEN$OFF                     (abs)         00000
-__CFG_DSWDTOSC$INTOSCREF              (abs)         00000
-__CFG_DSWDTPS$G2                      (abs)         00000
-__CFG_FCMEN$OFF                       (abs)         00000
-__CFG_IESO$OFF                        (abs)         00000
-__CFG_IOL1WAY$OFF                     (abs)         00000
-__CFG_LPT1OSC$OFF                     (abs)         00000
-__CFG_MSSP7B_EN$MSK7                  (abs)         00000
-__CFG_OSC$INTOSC                      (abs)         00000
-__CFG_PLLDIV$1                        (abs)         00000
-__CFG_RTCOSC$T1OSCREF                 (abs)         00000
-__CFG_STVREN$ON                       (abs)         00000
-__CFG_T1DIG$ON                        (abs)         00000
-__CFG_WDTEN$OFF                       (abs)         00000
-__CFG_WDTPS$32768                     (abs)         00000
-__CFG_WPCFG$OFF                       (abs)         00000
-__CFG_WPDIS$OFF                       (abs)         00000
-__CFG_XINST$OFF                       (abs)         00000
-__HRAM                                (abs)         00000
-__Habs1                               abs1          00000
-__Hbank0                              bank0         00000
-__Hbank1                              bank1         00000
-__Hbank10                             bank10        00000
-__Hbank11                             bank11        00000
-__Hbank12                             bank12        00000
-__Hbank13                             bank13        00000
-__Hbank14                             bank14        00000
-__Hbank2                              bank2         00000
-__Hbank3                              bank3         00000
-__Hbank4                              bank4         00000
-__Hbank5                              bank5         00000
-__Hbank6                              bank6         00000
-__Hbank7                              bank7         00000
-__Hbank8                              bank8         00000
-__Hbank9                              bank9         00000
-__Hbigbss                             bigbss        00000
-__Hbigdata                            bigdata       00000
-__Hbigram                             bigram        00000
-__HbitbssCOMRAM                       bitbssCOMRAM  00000
-__Hbss                                bss           00000
-__HbssBANK0                           bssBANK0      00000
-__HbssCOMRAM                          bssCOMRAM     00000
-__Hcinit                              cinit         00000
-__Hclrtext                            clrtext       00000
-__Hcomram                             comram        00000
-__Hconfig                             config        10000
-__Hconst                              const         00000
-__HcstackCOMRAM                       cstackCOMRAM  00000
-__Hdata                               data          00000
-__HdataCOMRAM                         dataCOMRAM    00000
-__Hend_init                           end_init      00004
-__Hfarbss                             farbss        00000
-__Hfardata                            fardata       00000
-__Hibigdata                           ibigdata      00000
-__Hidata                              idata         00000
-__HidataCOMRAM                        idataCOMRAM   00000
-__Hidloc                              idloc         00000
-__Hifardata                           ifardata      00000
-__Hinit                               init          00000
-__Hintcode                            intcode       00000
-__Hintcode_body                       intcode_body  00000
-__Hintcodelo                          intcodelo     00000
-__Hintentry                           intentry      00000
-__Hintret                             intret        00000
-__Hintsave_regs                       intsave_regs  00000
-__Hirdata                             irdata        00000
-__Hjflash_buffer                      jflash_buffer 0F800
-__Hmediumconst                        mediumconst   00000
-__HnvBANK0                            nvBANK0       00000
-__HnvCOMRAM                           nvCOMRAM      00000
-__HnvFARRAM                           nvFARRAM      00000
-__Hnvbit                              nvbit         00000
-__Hnvrram                             nvrram        00000
-__Hparam                              rparam        00000
-__Hpowerup                            powerup       00000
-__Hram                                ram           00000
-__Hramtop                             ramtop        00F00
-__Hrbit                               rbit          00000
-__Hrbss                               rbss          00000
-__Hrdata                              rdata         00000
-__Hreset_vec                          reset_vec     00000
-__Hrparam                             rparam        00000
-__Hsfr                                sfr           00000
-__Hsmallconst                         smallconst    00FA2
-__Hspace_0                            (abs)         10000
-__Hspace_1                            (abs)         002F9
-__Hspace_2                            (abs)         00000
-__Hstack                              stack         00000
-__Hstruct                             struct        00000
-__Htemp                               temp          00000
-__Htext                               text          00000
-__Htext0                              text0         00000
-__Htext1                              text1         00000
-__Htext10                             text10        00000
-__Htext11                             text11        00000
-__Htext12                             text12        00000
-__Htext13                             text13        00000
-__Htext14                             text14        00000
-__Htext15                             text15        00000
-__Htext16                             text16        00000
-__Htext17                             text17        00000
-__Htext18                             text18        00000
-__Htext19                             text19        00000
-__Htext2                              text2         00000
-__Htext20                             text20        00000
-__Htext21                             text21        00000
-__Htext22                             text22        00000
-__Htext23                             text23        00000
-__Htext24                             text24        00000
-__Htext25                             text25        00000
-__Htext26                             text26        00000
-__Htext27                             text27        00000
-__Htext28                             text28        00000
-__Htext29                             text29        00000
-__Htext3                              text3         00000
-__Htext30                             text30        00000
-__Htext31                             text31        00000
-__Htext32                             text32        00000
-__Htext33                             text33        00000
-__Htext34                             text34        00000
-__Htext35                             text35        00000
-__Htext36                             text36        00000
-__Htext37                             text37        00000
-__Htext38                             text38        00000
-__Htext39                             text39        00000
-__Htext4                              text4         00000
-__Htext40                             text40        00000
-__Htext41                             text41        00000
-__Htext42                             text42        00000
-__Htext43                             text43        00000
-__Htext44                             text44        00000
-__Htext45                             text45        00000
-__Htext46                             text46        00000
-__Htext47                             text47        00000
-__Htext48                             text48        00000
-__Htext49                             text49        00000
-__Htext5                              text5         00000
-__Htext50                             text50        00000
-__Htext51                             text51        00000
-__Htext52                             text52        00000
-__Htext53                             text53        00000
-__Htext54                             text54        00000
-__Htext55                             text55        00000
-__Htext56                             text56        00000
-__Htext57                             text57        00000
-__Htext6                              text6         00000
-__Htext7                              text7         00000
-__Htext8                              text8         00000
-__Htext9                              text9         00000
-__LRAM                                (abs)         00001
-__Labs1                               abs1          00000
-__Lbank0                              bank0         00000
-__Lbank1                              bank1         00000
-__Lbank10                             bank10        00000
-__Lbank11                             bank11        00000
-__Lbank12                             bank12        00000
-__Lbank13                             bank13        00000
-__Lbank14                             bank14        00000
-__Lbank2                              bank2         00000
-__Lbank3                              bank3         00000
-__Lbank4                              bank4         00000
-__Lbank5                              bank5         00000
-__Lbank6                              bank6         00000
-__Lbank7                              bank7         00000
-__Lbank8                              bank8         00000
-__Lbank9                              bank9         00000
-__Lbigbss                             bigbss        00000
-__Lbigdata                            bigdata       00000
-__Lbigram                             bigram        00000
-__LbitbssCOMRAM                       bitbssCOMRAM  00000
-__Lbss                                bss           00000
-__LbssBANK0                           bssBANK0      00000
-__LbssCOMRAM                          bssCOMRAM     00000
-__Lcinit                              cinit         00000
-__Lclrtext                            clrtext       00000
-__Lcomram                             comram        00000
-__Lconfig                             config        0FFF8
-__Lconst                              const         00000
-__LcstackCOMRAM                       cstackCOMRAM  00000
-__Ldata                               data          00000
-__LdataCOMRAM                         dataCOMRAM    00000
-__Lend_init                           end_init      00000
-__Lfarbss                             farbss        00000
-__Lfardata                            fardata       00000
-__Libigdata                           ibigdata      00000
-__Lidata                              idata         00000
-__LidataCOMRAM                        idataCOMRAM   00000
-__Lidloc                              idloc         00000
-__Lifardata                           ifardata      00000
-__Linit                               init          00000
-__Lintcode                            intcode       00000
-__Lintcode_body                       intcode_body  00000
-__Lintcodelo                          intcodelo     00000
-__Lintentry                           intentry      00000
-__Lintret                             intret        00000
-__Lintsave_regs                       intsave_regs  00000
-__Lirdata                             irdata        00000
-__Ljflash_buffer                      jflash_buffer 0F800
-__Lmediumconst                        mediumconst   00000
-__LnvBANK0                            nvBANK0       00000
-__LnvCOMRAM                           nvCOMRAM      00000
-__LnvFARRAM                           nvFARRAM      00000
-__Lnvbit                              nvbit         00000
-__Lnvrram                             nvrram        00000
-__Lparam                              rparam        00000
-__Lpowerup                            powerup       00000
-__Lram                                ram           00000
-__Lramtop                             ramtop        00F00
-__Lrbit                               rbit          00000
-__Lrbss                               rbss          00000
-__Lrdata                              rdata         00000
-__Lreset_vec                          reset_vec     00000
-__Lrparam                             rparam        00000
-__Lsfr                                sfr           00000
-__Lsmallconst                         smallconst    00F00
-__Lspace_0                            (abs)         00000
-__Lspace_1                            (abs)         00000
-__Lspace_2                            (abs)         00000
-__Lstack                              stack         00000
-__Lstruct                             struct        00000
-__Ltemp                               temp          00000
-__Ltext                               text          00000
-__Ltext0                              text0         00000
-__Ltext1                              text1         00000
-__Ltext10                             text10        00000
-__Ltext11                             text11        00000
-__Ltext12                             text12        00000
-__Ltext13                             text13        00000
-__Ltext14                             text14        00000
-__Ltext15                             text15        00000
-__Ltext16                             text16        00000
-__Ltext17                             text17        00000
-__Ltext18                             text18        00000
-__Ltext19                             text19        00000
-__Ltext2                              text2         00000
-__Ltext20                             text20        00000
-__Ltext21                             text21        00000
-__Ltext22                             text22        00000
-__Ltext23                             text23        00000
-__Ltext24                             text24        00000
-__Ltext25                             text25        00000
-__Ltext26                             text26        00000
-__Ltext27                             text27        00000
-__Ltext28                             text28        00000
-__Ltext29                             text29        00000
-__Ltext3                              text3         00000
-__Ltext30                             text30        00000
-__Ltext31                             text31        00000
-__Ltext32                             text32        00000
-__Ltext33                             text33        00000
-__Ltext34                             text34        00000
-__Ltext35                             text35        00000
-__Ltext36                             text36        00000
-__Ltext37                             text37        00000
-__Ltext38                             text38        00000
-__Ltext39                             text39        00000
-__Ltext4                              text4         00000
-__Ltext40                             text40        00000
-__Ltext41                             text41        00000
-__Ltext42                             text42        00000
-__Ltext43                             text43        00000
-__Ltext44                             text44        00000
-__Ltext45                             text45        00000
-__Ltext46                             text46        00000
-__Ltext47                             text47        00000
-__Ltext48                             text48        00000
-__Ltext49                             text49        00000
-__Ltext5                              text5         00000
-__Ltext50                             text50        00000
-__Ltext51                             text51        00000
-__Ltext52                             text52        00000
-__Ltext53                             text53        00000
-__Ltext54                             text54        00000
-__Ltext55                             text55        00000
-__Ltext56                             text56        00000
-__Ltext57                             text57        00000
-__Ltext6                              text6         00000
-__Ltext7                              text7         00000
-__Ltext8                              text8         00000
-__Ltext9                              text9         00000
-__S0                                  (abs)         10000
-__S1                                  (abs)         0009C
-__S2                                  (abs)         00000
-___awdiv                              text3         017D8
-___awdiv@counter                      cstackCOMRAM  0002A
-___awdiv@dividend                     cstackCOMRAM  00026
-___awdiv@divisor                      cstackCOMRAM  00028
-___awdiv@quotient                     cstackCOMRAM  0002C
-___awdiv@sign                         cstackCOMRAM  0002B
-___inthi_sp                           stack         00000
-___intlo_sp                           stack         00000
-___lwdiv                              text42        01DE6
-___lwdiv@counter                      cstackCOMRAM  0002C
-___lwdiv@dividend                     cstackCOMRAM  00026
-___lwdiv@divisor                      cstackCOMRAM  00028
-___lwdiv@quotient                     cstackCOMRAM  0002A
-___lwmod                              text41        01F88
-___lwmod@counter                      cstackCOMRAM  00031
-___lwmod@dividend                     cstackCOMRAM  0002D
-___lwmod@divisor                      cstackCOMRAM  0002F
-___param_bank                         (abs)         00010
-___rparam_used                        (abs)         00001
-___sp                                 stack         00000
-___wmul                               text40        02492
-___wmul@multiplicand                  cstackCOMRAM  00028
-___wmul@multiplier                    cstackCOMRAM  00026
-___wmul@product                       cstackCOMRAM  0002A
-__accesstop                           (abs)         00060
-__activetblptr                        (abs)         00002
-__end_of_Delay100TCYx                 text53        0258E
-__end_of_Delay1KTCYx                  text54        025A0
-__end_of_LCD_INIT_STRING              smallconst    00F0F
-__end_of_Read_RTC                     text55        017D8
-__end_of_RtccReadDate                 text57        0198E
-__end_of_RtccReadTime                 text56        01BE8
-__end_of_RtccWrOn                     text6         0257C
-__end_of_RtccWriteDate                text5         015EE
-__end_of_RtccWriteTime                text4         016FA
-__end_of_Write_RTC                    text2         014A8
-__end_of___awdiv                      text3         0186E
-__end_of___lwdiv                      text42        01E42
-__end_of___lwmod                      text41        01FD4
-__end_of___wmul                       text40        024BA
-__end_of__initialization              cinit         02132
-__end_of_action_menu_selector         text31        020F8
-__end_of_action_menu_selector_0       text35        022C8
-__end_of_action_menu_selector_1       text34        02286
-__end_of_action_menu_selector_2       text33        02244
-__end_of_action_menu_selector_3       text32        02202
-__end_of_action_submenu_selector      text28        0243C
-__end_of_action_submenu_selector_0    text30        021C0
-__end_of_action_submenu_selector_1    text29        0217E
-__end_of_activity_home                text45        02492
-__end_of_activity_menu                text16        01A10
-__end_of_activity_pin                 text25        01F88
-__end_of_activity_submenu_activation  text23        01DE6
-__end_of_activity_submenu_alarm       text22        01D80
-__end_of_activity_submenu_clock       text21        01D1A
-__end_of_activity_submenu_pin         text20        01CB4
-__end_of_button_A                     text24        02308
-__end_of_button_B                     text17        02376
-__end_of_button_B_menu                text19        020B0
-__end_of_button_B_submenu_activation  text18        02342
-__end_of_button_C                     text15        0253E
-__end_of_button_D                     text14        025C2
-__end_of_button_asterisk              text13        025D2
-__end_of_button_hash                  text10        0256A
-__end_of_button_number                text8         01C4E
-__end_of_check_home_callback          text43        02522
-__end_of_dpowers                      smallconst    00F0B
-__end_of_home_clock_refresh           text37        01900
-__end_of_home_state_refresh           text36        01E98
-__end_of_isdigit                      text39        02500
-__end_of_keyboard_control             text7         0135C
-__end_of_lcd_comand                   text27        025AE
-__end_of_lcd_gotoxy                   text49        024DE
-__end_of_lcd_init                     text50        01A90
-__end_of_lcd_putc                     text48        02020
-__end_of_lcd_putrs                    text47        01EEC
-__end_of_lcd_send_byte                text51        0240C
-__end_of_lcd_send_nibble              text52        01B06
-__end_of_lcd_write                    text46        02556
-__end_of_main                         text0         02468
-__end_of_pin_input_validator          text11        023A8
-__end_of_reset_home_callback          text44        025CC
-__end_of_setup                        text1         01B7A
-__end_of_sprintf                      text38        01206
-__end_of_strcat                       text9         02068
-__end_of_strcmp                       text12        01F3A
-__end_of_strcpy                       text26        023DA
-__initialization                      cinit         020F8
-__mediumconst                         mediumconst   00000
-__pbitbssCOMRAM                       bitbssCOMRAM  002F8
-__pbssBANK0                           bssBANK0      00060
-__pbssCOMRAM                          bssCOMRAM     00001
-__pcinit                              cinit         020F8
-__pcstackCOMRAM                       cstackCOMRAM  00026
-__pdataCOMRAM                         dataCOMRAM    00055
-__pidataCOMRAM                        idataCOMRAM   025AE
-__pnvBANK0                            nvBANK0       0009A
-__pnvCOMRAM                           nvCOMRAM      0004A
-__psmallconst                         smallconst    00F00
-__ptext0                              text0         0243C
-__ptext1                              text1         01B06
-__ptext10                             text10        02556
-__ptext11                             text11        02376
-__ptext12                             text12        01EEC
-__ptext13                             text13        025CC
-__ptext14                             text14        025B8
-__ptext15                             text15        02522
-__ptext16                             text16        0198E
-__ptext17                             text17        02342
-__ptext18                             text18        02308
-__ptext19                             text19        02068
-__ptext2                              text2         0135C
-__ptext20                             text20        01C4E
-__ptext21                             text21        01CB4
-__ptext22                             text22        01D1A
-__ptext23                             text23        01D80
-__ptext24                             text24        022C8
-__ptext25                             text25        01F3A
-__ptext26                             text26        023A8
-__ptext27                             text27        025A0
-__ptext28                             text28        0240C
-__ptext29                             text29        0213C
-__ptext3                              text3         017D8
-__ptext30                             text30        0217E
-__ptext31                             text31        020B0
-__ptext32                             text32        021C0
-__ptext33                             text33        02202
-__ptext34                             text34        02244
-__ptext35                             text35        02286
-__ptext36                             text36        01E42
-__ptext37                             text37        0186E
-__ptext38                             text38        00FA2
-__ptext39                             text39        024DE
-__ptext4                              text4         015EE
-__ptext40                             text40        02492
-__ptext41                             text41        01F88
-__ptext42                             text42        01DE6
-__ptext43                             text43        02500
-__ptext44                             text44        025C2
-__ptext45                             text45        02468
-__ptext46                             text46        0253E
-__ptext47                             text47        01E98
-__ptext48                             text48        01FD4
-__ptext49                             text49        024BA
-__ptext5                              text5         014A8
-__ptext50                             text50        01A10
-__ptext51                             text51        023DA
-__ptext52                             text52        01A90
-__ptext53                             text53        0257C
-__ptext54                             text54        0258E
-__ptext55                             text55        016FA
-__ptext56                             text56        01B7A
-__ptext57                             text57        01900
-__ptext6                              text6         0256A
-__ptext7                              text7         01206
-__ptext8                              text8         01BE8
-__ptext9                              text9         02020
-__ramtop                              ramtop        00F00
-__size_of_Delay100TCYx                (abs)         00000
-__size_of_Delay1KTCYx                 (abs)         00000
-__size_of_Read_RTC                    (abs)         00000
-__size_of_RtccReadDate                (abs)         00000
-__size_of_RtccReadTime                (abs)         00000
-__size_of_RtccWrOn                    (abs)         00000
-__size_of_RtccWriteDate               (abs)         00000
-__size_of_RtccWriteTime               (abs)         00000
-__size_of_Write_RTC                   (abs)         00000
-__size_of___awdiv                     (abs)         00000
-__size_of___lwdiv                     (abs)         00000
-__size_of___lwmod                     (abs)         00000
-__size_of___wmul                      (abs)         00000
-__size_of_action_menu_selector        (abs)         00000
-__size_of_action_menu_selector_0      (abs)         00000
-__size_of_action_menu_selector_1      (abs)         00000
-__size_of_action_menu_selector_2      (abs)         00000
-__size_of_action_menu_selector_3      (abs)         00000
-__size_of_action_submenu_selector     (abs)         00000
-__size_of_action_submenu_selector_0   (abs)         00000
-__size_of_action_submenu_selector_1   (abs)         00000
-__size_of_activity_home               (abs)         00000
-__size_of_activity_menu               (abs)         00000
-__size_of_activity_pin                (abs)         00000
-__size_of_activity_submenu_activation (abs)         00000
-__size_of_activity_submenu_alarm      (abs)         00000
-__size_of_activity_submenu_clock      (abs)         00000
-__size_of_activity_submenu_pin        (abs)         00000
-__size_of_button_A                    (abs)         00000
-__size_of_button_B                    (abs)         00000
-__size_of_button_B_menu               (abs)         00000
-__size_of_button_B_submenu_activation (abs)         00000
-__size_of_button_C                    (abs)         00000
-__size_of_button_D                    (abs)         00000
-__size_of_button_asterisk             (abs)         00000
-__size_of_button_hash                 (abs)         00000
-__size_of_button_number               (abs)         00000
-__size_of_check_home_callback         (abs)         00000
-__size_of_home_clock_refresh          (abs)         00000
-__size_of_home_state_refresh          (abs)         00000
-__size_of_isdigit                     (abs)         00000
-__size_of_keyboard_control            (abs)         00000
-__size_of_lcd_comand                  (abs)         00000
-__size_of_lcd_gotoxy                  (abs)         00000
-__size_of_lcd_init                    (abs)         00000
-__size_of_lcd_putc                    (abs)         00000
-__size_of_lcd_putrs                   (abs)         00000
-__size_of_lcd_send_byte               (abs)         00000
-__size_of_lcd_send_nibble             (abs)         00000
-__size_of_lcd_write                   (abs)         00000
-__size_of_main                        (abs)         00000
-__size_of_pin_input_validator         (abs)         00000
-__size_of_reset_home_callback         (abs)         00000
-__size_of_setup                       (abs)         00000
-__size_of_sprintf                     (abs)         00000
-__size_of_strcat                      (abs)         00000
-__size_of_strcmp                      (abs)         00000
-__size_of_strcpy                      (abs)         00000
-__smallconst                          smallconst    00F00
-_a                                    bssCOMRAM     00001
-_action_menu_selector                 text31        020B0
-_action_menu_selector_0               text35        02286
-_action_menu_selector_1               text34        02244
-_action_menu_selector_2               text33        02202
-_action_menu_selector_3               text32        021C0
-_action_submenu_selector              text28        0240C
-_action_submenu_selector_0            text30        0217E
-_action_submenu_selector_1            text29        0213C
-_activity                             bssCOMRAM     00003
-_activity_home                        text45        02468
-_activity_menu                        text16        0198E
-_activity_pin                         text25        01F3A
-_activity_submenu_activation          text23        01D80
-_activity_submenu_alarm               text22        01D1A
-_activity_submenu_clock               text21        01CB4
-_activity_submenu_pin                 text20        01C4E
-_anio                                 dataCOMRAM    00055
-_anio_d                               nvCOMRAM      0004A
-_anio_u                               nvBANK0       0009A
-_b                                    bssCOMRAM     00005
-_buffer1                              bssBANK0      0007C
-_button_A                             text24        022C8
-_button_B                             text17        02342
-_button_B_menu                        text19        02068
-_button_B_submenu_activation          text18        02308
-_button_C                             text15        02522
-_button_D                             text14        025B8
-_button_asterisk                      text13        025CC
-_button_hash                          text10        02556
-_button_number                        text8         01BE8
-_c                                    bssCOMRAM     00007
-_check_home_callback                  text43        02500
-_dia                                  dataCOMRAM    00057
-_dia_semana                           nvBANK0       0009B
-_diasem                               dataCOMRAM    00059
-_dpowers                              smallconst    00F01
-_fecha_d                              nvCOMRAM      0004B
-_fecha_u                              nvCOMRAM      0004C
-_flag                                 bitbssCOMRAM  002F8
-_home_callback                        bssCOMRAM     00009
-_home_callback_delay                  bssCOMRAM     0000B
-_home_clock_refresh                   text37        0186E
-_home_state_refresh                   text36        01E42
-_hora                                 dataCOMRAM    0005B
-_hora_d                               nvCOMRAM      0004D
-_hora_u                               nvCOMRAM      0004E
-_i                                    bssCOMRAM     0000D
-_isdigit                              text39        024DE
-_isdigit$2152                         cstackCOMRAM  00027
-_j                                    bssCOMRAM     0000F
-_k                                    bssCOMRAM     00011
-_key                                  bssCOMRAM     0001D
-_keyboard_control                     text7         01206
-_lcd_comand                           text27        025A0
-_lcd_gotoxy                           text49        024BA
-_lcd_init                             text50        01A10
-_lcd_putc                             text48        01FD4
-_lcd_putrs                            text47        01E98
-_lcd_send_byte                        text51        023DA
-_lcd_send_nibble                      text52        01A90
-_lcd_write                            text46        0253E
-_main                                 text0         0243C
-_menu_selected                        bssCOMRAM     00013
-_mes                                  dataCOMRAM    0005D
-_mes_d                                nvCOMRAM      0004F
-_mes_u                                nvCOMRAM      00050
-_minuto                               bssCOMRAM     00015
-_minuto_d                             nvCOMRAM      00051
-_minuto_u                             nvCOMRAM      00052
-_pin                                  bssBANK0      00090
-_pin_input                            bssBANK0      00095
-_pin_input_validator                  text11        02376
-_reset_home_callback                  text44        025C2
-_segundo                              bssCOMRAM     00017
-_segundo_d                            nvCOMRAM      00053
-_segundo_u                            nvCOMRAM      00054
-_setup                                text1         01B06
-_sprintf                              text38        00FA2
-_state                                bssCOMRAM     00019
-_strcat                               text9         02020
-_strcmp                               text12        01EEC
-_strcpy                               text26        023A8
-_submenu_selected                     bssCOMRAM     0001B
-end_of_initialization                 cinit         02132
-intlevel0                             text          00000
-intlevel1                             text          00000
-intlevel2                             text          00000
-intlevel3                             text          00000
-isdigit@c                             cstackCOMRAM  00028
-lcd_comand@d                          cstackCOMRAM  0002A
-lcd_gotoxy@address                    cstackCOMRAM  0002C
-lcd_gotoxy@x                          cstackCOMRAM  0002B
-lcd_gotoxy@y                          cstackCOMRAM  0002A
-lcd_init@i                            cstackCOMRAM  0002A
-lcd_putc@c                            cstackCOMRAM  0002D
-lcd_putrs@ptr                         cstackCOMRAM  0002E
-lcd_send_byte@address                 cstackCOMRAM  00029
-lcd_send_byte@n                       cstackCOMRAM  00028
-lcd_send_nibble@nibble                cstackCOMRAM  00027
-lcd_write@column                      cstackCOMRAM  00030
-lcd_write@row                         cstackCOMRAM  00032
-lcd_write@string                      cstackCOMRAM  00034
-pin_input_validator@comparision       cstackCOMRAM  00036
-sprintf@ap                            cstackCOMRAM  00040
-sprintf@c                             cstackCOMRAM  00048
-sprintf@f                             cstackCOMRAM  00034
-sprintf@flag                          cstackCOMRAM  00042
-sprintf@prec                          cstackCOMRAM  00045
-sprintf@sp                            cstackCOMRAM  00032
-sprintf@val                           cstackCOMRAM  00043
-sprintf@width                         cstackCOMRAM  00046
-stackhi                               (abs)         00EBF
-stacklo                               (abs)         0009C
-start                                 init          00000
-start_initialization                  cinit         020F8
-strcat@cp                             cstackCOMRAM  0002A
-strcat@from                           cstackCOMRAM  00028
-strcat@to                             cstackCOMRAM  00026
-strcmp@r                              cstackCOMRAM  0002B
-strcmp@s1                             cstackCOMRAM  00026
-strcmp@s2                             cstackCOMRAM  00028
-strcpy@cp                             cstackCOMRAM  0002A
-strcpy@from                           cstackCOMRAM  00028
-strcpy@to                             cstackCOMRAM  00026
+?___awdiv                               cstackCOMRAM  0002A
+?___lwdiv                               cstackCOMRAM  0002A
+?___lwmod                               cstackCOMRAM  00031
+?___wmul                                cstackCOMRAM  0002A
+?_sprintf                               cstackCOMRAM  00036
+?_strcmp                                cstackCOMRAM  0002A
+Delay100TCYx@unit                       cstackCOMRAM  0002A
+Delay1KTCYx@unit                        cstackCOMRAM  0002A
+RtccReadDate@pDt                        cstackCOMRAM  0002A
+RtccReadDate@rTD0                       cstackCOMRAM  00034
+RtccReadDate@rTD1                       cstackCOMRAM  0002C
+RtccReadTime@pTm                        cstackCOMRAM  0002A
+RtccReadTime@rTD0                       cstackCOMRAM  00034
+RtccReadTime@rTD1                       cstackCOMRAM  0002C
+RtccWriteDate@di                        cstackCOMRAM  0002C
+RtccWriteDate@pDt                       cstackCOMRAM  0002A
+RtccWriteDate@tempDayMonth              cstackCOMRAM  00033
+RtccWriteDate@tempHourWDay              cstackCOMRAM  00035
+RtccWriteDate@tempYear                  cstackCOMRAM  00030
+RtccWriteDate@wasAlrm                   cstackCOMRAM  0002F
+RtccWriteDate@wasOn                     cstackCOMRAM  0002E
+RtccWriteDate@wasWrEn                   cstackCOMRAM  00032
+RtccWriteTime@di                        cstackCOMRAM  0002C
+RtccWriteTime@pTm                       cstackCOMRAM  0002A
+RtccWriteTime@tempHourWDay              cstackCOMRAM  00033
+RtccWriteTime@tempMinSec                cstackCOMRAM  00031
+RtccWriteTime@wasAlrm                   cstackCOMRAM  0002F
+RtccWriteTime@wasOn                     cstackCOMRAM  0002E
+RtccWriteTime@wasWrEn                   cstackCOMRAM  00030
+_ADCON0                                 (abs)         00FC2
+_ADCON1                                 (abs)         00FC1
+_ALRMCFGbits                            (abs)         00F91
+_ANCON0                                 (abs)         00F48
+_ANCON1                                 (abs)         00F49
+_Delay100TCYx                           text65        029BE
+_Delay1KTCYx                            text66        029D0
+_EECON2                                 (abs)         00FA7
+_INTCONbits                             (abs)         00FF2
+_LATAbits                               (abs)         00F89
+_LATBbits                               (abs)         00F8A
+_LCD_INIT_STRING                        smallconst    00F0B
+_OSCCONbits                             (abs)         00FD3
+_OSCTUNEbits                            (abs)         00F9B
+_PIE3bits                               (abs)         00FA3
+_PORTAbits                              (abs)         00F80
+_PORTCbits                              (abs)         00F82
+_RTCCFG                                 (abs)         00F3F
+_RTCCFGbits                             (abs)         00F3F
+_RTCVALH                                (abs)         00F99
+_RTCVALL                                (abs)         00F98
+_Read_RTC                               text67        01750
+_RtccAlrmTimeDate                       bssBANK0      00060
+_RtccDate                               bssCOMRAM     00022
+_RtccReadDate                           text69        01A1A
+_RtccReadTime                           text68        01D0C
+_RtccTime                               bssCOMRAM     00026
+_RtccTimeDate                           bssBANK0      00068
+_RtccTimeVal                            bssBANK0      00078
+_RtccWrOn                               text6         029AC
+_RtccWriteDate                          text5         014FE
+_RtccWriteTime                          text4         01644
+_Rtcc_read_TimeDate                     bssBANK0      00070
+_T1CONbits                              (abs)         00FCD
+_TRISA                                  (abs)         00F92
+_TRISB                                  (abs)         00F93
+_TRISBbits                              (abs)         00F93
+_TRISC                                  (abs)         00F94
+_Write_RTC                              text2         01248
+__CFG_CP0$OFF                           (abs)         00000
+__CFG_CPUDIV$OSC1                       (abs)         00000
+__CFG_DSBOREN$OFF                       (abs)         00000
+__CFG_DSWDTEN$OFF                       (abs)         00000
+__CFG_DSWDTOSC$INTOSCREF                (abs)         00000
+__CFG_DSWDTPS$G2                        (abs)         00000
+__CFG_FCMEN$OFF                         (abs)         00000
+__CFG_IESO$OFF                          (abs)         00000
+__CFG_IOL1WAY$OFF                       (abs)         00000
+__CFG_LPT1OSC$OFF                       (abs)         00000
+__CFG_MSSP7B_EN$MSK7                    (abs)         00000
+__CFG_OSC$INTOSC                        (abs)         00000
+__CFG_PLLDIV$1                          (abs)         00000
+__CFG_RTCOSC$T1OSCREF                   (abs)         00000
+__CFG_STVREN$ON                         (abs)         00000
+__CFG_T1DIG$ON                          (abs)         00000
+__CFG_WDTEN$OFF                         (abs)         00000
+__CFG_WDTPS$32768                       (abs)         00000
+__CFG_WPCFG$OFF                         (abs)         00000
+__CFG_WPDIS$OFF                         (abs)         00000
+__CFG_XINST$OFF                         (abs)         00000
+__HRAM                                  (abs)         00000
+__Habs1                                 abs1          00000
+__Hbank0                                bank0         00000
+__Hbank1                                bank1         00000
+__Hbank10                               bank10        00000
+__Hbank11                               bank11        00000
+__Hbank12                               bank12        00000
+__Hbank13                               bank13        00000
+__Hbank14                               bank14        00000
+__Hbank2                                bank2         00000
+__Hbank3                                bank3         00000
+__Hbank4                                bank4         00000
+__Hbank5                                bank5         00000
+__Hbank6                                bank6         00000
+__Hbank7                                bank7         00000
+__Hbank8                                bank8         00000
+__Hbank9                                bank9         00000
+__Hbigbss                               bigbss        00000
+__Hbigdata                              bigdata       00000
+__Hbigram                               bigram        00000
+__HbitbssCOMRAM                         bitbssCOMRAM  00000
+__Hbss                                  bss           00000
+__HbssBANK0                             bssBANK0      00000
+__HbssCOMRAM                            bssCOMRAM     00000
+__Hcinit                                cinit         00000
+__Hclrtext                              clrtext       00000
+__Hcomram                               comram        00000
+__Hconfig                               config        10000
+__Hconst                                const         00000
+__HcstackCOMRAM                         cstackCOMRAM  00000
+__Hdata                                 data          00000
+__HdataCOMRAM                           dataCOMRAM    00000
+__Hend_init                             end_init      00004
+__Hfarbss                               farbss        00000
+__Hfardata                              fardata       00000
+__Hibigdata                             ibigdata      00000
+__Hidata                                idata         00000
+__HidataCOMRAM                          idataCOMRAM   00000
+__Hidloc                                idloc         00000
+__Hifardata                             ifardata      00000
+__Hinit                                 init          00000
+__Hintcode                              intcode       00000
+__Hintcode_body                         intcode_body  00000
+__Hintcodelo                            intcodelo     00000
+__Hintentry                             intentry      00000
+__Hintret                               intret        00000
+__Hintsave_regs                         intsave_regs  00000
+__Hirdata                               irdata        00000
+__Hjflash_buffer                        jflash_buffer 0F800
+__Hmediumconst                          mediumconst   00000
+__HnvBANK0                              nvBANK0       00000
+__HnvCOMRAM                             nvCOMRAM      00000
+__HnvFARRAM                             nvFARRAM      00000
+__Hnvbit                                nvbit         00000
+__Hnvrram                               nvrram        00000
+__Hparam                                rparam        00000
+__Hpowerup                              powerup       00000
+__Hram                                  ram           00000
+__Hramtop                               ramtop        00F00
+__Hrbit                                 rbit          00000
+__Hrbss                                 rbss          00000
+__Hrdata                                rdata         00000
+__Hreset_vec                            reset_vec     00000
+__Hrparam                               rparam        00000
+__Hsfr                                  sfr           00000
+__Hsmallconst                           smallconst    00FE4
+__Hspace_0                              (abs)         10000
+__Hspace_1                              (abs)         002F9
+__Hspace_2                              (abs)         00000
+__Hstack                                stack         00000
+__Hstruct                               struct        00000
+__Htemp                                 temp          00000
+__Htext                                 text          00000
+__Htext0                                text0         00000
+__Htext1                                text1         00000
+__Htext10                               text10        00000
+__Htext11                               text11        00000
+__Htext12                               text12        00000
+__Htext13                               text13        00000
+__Htext14                               text14        00000
+__Htext15                               text15        00000
+__Htext16                               text16        00000
+__Htext17                               text17        00000
+__Htext18                               text18        00000
+__Htext19                               text19        00000
+__Htext2                                text2         00000
+__Htext20                               text20        00000
+__Htext21                               text21        00000
+__Htext22                               text22        00000
+__Htext23                               text23        00000
+__Htext24                               text24        00000
+__Htext25                               text25        00000
+__Htext26                               text26        00000
+__Htext27                               text27        00000
+__Htext28                               text28        00000
+__Htext29                               text29        00000
+__Htext3                                text3         00000
+__Htext30                               text30        00000
+__Htext31                               text31        00000
+__Htext32                               text32        00000
+__Htext33                               text33        00000
+__Htext34                               text34        00000
+__Htext35                               text35        00000
+__Htext36                               text36        00000
+__Htext37                               text37        00000
+__Htext38                               text38        00000
+__Htext39                               text39        00000
+__Htext4                                text4         00000
+__Htext40                               text40        00000
+__Htext41                               text41        00000
+__Htext42                               text42        00000
+__Htext43                               text43        00000
+__Htext44                               text44        00000
+__Htext45                               text45        00000
+__Htext46                               text46        00000
+__Htext47                               text47        00000
+__Htext48                               text48        00000
+__Htext49                               text49        00000
+__Htext5                                text5         00000
+__Htext50                               text50        00000
+__Htext51                               text51        00000
+__Htext52                               text52        00000
+__Htext53                               text53        00000
+__Htext54                               text54        00000
+__Htext55                               text55        00000
+__Htext56                               text56        00000
+__Htext57                               text57        00000
+__Htext58                               text58        00000
+__Htext59                               text59        00000
+__Htext6                                text6         00000
+__Htext60                               text60        00000
+__Htext61                               text61        00000
+__Htext62                               text62        00000
+__Htext63                               text63        00000
+__Htext64                               text64        00000
+__Htext65                               text65        00000
+__Htext66                               text66        00000
+__Htext67                               text67        00000
+__Htext68                               text68        00000
+__Htext69                               text69        00000
+__Htext7                                text7         00000
+__Htext8                                text8         00000
+__Htext9                                text9         00000
+__LRAM                                  (abs)         00001
+__Labs1                                 abs1          00000
+__Lbank0                                bank0         00000
+__Lbank1                                bank1         00000
+__Lbank10                               bank10        00000
+__Lbank11                               bank11        00000
+__Lbank12                               bank12        00000
+__Lbank13                               bank13        00000
+__Lbank14                               bank14        00000
+__Lbank2                                bank2         00000
+__Lbank3                                bank3         00000
+__Lbank4                                bank4         00000
+__Lbank5                                bank5         00000
+__Lbank6                                bank6         00000
+__Lbank7                                bank7         00000
+__Lbank8                                bank8         00000
+__Lbank9                                bank9         00000
+__Lbigbss                               bigbss        00000
+__Lbigdata                              bigdata       00000
+__Lbigram                               bigram        00000
+__LbitbssCOMRAM                         bitbssCOMRAM  00000
+__Lbss                                  bss           00000
+__LbssBANK0                             bssBANK0      00000
+__LbssCOMRAM                            bssCOMRAM     00000
+__Lcinit                                cinit         00000
+__Lclrtext                              clrtext       00000
+__Lcomram                               comram        00000
+__Lconfig                               config        0FFF8
+__Lconst                                const         00000
+__LcstackCOMRAM                         cstackCOMRAM  00000
+__Ldata                                 data          00000
+__LdataCOMRAM                           dataCOMRAM    00000
+__Lend_init                             end_init      00000
+__Lfarbss                               farbss        00000
+__Lfardata                              fardata       00000
+__Libigdata                             ibigdata      00000
+__Lidata                                idata         00000
+__LidataCOMRAM                          idataCOMRAM   00000
+__Lidloc                                idloc         00000
+__Lifardata                             ifardata      00000
+__Linit                                 init          00000
+__Lintcode                              intcode       00000
+__Lintcode_body                         intcode_body  00000
+__Lintcodelo                            intcodelo     00000
+__Lintentry                             intentry      00000
+__Lintret                               intret        00000
+__Lintsave_regs                         intsave_regs  00000
+__Lirdata                               irdata        00000
+__Ljflash_buffer                        jflash_buffer 0F800
+__Lmediumconst                          mediumconst   00000
+__LnvBANK0                              nvBANK0       00000
+__LnvCOMRAM                             nvCOMRAM      00000
+__LnvFARRAM                             nvFARRAM      00000
+__Lnvbit                                nvbit         00000
+__Lnvrram                               nvrram        00000
+__Lparam                                rparam        00000
+__Lpowerup                              powerup       00000
+__Lram                                  ram           00000
+__Lramtop                               ramtop        00F00
+__Lrbit                                 rbit          00000
+__Lrbss                                 rbss          00000
+__Lrdata                                rdata         00000
+__Lreset_vec                            reset_vec     00000
+__Lrparam                               rparam        00000
+__Lsfr                                  sfr           00000
+__Lsmallconst                           smallconst    00F00
+__Lspace_0                              (abs)         00000
+__Lspace_1                              (abs)         00000
+__Lspace_2                              (abs)         00000
+__Lstack                                stack         00000
+__Lstruct                               struct        00000
+__Ltemp                                 temp          00000
+__Ltext                                 text          00000
+__Ltext0                                text0         00000
+__Ltext1                                text1         00000
+__Ltext10                               text10        00000
+__Ltext11                               text11        00000
+__Ltext12                               text12        00000
+__Ltext13                               text13        00000
+__Ltext14                               text14        00000
+__Ltext15                               text15        00000
+__Ltext16                               text16        00000
+__Ltext17                               text17        00000
+__Ltext18                               text18        00000
+__Ltext19                               text19        00000
+__Ltext2                                text2         00000
+__Ltext20                               text20        00000
+__Ltext21                               text21        00000
+__Ltext22                               text22        00000
+__Ltext23                               text23        00000
+__Ltext24                               text24        00000
+__Ltext25                               text25        00000
+__Ltext26                               text26        00000
+__Ltext27                               text27        00000
+__Ltext28                               text28        00000
+__Ltext29                               text29        00000
+__Ltext3                                text3         00000
+__Ltext30                               text30        00000
+__Ltext31                               text31        00000
+__Ltext32                               text32        00000
+__Ltext33                               text33        00000
+__Ltext34                               text34        00000
+__Ltext35                               text35        00000
+__Ltext36                               text36        00000
+__Ltext37                               text37        00000
+__Ltext38                               text38        00000
+__Ltext39                               text39        00000
+__Ltext4                                text4         00000
+__Ltext40                               text40        00000
+__Ltext41                               text41        00000
+__Ltext42                               text42        00000
+__Ltext43                               text43        00000
+__Ltext44                               text44        00000
+__Ltext45                               text45        00000
+__Ltext46                               text46        00000
+__Ltext47                               text47        00000
+__Ltext48                               text48        00000
+__Ltext49                               text49        00000
+__Ltext5                                text5         00000
+__Ltext50                               text50        00000
+__Ltext51                               text51        00000
+__Ltext52                               text52        00000
+__Ltext53                               text53        00000
+__Ltext54                               text54        00000
+__Ltext55                               text55        00000
+__Ltext56                               text56        00000
+__Ltext57                               text57        00000
+__Ltext58                               text58        00000
+__Ltext59                               text59        00000
+__Ltext6                                text6         00000
+__Ltext60                               text60        00000
+__Ltext61                               text61        00000
+__Ltext62                               text62        00000
+__Ltext63                               text63        00000
+__Ltext64                               text64        00000
+__Ltext65                               text65        00000
+__Ltext66                               text66        00000
+__Ltext67                               text67        00000
+__Ltext68                               text68        00000
+__Ltext69                               text69        00000
+__Ltext7                                text7         00000
+__Ltext8                                text8         00000
+__Ltext9                                text9         00000
+__S0                                    (abs)         10000
+__S1                                    (abs)         000A5
+__S2                                    (abs)         00000
+___awdiv                                text3         018F2
+___awdiv@counter                        cstackCOMRAM  0002E
+___awdiv@dividend                       cstackCOMRAM  0002A
+___awdiv@divisor                        cstackCOMRAM  0002C
+___awdiv@quotient                       cstackCOMRAM  00030
+___awdiv@sign                           cstackCOMRAM  0002F
+___inthi_sp                             stack         00000
+___intlo_sp                             stack         00000
+___lwdiv                                text54        02042
+___lwdiv@counter                        cstackCOMRAM  00030
+___lwdiv@dividend                       cstackCOMRAM  0002A
+___lwdiv@divisor                        cstackCOMRAM  0002C
+___lwdiv@quotient                       cstackCOMRAM  0002E
+___lwmod                                text53        022D2
+___lwmod@counter                        cstackCOMRAM  00035
+___lwmod@dividend                       cstackCOMRAM  00031
+___lwmod@divisor                        cstackCOMRAM  00033
+___param_bank                           (abs)         00010
+___rparam_used                          (abs)         00001
+___sp                                   stack         00000
+___wmul                                 text52        02894
+___wmul@multiplicand                    cstackCOMRAM  0002C
+___wmul@multiplier                      cstackCOMRAM  0002A
+___wmul@product                         cstackCOMRAM  0002E
+__accesstop                             (abs)         00060
+__activetblptr                          (abs)         00002
+__end_of_Delay100TCYx                   text65        029D0
+__end_of_Delay1KTCYx                    text66        029E2
+__end_of_LCD_INIT_STRING                smallconst    00F0F
+__end_of_Read_RTC                       text67        0184C
+__end_of_RtccReadDate                   text69        01AA8
+__end_of_RtccReadTime                   text68        01D7A
+__end_of_RtccWrOn                       text6         029BE
+__end_of_RtccWriteDate                  text5         01644
+__end_of_RtccWriteTime                  text4         01750
+__end_of_Write_RTC                      text2         013A8
+__end_of___awdiv                        text3         01988
+__end_of___lwdiv                        text54        0209E
+__end_of___lwmod                        text53        0231E
+__end_of___wmul                         text52        028BC
+__end_of__initialization                cinit         024C2
+__end_of_action_menu_selector           text40        02442
+__end_of_action_menu_selector_0         text44        02658
+__end_of_action_menu_selector_1         text43        02616
+__end_of_action_menu_selector_2         text42        025D4
+__end_of_action_menu_selector_3         text41        02592
+__end_of_action_submenu_selector        text37        0283E
+__end_of_action_submenu_selector_0      text39        02550
+__end_of_action_submenu_selector_1      text38        0250E
+__end_of_activity_home                  text57        02894
+__end_of_activity_menu                  text17        01B2A
+__end_of_activity_pin                   text34        022D2
+__end_of_activity_submenu_activation    text32        01FDE
+__end_of_activity_submenu_alarm         text31        01F78
+__end_of_activity_submenu_alarm_tone    text26        01E46
+__end_of_activity_submenu_alarm_volume  text25        01DE0
+__end_of_activity_submenu_clock         text30        01F12
+__end_of_activity_submenu_pin           text29        01EAC
+__end_of_activity_submenu_pin_set       text21        02284
+__end_of_button_A                       text33        02698
+__end_of_button_B                       text18        02042
+__end_of_button_B_menu                  text28        023FA
+__end_of_button_B_submenu_activation    text27        02746
+__end_of_button_B_submenu_alarm_config  text24        0280E
+__end_of_button_B_submenu_alarm_tone    text23        0270C
+__end_of_button_B_submenu_alarm_volume  text22        026D2
+__end_of_button_B_submenu_pin_config    text19        0277A
+__end_of_button_C                       text16        02964
+__end_of_button_D                       text15        02A04
+__end_of_button_asterisk                text14        02A14
+__end_of_button_hash                    text10        028E0
+__end_of_button_number                  text8         01D0C
+__end_of_check_home_callback            text55        02948
+__end_of_dpowers                        smallconst    00F0B
+__end_of_home_clock_refresh             text49        01A1A
+__end_of_home_config_refresh            text45        018F2
+__end_of_home_state_refresh             text48        021E8
+__end_of_home_tone_refresh              text47        02196
+__end_of_home_volume_refresh            text46        02144
+__end_of_isdigit                        text51        02926
+__end_of_keyboard_control               text7         014FE
+__end_of_lcd_comand                     text36        029F0
+__end_of_lcd_gotoxy                     text61        02904
+__end_of_lcd_init                       text62        01BAA
+__end_of_lcd_putc                       text60        0236A
+__end_of_lcd_putrs                      text59        020F2
+__end_of_lcd_send_byte                  text63        027DE
+__end_of_lcd_send_nibble                text64        01C9C
+__end_of_lcd_write                      text58        02996
+__end_of_main                           text0         0286A
+__end_of_pin_input_validator            text12        027AC
+__end_of_pin_set                        text11        0297E
+__end_of_reset_home_callback            text56        02A0E
+__end_of_reset_pin                      text20        029AC
+__end_of_setup                          text1         01C26
+__end_of_sprintf                        text50        01248
+__end_of_strcat                         text9         023B2
+__end_of_strcmp                         text13        02236
+__end_of_strcpy                         text35        02488
+__initialization                        cinit         02488
+__mediumconst                           mediumconst   00000
+__pbitbssCOMRAM                         bitbssCOMRAM  002F8
+__pbssBANK0                             bssBANK0      00060
+__pbssCOMRAM                            bssCOMRAM     00001
+__pcinit                                cinit         02488
+__pcstackCOMRAM                         cstackCOMRAM  0002A
+__pdataCOMRAM                           dataCOMRAM    0004F
+__pidataCOMRAM                          idataCOMRAM   029F0
+__pnvBANK0                              nvBANK0       0009E
+__pnvCOMRAM                             nvCOMRAM      00059
+__psmallconst                           smallconst    00F00
+__ptext0                                text0         0283E
+__ptext1                                text1         01BAA
+__ptext10                               text10        028BC
+__ptext11                               text11        02964
+__ptext12                               text12        0277A
+__ptext13                               text13        021E8
+__ptext14                               text14        02A0E
+__ptext15                               text15        029FA
+__ptext16                               text16        02948
+__ptext17                               text17        01AA8
+__ptext18                               text18        01FDE
+__ptext19                               text19        02746
+__ptext2                                text2         01248
+__ptext20                               text20        02996
+__ptext21                               text21        02236
+__ptext22                               text22        02698
+__ptext23                               text23        026D2
+__ptext24                               text24        027DE
+__ptext25                               text25        01D7A
+__ptext26                               text26        01DE0
+__ptext27                               text27        0270C
+__ptext28                               text28        023B2
+__ptext29                               text29        01E46
+__ptext3                                text3         018F2
+__ptext30                               text30        01EAC
+__ptext31                               text31        01F12
+__ptext32                               text32        01F78
+__ptext33                               text33        02658
+__ptext34                               text34        02284
+__ptext35                               text35        02442
+__ptext36                               text36        029E2
+__ptext37                               text37        0280E
+__ptext38                               text38        024CC
+__ptext39                               text39        0250E
+__ptext4                                text4         01644
+__ptext40                               text40        023FA
+__ptext41                               text41        02550
+__ptext42                               text42        02592
+__ptext43                               text43        025D4
+__ptext44                               text44        02616
+__ptext45                               text45        0184C
+__ptext46                               text46        020F2
+__ptext47                               text47        02144
+__ptext48                               text48        02196
+__ptext49                               text49        01988
+__ptext5                                text5         014FE
+__ptext50                               text50        00FE4
+__ptext51                               text51        02904
+__ptext52                               text52        02894
+__ptext53                               text53        022D2
+__ptext54                               text54        02042
+__ptext55                               text55        02926
+__ptext56                               text56        02A04
+__ptext57                               text57        0286A
+__ptext58                               text58        0297E
+__ptext59                               text59        0209E
+__ptext6                                text6         029AC
+__ptext60                               text60        0231E
+__ptext61                               text61        028E0
+__ptext62                               text62        01B2A
+__ptext63                               text63        027AC
+__ptext64                               text64        01C26
+__ptext65                               text65        029BE
+__ptext66                               text66        029D0
+__ptext67                               text67        01750
+__ptext68                               text68        01D0C
+__ptext69                               text69        01A1A
+__ptext7                                text7         013A8
+__ptext8                                text8         01C9C
+__ptext9                                text9         0236A
+__ramtop                                ramtop        00F00
+__size_of_Delay100TCYx                  (abs)         00000
+__size_of_Delay1KTCYx                   (abs)         00000
+__size_of_Read_RTC                      (abs)         00000
+__size_of_RtccReadDate                  (abs)         00000
+__size_of_RtccReadTime                  (abs)         00000
+__size_of_RtccWrOn                      (abs)         00000
+__size_of_RtccWriteDate                 (abs)         00000
+__size_of_RtccWriteTime                 (abs)         00000
+__size_of_Write_RTC                     (abs)         00000
+__size_of___awdiv                       (abs)         00000
+__size_of___lwdiv                       (abs)         00000
+__size_of___lwmod                       (abs)         00000
+__size_of___wmul                        (abs)         00000
+__size_of_action_menu_selector          (abs)         00000
+__size_of_action_menu_selector_0        (abs)         00000
+__size_of_action_menu_selector_1        (abs)         00000
+__size_of_action_menu_selector_2        (abs)         00000
+__size_of_action_menu_selector_3        (abs)         00000
+__size_of_action_submenu_selector       (abs)         00000
+__size_of_action_submenu_selector_0     (abs)         00000
+__size_of_action_submenu_selector_1     (abs)         00000
+__size_of_activity_home                 (abs)         00000
+__size_of_activity_menu                 (abs)         00000
+__size_of_activity_pin                  (abs)         00000
+__size_of_activity_submenu_activation   (abs)         00000
+__size_of_activity_submenu_alarm        (abs)         00000
+__size_of_activity_submenu_alarm_tone   (abs)         00000
+__size_of_activity_submenu_alarm_volume (abs)         00000
+__size_of_activity_submenu_clock        (abs)         00000
+__size_of_activity_submenu_pin          (abs)         00000
+__size_of_activity_submenu_pin_set      (abs)         00000
+__size_of_button_A                      (abs)         00000
+__size_of_button_B                      (abs)         00000
+__size_of_button_B_menu                 (abs)         00000
+__size_of_button_B_submenu_activation   (abs)         00000
+__size_of_button_B_submenu_alarm_config (abs)         00000
+__size_of_button_B_submenu_alarm_tone   (abs)         00000
+__size_of_button_B_submenu_alarm_volume (abs)         00000
+__size_of_button_B_submenu_pin_config   (abs)         00000
+__size_of_button_C                      (abs)         00000
+__size_of_button_D                      (abs)         00000
+__size_of_button_asterisk               (abs)         00000
+__size_of_button_hash                   (abs)         00000
+__size_of_button_number                 (abs)         00000
+__size_of_check_home_callback           (abs)         00000
+__size_of_home_clock_refresh            (abs)         00000
+__size_of_home_config_refresh           (abs)         00000
+__size_of_home_state_refresh            (abs)         00000
+__size_of_home_tone_refresh             (abs)         00000
+__size_of_home_volume_refresh           (abs)         00000
+__size_of_isdigit                       (abs)         00000
+__size_of_keyboard_control              (abs)         00000
+__size_of_lcd_comand                    (abs)         00000
+__size_of_lcd_gotoxy                    (abs)         00000
+__size_of_lcd_init                      (abs)         00000
+__size_of_lcd_putc                      (abs)         00000
+__size_of_lcd_putrs                     (abs)         00000
+__size_of_lcd_send_byte                 (abs)         00000
+__size_of_lcd_send_nibble               (abs)         00000
+__size_of_lcd_write                     (abs)         00000
+__size_of_main                          (abs)         00000
+__size_of_pin_input_validator           (abs)         00000
+__size_of_pin_set                       (abs)         00000
+__size_of_reset_home_callback           (abs)         00000
+__size_of_reset_pin                     (abs)         00000
+__size_of_setup                         (abs)         00000
+__size_of_sprintf                       (abs)         00000
+__size_of_strcat                        (abs)         00000
+__size_of_strcmp                        (abs)         00000
+__size_of_strcpy                        (abs)         00000
+__smallconst                            smallconst    00F00
+_a                                      bssCOMRAM     00001
+_action_menu_selector                   text40        023FA
+_action_menu_selector_0                 text44        02616
+_action_menu_selector_1                 text43        025D4
+_action_menu_selector_2                 text42        02592
+_action_menu_selector_3                 text41        02550
+_action_submenu_selector                text37        0280E
+_action_submenu_selector_0              text39        0250E
+_action_submenu_selector_1              text38        024CC
+_activity                               bssCOMRAM     00003
+_activity_home                          text57        0286A
+_activity_menu                          text17        01AA8
+_activity_pin                           text34        02284
+_activity_submenu_activation            text32        01F78
+_activity_submenu_alarm                 text31        01F12
+_activity_submenu_alarm_tone            text26        01DE0
+_activity_submenu_alarm_volume          text25        01D7A
+_activity_submenu_clock                 text30        01EAC
+_activity_submenu_pin                   text29        01E46
+_activity_submenu_pin_set               text21        02236
+_alarm_tone                             bssCOMRAM     00005
+_alarm_volume                           bssCOMRAM     00007
+_anio                                   dataCOMRAM    0004F
+_anio_d                                 nvCOMRAM      00059
+_anio_u                                 nvBANK0       0009E
+_b                                      bssCOMRAM     00009
+_buffer1                                bssBANK0      00080
+_button_A                               text33        02658
+_button_B                               text18        01FDE
+_button_B_menu                          text28        023B2
+_button_B_submenu_activation            text27        0270C
+_button_B_submenu_alarm_config          text24        027DE
+_button_B_submenu_alarm_tone            text23        026D2
+_button_B_submenu_alarm_volume          text22        02698
+_button_B_submenu_pin_config            text19        02746
+_button_C                               text16        02948
+_button_D                               text15        029FA
+_button_asterisk                        text14        02A0E
+_button_hash                            text10        028BC
+_button_number                          text8         01C9C
+_c                                      bssBANK0      0007C
+_check_home_callback                    text55        02926
+_config_widget                          bssCOMRAM     0000B
+_config_widget_time                     bssCOMRAM     0000D
+_dia                                    dataCOMRAM    00051
+_dia_semana                             nvBANK0       0009F
+_diasem                                 dataCOMRAM    00053
+_dpowers                                smallconst    00F01
+_fecha_d                                nvCOMRAM      0005A
+_fecha_u                                nvBANK0       000A0
+_flag                                   bitbssCOMRAM  002F8
+_home_callback                          bssCOMRAM     0000F
+_home_callback_delay                    bssCOMRAM     00011
+_home_clock_refresh                     text49        01988
+_home_config_refresh                    text45        0184C
+_home_state_refresh                     text48        02196
+_home_tone_refresh                      text47        02144
+_home_volume_refresh                    text46        020F2
+_hora                                   dataCOMRAM    00055
+_hora_d                                 nvCOMRAM      0005B
+_hora_u                                 nvBANK0       000A1
+_i                                      bssCOMRAM     00013
+_isdigit                                text51        02904
+_isdigit$2192                           cstackCOMRAM  0002B
+_j                                      bssCOMRAM     00015
+_k                                      bssBANK0      0007E
+_key                                    bssCOMRAM     00021
+_keyboard_control                       text7         013A8
+_lcd_comand                             text36        029E2
+_lcd_gotoxy                             text61        028E0
+_lcd_init                               text62        01B2A
+_lcd_putc                               text60        0231E
+_lcd_putrs                              text59        0209E
+_lcd_send_byte                          text63        027AC
+_lcd_send_nibble                        text64        01C26
+_lcd_write                              text58        0297E
+_main                                   text0         0283E
+_menu_selected                          bssCOMRAM     00017
+_mes                                    dataCOMRAM    00057
+_mes_d                                  nvCOMRAM      0005C
+_mes_u                                  nvBANK0       000A2
+_minuto                                 bssCOMRAM     00019
+_minuto_d                               nvCOMRAM      0005D
+_minuto_u                               nvBANK0       000A3
+_pin                                    bssBANK0      00094
+_pin_input                              bssBANK0      00099
+_pin_input_validator                    text12        0277A
+_pin_set                                text11        02964
+_reset_home_callback                    text56        02A04
+_reset_pin                              text20        02996
+_segundo                                bssCOMRAM     0001B
+_segundo_d                              nvCOMRAM      0005E
+_segundo_u                              nvBANK0       000A4
+_setup                                  text1         01BAA
+_sprintf                                text50        00FE4
+_state                                  bssCOMRAM     0001D
+_strcat                                 text9         0236A
+_strcmp                                 text13        021E8
+_strcpy                                 text35        02442
+_submenu_selected                       bssCOMRAM     0001F
+end_of_initialization                   cinit         024C2
+intlevel0                               text          00000
+intlevel1                               text          00000
+intlevel2                               text          00000
+intlevel3                               text          00000
+isdigit@c                               cstackCOMRAM  0002C
+lcd_comand@d                            cstackCOMRAM  0002E
+lcd_gotoxy@address                      cstackCOMRAM  00030
+lcd_gotoxy@x                            cstackCOMRAM  0002F
+lcd_gotoxy@y                            cstackCOMRAM  0002E
+lcd_init@i                              cstackCOMRAM  0002E
+lcd_putc@c                              cstackCOMRAM  00031
+lcd_putrs@ptr                           cstackCOMRAM  00032
+lcd_send_byte@address                   cstackCOMRAM  0002D
+lcd_send_byte@n                         cstackCOMRAM  0002C
+lcd_send_nibble@nibble                  cstackCOMRAM  0002B
+lcd_write@column                        cstackCOMRAM  00034
+lcd_write@row                           cstackCOMRAM  00036
+lcd_write@string                        cstackCOMRAM  00038
+pin_input_validator@comparision         cstackCOMRAM  0003A
+sprintf@ap                              cstackCOMRAM  00044
+sprintf@c                               cstackCOMRAM  0004C
+sprintf@f                               cstackCOMRAM  00038
+sprintf@flag                            cstackCOMRAM  00046
+sprintf@prec                            cstackCOMRAM  00049
+sprintf@sp                              cstackCOMRAM  00036
+sprintf@val                             cstackCOMRAM  00047
+sprintf@width                           cstackCOMRAM  0004A
+stackhi                                 (abs)         00EBF
+stacklo                                 (abs)         000A5
+start                                   init          00000
+start_initialization                    cinit         02488
+strcat@cp                               cstackCOMRAM  0002E
+strcat@from                             cstackCOMRAM  0002C
+strcat@to                               cstackCOMRAM  0002A
+strcmp@r                                cstackCOMRAM  0002F
+strcmp@s1                               cstackCOMRAM  0002A
+strcmp@s2                               cstackCOMRAM  0002C
+strcpy@cp                               cstackCOMRAM  0002E
+strcpy@from                             cstackCOMRAM  0002C
+strcpy@to                               cstackCOMRAM  0002A
 
 
 FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 474 in file "main.c"
+		line 683 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
-                  2  364[None  ] int 
+                  2  445[None  ] int 
  Registers used:
 		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
@@ -1008,7 +1108,7 @@ Total ram usage:        0 bytes
 		_activity_home
 		_check_home_callback
 		_home_clock_refresh
-		_home_state_refresh
+		_home_config_refresh
 		_keyboard_control
 		_setup
  This function is called by:
@@ -1018,7 +1118,7 @@ Total ram usage:        0 bytes
 
  *************** function _setup *****************
  Defined at:
-		line 58 in file "main.c"
+		line 79 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1026,7 +1126,7 @@ Total ram usage:        0 bytes
  Return value:  Size  Location     Type
 		None               void
  Registers used:
-		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1043,7 +1143,7 @@ Total ram usage:        0 bytes
 		_Write_RTC
 		_lcd_comand
 		_lcd_init
-		_strcpy
+		_reset_pin
  This function is called by:
 		_main
  This function uses a non-reentrant model
@@ -1220,7 +1320,7 @@ Total ram usage:        0 bytes
 
  *************** function _keyboard_control *****************
  Defined at:
-		line 419 in file "main.c"
+		line 628 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1256,7 +1356,7 @@ Total ram usage:        1 bytes
 
  *************** function _button_number *****************
  Defined at:
-		line 400 in file "main.c"
+		line 610 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1322,7 +1422,7 @@ Total ram usage:        6 bytes
 
  *************** function _button_hash *****************
  Defined at:
-		line 390 in file "main.c"
+		line 596 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1345,15 +1445,47 @@ Total ram usage:        0 bytes
  Hardware stack levels required when called:    9
  This function calls:
 		_pin_input_validator
+		_pin_set
 		_reset_home_callback
  This function is called by:
 		_keyboard_control
  This function uses a non-reentrant model
 
 
+ *************** function _pin_set *****************
+ Defined at:
+		line 397 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_activity_home
+		_strcpy
+ This function is called by:
+		_button_hash
+ This function uses a non-reentrant model
+
+
  *************** function _pin_input_validator *****************
  Defined at:
-		line 269 in file "main.c"
+		line 385 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1417,7 +1549,7 @@ Total ram usage:        6 bytes
 
  *************** function _button_asterisk *****************
  Defined at:
-		line 382 in file "main.c"
+		line 588 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1447,7 +1579,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_D *****************
  Defined at:
-		line 374 in file "main.c"
+		line 580 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1478,7 +1610,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_C *****************
  Defined at:
-		line 364 in file "main.c"
+		line 570 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1509,7 +1641,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_menu *****************
  Defined at:
-		line 189 in file "main.c"
+		line 272 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1542,7 +1674,140 @@ Total ram usage:        0 bytes
 
  *************** function _button_B *****************
  Defined at:
-		line 346 in file "main.c"
+		line 537 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		_button_B_menu
+		_button_B_submenu_activation
+		_button_B_submenu_alarm_config
+		_button_B_submenu_alarm_tone
+		_button_B_submenu_alarm_volume
+		_button_B_submenu_pin_config
+		_reset_home_callback
+ This function is called by:
+		_keyboard_control
+ This function uses a non-reentrant model
+
+
+ *************** function _button_B_submenu_pin_config *****************
+ Defined at:
+		line 468 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_activity_home
+		_activity_submenu_pin_set
+		_reset_pin
+ This function is called by:
+		_button_B
+ This function uses a non-reentrant model
+
+
+ *************** function _reset_pin *****************
+ Defined at:
+		line 75 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		_strcpy
+ This function is called by:
+		_setup
+		_button_B_submenu_pin_config
+ This function uses a non-reentrant model
+
+
+ *************** function _activity_submenu_pin_set *****************
+ Defined at:
+		line 342 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_lcd_comand
+		_lcd_gotoxy
+		_lcd_init
+		_lcd_write
+		_strcpy
+ This function is called by:
+		_button_B_submenu_pin_config
+ This function uses a non-reentrant model
+
+
+ *************** function _button_B_submenu_alarm_volume *****************
+ Defined at:
+		line 501 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1562,19 +1827,142 @@ Total ram usage:        0 bytes
       Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
 Total ram usage:        2 bytes
  Hardware stack levels used:    1
- Hardware stack levels required when called:    9
+ Hardware stack levels required when called:    7
  This function calls:
-		_button_B_menu
-		_button_B_submenu_activation
-		_reset_home_callback
+		_activity_home
  This function is called by:
-		_keyboard_control
+		_button_B
+ This function uses a non-reentrant model
+
+
+ *************** function _button_B_submenu_alarm_tone *****************
+ Defined at:
+		line 519 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_activity_home
+ This function is called by:
+		_button_B
+ This function uses a non-reentrant model
+
+
+ *************** function _button_B_submenu_alarm_config *****************
+ Defined at:
+		line 485 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_activity_submenu_alarm_tone
+		_activity_submenu_alarm_volume
+ This function is called by:
+		_button_B
+ This function uses a non-reentrant model
+
+
+ *************** function _activity_submenu_alarm_volume *****************
+ Defined at:
+		line 363 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_action_submenu_selector_0
+		_lcd_init
+		_lcd_write
+ This function is called by:
+		_button_B_submenu_alarm_config
+ This function uses a non-reentrant model
+
+
+ *************** function _activity_submenu_alarm_tone *****************
+ Defined at:
+		line 374 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_action_submenu_selector_0
+		_lcd_init
+		_lcd_write
+ This function is called by:
+		_button_B_submenu_alarm_config
  This function uses a non-reentrant model
 
 
  *************** function _button_B_submenu_activation *****************
  Defined at:
-		line 328 in file "main.c"
+		line 450 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1604,7 +1992,7 @@ Total ram usage:        2 bytes
 
  *************** function _button_B_menu *****************
  Defined at:
-		line 305 in file "main.c"
+		line 427 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1637,7 +2025,7 @@ Total ram usage:        2 bytes
 
  *************** function _activity_submenu_pin *****************
  Defined at:
-		line 249 in file "main.c"
+		line 332 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1669,7 +2057,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_submenu_clock *****************
  Defined at:
-		line 238 in file "main.c"
+		line 321 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1701,7 +2089,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_submenu_alarm *****************
  Defined at:
-		line 259 in file "main.c"
+		line 353 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1733,7 +2121,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_submenu_activation *****************
  Defined at:
-		line 228 in file "main.c"
+		line 311 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1765,7 +2153,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_A *****************
  Defined at:
-		line 281 in file "main.c"
+		line 403 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1798,7 +2186,7 @@ Total ram usage:        2 bytes
 
  *************** function _activity_pin *****************
  Defined at:
-		line 179 in file "main.c"
+		line 262 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1838,14 +2226,14 @@ Total ram usage:        0 bytes
   to              2    0[COMRAM] PTR unsigned char 
 		 -> pin_input(5), pin(5), 
   from            2    2[COMRAM] PTR const unsigned char 
-		 -> STR_15(1), STR_1(5), 
+		 -> STR_38(1), STR_19(1), pin_input(5), STR_1(5), 
  Auto vars:     Size  Location     Type
   cp              2    4[COMRAM] PTR unsigned char 
 		 -> pin_input(5), pin(5), 
  Return value:  Size  Location     Type
                   2    0[COMRAM] PTR unsigned char 
  Registers used:
-		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1860,8 +2248,10 @@ Total ram usage:        6 bytes
  This function calls:
 		Nothing
  This function is called by:
-		_setup
+		_reset_pin
 		_activity_pin
+		_activity_submenu_pin_set
+		_pin_set
  This function uses a non-reentrant model
 
 
@@ -1893,12 +2283,13 @@ Total ram usage:        1 bytes
  This function is called by:
 		_setup
 		_activity_pin
+		_activity_submenu_pin_set
  This function uses a non-reentrant model
 
 
  *************** function _action_submenu_selector *****************
  Defined at:
-		line 213 in file "main.c"
+		line 296 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1929,7 +2320,7 @@ Total ram usage:        2 bytes
 
  *************** function _action_submenu_selector_1 *****************
  Defined at:
-		line 207 in file "main.c"
+		line 290 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1959,7 +2350,7 @@ Total ram usage:        0 bytes
 
  *************** function _action_submenu_selector_0 *****************
  Defined at:
-		line 201 in file "main.c"
+		line 284 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1988,12 +2379,14 @@ Total ram usage:        0 bytes
 		_activity_submenu_clock
 		_activity_submenu_pin
 		_activity_submenu_alarm
+		_activity_submenu_alarm_volume
+		_activity_submenu_alarm_tone
  This function uses a non-reentrant model
 
 
  *************** function _action_menu_selector *****************
  Defined at:
-		line 147 in file "main.c"
+		line 230 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2026,7 +2419,7 @@ Total ram usage:        2 bytes
 
  *************** function _action_menu_selector_3 *****************
  Defined at:
-		line 141 in file "main.c"
+		line 224 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2056,7 +2449,7 @@ Total ram usage:        0 bytes
 
  *************** function _action_menu_selector_2 *****************
  Defined at:
-		line 135 in file "main.c"
+		line 218 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2086,7 +2479,7 @@ Total ram usage:        0 bytes
 
  *************** function _action_menu_selector_1 *****************
  Defined at:
-		line 129 in file "main.c"
+		line 212 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2116,7 +2509,7 @@ Total ram usage:        0 bytes
 
  *************** function _action_menu_selector_0 *****************
  Defined at:
-		line 123 in file "main.c"
+		line 206 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2145,9 +2538,41 @@ Total ram usage:        0 bytes
  This function uses a non-reentrant model
 
 
- *************** function _home_state_refresh *****************
+ *************** function _home_config_refresh *****************
  Defined at:
-		line 109 in file "main.c"
+		line 169 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_home_state_refresh
+		_home_tone_refresh
+		_home_volume_refresh
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _home_volume_refresh *****************
+ Defined at:
+		line 145 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2172,13 +2597,75 @@ Total ram usage:        0 bytes
 		_lcd_write
 		_sprintf
  This function is called by:
-		_main
+		_home_config_refresh
+ This function uses a non-reentrant model
+
+
+ *************** function _home_tone_refresh *****************
+ Defined at:
+		line 157 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_lcd_write
+		_sprintf
+ This function is called by:
+		_home_config_refresh
+ This function uses a non-reentrant model
+
+
+ *************** function _home_state_refresh *****************
+ Defined at:
+		line 133 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_lcd_write
+		_sprintf
+ This function is called by:
+		_home_config_refresh
  This function uses a non-reentrant model
 
 
  *************** function _home_clock_refresh *****************
  Defined at:
-		line 100 in file "main.c"
+		line 124 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2214,7 +2701,8 @@ Total ram usage:        0 bytes
   sp              2   12[COMRAM] PTR unsigned char 
 		 -> buffer1(20), 
   f               2   14[COMRAM] PTR const unsigned char 
-		 -> STR_39(5), STR_38(5), STR_5(7), STR_4(7), 
+		 -> STR_51(5), STR_50(5), STR_9(7), STR_8(7), 
+		 -> STR_7(7), STR_6(7), STR_5(7), STR_4(7), 
 		 -> STR_3(15), STR_2(15), 
  Auto vars:     Size  Location     Type
   tmpval          4    0        struct .
@@ -2251,6 +2739,8 @@ Total ram usage:       23 bytes
  This function is called by:
 		_home_clock_refresh
 		_home_state_refresh
+		_home_volume_refresh
+		_home_tone_refresh
 		_button_number
  This function uses a non-reentrant model
 
@@ -2377,7 +2867,7 @@ Total ram usage:        7 bytes
 
  *************** function _check_home_callback *****************
  Defined at:
-		line 457 in file "main.c"
+		line 666 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2408,7 +2898,7 @@ Total ram usage:        0 bytes
 
  *************** function _reset_home_callback *****************
  Defined at:
-		line 94 in file "main.c"
+		line 118 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2444,7 +2934,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_home *****************
  Defined at:
-		line 171 in file "main.c"
+		line 254 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2469,7 +2959,11 @@ Total ram usage:        0 bytes
 		_lcd_init
 		_lcd_write
  This function is called by:
+		_pin_set
 		_button_B_submenu_activation
+		_button_B_submenu_pin_config
+		_button_B_submenu_alarm_volume
+		_button_B_submenu_alarm_tone
 		_button_D
 		_check_home_callback
 		_main
@@ -2478,19 +2972,21 @@ Total ram usage:        0 bytes
 
  *************** function _lcd_write *****************
  Defined at:
-		line 53 in file "main.c"
+		line 70 in file "main.c"
  Parameters:    Size  Location     Type
   column          2   10[COMRAM] int 
   row             2   12[COMRAM] int 
   string          2   14[COMRAM] PTR unsigned char 
-		 -> STR_36(5), STR_35(8), STR_34(7), STR_33(6), 
-		 -> STR_32(8), STR_31(4), STR_30(5), STR_29(6), 
-		 -> STR_28(6), STR_27(3), STR_26(3), STR_25(8), 
-		 -> STR_24(2), STR_23(2), STR_22(2), STR_21(2), 
-		 -> STR_20(7), STR_19(4), STR_18(6), STR_17(8), 
-		 -> STR_16(16), STR_14(4), STR_13(2), STR_12(2), 
-		 -> STR_11(2), STR_10(2), STR_9(2), STR_8(2), 
-		 -> STR_7(2), STR_6(2), buffer1(20), 
+		 -> STR_48(7), STR_47(7), STR_46(5), STR_45(5), 
+		 -> STR_44(5), STR_43(8), STR_42(5), STR_41(8), 
+		 -> STR_40(7), STR_39(11), STR_37(6), STR_36(8), 
+		 -> STR_35(4), STR_34(5), STR_33(6), STR_32(6), 
+		 -> STR_31(3), STR_30(3), STR_29(8), STR_28(2), 
+		 -> STR_27(2), STR_26(2), STR_25(2), STR_24(7), 
+		 -> STR_23(4), STR_22(6), STR_21(8), STR_20(16), 
+		 -> STR_18(4), STR_17(2), STR_16(2), STR_15(2), 
+		 -> STR_14(2), STR_13(2), STR_12(2), STR_11(2), 
+		 -> STR_10(2), buffer1(20), 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
@@ -2515,6 +3011,8 @@ Total ram usage:        6 bytes
  This function is called by:
 		_home_clock_refresh
 		_home_state_refresh
+		_home_volume_refresh
+		_home_tone_refresh
 		_action_menu_selector_0
 		_action_menu_selector_1
 		_action_menu_selector_2
@@ -2527,7 +3025,10 @@ Total ram usage:        6 bytes
 		_activity_submenu_activation
 		_activity_submenu_clock
 		_activity_submenu_pin
+		_activity_submenu_pin_set
 		_activity_submenu_alarm
+		_activity_submenu_alarm_volume
+		_activity_submenu_alarm_tone
  This function uses a non-reentrant model
 
 
@@ -2536,14 +3037,16 @@ Total ram usage:        6 bytes
 		line 221 in file "Unimic/unmc_01/sources/unmc_lcd_216.c"
  Parameters:    Size  Location     Type
   ptr             2    8[COMRAM] PTR const unsigned char 
-		 -> STR_37(2), STR_36(5), STR_35(8), STR_34(7), 
-		 -> STR_33(6), STR_32(8), STR_31(4), STR_30(5), 
-		 -> STR_29(6), STR_28(6), STR_27(3), STR_26(3), 
-		 -> STR_25(8), STR_24(2), STR_23(2), STR_22(2), 
-		 -> STR_21(2), STR_20(7), STR_19(4), STR_18(6), 
-		 -> STR_17(8), STR_16(16), STR_14(4), STR_13(2), 
-		 -> STR_12(2), STR_11(2), STR_10(2), STR_9(2), 
-		 -> STR_8(2), STR_7(2), STR_6(2), buffer1(20), 
+		 -> STR_49(2), STR_48(7), STR_47(7), STR_46(5), 
+		 -> STR_45(5), STR_44(5), STR_43(8), STR_42(5), 
+		 -> STR_41(8), STR_40(7), STR_39(11), STR_37(6), 
+		 -> STR_36(8), STR_35(4), STR_34(5), STR_33(6), 
+		 -> STR_32(6), STR_31(3), STR_30(3), STR_29(8), 
+		 -> STR_28(2), STR_27(2), STR_26(2), STR_25(2), 
+		 -> STR_24(7), STR_23(4), STR_22(6), STR_21(8), 
+		 -> STR_20(16), STR_18(4), STR_17(2), STR_16(2), 
+		 -> STR_15(2), STR_14(2), STR_13(2), STR_12(2), 
+		 -> STR_11(2), STR_10(2), buffer1(20), 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
@@ -2632,6 +3135,7 @@ Total ram usage:        3 bytes
  This function is called by:
 		_lcd_write
 		_activity_pin
+		_activity_submenu_pin_set
 		_lcd_putc
  This function uses a non-reentrant model
 
@@ -2671,7 +3175,10 @@ Total ram usage:        1 bytes
 		_activity_submenu_activation
 		_activity_submenu_clock
 		_activity_submenu_pin
+		_activity_submenu_pin_set
 		_activity_submenu_alarm
+		_activity_submenu_alarm_volume
+		_activity_submenu_alarm_tone
  This function uses a non-reentrant model
 
 
@@ -2898,143 +3405,155 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadDate.c
-		_RtccReadDate  		CODE           	1900	0000	143
+		_RtccReadDate  		CODE           	1A1A	0000	143
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadDate.c estimated size: 143
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
-		_Delay1KTCYx   		CODE           	258E	0000	19
+		_Delay1KTCYx   		CODE           	29D0	0000	19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c estimated size: 19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-		_RtccWriteTime 		CODE           	15EE	0000	269
+		_RtccWriteTime 		CODE           	1644	0000	269
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c estimated size: 269
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
-		___lwmod       		CODE           	1F88	0000	77
+		___lwmod       		CODE           	22D2	0000	77
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c estimated size: 77
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
-		_RtccWrOn      		CODE           	256A	0000	19
+		_RtccWrOn      		CODE           	29AC	0000	19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c estimated size: 19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c
-		_RtccReadTime  		CODE           	1B7A	0000	111
+		_RtccReadTime  		CODE           	1D0C	0000	111
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c estimated size: 111
 
 Unimic/unmc_01/sources/unmc_lcd_216.c
-		_lcd_comand    		CODE           	25A0	0000	15
-		_lcd_putc      		CODE           	1FD4	0000	77
-		_lcd_putrs     		CODE           	1E98	0000	85
-		_lcd_send_byte 		CODE           	23DA	0000	51
-		_lcd_gotoxy    		CODE           	24BA	0000	37
-		_lcd_send_nibbl		CODE           	1A90	0000	119
-		_lcd_init      		CODE           	1A10	0000	129
+		_lcd_comand    		CODE           	29E2	0000	15
+		_lcd_putc      		CODE           	231E	0000	77
+		_lcd_putrs     		CODE           	209E	0000	85
+		_lcd_send_byte 		CODE           	27AC	0000	51
+		_lcd_gotoxy    		CODE           	28E0	0000	37
+		_lcd_send_nibbl		CODE           	1C26	0000	119
+		_lcd_init      		CODE           	1B2A	0000	129
 
 Unimic/unmc_01/sources/unmc_lcd_216.c estimated size: 513
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcat.c
-		_strcat        		CODE           	2020	0000	73
+		_strcat        		CODE           	236A	0000	73
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcat.c estimated size: 73
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
-		_isdigit       		CODE           	24DE	0000	35
+		_isdigit       		CODE           	2904	0000	35
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c estimated size: 35
 
 shared
 		_dpowers       		SMALLCONST     	0F01	0000	11
 		_LCD_INIT_STRIN		SMALLCONST     	0F0B	0000	5
-		__initializatio		CODE           	20F8	0000	59
+		__initializatio		CODE           	2488	0000	59
 
 shared estimated size: 75
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c
-		_strcmp        		CODE           	1EEC	0000	79
+		_strcmp        		CODE           	21E8	0000	79
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c estimated size: 79
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
-		_strcpy        		CODE           	23A8	0000	51
+		_strcpy        		CODE           	2442	0000	71
 
-C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c estimated size: 51
+C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c estimated size: 71
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
-		___lwdiv       		CODE           	1DE6	0000	93
+		___lwdiv       		CODE           	2042	0000	93
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c estimated size: 93
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
-		___awdiv       		CODE           	17D8	0000	151
+		___awdiv       		CODE           	18F2	0000	151
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c estimated size: 151
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
-		_Delay100TCYx  		CODE           	257C	0000	19
+		_Delay100TCYx  		CODE           	29BE	0000	19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c estimated size: 19
 
 Unimic/unmc_01/headers\unmc_rtcc_01.h
-		_Read_RTC      		CODE           	16FA	0000	223
-		_Write_RTC     		CODE           	135C	0000	333
+		_Read_RTC      		CODE           	1750	0000	253
+		_Write_RTC     		CODE           	1248	0000	353
 
-Unimic/unmc_01/headers\unmc_rtcc_01.h estimated size: 556
+Unimic/unmc_01/headers\unmc_rtcc_01.h estimated size: 606
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
-		_sprintf       		CODE           	0FA2	0000	613
+		_sprintf       		CODE           	0FE4	0000	613
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c estimated size: 613
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-		_RtccWriteDate 		CODE           	14A8	0000	327
+		_RtccWriteDate 		CODE           	14FE	0000	327
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c estimated size: 327
 
 main.c
-		_button_number 		CODE           	1BE8	0000	103
-		_button_B_menu 		CODE           	2068	0000	73
-		_activity_subme		CODE           	1C4E	0000	103
-		_keyboard_contr		CODE           	1206	0000	343
-		_reset_home_cal		CODE           	25C2	0000	11
-		_home_clock_ref		CODE           	186E	0000	147
-		_home_state_ref		CODE           	1E42	0000	87
-		_main          		CODE           	243C	0000	45
-		_action_menu_se		CODE           	2202	0000	67
-		_activity_subme		CODE           	1D80	0000	103
-		_button_asteris		CODE           	25CC	0000	7
-		_action_submenu		CODE           	240C	0000	49
-		_activity_pin  		CODE           	1F3A	0000	79
-		_action_submenu		CODE           	217E	0000	67
-		_action_submenu		CODE           	213C	0000	67
-		_activity_home 		CODE           	2468	0000	43
-		_activity_menu 		CODE           	198E	0000	131
-		_action_menu_se		CODE           	2286	0000	67
-		_action_menu_se		CODE           	21C0	0000	67
-		_check_home_cal		CODE           	2500	0000	35
-		_lcd_write     		CODE           	253E	0000	25
-		_setup         		CODE           	1B06	0000	117
-		_action_menu_se		CODE           	20B0	0000	73
-		_button_B_subme		CODE           	2308	0000	59
-		_activity_subme		CODE           	1CB4	0000	103
-		_activity_subme		CODE           	1D1A	0000	103
-		_button_A      		CODE           	22C8	0000	65
-		_button_B      		CODE           	2342	0000	53
-		_button_C      		CODE           	2522	0000	29
-		_button_D      		CODE           	25B8	0000	11
-		_button_hash   		CODE           	2556	0000	21
-		_pin_input_vali		CODE           	2376	0000	51
-		_action_menu_se		CODE           	2244	0000	67
+		_button_number 		CODE           	1C9C	0000	113
+		_button_B_menu 		CODE           	23B2	0000	73
+		_activity_subme		CODE           	1E46	0000	103
+		_keyboard_contr		CODE           	13A8	0000	343
+		_reset_home_cal		CODE           	2A04	0000	11
+		_home_clock_ref		CODE           	1988	0000	147
+		_home_state_ref		CODE           	2196	0000	83
+		_activity_subme		CODE           	1DE0	0000	103
+		_button_B_subme		CODE           	2746	0000	53
+		_main          		CODE           	283E	0000	45
+		_action_menu_se		CODE           	2592	0000	67
+		_activity_subme		CODE           	1D7A	0000	103
+		_home_volume_re		CODE           	20F2	0000	83
+		_activity_subme		CODE           	1F78	0000	103
+		_activity_subme		CODE           	2236	0000	79
+		_button_asteris		CODE           	2A0E	0000	7
+		_action_submenu		CODE           	280E	0000	49
+		_activity_pin  		CODE           	2284	0000	79
+		_action_submenu		CODE           	250E	0000	67
+		_action_submenu		CODE           	24CC	0000	67
+		_activity_home 		CODE           	286A	0000	43
+		_activity_menu 		CODE           	1AA8	0000	131
+		_action_menu_se		CODE           	2616	0000	67
+		_action_menu_se		CODE           	2550	0000	67
+		_button_B_subme		CODE           	26D2	0000	59
+		_check_home_cal		CODE           	2926	0000	35
+		_lcd_write     		CODE           	297E	0000	25
+		_pin_set       		CODE           	2964	0000	27
+		_button_B_subme		CODE           	27DE	0000	49
+		_button_B_subme		CODE           	2698	0000	59
+		_reset_pin     		CODE           	2996	0000	23
+		_setup         		CODE           	1BAA	0000	125
+		_action_menu_se		CODE           	23FA	0000	73
+		_button_B_subme		CODE           	270C	0000	59
+		_home_tone_refr		CODE           	2144	0000	83
+		_activity_subme		CODE           	1EAC	0000	103
+		_activity_subme		CODE           	1F12	0000	103
+		_button_A      		CODE           	2658	0000	65
+		_button_B      		CODE           	1FDE	0000	101
+		_button_C      		CODE           	2948	0000	29
+		_button_D      		CODE           	29FA	0000	11
+		_home_config_re		CODE           	184C	0000	167
+		_button_hash   		CODE           	28BC	0000	37
+		_pin_input_vali		CODE           	277A	0000	51
+		_action_menu_se		CODE           	25D4	0000	67
 
-main.c estimated size: 2471
+main.c estimated size: 3437
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
-		___wmul        		CODE           	2492	0000	41
+		___wmul        		CODE           	2894	0000	41
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c estimated size: 41
 

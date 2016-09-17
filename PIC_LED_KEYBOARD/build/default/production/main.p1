@@ -75,6 +75,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _lcd_gotoxy `(v ~T0 @X0 0 ef2`uc`uc ]
 "109
 [v _lcd_putrs `(v ~T0 @X0 0 ef1`*Cuc ]
+"43 C:\Program Files (x86)\Microchip\xc8\v1.34\include\string.h
+[v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
 "7249 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
 [s S503 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S503 . TUN PLLEN INTSRC ]
@@ -167,8 +169,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S445 . . . . . . . . . . ]
 "6401
 [v _LATBbits `VS445 ~T0 @X0 0 e@3978 ]
-"43 C:\Program Files (x86)\Microchip\xc8\v1.34\include\string.h
-[v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
 "206 C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
 "51 C:\Program Files (x86)\Microchip\xc8\v1.34\include\string.h
@@ -8292,1398 +8292,1955 @@ Version 3.2 HI-TECH Software Intermediate Code
 "40
 [v _home_callback_delay `i ~T0 @X0 1 e ]
 [; ;main.c: 40: int home_callback_delay;
-"51
+"41
+[v _config_widget `i ~T0 @X0 1 e ]
+[; ;main.c: 41: int config_widget;
+"42
+[v _config_widget_time `i ~T0 @X0 1 e ]
+[i _config_widget_time
+-> 0 `i
+]
+[; ;main.c: 42: int config_widget_time = 0;
+"56
 [v _activity `i ~T0 @X0 1 e ]
-[; ;main.c: 51: int activity;
-"53
+[; ;main.c: 56: int activity;
+"62
+[v _alarm_volume `i ~T0 @X0 1 e ]
+[; ;main.c: 62: int alarm_volume;
+"68
+[v _alarm_tone `i ~T0 @X0 1 e ]
+[; ;main.c: 68: int alarm_tone;
+"70
 [v _lcd_write `(v ~T0 @X0 1 ef3`i`i`*uc ]
 {
-[; ;main.c: 53: void lcd_write(int column, int row, char* string){
+[; ;main.c: 70: void lcd_write(int column, int row, char* string){
 [e :U _lcd_write ]
 [v _column `i ~T0 @X0 1 r1 ]
 [v _row `i ~T0 @X0 1 r2 ]
 [v _string `*uc ~T0 @X0 1 r3 ]
 [f ]
-[; ;main.c: 54: lcd_gotoxy(column, row);
-"54
+[; ;main.c: 71: lcd_gotoxy(column, row);
+"71
 [e ( _lcd_gotoxy (2 , -> _column `uc -> _row `uc ]
-[; ;main.c: 55: lcd_putrs(string);
-"55
+[; ;main.c: 72: lcd_putrs(string);
+"72
 [e ( _lcd_putrs (1 -> _string `*Cuc ]
-[; ;main.c: 56: }
-"56
+[; ;main.c: 73: }
+"73
 [e :UE 1039 ]
 }
-"58
-[v _setup `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 58: void setup(void){
-[e :U _setup ]
-[f ]
-[; ;main.c: 60: OSCTUNEbits.INTSRC=1;
-"60
-[e = . . _OSCTUNEbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 61: OSCTUNEbits.PLLEN=0;
-"61
-[e = . . _OSCTUNEbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 62: OSCCONbits.IRCF0=1;
-"62
-[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
-[; ;main.c: 63: OSCCONbits.IRCF1=1;
-"63
-[e = . . _OSCCONbits 1 4 -> -> 1 `i `uc ]
-[; ;main.c: 64: OSCCONbits.IRCF2=1;
-"64
-[e = . . _OSCCONbits 1 5 -> -> 1 `i `uc ]
-[; ;main.c: 65: OSCCONbits.SCS0=0;
-"65
-[e = . . _OSCCONbits 1 0 -> -> 0 `i `uc ]
-[; ;main.c: 66: OSCCONbits.SCS1=0;
-"66
-[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
-[; ;main.c: 67: TRISA = 0b11110000;
-"67
-[e = _TRISA -> -> 240 `i `uc ]
-[; ;main.c: 68: TRISB = 0;
-"68
-[e = _TRISB -> -> 0 `i `uc ]
-[; ;main.c: 69: TRISC = 0b00000111;
-"69
-[e = _TRISC -> -> 7 `i `uc ]
-[; ;main.c: 73: ANCON0=0b11111111;
-"73
-[e = _ANCON0 -> -> 255 `i `uc ]
-[; ;main.c: 75: ANCON1=0b11111111;
 "75
-[e = _ANCON1 -> -> 255 `i `uc ]
-[; ;main.c: 76: ADCON0=0b00101101;
+[v _reset_pin `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 75: void reset_pin(void){
+[e :U _reset_pin ]
+[f ]
+[; ;main.c: 76: strcpy(pin, "1234");
 "76
-[e = _ADCON0 -> -> 45 `i `uc ]
-[; ;main.c: 77: ADCON1=0b00010000;
-"77
-[e = _ADCON1 -> -> 16 `i `uc ]
-[; ;main.c: 78: RTCCFGbits.RTCEN=1;
-"78
-[e = . . _RTCCFGbits 0 7 -> -> 1 `i `uc ]
-[; ;main.c: 79: RTCCFGbits.RTCWREN=1;
-"79
-[e = . . _RTCCFGbits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 80: T1CONbits.T1OSCEN=1;
-"80
-[e = . . _T1CONbits 0 3 -> -> 1 `i `uc ]
-[; ;main.c: 81: Write_RTC();
-"81
-[e ( _Write_RTC ..  ]
-[; ;main.c: 82: lcd_init();
-"82
-[e ( _lcd_init ..  ]
-[; ;main.c: 83: lcd_comand(0b00001100);
-"83
-[e ( _lcd_comand (1 -> -> 12 `i `uc ]
-[; ;main.c: 84: LATBbits.LATB1 = 1;;
-"84
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-[; ;main.c: 85: LATBbits.LATB0 = 1;;
-"85
-[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 88: home_callback_delay = 50;
-"88
-[e = _home_callback_delay -> 50 `i ]
-[; ;main.c: 89: menu_selected = 0;
-"89
-[e = _menu_selected -> 0 `i ]
-[; ;main.c: 90: submenu_selected = 0;
-"90
-[e = _submenu_selected -> 0 `i ]
-[; ;main.c: 91: strcpy(pin, "1234");
-"91
 [e ( _strcpy (2 , &U _pin :s 1C ]
-[; ;main.c: 92: }
-"92
+[; ;main.c: 77: }
+"77
 [e :UE 1040 ]
 }
-"94
-[v _reset_home_callback `(v ~T0 @X0 1 ef ]
+"79
+[v _setup `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 94: void reset_home_callback(void){
-[e :U _reset_home_callback ]
+[; ;main.c: 79: void setup(void){
+[e :U _setup ]
 [f ]
-[; ;main.c: 96: home_callback = home_callback_delay;
+[; ;main.c: 81: OSCTUNEbits.INTSRC=1;
+"81
+[e = . . _OSCTUNEbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 82: OSCTUNEbits.PLLEN=0;
+"82
+[e = . . _OSCTUNEbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 83: OSCCONbits.IRCF0=1;
+"83
+[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
+[; ;main.c: 84: OSCCONbits.IRCF1=1;
+"84
+[e = . . _OSCCONbits 1 4 -> -> 1 `i `uc ]
+[; ;main.c: 85: OSCCONbits.IRCF2=1;
+"85
+[e = . . _OSCCONbits 1 5 -> -> 1 `i `uc ]
+[; ;main.c: 86: OSCCONbits.SCS0=0;
+"86
+[e = . . _OSCCONbits 1 0 -> -> 0 `i `uc ]
+[; ;main.c: 87: OSCCONbits.SCS1=0;
+"87
+[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
+[; ;main.c: 88: TRISA = 0b11110000;
+"88
+[e = _TRISA -> -> 240 `i `uc ]
+[; ;main.c: 89: TRISB = 0;
+"89
+[e = _TRISB -> -> 0 `i `uc ]
+[; ;main.c: 90: TRISC = 0b00000111;
+"90
+[e = _TRISC -> -> 7 `i `uc ]
+[; ;main.c: 94: ANCON0=0b11111111;
+"94
+[e = _ANCON0 -> -> 255 `i `uc ]
+[; ;main.c: 96: ANCON1=0b11111111;
 "96
-[e = _home_callback _home_callback_delay ]
-[; ;main.c: 98: }
+[e = _ANCON1 -> -> 255 `i `uc ]
+[; ;main.c: 97: ADCON0=0b00101101;
+"97
+[e = _ADCON0 -> -> 45 `i `uc ]
+[; ;main.c: 98: ADCON1=0b00010000;
 "98
+[e = _ADCON1 -> -> 16 `i `uc ]
+[; ;main.c: 99: RTCCFGbits.RTCEN=1;
+"99
+[e = . . _RTCCFGbits 0 7 -> -> 1 `i `uc ]
+[; ;main.c: 100: RTCCFGbits.RTCWREN=1;
+"100
+[e = . . _RTCCFGbits 0 5 -> -> 1 `i `uc ]
+[; ;main.c: 101: T1CONbits.T1OSCEN=1;
+"101
+[e = . . _T1CONbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 102: Write_RTC();
+"102
+[e ( _Write_RTC ..  ]
+[; ;main.c: 103: lcd_init();
+"103
+[e ( _lcd_init ..  ]
+[; ;main.c: 104: lcd_comand(0b00001100);
+"104
+[e ( _lcd_comand (1 -> -> 12 `i `uc ]
+[; ;main.c: 105: LATBbits.LATB1 = 1;;
+"105
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+[; ;main.c: 106: LATBbits.LATB0 = 1;;
+"106
+[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 109: home_callback_delay = 50;
+"109
+[e = _home_callback_delay -> 50 `i ]
+[; ;main.c: 110: config_widget = 0;
+"110
+[e = _config_widget -> 0 `i ]
+[; ;main.c: 111: menu_selected = 0;
+"111
+[e = _menu_selected -> 0 `i ]
+[; ;main.c: 112: submenu_selected = 0;
+"112
+[e = _submenu_selected -> 0 `i ]
+[; ;main.c: 113: alarm_volume = 0;
+"113
+[e = _alarm_volume -> 0 `i ]
+[; ;main.c: 114: alarm_tone = 0;
+"114
+[e = _alarm_tone -> 0 `i ]
+[; ;main.c: 115: reset_pin();
+"115
+[e ( _reset_pin ..  ]
+[; ;main.c: 116: }
+"116
 [e :UE 1041 ]
 }
-"100
-[v _home_clock_refresh `(v ~T0 @X0 1 ef ]
+"118
+[v _reset_home_callback `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 100: void home_clock_refresh(void){
-[e :U _home_clock_refresh ]
+[; ;main.c: 118: void reset_home_callback(void){
+[e :U _reset_home_callback ]
 [f ]
-[; ;main.c: 102: sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
-"102
-[e ( _sprintf (1 , , , (. , &U _buffer1 :s 2C _dia _mes _anio ]
-[; ;main.c: 103: lcd_write(9,1,buffer1);
-"103
-[e ( _lcd_write (3 , , -> 9 `i -> 1 `i &U _buffer1 ]
-[; ;main.c: 104: sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
-"104
-[e ( _sprintf (1 , , , (. , &U _buffer1 :s 3C _hora _minuto _segundo ]
-[; ;main.c: 105: lcd_write(9,2,buffer1);
-"105
-[e ( _lcd_write (3 , , -> 9 `i -> 2 `i &U _buffer1 ]
-[; ;main.c: 107: }
-"107
+[; ;main.c: 120: home_callback = home_callback_delay;
+"120
+[e = _home_callback _home_callback_delay ]
+[; ;main.c: 122: }
+"122
 [e :UE 1042 ]
 }
-"109
-[v _home_state_refresh `(v ~T0 @X0 1 ef ]
+"124
+[v _home_clock_refresh `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 109: void home_state_refresh(void){
-[e :U _home_state_refresh ]
+[; ;main.c: 124: void home_clock_refresh(void){
+[e :U _home_clock_refresh ]
 [f ]
-[; ;main.c: 111: if(state == 1){
-"111
-[e $ ! == _state -> 1 `i 1044  ]
-{
-[; ;main.c: 112: sprintf(buffer1,"ACT:OK");
-"112
-[e ( _sprintf (1 , &U _buffer1 :s 4C ]
-[; ;main.c: 113: LATBbits.LATB1 = 1;;
-"113
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-"114
-}
-[; ;main.c: 114: }
-[e $U 1045  ]
-"115
-[e :U 1044 ]
-[; ;main.c: 115: else{
-{
-[; ;main.c: 116: sprintf(buffer1,"ACT:NO");
-"116
-[e ( _sprintf (1 , &U _buffer1 :s 5C ]
-[; ;main.c: 117: LATBbits.LATB1 = 0;;
-"117
-[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
-"118
-}
-[e :U 1045 ]
-[; ;main.c: 118: }
-[; ;main.c: 119: lcd_write(1,2,buffer1);
-"119
-[e ( _lcd_write (3 , , -> 1 `i -> 2 `i &U _buffer1 ]
-[; ;main.c: 121: }
-"121
+[; ;main.c: 126: sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
+"126
+[e ( _sprintf (1 , , , (. , &U _buffer1 :s 2C _dia _mes _anio ]
+[; ;main.c: 127: lcd_write(9,1,buffer1);
+"127
+[e ( _lcd_write (3 , , -> 9 `i -> 1 `i &U _buffer1 ]
+[; ;main.c: 128: sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
+"128
+[e ( _sprintf (1 , , , (. , &U _buffer1 :s 3C _hora _minuto _segundo ]
+[; ;main.c: 129: lcd_write(9,2,buffer1);
+"129
+[e ( _lcd_write (3 , , -> 9 `i -> 2 `i &U _buffer1 ]
+[; ;main.c: 131: }
+"131
 [e :UE 1043 ]
 }
-"123
-[v _action_menu_selector_0 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 123: void action_menu_selector_0(void){
-[e :U _action_menu_selector_0 ]
-[f ]
-[; ;main.c: 124: lcd_write(1,1,">");
-"124
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 6C `*uc ]
-[; ;main.c: 125: menu_selected = 0;
-"125
-[e = _menu_selected -> 0 `i ]
-[; ;main.c: 126: lcd_write(9,2," ");
-"126
-[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 7C `*uc ]
-[; ;main.c: 127: }
-"127
-[e :UE 1046 ]
-}
-"129
-[v _action_menu_selector_1 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 129: void action_menu_selector_1(void){
-[e :U _action_menu_selector_1 ]
-[f ]
-[; ;main.c: 130: lcd_write(1,2,">");
-"130
-[e ( _lcd_write (3 , , -> 1 `i -> 2 `i -> :s 8C `*uc ]
-[; ;main.c: 131: menu_selected = 1;
-"131
-[e = _menu_selected -> 1 `i ]
-[; ;main.c: 132: lcd_write(1,1," ");
-"132
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 9C `*uc ]
-[; ;main.c: 133: }
 "133
+[v _home_state_refresh `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 133: void home_state_refresh(void){
+[e :U _home_state_refresh ]
+[f ]
+[; ;main.c: 135: if(state == 1){
+"135
+[e $ ! == _state -> 1 `i 1045  ]
+{
+[; ;main.c: 136: sprintf(buffer1,"ACT:SI");
+"136
+[e ( _sprintf (1 , &U _buffer1 :s 4C ]
+"137
+}
+[; ;main.c: 137: }
+[e $U 1046  ]
+"138
+[e :U 1045 ]
+[; ;main.c: 138: else{
+{
+[; ;main.c: 139: sprintf(buffer1,"ACT:NO");
+"139
+[e ( _sprintf (1 , &U _buffer1 :s 5C ]
+"140
+}
+[e :U 1046 ]
+[; ;main.c: 140: }
+[; ;main.c: 141: lcd_write(1,2,buffer1);
+"141
+[e ( _lcd_write (3 , , -> 1 `i -> 2 `i &U _buffer1 ]
+[; ;main.c: 143: }
+"143
+[e :UE 1044 ]
+}
+"145
+[v _home_volume_refresh `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 145: void home_volume_refresh(void){
+[e :U _home_volume_refresh ]
+[f ]
+[; ;main.c: 147: if(alarm_volume == 0){
+"147
+[e $ ! == _alarm_volume -> 0 `i 1048  ]
+{
+[; ;main.c: 148: sprintf(buffer1,"VOL:BA");
+"148
+[e ( _sprintf (1 , &U _buffer1 :s 6C ]
+"149
+}
+[; ;main.c: 149: }
+[e $U 1049  ]
+"150
+[e :U 1048 ]
+[; ;main.c: 150: else{
+{
+[; ;main.c: 151: sprintf(buffer1,"VOL:AL");
+"151
+[e ( _sprintf (1 , &U _buffer1 :s 7C ]
+"152
+}
+[e :U 1049 ]
+[; ;main.c: 152: }
+[; ;main.c: 153: lcd_write(1,2,buffer1);
+"153
+[e ( _lcd_write (3 , , -> 1 `i -> 2 `i &U _buffer1 ]
+[; ;main.c: 155: }
+"155
 [e :UE 1047 ]
 }
-"135
-[v _action_menu_selector_2 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 135: void action_menu_selector_2(void){
-[e :U _action_menu_selector_2 ]
-[f ]
-[; ;main.c: 136: lcd_write(9,1,">");
-"136
-[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 10C `*uc ]
-[; ;main.c: 137: menu_selected = 2;
-"137
-[e = _menu_selected -> 2 `i ]
-[; ;main.c: 138: lcd_write(1,2," ");
-"138
-[e ( _lcd_write (3 , , -> 1 `i -> 2 `i -> :s 11C `*uc ]
-[; ;main.c: 139: }
-"139
-[e :UE 1048 ]
-}
-"141
-[v _action_menu_selector_3 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 141: void action_menu_selector_3(void){
-[e :U _action_menu_selector_3 ]
-[f ]
-[; ;main.c: 142: lcd_write(9,2,">");
-"142
-[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 12C `*uc ]
-[; ;main.c: 143: menu_selected = 3;
-"143
-[e = _menu_selected -> 3 `i ]
-[; ;main.c: 144: lcd_write(9,1," ");
-"144
-[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 13C `*uc ]
-[; ;main.c: 145: }
-"145
-[e :UE 1049 ]
-}
-"147
-[v _action_menu_selector `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 147: void action_menu_selector(void){
-[e :U _action_menu_selector ]
-[f ]
-[; ;main.c: 149: switch(menu_selected){
-"149
-[e $U 1052  ]
-{
-[; ;main.c: 151: case 0:
-"151
-[e :U 1053 ]
-[; ;main.c: 152: action_menu_selector_1();
-"152
-[e ( _action_menu_selector_1 ..  ]
-[; ;main.c: 153: break;
-"153
-[e $U 1051  ]
-[; ;main.c: 155: case 1:
-"155
-[e :U 1054 ]
-[; ;main.c: 156: action_menu_selector_2();
-"156
-[e ( _action_menu_selector_2 ..  ]
-[; ;main.c: 157: break;
 "157
-[e $U 1051  ]
-[; ;main.c: 159: case 2:
+[v _home_tone_refresh `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 157: void home_tone_refresh(void){
+[e :U _home_tone_refresh ]
+[f ]
+[; ;main.c: 159: if(alarm_tone == 0){
 "159
-[e :U 1055 ]
-[; ;main.c: 160: action_menu_selector_3();
+[e $ ! == _alarm_tone -> 0 `i 1051  ]
+{
+[; ;main.c: 160: sprintf(buffer1,"TONO:1");
 "160
-[e ( _action_menu_selector_3 ..  ]
-[; ;main.c: 161: break;
+[e ( _sprintf (1 , &U _buffer1 :s 8C ]
 "161
-[e $U 1051  ]
-[; ;main.c: 163: case 3:
-"163
-[e :U 1056 ]
-[; ;main.c: 164: action_menu_selector_0();
-"164
-[e ( _action_menu_selector_0 ..  ]
-[; ;main.c: 165: break;
-"165
-[e $U 1051  ]
-"167
 }
-[; ;main.c: 167: }
-[e $U 1051  ]
-"149
-[e :U 1052 ]
-[e [\ _menu_selected , $ -> 0 `i 1053
- , $ -> 1 `i 1054
- , $ -> 2 `i 1055
- , $ -> 3 `i 1056
- 1051 ]
-"167
+[; ;main.c: 161: }
+[e $U 1052  ]
+"162
 [e :U 1051 ]
-[; ;main.c: 169: }
-"169
+[; ;main.c: 162: else{
+{
+[; ;main.c: 163: sprintf(buffer1,"TONO:2");
+"163
+[e ( _sprintf (1 , &U _buffer1 :s 9C ]
+"164
+}
+[e :U 1052 ]
+[; ;main.c: 164: }
+[; ;main.c: 165: lcd_write(1,2,buffer1);
+"165
+[e ( _lcd_write (3 , , -> 1 `i -> 2 `i &U _buffer1 ]
+[; ;main.c: 167: }
+"167
 [e :UE 1050 ]
 }
+"169
+[v _home_config_refresh `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 169: void home_config_refresh(void){
+[e :U _home_config_refresh ]
+[f ]
+[; ;main.c: 171: if(state == 1){LATBbits.LATB1 = 1;;}
 "171
-[v _activity_home `(v ~T0 @X0 1 ef ]
+[e $ ! == _state -> 1 `i 1054  ]
 {
-[; ;main.c: 171: void activity_home(void){
-[e :U _activity_home ]
-[f ]
-[; ;main.c: 173: activity = 0;
-"173
-[e = _activity -> 0 `i ]
-[; ;main.c: 174: lcd_init();
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 1054 ]
+[; ;main.c: 172: if(state == 0){LATBbits.LATB1 = 0;;}
+"172
+[e $ ! == _state -> 0 `i 1055  ]
+{
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 1055 ]
+[; ;main.c: 174: config_widget_time++;
 "174
-[e ( _lcd_init ..  ]
-[; ;main.c: 175: lcd_write(1,1,"X28");
-"175
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 14C `*uc ]
-[; ;main.c: 177: }
-"177
-[e :UE 1057 ]
-}
+[e ++ _config_widget_time -> 1 `i ]
+[; ;main.c: 176: switch(config_widget){
+"176
+[e $U 1057  ]
+{
+[; ;main.c: 178: case 0:
+"178
+[e :U 1058 ]
+[; ;main.c: 179: home_state_refresh();
 "179
-[v _activity_pin `(v ~T0 @X0 1 ef ]
+[e ( _home_state_refresh ..  ]
+[; ;main.c: 180: if(config_widget_time == 5){
+"180
+[e $ ! == _config_widget_time -> 5 `i 1059  ]
 {
-[; ;main.c: 179: void activity_pin(void){
-[e :U _activity_pin ]
-[f ]
-[; ;main.c: 181: activity = 1;
+[; ;main.c: 181: config_widget_time = 0;
 "181
-[e = _activity -> 1 `i ]
-[; ;main.c: 182: strcpy(pin_input, "");
+[e = _config_widget_time -> 0 `i ]
+[; ;main.c: 182: config_widget = 1;
 "182
-[e ( _strcpy (2 , &U _pin_input :s 15C ]
-[; ;main.c: 183: lcd_init();
+[e = _config_widget -> 1 `i ]
 "183
-[e ( _lcd_init ..  ]
-[; ;main.c: 184: lcd_write(1,1,"Ingrese su PIN:");
+}
+[e :U 1059 ]
+[; ;main.c: 183: }
+[; ;main.c: 184: break;
 "184
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 16C `*uc ]
-[; ;main.c: 185: lcd_gotoxy(1,2);
-"185
-[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 186: lcd_comand(0b00001111);
+[e $U 1056  ]
+[; ;main.c: 186: case 1:
 "186
-[e ( _lcd_comand (1 -> -> 15 `i `uc ]
-[; ;main.c: 187: }
+[e :U 1060 ]
+[; ;main.c: 187: home_volume_refresh();
 "187
-[e :UE 1058 ]
-}
+[e ( _home_volume_refresh ..  ]
+[; ;main.c: 188: if(config_widget_time == 5){
+"188
+[e $ ! == _config_widget_time -> 5 `i 1061  ]
+{
+[; ;main.c: 189: config_widget_time = 0;
 "189
-[v _activity_menu `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 189: void activity_menu(void){
-[e :U _activity_menu ]
-[f ]
-[; ;main.c: 191: activity = 2;
+[e = _config_widget_time -> 0 `i ]
+[; ;main.c: 190: config_widget = 2;
+"190
+[e = _config_widget -> 2 `i ]
 "191
-[e = _activity -> 2 `i ]
-[; ;main.c: 192: lcd_init();
+}
+[e :U 1061 ]
+[; ;main.c: 191: }
+[; ;main.c: 192: break;
 "192
-[e ( _lcd_init ..  ]
-[; ;main.c: 193: lcd_write(2,1,"Activar");
-"193
-[e ( _lcd_write (3 , , -> 2 `i -> 1 `i -> :s 17C `*uc ]
-[; ;main.c: 194: lcd_write(2,2,"Reloj");
+[e $U 1056  ]
+[; ;main.c: 194: case 2:
 "194
-[e ( _lcd_write (3 , , -> 2 `i -> 2 `i -> :s 18C `*uc ]
-[; ;main.c: 195: lcd_write(10,1,"Pin");
+[e :U 1062 ]
+[; ;main.c: 195: home_tone_refresh();
 "195
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 19C `*uc ]
-[; ;main.c: 196: lcd_write(10,2,"Alarma");
+[e ( _home_tone_refresh ..  ]
+[; ;main.c: 196: if(config_widget_time == 5){
 "196
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 20C `*uc ]
-[; ;main.c: 197: action_menu_selector_0();
+[e $ ! == _config_widget_time -> 5 `i 1063  ]
+{
+[; ;main.c: 197: config_widget_time = 0;
 "197
-[e ( _action_menu_selector_0 ..  ]
-[; ;main.c: 199: }
+[e = _config_widget_time -> 0 `i ]
+[; ;main.c: 198: config_widget = 0;
+"198
+[e = _config_widget -> 0 `i ]
 "199
-[e :UE 1059 ]
 }
-"201
-[v _action_submenu_selector_0 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 201: void action_submenu_selector_0(void){
-[e :U _action_submenu_selector_0 ]
-[f ]
-[; ;main.c: 202: lcd_write(9,1,">");
-"202
-[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 21C `*uc ]
-[; ;main.c: 203: submenu_selected = 0;
-"203
-[e = _submenu_selected -> 0 `i ]
-[; ;main.c: 204: lcd_write(9,2," ");
-"204
-[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 22C `*uc ]
-[; ;main.c: 205: }
-"205
-[e :UE 1060 ]
-}
-"207
-[v _action_submenu_selector_1 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 207: void action_submenu_selector_1(void){
-[e :U _action_submenu_selector_1 ]
-[f ]
-[; ;main.c: 208: lcd_write(9,2,">");
-"208
-[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 23C `*uc ]
-[; ;main.c: 209: submenu_selected = 1;
-"209
-[e = _submenu_selected -> 1 `i ]
-[; ;main.c: 210: lcd_write(9,1," ");
-"210
-[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 24C `*uc ]
-[; ;main.c: 211: }
-"211
-[e :UE 1061 ]
-}
-"213
-[v _action_submenu_selector `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 213: void action_submenu_selector(void){
-[e :U _action_submenu_selector ]
-[f ]
-[; ;main.c: 215: switch(submenu_selected){
-"215
-[e $U 1064  ]
-{
-[; ;main.c: 217: case 0:
-"217
-[e :U 1065 ]
-[; ;main.c: 218: action_submenu_selector_1();
-"218
-[e ( _action_submenu_selector_1 ..  ]
-[; ;main.c: 219: break;
-"219
-[e $U 1063  ]
-[; ;main.c: 221: case 1:
-"221
-[e :U 1066 ]
-[; ;main.c: 222: action_submenu_selector_0();
-"222
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 223: break;
-"223
-[e $U 1063  ]
-"224
-}
-[; ;main.c: 224: }
-[e $U 1063  ]
-"215
-[e :U 1064 ]
-[e [\ _submenu_selected , $ -> 0 `i 1065
- , $ -> 1 `i 1066
- 1063 ]
-"224
 [e :U 1063 ]
-[; ;main.c: 226: }
-"226
-[e :UE 1062 ]
+[; ;main.c: 199: }
+[; ;main.c: 200: break;
+"200
+[e $U 1056  ]
+"202
 }
-"228
-[v _activity_submenu_activation `(v ~T0 @X0 1 ef ]
+[; ;main.c: 202: }
+[e $U 1056  ]
+"176
+[e :U 1057 ]
+[e [\ _config_widget , $ -> 0 `i 1058
+ , $ -> 1 `i 1060
+ , $ -> 2 `i 1062
+ 1056 ]
+"202
+[e :U 1056 ]
+[; ;main.c: 204: }
+"204
+[e :UE 1053 ]
+}
+"206
+[v _action_menu_selector_0 `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 228: void activity_submenu_activation(void){
-[e :U _activity_submenu_activation ]
+[; ;main.c: 206: void action_menu_selector_0(void){
+[e :U _action_menu_selector_0 ]
 [f ]
-[; ;main.c: 230: activity = 4;
-"230
-[e = _activity -> 4 `i ]
-[; ;main.c: 231: lcd_init();
-"231
-[e ( _lcd_init ..  ]
-[; ;main.c: 232: lcd_write(1,1,"Activar");
-"232
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 25C `*uc ]
-[; ;main.c: 233: lcd_write(10,1,"SI");
-"233
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 26C `*uc ]
-[; ;main.c: 234: lcd_write(10,2,"NO");
-"234
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 27C `*uc ]
-[; ;main.c: 235: action_submenu_selector_0();
-"235
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 236: }
-"236
+[; ;main.c: 207: lcd_write(1,1,">");
+"207
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 10C `*uc ]
+[; ;main.c: 208: menu_selected = 0;
+"208
+[e = _menu_selected -> 0 `i ]
+[; ;main.c: 209: lcd_write(9,2," ");
+"209
+[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 11C `*uc ]
+[; ;main.c: 210: }
+"210
+[e :UE 1064 ]
+}
+"212
+[v _action_menu_selector_1 `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 212: void action_menu_selector_1(void){
+[e :U _action_menu_selector_1 ]
+[f ]
+[; ;main.c: 213: lcd_write(1,2,">");
+"213
+[e ( _lcd_write (3 , , -> 1 `i -> 2 `i -> :s 12C `*uc ]
+[; ;main.c: 214: menu_selected = 1;
+"214
+[e = _menu_selected -> 1 `i ]
+[; ;main.c: 215: lcd_write(1,1," ");
+"215
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 13C `*uc ]
+[; ;main.c: 216: }
+"216
+[e :UE 1065 ]
+}
+"218
+[v _action_menu_selector_2 `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 218: void action_menu_selector_2(void){
+[e :U _action_menu_selector_2 ]
+[f ]
+[; ;main.c: 219: lcd_write(9,1,">");
+"219
+[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 14C `*uc ]
+[; ;main.c: 220: menu_selected = 2;
+"220
+[e = _menu_selected -> 2 `i ]
+[; ;main.c: 221: lcd_write(1,2," ");
+"221
+[e ( _lcd_write (3 , , -> 1 `i -> 2 `i -> :s 15C `*uc ]
+[; ;main.c: 222: }
+"222
+[e :UE 1066 ]
+}
+"224
+[v _action_menu_selector_3 `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 224: void action_menu_selector_3(void){
+[e :U _action_menu_selector_3 ]
+[f ]
+[; ;main.c: 225: lcd_write(9,2,">");
+"225
+[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 16C `*uc ]
+[; ;main.c: 226: menu_selected = 3;
+"226
+[e = _menu_selected -> 3 `i ]
+[; ;main.c: 227: lcd_write(9,1," ");
+"227
+[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 17C `*uc ]
+[; ;main.c: 228: }
+"228
 [e :UE 1067 ]
 }
-"238
-[v _activity_submenu_clock `(v ~T0 @X0 1 ef ]
+"230
+[v _action_menu_selector `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 238: void activity_submenu_clock(void){
-[e :U _activity_submenu_clock ]
+[; ;main.c: 230: void action_menu_selector(void){
+[e :U _action_menu_selector ]
 [f ]
-[; ;main.c: 240: activity = 3;
+[; ;main.c: 232: switch(menu_selected){
+"232
+[e $U 1070  ]
+{
+[; ;main.c: 234: case 0:
+"234
+[e :U 1071 ]
+[; ;main.c: 235: action_menu_selector_1();
+"235
+[e ( _action_menu_selector_1 ..  ]
+[; ;main.c: 236: break;
+"236
+[e $U 1069  ]
+[; ;main.c: 238: case 1:
+"238
+[e :U 1072 ]
+[; ;main.c: 239: action_menu_selector_2();
+"239
+[e ( _action_menu_selector_2 ..  ]
+[; ;main.c: 240: break;
 "240
-[e = _activity -> 3 `i ]
-[; ;main.c: 241: lcd_init();
-"241
-[e ( _lcd_init ..  ]
-[; ;main.c: 242: lcd_write(1,1,"Reloj");
+[e $U 1069  ]
+[; ;main.c: 242: case 2:
 "242
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 28C `*uc ]
-[; ;main.c: 243: lcd_write(10,1,"Fecha");
+[e :U 1073 ]
+[; ;main.c: 243: action_menu_selector_3();
 "243
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 29C `*uc ]
-[; ;main.c: 244: lcd_write(10,2,"Hora");
+[e ( _action_menu_selector_3 ..  ]
+[; ;main.c: 244: break;
 "244
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 30C `*uc ]
-[; ;main.c: 245: action_submenu_selector_0();
-"245
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 247: }
+[e $U 1069  ]
+[; ;main.c: 246: case 3:
+"246
+[e :U 1074 ]
+[; ;main.c: 247: action_menu_selector_0();
 "247
+[e ( _action_menu_selector_0 ..  ]
+[; ;main.c: 248: break;
+"248
+[e $U 1069  ]
+"250
+}
+[; ;main.c: 250: }
+[e $U 1069  ]
+"232
+[e :U 1070 ]
+[e [\ _menu_selected , $ -> 0 `i 1071
+ , $ -> 1 `i 1072
+ , $ -> 2 `i 1073
+ , $ -> 3 `i 1074
+ 1069 ]
+"250
+[e :U 1069 ]
+[; ;main.c: 252: }
+"252
 [e :UE 1068 ]
 }
-"249
+"254
+[v _activity_home `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 254: void activity_home(void){
+[e :U _activity_home ]
+[f ]
+[; ;main.c: 256: activity = 0;
+"256
+[e = _activity -> 0 `i ]
+[; ;main.c: 257: lcd_init();
+"257
+[e ( _lcd_init ..  ]
+[; ;main.c: 258: lcd_write(1,1,"X28");
+"258
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 18C `*uc ]
+[; ;main.c: 260: }
+"260
+[e :UE 1075 ]
+}
+"262
+[v _activity_pin `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 262: void activity_pin(void){
+[e :U _activity_pin ]
+[f ]
+[; ;main.c: 264: activity = 1;
+"264
+[e = _activity -> 1 `i ]
+[; ;main.c: 265: strcpy(pin_input, "");
+"265
+[e ( _strcpy (2 , &U _pin_input :s 19C ]
+[; ;main.c: 266: lcd_init();
+"266
+[e ( _lcd_init ..  ]
+[; ;main.c: 267: lcd_write(1,1,"Ingrese su PIN:");
+"267
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 20C `*uc ]
+[; ;main.c: 268: lcd_gotoxy(1,2);
+"268
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 269: lcd_comand(0b00001111);
+"269
+[e ( _lcd_comand (1 -> -> 15 `i `uc ]
+[; ;main.c: 270: }
+"270
+[e :UE 1076 ]
+}
+"272
+[v _activity_menu `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 272: void activity_menu(void){
+[e :U _activity_menu ]
+[f ]
+[; ;main.c: 274: activity = 2;
+"274
+[e = _activity -> 2 `i ]
+[; ;main.c: 275: lcd_init();
+"275
+[e ( _lcd_init ..  ]
+[; ;main.c: 276: lcd_write(2,1,"Activar");
+"276
+[e ( _lcd_write (3 , , -> 2 `i -> 1 `i -> :s 21C `*uc ]
+[; ;main.c: 277: lcd_write(2,2,"Reloj");
+"277
+[e ( _lcd_write (3 , , -> 2 `i -> 2 `i -> :s 22C `*uc ]
+[; ;main.c: 278: lcd_write(10,1,"Pin");
+"278
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 23C `*uc ]
+[; ;main.c: 279: lcd_write(10,2,"Alarma");
+"279
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 24C `*uc ]
+[; ;main.c: 280: action_menu_selector_0();
+"280
+[e ( _action_menu_selector_0 ..  ]
+[; ;main.c: 282: }
+"282
+[e :UE 1077 ]
+}
+"284
+[v _action_submenu_selector_0 `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 284: void action_submenu_selector_0(void){
+[e :U _action_submenu_selector_0 ]
+[f ]
+[; ;main.c: 285: lcd_write(9,1,">");
+"285
+[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 25C `*uc ]
+[; ;main.c: 286: submenu_selected = 0;
+"286
+[e = _submenu_selected -> 0 `i ]
+[; ;main.c: 287: lcd_write(9,2," ");
+"287
+[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 26C `*uc ]
+[; ;main.c: 288: }
+"288
+[e :UE 1078 ]
+}
+"290
+[v _action_submenu_selector_1 `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 290: void action_submenu_selector_1(void){
+[e :U _action_submenu_selector_1 ]
+[f ]
+[; ;main.c: 291: lcd_write(9,2,">");
+"291
+[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 27C `*uc ]
+[; ;main.c: 292: submenu_selected = 1;
+"292
+[e = _submenu_selected -> 1 `i ]
+[; ;main.c: 293: lcd_write(9,1," ");
+"293
+[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 28C `*uc ]
+[; ;main.c: 294: }
+"294
+[e :UE 1079 ]
+}
+"296
+[v _action_submenu_selector `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 296: void action_submenu_selector(void){
+[e :U _action_submenu_selector ]
+[f ]
+[; ;main.c: 298: switch(submenu_selected){
+"298
+[e $U 1082  ]
+{
+[; ;main.c: 300: case 0:
+"300
+[e :U 1083 ]
+[; ;main.c: 301: action_submenu_selector_1();
+"301
+[e ( _action_submenu_selector_1 ..  ]
+[; ;main.c: 302: break;
+"302
+[e $U 1081  ]
+[; ;main.c: 304: case 1:
+"304
+[e :U 1084 ]
+[; ;main.c: 305: action_submenu_selector_0();
+"305
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 306: break;
+"306
+[e $U 1081  ]
+"307
+}
+[; ;main.c: 307: }
+[e $U 1081  ]
+"298
+[e :U 1082 ]
+[e [\ _submenu_selected , $ -> 0 `i 1083
+ , $ -> 1 `i 1084
+ 1081 ]
+"307
+[e :U 1081 ]
+[; ;main.c: 309: }
+"309
+[e :UE 1080 ]
+}
+"311
+[v _activity_submenu_activation `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 311: void activity_submenu_activation(void){
+[e :U _activity_submenu_activation ]
+[f ]
+[; ;main.c: 313: activity = 4;
+"313
+[e = _activity -> 4 `i ]
+[; ;main.c: 314: lcd_init();
+"314
+[e ( _lcd_init ..  ]
+[; ;main.c: 315: lcd_write(1,1,"Activar");
+"315
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 29C `*uc ]
+[; ;main.c: 316: lcd_write(10,1,"Si");
+"316
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 30C `*uc ]
+[; ;main.c: 317: lcd_write(10,2,"No");
+"317
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 31C `*uc ]
+[; ;main.c: 318: action_submenu_selector_0();
+"318
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 319: }
+"319
+[e :UE 1085 ]
+}
+"321
+[v _activity_submenu_clock `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 321: void activity_submenu_clock(void){
+[e :U _activity_submenu_clock ]
+[f ]
+[; ;main.c: 323: activity = 3;
+"323
+[e = _activity -> 3 `i ]
+[; ;main.c: 324: lcd_init();
+"324
+[e ( _lcd_init ..  ]
+[; ;main.c: 325: lcd_write(1,1,"Reloj");
+"325
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 32C `*uc ]
+[; ;main.c: 326: lcd_write(10,1,"Fecha");
+"326
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 33C `*uc ]
+[; ;main.c: 327: lcd_write(10,2,"Hora");
+"327
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 34C `*uc ]
+[; ;main.c: 328: action_submenu_selector_0();
+"328
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 330: }
+"330
+[e :UE 1086 ]
+}
+"332
 [v _activity_submenu_pin `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 249: void activity_submenu_pin(void){
+[; ;main.c: 332: void activity_submenu_pin(void){
 [e :U _activity_submenu_pin ]
 [f ]
-[; ;main.c: 251: activity = 5;
-"251
-[e = _activity -> 5 `i ]
-[; ;main.c: 252: lcd_init();
-"252
-[e ( _lcd_init ..  ]
-[; ;main.c: 253: lcd_write(1,1,"Pin");
-"253
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 31C `*uc ]
-[; ;main.c: 254: lcd_write(10,1,"Cambiar");
-"254
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 32C `*uc ]
-[; ;main.c: 255: lcd_write(10,2,"Reset");
-"255
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 33C `*uc ]
-[; ;main.c: 256: action_submenu_selector_0();
-"256
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 257: }
-"257
-[e :UE 1069 ]
-}
-"259
-[v _activity_submenu_alarm `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 259: void activity_submenu_alarm(void){
-[e :U _activity_submenu_alarm ]
-[f ]
-[; ;main.c: 261: activity = 6;
-"261
-[e = _activity -> 6 `i ]
-[; ;main.c: 262: lcd_init();
-"262
-[e ( _lcd_init ..  ]
-[; ;main.c: 263: lcd_write(1,1,"Alarma");
-"263
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 34C `*uc ]
-[; ;main.c: 264: lcd_write(10,1,"Volumen");
-"264
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 35C `*uc ]
-[; ;main.c: 265: lcd_write(10,2,"Tono");
-"265
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 36C `*uc ]
-[; ;main.c: 266: action_submenu_selector_0();
-"266
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 267: }
-"267
-[e :UE 1070 ]
-}
-"269
-[v _pin_input_validator `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 269: void pin_input_validator(void){
-[e :U _pin_input_validator ]
-[f ]
-"271
-[v _comparision `i ~T0 @X0 1 a ]
-[; ;main.c: 271: int comparision = strcmp(pin, pin_input);
-[e = _comparision ( _strcmp (2 , -> &U _pin `*Cuc -> &U _pin_input `*Cuc ]
-[; ;main.c: 273: if( comparision == 0 ){
-"273
-[e $ ! == _comparision -> 0 `i 1072  ]
-{
-[; ;main.c: 274: activity_menu();
-"274
-[e ( _activity_menu ..  ]
-"275
-}
-[; ;main.c: 275: }
-[e $U 1073  ]
-"276
-[e :U 1072 ]
-[; ;main.c: 276: else{
-{
-[; ;main.c: 277: activity_pin();
-"277
-[e ( _activity_pin ..  ]
-"278
-}
-[e :U 1073 ]
-[; ;main.c: 278: }
-[; ;main.c: 279: }
-"279
-[e :UE 1071 ]
-}
-"281
-[v _button_A `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 281: void button_A(void){
-[e :U _button_A ]
-[f ]
-[; ;main.c: 283: reset_home_callback();
-"283
-[e ( _reset_home_callback ..  ]
-[; ;main.c: 285: switch(activity){
-"285
-[e $U 1076  ]
-{
-[; ;main.c: 287: case 0:
-"287
-[e :U 1077 ]
-[; ;main.c: 288: activity_pin();
-"288
-[e ( _activity_pin ..  ]
-[; ;main.c: 289: break;
-"289
-[e $U 1075  ]
-[; ;main.c: 291: case 1:
-"291
-[e :U 1078 ]
-[; ;main.c: 292: break;
-"292
-[e $U 1075  ]
-[; ;main.c: 294: case 2:
-"294
-[e :U 1079 ]
-[; ;main.c: 295: action_menu_selector();
-"295
-[e ( _action_menu_selector ..  ]
-[; ;main.c: 296: break;
-"296
-[e $U 1075  ]
-[; ;main.c: 298: default:
-"298
-[e :U 1080 ]
-[; ;main.c: 299: action_submenu_selector();
-"299
-[e ( _action_submenu_selector ..  ]
-[; ;main.c: 300: break;
-"300
-[e $U 1075  ]
-"301
-}
-[; ;main.c: 301: }
-[e $U 1075  ]
-"285
-[e :U 1076 ]
-[e [\ _activity , $ -> 0 `i 1077
- , $ -> 1 `i 1078
- , $ -> 2 `i 1079
- 1080 ]
-"301
-[e :U 1075 ]
-[; ;main.c: 303: }
-"303
-[e :UE 1074 ]
-}
-"305
-[v _button_B_menu `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 305: void button_B_menu(void){
-[e :U _button_B_menu ]
-[f ]
-[; ;main.c: 307: switch(menu_selected){
-"307
-[e $U 1083  ]
-{
-[; ;main.c: 309: case 0:
-"309
-[e :U 1084 ]
-[; ;main.c: 310: activity_submenu_activation();
-"310
-[e ( _activity_submenu_activation ..  ]
-[; ;main.c: 311: break;
-"311
-[e $U 1082  ]
-[; ;main.c: 313: case 1:
-"313
-[e :U 1085 ]
-[; ;main.c: 314: activity_submenu_clock();
-"314
-[e ( _activity_submenu_clock ..  ]
-[; ;main.c: 315: break;
-"315
-[e $U 1082  ]
-[; ;main.c: 317: case 2:
-"317
-[e :U 1086 ]
-[; ;main.c: 318: activity_submenu_pin();
-"318
-[e ( _activity_submenu_pin ..  ]
-[; ;main.c: 319: break;
-"319
-[e $U 1082  ]
-[; ;main.c: 321: case 3:
-"321
-[e :U 1087 ]
-[; ;main.c: 322: activity_submenu_alarm();
-"322
-[e ( _activity_submenu_alarm ..  ]
-[; ;main.c: 323: break;
-"323
-[e $U 1082  ]
-"325
-}
-[; ;main.c: 325: }
-[e $U 1082  ]
-"307
-[e :U 1083 ]
-[e [\ _menu_selected , $ -> 0 `i 1084
- , $ -> 1 `i 1085
- , $ -> 2 `i 1086
- , $ -> 3 `i 1087
- 1082 ]
-"325
-[e :U 1082 ]
-[; ;main.c: 326: }
-"326
-[e :UE 1081 ]
-}
-"328
-[v _button_B_submenu_activation `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 328: void button_B_submenu_activation(void){
-[e :U _button_B_submenu_activation ]
-[f ]
-[; ;main.c: 330: switch(submenu_selected){
-"330
-[e $U 1090  ]
-{
-[; ;main.c: 332: case 0:
-"332
-[e :U 1091 ]
-[; ;main.c: 333: state = 1;
-"333
-[e = _state -> 1 `i ]
-[; ;main.c: 334: break;
+[; ;main.c: 334: activity = 5;
 "334
-[e $U 1089  ]
-[; ;main.c: 336: case 1:
+[e = _activity -> 5 `i ]
+[; ;main.c: 335: lcd_init();
+"335
+[e ( _lcd_init ..  ]
+[; ;main.c: 336: lcd_write(1,1,"Pin");
 "336
-[e :U 1092 ]
-[; ;main.c: 337: state = 0;
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 35C `*uc ]
+[; ;main.c: 337: lcd_write(10,1,"Cambiar");
 "337
-[e = _state -> 0 `i ]
-[; ;main.c: 338: break;
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 36C `*uc ]
+[; ;main.c: 338: lcd_write(10,2,"Reset");
 "338
-[e $U 1089  ]
-"340
-}
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 37C `*uc ]
+[; ;main.c: 339: action_submenu_selector_0();
+"339
+[e ( _action_submenu_selector_0 ..  ]
 [; ;main.c: 340: }
-[e $U 1089  ]
-"330
-[e :U 1090 ]
-[e [\ _submenu_selected , $ -> 0 `i 1091
- , $ -> 1 `i 1092
- 1089 ]
 "340
-[e :U 1089 ]
-[; ;main.c: 342: activity_home();
+[e :UE 1087 ]
+}
 "342
-[e ( _activity_home ..  ]
-[; ;main.c: 344: }
+[v _activity_submenu_pin_set `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 342: void activity_submenu_pin_set(void){
+[e :U _activity_submenu_pin_set ]
+[f ]
+[; ;main.c: 344: activity = 7;
 "344
+[e = _activity -> 7 `i ]
+[; ;main.c: 345: strcpy(pin_input, "");
+"345
+[e ( _strcpy (2 , &U _pin_input :s 38C ]
+[; ;main.c: 346: lcd_init();
+"346
+[e ( _lcd_init ..  ]
+[; ;main.c: 347: lcd_write(1,1,"Nuevo PIN:");
+"347
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 39C `*uc ]
+[; ;main.c: 348: lcd_gotoxy(1,2);
+"348
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 349: lcd_comand(0b00001111);
+"349
+[e ( _lcd_comand (1 -> -> 15 `i `uc ]
+[; ;main.c: 351: }
+"351
 [e :UE 1088 ]
 }
-"346
-[v _button_B `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 346: void button_B(void){
-[e :U _button_B ]
-[f ]
-[; ;main.c: 348: reset_home_callback();
-"348
-[e ( _reset_home_callback ..  ]
-[; ;main.c: 350: switch(activity){
-"350
-[e $U 1095  ]
-{
-[; ;main.c: 352: case 2:
-"352
-[e :U 1096 ]
-[; ;main.c: 353: button_B_menu();
 "353
-[e ( _button_B_menu ..  ]
-[; ;main.c: 354: break;
-"354
-[e $U 1094  ]
-[; ;main.c: 356: case 4:
-"356
-[e :U 1097 ]
-[; ;main.c: 357: button_B_submenu_activation();
-"357
-[e ( _button_B_submenu_activation ..  ]
-[; ;main.c: 358: break;
-"358
-[e $U 1094  ]
-"360
-}
-[; ;main.c: 360: }
-[e $U 1094  ]
-"350
-[e :U 1095 ]
-[e [\ _activity , $ -> 2 `i 1096
- , $ -> 4 `i 1097
- 1094 ]
-"360
-[e :U 1094 ]
-[; ;main.c: 362: }
-"362
-[e :UE 1093 ]
-}
-"364
-[v _button_C `(v ~T0 @X0 1 ef ]
+[v _activity_submenu_alarm `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 364: void button_C(void){
-[e :U _button_C ]
+[; ;main.c: 353: void activity_submenu_alarm(void){
+[e :U _activity_submenu_alarm ]
 [f ]
-[; ;main.c: 366: reset_home_callback();
-"366
-[e ( _reset_home_callback ..  ]
-[; ;main.c: 368: if(activity != 0 && activity != 1){
-"368
-[e $ ! && != _activity -> 0 `i != _activity -> 1 `i 1099  ]
-{
-[; ;main.c: 369: activity_menu();
-"369
-[e ( _activity_menu ..  ]
-"370
+[; ;main.c: 355: activity = 6;
+"355
+[e = _activity -> 6 `i ]
+[; ;main.c: 356: lcd_init();
+"356
+[e ( _lcd_init ..  ]
+[; ;main.c: 357: lcd_write(1,1,"Alarma");
+"357
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 40C `*uc ]
+[; ;main.c: 358: lcd_write(10,1,"Volumen");
+"358
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 41C `*uc ]
+[; ;main.c: 359: lcd_write(10,2,"Tono");
+"359
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 42C `*uc ]
+[; ;main.c: 360: action_submenu_selector_0();
+"360
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 361: }
+"361
+[e :UE 1089 ]
 }
-[e :U 1099 ]
-[; ;main.c: 370: }
+"363
+[v _activity_submenu_alarm_volume `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 363: void activity_submenu_alarm_volume(void){
+[e :U _activity_submenu_alarm_volume ]
+[f ]
+[; ;main.c: 365: activity = 8;
+"365
+[e = _activity -> 8 `i ]
+[; ;main.c: 366: lcd_init();
+"366
+[e ( _lcd_init ..  ]
+[; ;main.c: 367: lcd_write(1,1,"Volumen");
+"367
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 43C `*uc ]
+[; ;main.c: 368: lcd_write(10,1,"Bajo");
+"368
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 44C `*uc ]
+[; ;main.c: 369: lcd_write(10,2,"Alto");
+"369
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 45C `*uc ]
+[; ;main.c: 370: action_submenu_selector_0();
+"370
+[e ( _action_submenu_selector_0 ..  ]
 [; ;main.c: 372: }
 "372
-[e :UE 1098 ]
+[e :UE 1090 ]
 }
 "374
+[v _activity_submenu_alarm_tone `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 374: void activity_submenu_alarm_tone(void){
+[e :U _activity_submenu_alarm_tone ]
+[f ]
+[; ;main.c: 376: activity = 9;
+"376
+[e = _activity -> 9 `i ]
+[; ;main.c: 377: lcd_init();
+"377
+[e ( _lcd_init ..  ]
+[; ;main.c: 378: lcd_write(1,1,"Tono");
+"378
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 46C `*uc ]
+[; ;main.c: 379: lcd_write(10,1,"Beep 1");
+"379
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 47C `*uc ]
+[; ;main.c: 380: lcd_write(10,2,"Beep 2");
+"380
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 48C `*uc ]
+[; ;main.c: 381: action_submenu_selector_0();
+"381
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 383: }
+"383
+[e :UE 1091 ]
+}
+"385
+[v _pin_input_validator `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 385: void pin_input_validator(void){
+[e :U _pin_input_validator ]
+[f ]
+"387
+[v _comparision `i ~T0 @X0 1 a ]
+[; ;main.c: 387: int comparision = strcmp(pin, pin_input);
+[e = _comparision ( _strcmp (2 , -> &U _pin `*Cuc -> &U _pin_input `*Cuc ]
+[; ;main.c: 389: if( comparision == 0 ){
+"389
+[e $ ! == _comparision -> 0 `i 1093  ]
+{
+[; ;main.c: 390: activity_menu();
+"390
+[e ( _activity_menu ..  ]
+"391
+}
+[; ;main.c: 391: }
+[e $U 1094  ]
+"392
+[e :U 1093 ]
+[; ;main.c: 392: else{
+{
+[; ;main.c: 393: activity_pin();
+"393
+[e ( _activity_pin ..  ]
+"394
+}
+[e :U 1094 ]
+[; ;main.c: 394: }
+[; ;main.c: 395: }
+"395
+[e :UE 1092 ]
+}
+"397
+[v _pin_set `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 397: void pin_set(void){
+[e :U _pin_set ]
+[f ]
+[; ;main.c: 399: strcpy(pin, pin_input);
+"399
+[e ( _strcpy (2 , &U _pin -> &U _pin_input `*Cuc ]
+[; ;main.c: 400: activity_home();
+"400
+[e ( _activity_home ..  ]
+[; ;main.c: 401: }
+"401
+[e :UE 1095 ]
+}
+"403
+[v _button_A `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 403: void button_A(void){
+[e :U _button_A ]
+[f ]
+[; ;main.c: 405: reset_home_callback();
+"405
+[e ( _reset_home_callback ..  ]
+[; ;main.c: 407: switch(activity){
+"407
+[e $U 1098  ]
+{
+[; ;main.c: 409: case 0:
+"409
+[e :U 1099 ]
+[; ;main.c: 410: activity_pin();
+"410
+[e ( _activity_pin ..  ]
+[; ;main.c: 411: break;
+"411
+[e $U 1097  ]
+[; ;main.c: 413: case 1:
+"413
+[e :U 1100 ]
+[; ;main.c: 414: break;
+"414
+[e $U 1097  ]
+[; ;main.c: 416: case 2:
+"416
+[e :U 1101 ]
+[; ;main.c: 417: action_menu_selector();
+"417
+[e ( _action_menu_selector ..  ]
+[; ;main.c: 418: break;
+"418
+[e $U 1097  ]
+[; ;main.c: 420: default:
+"420
+[e :U 1102 ]
+[; ;main.c: 421: action_submenu_selector();
+"421
+[e ( _action_submenu_selector ..  ]
+[; ;main.c: 422: break;
+"422
+[e $U 1097  ]
+"423
+}
+[; ;main.c: 423: }
+[e $U 1097  ]
+"407
+[e :U 1098 ]
+[e [\ _activity , $ -> 0 `i 1099
+ , $ -> 1 `i 1100
+ , $ -> 2 `i 1101
+ 1102 ]
+"423
+[e :U 1097 ]
+[; ;main.c: 425: }
+"425
+[e :UE 1096 ]
+}
+"427
+[v _button_B_menu `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 427: void button_B_menu(void){
+[e :U _button_B_menu ]
+[f ]
+[; ;main.c: 429: switch(menu_selected){
+"429
+[e $U 1105  ]
+{
+[; ;main.c: 431: case 0:
+"431
+[e :U 1106 ]
+[; ;main.c: 432: activity_submenu_activation();
+"432
+[e ( _activity_submenu_activation ..  ]
+[; ;main.c: 433: break;
+"433
+[e $U 1104  ]
+[; ;main.c: 435: case 1:
+"435
+[e :U 1107 ]
+[; ;main.c: 436: activity_submenu_clock();
+"436
+[e ( _activity_submenu_clock ..  ]
+[; ;main.c: 437: break;
+"437
+[e $U 1104  ]
+[; ;main.c: 439: case 2:
+"439
+[e :U 1108 ]
+[; ;main.c: 440: activity_submenu_pin();
+"440
+[e ( _activity_submenu_pin ..  ]
+[; ;main.c: 441: break;
+"441
+[e $U 1104  ]
+[; ;main.c: 443: case 3:
+"443
+[e :U 1109 ]
+[; ;main.c: 444: activity_submenu_alarm();
+"444
+[e ( _activity_submenu_alarm ..  ]
+[; ;main.c: 445: break;
+"445
+[e $U 1104  ]
+"447
+}
+[; ;main.c: 447: }
+[e $U 1104  ]
+"429
+[e :U 1105 ]
+[e [\ _menu_selected , $ -> 0 `i 1106
+ , $ -> 1 `i 1107
+ , $ -> 2 `i 1108
+ , $ -> 3 `i 1109
+ 1104 ]
+"447
+[e :U 1104 ]
+[; ;main.c: 448: }
+"448
+[e :UE 1103 ]
+}
+"450
+[v _button_B_submenu_activation `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 450: void button_B_submenu_activation(void){
+[e :U _button_B_submenu_activation ]
+[f ]
+[; ;main.c: 452: switch(submenu_selected){
+"452
+[e $U 1112  ]
+{
+[; ;main.c: 454: case 0:
+"454
+[e :U 1113 ]
+[; ;main.c: 455: state = 1;
+"455
+[e = _state -> 1 `i ]
+[; ;main.c: 456: break;
+"456
+[e $U 1111  ]
+[; ;main.c: 458: case 1:
+"458
+[e :U 1114 ]
+[; ;main.c: 459: state = 0;
+"459
+[e = _state -> 0 `i ]
+[; ;main.c: 460: break;
+"460
+[e $U 1111  ]
+"462
+}
+[; ;main.c: 462: }
+[e $U 1111  ]
+"452
+[e :U 1112 ]
+[e [\ _submenu_selected , $ -> 0 `i 1113
+ , $ -> 1 `i 1114
+ 1111 ]
+"462
+[e :U 1111 ]
+[; ;main.c: 464: activity_home();
+"464
+[e ( _activity_home ..  ]
+[; ;main.c: 466: }
+"466
+[e :UE 1110 ]
+}
+"468
+[v _button_B_submenu_pin_config `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 468: void button_B_submenu_pin_config(void){
+[e :U _button_B_submenu_pin_config ]
+[f ]
+[; ;main.c: 470: switch(submenu_selected){
+"470
+[e $U 1117  ]
+{
+[; ;main.c: 472: case 0:
+"472
+[e :U 1118 ]
+[; ;main.c: 473: activity_submenu_pin_set();
+"473
+[e ( _activity_submenu_pin_set ..  ]
+[; ;main.c: 474: break;
+"474
+[e $U 1116  ]
+[; ;main.c: 476: case 1:
+"476
+[e :U 1119 ]
+[; ;main.c: 477: reset_pin();
+"477
+[e ( _reset_pin ..  ]
+[; ;main.c: 478: activity_home();
+"478
+[e ( _activity_home ..  ]
+[; ;main.c: 479: break;
+"479
+[e $U 1116  ]
+"481
+}
+[; ;main.c: 481: }
+[e $U 1116  ]
+"470
+[e :U 1117 ]
+[e [\ _submenu_selected , $ -> 0 `i 1118
+ , $ -> 1 `i 1119
+ 1116 ]
+"481
+[e :U 1116 ]
+[; ;main.c: 483: }
+"483
+[e :UE 1115 ]
+}
+"485
+[v _button_B_submenu_alarm_config `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 485: void button_B_submenu_alarm_config(){
+[e :U _button_B_submenu_alarm_config ]
+[f ]
+[; ;main.c: 487: switch(submenu_selected){
+"487
+[e $U 1122  ]
+{
+[; ;main.c: 489: case 0:
+"489
+[e :U 1123 ]
+[; ;main.c: 490: activity_submenu_alarm_volume();
+"490
+[e ( _activity_submenu_alarm_volume ..  ]
+[; ;main.c: 491: break;
+"491
+[e $U 1121  ]
+[; ;main.c: 493: case 1:
+"493
+[e :U 1124 ]
+[; ;main.c: 494: activity_submenu_alarm_tone();
+"494
+[e ( _activity_submenu_alarm_tone ..  ]
+[; ;main.c: 495: break;
+"495
+[e $U 1121  ]
+"497
+}
+[; ;main.c: 497: }
+[e $U 1121  ]
+"487
+[e :U 1122 ]
+[e [\ _submenu_selected , $ -> 0 `i 1123
+ , $ -> 1 `i 1124
+ 1121 ]
+"497
+[e :U 1121 ]
+[; ;main.c: 499: }
+"499
+[e :UE 1120 ]
+}
+"501
+[v _button_B_submenu_alarm_volume `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 501: void button_B_submenu_alarm_volume(void){
+[e :U _button_B_submenu_alarm_volume ]
+[f ]
+[; ;main.c: 503: switch(submenu_selected){
+"503
+[e $U 1127  ]
+{
+[; ;main.c: 505: case 0:
+"505
+[e :U 1128 ]
+[; ;main.c: 506: alarm_volume = 0;
+"506
+[e = _alarm_volume -> 0 `i ]
+[; ;main.c: 507: break;
+"507
+[e $U 1126  ]
+[; ;main.c: 509: case 1:
+"509
+[e :U 1129 ]
+[; ;main.c: 510: alarm_volume = 1;
+"510
+[e = _alarm_volume -> 1 `i ]
+[; ;main.c: 511: break;
+"511
+[e $U 1126  ]
+"513
+}
+[; ;main.c: 513: }
+[e $U 1126  ]
+"503
+[e :U 1127 ]
+[e [\ _submenu_selected , $ -> 0 `i 1128
+ , $ -> 1 `i 1129
+ 1126 ]
+"513
+[e :U 1126 ]
+[; ;main.c: 515: activity_home();
+"515
+[e ( _activity_home ..  ]
+[; ;main.c: 517: }
+"517
+[e :UE 1125 ]
+}
+"519
+[v _button_B_submenu_alarm_tone `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 519: void button_B_submenu_alarm_tone(void){
+[e :U _button_B_submenu_alarm_tone ]
+[f ]
+[; ;main.c: 521: switch(submenu_selected){
+"521
+[e $U 1132  ]
+{
+[; ;main.c: 523: case 0:
+"523
+[e :U 1133 ]
+[; ;main.c: 524: alarm_tone = 0;
+"524
+[e = _alarm_tone -> 0 `i ]
+[; ;main.c: 525: break;
+"525
+[e $U 1131  ]
+[; ;main.c: 527: case 1:
+"527
+[e :U 1134 ]
+[; ;main.c: 528: alarm_tone = 1;
+"528
+[e = _alarm_tone -> 1 `i ]
+[; ;main.c: 529: break;
+"529
+[e $U 1131  ]
+"531
+}
+[; ;main.c: 531: }
+[e $U 1131  ]
+"521
+[e :U 1132 ]
+[e [\ _submenu_selected , $ -> 0 `i 1133
+ , $ -> 1 `i 1134
+ 1131 ]
+"531
+[e :U 1131 ]
+[; ;main.c: 533: activity_home();
+"533
+[e ( _activity_home ..  ]
+[; ;main.c: 535: }
+"535
+[e :UE 1130 ]
+}
+"537
+[v _button_B `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 537: void button_B(void){
+[e :U _button_B ]
+[f ]
+[; ;main.c: 539: reset_home_callback();
+"539
+[e ( _reset_home_callback ..  ]
+[; ;main.c: 541: switch(activity){
+"541
+[e $U 1137  ]
+{
+[; ;main.c: 543: case 2:
+"543
+[e :U 1138 ]
+[; ;main.c: 544: button_B_menu();
+"544
+[e ( _button_B_menu ..  ]
+[; ;main.c: 545: break;
+"545
+[e $U 1136  ]
+[; ;main.c: 547: case 4:
+"547
+[e :U 1139 ]
+[; ;main.c: 548: button_B_submenu_activation();
+"548
+[e ( _button_B_submenu_activation ..  ]
+[; ;main.c: 549: break;
+"549
+[e $U 1136  ]
+[; ;main.c: 551: case 5:
+"551
+[e :U 1140 ]
+[; ;main.c: 552: button_B_submenu_pin_config();
+"552
+[e ( _button_B_submenu_pin_config ..  ]
+[; ;main.c: 553: break;
+"553
+[e $U 1136  ]
+[; ;main.c: 555: case 6:
+"555
+[e :U 1141 ]
+[; ;main.c: 556: button_B_submenu_alarm_config();
+"556
+[e ( _button_B_submenu_alarm_config ..  ]
+[; ;main.c: 557: break;
+"557
+[e $U 1136  ]
+[; ;main.c: 559: case 8:
+"559
+[e :U 1142 ]
+[; ;main.c: 560: button_B_submenu_alarm_volume();
+"560
+[e ( _button_B_submenu_alarm_volume ..  ]
+[; ;main.c: 561: break;
+"561
+[e $U 1136  ]
+[; ;main.c: 563: case 9:
+"563
+[e :U 1143 ]
+[; ;main.c: 564: button_B_submenu_alarm_tone();
+"564
+[e ( _button_B_submenu_alarm_tone ..  ]
+[; ;main.c: 565: break;
+"565
+[e $U 1136  ]
+"566
+}
+[; ;main.c: 566: }
+[e $U 1136  ]
+"541
+[e :U 1137 ]
+[e [\ _activity , $ -> 2 `i 1138
+ , $ -> 4 `i 1139
+ , $ -> 5 `i 1140
+ , $ -> 6 `i 1141
+ , $ -> 8 `i 1142
+ , $ -> 9 `i 1143
+ 1136 ]
+"566
+[e :U 1136 ]
+[; ;main.c: 568: }
+"568
+[e :UE 1135 ]
+}
+"570
+[v _button_C `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 570: void button_C(void){
+[e :U _button_C ]
+[f ]
+[; ;main.c: 572: reset_home_callback();
+"572
+[e ( _reset_home_callback ..  ]
+[; ;main.c: 574: if(activity != 0 && activity != 1){
+"574
+[e $ ! && != _activity -> 0 `i != _activity -> 1 `i 1145  ]
+{
+[; ;main.c: 575: activity_menu();
+"575
+[e ( _activity_menu ..  ]
+"576
+}
+[e :U 1145 ]
+[; ;main.c: 576: }
+[; ;main.c: 578: }
+"578
+[e :UE 1144 ]
+}
+"580
 [v _button_D `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 374: void button_D(void){
+[; ;main.c: 580: void button_D(void){
 [e :U _button_D ]
 [f ]
-[; ;main.c: 376: reset_home_callback();
-"376
+[; ;main.c: 582: reset_home_callback();
+"582
 [e ( _reset_home_callback ..  ]
-[; ;main.c: 378: activity_home();
-"378
+[; ;main.c: 584: activity_home();
+"584
 [e ( _activity_home ..  ]
-[; ;main.c: 380: }
-"380
-[e :UE 1100 ]
+[; ;main.c: 586: }
+"586
+[e :UE 1146 ]
 }
-"382
+"588
 [v _button_asterisk `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 382: void button_asterisk(void){
+[; ;main.c: 588: void button_asterisk(void){
 [e :U _button_asterisk ]
 [f ]
-[; ;main.c: 384: reset_home_callback();
-"384
+[; ;main.c: 590: reset_home_callback();
+"590
 [e ( _reset_home_callback ..  ]
-[; ;main.c: 388: }
-"388
-[e :UE 1101 ]
+[; ;main.c: 594: }
+"594
+[e :UE 1147 ]
 }
-"390
+"596
 [v _button_hash `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 390: void button_hash(void){
+[; ;main.c: 596: void button_hash(void){
 [e :U _button_hash ]
 [f ]
-[; ;main.c: 392: reset_home_callback();
-"392
+[; ;main.c: 598: reset_home_callback();
+"598
 [e ( _reset_home_callback ..  ]
-[; ;main.c: 394: if(activity == 1){
-"394
-[e $ ! == _activity -> 1 `i 1103  ]
+[; ;main.c: 600: if(activity == 1){
+"600
+[e $ ! == _activity -> 1 `i 1149  ]
 {
-[; ;main.c: 395: pin_input_validator();
-"395
+[; ;main.c: 601: pin_input_validator();
+"601
 [e ( _pin_input_validator ..  ]
-"396
+"602
 }
-[e :U 1103 ]
-[; ;main.c: 396: }
-[; ;main.c: 398: }
-"398
-[e :UE 1102 ]
+[e :U 1149 ]
+[; ;main.c: 602: }
+[; ;main.c: 604: if(activity == 7){
+"604
+[e $ ! == _activity -> 7 `i 1150  ]
+{
+[; ;main.c: 605: pin_set();
+"605
+[e ( _pin_set ..  ]
+"606
 }
-"400
+[e :U 1150 ]
+[; ;main.c: 606: }
+[; ;main.c: 608: }
+"608
+[e :UE 1148 ]
+}
+"610
 [v _button_number `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 400: void button_number(void){
+[; ;main.c: 610: void button_number(void){
 [e :U _button_number ]
 [f ]
-[; ;main.c: 402: reset_home_callback();
-"402
+[; ;main.c: 612: reset_home_callback();
+"612
 [e ( _reset_home_callback ..  ]
-[; ;main.c: 404: if(activity == 1){
-"404
-[e $ ! == _activity -> 1 `i 1105  ]
+[; ;main.c: 614: if(activity == 1 || activity == 7){
+"614
+[e $ ! || == _activity -> 1 `i == _activity -> 7 `i 1152  ]
 {
-[; ;main.c: 406: lcd_putrs("*");
-"406
-[e ( _lcd_putrs (1 :s 37C ]
-[; ;main.c: 407: sprintf(buffer1, "%01u", key);
-"407
-[e ( _sprintf (1 , (. , &U _buffer1 :s 38C -> _key `i ]
-[; ;main.c: 408: strcat(pin_input, buffer1);
-"408
+[; ;main.c: 616: lcd_putrs("*");
+"616
+[e ( _lcd_putrs (1 :s 49C ]
+[; ;main.c: 617: sprintf(buffer1, "%01u", key);
+"617
+[e ( _sprintf (1 , (. , &U _buffer1 :s 50C -> _key `i ]
+[; ;main.c: 618: strcat(pin_input, buffer1);
+"618
 [e ( _strcat (2 , &U _pin_input -> &U _buffer1 `*Cuc ]
-"410
+"620
 }
-[; ;main.c: 410: } else {
-[e $U 1106  ]
-[e :U 1105 ]
+[; ;main.c: 620: } else {
+[e $U 1153  ]
+[e :U 1152 ]
 {
-[; ;main.c: 412: sprintf(buffer1,"%01u",key);
-"412
-[e ( _sprintf (1 , (. , &U _buffer1 :s 39C -> _key `i ]
-"415
+[; ;main.c: 622: sprintf(buffer1,"%01u",key);
+"622
+[e ( _sprintf (1 , (. , &U _buffer1 :s 51C -> _key `i ]
+"624
 }
-[e :U 1106 ]
-[; ;main.c: 415: }
-[; ;main.c: 417: }
-"417
-[e :UE 1104 ]
+[e :U 1153 ]
+[; ;main.c: 624: }
+[; ;main.c: 626: }
+"626
+[e :UE 1151 ]
 }
-"419
+"628
 [v _keyboard_control `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 419: void keyboard_control(void){
+[; ;main.c: 628: void keyboard_control(void){
 [e :U _keyboard_control ]
 [f ]
-[; ;main.c: 421: LATAbits.LATA0=1;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=0;
-"421
+[; ;main.c: 630: LATAbits.LATA0=1;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=0;
+"630
 [e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 422: {
-"422
+[; ;main.c: 631: {
+"631
 {
-[; ;main.c: 423: if (PORTAbits.RA5==1){key=1;button_number();while(PORTAbits.RA5==1){};}
-"423
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1108  ]
+[; ;main.c: 632: if (PORTAbits.RA5==1){key=1;button_number();while(PORTAbits.RA5==1){};}
+"632
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1155  ]
 {
 [e = _key -> -> 1 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1109  ]
-[e :U 1110 ]
+[e $U 1156  ]
+[e :U 1157 ]
 {
 }
-[e :U 1109 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1110  ]
-[e :U 1111 ]
+[e :U 1156 ]
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1157  ]
+[e :U 1158 ]
 }
-[e :U 1108 ]
-[; ;main.c: 424: if (PORTAbits.RA7==1){key=2;button_number();while(PORTAbits.RA7==1){};}
-"424
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1112  ]
+[e :U 1155 ]
+[; ;main.c: 633: if (PORTAbits.RA7==1){key=2;button_number();while(PORTAbits.RA7==1){};}
+"633
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1159  ]
 {
 [e = _key -> -> 2 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1113  ]
-[e :U 1114 ]
+[e $U 1160  ]
+[e :U 1161 ]
 {
 }
-[e :U 1113 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1114  ]
-[e :U 1115 ]
+[e :U 1160 ]
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1161  ]
+[e :U 1162 ]
 }
-[e :U 1112 ]
-[; ;main.c: 425: if (PORTAbits.RA6==1){key=3;button_number();while(PORTAbits.RA6==1){};}
-"425
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1116  ]
+[e :U 1159 ]
+[; ;main.c: 634: if (PORTAbits.RA6==1){key=3;button_number();while(PORTAbits.RA6==1){};}
+"634
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1163  ]
 {
 [e = _key -> -> 3 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1117  ]
-[e :U 1118 ]
+[e $U 1164  ]
+[e :U 1165 ]
 {
 }
-[e :U 1117 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1118  ]
-[e :U 1119 ]
+[e :U 1164 ]
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1165  ]
+[e :U 1166 ]
 }
-[e :U 1116 ]
-[; ;main.c: 426: if (PORTCbits.RC2==1){key=11;button_A();while(PORTCbits.RC2==1){};}
-"426
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1120  ]
+[e :U 1163 ]
+[; ;main.c: 635: if (PORTCbits.RC2==1){key=11;button_A();while(PORTCbits.RC2==1){};}
+"635
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1167  ]
 {
 [e = _key -> -> 11 `i `uc ]
 [e ( _button_A ..  ]
-[e $U 1121  ]
-[e :U 1122 ]
+[e $U 1168  ]
+[e :U 1169 ]
 {
 }
-[e :U 1121 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1122  ]
-[e :U 1123 ]
+[e :U 1168 ]
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1169  ]
+[e :U 1170 ]
 }
-[e :U 1120 ]
-"427
+[e :U 1167 ]
+"636
 }
-[; ;main.c: 427: }
-[; ;main.c: 429: LATAbits.LATA0=0;LATAbits.LATA1=1;LATAbits.LATA2=0;LATAbits.LATA3=0;
-"429
+[; ;main.c: 636: }
+[; ;main.c: 638: LATAbits.LATA0=0;LATAbits.LATA1=1;LATAbits.LATA2=0;LATAbits.LATA3=0;
+"638
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 430: {
-"430
+[; ;main.c: 639: {
+"639
 {
-[; ;main.c: 431: if (PORTAbits.RA5==1){key=4;button_number();while(PORTAbits.RA5==1){};}
-"431
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1124  ]
+[; ;main.c: 640: if (PORTAbits.RA5==1){key=4;button_number();while(PORTAbits.RA5==1){};}
+"640
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1171  ]
 {
 [e = _key -> -> 4 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1125  ]
-[e :U 1126 ]
+[e $U 1172  ]
+[e :U 1173 ]
 {
 }
-[e :U 1125 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1126  ]
-[e :U 1127 ]
+[e :U 1172 ]
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1173  ]
+[e :U 1174 ]
 }
-[e :U 1124 ]
-[; ;main.c: 432: if (PORTAbits.RA7==1){key=5;button_number();while(PORTAbits.RA7==1){};}
-"432
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1128  ]
+[e :U 1171 ]
+[; ;main.c: 641: if (PORTAbits.RA7==1){key=5;button_number();while(PORTAbits.RA7==1){};}
+"641
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1175  ]
 {
 [e = _key -> -> 5 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1129  ]
-[e :U 1130 ]
+[e $U 1176  ]
+[e :U 1177 ]
 {
 }
-[e :U 1129 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1130  ]
-[e :U 1131 ]
+[e :U 1176 ]
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1177  ]
+[e :U 1178 ]
 }
-[e :U 1128 ]
-[; ;main.c: 433: if (PORTAbits.RA6==1){key=6;button_number();while(PORTAbits.RA6==1){};}
-"433
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1132  ]
+[e :U 1175 ]
+[; ;main.c: 642: if (PORTAbits.RA6==1){key=6;button_number();while(PORTAbits.RA6==1){};}
+"642
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1179  ]
 {
 [e = _key -> -> 6 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1133  ]
-[e :U 1134 ]
+[e $U 1180  ]
+[e :U 1181 ]
 {
 }
-[e :U 1133 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1134  ]
-[e :U 1135 ]
+[e :U 1180 ]
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1181  ]
+[e :U 1182 ]
 }
-[e :U 1132 ]
-[; ;main.c: 434: if (PORTCbits.RC2==1){key=12;button_B();while(PORTCbits.RC2==1){};}
-"434
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1136  ]
+[e :U 1179 ]
+[; ;main.c: 643: if (PORTCbits.RC2==1){key=12;button_B();while(PORTCbits.RC2==1){};}
+"643
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1183  ]
 {
 [e = _key -> -> 12 `i `uc ]
 [e ( _button_B ..  ]
-[e $U 1137  ]
-[e :U 1138 ]
+[e $U 1184  ]
+[e :U 1185 ]
 {
 }
-[e :U 1137 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1138  ]
-[e :U 1139 ]
+[e :U 1184 ]
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1185  ]
+[e :U 1186 ]
 }
-[e :U 1136 ]
-"435
+[e :U 1183 ]
+"644
 }
-[; ;main.c: 435: }
-[; ;main.c: 437: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=1;LATAbits.LATA3=0;
-"437
+[; ;main.c: 644: }
+[; ;main.c: 646: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=1;LATAbits.LATA3=0;
+"646
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 438: {
-"438
+[; ;main.c: 647: {
+"647
 {
-[; ;main.c: 439: if (PORTAbits.RA5==1){key=7;button_number();while(PORTAbits.RA5==1){};}
-"439
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1140  ]
+[; ;main.c: 648: if (PORTAbits.RA5==1){key=7;button_number();while(PORTAbits.RA5==1){};}
+"648
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1187  ]
 {
 [e = _key -> -> 7 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1141  ]
-[e :U 1142 ]
+[e $U 1188  ]
+[e :U 1189 ]
 {
 }
-[e :U 1141 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1142  ]
-[e :U 1143 ]
+[e :U 1188 ]
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1189  ]
+[e :U 1190 ]
 }
-[e :U 1140 ]
-[; ;main.c: 440: if (PORTAbits.RA7==1){key=8;button_number();while(PORTAbits.RA7==1){};}
-"440
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1144  ]
+[e :U 1187 ]
+[; ;main.c: 649: if (PORTAbits.RA7==1){key=8;button_number();while(PORTAbits.RA7==1){};}
+"649
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1191  ]
 {
 [e = _key -> -> 8 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1145  ]
-[e :U 1146 ]
+[e $U 1192  ]
+[e :U 1193 ]
 {
 }
-[e :U 1145 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1146  ]
-[e :U 1147 ]
+[e :U 1192 ]
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1193  ]
+[e :U 1194 ]
 }
-[e :U 1144 ]
-[; ;main.c: 441: if (PORTAbits.RA6==1){key=9;button_number();while(PORTAbits.RA6==1){};}
-"441
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1148  ]
+[e :U 1191 ]
+[; ;main.c: 650: if (PORTAbits.RA6==1){key=9;button_number();while(PORTAbits.RA6==1){};}
+"650
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1195  ]
 {
 [e = _key -> -> 9 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1149  ]
-[e :U 1150 ]
+[e $U 1196  ]
+[e :U 1197 ]
 {
 }
-[e :U 1149 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1150  ]
-[e :U 1151 ]
+[e :U 1196 ]
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1197  ]
+[e :U 1198 ]
 }
-[e :U 1148 ]
-[; ;main.c: 442: if (PORTCbits.RC2==1){key=13;button_C();while(PORTCbits.RC2==1){};}
-"442
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1152  ]
+[e :U 1195 ]
+[; ;main.c: 651: if (PORTCbits.RC2==1){key=13;button_C();while(PORTCbits.RC2==1){};}
+"651
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1199  ]
 {
 [e = _key -> -> 13 `i `uc ]
 [e ( _button_C ..  ]
-[e $U 1153  ]
-[e :U 1154 ]
+[e $U 1200  ]
+[e :U 1201 ]
 {
 }
-[e :U 1153 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1154  ]
-[e :U 1155 ]
+[e :U 1200 ]
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1201  ]
+[e :U 1202 ]
 }
-[e :U 1152 ]
-"443
+[e :U 1199 ]
+"652
 }
-[; ;main.c: 443: }
-[; ;main.c: 445: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=1;
-"445
+[; ;main.c: 652: }
+[; ;main.c: 654: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=1;
+"654
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
-[; ;main.c: 446: {
-"446
+[; ;main.c: 655: {
+"655
 {
-[; ;main.c: 447: if (PORTAbits.RA5==1){key=14;button_asterisk();while(PORTAbits.RA5==1){};}
-"447
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1156  ]
+[; ;main.c: 656: if (PORTAbits.RA5==1){key=14;button_asterisk();while(PORTAbits.RA5==1){};}
+"656
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1203  ]
 {
 [e = _key -> -> 14 `i `uc ]
 [e ( _button_asterisk ..  ]
-[e $U 1157  ]
-[e :U 1158 ]
+[e $U 1204  ]
+[e :U 1205 ]
 {
 }
-[e :U 1157 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1158  ]
-[e :U 1159 ]
+[e :U 1204 ]
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1205  ]
+[e :U 1206 ]
 }
-[e :U 1156 ]
-[; ;main.c: 448: if (PORTAbits.RA7==1){key=0;button_number();while(PORTAbits.RA7==1){};}
-"448
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1160  ]
+[e :U 1203 ]
+[; ;main.c: 657: if (PORTAbits.RA7==1){key=0;button_number();while(PORTAbits.RA7==1){};}
+"657
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1207  ]
 {
 [e = _key -> -> 0 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1161  ]
-[e :U 1162 ]
+[e $U 1208  ]
+[e :U 1209 ]
 {
 }
-[e :U 1161 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1162  ]
-[e :U 1163 ]
+[e :U 1208 ]
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1209  ]
+[e :U 1210 ]
 }
-[e :U 1160 ]
-[; ;main.c: 449: if (PORTAbits.RA6==1){key=15;button_hash();while(PORTAbits.RA6==1){};}
-"449
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1164  ]
+[e :U 1207 ]
+[; ;main.c: 658: if (PORTAbits.RA6==1){key=15;button_hash();while(PORTAbits.RA6==1){};}
+"658
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1211  ]
 {
 [e = _key -> -> 15 `i `uc ]
 [e ( _button_hash ..  ]
-[e $U 1165  ]
-[e :U 1166 ]
+[e $U 1212  ]
+[e :U 1213 ]
 {
 }
-[e :U 1165 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1166  ]
-[e :U 1167 ]
+[e :U 1212 ]
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1213  ]
+[e :U 1214 ]
 }
-[e :U 1164 ]
-[; ;main.c: 450: if (PORTCbits.RC2==1){key=16;button_D();while(PORTCbits.RC2==1){};}
-"450
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1168  ]
+[e :U 1211 ]
+[; ;main.c: 659: if (PORTCbits.RC2==1){key=16;button_D();while(PORTCbits.RC2==1){};}
+"659
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1215  ]
 {
 [e = _key -> -> 16 `i `uc ]
 [e ( _button_D ..  ]
-[e $U 1169  ]
-[e :U 1170 ]
+[e $U 1216  ]
+[e :U 1217 ]
 {
 }
-[e :U 1169 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1170  ]
-[e :U 1171 ]
+[e :U 1216 ]
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1217  ]
+[e :U 1218 ]
 }
-[e :U 1168 ]
-"451
+[e :U 1215 ]
+"660
 }
-[; ;main.c: 451: }
-[; ;main.c: 453: _delay((unsigned long)((98)*(8000000/4000.0)));
-"453
+[; ;main.c: 660: }
+[; ;main.c: 662: _delay((unsigned long)((98)*(8000000/4000.0)));
+"662
 [e ( __delay (1 -> * -> -> 98 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 455: }
-"455
-[e :UE 1107 ]
+[; ;main.c: 664: }
+"664
+[e :UE 1154 ]
 }
-"457
+"666
 [v _check_home_callback `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 457: void check_home_callback(void){
+[; ;main.c: 666: void check_home_callback(void){
 [e :U _check_home_callback ]
 [f ]
-[; ;main.c: 459: if(activity != 0){
-"459
-[e $ ! != _activity -> 0 `i 1173  ]
+[; ;main.c: 668: if(activity != 0){
+"668
+[e $ ! != _activity -> 0 `i 1220  ]
 {
-[; ;main.c: 461: home_callback--;
-"461
+[; ;main.c: 670: home_callback--;
+"670
 [e -- _home_callback -> 1 `i ]
-[; ;main.c: 463: if(home_callback == 0){
-"463
-[e $ ! == _home_callback -> 0 `i 1174  ]
+[; ;main.c: 672: if(home_callback == 0){
+"672
+[e $ ! == _home_callback -> 0 `i 1221  ]
 {
-[; ;main.c: 465: reset_home_callback();
-"465
+[; ;main.c: 674: reset_home_callback();
+"674
 [e ( _reset_home_callback ..  ]
-[; ;main.c: 467: activity_home();
-"467
+[; ;main.c: 676: activity_home();
+"676
 [e ( _activity_home ..  ]
-"469
+"678
 }
-[e :U 1174 ]
-"470
+[e :U 1221 ]
+"679
 }
-[e :U 1173 ]
-[; ;main.c: 469: }
-[; ;main.c: 470: }
-[; ;main.c: 472: }
-"472
-[e :UE 1172 ]
+[e :U 1220 ]
+[; ;main.c: 678: }
+[; ;main.c: 679: }
+[; ;main.c: 681: }
+"681
+[e :UE 1219 ]
 }
-"474
+"683
 [v _main `(i ~T0 @X0 1 ef ]
 {
-[; ;main.c: 474: int main(void){
+[; ;main.c: 683: int main(void){
 [e :U _main ]
 [f ]
-[; ;main.c: 476: setup();
-"476
+[; ;main.c: 685: setup();
+"685
 [e ( _setup ..  ]
-[; ;main.c: 478: activity_home();
-"478
+[; ;main.c: 687: activity_home();
+"687
 [e ( _activity_home ..  ]
-[; ;main.c: 480: while(1){
-"480
-[e :U 1177 ]
+[; ;main.c: 689: while(1){
+"689
+[e :U 1224 ]
 {
-[; ;main.c: 482: check_home_callback();
-"482
+[; ;main.c: 691: check_home_callback();
+"691
 [e ( _check_home_callback ..  ]
-[; ;main.c: 484: Read_RTC();
-"484
+[; ;main.c: 693: Read_RTC();
+"693
 [e ( _Read_RTC ..  ]
-[; ;main.c: 486: keyboard_control();
-"486
+[; ;main.c: 695: keyboard_control();
+"695
 [e ( _keyboard_control ..  ]
-[; ;main.c: 488: if(activity == 0){
-"488
-[e $ ! == _activity -> 0 `i 1179  ]
+[; ;main.c: 697: if(activity == 0){
+"697
+[e $ ! == _activity -> 0 `i 1226  ]
 {
-[; ;main.c: 489: home_clock_refresh();
-"489
+[; ;main.c: 698: home_clock_refresh();
+"698
 [e ( _home_clock_refresh ..  ]
-[; ;main.c: 490: home_state_refresh();
-"490
-[e ( _home_state_refresh ..  ]
-"491
+[; ;main.c: 699: home_config_refresh();
+"699
+[e ( _home_config_refresh ..  ]
+"700
 }
-[e :U 1179 ]
-"493
+[e :U 1226 ]
+"702
 }
-[e :U 1176 ]
-"480
-[e $U 1177  ]
-[e :U 1178 ]
-[; ;main.c: 491: }
-[; ;main.c: 493: }
-[; ;main.c: 495: return 0;
-"495
+[e :U 1223 ]
+"689
+[e $U 1224  ]
+[e :U 1225 ]
+[; ;main.c: 700: }
+[; ;main.c: 702: }
+[; ;main.c: 704: return 0;
+"704
 [e ) -> 0 `i ]
-[e $UE 1175  ]
-[; ;main.c: 497: }
-"497
-[e :UE 1175 ]
+[e $UE 1222  ]
+[; ;main.c: 706: }
+"706
+[e :UE 1222 ]
 }
 [p f _sprintf 8422404 ]
 [a 3C 37 48 50 117 58 37 48 50 117 58 37 48 50 117 0 ]
 [a 2C 37 48 50 117 47 37 48 50 117 47 37 48 50 117 0 ]
-[a 38C 37 48 49 117 0 ]
-[a 39C 37 48 49 117 0 ]
-[a 33C 82 101 115 101 116 0 ]
-[a 17C 65 99 116 105 118 97 114 0 ]
-[a 25C 65 99 116 105 118 97 114 0 ]
-[a 32C 67 97 109 98 105 97 114 0 ]
-[a 36C 84 111 110 111 0 ]
-[a 19C 80 105 110 0 ]
-[a 31C 80 105 110 0 ]
-[a 35C 86 111 108 117 109 101 110 0 ]
-[a 18C 82 101 108 111 106 0 ]
-[a 28C 82 101 108 111 106 0 ]
-[a 30C 72 111 114 97 0 ]
-[a 20C 65 108 97 114 109 97 0 ]
-[a 34C 65 108 97 114 109 97 0 ]
-[a 29C 70 101 99 104 97 0 ]
+[a 50C 37 48 49 117 0 ]
+[a 51C 37 48 49 117 0 ]
+[a 37C 82 101 115 101 116 0 ]
+[a 21C 65 99 116 105 118 97 114 0 ]
+[a 29C 65 99 116 105 118 97 114 0 ]
+[a 36C 67 97 109 98 105 97 114 0 ]
+[a 45C 65 108 116 111 0 ]
+[a 42C 84 111 110 111 0 ]
+[a 46C 84 111 110 111 0 ]
+[a 44C 66 97 106 111 0 ]
+[a 31C 78 111 0 ]
+[a 23C 80 105 110 0 ]
+[a 35C 80 105 110 0 ]
+[a 41C 86 111 108 117 109 101 110 0 ]
+[a 43C 86 111 108 117 109 101 110 0 ]
+[a 22C 82 101 108 111 106 0 ]
+[a 32C 82 101 108 111 106 0 ]
+[a 30C 83 105 0 ]
+[a 34C 72 111 114 97 0 ]
+[a 24C 65 108 97 114 109 97 0 ]
+[a 40C 65 108 97 114 109 97 0 ]
+[a 33C 70 101 99 104 97 0 ]
 [a 5C 65 67 84 58 78 79 0 ]
-[a 27C 78 79 0 ]
-[a 4C 65 67 84 58 79 75 0 ]
-[a 26C 83 73 0 ]
-[a 6C 62 0 ]
-[a 8C 62 0 ]
+[a 7C 86 79 76 58 65 76 0 ]
+[a 4C 65 67 84 58 83 73 0 ]
+[a 6C 86 79 76 58 66 65 0 ]
 [a 10C 62 0 ]
 [a 12C 62 0 ]
-[a 21C 62 0 ]
-[a 23C 62 0 ]
-[a 16C 73 110 103 114 101 115 101 32 115 117 32 80 73 78 58 0 ]
-[a 14C 88 50 56 0 ]
+[a 14C 62 0 ]
+[a 16C 62 0 ]
+[a 25C 62 0 ]
+[a 27C 62 0 ]
+[a 20C 73 110 103 114 101 115 101 32 115 117 32 80 73 78 58 0 ]
+[a 39C 78 117 101 118 111 32 80 73 78 58 0 ]
+[a 18C 88 50 56 0 ]
 [a 1C 49 50 51 52 0 ]
-[a 37C 42 0 ]
-[a 7C 32 0 ]
-[a 9C 32 0 ]
+[a 9C 84 79 78 79 58 50 0 ]
+[a 48C 66 101 101 112 32 50 0 ]
+[a 8C 84 79 78 79 58 49 0 ]
+[a 47C 66 101 101 112 32 49 0 ]
+[a 49C 42 0 ]
 [a 11C 32 0 ]
 [a 13C 32 0 ]
-[a 22C 32 0 ]
-[a 24C 32 0 ]
-[a 15C 0 ]
+[a 15C 32 0 ]
+[a 17C 32 0 ]
+[a 26C 32 0 ]
+[a 28C 32 0 ]
+[a 19C 0 ]
+[a 38C 0 ]

@@ -38,21 +38,42 @@ char pin[5];
 char pin_input[5];
 int home_callback;
 int home_callback_delay;
+int config_widget;
+int config_widget_time = 0;
 
 /* ACTIVITIES
  * #0 HOME
  * #1 PIN ACCESS
  * #2 MENU
- * #3 CLOCK
+ * #3 CLOCK @TODO
  * #4 ACTIVATION
  * #5 PIN CONFIG
  * #6 ALARM
+ * #7 PIN SET
+ * #8 VOLUMEN SET @TODO
+ * #9 TONO SET @TODO
  */
 int activity;
+
+/* VOLUMEN
+ * #0 BAJO
+ * #1 ALTO
+ */
+int alarm_volume;
+
+/* VOLUMEN
+ * #0 BEEP 1
+ * #1 BEEP 2
+ */
+int alarm_tone;
 
 void lcd_write(int column, int row, char* string){
     lcd_gotoxy(column, row);
     lcd_putrs(string);
+}
+
+void reset_pin(void){
+    strcpy(pin, "1234");
 }
 
 void setup(void){
@@ -86,9 +107,12 @@ void setup(void){
     
     // Setup Global Variables
     home_callback_delay = 50;
+    config_widget = 0;
     menu_selected = 0;
     submenu_selected = 0;
-    strcpy(pin, "1234");
+    alarm_volume = 0;
+    alarm_tone = 0;
+    reset_pin();
 }
 
 void reset_home_callback(void){
@@ -107,17 +131,76 @@ void home_clock_refresh(void){
 }
 
 void home_state_refresh(void){
-
+    
     if(state == 1){
-        sprintf(buffer1,"ACT:OK");
-        LED_2_On;                
+        sprintf(buffer1,"ACT:SI");
     }
     else{
         sprintf(buffer1,"ACT:NO");
-        LED_2_Off;
     }
     lcd_write(1,2,buffer1);
 
+}
+
+void home_volume_refresh(void){
+    
+    if(alarm_volume == 0){
+        sprintf(buffer1,"VOL:BA");
+    }
+    else{
+        sprintf(buffer1,"VOL:AL");
+    }
+    lcd_write(1,2,buffer1);
+
+}
+
+void home_tone_refresh(void){
+    
+    if(alarm_tone == 0){
+        sprintf(buffer1,"TONO:1");
+    }
+    else{
+        sprintf(buffer1,"TONO:2");
+    }
+    lcd_write(1,2,buffer1);
+
+}
+
+void home_config_refresh(void){
+    
+    if(state == 1){LED_2_On;}
+    if(state == 0){LED_2_Off;}
+    
+    config_widget_time++;
+    
+    switch(config_widget){
+            
+        case 0:
+            home_state_refresh();
+            if(config_widget_time == 5){
+                config_widget_time = 0;
+                config_widget = 1;
+            }
+            break;
+
+        case 1:
+            home_volume_refresh();
+            if(config_widget_time == 5){
+                config_widget_time = 0;
+                config_widget = 2;
+            }
+            break;
+        
+        case 2:
+            home_tone_refresh();
+            if(config_widget_time == 5){
+                config_widget_time = 0;
+                config_widget = 0;
+            }
+            break;
+
+    }
+    
 }
 
 void action_menu_selector_0(void){
@@ -230,8 +313,8 @@ void activity_submenu_activation(void){
     activity = 4;
     lcd_init();
     lcd_write(1,1,"Activar");
-    lcd_write(10,1,"SI");
-    lcd_write(10,2,"NO");
+    lcd_write(10,1,"Si");
+    lcd_write(10,2,"No");
     action_submenu_selector_0();
 }
 
@@ -256,6 +339,17 @@ void activity_submenu_pin(void){
     action_submenu_selector_0();
 }
 
+void activity_submenu_pin_set(void){
+    
+    activity = 7;
+    strcpy(pin_input, "");
+    lcd_init();
+    lcd_write(1,1,"Nuevo PIN:");
+    lcd_gotoxy(1,2);
+    lcd_comand(0b00001111);
+    
+}
+
 void activity_submenu_alarm(void){
     
     activity = 6;
@@ -264,6 +358,28 @@ void activity_submenu_alarm(void){
     lcd_write(10,1,"Volumen");
     lcd_write(10,2,"Tono");
     action_submenu_selector_0();
+}
+
+void activity_submenu_alarm_volume(void){
+
+    activity = 8;
+    lcd_init();
+    lcd_write(1,1,"Volumen");
+    lcd_write(10,1,"Bajo");
+    lcd_write(10,2,"Alto");
+    action_submenu_selector_0();
+
+}
+
+void activity_submenu_alarm_tone(void){
+
+    activity = 9;
+    lcd_init();
+    lcd_write(1,1,"Tono");
+    lcd_write(10,1,"Beep 1");
+    lcd_write(10,2,"Beep 2");
+    action_submenu_selector_0();
+
 }
 
 void pin_input_validator(void){
@@ -276,6 +392,12 @@ void pin_input_validator(void){
     else{
         activity_pin();
     }
+}
+
+void pin_set(void){
+    
+    strcpy(pin, pin_input);
+    activity_home();
 }
 
 void button_A(void){
@@ -343,6 +465,75 @@ void button_B_submenu_activation(void){
     
 }
 
+void button_B_submenu_pin_config(void){
+   
+    switch(submenu_selected){
+            
+        case 0:
+            activity_submenu_pin_set();
+            break;
+
+        case 1:
+            reset_pin();
+            activity_home();
+            break;
+
+    }
+
+}
+
+void button_B_submenu_alarm_config(){
+    
+    switch(submenu_selected){
+            
+        case 0:
+            activity_submenu_alarm_volume();
+            break;
+
+        case 1:
+            activity_submenu_alarm_tone();
+            break;
+
+    }
+    
+}
+
+void button_B_submenu_alarm_volume(void){
+    
+    switch(submenu_selected){
+            
+        case 0:
+            alarm_volume = 0;
+            break;
+
+        case 1:
+            alarm_volume = 1;
+            break;
+
+    }
+    
+    activity_home();
+    
+}
+
+void button_B_submenu_alarm_tone(void){
+    
+    switch(submenu_selected){
+            
+        case 0:
+            alarm_tone = 0;
+            break;
+
+        case 1:
+            alarm_tone = 1;
+            break;
+
+    }
+    
+    activity_home();
+    
+}
+
 void button_B(void){
     
     reset_home_callback();
@@ -357,6 +548,21 @@ void button_B(void){
             button_B_submenu_activation();
             break;
     
+        case 5:
+            button_B_submenu_pin_config();
+            break;
+            
+        case 6:
+            button_B_submenu_alarm_config();
+            break;
+        
+        case 8:
+            button_B_submenu_alarm_volume();
+            break;
+        
+        case 9:
+            button_B_submenu_alarm_tone();
+            break;
     }
     
 }
@@ -395,13 +601,17 @@ void button_hash(void){
         pin_input_validator();
     }
     
+    if(activity == 7){
+        pin_set();
+    }
+    
 }
 
 void button_number(void){
     
     reset_home_callback();
     
-    if(activity == 1){
+    if(activity == 1 || activity == 7){
         
         lcd_putrs("*");        
         sprintf(buffer1, "%01u", key);
@@ -410,8 +620,7 @@ void button_number(void){
     } else {
         
         sprintf(buffer1,"%01u",key);
-        // lcd_putrs(buffer1);
-        
+        // Nothing printed on display
     }
     
 }
@@ -487,7 +696,7 @@ int main(void){
         
         if(activity == 0){
             home_clock_refresh();
-            home_state_refresh();
+            home_config_refresh();
         }
         
     }

@@ -1,104 +1,258 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"144 C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\rtcc.h
-[s S1028 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
-[n S1028 . year rsvd mday mon hour wday sec min ]
+"144 ../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\rtcc.h
+[s S1029 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S1029 . year rsvd mday mon hour wday sec min ]
 "142
-[u S1027 `S1028 1 `uc -> 8 `i `ui -> 4 `i `ul -> 2 `i ]
-[n S1027 . f b w l ]
+[u S1028 `S1029 1 `uc -> 8 `i `ui -> 4 `i `ul -> 2 `i ]
+[n S1028 . f b w l ]
 "113
-[s S1024 `uc 1 `uc 1 `uc 1 `uc 1 ]
-[n S1024 . rsvd sec min hour ]
+[s S1025 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S1025 . rsvd sec min hour ]
 "111
-[u S1023 `S1024 1 `uc -> 4 `i `ui -> 2 `i `ul 1 ]
-[n S1023 . f b w l ]
+[u S1024 `S1025 1 `uc -> 4 `i `ui -> 2 `i `ul 1 ]
+[n S1024 . f b w l ]
 "128
-[s S1026 `uc 1 `uc 1 `uc 1 `uc 1 ]
-[n S1026 . wday mday mon year ]
+[s S1027 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S1027 . wday mday mon year ]
 "126
-[u S1025 `S1026 1 `uc -> 4 `i `ui -> 2 `i `ul 1 ]
-[n S1025 . f b w l ]
-"19 C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\delays.h
+[u S1026 `S1027 1 `uc -> 4 `i `ui -> 2 `i `ul 1 ]
+[n S1026 . f b w l ]
+"19 ../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\delays.h
 [v _Delay10TCYx `(v ~T0 @X0 0 ef1`uc ]
 "31
 [v _Delay1KTCYx `(v ~T0 @X0 0 ef1`uc ]
-"680 C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\rtcc.h
+"680 ../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\rtcc.h
 [v _RtccWrOn `(v ~T0 @X0 0 ef ]
 "7920 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
-[s S533 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S533 . RTCCIE TMR3GIE CTMUIE TMR4IE TX2IE RC2IE BCL2IE SSP2IE ]
+[s S534 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S534 . RTCCIE TMR3GIE CTMUIE TMR4IE TX2IE RC2IE BCL2IE SSP2IE ]
 "7930
-[s S534 :1 `uc 1 ]
-[n S534 . RXB0IE ]
+[s S535 :1 `uc 1 ]
+[n S535 . RXB0IE ]
 "7933
-[s S535 :1 `uc 1 :1 `uc 1 ]
-[n S535 . . RXB1IE ]
-"7937
 [s S536 :1 `uc 1 :1 `uc 1 ]
-[n S536 . . RXBNIE ]
+[n S536 . . RXB1IE ]
+"7937
+[s S537 :1 `uc 1 :1 `uc 1 ]
+[n S537 . . RXBNIE ]
 "7941
-[s S537 :2 `uc 1 :1 `uc 1 ]
-[n S537 . . TXB0IE ]
+[s S538 :2 `uc 1 :1 `uc 1 ]
+[n S538 . . TXB0IE ]
 "7945
-[s S538 :3 `uc 1 :1 `uc 1 ]
-[n S538 . . TXB1IE ]
+[s S539 :3 `uc 1 :1 `uc 1 ]
+[n S539 . . TXB1IE ]
 "7949
-[s S539 :4 `uc 1 :1 `uc 1 ]
-[n S539 . . TXB2IE ]
-"7953
 [s S540 :4 `uc 1 :1 `uc 1 ]
-[n S540 . . TXBNIE ]
+[n S540 . . TXB2IE ]
+"7953
+[s S541 :4 `uc 1 :1 `uc 1 ]
+[n S541 . . TXBNIE ]
 "7919
-[u S532 `S533 1 `S534 1 `S535 1 `S536 1 `S537 1 `S538 1 `S539 1 `S540 1 ]
-[n S532 . . . . . . . . . ]
+[u S533 `S534 1 `S535 1 `S536 1 `S537 1 `S538 1 `S539 1 `S540 1 `S541 1 ]
+[n S533 . . . . . . . . . ]
 "7958
-[v _PIE3bits `VS532 ~T0 @X0 0 e@4003 ]
+[v _PIE3bits `VS533 ~T0 @X0 0 e@4003 ]
 "99 Unimic/unmc_01/headers\unmc_rtcc_01.h
-[c E7337 0 1 .. ]
-[n E7337 _BOOL FALSE TRUE  ]
-"676 C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\rtcc.h
-[v _RtccWriteTime `(E7337 ~T0 @X0 0 ef2`*CS1023`E7337 ]
+[c E7481 0 1 .. ]
+[n E7481 _BOOL FALSE TRUE  ]
+"676 ../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\rtcc.h
+[v _RtccWriteTime `(E7481 ~T0 @X0 0 ef2`*CS1024`E7481 ]
 "674
-[v _RtccWriteDate `(E7337 ~T0 @X0 0 ef2`*CS1025`E7337 ]
+[v _RtccWriteDate `(E7481 ~T0 @X0 0 ef2`*CS1026`E7481 ]
 "2409 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
-[s S175 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S175 . RTCPTR0 RTCPTR1 RTCOE HALFSEC RTCSYNC RTCWREN . RTCEN ]
+[s S176 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S176 . RTCPTR0 RTCPTR1 RTCOE HALFSEC RTCSYNC RTCWREN . RTCEN ]
 "2408
-[u S174 `S175 1 ]
-[n S174 . . ]
+[u S175 `S176 1 ]
+[n S175 . . ]
 "2420
-[v _RTCCFGbits `VS174 ~T0 @X0 0 e@3903 ]
-"656 C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\rtcc.h
-[v _RtccReadTime `(v ~T0 @X0 0 ef1`*S1023 ]
+[v _RTCCFGbits `VS175 ~T0 @X0 0 e@3903 ]
+"656 ../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\rtcc.h
+[v _RtccReadTime `(v ~T0 @X0 0 ef1`*S1024 ]
 "654
-[v _RtccReadDate `(v ~T0 @X0 0 ef1`*S1025 ]
+[v _RtccReadDate `(v ~T0 @X0 0 ef1`*S1026 ]
 "104 Unimic/unmc_01/headers\unmc_lcd_216.h
 [v _lcd_gotoxy `(v ~T0 @X0 0 ef2`uc`uc ]
 "109
 [v _lcd_putrs `(v ~T0 @X0 0 ef1`*Cuc ]
+"103
+[v _lcd_init `(v ~T0 @X0 0 ef ]
 "43 C:\Program Files (x86)\Microchip\xc8\v1.34\include\string.h
 [v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"106 Unimic/unmc_01/headers\unmc_lcd_216.h
+[v _lcd_comand `(v ~T0 @X0 0 ef1`uc ]
+"51 C:\Program Files (x86)\Microchip\xc8\v1.34\include\string.h
+[v _strcmp `(i ~T0 @X0 0 ef2`*Cuc`*Cuc ]
+"206 C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"6359 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
+[s S447 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S447 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"6369
+[s S448 :1 `uc 1 ]
+[n S448 . LB0 ]
+"6372
+[s S449 :1 `uc 1 :1 `uc 1 ]
+[n S449 . . LB1 ]
+"6376
+[s S450 :2 `uc 1 :1 `uc 1 ]
+[n S450 . . LB2 ]
+"6380
+[s S451 :3 `uc 1 :1 `uc 1 ]
+[n S451 . . LB3 ]
+"6384
+[s S452 :4 `uc 1 :1 `uc 1 ]
+[n S452 . . LB4 ]
+"6388
+[s S453 :5 `uc 1 :1 `uc 1 ]
+[n S453 . . LB5 ]
+"6392
+[s S454 :6 `uc 1 :1 `uc 1 ]
+[n S454 . . LB6 ]
+"6396
+[s S455 :7 `uc 1 :1 `uc 1 ]
+[n S455 . . LB7 ]
+"6358
+[u S446 `S447 1 `S448 1 `S449 1 `S450 1 `S451 1 `S452 1 `S453 1 `S454 1 `S455 1 ]
+[n S446 . . . . . . . . . . ]
+"6401
+[v _LATBbits `VS446 ~T0 @X0 0 e@3978 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.34\include\string.h
+[v _strcat `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"6232 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
+[s S437 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S437 . LATA0 LATA1 LATA2 LATA3 . LATA5 LATA6 LATA7 ]
+"6242
+[s S438 :1 `uc 1 ]
+[n S438 . LA0 ]
+"6245
+[s S439 :1 `uc 1 :1 `uc 1 ]
+[n S439 . . LA1 ]
+"6249
+[s S440 :2 `uc 1 :1 `uc 1 ]
+[n S440 . . LA2 ]
+"6253
+[s S441 :3 `uc 1 :1 `uc 1 ]
+[n S441 . . LA3 ]
+"6257
+[s S442 :4 `uc 1 :1 `uc 1 ]
+[n S442 . . LA4 ]
+"6261
+[s S443 :5 `uc 1 :1 `uc 1 ]
+[n S443 . . LA5 ]
+"6265
+[s S444 :6 `uc 1 :1 `uc 1 ]
+[n S444 . . LA6 ]
+"6269
+[s S445 :7 `uc 1 :1 `uc 1 ]
+[n S445 . . LA7 ]
+"6231
+[u S436 `S437 1 `S438 1 `S439 1 `S440 1 `S441 1 `S442 1 `S443 1 `S444 1 `S445 1 ]
+[n S436 . . . . . . . . . . ]
+"6274
+[v _LATAbits `VS436 ~T0 @X0 0 e@3977 ]
+"5275
+[s S396 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S396 . RA0 RA1 RA2 RA3 . RA5 RA6 RA7 ]
+"5285
+[s S397 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S397 . AN0 AN1 AN2 AN3 . AN4 OSC2 OSC1 ]
+"5295
+[s S398 :5 `uc 1 :1 `uc 1 ]
+[n S398 . . NOT_SS1 ]
+"5299
+[s S399 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S399 . C1INA C2INA VREF_MINUS VREF_PLUS . nSS1 CLKO CLKI ]
+"5309
+[s S400 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S400 . . CVREF_MINUS C1INB . HLVDIN ]
+"5316
+[s S401 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S401 . RP0 RP1 C2INB . RCV ]
+"5323
+[s S402 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
+[n S402 . ULPWU . RP2 ]
+"5328
+[s S403 :5 `uc 1 :1 `uc 1 ]
+[n S403 . . LVDIN ]
+"5332
+[s S404 :4 `uc 1 :1 `uc 1 ]
+[n S404 . . RA4 ]
+"5336
+[s S405 :7 `uc 1 :1 `uc 1 ]
+[n S405 . . RJPU ]
+"5340
+[s S406 :1 `uc 1 ]
+[n S406 . ULPWUIN ]
+"5274
+[u S395 `S396 1 `S397 1 `S398 1 `S399 1 `S400 1 `S401 1 `S402 1 `S403 1 `S404 1 `S405 1 `S406 1 ]
+[n S395 . . . . . . . . . . . . ]
+"5344
+[v _PORTAbits `VS395 ~T0 @X0 0 e@3968 ]
+"5791
+[s S417 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S417 . RC0 RC1 RC2 . RC4 RC5 RC6 RC7 ]
+"5801
+[s S418 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S418 . T1OSO T1OSI AN11 . D_MINUS D_PLUS ]
+"5809
+[s S419 :1 `uc 1 :1 `uc 1 ]
+[n S419 . . NOT_UOE ]
+"5813
+[s S420 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S420 . T1CK nUOE CTPLS . VM VP TX1 RX1 ]
+"5823
+[s S421 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S421 . RP11 RP12 RP13 . CK1 DT1 ]
+"5831
+[s S422 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S422 . . RP17 SDO1 ]
+"5836
+[s S423 :7 `uc 1 :1 `uc 1 ]
+[n S423 . . RP18 ]
+"5840
+[s S424 :1 `uc 1 :1 `uc 1 ]
+[n S424 . . CCP2 ]
+"5844
+[s S425 :2 `uc 1 :1 `uc 1 ]
+[n S425 . . PA1 ]
+"5848
+[s S426 :1 `uc 1 :1 `uc 1 ]
+[n S426 . . PA2 ]
+"5852
+[s S427 :3 `uc 1 :1 `uc 1 ]
+[n S427 . . RC3 ]
+"5790
+[u S416 `S417 1 `S418 1 `S419 1 `S420 1 `S421 1 `S422 1 `S423 1 `S424 1 `S425 1 `S426 1 `S427 1 ]
+[n S416 . . . . . . . . . . . . ]
+"5857
+[v _PORTCbits `VS416 ~T0 @X0 0 e@3970 ]
+[v F8289 `(v ~T0 @X0 1 tf1`ul ]
+"161 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18.h
+[v __delay `JF8289 ~T0 @X0 0 e ]
+[p i __delay ]
 "7249 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
-[s S503 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S503 . TUN PLLEN INTSRC ]
+[s S504 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S504 . TUN PLLEN INTSRC ]
 "7254
-[s S504 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S504 . TUN0 TUN1 TUN2 TUN3 TUN4 TUN5 ]
+[s S505 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S505 . TUN0 TUN1 TUN2 TUN3 TUN4 TUN5 ]
 "7248
-[u S502 `S503 1 `S504 1 ]
-[n S502 . . . ]
+[u S503 `S504 1 `S505 1 ]
+[n S503 . . . ]
 "7263
-[v _OSCTUNEbits `VS502 ~T0 @X0 0 e@3995 ]
+[v _OSCTUNEbits `VS503 ~T0 @X0 0 e@3995 ]
 "14040
-[s S897 :2 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
-[n S897 . SCS . OSTS IRCF IDLEN ]
+[s S898 :2 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S898 . SCS . OSTS IRCF IDLEN ]
 "14047
-[s S898 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S898 . SCS0 SCS1 . IRCF0 IRCF1 IRCF2 ]
+[s S899 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S899 . SCS0 SCS1 . IRCF0 IRCF1 IRCF2 ]
 "14039
-[u S896 `S897 1 `S898 1 ]
-[n S896 . . . ]
+[u S897 `S898 1 `S899 1 ]
+[n S897 . . . ]
 "14056
-[v _OSCCONbits `VS896 ~T0 @X0 0 e@4051 ]
+[v _OSCCONbits `VS897 ~T0 @X0 0 e@4051 ]
 "6794
 [v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
 "6850
@@ -114,180 +268,85 @@ Version 3.2 HI-TECH Software Intermediate Code
 "10682
 [v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
 "13132
-[s S844 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :2 `uc 1 ]
-[n S844 . TMR1ON RD16 T1SYNC T1OSCEN T1CKPS TMR1CS ]
+[s S845 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :2 `uc 1 ]
+[n S845 . TMR1ON RD16 T1SYNC T1OSCEN T1CKPS TMR1CS ]
 "13140
-[s S845 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S845 . . T1CKPS0 T1CKPS1 TMR1CS0 TMR1CS1 ]
+[s S846 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S846 . . T1CKPS0 T1CKPS1 TMR1CS0 TMR1CS1 ]
 "13147
-[s S846 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S846 . . RD161 T1SYNC1 T1OSCEN1 T1CKPS01 T1CKPS11 TMR1CS01 TMR1CS11 ]
+[s S847 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S847 . . RD161 T1SYNC1 T1OSCEN1 T1CKPS01 T1CKPS11 TMR1CS01 TMR1CS11 ]
 "13157
-[s S847 :3 `uc 1 :1 `uc 1 ]
-[n S847 . . SOSCEN ]
+[s S848 :3 `uc 1 :1 `uc 1 ]
+[n S848 . . SOSCEN ]
 "13161
-[s S848 :7 `uc 1 :1 `uc 1 ]
-[n S848 . . T1RD16 ]
+[s S849 :7 `uc 1 :1 `uc 1 ]
+[n S849 . . T1RD16 ]
 "13131
-[u S843 `S844 1 `S845 1 `S846 1 `S847 1 `S848 1 ]
-[n S843 . . . . . . ]
+[u S844 `S845 1 `S846 1 `S847 1 `S848 1 `S849 1 ]
+[n S844 . . . . . . ]
 "13166
-[v _T1CONbits `VS843 ~T0 @X0 0 e@4045 ]
-"103 Unimic/unmc_01/headers\unmc_lcd_216.h
-[v _lcd_init `(v ~T0 @X0 0 ef ]
-"106
-[v _lcd_comand `(v ~T0 @X0 0 ef1`uc ]
-"6359 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
-[s S446 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S446 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
-"6369
-[s S447 :1 `uc 1 ]
-[n S447 . LB0 ]
-"6372
-[s S448 :1 `uc 1 :1 `uc 1 ]
-[n S448 . . LB1 ]
-"6376
-[s S449 :2 `uc 1 :1 `uc 1 ]
-[n S449 . . LB2 ]
-"6380
-[s S450 :3 `uc 1 :1 `uc 1 ]
-[n S450 . . LB3 ]
-"6384
-[s S451 :4 `uc 1 :1 `uc 1 ]
-[n S451 . . LB4 ]
-"6388
-[s S452 :5 `uc 1 :1 `uc 1 ]
-[n S452 . . LB5 ]
-"6392
-[s S453 :6 `uc 1 :1 `uc 1 ]
-[n S453 . . LB6 ]
-"6396
-[s S454 :7 `uc 1 :1 `uc 1 ]
-[n S454 . . LB7 ]
-"6358
-[u S445 `S446 1 `S447 1 `S448 1 `S449 1 `S450 1 `S451 1 `S452 1 `S453 1 `S454 1 ]
-[n S445 . . . . . . . . . . ]
-"6401
-[v _LATBbits `VS445 ~T0 @X0 0 e@3978 ]
-"206 C:\Program Files (x86)\Microchip\xc8\v1.34\include\stdio.h
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"51 C:\Program Files (x86)\Microchip\xc8\v1.34\include\string.h
-[v _strcmp `(i ~T0 @X0 0 ef2`*Cuc`*Cuc ]
-"42
-[v _strcat `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
-"6232 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f26j50.h
-[s S436 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S436 . LATA0 LATA1 LATA2 LATA3 . LATA5 LATA6 LATA7 ]
-"6242
-[s S437 :1 `uc 1 ]
-[n S437 . LA0 ]
-"6245
-[s S438 :1 `uc 1 :1 `uc 1 ]
-[n S438 . . LA1 ]
-"6249
-[s S439 :2 `uc 1 :1 `uc 1 ]
-[n S439 . . LA2 ]
-"6253
-[s S440 :3 `uc 1 :1 `uc 1 ]
-[n S440 . . LA3 ]
-"6257
-[s S441 :4 `uc 1 :1 `uc 1 ]
-[n S441 . . LA4 ]
-"6261
-[s S442 :5 `uc 1 :1 `uc 1 ]
-[n S442 . . LA5 ]
-"6265
-[s S443 :6 `uc 1 :1 `uc 1 ]
-[n S443 . . LA6 ]
-"6269
-[s S444 :7 `uc 1 :1 `uc 1 ]
-[n S444 . . LA7 ]
-"6231
-[u S435 `S436 1 `S437 1 `S438 1 `S439 1 `S440 1 `S441 1 `S442 1 `S443 1 `S444 1 ]
-[n S435 . . . . . . . . . . ]
-"6274
-[v _LATAbits `VS435 ~T0 @X0 0 e@3977 ]
-"5275
-[s S395 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S395 . RA0 RA1 RA2 RA3 . RA5 RA6 RA7 ]
-"5285
-[s S396 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S396 . AN0 AN1 AN2 AN3 . AN4 OSC2 OSC1 ]
-"5295
-[s S397 :5 `uc 1 :1 `uc 1 ]
-[n S397 . . NOT_SS1 ]
-"5299
-[s S398 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S398 . C1INA C2INA VREF_MINUS VREF_PLUS . nSS1 CLKO CLKI ]
-"5309
-[s S399 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S399 . . CVREF_MINUS C1INB . HLVDIN ]
-"5316
-[s S400 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S400 . RP0 RP1 C2INB . RCV ]
-"5323
-[s S401 :1 `uc 1 :4 `uc 1 :1 `uc 1 ]
-[n S401 . ULPWU . RP2 ]
-"5328
-[s S402 :5 `uc 1 :1 `uc 1 ]
-[n S402 . . LVDIN ]
-"5332
-[s S403 :4 `uc 1 :1 `uc 1 ]
-[n S403 . . RA4 ]
-"5336
-[s S404 :7 `uc 1 :1 `uc 1 ]
-[n S404 . . RJPU ]
-"5340
-[s S405 :1 `uc 1 ]
-[n S405 . ULPWUIN ]
-"5274
-[u S394 `S395 1 `S396 1 `S397 1 `S398 1 `S399 1 `S400 1 `S401 1 `S402 1 `S403 1 `S404 1 `S405 1 ]
-[n S394 . . . . . . . . . . . . ]
-"5344
-[v _PORTAbits `VS394 ~T0 @X0 0 e@3968 ]
-"5791
-[s S416 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S416 . RC0 RC1 RC2 . RC4 RC5 RC6 RC7 ]
-"5801
-[s S417 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S417 . T1OSO T1OSI AN11 . D_MINUS D_PLUS ]
-"5809
-[s S418 :1 `uc 1 :1 `uc 1 ]
-[n S418 . . NOT_UOE ]
-"5813
-[s S419 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S419 . T1CK nUOE CTPLS . VM VP TX1 RX1 ]
-"5823
-[s S420 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S420 . RP11 RP12 RP13 . CK1 DT1 ]
-"5831
-[s S421 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S421 . . RP17 SDO1 ]
-"5836
-[s S422 :7 `uc 1 :1 `uc 1 ]
-[n S422 . . RP18 ]
-"5840
-[s S423 :1 `uc 1 :1 `uc 1 ]
-[n S423 . . CCP2 ]
-"5844
-[s S424 :2 `uc 1 :1 `uc 1 ]
-[n S424 . . PA1 ]
-"5848
-[s S425 :1 `uc 1 :1 `uc 1 ]
-[n S425 . . PA2 ]
-"5852
-[s S426 :3 `uc 1 :1 `uc 1 ]
-[n S426 . . RC3 ]
-"5790
-[u S415 `S416 1 `S417 1 `S418 1 `S419 1 `S420 1 `S421 1 `S422 1 `S423 1 `S424 1 `S425 1 `S426 1 ]
-[n S415 . . . . . . . . . . . . ]
-"5857
-[v _PORTCbits `VS415 ~T0 @X0 0 e@3970 ]
-[v F8145 `(v ~T0 @X0 1 tf1`ul ]
-"161 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18.h
-[v __delay `JF8145 ~T0 @X0 0 e ]
-[p i __delay ]
+[v _T1CONbits `VS844 ~T0 @X0 0 e@4045 ]
 [p mainexit ]
+[; ;stdio.h: 8: typedef int ptrdiff_t;
+[; ;stdio.h: 9: typedef unsigned size_t;
+[; ;stdio.h: 10: typedef unsigned short wchar_t;
+[; ;stdarg.h: 7: typedef void * va_list[1];
+[; ;stdarg.h: 10: extern void * __va_start(void);
+[; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
+[; ;stdio.h: 24: extern int errno;
+[; ;stdio.h: 55: struct __prbuf
+[; ;stdio.h: 56: {
+[; ;stdio.h: 57: char * ptr;
+[; ;stdio.h: 58: void (* func)(char);
+[; ;stdio.h: 59: };
+[; ;conio.h: 17: extern int errno;
+[; ;conio.h: 20: extern void init_uart(void);
+[; ;conio.h: 22: extern char getch(void);
+[; ;conio.h: 23: extern char getche(void);
+[; ;conio.h: 24: extern void putch(char);
+[; ;conio.h: 25: extern void ungetch(char);
+[; ;conio.h: 27: extern __bit kbhit(void);
+[; ;conio.h: 31: extern char * cgets(char *);
+[; ;conio.h: 32: extern void cputs(const char *);
+[; ;stdio.h: 100: extern int cprintf(char *, ...);
+[; ;stdio.h: 105: extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+[; ;stdio.h: 195: extern char * gets(char *);
+[; ;stdio.h: 196: extern int puts(const char *);
+[; ;stdio.h: 197: extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+[; ;stdio.h: 198: extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+[; ;stdio.h: 199: extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+[; ;stdio.h: 200: extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+[; ;stdio.h: 201: extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+[; ;stdio.h: 202: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+[; ;stdio.h: 206: extern int sprintf(char *, const char *, ...);
+[; ;stdio.h: 207: extern int printf(const char *, ...);
+[; ;string.h: 22: extern void * memcpy(void *, const void *, size_t);
+[; ;string.h: 23: extern void * memmove(void *, const void *, size_t);
+[; ;string.h: 24: extern void * memset(void *, int, size_t);
+[; ;string.h: 42: extern char * strcat(char *, const char *);
+[; ;string.h: 43: extern char * strcpy(char *, const char *);
+[; ;string.h: 44: extern char * strncat(char *, const char *, size_t);
+[; ;string.h: 45: extern char * strncpy(char *, const char *, size_t);
+[; ;string.h: 46: extern char * strdup(const char *);
+[; ;string.h: 47: extern char * strtok(char *, const char *);
+[; ;string.h: 50: extern int memcmp(const void *, const void *, size_t);
+[; ;string.h: 51: extern int strcmp(const char *, const char *);
+[; ;string.h: 52: extern int stricmp(const char *, const char *);
+[; ;string.h: 53: extern int strncmp(const char *, const char *, size_t);
+[; ;string.h: 54: extern int strnicmp(const char *, const char *, size_t);
+[; ;string.h: 55: extern void * memchr(const void *, int, size_t);
+[; ;string.h: 56: extern size_t strcspn(const char *, const char *);
+[; ;string.h: 57: extern char * strpbrk(const char *, const char *);
+[; ;string.h: 58: extern size_t strspn(const char *, const char *);
+[; ;string.h: 59: extern char * strstr(const char *, const char *);
+[; ;string.h: 60: extern char * stristr(const char *, const char *);
+[; ;string.h: 61: extern char * strerror(int);
+[; ;string.h: 62: extern size_t strlen(const char *);
+[; ;string.h: 63: extern char * strchr(const char *, int);
+[; ;string.h: 64: extern char * strichr(const char *, int);
+[; ;string.h: 65: extern char * strrchr(const char *, int);
+[; ;string.h: 66: extern char * strrichr(const char *, int);
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f26j50.h: 49: extern volatile unsigned char RPOR0 @ 0xEC6;
@@ -6969,167 +7028,164 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18f26j50.h: 17686: extern volatile __bit nWRITE @ (((unsigned) &SSP1STAT)*8) + 2;
 [; ;pic18f26j50.h: 17688: extern volatile __bit nWRITE1 @ (((unsigned) &SSP1STAT)*8) + 2;
 [; ;pic18f26j50.h: 17690: extern volatile __bit nWRITE2 @ (((unsigned) &SSP2STAT)*8) + 2;
-[; ;adc.h: 2008: union ADCResult
-[; ;adc.h: 2009: {
-[; ;adc.h: 2010: int lr;
-[; ;adc.h: 2011: char br[2];
-[; ;adc.h: 2012: };
-[; ;adc.h: 2014: char BusyADC (void);
-[; ;adc.h: 2016: void ConvertADC (void);
-[; ;adc.h: 2018: void CloseADC(void);
-[; ;adc.h: 2026: int ReadADC(void);
-[; ;adc.h: 2059: void OpenADC ( unsigned char ,
-[; ;adc.h: 2060: unsigned char ,
-[; ;adc.h: 2061: unsigned int );
-[; ;adc.h: 2084: void SetChanADC(unsigned char );
-[; ;adc.h: 2100: void SelChanConvADC( unsigned char );
-[; ;ancomp.h: 202: void Close_ancomp1( void );
-[; ;ancomp.h: 203: void Open_ancomp1(unsigned char config);
-[; ;ancomp.h: 204: void Close_ancomp2( void );
-[; ;ancomp.h: 205: void Open_ancomp2(unsigned char config);
-[; ;spi.h: 236: void OpenSPI1( unsigned char sync_mode,
-[; ;spi.h: 237: unsigned char bus_mode,
-[; ;spi.h: 238: unsigned char smp_phase );
-[; ;spi.h: 240: signed char WriteSPI1( unsigned char data_out );
-[; ;spi.h: 242: void getsSPI1( unsigned char *rdptr, unsigned char length );
-[; ;spi.h: 244: void putsSPI1( unsigned char *wrptr );
-[; ;spi.h: 246: unsigned char ReadSPI1( void );
-[; ;spi.h: 441: void OpenSPI2( unsigned char sync_mode,
-[; ;spi.h: 442: unsigned char bus_mode,
-[; ;spi.h: 443: unsigned char smp_phase );
-[; ;spi.h: 445: signed char WriteSPI2( unsigned char data_out );
-[; ;spi.h: 447: void getsSPI2( unsigned char *rdptr, unsigned char length );
-[; ;spi.h: 449: void putsSPI2( unsigned char *wrptr );
-[; ;spi.h: 451: unsigned char ReadSPI2( void );
-[; ;can2510.h: 414: void CAN2510Initialize(  unsigned int configuration,
-[; ;can2510.h: 415: unsigned char brp,
-[; ;can2510.h: 416: unsigned char interruptFlags,
-[; ;can2510.h: 417: unsigned char SPI_syncMode,
-[; ;can2510.h: 418: unsigned char SPI_busMode,
-[; ;can2510.h: 419: unsigned char SPI_smpPhase );
-[; ;can2510.h: 421: signed char CAN2510Init(  unsigned long BufferConfig,
-[; ;can2510.h: 422: unsigned long BitTimeConfig,
-[; ;can2510.h: 423: unsigned char interruptEnables,
-[; ;can2510.h: 424: unsigned char SPI_syncMode,
-[; ;can2510.h: 425: unsigned char SPI_busMode,
-[; ;can2510.h: 426: unsigned char SPI_smpPhase );
-[; ;can2510.h: 428: void CAN2510Enable( void );
-[; ;can2510.h: 430: void CAN2510Disable( void );
-[; ;can2510.h: 432: void CAN2510Reset( void );
-[; ;can2510.h: 434: void CAN2510SetMode(  unsigned char mode );
-[; ;can2510.h: 436: unsigned char CAN2510ReadMode( void );
-[; ;can2510.h: 438: unsigned char CAN2510ReadStatus( void );
-[; ;can2510.h: 440: unsigned char CAN2510ErrorState( void );
-[; ;can2510.h: 442: unsigned char CAN2510InterruptStatus( void );
-[; ;can2510.h: 444: void CAN2510InterruptEnable( unsigned char interruptFlags );
-[; ;can2510.h: 446: unsigned char CAN2510ByteRead(  unsigned char addr );
-[; ;can2510.h: 448: void CAN2510ByteWrite(  unsigned char addr,  unsigned char value );
-[; ;can2510.h: 450: void CAN2510SequentialRead(  unsigned char *DataArray,
-[; ;can2510.h: 451: unsigned char CAN2510addr,
-[; ;can2510.h: 452: unsigned char numbytes );
-[; ;can2510.h: 454: void CAN2510SequentialWrite(  unsigned char *DataArray,
-[; ;can2510.h: 455: unsigned char CAN2510addr,
-[; ;can2510.h: 456: unsigned char numbytes );
-[; ;can2510.h: 458: void CAN2510BitModify(  unsigned char address,
-[; ;can2510.h: 459: unsigned char mask,
-[; ;can2510.h: 460: unsigned char data );
-[; ;can2510.h: 462: void CAN2510SetSingleMaskStd(  unsigned char maskNum,  unsigned int mask );
-[; ;can2510.h: 464: void CAN2510SetSingleMaskXtd(  unsigned char maskNum,  unsigned long mask );
-[; ;can2510.h: 466: void CAN2510SetSingleFilterStd(  unsigned char filterNum,  unsigned int filter );
-[; ;can2510.h: 468: void CAN2510SetSingleFilterXtd(  unsigned char filterNum,  unsigned long filter );
-[; ;can2510.h: 470: signed char CAN2510SetMsgFilterStd(  unsigned char bufferNum,
-[; ;can2510.h: 471: unsigned int mask,
-[; ;can2510.h: 472: unsigned int *filters );
-[; ;can2510.h: 474: signed char CAN2510SetMsgFilterXtd(  unsigned char bufferNum,
-[; ;can2510.h: 475: unsigned long mask,
-[; ;can2510.h: 476: unsigned long *filters );
-[; ;can2510.h: 478: signed char CAN2510WriteStd(  unsigned int msgId,
-[; ;can2510.h: 479: unsigned char msgPriority,
-[; ;can2510.h: 480: unsigned char numBytes,
-[; ;can2510.h: 481: unsigned char *data );
-[; ;can2510.h: 483: signed char CAN2510WriteXtd(  unsigned long msgId,
-[; ;can2510.h: 484: unsigned char msgPriority,
-[; ;can2510.h: 485: unsigned char numBytes,
-[; ;can2510.h: 486: unsigned char *data );
-[; ;can2510.h: 488: void CAN2510LoadBufferStd(  unsigned char bufferNum,
-[; ;can2510.h: 489: unsigned int msgId,
-[; ;can2510.h: 490: unsigned char numBytes,
-[; ;can2510.h: 491: unsigned char *data );
-[; ;can2510.h: 493: void CAN2510LoadBufferXtd(  unsigned char bufferNum,
-[; ;can2510.h: 494: unsigned long msgId,
-[; ;can2510.h: 495: unsigned char numBytes,
-[; ;can2510.h: 496: unsigned char *data );
-[; ;can2510.h: 498: void CAN2510LoadRTRStd(  unsigned char bufferNum,
-[; ;can2510.h: 499: unsigned int msgId,
-[; ;can2510.h: 500: unsigned char numBytes );
-[; ;can2510.h: 502: void CAN2510LoadRTRXtd(  unsigned char bufferNum,
-[; ;can2510.h: 503: unsigned long msgId,
-[; ;can2510.h: 504: unsigned char numBytes );
-[; ;can2510.h: 506: void CAN2510SetBufferPriority(  unsigned char bufferNum,
-[; ;can2510.h: 507: unsigned char bufferPriority );
-[; ;can2510.h: 509: void CAN2510SendBuffer(  unsigned char bufferNumber );
-[; ;can2510.h: 511: signed char CAN2510WriteBuffer(  unsigned char bufferNum );
-[; ;can2510.h: 513: unsigned char CAN2510DataReady(  unsigned char bufferNum );
-[; ;can2510.h: 515: unsigned char CAN2510DataRead(  unsigned char bufferNum,
-[; ;can2510.h: 516: unsigned long *msgId,
-[; ;can2510.h: 517: unsigned char *numBytes,
-[; ;can2510.h: 518: unsigned char *data );
-[; ;capture.h: 64: union capstatus
-[; ;capture.h: 65: {
-[; ;capture.h: 73: struct
-[; ;capture.h: 74: {
-[; ;capture.h: 77: unsigned Cap1OVF:1;
-[; ;capture.h: 82: unsigned Cap2OVF:1;
-[; ;capture.h: 115: };
-[; ;capture.h: 117: unsigned :8;
-[; ;capture.h: 119: };
-[; ;capture.h: 121: extern union capstatus CapStatus;
-[; ;capture.h: 123: union CapResult
-[; ;capture.h: 124: {
-[; ;capture.h: 125: unsigned int lc;
-[; ;capture.h: 126: char bc[2];
-[; ;capture.h: 127: };
-[; ;capture.h: 474: void OpenCapture1 ( unsigned char config);
-[; ;capture.h: 475: unsigned int ReadCapture1 (void);
-[; ;capture.h: 476: void CloseCapture1 (void);
-[; ;capture.h: 484: void OpenCapture2 ( unsigned char config);
-[; ;capture.h: 485: unsigned int ReadCapture2 (void);
-[; ;capture.h: 486: void CloseCapture2 (void);
-[; ;compare.h: 385: void OpenCompare1(unsigned char config,unsigned int period);
-[; ;compare.h: 386: void CloseCompare1(void);
-[; ;compare.h: 392: void OpenCompare2(unsigned char config, unsigned int period);
-[; ;compare.h: 393: void CloseCompare2(void);
-[; ;ctmu.h: 374: void OpenCTMU(unsigned char config1,unsigned char config2,unsigned char config3);
-[; ;ctmu.h: 379: void CurrentControlCTMU(unsigned char config);
-[; ;ctmu.h: 380: void CloseCTMU(void);
-[; ;dpslp.h: 49: typedef union
-[; ;dpslp.h: 50: {
-[; ;dpslp.h: 51: struct
-[; ;dpslp.h: 52: {
-[; ;dpslp.h: 53: unsigned char DS_POR:1;
-[; ;dpslp.h: 54: unsigned char DS_MCLR:1;
-[; ;dpslp.h: 55: unsigned char DS_RTC:1;
-[; ;dpslp.h: 56: unsigned char DS_WDT:1;
-[; ;dpslp.h: 57: unsigned char DS_FLT:1;
-[; ;dpslp.h: 58: unsigned char DS_INT0:1;
-[; ;dpslp.h: 59: unsigned char DS_BOR:1;
-[; ;dpslp.h: 60: unsigned char DS_ULP:1;
-[; ;dpslp.h: 61: }WK_SRC;
-[; ;dpslp.h: 63: unsigned char WKSRC;
-[; ;dpslp.h: 65: }SRC;
-[; ;dpslp.h: 68: typedef struct
-[; ;dpslp.h: 69: {
-[; ;dpslp.h: 70: unsigned char Reg0;
-[; ;dpslp.h: 71: unsigned char Reg1;
-[; ;dpslp.h: 72: }CONTEXT;
-[; ;dpslp.h: 164: extern void DeepSleepWakeUpSource(SRC* ptr);
-[; ;dpslp.h: 165: extern void GotoDeepSleep( unsigned int config);
-[; ;dpslp.h: 166: extern signed char IsResetFromDeepSleep( void );
-[; ;dpslp.h: 167: extern void ReadDSGPR( CONTEXT* ptr );
-[; ;dpslp.h: 171: extern void ULPWakeUpEnable( void );
-[; ;stddef.h: 2: typedef int ptrdiff_t;
-[; ;stddef.h: 3: typedef unsigned size_t;
-[; ;stddef.h: 4: typedef unsigned short wchar_t;
+[; ;plib\adc.h: 2008: union ADCResult
+[; ;plib\adc.h: 2009: {
+[; ;plib\adc.h: 2010: int lr;
+[; ;plib\adc.h: 2011: char br[2];
+[; ;plib\adc.h: 2012: };
+[; ;plib\adc.h: 2014: char BusyADC (void);
+[; ;plib\adc.h: 2016: void ConvertADC (void);
+[; ;plib\adc.h: 2018: void CloseADC(void);
+[; ;plib\adc.h: 2026: int ReadADC(void);
+[; ;plib\adc.h: 2059: void OpenADC ( unsigned char ,
+[; ;plib\adc.h: 2060: unsigned char ,
+[; ;plib\adc.h: 2061: unsigned int );
+[; ;plib\adc.h: 2084: void SetChanADC(unsigned char );
+[; ;plib\adc.h: 2100: void SelChanConvADC( unsigned char );
+[; ;plib\ancomp.h: 202: void Close_ancomp1( void );
+[; ;plib\ancomp.h: 203: void Open_ancomp1(unsigned char config);
+[; ;plib\ancomp.h: 204: void Close_ancomp2( void );
+[; ;plib\ancomp.h: 205: void Open_ancomp2(unsigned char config);
+[; ;plib\spi.h: 236: void OpenSPI1( unsigned char sync_mode,
+[; ;plib\spi.h: 237: unsigned char bus_mode,
+[; ;plib\spi.h: 238: unsigned char smp_phase );
+[; ;plib\spi.h: 240: signed char WriteSPI1( unsigned char data_out );
+[; ;plib\spi.h: 242: void getsSPI1( unsigned char *rdptr, unsigned char length );
+[; ;plib\spi.h: 244: void putsSPI1( unsigned char *wrptr );
+[; ;plib\spi.h: 246: unsigned char ReadSPI1( void );
+[; ;plib\spi.h: 441: void OpenSPI2( unsigned char sync_mode,
+[; ;plib\spi.h: 442: unsigned char bus_mode,
+[; ;plib\spi.h: 443: unsigned char smp_phase );
+[; ;plib\spi.h: 445: signed char WriteSPI2( unsigned char data_out );
+[; ;plib\spi.h: 447: void getsSPI2( unsigned char *rdptr, unsigned char length );
+[; ;plib\spi.h: 449: void putsSPI2( unsigned char *wrptr );
+[; ;plib\spi.h: 451: unsigned char ReadSPI2( void );
+[; ;plib\can2510.h: 414: void CAN2510Initialize(  unsigned int configuration,
+[; ;plib\can2510.h: 415: unsigned char brp,
+[; ;plib\can2510.h: 416: unsigned char interruptFlags,
+[; ;plib\can2510.h: 417: unsigned char SPI_syncMode,
+[; ;plib\can2510.h: 418: unsigned char SPI_busMode,
+[; ;plib\can2510.h: 419: unsigned char SPI_smpPhase );
+[; ;plib\can2510.h: 421: signed char CAN2510Init(  unsigned long BufferConfig,
+[; ;plib\can2510.h: 422: unsigned long BitTimeConfig,
+[; ;plib\can2510.h: 423: unsigned char interruptEnables,
+[; ;plib\can2510.h: 424: unsigned char SPI_syncMode,
+[; ;plib\can2510.h: 425: unsigned char SPI_busMode,
+[; ;plib\can2510.h: 426: unsigned char SPI_smpPhase );
+[; ;plib\can2510.h: 428: void CAN2510Enable( void );
+[; ;plib\can2510.h: 430: void CAN2510Disable( void );
+[; ;plib\can2510.h: 432: void CAN2510Reset( void );
+[; ;plib\can2510.h: 434: void CAN2510SetMode(  unsigned char mode );
+[; ;plib\can2510.h: 436: unsigned char CAN2510ReadMode( void );
+[; ;plib\can2510.h: 438: unsigned char CAN2510ReadStatus( void );
+[; ;plib\can2510.h: 440: unsigned char CAN2510ErrorState( void );
+[; ;plib\can2510.h: 442: unsigned char CAN2510InterruptStatus( void );
+[; ;plib\can2510.h: 444: void CAN2510InterruptEnable( unsigned char interruptFlags );
+[; ;plib\can2510.h: 446: unsigned char CAN2510ByteRead(  unsigned char addr );
+[; ;plib\can2510.h: 448: void CAN2510ByteWrite(  unsigned char addr,  unsigned char value );
+[; ;plib\can2510.h: 450: void CAN2510SequentialRead(  unsigned char *DataArray,
+[; ;plib\can2510.h: 451: unsigned char CAN2510addr,
+[; ;plib\can2510.h: 452: unsigned char numbytes );
+[; ;plib\can2510.h: 454: void CAN2510SequentialWrite(  unsigned char *DataArray,
+[; ;plib\can2510.h: 455: unsigned char CAN2510addr,
+[; ;plib\can2510.h: 456: unsigned char numbytes );
+[; ;plib\can2510.h: 458: void CAN2510BitModify(  unsigned char address,
+[; ;plib\can2510.h: 459: unsigned char mask,
+[; ;plib\can2510.h: 460: unsigned char data );
+[; ;plib\can2510.h: 462: void CAN2510SetSingleMaskStd(  unsigned char maskNum,  unsigned int mask );
+[; ;plib\can2510.h: 464: void CAN2510SetSingleMaskXtd(  unsigned char maskNum,  unsigned long mask );
+[; ;plib\can2510.h: 466: void CAN2510SetSingleFilterStd(  unsigned char filterNum,  unsigned int filter );
+[; ;plib\can2510.h: 468: void CAN2510SetSingleFilterXtd(  unsigned char filterNum,  unsigned long filter );
+[; ;plib\can2510.h: 470: signed char CAN2510SetMsgFilterStd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 471: unsigned int mask,
+[; ;plib\can2510.h: 472: unsigned int *filters );
+[; ;plib\can2510.h: 474: signed char CAN2510SetMsgFilterXtd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 475: unsigned long mask,
+[; ;plib\can2510.h: 476: unsigned long *filters );
+[; ;plib\can2510.h: 478: signed char CAN2510WriteStd(  unsigned int msgId,
+[; ;plib\can2510.h: 479: unsigned char msgPriority,
+[; ;plib\can2510.h: 480: unsigned char numBytes,
+[; ;plib\can2510.h: 481: unsigned char *data );
+[; ;plib\can2510.h: 483: signed char CAN2510WriteXtd(  unsigned long msgId,
+[; ;plib\can2510.h: 484: unsigned char msgPriority,
+[; ;plib\can2510.h: 485: unsigned char numBytes,
+[; ;plib\can2510.h: 486: unsigned char *data );
+[; ;plib\can2510.h: 488: void CAN2510LoadBufferStd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 489: unsigned int msgId,
+[; ;plib\can2510.h: 490: unsigned char numBytes,
+[; ;plib\can2510.h: 491: unsigned char *data );
+[; ;plib\can2510.h: 493: void CAN2510LoadBufferXtd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 494: unsigned long msgId,
+[; ;plib\can2510.h: 495: unsigned char numBytes,
+[; ;plib\can2510.h: 496: unsigned char *data );
+[; ;plib\can2510.h: 498: void CAN2510LoadRTRStd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 499: unsigned int msgId,
+[; ;plib\can2510.h: 500: unsigned char numBytes );
+[; ;plib\can2510.h: 502: void CAN2510LoadRTRXtd(  unsigned char bufferNum,
+[; ;plib\can2510.h: 503: unsigned long msgId,
+[; ;plib\can2510.h: 504: unsigned char numBytes );
+[; ;plib\can2510.h: 506: void CAN2510SetBufferPriority(  unsigned char bufferNum,
+[; ;plib\can2510.h: 507: unsigned char bufferPriority );
+[; ;plib\can2510.h: 509: void CAN2510SendBuffer(  unsigned char bufferNumber );
+[; ;plib\can2510.h: 511: signed char CAN2510WriteBuffer(  unsigned char bufferNum );
+[; ;plib\can2510.h: 513: unsigned char CAN2510DataReady(  unsigned char bufferNum );
+[; ;plib\can2510.h: 515: unsigned char CAN2510DataRead(  unsigned char bufferNum,
+[; ;plib\can2510.h: 516: unsigned long *msgId,
+[; ;plib\can2510.h: 517: unsigned char *numBytes,
+[; ;plib\can2510.h: 518: unsigned char *data );
+[; ;plib\capture.h: 64: union capstatus
+[; ;plib\capture.h: 65: {
+[; ;plib\capture.h: 73: struct
+[; ;plib\capture.h: 74: {
+[; ;plib\capture.h: 77: unsigned Cap1OVF:1;
+[; ;plib\capture.h: 82: unsigned Cap2OVF:1;
+[; ;plib\capture.h: 115: };
+[; ;plib\capture.h: 117: unsigned :8;
+[; ;plib\capture.h: 119: };
+[; ;plib\capture.h: 121: extern union capstatus CapStatus;
+[; ;plib\capture.h: 123: union CapResult
+[; ;plib\capture.h: 124: {
+[; ;plib\capture.h: 125: unsigned int lc;
+[; ;plib\capture.h: 126: char bc[2];
+[; ;plib\capture.h: 127: };
+[; ;plib\capture.h: 474: void OpenCapture1 ( unsigned char config);
+[; ;plib\capture.h: 475: unsigned int ReadCapture1 (void);
+[; ;plib\capture.h: 476: void CloseCapture1 (void);
+[; ;plib\capture.h: 484: void OpenCapture2 ( unsigned char config);
+[; ;plib\capture.h: 485: unsigned int ReadCapture2 (void);
+[; ;plib\capture.h: 486: void CloseCapture2 (void);
+[; ;plib\compare.h: 385: void OpenCompare1(unsigned char config,unsigned int period);
+[; ;plib\compare.h: 386: void CloseCompare1(void);
+[; ;plib\compare.h: 392: void OpenCompare2(unsigned char config, unsigned int period);
+[; ;plib\compare.h: 393: void CloseCompare2(void);
+[; ;plib\ctmu.h: 374: void OpenCTMU(unsigned char config1,unsigned char config2,unsigned char config3);
+[; ;plib\ctmu.h: 379: void CurrentControlCTMU(unsigned char config);
+[; ;plib\ctmu.h: 380: void CloseCTMU(void);
+[; ;plib\dpslp.h: 49: typedef union
+[; ;plib\dpslp.h: 50: {
+[; ;plib\dpslp.h: 51: struct
+[; ;plib\dpslp.h: 52: {
+[; ;plib\dpslp.h: 53: unsigned char DS_POR:1;
+[; ;plib\dpslp.h: 54: unsigned char DS_MCLR:1;
+[; ;plib\dpslp.h: 55: unsigned char DS_RTC:1;
+[; ;plib\dpslp.h: 56: unsigned char DS_WDT:1;
+[; ;plib\dpslp.h: 57: unsigned char DS_FLT:1;
+[; ;plib\dpslp.h: 58: unsigned char DS_INT0:1;
+[; ;plib\dpslp.h: 59: unsigned char DS_BOR:1;
+[; ;plib\dpslp.h: 60: unsigned char DS_ULP:1;
+[; ;plib\dpslp.h: 61: }WK_SRC;
+[; ;plib\dpslp.h: 63: unsigned char WKSRC;
+[; ;plib\dpslp.h: 65: }SRC;
+[; ;plib\dpslp.h: 68: typedef struct
+[; ;plib\dpslp.h: 69: {
+[; ;plib\dpslp.h: 70: unsigned char Reg0;
+[; ;plib\dpslp.h: 71: unsigned char Reg1;
+[; ;plib\dpslp.h: 72: }CONTEXT;
+[; ;plib\dpslp.h: 164: extern void DeepSleepWakeUpSource(SRC* ptr);
+[; ;plib\dpslp.h: 165: extern void GotoDeepSleep( unsigned int config);
+[; ;plib\dpslp.h: 166: extern signed char IsResetFromDeepSleep( void );
+[; ;plib\dpslp.h: 167: extern void ReadDSGPR( CONTEXT* ptr );
+[; ;plib\dpslp.h: 171: extern void ULPWakeUpEnable( void );
 [; ;stddef.h: 13: extern int errno;
 [; ;GenericTypeDefs.h: 65: typedef enum _BOOL { FALSE = 0, TRUE } BOOL;
 [; ;GenericTypeDefs.h: 68: typedef enum _BIT { CLEAR = 0, SET } BIT;
@@ -7530,292 +7586,292 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;GenericTypeDefs.h: 545: BYTE b63:1;
 [; ;GenericTypeDefs.h: 546: } bits;
 [; ;GenericTypeDefs.h: 547: } QWORD_VAL;
-[; ;flash.h: 113: extern void ReadFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
-[; ;flash.h: 120: extern void EraseFlash(unsigned long startaddr, unsigned long endaddr);
-[; ;flash.h: 122: extern void WriteBlockFlash(unsigned long startaddr, unsigned char num_blocks, unsigned char *flash_array);
-[; ;flash.h: 124: extern void WriteBytesFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
-[; ;flash.h: 127: extern void WriteWordFlash(unsigned long startaddr, unsigned int data);
-[; ;i2c.h: 244: void OpenI2C1( unsigned char sync_mode, unsigned char slew );
-[; ;i2c.h: 264: unsigned char ReadI2C1( void );
-[; ;i2c.h: 279: signed char WriteI2C1( unsigned char data_out );
-[; ;i2c.h: 294: signed char getsI2C1( unsigned char *rdptr, unsigned char length );
-[; ;i2c.h: 297: signed char putsI2C1( unsigned char *wrptr );
-[; ;i2c.h: 305: signed char EEAckPolling1( unsigned char control );
-[; ;i2c.h: 308: signed char EEByteWrite1( unsigned char control,
-[; ;i2c.h: 309: unsigned char address,
-[; ;i2c.h: 310: unsigned char data );
-[; ;i2c.h: 313: signed int EECurrentAddRead1( unsigned char control );
-[; ;i2c.h: 316: signed char EEPageWrite1( unsigned char control,
-[; ;i2c.h: 317: unsigned char address,
-[; ;i2c.h: 318: unsigned char *wrptr );
-[; ;i2c.h: 321: signed int EERandomRead1( unsigned char control, unsigned char address );
-[; ;i2c.h: 324: signed char EESequentialRead1( unsigned char control,
-[; ;i2c.h: 325: unsigned char address,
-[; ;i2c.h: 326: unsigned char *rdptr,
-[; ;i2c.h: 327: unsigned char length );
-[; ;mwire.h: 200: void OpenMwire1( unsigned char sync_mode );
-[; ;mwire.h: 203: unsigned char ReadMwire1( unsigned char high_byte,
-[; ;mwire.h: 204: unsigned char low_byte );
-[; ;mwire.h: 219: signed char WriteMwire1( unsigned char data_out );
-[; ;mwire.h: 234: void getsMwire1( unsigned char *rdptr, unsigned char length );
-[; ;portb.h: 126: void OpenPORTB( unsigned char config);
-[; ;portb.h: 176: void OpenRB0INT( unsigned char config);
-[; ;portb.h: 194: void OpenRB1INT( unsigned char config);
-[; ;portb.h: 211: void OpenRB2INT( unsigned char config);
-[; ;portb.h: 230: void OpenRB3INT( unsigned char config);
-[; ;pwm.h: 85: union PWMDC
-[; ;pwm.h: 86: {
-[; ;pwm.h: 87: unsigned int lpwm;
-[; ;pwm.h: 88: char bpwm[2];
-[; ;pwm.h: 89: };
-[; ;pwm.h: 467: void OpenPWM1 ( char period);
-[; ;pwm.h: 468: void SetDCPWM1 ( unsigned int duty_cycle);
-[; ;pwm.h: 474: void SetOutputPWM1 ( unsigned char output_config,
-[; ;pwm.h: 475: unsigned char pwm_mode);
-[; ;pwm.h: 477: void ClosePWM1 (void);
-[; ;pwm.h: 485: void OpenPWM2 ( char period);
-[; ;pwm.h: 486: void SetDCPWM2( unsigned int duty_cycle);
-[; ;pwm.h: 492: void ClosePWM2 (void);
-[; ;reset.h: 16: char isMCLR(void);
-[; ;reset.h: 17: void StatusReset(void);
-[; ;reset.h: 18: char isPOR(void);
-[; ;reset.h: 19: char isWU(void);
-[; ;reset.h: 22: char isBOR(void);
-[; ;reset.h: 26: char isWDTTO(void);
-[; ;reset.h: 27: char isWDTWU(void);
-[; ;reset.h: 31: char isLVD(void);
-[; ;rtcc.h: 43: typedef union _WORD_VAL
-[; ;rtcc.h: 44: {
-[; ;rtcc.h: 45: unsigned int Val;
-[; ;rtcc.h: 46: unsigned char v[2];
-[; ;rtcc.h: 47: struct
-[; ;rtcc.h: 48: {
-[; ;rtcc.h: 49: unsigned char LB;
-[; ;rtcc.h: 50: unsigned char HB;
-[; ;rtcc.h: 51: } byte;
-[; ;rtcc.h: 52: struct
-[; ;rtcc.h: 53: {
-[; ;rtcc.h: 54: unsigned char b0:1;
-[; ;rtcc.h: 55: unsigned char b1:1;
-[; ;rtcc.h: 56: unsigned char b2:1;
-[; ;rtcc.h: 57: unsigned char b3:1;
-[; ;rtcc.h: 58: unsigned char b4:1;
-[; ;rtcc.h: 59: unsigned char b5:1;
-[; ;rtcc.h: 60: unsigned char b6:1;
-[; ;rtcc.h: 61: unsigned char b7:1;
-[; ;rtcc.h: 62: unsigned char b8:1;
-[; ;rtcc.h: 63: unsigned char b9:1;
-[; ;rtcc.h: 64: unsigned char b10:1;
-[; ;rtcc.h: 65: unsigned char b11:1;
-[; ;rtcc.h: 66: unsigned char b12:1;
-[; ;rtcc.h: 67: unsigned char b13:1;
-[; ;rtcc.h: 68: unsigned char b14:1;
-[; ;rtcc.h: 69: unsigned char b15:1;
-[; ;rtcc.h: 70: } bits;
-[; ;rtcc.h: 71: } WORD_VAL, WORD_BITS;
-[; ;rtcc.h: 75: typedef enum
-[; ;rtcc.h: 76: {
-[; ;rtcc.h: 77: RTCCFG_MASK_RTCEN = 0x80,
-[; ;rtcc.h: 78: RTCCFG_MASK_FRZ = 0x40,
-[; ;rtcc.h: 79: RTCCFG_MASK_RTCWREN = 0x20,
-[; ;rtcc.h: 80: RTCCFG_MASK_RTCSYNC = 0x10,
-[; ;rtcc.h: 81: RTCCFG_MASK_HALFSEC = 0x08,
-[; ;rtcc.h: 82: RTCCFG_MASK_RTCOE = 0x04,
-[; ;rtcc.h: 83: RTCCFG_MASK_RTCPTR = 0x03
-[; ;rtcc.h: 84: }RTCCFG_MASK;
-[; ;rtcc.h: 89: typedef enum
-[; ;rtcc.h: 90: {
-[; ;rtcc.h: 91: ALRMCFG_MASK_ALRMEN = 0x80,
-[; ;rtcc.h: 92: ALRMCFG_MASK_CHIME = 0x40,
-[; ;rtcc.h: 93: ALRMCFG_MASK_AMASK = 0x3c,
-[; ;rtcc.h: 94: ALRMCFG_MASK_ALRMPTR = 0x03
-[; ;rtcc.h: 95: }ALRMCFG_MASK;
-[; ;rtcc.h: 100: typedef enum
-[; ;rtcc.h: 101: {
-[; ;rtcc.h: 102: RTCCPTR_MASK_SECMIN = 0x00,
-[; ;rtcc.h: 103: RTCCPTR_MASK_HRSWEEK = 0x01,
-[; ;rtcc.h: 104: RTCCPTR_MASK_DAYMON = 0x02,
-[; ;rtcc.h: 105: RTCCPTR_MASK_YEAR = 0x03
-[; ;rtcc.h: 106: }RTCCPTR_MASK;
-[; ;rtcc.h: 110: typedef union
-[; ;rtcc.h: 111: {
-[; ;rtcc.h: 112: struct
-[; ;rtcc.h: 113: {
-[; ;rtcc.h: 114: unsigned char rsvd;
-[; ;rtcc.h: 115: unsigned char sec;
-[; ;rtcc.h: 116: unsigned char min;
-[; ;rtcc.h: 117: unsigned char hour;
-[; ;rtcc.h: 118: }f;
-[; ;rtcc.h: 119: unsigned char b[4];
-[; ;rtcc.h: 120: unsigned int w[2];
-[; ;rtcc.h: 121: unsigned long l;
-[; ;rtcc.h: 122: }rtccTime;
-[; ;rtcc.h: 125: typedef union
-[; ;rtcc.h: 126: {
-[; ;rtcc.h: 127: struct
-[; ;rtcc.h: 128: {
-[; ;rtcc.h: 129: unsigned char wday;
-[; ;rtcc.h: 130: unsigned char mday;
-[; ;rtcc.h: 131: unsigned char mon;
-[; ;rtcc.h: 132: unsigned char year;
-[; ;rtcc.h: 133: }f;
-[; ;rtcc.h: 134: unsigned char b[4];
-[; ;rtcc.h: 135: unsigned int w[2];
-[; ;rtcc.h: 136: unsigned long l;
-[; ;rtcc.h: 137: }rtccDate;
-[; ;rtcc.h: 141: typedef union
-[; ;rtcc.h: 142: {
-[; ;rtcc.h: 143: struct
-[; ;rtcc.h: 144: {
-[; ;rtcc.h: 145: unsigned char year;
-[; ;rtcc.h: 146: unsigned char rsvd;
-[; ;rtcc.h: 147: unsigned char mday;
-[; ;rtcc.h: 148: unsigned char mon;
-[; ;rtcc.h: 149: unsigned char hour;
-[; ;rtcc.h: 150: unsigned char wday;
-[; ;rtcc.h: 151: unsigned char sec;
-[; ;rtcc.h: 152: unsigned char min;
-[; ;rtcc.h: 153: }f;
-[; ;rtcc.h: 154: unsigned char b[8];
-[; ;rtcc.h: 155: unsigned int w[4];
-[; ;rtcc.h: 156: unsigned long l[2];
-[; ;rtcc.h: 157: }rtccTimeDate;
-[; ;rtcc.h: 162: typedef enum
-[; ;rtcc.h: 163: {
-[; ;rtcc.h: 164: RTCC_RPT_HALF_SEC,
-[; ;rtcc.h: 165: RTCC_RPT_SEC,
-[; ;rtcc.h: 166: RTCC_RPT_TEN_SEC,
-[; ;rtcc.h: 167: RTCC_RPT_MIN,
-[; ;rtcc.h: 168: RTCC_RPT_TEN_MIN,
-[; ;rtcc.h: 169: RTCC_RPT_HOUR,
-[; ;rtcc.h: 170: RTCC_RPT_DAY,
-[; ;rtcc.h: 171: RTCC_RPT_WEEK,
-[; ;rtcc.h: 172: RTCC_RPT_MON,
-[; ;rtcc.h: 173: RTCC_RPT_YEAR
-[; ;rtcc.h: 174: }rtccRepeat;
-[; ;rtcc.h: 646: extern void RtccInitClock(void) ;
-[; ;rtcc.h: 648: extern void RtccReadAlrmDate(rtccDate* pDt) ;
-[; ;rtcc.h: 650: extern void RtccReadAlrmTime(rtccTime* pTm);
-[; ;rtcc.h: 652: extern void RtccReadAlrmTimeDate(rtccTimeDate* pTD) ;
-[; ;rtcc.h: 654: extern void RtccReadDate(rtccDate* pDt) ;
-[; ;rtcc.h: 656: extern void RtccReadTime(rtccTime* pTm) ;
-[; ;rtcc.h: 658: extern void RtccReadTimeDate(rtccTimeDate* pTD) ;
-[; ;rtcc.h: 660: extern void RtccSetAlarmRpt(rtccRepeat rpt, BOOL dsblAlrm) ;
-[; ;rtcc.h: 662: extern void RtccSetAlarmRptCount(unsigned char rptCnt, BOOL dsblAlrm) ;
-[; ;rtcc.h: 664: extern void RtccSetCalibration(int drift) ;
-[; ;rtcc.h: 666: extern void RtccSetChimeEnable(BOOL enable, BOOL dsblAlrm) ;
-[; ;rtcc.h: 668: extern BOOL RtccWriteAlrmDate(const rtccDate* pDt) ;
-[; ;rtcc.h: 670: extern BOOL RtccWriteAlrmTime(const rtccTime* pTm) ;
-[; ;rtcc.h: 672: extern BOOL RtccWriteAlrmTimeDate(const rtccTimeDate* pTD) ;
-[; ;rtcc.h: 674: extern BOOL RtccWriteDate(const rtccDate* pDt , BOOL di);
-[; ;rtcc.h: 676: extern BOOL RtccWriteTime(const rtccTime* pTm , BOOL di) ;
-[; ;rtcc.h: 678: extern BOOL RtccWriteTimeDate(const rtccTimeDate* pTD , BOOL di) ;
-[; ;rtcc.h: 680: extern void RtccWrOn(void);
-[; ;rtcc.h: 687: void Open_RTCC(void);
-[; ;rtcc.h: 688: void Close_RTCC(void);
-[; ;rtcc.h: 689: unsigned char update_RTCC(void);
-[; ;sw_i2c.h: 97: void SWStopI2C ( void );
-[; ;sw_i2c.h: 98: void SWStartI2C ( void );
-[; ;sw_i2c.h: 99: void SWRestartI2C ( void );
-[; ;sw_i2c.h: 100: void SWStopI2C ( void );
-[; ;sw_i2c.h: 102: signed char SWAckI2C( void );
-[; ;sw_i2c.h: 103: signed char Clock_test( void );
-[; ;sw_i2c.h: 104: signed int SWReadI2C( void );
-[; ;sw_i2c.h: 105: signed char SWWriteI2C(  unsigned char data_out );
-[; ;sw_i2c.h: 106: signed char SWGetsI2C(  unsigned char *rdptr,  unsigned char length );
-[; ;sw_i2c.h: 107: signed char SWPutsI2C(  unsigned char *wrptr );
-[; ;sw_spi.h: 84: void OpenSWSPI(void);
-[; ;sw_spi.h: 87: char WriteSWSPI( char output);
-[; ;sw_spi.h: 90: void SetCSSWSPI(void);
-[; ;sw_spi.h: 93: void ClearCSSWSPI(void);
-[; ;sw_uart.h: 47: void OpenUART(void);
-[; ;sw_uart.h: 49: unsigned char ReadUART(void);
-[; ;sw_uart.h: 51: void WriteUART( unsigned char);
-[; ;sw_uart.h: 53: void getsUART( char *, unsigned char);
-[; ;sw_uart.h: 55: void putsUART( char *);
-[; ;sw_uart.h: 79: extern void DelayRXBitUART (void);
-[; ;sw_uart.h: 80: extern void DelayRXHalfBitUART(void);
-[; ;sw_uart.h: 81: extern void DelayTXBitUART (void);
-[; ;timers.h: 36: union Timers
-[; ;timers.h: 37: {
-[; ;timers.h: 38: unsigned int lt;
-[; ;timers.h: 39: char bt[2];
-[; ;timers.h: 40: };
-[; ;timers.h: 118: void OpenTimer0 ( unsigned char config);
-[; ;timers.h: 119: void CloseTimer0 (void);
-[; ;timers.h: 120: unsigned int ReadTimer0 (void);
-[; ;timers.h: 121: void WriteTimer0 ( unsigned int timer0);
-[; ;timers.h: 185: void OpenTimer1 ( unsigned char config, unsigned char config1);
-[; ;timers.h: 186: void CloseTimer1 (void);
-[; ;timers.h: 187: unsigned int ReadTimer1 (void);
-[; ;timers.h: 188: void WriteTimer1 ( unsigned int timer1);
-[; ;timers.h: 325: void OpenTimer2 ( unsigned char config);
-[; ;timers.h: 326: void CloseTimer2 (void);
-[; ;timers.h: 452: void OpenTimer3 ( unsigned char config, unsigned char config1);
-[; ;timers.h: 453: void CloseTimer3 (void);
-[; ;timers.h: 454: unsigned int ReadTimer3 (void);
-[; ;timers.h: 455: void WriteTimer3 ( unsigned int timer3);
-[; ;timers.h: 541: void OpenTimer4 ( unsigned char config);
-[; ;timers.h: 542: void CloseTimer4 (void);
-[; ;timers.h: 1179: void SetTmrCCPSrc( unsigned char );
-[; ;usart.h: 200: union USART1
-[; ;usart.h: 201: {
-[; ;usart.h: 202: unsigned char val;
-[; ;usart.h: 203: struct
-[; ;usart.h: 204: {
-[; ;usart.h: 205: unsigned RX_NINE:1;
-[; ;usart.h: 206: unsigned TX_NINE:1;
-[; ;usart.h: 207: unsigned FRAME_ERROR:1;
-[; ;usart.h: 208: unsigned OVERRUN_ERROR:1;
-[; ;usart.h: 209: unsigned fill:4;
-[; ;usart.h: 210: };
-[; ;usart.h: 211: };
-[; ;usart.h: 212: extern union USART1 USART1_Status;
-[; ;usart.h: 214: void Open1USART ( unsigned char config, unsigned int spbrg);
-[; ;usart.h: 244: char Read1USART (void);
-[; ;usart.h: 245: void Write1USART ( char data);
-[; ;usart.h: 246: void gets1USART ( char *buffer, unsigned char len);
-[; ;usart.h: 247: void puts1USART ( char *data);
-[; ;usart.h: 248: void putrs1USART ( const  char *data);
-[; ;usart.h: 305: union USART2
-[; ;usart.h: 306: {
-[; ;usart.h: 307: unsigned char val;
-[; ;usart.h: 308: struct
-[; ;usart.h: 309: {
-[; ;usart.h: 310: unsigned RX_NINE:1;
-[; ;usart.h: 311: unsigned TX_NINE:1;
-[; ;usart.h: 312: unsigned FRAME_ERROR:1;
-[; ;usart.h: 313: unsigned OVERRUN_ERROR:1;
-[; ;usart.h: 314: unsigned fill:4;
-[; ;usart.h: 315: };
-[; ;usart.h: 316: };
-[; ;usart.h: 317: extern union USART2 USART2_Status;
-[; ;usart.h: 318: void Open2USART ( unsigned char config, unsigned int spbrg);
-[; ;usart.h: 333: char Read2USART (void);
-[; ;usart.h: 334: void Write2USART ( char data);
-[; ;usart.h: 335: void gets2USART ( char *buffer, unsigned char len);
-[; ;usart.h: 336: void puts2USART ( char *data);
-[; ;usart.h: 337: void putrs2USART ( const  char *data);
-[; ;usart.h: 660: void baud1USART ( unsigned char baudconfig);
-[; ;usart.h: 665: void baud2USART ( unsigned char baudconfig);
-[; ;xlcd.h: 87: void OpenXLCD( unsigned char);
-[; ;xlcd.h: 92: void SetCGRamAddr( unsigned char);
-[; ;xlcd.h: 97: void SetDDRamAddr( unsigned char);
-[; ;xlcd.h: 102: unsigned char BusyXLCD(void);
-[; ;xlcd.h: 107: unsigned char ReadAddrXLCD(void);
-[; ;xlcd.h: 112: char ReadDataXLCD(void);
-[; ;xlcd.h: 117: void WriteCmdXLCD( unsigned char);
-[; ;xlcd.h: 122: void WriteDataXLCD( char);
-[; ;xlcd.h: 132: void putsXLCD( char *);
-[; ;xlcd.h: 137: void putrsXLCD(const char *);
-[; ;xlcd.h: 140: extern void DelayFor18TCY(void);
-[; ;xlcd.h: 141: extern void DelayPORXLCD(void);
-[; ;xlcd.h: 142: extern void DelayXLCD(void);
-[; ;delays.h: 13: void Delay1TCYx(unsigned char);
-[; ;delays.h: 19: void Delay10TCYx(unsigned char);
-[; ;delays.h: 25: void Delay100TCYx(unsigned char);
-[; ;delays.h: 31: void Delay1KTCYx(unsigned char);
-[; ;delays.h: 37: void Delay10KTCYx(unsigned char);
+[; ;plib\flash.h: 113: extern void ReadFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
+[; ;plib\flash.h: 120: extern void EraseFlash(unsigned long startaddr, unsigned long endaddr);
+[; ;plib\flash.h: 122: extern void WriteBlockFlash(unsigned long startaddr, unsigned char num_blocks, unsigned char *flash_array);
+[; ;plib\flash.h: 124: extern void WriteBytesFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
+[; ;plib\flash.h: 127: extern void WriteWordFlash(unsigned long startaddr, unsigned int data);
+[; ;plib\i2c.h: 244: void OpenI2C1( unsigned char sync_mode, unsigned char slew );
+[; ;plib\i2c.h: 264: unsigned char ReadI2C1( void );
+[; ;plib\i2c.h: 279: signed char WriteI2C1( unsigned char data_out );
+[; ;plib\i2c.h: 294: signed char getsI2C1( unsigned char *rdptr, unsigned char length );
+[; ;plib\i2c.h: 297: signed char putsI2C1( unsigned char *wrptr );
+[; ;plib\i2c.h: 305: signed char EEAckPolling1( unsigned char control );
+[; ;plib\i2c.h: 308: signed char EEByteWrite1( unsigned char control,
+[; ;plib\i2c.h: 309: unsigned char address,
+[; ;plib\i2c.h: 310: unsigned char data );
+[; ;plib\i2c.h: 313: signed int EECurrentAddRead1( unsigned char control );
+[; ;plib\i2c.h: 316: signed char EEPageWrite1( unsigned char control,
+[; ;plib\i2c.h: 317: unsigned char address,
+[; ;plib\i2c.h: 318: unsigned char *wrptr );
+[; ;plib\i2c.h: 321: signed int EERandomRead1( unsigned char control, unsigned char address );
+[; ;plib\i2c.h: 324: signed char EESequentialRead1( unsigned char control,
+[; ;plib\i2c.h: 325: unsigned char address,
+[; ;plib\i2c.h: 326: unsigned char *rdptr,
+[; ;plib\i2c.h: 327: unsigned char length );
+[; ;plib\mwire.h: 200: void OpenMwire1( unsigned char sync_mode );
+[; ;plib\mwire.h: 203: unsigned char ReadMwire1( unsigned char high_byte,
+[; ;plib\mwire.h: 204: unsigned char low_byte );
+[; ;plib\mwire.h: 219: signed char WriteMwire1( unsigned char data_out );
+[; ;plib\mwire.h: 234: void getsMwire1( unsigned char *rdptr, unsigned char length );
+[; ;plib\portb.h: 126: void OpenPORTB( unsigned char config);
+[; ;plib\portb.h: 176: void OpenRB0INT( unsigned char config);
+[; ;plib\portb.h: 194: void OpenRB1INT( unsigned char config);
+[; ;plib\portb.h: 211: void OpenRB2INT( unsigned char config);
+[; ;plib\portb.h: 230: void OpenRB3INT( unsigned char config);
+[; ;plib\pwm.h: 85: union PWMDC
+[; ;plib\pwm.h: 86: {
+[; ;plib\pwm.h: 87: unsigned int lpwm;
+[; ;plib\pwm.h: 88: char bpwm[2];
+[; ;plib\pwm.h: 89: };
+[; ;plib\pwm.h: 467: void OpenPWM1 ( char period);
+[; ;plib\pwm.h: 468: void SetDCPWM1 ( unsigned int duty_cycle);
+[; ;plib\pwm.h: 474: void SetOutputPWM1 ( unsigned char output_config,
+[; ;plib\pwm.h: 475: unsigned char pwm_mode);
+[; ;plib\pwm.h: 477: void ClosePWM1 (void);
+[; ;plib\pwm.h: 485: void OpenPWM2 ( char period);
+[; ;plib\pwm.h: 486: void SetDCPWM2( unsigned int duty_cycle);
+[; ;plib\pwm.h: 492: void ClosePWM2 (void);
+[; ;plib\reset.h: 16: char isMCLR(void);
+[; ;plib\reset.h: 17: void StatusReset(void);
+[; ;plib\reset.h: 18: char isPOR(void);
+[; ;plib\reset.h: 19: char isWU(void);
+[; ;plib\reset.h: 22: char isBOR(void);
+[; ;plib\reset.h: 26: char isWDTTO(void);
+[; ;plib\reset.h: 27: char isWDTWU(void);
+[; ;plib\reset.h: 31: char isLVD(void);
+[; ;plib\rtcc.h: 43: typedef union _WORD_VAL
+[; ;plib\rtcc.h: 44: {
+[; ;plib\rtcc.h: 45: unsigned int Val;
+[; ;plib\rtcc.h: 46: unsigned char v[2];
+[; ;plib\rtcc.h: 47: struct
+[; ;plib\rtcc.h: 48: {
+[; ;plib\rtcc.h: 49: unsigned char LB;
+[; ;plib\rtcc.h: 50: unsigned char HB;
+[; ;plib\rtcc.h: 51: } byte;
+[; ;plib\rtcc.h: 52: struct
+[; ;plib\rtcc.h: 53: {
+[; ;plib\rtcc.h: 54: unsigned char b0:1;
+[; ;plib\rtcc.h: 55: unsigned char b1:1;
+[; ;plib\rtcc.h: 56: unsigned char b2:1;
+[; ;plib\rtcc.h: 57: unsigned char b3:1;
+[; ;plib\rtcc.h: 58: unsigned char b4:1;
+[; ;plib\rtcc.h: 59: unsigned char b5:1;
+[; ;plib\rtcc.h: 60: unsigned char b6:1;
+[; ;plib\rtcc.h: 61: unsigned char b7:1;
+[; ;plib\rtcc.h: 62: unsigned char b8:1;
+[; ;plib\rtcc.h: 63: unsigned char b9:1;
+[; ;plib\rtcc.h: 64: unsigned char b10:1;
+[; ;plib\rtcc.h: 65: unsigned char b11:1;
+[; ;plib\rtcc.h: 66: unsigned char b12:1;
+[; ;plib\rtcc.h: 67: unsigned char b13:1;
+[; ;plib\rtcc.h: 68: unsigned char b14:1;
+[; ;plib\rtcc.h: 69: unsigned char b15:1;
+[; ;plib\rtcc.h: 70: } bits;
+[; ;plib\rtcc.h: 71: } WORD_VAL, WORD_BITS;
+[; ;plib\rtcc.h: 75: typedef enum
+[; ;plib\rtcc.h: 76: {
+[; ;plib\rtcc.h: 77: RTCCFG_MASK_RTCEN = 0x80,
+[; ;plib\rtcc.h: 78: RTCCFG_MASK_FRZ = 0x40,
+[; ;plib\rtcc.h: 79: RTCCFG_MASK_RTCWREN = 0x20,
+[; ;plib\rtcc.h: 80: RTCCFG_MASK_RTCSYNC = 0x10,
+[; ;plib\rtcc.h: 81: RTCCFG_MASK_HALFSEC = 0x08,
+[; ;plib\rtcc.h: 82: RTCCFG_MASK_RTCOE = 0x04,
+[; ;plib\rtcc.h: 83: RTCCFG_MASK_RTCPTR = 0x03
+[; ;plib\rtcc.h: 84: }RTCCFG_MASK;
+[; ;plib\rtcc.h: 89: typedef enum
+[; ;plib\rtcc.h: 90: {
+[; ;plib\rtcc.h: 91: ALRMCFG_MASK_ALRMEN = 0x80,
+[; ;plib\rtcc.h: 92: ALRMCFG_MASK_CHIME = 0x40,
+[; ;plib\rtcc.h: 93: ALRMCFG_MASK_AMASK = 0x3c,
+[; ;plib\rtcc.h: 94: ALRMCFG_MASK_ALRMPTR = 0x03
+[; ;plib\rtcc.h: 95: }ALRMCFG_MASK;
+[; ;plib\rtcc.h: 100: typedef enum
+[; ;plib\rtcc.h: 101: {
+[; ;plib\rtcc.h: 102: RTCCPTR_MASK_SECMIN = 0x00,
+[; ;plib\rtcc.h: 103: RTCCPTR_MASK_HRSWEEK = 0x01,
+[; ;plib\rtcc.h: 104: RTCCPTR_MASK_DAYMON = 0x02,
+[; ;plib\rtcc.h: 105: RTCCPTR_MASK_YEAR = 0x03
+[; ;plib\rtcc.h: 106: }RTCCPTR_MASK;
+[; ;plib\rtcc.h: 110: typedef union
+[; ;plib\rtcc.h: 111: {
+[; ;plib\rtcc.h: 112: struct
+[; ;plib\rtcc.h: 113: {
+[; ;plib\rtcc.h: 114: unsigned char rsvd;
+[; ;plib\rtcc.h: 115: unsigned char sec;
+[; ;plib\rtcc.h: 116: unsigned char min;
+[; ;plib\rtcc.h: 117: unsigned char hour;
+[; ;plib\rtcc.h: 118: }f;
+[; ;plib\rtcc.h: 119: unsigned char b[4];
+[; ;plib\rtcc.h: 120: unsigned int w[2];
+[; ;plib\rtcc.h: 121: unsigned long l;
+[; ;plib\rtcc.h: 122: }rtccTime;
+[; ;plib\rtcc.h: 125: typedef union
+[; ;plib\rtcc.h: 126: {
+[; ;plib\rtcc.h: 127: struct
+[; ;plib\rtcc.h: 128: {
+[; ;plib\rtcc.h: 129: unsigned char wday;
+[; ;plib\rtcc.h: 130: unsigned char mday;
+[; ;plib\rtcc.h: 131: unsigned char mon;
+[; ;plib\rtcc.h: 132: unsigned char year;
+[; ;plib\rtcc.h: 133: }f;
+[; ;plib\rtcc.h: 134: unsigned char b[4];
+[; ;plib\rtcc.h: 135: unsigned int w[2];
+[; ;plib\rtcc.h: 136: unsigned long l;
+[; ;plib\rtcc.h: 137: }rtccDate;
+[; ;plib\rtcc.h: 141: typedef union
+[; ;plib\rtcc.h: 142: {
+[; ;plib\rtcc.h: 143: struct
+[; ;plib\rtcc.h: 144: {
+[; ;plib\rtcc.h: 145: unsigned char year;
+[; ;plib\rtcc.h: 146: unsigned char rsvd;
+[; ;plib\rtcc.h: 147: unsigned char mday;
+[; ;plib\rtcc.h: 148: unsigned char mon;
+[; ;plib\rtcc.h: 149: unsigned char hour;
+[; ;plib\rtcc.h: 150: unsigned char wday;
+[; ;plib\rtcc.h: 151: unsigned char sec;
+[; ;plib\rtcc.h: 152: unsigned char min;
+[; ;plib\rtcc.h: 153: }f;
+[; ;plib\rtcc.h: 154: unsigned char b[8];
+[; ;plib\rtcc.h: 155: unsigned int w[4];
+[; ;plib\rtcc.h: 156: unsigned long l[2];
+[; ;plib\rtcc.h: 157: }rtccTimeDate;
+[; ;plib\rtcc.h: 162: typedef enum
+[; ;plib\rtcc.h: 163: {
+[; ;plib\rtcc.h: 164: RTCC_RPT_HALF_SEC,
+[; ;plib\rtcc.h: 165: RTCC_RPT_SEC,
+[; ;plib\rtcc.h: 166: RTCC_RPT_TEN_SEC,
+[; ;plib\rtcc.h: 167: RTCC_RPT_MIN,
+[; ;plib\rtcc.h: 168: RTCC_RPT_TEN_MIN,
+[; ;plib\rtcc.h: 169: RTCC_RPT_HOUR,
+[; ;plib\rtcc.h: 170: RTCC_RPT_DAY,
+[; ;plib\rtcc.h: 171: RTCC_RPT_WEEK,
+[; ;plib\rtcc.h: 172: RTCC_RPT_MON,
+[; ;plib\rtcc.h: 173: RTCC_RPT_YEAR
+[; ;plib\rtcc.h: 174: }rtccRepeat;
+[; ;plib\rtcc.h: 646: extern void RtccInitClock(void) ;
+[; ;plib\rtcc.h: 648: extern void RtccReadAlrmDate(rtccDate* pDt) ;
+[; ;plib\rtcc.h: 650: extern void RtccReadAlrmTime(rtccTime* pTm);
+[; ;plib\rtcc.h: 652: extern void RtccReadAlrmTimeDate(rtccTimeDate* pTD) ;
+[; ;plib\rtcc.h: 654: extern void RtccReadDate(rtccDate* pDt) ;
+[; ;plib\rtcc.h: 656: extern void RtccReadTime(rtccTime* pTm) ;
+[; ;plib\rtcc.h: 658: extern void RtccReadTimeDate(rtccTimeDate* pTD) ;
+[; ;plib\rtcc.h: 660: extern void RtccSetAlarmRpt(rtccRepeat rpt, BOOL dsblAlrm) ;
+[; ;plib\rtcc.h: 662: extern void RtccSetAlarmRptCount(unsigned char rptCnt, BOOL dsblAlrm) ;
+[; ;plib\rtcc.h: 664: extern void RtccSetCalibration(int drift) ;
+[; ;plib\rtcc.h: 666: extern void RtccSetChimeEnable(BOOL enable, BOOL dsblAlrm) ;
+[; ;plib\rtcc.h: 668: extern BOOL RtccWriteAlrmDate(const rtccDate* pDt) ;
+[; ;plib\rtcc.h: 670: extern BOOL RtccWriteAlrmTime(const rtccTime* pTm) ;
+[; ;plib\rtcc.h: 672: extern BOOL RtccWriteAlrmTimeDate(const rtccTimeDate* pTD) ;
+[; ;plib\rtcc.h: 674: extern BOOL RtccWriteDate(const rtccDate* pDt , BOOL di);
+[; ;plib\rtcc.h: 676: extern BOOL RtccWriteTime(const rtccTime* pTm , BOOL di) ;
+[; ;plib\rtcc.h: 678: extern BOOL RtccWriteTimeDate(const rtccTimeDate* pTD , BOOL di) ;
+[; ;plib\rtcc.h: 680: extern void RtccWrOn(void);
+[; ;plib\rtcc.h: 687: void Open_RTCC(void);
+[; ;plib\rtcc.h: 688: void Close_RTCC(void);
+[; ;plib\rtcc.h: 689: unsigned char update_RTCC(void);
+[; ;plib\sw_i2c.h: 97: void SWStopI2C ( void );
+[; ;plib\sw_i2c.h: 98: void SWStartI2C ( void );
+[; ;plib\sw_i2c.h: 99: void SWRestartI2C ( void );
+[; ;plib\sw_i2c.h: 100: void SWStopI2C ( void );
+[; ;plib\sw_i2c.h: 102: signed char SWAckI2C( void );
+[; ;plib\sw_i2c.h: 103: signed char Clock_test( void );
+[; ;plib\sw_i2c.h: 104: signed int SWReadI2C( void );
+[; ;plib\sw_i2c.h: 105: signed char SWWriteI2C(  unsigned char data_out );
+[; ;plib\sw_i2c.h: 106: signed char SWGetsI2C(  unsigned char *rdptr,  unsigned char length );
+[; ;plib\sw_i2c.h: 107: signed char SWPutsI2C(  unsigned char *wrptr );
+[; ;plib\sw_spi.h: 84: void OpenSWSPI(void);
+[; ;plib\sw_spi.h: 87: char WriteSWSPI( char output);
+[; ;plib\sw_spi.h: 90: void SetCSSWSPI(void);
+[; ;plib\sw_spi.h: 93: void ClearCSSWSPI(void);
+[; ;plib\sw_uart.h: 47: void OpenUART(void);
+[; ;plib\sw_uart.h: 49: unsigned char ReadUART(void);
+[; ;plib\sw_uart.h: 51: void WriteUART( unsigned char);
+[; ;plib\sw_uart.h: 53: void getsUART( char *, unsigned char);
+[; ;plib\sw_uart.h: 55: void putsUART( char *);
+[; ;plib\sw_uart.h: 79: extern void DelayRXBitUART (void);
+[; ;plib\sw_uart.h: 80: extern void DelayRXHalfBitUART(void);
+[; ;plib\sw_uart.h: 81: extern void DelayTXBitUART (void);
+[; ;plib\timers.h: 36: union Timers
+[; ;plib\timers.h: 37: {
+[; ;plib\timers.h: 38: unsigned int lt;
+[; ;plib\timers.h: 39: char bt[2];
+[; ;plib\timers.h: 40: };
+[; ;plib\timers.h: 118: void OpenTimer0 ( unsigned char config);
+[; ;plib\timers.h: 119: void CloseTimer0 (void);
+[; ;plib\timers.h: 120: unsigned int ReadTimer0 (void);
+[; ;plib\timers.h: 121: void WriteTimer0 ( unsigned int timer0);
+[; ;plib\timers.h: 185: void OpenTimer1 ( unsigned char config, unsigned char config1);
+[; ;plib\timers.h: 186: void CloseTimer1 (void);
+[; ;plib\timers.h: 187: unsigned int ReadTimer1 (void);
+[; ;plib\timers.h: 188: void WriteTimer1 ( unsigned int timer1);
+[; ;plib\timers.h: 325: void OpenTimer2 ( unsigned char config);
+[; ;plib\timers.h: 326: void CloseTimer2 (void);
+[; ;plib\timers.h: 452: void OpenTimer3 ( unsigned char config, unsigned char config1);
+[; ;plib\timers.h: 453: void CloseTimer3 (void);
+[; ;plib\timers.h: 454: unsigned int ReadTimer3 (void);
+[; ;plib\timers.h: 455: void WriteTimer3 ( unsigned int timer3);
+[; ;plib\timers.h: 541: void OpenTimer4 ( unsigned char config);
+[; ;plib\timers.h: 542: void CloseTimer4 (void);
+[; ;plib\timers.h: 1179: void SetTmrCCPSrc( unsigned char );
+[; ;plib\usart.h: 200: union USART1
+[; ;plib\usart.h: 201: {
+[; ;plib\usart.h: 202: unsigned char val;
+[; ;plib\usart.h: 203: struct
+[; ;plib\usart.h: 204: {
+[; ;plib\usart.h: 205: unsigned RX_NINE:1;
+[; ;plib\usart.h: 206: unsigned TX_NINE:1;
+[; ;plib\usart.h: 207: unsigned FRAME_ERROR:1;
+[; ;plib\usart.h: 208: unsigned OVERRUN_ERROR:1;
+[; ;plib\usart.h: 209: unsigned fill:4;
+[; ;plib\usart.h: 210: };
+[; ;plib\usart.h: 211: };
+[; ;plib\usart.h: 212: extern union USART1 USART1_Status;
+[; ;plib\usart.h: 214: void Open1USART ( unsigned char config, unsigned int spbrg);
+[; ;plib\usart.h: 244: char Read1USART (void);
+[; ;plib\usart.h: 245: void Write1USART ( char data);
+[; ;plib\usart.h: 246: void gets1USART ( char *buffer, unsigned char len);
+[; ;plib\usart.h: 247: void puts1USART ( char *data);
+[; ;plib\usart.h: 248: void putrs1USART ( const  char *data);
+[; ;plib\usart.h: 305: union USART2
+[; ;plib\usart.h: 306: {
+[; ;plib\usart.h: 307: unsigned char val;
+[; ;plib\usart.h: 308: struct
+[; ;plib\usart.h: 309: {
+[; ;plib\usart.h: 310: unsigned RX_NINE:1;
+[; ;plib\usart.h: 311: unsigned TX_NINE:1;
+[; ;plib\usart.h: 312: unsigned FRAME_ERROR:1;
+[; ;plib\usart.h: 313: unsigned OVERRUN_ERROR:1;
+[; ;plib\usart.h: 314: unsigned fill:4;
+[; ;plib\usart.h: 315: };
+[; ;plib\usart.h: 316: };
+[; ;plib\usart.h: 317: extern union USART2 USART2_Status;
+[; ;plib\usart.h: 318: void Open2USART ( unsigned char config, unsigned int spbrg);
+[; ;plib\usart.h: 333: char Read2USART (void);
+[; ;plib\usart.h: 334: void Write2USART ( char data);
+[; ;plib\usart.h: 335: void gets2USART ( char *buffer, unsigned char len);
+[; ;plib\usart.h: 336: void puts2USART ( char *data);
+[; ;plib\usart.h: 337: void putrs2USART ( const  char *data);
+[; ;plib\usart.h: 660: void baud1USART ( unsigned char baudconfig);
+[; ;plib\usart.h: 665: void baud2USART ( unsigned char baudconfig);
+[; ;plib\xlcd.h: 87: void OpenXLCD( unsigned char);
+[; ;plib\xlcd.h: 92: void SetCGRamAddr( unsigned char);
+[; ;plib\xlcd.h: 97: void SetDDRamAddr( unsigned char);
+[; ;plib\xlcd.h: 102: unsigned char BusyXLCD(void);
+[; ;plib\xlcd.h: 107: unsigned char ReadAddrXLCD(void);
+[; ;plib\xlcd.h: 112: char ReadDataXLCD(void);
+[; ;plib\xlcd.h: 117: void WriteCmdXLCD( unsigned char);
+[; ;plib\xlcd.h: 122: void WriteDataXLCD( char);
+[; ;plib\xlcd.h: 132: void putsXLCD( char *);
+[; ;plib\xlcd.h: 137: void putrsXLCD(const char *);
+[; ;plib\xlcd.h: 140: extern void DelayFor18TCY(void);
+[; ;plib\xlcd.h: 141: extern void DelayPORXLCD(void);
+[; ;plib\xlcd.h: 142: extern void DelayXLCD(void);
+[; ;plib\delays.h: 13: void Delay1TCYx(unsigned char);
+[; ;plib\delays.h: 19: void Delay10TCYx(unsigned char);
+[; ;plib\delays.h: 25: void Delay100TCYx(unsigned char);
+[; ;plib\delays.h: 31: void Delay1KTCYx(unsigned char);
+[; ;plib\delays.h: 37: void Delay10KTCYx(unsigned char);
 [; ;pic18.h: 18: __attribute__((__unsupported__("The flash_write routine is no longer supported. Please use the peripheral library functions: WriteBytesFlash, WriteBlockFlash or WriteWordFlash"))) void flash_write(const unsigned char *, unsigned int, __far unsigned c
 [; ;pic18.h: 42: extern void __nop(void);
 [; ;pic18.h: 161: extern __nonreentrant void _delay(unsigned long);
@@ -7836,9 +7892,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;headers\unmc_lcd_216.h: 108: void lcd_puts(char *ptr);
 [; ;headers\unmc_lcd_216.h: 109: void lcd_putrs(const char *ptr);
 "16 Unimic/unmc_01/headers\unmc_rtcc_01.h
-[v _RtccTimeDate `S1027 ~T0 @X0 1 e ]
-[v _RtccAlrmTimeDate `S1027 ~T0 @X0 1 e ]
-[v _Rtcc_read_TimeDate `S1027 ~T0 @X0 1 e ]
+[v _RtccTimeDate `S1028 ~T0 @X0 1 e ]
+[v _RtccAlrmTimeDate `S1028 ~T0 @X0 1 e ]
+[v _Rtcc_read_TimeDate `S1028 ~T0 @X0 1 e ]
 [; ;headers\unmc_rtcc_01.h: 16: rtccTimeDate RtccTimeDate ,RtccAlrmTimeDate, Rtcc_read_TimeDate ;
 "18
 [v _segundo_u `uc ~T0 @X0 1 e ]
@@ -7964,13 +8020,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 ]
 [; ;headers\unmc_rtcc_01.h: 44: int segundo=0;
 "50
-[v _RtccTime `S1023 ~T0 @X0 1 e ]
+[v _RtccTime `S1024 ~T0 @X0 1 e ]
 [; ;headers\unmc_rtcc_01.h: 50: rtccTime RtccTime;
 "51
-[v _RtccTimeVal `S1023 ~T0 @X0 1 e ]
+[v _RtccTimeVal `S1024 ~T0 @X0 1 e ]
 [; ;headers\unmc_rtcc_01.h: 51: rtccTime RtccTimeVal;
 "52
-[v _RtccDate `S1025 ~T0 @X0 1 e ]
+[v _RtccDate `S1026 ~T0 @X0 1 e ]
 [; ;headers\unmc_rtcc_01.h: 52: rtccDate RtccDate;
 "54
 [v _buffer1 `uc ~T0 @X0 -> 20 `i e ]
@@ -7988,7 +8044,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _Delay10TCYx (1 -> -> 10 `i `uc ]
 [; ;headers\unmc_rtcc_01.h: 60: }
 "60
-[e :UE 1034 ]
+[e :UE 1035 ]
 }
 "62
 [v _DelayPORXLCD `(v ~T0 @X0 1 ef ]
@@ -8003,7 +8059,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _Delay1KTCYx (1 -> -> 20 `i `uc ]
 [; ;headers\unmc_rtcc_01.h: 66: }
 "66
-[e :UE 1035 ]
+[e :UE 1036 ]
 }
 "74
 [v _Write_RTC `(v ~T0 @X0 1 ef ]
@@ -8081,16 +8137,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = . . _RtccDate 0 0 -> _diasem `uc ]
 [; ;headers\unmc_rtcc_01.h: 99: RtccWriteTime(&RtccTime,1);
 "99
-[e ( _RtccWriteTime (2 , -> &U _RtccTime `*CS1023 -> -> 1 `i `E7337 ]
+[e ( _RtccWriteTime (2 , -> &U _RtccTime `*CS1024 -> -> 1 `i `E7481 ]
 [; ;headers\unmc_rtcc_01.h: 100: RtccWriteDate(&RtccDate,1);
 "100
-[e ( _RtccWriteDate (2 , -> &U _RtccDate `*CS1025 -> -> 1 `i `E7337 ]
+[e ( _RtccWriteDate (2 , -> &U _RtccDate `*CS1026 -> -> 1 `i `E7481 ]
 [; ;headers\unmc_rtcc_01.h: 101: (RTCCFGbits.RTCEN=1);
 "101
 [e = . . _RTCCFGbits 0 7 -> -> 1 `i `uc ]
 [; ;headers\unmc_rtcc_01.h: 102: }
 "102
-[e :UE 1036 ]
+[e :UE 1037 ]
 }
 "111
 [v _Read_RTC `(v ~T0 @X0 1 ef ]
@@ -8168,7 +8224,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _anio + * -> _anio_d `i -> 10 `i -> _anio_u `i ]
 [; ;headers\unmc_rtcc_01.h: 137: }
 "137
-[e :UE 1037 ]
+[e :UE 1038 ]
 }
 "15 Unimic/unmc_01/headers\unmc_config_01.h
 [p x CPUDIV=OSC1 ]
@@ -8215,2032 +8271,1974 @@ Version 3.2 HI-TECH Software Intermediate Code
 "14 Unimic/unmc_01/headers\unmc_inout_02.h
 [v _key `uc ~T0 @X0 1 e ]
 [; ;headers\unmc_inout_02.h: 14: char key;
-[; ;stdarg.h: 7: typedef void * va_list[1];
-[; ;stdarg.h: 10: extern void * __va_start(void);
-[; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
-[; ;stdio.h: 24: extern int errno;
-[; ;stdio.h: 55: struct __prbuf
-[; ;stdio.h: 56: {
-[; ;stdio.h: 57: char * ptr;
-[; ;stdio.h: 58: void (* func)(char);
-[; ;stdio.h: 59: };
-[; ;conio.h: 17: extern int errno;
-[; ;conio.h: 20: extern void init_uart(void);
-[; ;conio.h: 22: extern char getch(void);
-[; ;conio.h: 23: extern char getche(void);
-[; ;conio.h: 24: extern void putch(char);
-[; ;conio.h: 25: extern void ungetch(char);
-[; ;conio.h: 27: extern __bit kbhit(void);
-[; ;conio.h: 31: extern char * cgets(char *);
-[; ;conio.h: 32: extern void cputs(const char *);
-[; ;stdio.h: 100: extern int cprintf(char *, ...);
-[; ;stdio.h: 105: extern int _doprnt(struct __prbuf *, const register char *, register va_list);
-[; ;stdio.h: 195: extern char * gets(char *);
-[; ;stdio.h: 196: extern int puts(const char *);
-[; ;stdio.h: 197: extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
-[; ;stdio.h: 198: extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
-[; ;stdio.h: 199: extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
-[; ;stdio.h: 200: extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
-[; ;stdio.h: 201: extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
-[; ;stdio.h: 202: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
-[; ;stdio.h: 206: extern int sprintf(char *, const char *, ...);
-[; ;stdio.h: 207: extern int printf(const char *, ...);
-[; ;string.h: 22: extern void * memcpy(void *, const void *, size_t);
-[; ;string.h: 23: extern void * memmove(void *, const void *, size_t);
-[; ;string.h: 24: extern void * memset(void *, int, size_t);
-[; ;string.h: 42: extern char * strcat(char *, const char *);
-[; ;string.h: 43: extern char * strcpy(char *, const char *);
-[; ;string.h: 44: extern char * strncat(char *, const char *, size_t);
-[; ;string.h: 45: extern char * strncpy(char *, const char *, size_t);
-[; ;string.h: 46: extern char * strdup(const char *);
-[; ;string.h: 47: extern char * strtok(char *, const char *);
-[; ;string.h: 50: extern int memcmp(const void *, const void *, size_t);
-[; ;string.h: 51: extern int strcmp(const char *, const char *);
-[; ;string.h: 52: extern int stricmp(const char *, const char *);
-[; ;string.h: 53: extern int strncmp(const char *, const char *, size_t);
-[; ;string.h: 54: extern int strnicmp(const char *, const char *, size_t);
-[; ;string.h: 55: extern void * memchr(const void *, int, size_t);
-[; ;string.h: 56: extern size_t strcspn(const char *, const char *);
-[; ;string.h: 57: extern char * strpbrk(const char *, const char *);
-[; ;string.h: 58: extern size_t strspn(const char *, const char *);
-[; ;string.h: 59: extern char * strstr(const char *, const char *);
-[; ;string.h: 60: extern char * stristr(const char *, const char *);
-[; ;string.h: 61: extern char * strerror(int);
-[; ;string.h: 62: extern size_t strlen(const char *);
-[; ;string.h: 63: extern char * strchr(const char *, int);
-[; ;string.h: 64: extern char * strichr(const char *, int);
-[; ;string.h: 65: extern char * strrchr(const char *, int);
-[; ;string.h: 66: extern char * strrichr(const char *, int);
-"34 main.c
+"32 main.c
 [v _state `i ~T0 @X0 1 e ]
-[; ;main.c: 34: int state;
-"35
+[; ;main.c: 32: int state;
+"33
 [v _menu_selected `i ~T0 @X0 1 e ]
-[; ;main.c: 35: int menu_selected;
-"36
+[; ;main.c: 33: int menu_selected;
+"34
 [v _submenu_selected `i ~T0 @X0 1 e ]
-[; ;main.c: 36: int submenu_selected;
-"37
-[v _pin `uc ~T0 @X0 -> 5 `i e ]
-[; ;main.c: 37: char pin[5];
-"38
-[v _pin_input `uc ~T0 @X0 -> 5 `i e ]
-[; ;main.c: 38: char pin_input[5];
-"39
+[; ;main.c: 34: int submenu_selected;
+"35
 [v _home_callback `i ~T0 @X0 1 e ]
-[; ;main.c: 39: int home_callback;
-"40
+[; ;main.c: 35: int home_callback;
+"36
 [v _home_callback_delay `i ~T0 @X0 1 e ]
-[; ;main.c: 40: int home_callback_delay;
-"41
+[; ;main.c: 36: int home_callback_delay;
+"37
 [v _config_widget `i ~T0 @X0 1 e ]
-[; ;main.c: 41: int config_widget;
-"42
+[; ;main.c: 37: int config_widget;
+"38
 [v _config_widget_time `i ~T0 @X0 1 e ]
 [i _config_widget_time
 -> 0 `i
 ]
-[; ;main.c: 42: int config_widget_time = 0;
-"56
+[; ;main.c: 38: int config_widget_time = 0;
+"39
+[v _pin `uc ~T0 @X0 -> 5 `i e ]
+[; ;main.c: 39: char pin[5];
+"40
+[v _pin_input `uc ~T0 @X0 -> 5 `i e ]
+[; ;main.c: 40: char pin_input[5];
+"54
 [v _activity `i ~T0 @X0 1 e ]
-[; ;main.c: 56: int activity;
-"62
+[; ;main.c: 54: int activity;
+"60
 [v _alarm_volume `i ~T0 @X0 1 e ]
-[; ;main.c: 62: int alarm_volume;
-"68
+[; ;main.c: 60: int alarm_volume;
+"66
 [v _alarm_tone `i ~T0 @X0 1 e ]
-[; ;main.c: 68: int alarm_tone;
-"70
-[v _lcd_write `(v ~T0 @X0 1 ef3`i`i`*uc ]
+[; ;main.c: 66: int alarm_tone;
+"68
+[v _lcd_write `(v ~T0 @X0 1 ef3`i`i`*Cuc ]
 {
-[; ;main.c: 70: void lcd_write(int column, int row, char* string){
+[; ;main.c: 68: void lcd_write(int column, int row, const char* string){
 [e :U _lcd_write ]
 [v _column `i ~T0 @X0 1 r1 ]
 [v _row `i ~T0 @X0 1 r2 ]
-[v _string `*uc ~T0 @X0 1 r3 ]
+[v _string `*Cuc ~T0 @X0 1 r3 ]
 [f ]
-[; ;main.c: 71: lcd_gotoxy(column, row);
-"71
+[; ;main.c: 70: lcd_gotoxy(column, row);
+"70
 [e ( _lcd_gotoxy (2 , -> _column `uc -> _row `uc ]
-[; ;main.c: 72: lcd_putrs(string);
-"72
-[e ( _lcd_putrs (1 -> _string `*Cuc ]
+[; ;main.c: 71: lcd_putrs(string);
+"71
+[e ( _lcd_putrs (1 _string ]
 [; ;main.c: 73: }
 "73
 [e :UE 1039 ]
 }
-"75
-[v _reset_pin `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 75: void reset_pin(void){
-[e :U _reset_pin ]
-[f ]
-[; ;main.c: 76: strcpy(pin, "1234");
-"76
-[e ( _strcpy (2 , &U _pin :s 1C ]
-[; ;main.c: 77: }
 "77
+[v _activity_home `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 77: void activity_home(void){
+[e :U _activity_home ]
+[f ]
+[; ;main.c: 79: activity = 0;
+"79
+[e = _activity -> 0 `i ]
+[; ;main.c: 80: lcd_init();
+"80
+[e ( _lcd_init ..  ]
+[; ;main.c: 81: lcd_write(1,1,"X28");
+"81
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 1C ]
+[; ;main.c: 83: }
+"83
 [e :UE 1040 ]
 }
-"79
-[v _setup `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 79: void setup(void){
-[e :U _setup ]
-[f ]
-[; ;main.c: 81: OSCTUNEbits.INTSRC=1;
-"81
-[e = . . _OSCTUNEbits 0 2 -> -> 1 `i `uc ]
-[; ;main.c: 82: OSCTUNEbits.PLLEN=0;
-"82
-[e = . . _OSCTUNEbits 0 1 -> -> 0 `i `uc ]
-[; ;main.c: 83: OSCCONbits.IRCF0=1;
-"83
-[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
-[; ;main.c: 84: OSCCONbits.IRCF1=1;
-"84
-[e = . . _OSCCONbits 1 4 -> -> 1 `i `uc ]
-[; ;main.c: 85: OSCCONbits.IRCF2=1;
 "85
-[e = . . _OSCCONbits 1 5 -> -> 1 `i `uc ]
-[; ;main.c: 86: OSCCONbits.SCS0=0;
-"86
-[e = . . _OSCCONbits 1 0 -> -> 0 `i `uc ]
-[; ;main.c: 87: OSCCONbits.SCS1=0;
-"87
-[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
-[; ;main.c: 88: TRISA = 0b11110000;
-"88
-[e = _TRISA -> -> 240 `i `uc ]
-[; ;main.c: 89: TRISB = 0;
-"89
-[e = _TRISB -> -> 0 `i `uc ]
-[; ;main.c: 90: TRISC = 0b00000111;
-"90
-[e = _TRISC -> -> 7 `i `uc ]
-[; ;main.c: 94: ANCON0=0b11111111;
-"94
-[e = _ANCON0 -> -> 255 `i `uc ]
-[; ;main.c: 96: ANCON1=0b11111111;
-"96
-[e = _ANCON1 -> -> 255 `i `uc ]
-[; ;main.c: 97: ADCON0=0b00101101;
-"97
-[e = _ADCON0 -> -> 45 `i `uc ]
-[; ;main.c: 98: ADCON1=0b00010000;
-"98
-[e = _ADCON1 -> -> 16 `i `uc ]
-[; ;main.c: 99: RTCCFGbits.RTCEN=1;
-"99
-[e = . . _RTCCFGbits 0 7 -> -> 1 `i `uc ]
-[; ;main.c: 100: RTCCFGbits.RTCWREN=1;
-"100
-[e = . . _RTCCFGbits 0 5 -> -> 1 `i `uc ]
-[; ;main.c: 101: T1CONbits.T1OSCEN=1;
-"101
-[e = . . _T1CONbits 0 3 -> -> 1 `i `uc ]
-[; ;main.c: 102: Write_RTC();
-"102
-[e ( _Write_RTC ..  ]
-[; ;main.c: 103: lcd_init();
-"103
-[e ( _lcd_init ..  ]
-[; ;main.c: 104: lcd_comand(0b00001100);
-"104
-[e ( _lcd_comand (1 -> -> 12 `i `uc ]
-[; ;main.c: 105: LATBbits.LATB1 = 1;;
-"105
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-[; ;main.c: 106: LATBbits.LATB0 = 1;;
-"106
-[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 109: home_callback_delay = 50;
-"109
-[e = _home_callback_delay -> 50 `i ]
-[; ;main.c: 110: config_widget = 0;
-"110
-[e = _config_widget -> 0 `i ]
-[; ;main.c: 111: menu_selected = 0;
-"111
-[e = _menu_selected -> 0 `i ]
-[; ;main.c: 112: submenu_selected = 0;
-"112
-[e = _submenu_selected -> 0 `i ]
-[; ;main.c: 113: alarm_volume = 0;
-"113
-[e = _alarm_volume -> 0 `i ]
-[; ;main.c: 114: alarm_tone = 0;
-"114
-[e = _alarm_tone -> 0 `i ]
-[; ;main.c: 115: reset_pin();
-"115
-[e ( _reset_pin ..  ]
-[; ;main.c: 116: }
-"116
-[e :UE 1041 ]
-}
-"118
 [v _reset_home_callback `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 118: void reset_home_callback(void){
+[; ;main.c: 85: void reset_home_callback(void){
 [e :U _reset_home_callback ]
 [f ]
-[; ;main.c: 120: home_callback = home_callback_delay;
-"120
+[; ;main.c: 87: home_callback = home_callback_delay;
+"87
 [e = _home_callback _home_callback_delay ]
-[; ;main.c: 122: }
-"122
+[; ;main.c: 89: }
+"89
+[e :UE 1041 ]
+}
+"91
+[v _check_home_callback `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 91: void check_home_callback(void){
+[e :U _check_home_callback ]
+[f ]
+[; ;main.c: 93: if(activity != 0){
+"93
+[e $ ! != _activity -> 0 `i 1043  ]
+{
+[; ;main.c: 94: home_callback--;
+"94
+[e -- _home_callback -> 1 `i ]
+[; ;main.c: 96: if(home_callback == 0){
+"96
+[e $ ! == _home_callback -> 0 `i 1044  ]
+{
+[; ;main.c: 97: reset_home_callback();
+"97
+[e ( _reset_home_callback ..  ]
+[; ;main.c: 98: activity_home();
+"98
+[e ( _activity_home ..  ]
+"99
+}
+[e :U 1044 ]
+"101
+}
+[e :U 1043 ]
+[; ;main.c: 99: }
+[; ;main.c: 101: }
+[; ;main.c: 103: }
+"103
 [e :UE 1042 ]
 }
-"124
-[v _home_clock_refresh `(v ~T0 @X0 1 ef ]
+"107
+[v _action_menu_selector_0 `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 124: void home_clock_refresh(void){
-[e :U _home_clock_refresh ]
+[; ;main.c: 107: void action_menu_selector_0(void){
+[e :U _action_menu_selector_0 ]
 [f ]
-[; ;main.c: 126: sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
+[; ;main.c: 109: lcd_write(1,1,">");
+"109
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 2C ]
+[; ;main.c: 110: menu_selected = 0;
+"110
+[e = _menu_selected -> 0 `i ]
+[; ;main.c: 111: lcd_write(9,2," ");
+"111
+[e ( _lcd_write (3 , , -> 9 `i -> 2 `i :s 3C ]
+[; ;main.c: 113: }
+"113
+[e :UE 1045 ]
+}
+"115
+[v _action_menu_selector_1 `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 115: void action_menu_selector_1(void){
+[e :U _action_menu_selector_1 ]
+[f ]
+[; ;main.c: 117: lcd_write(1,2,">");
+"117
+[e ( _lcd_write (3 , , -> 1 `i -> 2 `i :s 4C ]
+[; ;main.c: 118: menu_selected = 1;
+"118
+[e = _menu_selected -> 1 `i ]
+[; ;main.c: 119: lcd_write(1,1," ");
+"119
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 5C ]
+[; ;main.c: 121: }
+"121
+[e :UE 1046 ]
+}
+"123
+[v _action_menu_selector_2 `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 123: void action_menu_selector_2(void){
+[e :U _action_menu_selector_2 ]
+[f ]
+[; ;main.c: 125: lcd_write(9,1,">");
+"125
+[e ( _lcd_write (3 , , -> 9 `i -> 1 `i :s 6C ]
+[; ;main.c: 126: menu_selected = 2;
 "126
-[e ( _sprintf (1 , , , (. , &U _buffer1 :s 2C _dia _mes _anio ]
-[; ;main.c: 127: lcd_write(9,1,buffer1);
+[e = _menu_selected -> 2 `i ]
+[; ;main.c: 127: lcd_write(1,2," ");
 "127
-[e ( _lcd_write (3 , , -> 9 `i -> 1 `i &U _buffer1 ]
-[; ;main.c: 128: sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
-"128
-[e ( _sprintf (1 , , , (. , &U _buffer1 :s 3C _hora _minuto _segundo ]
-[; ;main.c: 129: lcd_write(9,2,buffer1);
+[e ( _lcd_write (3 , , -> 1 `i -> 2 `i :s 7C ]
+[; ;main.c: 129: }
 "129
-[e ( _lcd_write (3 , , -> 9 `i -> 2 `i &U _buffer1 ]
-[; ;main.c: 131: }
-"131
-[e :UE 1043 ]
-}
-"133
-[v _home_state_refresh `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 133: void home_state_refresh(void){
-[e :U _home_state_refresh ]
-[f ]
-[; ;main.c: 135: if(state == 1){
-"135
-[e $ ! == _state -> 1 `i 1045  ]
-{
-[; ;main.c: 136: sprintf(buffer1,"ACT:SI");
-"136
-[e ( _sprintf (1 , &U _buffer1 :s 4C ]
-"137
-}
-[; ;main.c: 137: }
-[e $U 1046  ]
-"138
-[e :U 1045 ]
-[; ;main.c: 138: else{
-{
-[; ;main.c: 139: sprintf(buffer1,"ACT:NO");
-"139
-[e ( _sprintf (1 , &U _buffer1 :s 5C ]
-"140
-}
-[e :U 1046 ]
-[; ;main.c: 140: }
-[; ;main.c: 141: lcd_write(1,2,buffer1);
-"141
-[e ( _lcd_write (3 , , -> 1 `i -> 2 `i &U _buffer1 ]
-[; ;main.c: 143: }
-"143
-[e :UE 1044 ]
-}
-"145
-[v _home_volume_refresh `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 145: void home_volume_refresh(void){
-[e :U _home_volume_refresh ]
-[f ]
-[; ;main.c: 147: if(alarm_volume == 0){
-"147
-[e $ ! == _alarm_volume -> 0 `i 1048  ]
-{
-[; ;main.c: 148: sprintf(buffer1,"VOL:BA");
-"148
-[e ( _sprintf (1 , &U _buffer1 :s 6C ]
-"149
-}
-[; ;main.c: 149: }
-[e $U 1049  ]
-"150
-[e :U 1048 ]
-[; ;main.c: 150: else{
-{
-[; ;main.c: 151: sprintf(buffer1,"VOL:AL");
-"151
-[e ( _sprintf (1 , &U _buffer1 :s 7C ]
-"152
-}
-[e :U 1049 ]
-[; ;main.c: 152: }
-[; ;main.c: 153: lcd_write(1,2,buffer1);
-"153
-[e ( _lcd_write (3 , , -> 1 `i -> 2 `i &U _buffer1 ]
-[; ;main.c: 155: }
-"155
 [e :UE 1047 ]
 }
+"131
+[v _action_menu_selector_3 `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 131: void action_menu_selector_3(void){
+[e :U _action_menu_selector_3 ]
+[f ]
+[; ;main.c: 133: lcd_write(9,2,">");
+"133
+[e ( _lcd_write (3 , , -> 9 `i -> 2 `i :s 8C ]
+[; ;main.c: 134: menu_selected = 3;
+"134
+[e = _menu_selected -> 3 `i ]
+[; ;main.c: 135: lcd_write(9,1," ");
+"135
+[e ( _lcd_write (3 , , -> 9 `i -> 1 `i :s 9C ]
+[; ;main.c: 137: }
+"137
+[e :UE 1048 ]
+}
+"139
+[v _action_menu_selector `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 139: void action_menu_selector(void){
+[e :U _action_menu_selector ]
+[f ]
+[; ;main.c: 141: switch(menu_selected){
+"141
+[e $U 1051  ]
+{
+[; ;main.c: 143: case 0:
+"143
+[e :U 1052 ]
+[; ;main.c: 144: action_menu_selector_1();
+"144
+[e ( _action_menu_selector_1 ..  ]
+[; ;main.c: 145: break;
+"145
+[e $U 1050  ]
+[; ;main.c: 147: case 1:
+"147
+[e :U 1053 ]
+[; ;main.c: 148: action_menu_selector_2();
+"148
+[e ( _action_menu_selector_2 ..  ]
+[; ;main.c: 149: break;
+"149
+[e $U 1050  ]
+[; ;main.c: 151: case 2:
+"151
+[e :U 1054 ]
+[; ;main.c: 152: action_menu_selector_3();
+"152
+[e ( _action_menu_selector_3 ..  ]
+[; ;main.c: 153: break;
+"153
+[e $U 1050  ]
+[; ;main.c: 155: case 3:
+"155
+[e :U 1055 ]
+[; ;main.c: 156: action_menu_selector_0();
+"156
+[e ( _action_menu_selector_0 ..  ]
+[; ;main.c: 157: break;
 "157
+[e $U 1050  ]
+"159
+}
+[; ;main.c: 159: }
+[e $U 1050  ]
+"141
+[e :U 1051 ]
+[e [\ _menu_selected , $ -> 0 `i 1052
+ , $ -> 1 `i 1053
+ , $ -> 2 `i 1054
+ , $ -> 3 `i 1055
+ 1050 ]
+"159
+[e :U 1050 ]
+[; ;main.c: 161: }
+"161
+[e :UE 1049 ]
+}
+"165
+[v _action_submenu_selector_0 `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 165: void action_submenu_selector_0(void){
+[e :U _action_submenu_selector_0 ]
+[f ]
+[; ;main.c: 167: lcd_write(9,1,">");
+"167
+[e ( _lcd_write (3 , , -> 9 `i -> 1 `i :s 10C ]
+[; ;main.c: 168: submenu_selected = 0;
+"168
+[e = _submenu_selected -> 0 `i ]
+[; ;main.c: 169: lcd_write(9,2," ");
+"169
+[e ( _lcd_write (3 , , -> 9 `i -> 2 `i :s 11C ]
+[; ;main.c: 171: }
+"171
+[e :UE 1056 ]
+}
+"173
+[v _action_submenu_selector_1 `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 173: void action_submenu_selector_1(void){
+[e :U _action_submenu_selector_1 ]
+[f ]
+[; ;main.c: 175: lcd_write(9,2,">");
+"175
+[e ( _lcd_write (3 , , -> 9 `i -> 2 `i :s 12C ]
+[; ;main.c: 176: submenu_selected = 1;
+"176
+[e = _submenu_selected -> 1 `i ]
+[; ;main.c: 177: lcd_write(9,1," ");
+"177
+[e ( _lcd_write (3 , , -> 9 `i -> 1 `i :s 13C ]
+[; ;main.c: 179: }
+"179
+[e :UE 1057 ]
+}
+"181
+[v _action_submenu_selector `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 181: void action_submenu_selector(void){
+[e :U _action_submenu_selector ]
+[f ]
+[; ;main.c: 183: switch(submenu_selected){
+"183
+[e $U 1060  ]
+{
+[; ;main.c: 185: case 0:
+"185
+[e :U 1061 ]
+[; ;main.c: 186: action_submenu_selector_1();
+"186
+[e ( _action_submenu_selector_1 ..  ]
+[; ;main.c: 187: break;
+"187
+[e $U 1059  ]
+[; ;main.c: 189: case 1:
+"189
+[e :U 1062 ]
+[; ;main.c: 190: action_submenu_selector_0();
+"190
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 191: break;
+"191
+[e $U 1059  ]
+"192
+}
+[; ;main.c: 192: }
+[e $U 1059  ]
+"183
+[e :U 1060 ]
+[e [\ _submenu_selected , $ -> 0 `i 1061
+ , $ -> 1 `i 1062
+ 1059 ]
+"192
+[e :U 1059 ]
+[; ;main.c: 194: }
+"194
+[e :UE 1058 ]
+}
+"196
+[v _activity_pin `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 196: void activity_pin(void){
+[e :U _activity_pin ]
+[f ]
+[; ;main.c: 198: activity = 1;
+"198
+[e = _activity -> 1 `i ]
+[; ;main.c: 199: strcpy(pin_input, "");
+"199
+[e ( _strcpy (2 , &U _pin_input :s 14C ]
+[; ;main.c: 200: lcd_init();
+"200
+[e ( _lcd_init ..  ]
+[; ;main.c: 201: lcd_write(1,1,"Ingrese su PIN:");
+"201
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 15C ]
+[; ;main.c: 202: lcd_gotoxy(1,2);
+"202
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 203: lcd_comand(0b00001111);
+"203
+[e ( _lcd_comand (1 -> -> 15 `i `uc ]
+[; ;main.c: 205: }
+"205
+[e :UE 1063 ]
+}
+"207
+[v _activity_menu `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 207: void activity_menu(void){
+[e :U _activity_menu ]
+[f ]
+[; ;main.c: 209: activity = 2;
+"209
+[e = _activity -> 2 `i ]
+[; ;main.c: 210: lcd_init();
+"210
+[e ( _lcd_init ..  ]
+[; ;main.c: 211: lcd_write(2,1,"Activar");
+"211
+[e ( _lcd_write (3 , , -> 2 `i -> 1 `i :s 16C ]
+[; ;main.c: 212: lcd_write(2,2,"Reloj");
+"212
+[e ( _lcd_write (3 , , -> 2 `i -> 2 `i :s 17C ]
+[; ;main.c: 213: lcd_write(10,1,"Pin");
+"213
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i :s 18C ]
+[; ;main.c: 214: lcd_write(10,2,"Alarma");
+"214
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i :s 19C ]
+[; ;main.c: 215: action_menu_selector_0();
+"215
+[e ( _action_menu_selector_0 ..  ]
+[; ;main.c: 217: }
+"217
+[e :UE 1064 ]
+}
+"221
+[v _activity_submenu_clock `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 221: void activity_submenu_clock(void){
+[e :U _activity_submenu_clock ]
+[f ]
+[; ;main.c: 223: activity = 3;
+"223
+[e = _activity -> 3 `i ]
+[; ;main.c: 224: lcd_init();
+"224
+[e ( _lcd_init ..  ]
+[; ;main.c: 225: lcd_write(1,1,"Reloj");
+"225
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 20C ]
+[; ;main.c: 226: lcd_write(10,1,"Fecha");
+"226
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i :s 21C ]
+[; ;main.c: 227: lcd_write(10,2,"Hora");
+"227
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i :s 22C ]
+[; ;main.c: 228: action_submenu_selector_0();
+"228
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 230: }
+"230
+[e :UE 1065 ]
+}
+"234
+[v _activity_submenu_activation `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 234: void activity_submenu_activation(void){
+[e :U _activity_submenu_activation ]
+[f ]
+[; ;main.c: 236: activity = 4;
+"236
+[e = _activity -> 4 `i ]
+[; ;main.c: 237: lcd_init();
+"237
+[e ( _lcd_init ..  ]
+[; ;main.c: 238: lcd_write(1,1,"Activar");
+"238
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 23C ]
+[; ;main.c: 239: lcd_write(10,1,"Si");
+"239
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i :s 24C ]
+[; ;main.c: 240: lcd_write(10,2,"No");
+"240
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i :s 25C ]
+[; ;main.c: 241: action_submenu_selector_0();
+"241
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 243: }
+"243
+[e :UE 1066 ]
+}
+"247
+[v _activity_submenu_siren `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 247: void activity_submenu_siren(void){
+[e :U _activity_submenu_siren ]
+[f ]
+[; ;main.c: 249: activity = 7;
+"249
+[e = _activity -> 7 `i ]
+[; ;main.c: 250: lcd_init();
+"250
+[e ( _lcd_init ..  ]
+[; ;main.c: 251: lcd_write(1,1,"Sirena");
+"251
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 26C ]
+[; ;main.c: 252: lcd_write(10,1,"Volumen");
+"252
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i :s 27C ]
+[; ;main.c: 253: lcd_write(10,2,"Tono");
+"253
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i :s 28C ]
+[; ;main.c: 254: action_submenu_selector_0();
+"254
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 256: }
+"256
+[e :UE 1067 ]
+}
+"258
+[v _activity_submenu_siren_volume `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 258: void activity_submenu_siren_volume(void){
+[e :U _activity_submenu_siren_volume ]
+[f ]
+[; ;main.c: 260: activity = 8;
+"260
+[e = _activity -> 8 `i ]
+[; ;main.c: 261: lcd_init();
+"261
+[e ( _lcd_init ..  ]
+[; ;main.c: 262: lcd_write(1,1,"Volumen");
+"262
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 29C ]
+[; ;main.c: 263: lcd_write(10,1,"Bajo");
+"263
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i :s 30C ]
+[; ;main.c: 264: lcd_write(10,2,"Alto");
+"264
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i :s 31C ]
+[; ;main.c: 265: action_submenu_selector_0();
+"265
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 267: }
+"267
+[e :UE 1068 ]
+}
+"269
+[v _activity_submenu_siren_tone `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 269: void activity_submenu_siren_tone(void){
+[e :U _activity_submenu_siren_tone ]
+[f ]
+[; ;main.c: 271: activity = 9;
+"271
+[e = _activity -> 9 `i ]
+[; ;main.c: 272: lcd_init();
+"272
+[e ( _lcd_init ..  ]
+[; ;main.c: 273: lcd_write(1,1,"Tono");
+"273
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 32C ]
+[; ;main.c: 274: lcd_write(10,1,"Beep 1");
+"274
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i :s 33C ]
+[; ;main.c: 275: lcd_write(10,2,"Beep 2");
+"275
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i :s 34C ]
+[; ;main.c: 276: action_submenu_selector_0();
+"276
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 278: }
+"278
+[e :UE 1069 ]
+}
+"282
+[v _activity_submenu_pin `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 282: void activity_submenu_pin(void){
+[e :U _activity_submenu_pin ]
+[f ]
+[; ;main.c: 284: activity = 5;
+"284
+[e = _activity -> 5 `i ]
+[; ;main.c: 285: lcd_init();
+"285
+[e ( _lcd_init ..  ]
+[; ;main.c: 286: lcd_write(1,1,"Pin");
+"286
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 35C ]
+[; ;main.c: 287: lcd_write(10,1,"Cambiar");
+"287
+[e ( _lcd_write (3 , , -> 10 `i -> 1 `i :s 36C ]
+[; ;main.c: 288: lcd_write(10,2,"Reset");
+"288
+[e ( _lcd_write (3 , , -> 10 `i -> 2 `i :s 37C ]
+[; ;main.c: 289: action_submenu_selector_0();
+"289
+[e ( _action_submenu_selector_0 ..  ]
+[; ;main.c: 290: }
+"290
+[e :UE 1070 ]
+}
+"292
+[v _activity_submenu_pin_set `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 292: void activity_submenu_pin_set(void){
+[e :U _activity_submenu_pin_set ]
+[f ]
+[; ;main.c: 294: activity = 6;
+"294
+[e = _activity -> 6 `i ]
+[; ;main.c: 295: strcpy(pin_input, "");
+"295
+[e ( _strcpy (2 , &U _pin_input :s 38C ]
+[; ;main.c: 296: lcd_init();
+"296
+[e ( _lcd_init ..  ]
+[; ;main.c: 297: lcd_write(1,1,"Nuevo PIN:");
+"297
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 39C ]
+[; ;main.c: 298: lcd_gotoxy(1,2);
+"298
+[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 299: lcd_comand(0b00001111);
+"299
+[e ( _lcd_comand (1 -> -> 15 `i `uc ]
+[; ;main.c: 301: }
+"301
+[e :UE 1071 ]
+}
+"305
+[v _pin_set `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 305: void pin_set(void){
+[e :U _pin_set ]
+[f ]
+[; ;main.c: 307: strcpy(pin, pin_input);
+"307
+[e ( _strcpy (2 , &U _pin -> &U _pin_input `*Cuc ]
+[; ;main.c: 308: activity_home();
+"308
+[e ( _activity_home ..  ]
+[; ;main.c: 310: }
+"310
+[e :UE 1072 ]
+}
+"312
+[v _pin_input_validator `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 312: void pin_input_validator(void){
+[e :U _pin_input_validator ]
+[f ]
+[; ;main.c: 314: if( strcmp(pin, pin_input) == 0 ){
+"314
+[e $ ! == ( _strcmp (2 , -> &U _pin `*Cuc -> &U _pin_input `*Cuc -> 0 `i 1074  ]
+{
+[; ;main.c: 315: activity_menu();
+"315
+[e ( _activity_menu ..  ]
+"316
+}
+[; ;main.c: 316: }
+[e $U 1075  ]
+"317
+[e :U 1074 ]
+[; ;main.c: 317: else {
+{
+[; ;main.c: 318: activity_pin();
+"318
+[e ( _activity_pin ..  ]
+"319
+}
+[e :U 1075 ]
+[; ;main.c: 319: }
+[; ;main.c: 321: }
+"321
+[e :UE 1073 ]
+}
+"323
+[v _pin_reset `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 323: void pin_reset(void){
+[e :U _pin_reset ]
+[f ]
+[; ;main.c: 325: strcpy(pin, "1234");
+"325
+[e ( _strcpy (2 , &U _pin :s 40C ]
+[; ;main.c: 327: }
+"327
+[e :UE 1076 ]
+}
+"331
+[v _home_clock_refresh `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 331: void home_clock_refresh(void){
+[e :U _home_clock_refresh ]
+[f ]
+[; ;main.c: 333: sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
+"333
+[e ( _sprintf (1 , , , (. , &U _buffer1 :s 41C _dia _mes _anio ]
+[; ;main.c: 334: lcd_write(9,1,buffer1);
+"334
+[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> &U _buffer1 `*Cuc ]
+[; ;main.c: 335: sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
+"335
+[e ( _sprintf (1 , , , (. , &U _buffer1 :s 42C _hora _minuto _segundo ]
+[; ;main.c: 336: lcd_write(9,2,buffer1);
+"336
+[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> &U _buffer1 `*Cuc ]
+[; ;main.c: 338: }
+"338
+[e :UE 1077 ]
+}
+"340
+[v _home_state_refresh `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 340: void home_state_refresh(void){
+[e :U _home_state_refresh ]
+[f ]
+[; ;main.c: 342: if(state == 1){
+"342
+[e $ ! == _state -> 1 `i 1079  ]
+{
+[; ;main.c: 343: sprintf(buffer1,"ACT:SI");
+"343
+[e ( _sprintf (1 , &U _buffer1 :s 43C ]
+"344
+}
+[; ;main.c: 344: }
+[e $U 1080  ]
+"345
+[e :U 1079 ]
+[; ;main.c: 345: else{
+{
+[; ;main.c: 346: sprintf(buffer1,"ACT:NO");
+"346
+[e ( _sprintf (1 , &U _buffer1 :s 44C ]
+"347
+}
+[e :U 1080 ]
+[; ;main.c: 347: }
+[; ;main.c: 348: lcd_write(1,2,buffer1);
+"348
+[e ( _lcd_write (3 , , -> 1 `i -> 2 `i -> &U _buffer1 `*Cuc ]
+[; ;main.c: 350: }
+"350
+[e :UE 1078 ]
+}
+"352
+[v _home_volume_refresh `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 352: void home_volume_refresh(void){
+[e :U _home_volume_refresh ]
+[f ]
+[; ;main.c: 354: if(alarm_volume == 0){
+"354
+[e $ ! == _alarm_volume -> 0 `i 1082  ]
+{
+[; ;main.c: 355: sprintf(buffer1,"VOL:BA");
+"355
+[e ( _sprintf (1 , &U _buffer1 :s 45C ]
+"356
+}
+[; ;main.c: 356: }
+[e $U 1083  ]
+"357
+[e :U 1082 ]
+[; ;main.c: 357: else{
+{
+[; ;main.c: 358: sprintf(buffer1,"VOL:AL");
+"358
+[e ( _sprintf (1 , &U _buffer1 :s 46C ]
+"359
+}
+[e :U 1083 ]
+[; ;main.c: 359: }
+[; ;main.c: 360: lcd_write(1,2,buffer1);
+"360
+[e ( _lcd_write (3 , , -> 1 `i -> 2 `i -> &U _buffer1 `*Cuc ]
+[; ;main.c: 362: }
+"362
+[e :UE 1081 ]
+}
+"364
 [v _home_tone_refresh `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 157: void home_tone_refresh(void){
+[; ;main.c: 364: void home_tone_refresh(void){
 [e :U _home_tone_refresh ]
 [f ]
-[; ;main.c: 159: if(alarm_tone == 0){
-"159
-[e $ ! == _alarm_tone -> 0 `i 1051  ]
+[; ;main.c: 366: if(alarm_tone == 0){
+"366
+[e $ ! == _alarm_tone -> 0 `i 1085  ]
 {
-[; ;main.c: 160: sprintf(buffer1,"TONO:1");
-"160
-[e ( _sprintf (1 , &U _buffer1 :s 8C ]
-"161
+[; ;main.c: 367: sprintf(buffer1,"TONO:1");
+"367
+[e ( _sprintf (1 , &U _buffer1 :s 47C ]
+"368
 }
-[; ;main.c: 161: }
-[e $U 1052  ]
-"162
-[e :U 1051 ]
-[; ;main.c: 162: else{
+[; ;main.c: 368: }
+[e $U 1086  ]
+"369
+[e :U 1085 ]
+[; ;main.c: 369: else{
 {
-[; ;main.c: 163: sprintf(buffer1,"TONO:2");
-"163
-[e ( _sprintf (1 , &U _buffer1 :s 9C ]
-"164
+[; ;main.c: 370: sprintf(buffer1,"TONO:2");
+"370
+[e ( _sprintf (1 , &U _buffer1 :s 48C ]
+"371
 }
-[e :U 1052 ]
-[; ;main.c: 164: }
-[; ;main.c: 165: lcd_write(1,2,buffer1);
-"165
-[e ( _lcd_write (3 , , -> 1 `i -> 2 `i &U _buffer1 ]
-[; ;main.c: 167: }
-"167
-[e :UE 1050 ]
+[e :U 1086 ]
+[; ;main.c: 371: }
+[; ;main.c: 372: lcd_write(1,2,buffer1);
+"372
+[e ( _lcd_write (3 , , -> 1 `i -> 2 `i -> &U _buffer1 `*Cuc ]
+[; ;main.c: 374: }
+"374
+[e :UE 1084 ]
 }
-"169
+"376
 [v _home_config_refresh `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 169: void home_config_refresh(void){
+[; ;main.c: 376: void home_config_refresh(void){
 [e :U _home_config_refresh ]
 [f ]
-[; ;main.c: 171: if(state == 1){LATBbits.LATB1 = 1;;}
-"171
-[e $ ! == _state -> 1 `i 1054  ]
+[; ;main.c: 378: if(state == 1){LATBbits.LATB1 = 1;;}
+"378
+[e $ ! == _state -> 1 `i 1088  ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 1054 ]
-[; ;main.c: 172: if(state == 0){LATBbits.LATB1 = 0;;}
-"172
-[e $ ! == _state -> 0 `i 1055  ]
+[e :U 1088 ]
+[; ;main.c: 379: if(state == 0){LATBbits.LATB1 = 0;;}
+"379
+[e $ ! == _state -> 0 `i 1089  ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
-[e :U 1055 ]
-[; ;main.c: 174: config_widget_time++;
-"174
+[e :U 1089 ]
+[; ;main.c: 381: config_widget_time++;
+"381
 [e ++ _config_widget_time -> 1 `i ]
-[; ;main.c: 176: switch(config_widget){
-"176
-[e $U 1057  ]
+[; ;main.c: 383: switch(config_widget){
+"383
+[e $U 1091  ]
 {
-[; ;main.c: 178: case 0:
-"178
-[e :U 1058 ]
-[; ;main.c: 179: home_state_refresh();
-"179
+[; ;main.c: 385: case 0:
+"385
+[e :U 1092 ]
+[; ;main.c: 386: home_state_refresh();
+"386
 [e ( _home_state_refresh ..  ]
-[; ;main.c: 180: if(config_widget_time == 5){
-"180
-[e $ ! == _config_widget_time -> 5 `i 1059  ]
+[; ;main.c: 387: if(config_widget_time == 5){
+"387
+[e $ ! == _config_widget_time -> 5 `i 1093  ]
 {
-[; ;main.c: 181: config_widget_time = 0;
-"181
+[; ;main.c: 388: config_widget_time = 0;
+"388
 [e = _config_widget_time -> 0 `i ]
-[; ;main.c: 182: config_widget = 1;
-"182
+[; ;main.c: 389: config_widget = 1;
+"389
 [e = _config_widget -> 1 `i ]
-"183
+"390
 }
-[e :U 1059 ]
-[; ;main.c: 183: }
-[; ;main.c: 184: break;
-"184
-[e $U 1056  ]
-[; ;main.c: 186: case 1:
-"186
-[e :U 1060 ]
-[; ;main.c: 187: home_volume_refresh();
-"187
+[e :U 1093 ]
+[; ;main.c: 390: }
+[; ;main.c: 391: break;
+"391
+[e $U 1090  ]
+[; ;main.c: 393: case 1:
+"393
+[e :U 1094 ]
+[; ;main.c: 394: home_volume_refresh();
+"394
 [e ( _home_volume_refresh ..  ]
-[; ;main.c: 188: if(config_widget_time == 5){
-"188
-[e $ ! == _config_widget_time -> 5 `i 1061  ]
+[; ;main.c: 395: if(config_widget_time == 5){
+"395
+[e $ ! == _config_widget_time -> 5 `i 1095  ]
 {
-[; ;main.c: 189: config_widget_time = 0;
-"189
+[; ;main.c: 396: config_widget_time = 0;
+"396
 [e = _config_widget_time -> 0 `i ]
-[; ;main.c: 190: config_widget = 2;
-"190
+[; ;main.c: 397: config_widget = 2;
+"397
 [e = _config_widget -> 2 `i ]
-"191
+"398
 }
-[e :U 1061 ]
-[; ;main.c: 191: }
-[; ;main.c: 192: break;
-"192
-[e $U 1056  ]
-[; ;main.c: 194: case 2:
-"194
-[e :U 1062 ]
-[; ;main.c: 195: home_tone_refresh();
-"195
+[e :U 1095 ]
+[; ;main.c: 398: }
+[; ;main.c: 399: break;
+"399
+[e $U 1090  ]
+[; ;main.c: 401: case 2:
+"401
+[e :U 1096 ]
+[; ;main.c: 402: home_tone_refresh();
+"402
 [e ( _home_tone_refresh ..  ]
-[; ;main.c: 196: if(config_widget_time == 5){
-"196
-[e $ ! == _config_widget_time -> 5 `i 1063  ]
+[; ;main.c: 403: if(config_widget_time == 5){
+"403
+[e $ ! == _config_widget_time -> 5 `i 1097  ]
 {
-[; ;main.c: 197: config_widget_time = 0;
-"197
+[; ;main.c: 404: config_widget_time = 0;
+"404
 [e = _config_widget_time -> 0 `i ]
-[; ;main.c: 198: config_widget = 0;
-"198
+[; ;main.c: 405: config_widget = 0;
+"405
 [e = _config_widget -> 0 `i ]
-"199
+"406
 }
-[e :U 1063 ]
-[; ;main.c: 199: }
-[; ;main.c: 200: break;
-"200
-[e $U 1056  ]
-"202
+[e :U 1097 ]
+[; ;main.c: 406: }
+[; ;main.c: 407: break;
+"407
+[e $U 1090  ]
+"409
 }
-[; ;main.c: 202: }
-[e $U 1056  ]
-"176
-[e :U 1057 ]
-[e [\ _config_widget , $ -> 0 `i 1058
- , $ -> 1 `i 1060
- , $ -> 2 `i 1062
- 1056 ]
-"202
-[e :U 1056 ]
-[; ;main.c: 204: }
-"204
-[e :UE 1053 ]
-}
-"206
-[v _action_menu_selector_0 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 206: void action_menu_selector_0(void){
-[e :U _action_menu_selector_0 ]
-[f ]
-[; ;main.c: 207: lcd_write(1,1,">");
-"207
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 10C `*uc ]
-[; ;main.c: 208: menu_selected = 0;
-"208
-[e = _menu_selected -> 0 `i ]
-[; ;main.c: 209: lcd_write(9,2," ");
-"209
-[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 11C `*uc ]
-[; ;main.c: 210: }
-"210
-[e :UE 1064 ]
-}
-"212
-[v _action_menu_selector_1 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 212: void action_menu_selector_1(void){
-[e :U _action_menu_selector_1 ]
-[f ]
-[; ;main.c: 213: lcd_write(1,2,">");
-"213
-[e ( _lcd_write (3 , , -> 1 `i -> 2 `i -> :s 12C `*uc ]
-[; ;main.c: 214: menu_selected = 1;
-"214
-[e = _menu_selected -> 1 `i ]
-[; ;main.c: 215: lcd_write(1,1," ");
-"215
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 13C `*uc ]
-[; ;main.c: 216: }
-"216
-[e :UE 1065 ]
-}
-"218
-[v _action_menu_selector_2 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 218: void action_menu_selector_2(void){
-[e :U _action_menu_selector_2 ]
-[f ]
-[; ;main.c: 219: lcd_write(9,1,">");
-"219
-[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 14C `*uc ]
-[; ;main.c: 220: menu_selected = 2;
-"220
-[e = _menu_selected -> 2 `i ]
-[; ;main.c: 221: lcd_write(1,2," ");
-"221
-[e ( _lcd_write (3 , , -> 1 `i -> 2 `i -> :s 15C `*uc ]
-[; ;main.c: 222: }
-"222
-[e :UE 1066 ]
-}
-"224
-[v _action_menu_selector_3 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 224: void action_menu_selector_3(void){
-[e :U _action_menu_selector_3 ]
-[f ]
-[; ;main.c: 225: lcd_write(9,2,">");
-"225
-[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 16C `*uc ]
-[; ;main.c: 226: menu_selected = 3;
-"226
-[e = _menu_selected -> 3 `i ]
-[; ;main.c: 227: lcd_write(9,1," ");
-"227
-[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 17C `*uc ]
-[; ;main.c: 228: }
-"228
-[e :UE 1067 ]
-}
-"230
-[v _action_menu_selector `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 230: void action_menu_selector(void){
-[e :U _action_menu_selector ]
-[f ]
-[; ;main.c: 232: switch(menu_selected){
-"232
-[e $U 1070  ]
-{
-[; ;main.c: 234: case 0:
-"234
-[e :U 1071 ]
-[; ;main.c: 235: action_menu_selector_1();
-"235
-[e ( _action_menu_selector_1 ..  ]
-[; ;main.c: 236: break;
-"236
-[e $U 1069  ]
-[; ;main.c: 238: case 1:
-"238
-[e :U 1072 ]
-[; ;main.c: 239: action_menu_selector_2();
-"239
-[e ( _action_menu_selector_2 ..  ]
-[; ;main.c: 240: break;
-"240
-[e $U 1069  ]
-[; ;main.c: 242: case 2:
-"242
-[e :U 1073 ]
-[; ;main.c: 243: action_menu_selector_3();
-"243
-[e ( _action_menu_selector_3 ..  ]
-[; ;main.c: 244: break;
-"244
-[e $U 1069  ]
-[; ;main.c: 246: case 3:
-"246
-[e :U 1074 ]
-[; ;main.c: 247: action_menu_selector_0();
-"247
-[e ( _action_menu_selector_0 ..  ]
-[; ;main.c: 248: break;
-"248
-[e $U 1069  ]
-"250
-}
-[; ;main.c: 250: }
-[e $U 1069  ]
-"232
-[e :U 1070 ]
-[e [\ _menu_selected , $ -> 0 `i 1071
- , $ -> 1 `i 1072
- , $ -> 2 `i 1073
- , $ -> 3 `i 1074
- 1069 ]
-"250
-[e :U 1069 ]
-[; ;main.c: 252: }
-"252
-[e :UE 1068 ]
-}
-"254
-[v _activity_home `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 254: void activity_home(void){
-[e :U _activity_home ]
-[f ]
-[; ;main.c: 256: activity = 0;
-"256
-[e = _activity -> 0 `i ]
-[; ;main.c: 257: lcd_init();
-"257
-[e ( _lcd_init ..  ]
-[; ;main.c: 258: lcd_write(1,1,"X28");
-"258
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 18C `*uc ]
-[; ;main.c: 260: }
-"260
-[e :UE 1075 ]
-}
-"262
-[v _activity_pin `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 262: void activity_pin(void){
-[e :U _activity_pin ]
-[f ]
-[; ;main.c: 264: activity = 1;
-"264
-[e = _activity -> 1 `i ]
-[; ;main.c: 265: strcpy(pin_input, "");
-"265
-[e ( _strcpy (2 , &U _pin_input :s 19C ]
-[; ;main.c: 266: lcd_init();
-"266
-[e ( _lcd_init ..  ]
-[; ;main.c: 267: lcd_write(1,1,"Ingrese su PIN:");
-"267
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 20C `*uc ]
-[; ;main.c: 268: lcd_gotoxy(1,2);
-"268
-[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 269: lcd_comand(0b00001111);
-"269
-[e ( _lcd_comand (1 -> -> 15 `i `uc ]
-[; ;main.c: 270: }
-"270
-[e :UE 1076 ]
-}
-"272
-[v _activity_menu `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 272: void activity_menu(void){
-[e :U _activity_menu ]
-[f ]
-[; ;main.c: 274: activity = 2;
-"274
-[e = _activity -> 2 `i ]
-[; ;main.c: 275: lcd_init();
-"275
-[e ( _lcd_init ..  ]
-[; ;main.c: 276: lcd_write(2,1,"Activar");
-"276
-[e ( _lcd_write (3 , , -> 2 `i -> 1 `i -> :s 21C `*uc ]
-[; ;main.c: 277: lcd_write(2,2,"Reloj");
-"277
-[e ( _lcd_write (3 , , -> 2 `i -> 2 `i -> :s 22C `*uc ]
-[; ;main.c: 278: lcd_write(10,1,"Pin");
-"278
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 23C `*uc ]
-[; ;main.c: 279: lcd_write(10,2,"Alarma");
-"279
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 24C `*uc ]
-[; ;main.c: 280: action_menu_selector_0();
-"280
-[e ( _action_menu_selector_0 ..  ]
-[; ;main.c: 282: }
-"282
-[e :UE 1077 ]
-}
-"284
-[v _action_submenu_selector_0 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 284: void action_submenu_selector_0(void){
-[e :U _action_submenu_selector_0 ]
-[f ]
-[; ;main.c: 285: lcd_write(9,1,">");
-"285
-[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 25C `*uc ]
-[; ;main.c: 286: submenu_selected = 0;
-"286
-[e = _submenu_selected -> 0 `i ]
-[; ;main.c: 287: lcd_write(9,2," ");
-"287
-[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 26C `*uc ]
-[; ;main.c: 288: }
-"288
-[e :UE 1078 ]
-}
-"290
-[v _action_submenu_selector_1 `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 290: void action_submenu_selector_1(void){
-[e :U _action_submenu_selector_1 ]
-[f ]
-[; ;main.c: 291: lcd_write(9,2,">");
-"291
-[e ( _lcd_write (3 , , -> 9 `i -> 2 `i -> :s 27C `*uc ]
-[; ;main.c: 292: submenu_selected = 1;
-"292
-[e = _submenu_selected -> 1 `i ]
-[; ;main.c: 293: lcd_write(9,1," ");
-"293
-[e ( _lcd_write (3 , , -> 9 `i -> 1 `i -> :s 28C `*uc ]
-[; ;main.c: 294: }
-"294
-[e :UE 1079 ]
-}
-"296
-[v _action_submenu_selector `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 296: void action_submenu_selector(void){
-[e :U _action_submenu_selector ]
-[f ]
-[; ;main.c: 298: switch(submenu_selected){
-"298
-[e $U 1082  ]
-{
-[; ;main.c: 300: case 0:
-"300
-[e :U 1083 ]
-[; ;main.c: 301: action_submenu_selector_1();
-"301
-[e ( _action_submenu_selector_1 ..  ]
-[; ;main.c: 302: break;
-"302
-[e $U 1081  ]
-[; ;main.c: 304: case 1:
-"304
-[e :U 1084 ]
-[; ;main.c: 305: action_submenu_selector_0();
-"305
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 306: break;
-"306
-[e $U 1081  ]
-"307
-}
-[; ;main.c: 307: }
-[e $U 1081  ]
-"298
-[e :U 1082 ]
-[e [\ _submenu_selected , $ -> 0 `i 1083
- , $ -> 1 `i 1084
- 1081 ]
-"307
-[e :U 1081 ]
-[; ;main.c: 309: }
-"309
-[e :UE 1080 ]
-}
-"311
-[v _activity_submenu_activation `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 311: void activity_submenu_activation(void){
-[e :U _activity_submenu_activation ]
-[f ]
-[; ;main.c: 313: activity = 4;
-"313
-[e = _activity -> 4 `i ]
-[; ;main.c: 314: lcd_init();
-"314
-[e ( _lcd_init ..  ]
-[; ;main.c: 315: lcd_write(1,1,"Activar");
-"315
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 29C `*uc ]
-[; ;main.c: 316: lcd_write(10,1,"Si");
-"316
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 30C `*uc ]
-[; ;main.c: 317: lcd_write(10,2,"No");
-"317
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 31C `*uc ]
-[; ;main.c: 318: action_submenu_selector_0();
-"318
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 319: }
-"319
-[e :UE 1085 ]
-}
-"321
-[v _activity_submenu_clock `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 321: void activity_submenu_clock(void){
-[e :U _activity_submenu_clock ]
-[f ]
-[; ;main.c: 323: activity = 3;
-"323
-[e = _activity -> 3 `i ]
-[; ;main.c: 324: lcd_init();
-"324
-[e ( _lcd_init ..  ]
-[; ;main.c: 325: lcd_write(1,1,"Reloj");
-"325
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 32C `*uc ]
-[; ;main.c: 326: lcd_write(10,1,"Fecha");
-"326
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 33C `*uc ]
-[; ;main.c: 327: lcd_write(10,2,"Hora");
-"327
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 34C `*uc ]
-[; ;main.c: 328: action_submenu_selector_0();
-"328
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 330: }
-"330
-[e :UE 1086 ]
-}
-"332
-[v _activity_submenu_pin `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 332: void activity_submenu_pin(void){
-[e :U _activity_submenu_pin ]
-[f ]
-[; ;main.c: 334: activity = 5;
-"334
-[e = _activity -> 5 `i ]
-[; ;main.c: 335: lcd_init();
-"335
-[e ( _lcd_init ..  ]
-[; ;main.c: 336: lcd_write(1,1,"Pin");
-"336
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 35C `*uc ]
-[; ;main.c: 337: lcd_write(10,1,"Cambiar");
-"337
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 36C `*uc ]
-[; ;main.c: 338: lcd_write(10,2,"Reset");
-"338
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 37C `*uc ]
-[; ;main.c: 339: action_submenu_selector_0();
-"339
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 340: }
-"340
+[; ;main.c: 409: }
+[e $U 1090  ]
+"383
+[e :U 1091 ]
+[e [\ _config_widget , $ -> 0 `i 1092
+ , $ -> 1 `i 1094
+ , $ -> 2 `i 1096
+ 1090 ]
+"409
+[e :U 1090 ]
+[; ;main.c: 411: }
+"411
 [e :UE 1087 ]
 }
-"342
-[v _activity_submenu_pin_set `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 342: void activity_submenu_pin_set(void){
-[e :U _activity_submenu_pin_set ]
-[f ]
-[; ;main.c: 344: activity = 7;
-"344
-[e = _activity -> 7 `i ]
-[; ;main.c: 345: strcpy(pin_input, "");
-"345
-[e ( _strcpy (2 , &U _pin_input :s 38C ]
-[; ;main.c: 346: lcd_init();
-"346
-[e ( _lcd_init ..  ]
-[; ;main.c: 347: lcd_write(1,1,"Nuevo PIN:");
-"347
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 39C `*uc ]
-[; ;main.c: 348: lcd_gotoxy(1,2);
-"348
-[e ( _lcd_gotoxy (2 , -> -> 1 `i `uc -> -> 2 `i `uc ]
-[; ;main.c: 349: lcd_comand(0b00001111);
-"349
-[e ( _lcd_comand (1 -> -> 15 `i `uc ]
-[; ;main.c: 351: }
-"351
-[e :UE 1088 ]
-}
-"353
-[v _activity_submenu_alarm `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 353: void activity_submenu_alarm(void){
-[e :U _activity_submenu_alarm ]
-[f ]
-[; ;main.c: 355: activity = 6;
-"355
-[e = _activity -> 6 `i ]
-[; ;main.c: 356: lcd_init();
-"356
-[e ( _lcd_init ..  ]
-[; ;main.c: 357: lcd_write(1,1,"Alarma");
-"357
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 40C `*uc ]
-[; ;main.c: 358: lcd_write(10,1,"Volumen");
-"358
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 41C `*uc ]
-[; ;main.c: 359: lcd_write(10,2,"Tono");
-"359
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 42C `*uc ]
-[; ;main.c: 360: action_submenu_selector_0();
-"360
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 361: }
-"361
-[e :UE 1089 ]
-}
-"363
-[v _activity_submenu_alarm_volume `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 363: void activity_submenu_alarm_volume(void){
-[e :U _activity_submenu_alarm_volume ]
-[f ]
-[; ;main.c: 365: activity = 8;
-"365
-[e = _activity -> 8 `i ]
-[; ;main.c: 366: lcd_init();
-"366
-[e ( _lcd_init ..  ]
-[; ;main.c: 367: lcd_write(1,1,"Volumen");
-"367
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 43C `*uc ]
-[; ;main.c: 368: lcd_write(10,1,"Bajo");
-"368
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 44C `*uc ]
-[; ;main.c: 369: lcd_write(10,2,"Alto");
-"369
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 45C `*uc ]
-[; ;main.c: 370: action_submenu_selector_0();
-"370
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 372: }
-"372
-[e :UE 1090 ]
-}
-"374
-[v _activity_submenu_alarm_tone `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 374: void activity_submenu_alarm_tone(void){
-[e :U _activity_submenu_alarm_tone ]
-[f ]
-[; ;main.c: 376: activity = 9;
-"376
-[e = _activity -> 9 `i ]
-[; ;main.c: 377: lcd_init();
-"377
-[e ( _lcd_init ..  ]
-[; ;main.c: 378: lcd_write(1,1,"Tono");
-"378
-[e ( _lcd_write (3 , , -> 1 `i -> 1 `i -> :s 46C `*uc ]
-[; ;main.c: 379: lcd_write(10,1,"Beep 1");
-"379
-[e ( _lcd_write (3 , , -> 10 `i -> 1 `i -> :s 47C `*uc ]
-[; ;main.c: 380: lcd_write(10,2,"Beep 2");
-"380
-[e ( _lcd_write (3 , , -> 10 `i -> 2 `i -> :s 48C `*uc ]
-[; ;main.c: 381: action_submenu_selector_0();
-"381
-[e ( _action_submenu_selector_0 ..  ]
-[; ;main.c: 383: }
-"383
-[e :UE 1091 ]
-}
-"385
-[v _pin_input_validator `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 385: void pin_input_validator(void){
-[e :U _pin_input_validator ]
-[f ]
-"387
-[v _comparision `i ~T0 @X0 1 a ]
-[; ;main.c: 387: int comparision = strcmp(pin, pin_input);
-[e = _comparision ( _strcmp (2 , -> &U _pin `*Cuc -> &U _pin_input `*Cuc ]
-[; ;main.c: 389: if( comparision == 0 ){
-"389
-[e $ ! == _comparision -> 0 `i 1093  ]
-{
-[; ;main.c: 390: activity_menu();
-"390
-[e ( _activity_menu ..  ]
-"391
-}
-[; ;main.c: 391: }
-[e $U 1094  ]
-"392
-[e :U 1093 ]
-[; ;main.c: 392: else{
-{
-[; ;main.c: 393: activity_pin();
-"393
-[e ( _activity_pin ..  ]
-"394
-}
-[e :U 1094 ]
-[; ;main.c: 394: }
-[; ;main.c: 395: }
-"395
-[e :UE 1092 ]
-}
-"397
-[v _pin_set `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 397: void pin_set(void){
-[e :U _pin_set ]
-[f ]
-[; ;main.c: 399: strcpy(pin, pin_input);
-"399
-[e ( _strcpy (2 , &U _pin -> &U _pin_input `*Cuc ]
-[; ;main.c: 400: activity_home();
-"400
-[e ( _activity_home ..  ]
-[; ;main.c: 401: }
-"401
-[e :UE 1095 ]
-}
-"403
+"415
 [v _button_A `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 403: void button_A(void){
+[; ;main.c: 415: void button_A(void){
 [e :U _button_A ]
 [f ]
-[; ;main.c: 405: reset_home_callback();
-"405
-[e ( _reset_home_callback ..  ]
-[; ;main.c: 407: switch(activity){
-"407
-[e $U 1098  ]
-{
-[; ;main.c: 409: case 0:
-"409
-[e :U 1099 ]
-[; ;main.c: 410: activity_pin();
-"410
-[e ( _activity_pin ..  ]
-[; ;main.c: 411: break;
-"411
-[e $U 1097  ]
-[; ;main.c: 413: case 1:
-"413
-[e :U 1100 ]
-[; ;main.c: 414: break;
-"414
-[e $U 1097  ]
-[; ;main.c: 416: case 2:
-"416
-[e :U 1101 ]
-[; ;main.c: 417: action_menu_selector();
+[; ;main.c: 417: reset_home_callback();
 "417
-[e ( _action_menu_selector ..  ]
-[; ;main.c: 418: break;
-"418
-[e $U 1097  ]
-[; ;main.c: 420: default:
-"420
-[e :U 1102 ]
-[; ;main.c: 421: action_submenu_selector();
+[e ( _reset_home_callback ..  ]
+[; ;main.c: 419: switch(activity){
+"419
+[e $U 1100  ]
+{
+[; ;main.c: 421: case 0:
 "421
-[e ( _action_submenu_selector ..  ]
-[; ;main.c: 422: break;
+[e :U 1101 ]
+[; ;main.c: 422: activity_pin();
 "422
-[e $U 1097  ]
+[e ( _activity_pin ..  ]
+[; ;main.c: 423: break;
 "423
-}
-[; ;main.c: 423: }
-[e $U 1097  ]
-"407
-[e :U 1098 ]
-[e [\ _activity , $ -> 0 `i 1099
- , $ -> 1 `i 1100
- , $ -> 2 `i 1101
- 1102 ]
-"423
-[e :U 1097 ]
-[; ;main.c: 425: }
+[e $U 1099  ]
+[; ;main.c: 425: case 1:
 "425
-[e :UE 1096 ]
+[e :U 1102 ]
+[; ;main.c: 426: break;
+"426
+[e $U 1099  ]
+[; ;main.c: 428: case 2:
+"428
+[e :U 1103 ]
+[; ;main.c: 429: action_menu_selector();
+"429
+[e ( _action_menu_selector ..  ]
+[; ;main.c: 430: break;
+"430
+[e $U 1099  ]
+[; ;main.c: 432: default:
+"432
+[e :U 1104 ]
+[; ;main.c: 433: action_submenu_selector();
+"433
+[e ( _action_submenu_selector ..  ]
+[; ;main.c: 434: break;
+"434
+[e $U 1099  ]
+"435
 }
-"427
+[; ;main.c: 435: }
+[e $U 1099  ]
+"419
+[e :U 1100 ]
+[e [\ _activity , $ -> 0 `i 1101
+ , $ -> 1 `i 1102
+ , $ -> 2 `i 1103
+ 1104 ]
+"435
+[e :U 1099 ]
+[; ;main.c: 437: }
+"437
+[e :UE 1098 ]
+}
+"439
 [v _button_B_menu `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 427: void button_B_menu(void){
+[; ;main.c: 439: void button_B_menu(void){
 [e :U _button_B_menu ]
 [f ]
-[; ;main.c: 429: switch(menu_selected){
-"429
-[e $U 1105  ]
-{
-[; ;main.c: 431: case 0:
-"431
-[e :U 1106 ]
-[; ;main.c: 432: activity_submenu_activation();
-"432
-[e ( _activity_submenu_activation ..  ]
-[; ;main.c: 433: break;
-"433
-[e $U 1104  ]
-[; ;main.c: 435: case 1:
-"435
-[e :U 1107 ]
-[; ;main.c: 436: activity_submenu_clock();
-"436
-[e ( _activity_submenu_clock ..  ]
-[; ;main.c: 437: break;
-"437
-[e $U 1104  ]
-[; ;main.c: 439: case 2:
-"439
-[e :U 1108 ]
-[; ;main.c: 440: activity_submenu_pin();
-"440
-[e ( _activity_submenu_pin ..  ]
-[; ;main.c: 441: break;
+[; ;main.c: 441: switch(menu_selected){
 "441
-[e $U 1104  ]
-[; ;main.c: 443: case 3:
+[e $U 1107  ]
+{
+[; ;main.c: 443: case 0:
 "443
-[e :U 1109 ]
-[; ;main.c: 444: activity_submenu_alarm();
+[e :U 1108 ]
+[; ;main.c: 444: activity_submenu_activation();
 "444
-[e ( _activity_submenu_alarm ..  ]
+[e ( _activity_submenu_activation ..  ]
 [; ;main.c: 445: break;
 "445
-[e $U 1104  ]
+[e $U 1106  ]
+[; ;main.c: 447: case 1:
 "447
-}
-[; ;main.c: 447: }
-[e $U 1104  ]
-"429
-[e :U 1105 ]
-[e [\ _menu_selected , $ -> 0 `i 1106
- , $ -> 1 `i 1107
- , $ -> 2 `i 1108
- , $ -> 3 `i 1109
- 1104 ]
-"447
-[e :U 1104 ]
-[; ;main.c: 448: }
+[e :U 1109 ]
+[; ;main.c: 448: activity_submenu_clock();
 "448
-[e :UE 1103 ]
+[e ( _activity_submenu_clock ..  ]
+[; ;main.c: 449: break;
+"449
+[e $U 1106  ]
+[; ;main.c: 451: case 2:
+"451
+[e :U 1110 ]
+[; ;main.c: 452: activity_submenu_pin();
+"452
+[e ( _activity_submenu_pin ..  ]
+[; ;main.c: 453: break;
+"453
+[e $U 1106  ]
+[; ;main.c: 455: case 3:
+"455
+[e :U 1111 ]
+[; ;main.c: 456: activity_submenu_siren();
+"456
+[e ( _activity_submenu_siren ..  ]
+[; ;main.c: 457: break;
+"457
+[e $U 1106  ]
+"459
 }
-"450
+[; ;main.c: 459: }
+[e $U 1106  ]
+"441
+[e :U 1107 ]
+[e [\ _menu_selected , $ -> 0 `i 1108
+ , $ -> 1 `i 1109
+ , $ -> 2 `i 1110
+ , $ -> 3 `i 1111
+ 1106 ]
+"459
+[e :U 1106 ]
+[; ;main.c: 461: }
+"461
+[e :UE 1105 ]
+}
+"463
 [v _button_B_submenu_activation `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 450: void button_B_submenu_activation(void){
+[; ;main.c: 463: void button_B_submenu_activation(void){
 [e :U _button_B_submenu_activation ]
 [f ]
-[; ;main.c: 452: switch(submenu_selected){
-"452
-[e $U 1112  ]
+[; ;main.c: 465: switch(submenu_selected){
+"465
+[e $U 1114  ]
 {
-[; ;main.c: 454: case 0:
-"454
-[e :U 1113 ]
-[; ;main.c: 455: state = 1;
-"455
-[e = _state -> 1 `i ]
-[; ;main.c: 456: break;
-"456
-[e $U 1111  ]
-[; ;main.c: 458: case 1:
-"458
-[e :U 1114 ]
-[; ;main.c: 459: state = 0;
-"459
-[e = _state -> 0 `i ]
-[; ;main.c: 460: break;
-"460
-[e $U 1111  ]
-"462
-}
-[; ;main.c: 462: }
-[e $U 1111  ]
-"452
-[e :U 1112 ]
-[e [\ _submenu_selected , $ -> 0 `i 1113
- , $ -> 1 `i 1114
- 1111 ]
-"462
-[e :U 1111 ]
-[; ;main.c: 464: activity_home();
-"464
-[e ( _activity_home ..  ]
-[; ;main.c: 466: }
-"466
-[e :UE 1110 ]
-}
+[; ;main.c: 467: case 0:
+"467
+[e :U 1115 ]
+[; ;main.c: 468: state = 1;
 "468
+[e = _state -> 1 `i ]
+[; ;main.c: 469: break;
+"469
+[e $U 1113  ]
+[; ;main.c: 471: case 1:
+"471
+[e :U 1116 ]
+[; ;main.c: 472: state = 0;
+"472
+[e = _state -> 0 `i ]
+[; ;main.c: 473: break;
+"473
+[e $U 1113  ]
+"475
+}
+[; ;main.c: 475: }
+[e $U 1113  ]
+"465
+[e :U 1114 ]
+[e [\ _submenu_selected , $ -> 0 `i 1115
+ , $ -> 1 `i 1116
+ 1113 ]
+"475
+[e :U 1113 ]
+[; ;main.c: 477: activity_home();
+"477
+[e ( _activity_home ..  ]
+[; ;main.c: 479: }
+"479
+[e :UE 1112 ]
+}
+"481
 [v _button_B_submenu_pin_config `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 468: void button_B_submenu_pin_config(void){
+[; ;main.c: 481: void button_B_submenu_pin_config(void){
 [e :U _button_B_submenu_pin_config ]
 [f ]
-[; ;main.c: 470: switch(submenu_selected){
-"470
-[e $U 1117  ]
-{
-[; ;main.c: 472: case 0:
-"472
-[e :U 1118 ]
-[; ;main.c: 473: activity_submenu_pin_set();
-"473
-[e ( _activity_submenu_pin_set ..  ]
-[; ;main.c: 474: break;
-"474
-[e $U 1116  ]
-[; ;main.c: 476: case 1:
-"476
-[e :U 1119 ]
-[; ;main.c: 477: reset_pin();
-"477
-[e ( _reset_pin ..  ]
-[; ;main.c: 478: activity_home();
-"478
-[e ( _activity_home ..  ]
-[; ;main.c: 479: break;
-"479
-[e $U 1116  ]
-"481
-}
-[; ;main.c: 481: }
-[e $U 1116  ]
-"470
-[e :U 1117 ]
-[e [\ _submenu_selected , $ -> 0 `i 1118
- , $ -> 1 `i 1119
- 1116 ]
-"481
-[e :U 1116 ]
-[; ;main.c: 483: }
+[; ;main.c: 483: switch(submenu_selected){
 "483
-[e :UE 1115 ]
-}
+[e $U 1119  ]
+{
+[; ;main.c: 485: case 0:
 "485
-[v _button_B_submenu_alarm_config `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 485: void button_B_submenu_alarm_config(){
-[e :U _button_B_submenu_alarm_config ]
-[f ]
-[; ;main.c: 487: switch(submenu_selected){
+[e :U 1120 ]
+[; ;main.c: 486: activity_submenu_pin_set();
+"486
+[e ( _activity_submenu_pin_set ..  ]
+[; ;main.c: 487: break;
 "487
-[e $U 1122  ]
-{
-[; ;main.c: 489: case 0:
+[e $U 1118  ]
+[; ;main.c: 489: case 1:
 "489
-[e :U 1123 ]
-[; ;main.c: 490: activity_submenu_alarm_volume();
-"490
-[e ( _activity_submenu_alarm_volume ..  ]
-[; ;main.c: 491: break;
-"491
-[e $U 1121  ]
-[; ;main.c: 493: case 1:
-"493
-[e :U 1124 ]
-[; ;main.c: 494: activity_submenu_alarm_tone();
-"494
-[e ( _activity_submenu_alarm_tone ..  ]
-[; ;main.c: 495: break;
-"495
-[e $U 1121  ]
-"497
-}
-[; ;main.c: 497: }
-[e $U 1121  ]
-"487
-[e :U 1122 ]
-[e [\ _submenu_selected , $ -> 0 `i 1123
- , $ -> 1 `i 1124
- 1121 ]
-"497
 [e :U 1121 ]
-[; ;main.c: 499: }
-"499
-[e :UE 1120 ]
+[; ;main.c: 490: pin_reset();
+"490
+[e ( _pin_reset ..  ]
+[; ;main.c: 491: activity_home();
+"491
+[e ( _activity_home ..  ]
+[; ;main.c: 492: break;
+"492
+[e $U 1118  ]
+"494
 }
-"501
-[v _button_B_submenu_alarm_volume `(v ~T0 @X0 1 ef ]
+[; ;main.c: 494: }
+[e $U 1118  ]
+"483
+[e :U 1119 ]
+[e [\ _submenu_selected , $ -> 0 `i 1120
+ , $ -> 1 `i 1121
+ 1118 ]
+"494
+[e :U 1118 ]
+[; ;main.c: 496: }
+"496
+[e :UE 1117 ]
+}
+"498
+[v _button_B_submenu_siren_config `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 501: void button_B_submenu_alarm_volume(void){
-[e :U _button_B_submenu_alarm_volume ]
+[; ;main.c: 498: void button_B_submenu_siren_config(){
+[e :U _button_B_submenu_siren_config ]
 [f ]
-[; ;main.c: 503: switch(submenu_selected){
-"503
-[e $U 1127  ]
+[; ;main.c: 500: switch(submenu_selected){
+"500
+[e $U 1124  ]
 {
-[; ;main.c: 505: case 0:
-"505
-[e :U 1128 ]
-[; ;main.c: 506: alarm_volume = 0;
+[; ;main.c: 502: case 0:
+"502
+[e :U 1125 ]
+[; ;main.c: 503: activity_submenu_siren_volume();
+"503
+[e ( _activity_submenu_siren_volume ..  ]
+[; ;main.c: 504: break;
+"504
+[e $U 1123  ]
+[; ;main.c: 506: case 1:
 "506
-[e = _alarm_volume -> 0 `i ]
-[; ;main.c: 507: break;
-"507
-[e $U 1126  ]
-[; ;main.c: 509: case 1:
-"509
-[e :U 1129 ]
-[; ;main.c: 510: alarm_volume = 1;
-"510
-[e = _alarm_volume -> 1 `i ]
-[; ;main.c: 511: break;
-"511
-[e $U 1126  ]
-"513
-}
-[; ;main.c: 513: }
-[e $U 1126  ]
-"503
-[e :U 1127 ]
-[e [\ _submenu_selected , $ -> 0 `i 1128
- , $ -> 1 `i 1129
- 1126 ]
-"513
 [e :U 1126 ]
-[; ;main.c: 515: activity_home();
-"515
-[e ( _activity_home ..  ]
-[; ;main.c: 517: }
-"517
-[e :UE 1125 ]
+[; ;main.c: 507: activity_submenu_siren_tone();
+"507
+[e ( _activity_submenu_siren_tone ..  ]
+[; ;main.c: 508: break;
+"508
+[e $U 1123  ]
+"510
 }
-"519
-[v _button_B_submenu_alarm_tone `(v ~T0 @X0 1 ef ]
+[; ;main.c: 510: }
+[e $U 1123  ]
+"500
+[e :U 1124 ]
+[e [\ _submenu_selected , $ -> 0 `i 1125
+ , $ -> 1 `i 1126
+ 1123 ]
+"510
+[e :U 1123 ]
+[; ;main.c: 512: }
+"512
+[e :UE 1122 ]
+}
+"514
+[v _button_B_submenu_siren_volume `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 519: void button_B_submenu_alarm_tone(void){
-[e :U _button_B_submenu_alarm_tone ]
+[; ;main.c: 514: void button_B_submenu_siren_volume(void){
+[e :U _button_B_submenu_siren_volume ]
 [f ]
-[; ;main.c: 521: switch(submenu_selected){
-"521
-[e $U 1132  ]
+[; ;main.c: 516: switch(submenu_selected){
+"516
+[e $U 1129  ]
 {
-[; ;main.c: 523: case 0:
-"523
-[e :U 1133 ]
-[; ;main.c: 524: alarm_tone = 0;
-"524
-[e = _alarm_tone -> 0 `i ]
-[; ;main.c: 525: break;
-"525
-[e $U 1131  ]
-[; ;main.c: 527: case 1:
-"527
-[e :U 1134 ]
-[; ;main.c: 528: alarm_tone = 1;
-"528
-[e = _alarm_tone -> 1 `i ]
-[; ;main.c: 529: break;
-"529
-[e $U 1131  ]
-"531
-}
-[; ;main.c: 531: }
-[e $U 1131  ]
-"521
-[e :U 1132 ]
-[e [\ _submenu_selected , $ -> 0 `i 1133
- , $ -> 1 `i 1134
- 1131 ]
-"531
+[; ;main.c: 518: case 0:
+"518
+[e :U 1130 ]
+[; ;main.c: 519: alarm_volume = 0;
+"519
+[e = _alarm_volume -> 0 `i ]
+[; ;main.c: 520: break;
+"520
+[e $U 1128  ]
+[; ;main.c: 522: case 1:
+"522
 [e :U 1131 ]
-[; ;main.c: 533: activity_home();
-"533
-[e ( _activity_home ..  ]
-[; ;main.c: 535: }
-"535
-[e :UE 1130 ]
+[; ;main.c: 523: alarm_volume = 1;
+"523
+[e = _alarm_volume -> 1 `i ]
+[; ;main.c: 524: break;
+"524
+[e $U 1128  ]
+"526
 }
+[; ;main.c: 526: }
+[e $U 1128  ]
+"516
+[e :U 1129 ]
+[e [\ _submenu_selected , $ -> 0 `i 1130
+ , $ -> 1 `i 1131
+ 1128 ]
+"526
+[e :U 1128 ]
+[; ;main.c: 528: activity_home();
+"528
+[e ( _activity_home ..  ]
+[; ;main.c: 530: }
+"530
+[e :UE 1127 ]
+}
+"532
+[v _button_B_submenu_siren_tone `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 532: void button_B_submenu_siren_tone(void){
+[e :U _button_B_submenu_siren_tone ]
+[f ]
+[; ;main.c: 534: switch(submenu_selected){
+"534
+[e $U 1134  ]
+{
+[; ;main.c: 536: case 0:
+"536
+[e :U 1135 ]
+[; ;main.c: 537: alarm_tone = 0;
 "537
+[e = _alarm_tone -> 0 `i ]
+[; ;main.c: 538: break;
+"538
+[e $U 1133  ]
+[; ;main.c: 540: case 1:
+"540
+[e :U 1136 ]
+[; ;main.c: 541: alarm_tone = 1;
+"541
+[e = _alarm_tone -> 1 `i ]
+[; ;main.c: 542: break;
+"542
+[e $U 1133  ]
+"544
+}
+[; ;main.c: 544: }
+[e $U 1133  ]
+"534
+[e :U 1134 ]
+[e [\ _submenu_selected , $ -> 0 `i 1135
+ , $ -> 1 `i 1136
+ 1133 ]
+"544
+[e :U 1133 ]
+[; ;main.c: 546: activity_home();
+"546
+[e ( _activity_home ..  ]
+[; ;main.c: 548: }
+"548
+[e :UE 1132 ]
+}
+"550
 [v _button_B `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 537: void button_B(void){
+[; ;main.c: 550: void button_B(void){
 [e :U _button_B ]
 [f ]
-[; ;main.c: 539: reset_home_callback();
-"539
-[e ( _reset_home_callback ..  ]
-[; ;main.c: 541: switch(activity){
-"541
-[e $U 1137  ]
-{
-[; ;main.c: 543: case 2:
-"543
-[e :U 1138 ]
-[; ;main.c: 544: button_B_menu();
-"544
-[e ( _button_B_menu ..  ]
-[; ;main.c: 545: break;
-"545
-[e $U 1136  ]
-[; ;main.c: 547: case 4:
-"547
-[e :U 1139 ]
-[; ;main.c: 548: button_B_submenu_activation();
-"548
-[e ( _button_B_submenu_activation ..  ]
-[; ;main.c: 549: break;
-"549
-[e $U 1136  ]
-[; ;main.c: 551: case 5:
-"551
-[e :U 1140 ]
-[; ;main.c: 552: button_B_submenu_pin_config();
+[; ;main.c: 552: reset_home_callback();
 "552
-[e ( _button_B_submenu_pin_config ..  ]
-[; ;main.c: 553: break;
-"553
-[e $U 1136  ]
-[; ;main.c: 555: case 6:
-"555
-[e :U 1141 ]
-[; ;main.c: 556: button_B_submenu_alarm_config();
+[e ( _reset_home_callback ..  ]
+[; ;main.c: 554: switch(activity){
+"554
+[e $U 1139  ]
+{
+[; ;main.c: 556: case 2:
 "556
-[e ( _button_B_submenu_alarm_config ..  ]
-[; ;main.c: 557: break;
+[e :U 1140 ]
+[; ;main.c: 557: button_B_menu();
 "557
-[e $U 1136  ]
-[; ;main.c: 559: case 8:
-"559
-[e :U 1142 ]
-[; ;main.c: 560: button_B_submenu_alarm_volume();
+[e ( _button_B_menu ..  ]
+[; ;main.c: 558: break;
+"558
+[e $U 1138  ]
+[; ;main.c: 560: case 4:
 "560
-[e ( _button_B_submenu_alarm_volume ..  ]
-[; ;main.c: 561: break;
+[e :U 1141 ]
+[; ;main.c: 561: button_B_submenu_activation();
 "561
-[e $U 1136  ]
-[; ;main.c: 563: case 9:
-"563
-[e :U 1143 ]
-[; ;main.c: 564: button_B_submenu_alarm_tone();
+[e ( _button_B_submenu_activation ..  ]
+[; ;main.c: 562: break;
+"562
+[e $U 1138  ]
+[; ;main.c: 564: case 5:
 "564
-[e ( _button_B_submenu_alarm_tone ..  ]
-[; ;main.c: 565: break;
+[e :U 1142 ]
+[; ;main.c: 565: button_B_submenu_pin_config();
 "565
-[e $U 1136  ]
+[e ( _button_B_submenu_pin_config ..  ]
+[; ;main.c: 566: break;
 "566
-}
-[; ;main.c: 566: }
-[e $U 1136  ]
-"541
-[e :U 1137 ]
-[e [\ _activity , $ -> 2 `i 1138
- , $ -> 4 `i 1139
- , $ -> 5 `i 1140
- , $ -> 6 `i 1141
- , $ -> 8 `i 1142
- , $ -> 9 `i 1143
- 1136 ]
-"566
-[e :U 1136 ]
-[; ;main.c: 568: }
+[e $U 1138  ]
+[; ;main.c: 568: case 7:
 "568
-[e :UE 1135 ]
-}
+[e :U 1143 ]
+[; ;main.c: 569: button_B_submenu_siren_config();
+"569
+[e ( _button_B_submenu_siren_config ..  ]
+[; ;main.c: 570: break;
 "570
+[e $U 1138  ]
+[; ;main.c: 572: case 8:
+"572
+[e :U 1144 ]
+[; ;main.c: 573: button_B_submenu_siren_volume();
+"573
+[e ( _button_B_submenu_siren_volume ..  ]
+[; ;main.c: 574: break;
+"574
+[e $U 1138  ]
+[; ;main.c: 576: case 9:
+"576
+[e :U 1145 ]
+[; ;main.c: 577: button_B_submenu_siren_tone();
+"577
+[e ( _button_B_submenu_siren_tone ..  ]
+[; ;main.c: 578: break;
+"578
+[e $U 1138  ]
+"579
+}
+[; ;main.c: 579: }
+[e $U 1138  ]
+"554
+[e :U 1139 ]
+[e [\ _activity , $ -> 2 `i 1140
+ , $ -> 4 `i 1141
+ , $ -> 5 `i 1142
+ , $ -> 7 `i 1143
+ , $ -> 8 `i 1144
+ , $ -> 9 `i 1145
+ 1138 ]
+"579
+[e :U 1138 ]
+[; ;main.c: 581: }
+"581
+[e :UE 1137 ]
+}
+"583
 [v _button_C `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 570: void button_C(void){
+[; ;main.c: 583: void button_C(void){
 [e :U _button_C ]
 [f ]
-[; ;main.c: 572: reset_home_callback();
-"572
+[; ;main.c: 585: reset_home_callback();
+"585
 [e ( _reset_home_callback ..  ]
-[; ;main.c: 574: if(activity != 0 && activity != 1){
-"574
-[e $ ! && != _activity -> 0 `i != _activity -> 1 `i 1145  ]
+[; ;main.c: 587: if(activity != 0 && activity != 1){
+"587
+[e $ ! && != _activity -> 0 `i != _activity -> 1 `i 1147  ]
 {
-[; ;main.c: 575: activity_menu();
-"575
+[; ;main.c: 588: activity_menu();
+"588
 [e ( _activity_menu ..  ]
-"576
+"589
 }
-[e :U 1145 ]
-[; ;main.c: 576: }
-[; ;main.c: 578: }
-"578
-[e :UE 1144 ]
-}
-"580
-[v _button_D `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 580: void button_D(void){
-[e :U _button_D ]
-[f ]
-[; ;main.c: 582: reset_home_callback();
-"582
-[e ( _reset_home_callback ..  ]
-[; ;main.c: 584: activity_home();
-"584
-[e ( _activity_home ..  ]
-[; ;main.c: 586: }
-"586
+[e :U 1147 ]
+[; ;main.c: 589: }
+[; ;main.c: 591: }
+"591
 [e :UE 1146 ]
 }
-"588
-[v _button_asterisk `(v ~T0 @X0 1 ef ]
+"593
+[v _button_D `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 588: void button_asterisk(void){
-[e :U _button_asterisk ]
+[; ;main.c: 593: void button_D(void){
+[e :U _button_D ]
 [f ]
-[; ;main.c: 590: reset_home_callback();
-"590
+[; ;main.c: 595: reset_home_callback();
+"595
 [e ( _reset_home_callback ..  ]
-[; ;main.c: 594: }
-"594
-[e :UE 1147 ]
-}
+[; ;main.c: 596: activity_home();
 "596
-[v _button_hash `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 596: void button_hash(void){
-[e :U _button_hash ]
-[f ]
-[; ;main.c: 598: reset_home_callback();
+[e ( _activity_home ..  ]
+[; ;main.c: 598: }
 "598
-[e ( _reset_home_callback ..  ]
-[; ;main.c: 600: if(activity == 1){
-"600
-[e $ ! == _activity -> 1 `i 1149  ]
-{
-[; ;main.c: 601: pin_input_validator();
-"601
-[e ( _pin_input_validator ..  ]
-"602
-}
-[e :U 1149 ]
-[; ;main.c: 602: }
-[; ;main.c: 604: if(activity == 7){
-"604
-[e $ ! == _activity -> 7 `i 1150  ]
-{
-[; ;main.c: 605: pin_set();
-"605
-[e ( _pin_set ..  ]
-"606
-}
-[e :U 1150 ]
-[; ;main.c: 606: }
-[; ;main.c: 608: }
-"608
 [e :UE 1148 ]
 }
-"610
+"600
+[v _button_asterisk `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 600: void button_asterisk(void){
+[e :U _button_asterisk ]
+[f ]
+[; ;main.c: 602: reset_home_callback();
+"602
+[e ( _reset_home_callback ..  ]
+[; ;main.c: 605: }
+"605
+[e :UE 1149 ]
+}
+"607
+[v _button_hash `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 607: void button_hash(void){
+[e :U _button_hash ]
+[f ]
+[; ;main.c: 609: reset_home_callback();
+"609
+[e ( _reset_home_callback ..  ]
+[; ;main.c: 611: if(activity == 1){
+"611
+[e $ ! == _activity -> 1 `i 1151  ]
+{
+[; ;main.c: 612: pin_input_validator();
+"612
+[e ( _pin_input_validator ..  ]
+"613
+}
+[e :U 1151 ]
+[; ;main.c: 613: }
+[; ;main.c: 615: if(activity == 6){
+"615
+[e $ ! == _activity -> 6 `i 1152  ]
+{
+[; ;main.c: 616: pin_set();
+"616
+[e ( _pin_set ..  ]
+"617
+}
+[e :U 1152 ]
+[; ;main.c: 617: }
+[; ;main.c: 619: }
+"619
+[e :UE 1150 ]
+}
+"621
 [v _button_number `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 610: void button_number(void){
+[; ;main.c: 621: void button_number(void){
 [e :U _button_number ]
 [f ]
-[; ;main.c: 612: reset_home_callback();
-"612
+[; ;main.c: 623: reset_home_callback();
+"623
 [e ( _reset_home_callback ..  ]
-[; ;main.c: 614: if(activity == 1 || activity == 7){
-"614
-[e $ ! || == _activity -> 1 `i == _activity -> 7 `i 1152  ]
+[; ;main.c: 625: if(activity == 1 || activity == 6){
+"625
+[e $ ! || == _activity -> 1 `i == _activity -> 6 `i 1154  ]
 {
-[; ;main.c: 616: lcd_putrs("*");
-"616
-[e ( _lcd_putrs (1 :s 49C ]
-[; ;main.c: 617: sprintf(buffer1, "%01u", key);
-"617
-[e ( _sprintf (1 , (. , &U _buffer1 :s 50C -> _key `i ]
-[; ;main.c: 618: strcat(pin_input, buffer1);
-"618
-[e ( _strcat (2 , &U _pin_input -> &U _buffer1 `*Cuc ]
-"620
-}
-[; ;main.c: 620: } else {
-[e $U 1153  ]
-[e :U 1152 ]
-{
-[; ;main.c: 622: sprintf(buffer1,"%01u",key);
-"622
-[e ( _sprintf (1 , (. , &U _buffer1 :s 51C -> _key `i ]
-"624
-}
-[e :U 1153 ]
-[; ;main.c: 624: }
-[; ;main.c: 626: }
+[; ;main.c: 626: lcd_putrs("*");
 "626
-[e :UE 1151 ]
-}
+[e ( _lcd_putrs (1 :s 49C ]
+[; ;main.c: 627: sprintf(buffer1, "%01u", key);
+"627
+[e ( _sprintf (1 , (. , &U _buffer1 :s 50C -> _key `i ]
+[; ;main.c: 628: strcat(pin_input, buffer1);
 "628
+[e ( _strcat (2 , &U _pin_input -> &U _buffer1 `*Cuc ]
+"629
+}
+[; ;main.c: 629: }
+[e $U 1155  ]
+"630
+[e :U 1154 ]
+[; ;main.c: 630: else {
+{
+[; ;main.c: 631: sprintf(buffer1,"%01u",key);
+"631
+[e ( _sprintf (1 , (. , &U _buffer1 :s 51C -> _key `i ]
+"633
+}
+[e :U 1155 ]
+[; ;main.c: 633: }
+[; ;main.c: 635: }
+"635
+[e :UE 1153 ]
+}
+"639
 [v _keyboard_control `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 628: void keyboard_control(void){
+[; ;main.c: 639: void keyboard_control(void){
 [e :U _keyboard_control ]
 [f ]
-[; ;main.c: 630: LATAbits.LATA0=1;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=0;
-"630
+[; ;main.c: 641: LATAbits.LATA0=1;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=0;
+"641
 [e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 631: {
-"631
+[; ;main.c: 642: {
+"642
 {
-[; ;main.c: 632: if (PORTAbits.RA5==1){key=1;button_number();while(PORTAbits.RA5==1){};}
-"632
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1155  ]
+[; ;main.c: 643: if (PORTAbits.RA5==1){key=1;button_number();while(PORTAbits.RA5==1){};}
+"643
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1157  ]
 {
 [e = _key -> -> 1 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1156  ]
-[e :U 1157 ]
+[e $U 1158  ]
+[e :U 1159 ]
 {
 }
-[e :U 1156 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1157  ]
 [e :U 1158 ]
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1159  ]
+[e :U 1160 ]
 }
-[e :U 1155 ]
-[; ;main.c: 633: if (PORTAbits.RA7==1){key=2;button_number();while(PORTAbits.RA7==1){};}
-"633
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1159  ]
+[e :U 1157 ]
+[; ;main.c: 644: if (PORTAbits.RA7==1){key=2;button_number();while(PORTAbits.RA7==1){};}
+"644
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1161  ]
 {
 [e = _key -> -> 2 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1160  ]
-[e :U 1161 ]
+[e $U 1162  ]
+[e :U 1163 ]
 {
 }
-[e :U 1160 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1161  ]
 [e :U 1162 ]
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1163  ]
+[e :U 1164 ]
 }
-[e :U 1159 ]
-[; ;main.c: 634: if (PORTAbits.RA6==1){key=3;button_number();while(PORTAbits.RA6==1){};}
-"634
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1163  ]
+[e :U 1161 ]
+[; ;main.c: 645: if (PORTAbits.RA6==1){key=3;button_number();while(PORTAbits.RA6==1){};}
+"645
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1165  ]
 {
 [e = _key -> -> 3 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1164  ]
-[e :U 1165 ]
+[e $U 1166  ]
+[e :U 1167 ]
 {
 }
-[e :U 1164 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1165  ]
 [e :U 1166 ]
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1167  ]
+[e :U 1168 ]
 }
-[e :U 1163 ]
-[; ;main.c: 635: if (PORTCbits.RC2==1){key=11;button_A();while(PORTCbits.RC2==1){};}
-"635
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1167  ]
+[e :U 1165 ]
+[; ;main.c: 646: if (PORTCbits.RC2==1){key=11;button_A();while(PORTCbits.RC2==1){};}
+"646
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1169  ]
 {
 [e = _key -> -> 11 `i `uc ]
 [e ( _button_A ..  ]
-[e $U 1168  ]
-[e :U 1169 ]
+[e $U 1170  ]
+[e :U 1171 ]
 {
 }
-[e :U 1168 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1169  ]
 [e :U 1170 ]
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1171  ]
+[e :U 1172 ]
 }
-[e :U 1167 ]
-"636
+[e :U 1169 ]
+"647
 }
-[; ;main.c: 636: }
-[; ;main.c: 638: LATAbits.LATA0=0;LATAbits.LATA1=1;LATAbits.LATA2=0;LATAbits.LATA3=0;
-"638
+[; ;main.c: 647: }
+[; ;main.c: 649: LATAbits.LATA0=0;LATAbits.LATA1=1;LATAbits.LATA2=0;LATAbits.LATA3=0;
+"649
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 639: {
-"639
+[; ;main.c: 650: {
+"650
 {
-[; ;main.c: 640: if (PORTAbits.RA5==1){key=4;button_number();while(PORTAbits.RA5==1){};}
-"640
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1171  ]
+[; ;main.c: 651: if (PORTAbits.RA5==1){key=4;button_number();while(PORTAbits.RA5==1){};}
+"651
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1173  ]
 {
 [e = _key -> -> 4 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1172  ]
-[e :U 1173 ]
+[e $U 1174  ]
+[e :U 1175 ]
 {
 }
-[e :U 1172 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1173  ]
 [e :U 1174 ]
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1175  ]
+[e :U 1176 ]
 }
-[e :U 1171 ]
-[; ;main.c: 641: if (PORTAbits.RA7==1){key=5;button_number();while(PORTAbits.RA7==1){};}
-"641
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1175  ]
+[e :U 1173 ]
+[; ;main.c: 652: if (PORTAbits.RA7==1){key=5;button_number();while(PORTAbits.RA7==1){};}
+"652
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1177  ]
 {
 [e = _key -> -> 5 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1176  ]
-[e :U 1177 ]
+[e $U 1178  ]
+[e :U 1179 ]
 {
 }
-[e :U 1176 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1177  ]
 [e :U 1178 ]
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1179  ]
+[e :U 1180 ]
 }
-[e :U 1175 ]
-[; ;main.c: 642: if (PORTAbits.RA6==1){key=6;button_number();while(PORTAbits.RA6==1){};}
-"642
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1179  ]
+[e :U 1177 ]
+[; ;main.c: 653: if (PORTAbits.RA6==1){key=6;button_number();while(PORTAbits.RA6==1){};}
+"653
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1181  ]
 {
 [e = _key -> -> 6 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1180  ]
-[e :U 1181 ]
+[e $U 1182  ]
+[e :U 1183 ]
 {
 }
-[e :U 1180 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1181  ]
 [e :U 1182 ]
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1183  ]
+[e :U 1184 ]
 }
-[e :U 1179 ]
-[; ;main.c: 643: if (PORTCbits.RC2==1){key=12;button_B();while(PORTCbits.RC2==1){};}
-"643
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1183  ]
+[e :U 1181 ]
+[; ;main.c: 654: if (PORTCbits.RC2==1){key=12;button_B();while(PORTCbits.RC2==1){};}
+"654
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1185  ]
 {
 [e = _key -> -> 12 `i `uc ]
 [e ( _button_B ..  ]
-[e $U 1184  ]
-[e :U 1185 ]
+[e $U 1186  ]
+[e :U 1187 ]
 {
 }
-[e :U 1184 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1185  ]
 [e :U 1186 ]
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1187  ]
+[e :U 1188 ]
 }
-[e :U 1183 ]
-"644
+[e :U 1185 ]
+"655
 }
-[; ;main.c: 644: }
-[; ;main.c: 646: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=1;LATAbits.LATA3=0;
-"646
+[; ;main.c: 655: }
+[; ;main.c: 657: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=1;LATAbits.LATA3=0;
+"657
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-[; ;main.c: 647: {
-"647
+[; ;main.c: 658: {
+"658
 {
-[; ;main.c: 648: if (PORTAbits.RA5==1){key=7;button_number();while(PORTAbits.RA5==1){};}
-"648
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1187  ]
+[; ;main.c: 659: if (PORTAbits.RA5==1){key=7;button_number();while(PORTAbits.RA5==1){};}
+"659
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1189  ]
 {
 [e = _key -> -> 7 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1188  ]
-[e :U 1189 ]
+[e $U 1190  ]
+[e :U 1191 ]
 {
 }
-[e :U 1188 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1189  ]
 [e :U 1190 ]
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1191  ]
+[e :U 1192 ]
 }
-[e :U 1187 ]
-[; ;main.c: 649: if (PORTAbits.RA7==1){key=8;button_number();while(PORTAbits.RA7==1){};}
-"649
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1191  ]
+[e :U 1189 ]
+[; ;main.c: 660: if (PORTAbits.RA7==1){key=8;button_number();while(PORTAbits.RA7==1){};}
+"660
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1193  ]
 {
 [e = _key -> -> 8 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1192  ]
-[e :U 1193 ]
+[e $U 1194  ]
+[e :U 1195 ]
 {
 }
-[e :U 1192 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1193  ]
 [e :U 1194 ]
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1195  ]
+[e :U 1196 ]
 }
-[e :U 1191 ]
-[; ;main.c: 650: if (PORTAbits.RA6==1){key=9;button_number();while(PORTAbits.RA6==1){};}
-"650
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1195  ]
+[e :U 1193 ]
+[; ;main.c: 661: if (PORTAbits.RA6==1){key=9;button_number();while(PORTAbits.RA6==1){};}
+"661
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1197  ]
 {
 [e = _key -> -> 9 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1196  ]
-[e :U 1197 ]
+[e $U 1198  ]
+[e :U 1199 ]
 {
 }
-[e :U 1196 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1197  ]
 [e :U 1198 ]
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1199  ]
+[e :U 1200 ]
 }
-[e :U 1195 ]
-[; ;main.c: 651: if (PORTCbits.RC2==1){key=13;button_C();while(PORTCbits.RC2==1){};}
-"651
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1199  ]
+[e :U 1197 ]
+[; ;main.c: 662: if (PORTCbits.RC2==1){key=13;button_C();while(PORTCbits.RC2==1){};}
+"662
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1201  ]
 {
 [e = _key -> -> 13 `i `uc ]
 [e ( _button_C ..  ]
-[e $U 1200  ]
-[e :U 1201 ]
+[e $U 1202  ]
+[e :U 1203 ]
 {
 }
-[e :U 1200 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1201  ]
 [e :U 1202 ]
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1203  ]
+[e :U 1204 ]
 }
-[e :U 1199 ]
-"652
+[e :U 1201 ]
+"663
 }
-[; ;main.c: 652: }
-[; ;main.c: 654: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=1;
-"654
+[; ;main.c: 663: }
+[; ;main.c: 665: LATAbits.LATA0=0;LATAbits.LATA1=0;LATAbits.LATA2=0;LATAbits.LATA3=1;
+"665
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 [e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
-[; ;main.c: 655: {
-"655
+[; ;main.c: 666: {
+"666
 {
-[; ;main.c: 656: if (PORTAbits.RA5==1){key=14;button_asterisk();while(PORTAbits.RA5==1){};}
-"656
-[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1203  ]
+[; ;main.c: 667: if (PORTAbits.RA5==1){key=14;button_asterisk();while(PORTAbits.RA5==1){};}
+"667
+[e $ ! == -> . . _PORTAbits 0 5 `i -> 1 `i 1205  ]
 {
 [e = _key -> -> 14 `i `uc ]
 [e ( _button_asterisk ..  ]
-[e $U 1204  ]
-[e :U 1205 ]
+[e $U 1206  ]
+[e :U 1207 ]
 {
 }
-[e :U 1204 ]
-[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1205  ]
 [e :U 1206 ]
+[e $ == -> . . _PORTAbits 0 5 `i -> 1 `i 1207  ]
+[e :U 1208 ]
 }
-[e :U 1203 ]
-[; ;main.c: 657: if (PORTAbits.RA7==1){key=0;button_number();while(PORTAbits.RA7==1){};}
-"657
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1207  ]
+[e :U 1205 ]
+[; ;main.c: 668: if (PORTAbits.RA7==1){key=0;button_number();while(PORTAbits.RA7==1){};}
+"668
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 1 `i 1209  ]
 {
 [e = _key -> -> 0 `i `uc ]
 [e ( _button_number ..  ]
-[e $U 1208  ]
-[e :U 1209 ]
+[e $U 1210  ]
+[e :U 1211 ]
 {
 }
-[e :U 1208 ]
-[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1209  ]
 [e :U 1210 ]
+[e $ == -> . . _PORTAbits 0 7 `i -> 1 `i 1211  ]
+[e :U 1212 ]
 }
-[e :U 1207 ]
-[; ;main.c: 658: if (PORTAbits.RA6==1){key=15;button_hash();while(PORTAbits.RA6==1){};}
-"658
-[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1211  ]
+[e :U 1209 ]
+[; ;main.c: 669: if (PORTAbits.RA6==1){key=15;button_hash();while(PORTAbits.RA6==1){};}
+"669
+[e $ ! == -> . . _PORTAbits 0 6 `i -> 1 `i 1213  ]
 {
 [e = _key -> -> 15 `i `uc ]
 [e ( _button_hash ..  ]
-[e $U 1212  ]
-[e :U 1213 ]
+[e $U 1214  ]
+[e :U 1215 ]
 {
 }
-[e :U 1212 ]
-[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1213  ]
 [e :U 1214 ]
+[e $ == -> . . _PORTAbits 0 6 `i -> 1 `i 1215  ]
+[e :U 1216 ]
 }
-[e :U 1211 ]
-[; ;main.c: 659: if (PORTCbits.RC2==1){key=16;button_D();while(PORTCbits.RC2==1){};}
-"659
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1215  ]
+[e :U 1213 ]
+[; ;main.c: 670: if (PORTCbits.RC2==1){key=16;button_D();while(PORTCbits.RC2==1){};}
+"670
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 1 `i 1217  ]
 {
 [e = _key -> -> 16 `i `uc ]
 [e ( _button_D ..  ]
-[e $U 1216  ]
-[e :U 1217 ]
+[e $U 1218  ]
+[e :U 1219 ]
 {
 }
-[e :U 1216 ]
-[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1217  ]
 [e :U 1218 ]
-}
-[e :U 1215 ]
-"660
-}
-[; ;main.c: 660: }
-[; ;main.c: 662: _delay((unsigned long)((98)*(8000000/4000.0)));
-"662
-[e ( __delay (1 -> * -> -> 98 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 664: }
-"664
-[e :UE 1154 ]
-}
-"666
-[v _check_home_callback `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 666: void check_home_callback(void){
-[e :U _check_home_callback ]
-[f ]
-[; ;main.c: 668: if(activity != 0){
-"668
-[e $ ! != _activity -> 0 `i 1220  ]
-{
-[; ;main.c: 670: home_callback--;
-"670
-[e -- _home_callback -> 1 `i ]
-[; ;main.c: 672: if(home_callback == 0){
-"672
-[e $ ! == _home_callback -> 0 `i 1221  ]
-{
-[; ;main.c: 674: reset_home_callback();
-"674
-[e ( _reset_home_callback ..  ]
-[; ;main.c: 676: activity_home();
-"676
-[e ( _activity_home ..  ]
-"678
-}
-[e :U 1221 ]
-"679
-}
+[e $ == -> . . _PORTCbits 0 2 `i -> 1 `i 1219  ]
 [e :U 1220 ]
-[; ;main.c: 678: }
-[; ;main.c: 679: }
-[; ;main.c: 681: }
-"681
-[e :UE 1219 ]
 }
+[e :U 1217 ]
+"671
+}
+[; ;main.c: 671: }
+[; ;main.c: 673: _delay((unsigned long)((98)*(8000000/4000.0)));
+"673
+[e ( __delay (1 -> * -> -> 98 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 675: }
+"675
+[e :UE 1156 ]
+}
+"677
+[v _setup `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 677: void setup(void){
+[e :U _setup ]
+[f ]
+[; ;main.c: 679: OSCTUNEbits.INTSRC=1;
+"679
+[e = . . _OSCTUNEbits 0 2 -> -> 1 `i `uc ]
+[; ;main.c: 680: OSCTUNEbits.PLLEN=0;
+"680
+[e = . . _OSCTUNEbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 681: OSCCONbits.IRCF0=1;
+"681
+[e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
+[; ;main.c: 682: OSCCONbits.IRCF1=1;
+"682
+[e = . . _OSCCONbits 1 4 -> -> 1 `i `uc ]
+[; ;main.c: 683: OSCCONbits.IRCF2=1;
 "683
+[e = . . _OSCCONbits 1 5 -> -> 1 `i `uc ]
+[; ;main.c: 684: OSCCONbits.SCS0=0;
+"684
+[e = . . _OSCCONbits 1 0 -> -> 0 `i `uc ]
+[; ;main.c: 685: OSCCONbits.SCS1=0;
+"685
+[e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
+[; ;main.c: 686: TRISA = 0b11110000;
+"686
+[e = _TRISA -> -> 240 `i `uc ]
+[; ;main.c: 687: TRISB = 0;
+"687
+[e = _TRISB -> -> 0 `i `uc ]
+[; ;main.c: 688: TRISC = 0b00000111;
+"688
+[e = _TRISC -> -> 7 `i `uc ]
+[; ;main.c: 692: ANCON0=0b11111111;
+"692
+[e = _ANCON0 -> -> 255 `i `uc ]
+[; ;main.c: 694: ANCON1=0b11111111;
+"694
+[e = _ANCON1 -> -> 255 `i `uc ]
+[; ;main.c: 695: ADCON0=0b00101101;
+"695
+[e = _ADCON0 -> -> 45 `i `uc ]
+[; ;main.c: 696: ADCON1=0b00010000;
+"696
+[e = _ADCON1 -> -> 16 `i `uc ]
+[; ;main.c: 697: RTCCFGbits.RTCEN=1;
+"697
+[e = . . _RTCCFGbits 0 7 -> -> 1 `i `uc ]
+[; ;main.c: 698: RTCCFGbits.RTCWREN=1;
+"698
+[e = . . _RTCCFGbits 0 5 -> -> 1 `i `uc ]
+[; ;main.c: 699: T1CONbits.T1OSCEN=1;
+"699
+[e = . . _T1CONbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 700: Write_RTC();
+"700
+[e ( _Write_RTC ..  ]
+[; ;main.c: 701: lcd_init();
+"701
+[e ( _lcd_init ..  ]
+[; ;main.c: 702: lcd_comand(0b00001100);
+"702
+[e ( _lcd_comand (1 -> -> 12 `i `uc ]
+[; ;main.c: 703: LATBbits.LATB1 = 1;;
+"703
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+[; ;main.c: 704: LATBbits.LATB0 = 1;;
+"704
+[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 707: home_callback_delay = 50;
+"707
+[e = _home_callback_delay -> 50 `i ]
+[; ;main.c: 708: config_widget = 0;
+"708
+[e = _config_widget -> 0 `i ]
+[; ;main.c: 709: menu_selected = 0;
+"709
+[e = _menu_selected -> 0 `i ]
+[; ;main.c: 710: submenu_selected = 0;
+"710
+[e = _submenu_selected -> 0 `i ]
+[; ;main.c: 711: alarm_volume = 0;
+"711
+[e = _alarm_volume -> 0 `i ]
+[; ;main.c: 712: alarm_tone = 0;
+"712
+[e = _alarm_tone -> 0 `i ]
+[; ;main.c: 713: pin_reset();
+"713
+[e ( _pin_reset ..  ]
+[; ;main.c: 715: }
+"715
+[e :UE 1221 ]
+}
+"717
 [v _main `(i ~T0 @X0 1 ef ]
 {
-[; ;main.c: 683: int main(void){
+[; ;main.c: 717: int main(void){
 [e :U _main ]
 [f ]
-[; ;main.c: 685: setup();
-"685
+[; ;main.c: 719: setup();
+"719
 [e ( _setup ..  ]
-[; ;main.c: 687: activity_home();
-"687
+[; ;main.c: 720: activity_home();
+"720
 [e ( _activity_home ..  ]
-[; ;main.c: 689: while(1){
-"689
+[; ;main.c: 722: while(1){
+"722
 [e :U 1224 ]
 {
-[; ;main.c: 691: check_home_callback();
-"691
+[; ;main.c: 724: check_home_callback();
+"724
 [e ( _check_home_callback ..  ]
-[; ;main.c: 693: Read_RTC();
-"693
+[; ;main.c: 725: Read_RTC();
+"725
 [e ( _Read_RTC ..  ]
-[; ;main.c: 695: keyboard_control();
-"695
+[; ;main.c: 726: keyboard_control();
+"726
 [e ( _keyboard_control ..  ]
-[; ;main.c: 697: if(activity == 0){
-"697
+[; ;main.c: 728: if(activity == 0){
+"728
 [e $ ! == _activity -> 0 `i 1226  ]
 {
-[; ;main.c: 698: home_clock_refresh();
-"698
+[; ;main.c: 729: home_clock_refresh();
+"729
 [e ( _home_clock_refresh ..  ]
-[; ;main.c: 699: home_config_refresh();
-"699
+[; ;main.c: 730: home_config_refresh();
+"730
 [e ( _home_config_refresh ..  ]
-"700
+"731
 }
 [e :U 1226 ]
-"702
+"733
 }
 [e :U 1223 ]
-"689
+"722
 [e $U 1224  ]
 [e :U 1225 ]
-[; ;main.c: 700: }
-[; ;main.c: 702: }
-[; ;main.c: 704: return 0;
-"704
+[; ;main.c: 731: }
+[; ;main.c: 733: }
+[; ;main.c: 735: return 0;
+"735
 [e ) -> 0 `i ]
 [e $UE 1222  ]
-[; ;main.c: 706: }
-"706
+[; ;main.c: 737: }
+"737
 [e :UE 1222 ]
 }
 [p f _sprintf 8422404 ]
-[a 3C 37 48 50 117 58 37 48 50 117 58 37 48 50 117 0 ]
-[a 2C 37 48 50 117 47 37 48 50 117 47 37 48 50 117 0 ]
+[a 42C 37 48 50 117 58 37 48 50 117 58 37 48 50 117 0 ]
+[a 41C 37 48 50 117 47 37 48 50 117 47 37 48 50 117 0 ]
 [a 50C 37 48 49 117 0 ]
 [a 51C 37 48 49 117 0 ]
 [a 37C 82 101 115 101 116 0 ]
-[a 21C 65 99 116 105 118 97 114 0 ]
-[a 29C 65 99 116 105 118 97 114 0 ]
+[a 16C 65 99 116 105 118 97 114 0 ]
+[a 23C 65 99 116 105 118 97 114 0 ]
 [a 36C 67 97 109 98 105 97 114 0 ]
-[a 45C 65 108 116 111 0 ]
-[a 42C 84 111 110 111 0 ]
-[a 46C 84 111 110 111 0 ]
-[a 44C 66 97 106 111 0 ]
-[a 31C 78 111 0 ]
-[a 23C 80 105 110 0 ]
+[a 31C 65 108 116 111 0 ]
+[a 28C 84 111 110 111 0 ]
+[a 32C 84 111 110 111 0 ]
+[a 30C 66 97 106 111 0 ]
+[a 25C 78 111 0 ]
+[a 18C 80 105 110 0 ]
 [a 35C 80 105 110 0 ]
-[a 41C 86 111 108 117 109 101 110 0 ]
-[a 43C 86 111 108 117 109 101 110 0 ]
-[a 22C 82 101 108 111 106 0 ]
-[a 32C 82 101 108 111 106 0 ]
-[a 30C 83 105 0 ]
-[a 34C 72 111 114 97 0 ]
-[a 24C 65 108 97 114 109 97 0 ]
-[a 40C 65 108 97 114 109 97 0 ]
-[a 33C 70 101 99 104 97 0 ]
-[a 5C 65 67 84 58 78 79 0 ]
-[a 7C 86 79 76 58 65 76 0 ]
-[a 4C 65 67 84 58 83 73 0 ]
-[a 6C 86 79 76 58 66 65 0 ]
+[a 27C 86 111 108 117 109 101 110 0 ]
+[a 29C 86 111 108 117 109 101 110 0 ]
+[a 17C 82 101 108 111 106 0 ]
+[a 20C 82 101 108 111 106 0 ]
+[a 24C 83 105 0 ]
+[a 22C 72 111 114 97 0 ]
+[a 26C 83 105 114 101 110 97 0 ]
+[a 19C 65 108 97 114 109 97 0 ]
+[a 21C 70 101 99 104 97 0 ]
+[a 44C 65 67 84 58 78 79 0 ]
+[a 46C 86 79 76 58 65 76 0 ]
+[a 43C 65 67 84 58 83 73 0 ]
+[a 45C 86 79 76 58 66 65 0 ]
+[a 2C 62 0 ]
+[a 4C 62 0 ]
+[a 6C 62 0 ]
+[a 8C 62 0 ]
 [a 10C 62 0 ]
 [a 12C 62 0 ]
-[a 14C 62 0 ]
-[a 16C 62 0 ]
-[a 25C 62 0 ]
-[a 27C 62 0 ]
-[a 20C 73 110 103 114 101 115 101 32 115 117 32 80 73 78 58 0 ]
+[a 15C 73 110 103 114 101 115 101 32 115 117 32 80 73 78 58 0 ]
 [a 39C 78 117 101 118 111 32 80 73 78 58 0 ]
-[a 18C 88 50 56 0 ]
-[a 1C 49 50 51 52 0 ]
-[a 9C 84 79 78 79 58 50 0 ]
-[a 48C 66 101 101 112 32 50 0 ]
-[a 8C 84 79 78 79 58 49 0 ]
-[a 47C 66 101 101 112 32 49 0 ]
+[a 1C 88 50 56 0 ]
+[a 40C 49 50 51 52 0 ]
+[a 48C 84 79 78 79 58 50 0 ]
+[a 34C 66 101 101 112 32 50 0 ]
+[a 47C 84 79 78 79 58 49 0 ]
+[a 33C 66 101 101 112 32 49 0 ]
 [a 49C 42 0 ]
+[a 3C 32 0 ]
+[a 5C 32 0 ]
+[a 7C 32 0 ]
+[a 9C 32 0 ]
 [a 11C 32 0 ]
 [a 13C 32 0 ]
-[a 15C 32 0 ]
-[a 17C 32 0 ]
-[a 26C 32 0 ]
-[a 28C 32 0 ]
-[a 19C 0 ]
+[a 14C 0 ]
 [a 38C 0 ]

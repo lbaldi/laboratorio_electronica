@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.34\dat\en_msgs.txt -cs \
   -h+dist/default/production\PIC_LED_KEYBOARD.production.sym \
   --cmf=dist/default/production\PIC_LED_KEYBOARD.production.cmf -z \
-  -Q18F26J50 -oC:\Users\ADMINI~1\AppData\Local\Temp\s4jg.6 \
+  -Q18F26J50 -oC:\Users\gonza\AppData\Local\Temp\ss8.6 \
   -Mdist/default/production/PIC_LED_KEYBOARD.production.map -E1 -ver=XC8 \
   -ASTACK=0A5h-0ebfh -pstack=STACK -ACODE=00h-0FFF7h -ACONST=00h-0FFF7h \
   -ASMALLCONST=0F00h-0FFFhx240,0FF00h-0FFF7h -AMEDIUMCONST=0F00h-0FFF7h \
@@ -25,7 +25,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\ADMINI~1\AppData\Local\Temp\s4jg.obj \
+  C:\Users\gonza\AppData\Local\Temp\ss8.obj \
   dist/default/production\PIC_LED_KEYBOARD.production.obj 
 
 Object code version is 3.11
@@ -38,173 +38,173 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ADMINI~1\AppData\Local\Temp\s4jg.obj
+C:\Users\gonza\AppData\Local\Temp\ss8.obj
                 end_init                              0        0        4        0       0
                 config                             FFF8     FFF8        8     FFF8       0
 dist/default/production\PIC_LED_KEYBOARD.production.obj
-                smallconst                          F00      F00       E4      780       0
-                text69                             1A1A     1A1A       8E      7F2       0
-                text68                             1D0C     1D0C       6E      7F2       0
-                text67                             1750     1750       FC      7F2       0
-                text66                             29D0     29D0       12      7F2       0
-                text65                             29BE     29BE       12      7F2       0
-                text64                             1C26     1C26       76      7F2       0
-                text63                             27AC     27AC       32      7F2       0
-                text62                             1B2A     1B2A       80      7F2       0
-                text61                             28E0     28E0       24      7F2       0
-                text60                             231E     231E       4C      7F2       0
-                text59                             209E     209E       54      7F2       0
-                text58                             297E     297E       18      7F2       0
-                text57                             286A     286A       2A      7F2       0
-                text56                             2A04     2A04        A      7F2       0
-                text55                             2926     2926       22      7F2       0
-                text54                             2042     2042       5C      7F2       0
-                text53                             22D2     22D2       4C      7F2       0
-                text52                             2894     2894       28      7F2       0
-                text51                             2904     2904       22      7F2       0
-                text50                              FE4      FE4      264      7F2       0
-                text49                             1988     1988       92      7F2       0
-                text48                             2196     2196       52      7F2       0
-                text47                             2144     2144       52      7F2       0
-                text46                             20F2     20F2       52      7F2       0
-                text45                             184C     184C       A6      7F2       0
-                text44                             2616     2616       42      7F2       0
-                text43                             25D4     25D4       42      7F2       0
-                text42                             2592     2592       42      7F2       0
-                text41                             2550     2550       42      7F2       0
-                text40                             23FA     23FA       48      7F2       0
-                text39                             250E     250E       42      7F2       0
-                text38                             24CC     24CC       42      7F2       0
-                text37                             280E     280E       30      7F2       0
-                text36                             29E2     29E2        E      7F2       0
-                text35                             2442     2442       46      7F2       0
-                text34                             2284     2284       4E      7F2       0
-                text33                             2658     2658       40      7F2       0
-                text32                             1F78     1F78       66      7F2       0
-                text31                             1F12     1F12       66      7F2       0
-                text30                             1EAC     1EAC       66      7F2       0
-                text29                             1E46     1E46       66      7F2       0
-                text28                             23B2     23B2       48      7F2       0
-                text27                             270C     270C       3A      7F2       0
-                text26                             1DE0     1DE0       66      7F2       0
-                text25                             1D7A     1D7A       66      7F2       0
-                text24                             27DE     27DE       30      7F2       0
-                text23                             26D2     26D2       3A      7F2       0
-                text22                             2698     2698       3A      7F2       0
-                text21                             2236     2236       4E      7F2       0
-                text20                             2996     2996       16      7F2       0
-                text19                             2746     2746       34      7F2       0
-                text18                             1FDE     1FDE       64      7F2       0
-                text17                             1AA8     1AA8       82      7F2       0
-                text16                             2948     2948       1C      7F2       0
-                text15                             29FA     29FA        A      7F2       0
-                text14                             2A0E     2A0E        6      7F2       0
-                text13                             21E8     21E8       4E      7F2       0
-                text12                             277A     277A       32      7F2       0
-                text11                             2964     2964       1A      7F2       0
-                text10                             28BC     28BC       24      7F2       0
-                text9                              236A     236A       48      7F2       0
-                text8                              1C9C     1C9C       70      7F2       0
-                text7                              13A8     13A8      156      7F2       0
-                text6                              29AC     29AC       12      7F2       0
-                text5                              14FE     14FE      146      7F2       0
-                text4                              1644     1644      10C      7F2       0
-                text3                              18F2     18F2       96      7F2       0
-                text2                              1248     1248      160      7F2       0
-                text1                              1BAA     1BAA       7C      7F2       0
-                text0                              283E     283E       2C      7F2       0
+                smallconst                          F00      F00       EC      780       0
+                text69                             1A22     1A22       8E      7F6       0
+                text68                             1D14     1D14       6E      7F6       0
+                text67                             1758     1758       FC      7F6       0
+                text66                             29D0     29D0       12      7F6       0
+                text65                             29BE     29BE       12      7F6       0
+                text64                             1C2E     1C2E       76      7F6       0
+                text63                             2782     2782       32      7F6       0
+                text62                             1B32     1B32       80      7F6       0
+                text61                             28E0     28E0       24      7F6       0
+                text60                             2326     2326       4C      7F6       0
+                text59                             20A6     20A6       54      7F6       0
+                text58                             297E     297E       18      7F6       0
+                text57                             286A     286A       2A      7F6       0
+                text56                             2A04     2A04        A      7F6       0
+                text55                             2926     2926       22      7F6       0
+                text54                             204A     204A       5C      7F6       0
+                text53                             22DA     22DA       4C      7F6       0
+                text52                             2894     2894       28      7F6       0
+                text51                             2904     2904       22      7F6       0
+                text50                              FEC      FEC      264      7F6       0
+                text49                             1990     1990       92      7F6       0
+                text48                             219E     219E       52      7F6       0
+                text47                             214C     214C       52      7F6       0
+                text46                             20FA     20FA       52      7F6       0
+                text45                             1854     1854       A6      7F6       0
+                text44                             261E     261E       42      7F6       0
+                text43                             25DC     25DC       42      7F6       0
+                text42                             259A     259A       42      7F6       0
+                text41                             2558     2558       42      7F6       0
+                text40                             2402     2402       48      7F6       0
+                text39                             2516     2516       42      7F6       0
+                text38                             24D4     24D4       42      7F6       0
+                text37                             27E4     27E4       30      7F6       0
+                text36                             29E2     29E2        E      7F6       0
+                text35                             244A     244A       46      7F6       0
+                text34                             228C     228C       4E      7F6       0
+                text33                             2660     2660       40      7F6       0
+                text32                             1F80     1F80       66      7F6       0
+                text31                             1F1A     1F1A       66      7F6       0
+                text30                             1EB4     1EB4       66      7F6       0
+                text29                             1E4E     1E4E       66      7F6       0
+                text28                             23BA     23BA       48      7F6       0
+                text27                             2714     2714       3A      7F6       0
+                text26                             223E     223E       4E      7F6       0
+                text25                             2996     2996       16      7F6       0
+                text24                             274E     274E       34      7F6       0
+                text23                             1DE8     1DE8       66      7F6       0
+                text22                             1D82     1D82       66      7F6       0
+                text21                             27B4     27B4       30      7F6       0
+                text20                             26DA     26DA       3A      7F6       0
+                text19                             26A0     26A0       3A      7F6       0
+                text18                             1FE6     1FE6       64      7F6       0
+                text17                             1AB0     1AB0       82      7F6       0
+                text16                             2948     2948       1C      7F6       0
+                text15                             29FA     29FA        A      7F6       0
+                text14                             2A0E     2A0E        6      7F6       0
+                text13                             21F0     21F0       4E      7F6       0
+                text12                             2840     2840       2A      7F6       0
+                text11                             2964     2964       1A      7F6       0
+                text10                             28BC     28BC       24      7F6       0
+                text9                              2372     2372       48      7F6       0
+                text8                              1CA4     1CA4       70      7F6       0
+                text7                              13B0     13B0      156      7F6       0
+                text6                              29AC     29AC       12      7F6       0
+                text5                              1506     1506      146      7F6       0
+                text4                              164C     164C      10C      7F6       0
+                text3                              18FA     18FA       96      7F6       0
+                text2                              1250     1250      160      7F6       0
+                text1                              1BB2     1BB2       7C      7F6       0
+                text0                              2814     2814       2C      7F6       0
                 cstackCOMRAM                         2A       2A       25        1       1
                 bssBANK0                             60       60       3E       60       1
                 dataCOMRAM                           4F       4F        A        1       1
                 bssCOMRAM                             1        1       29        1       1
                 bitbssCOMRAM                        2F8       5F        1        1       1     8
-                cinit                              2488     2488       44      7F2       0
+                cinit                              2490     2490       44      7F6       0
                 nvBANK0                              9E       9E        7       60       1
                 nvCOMRAM                             59       59        6        1       1
-                idataCOMRAM                        29F0     29F0        A      7F2       0
+                idataCOMRAM                        29F0     29F0        A      7F6       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 end_init                              0        0        4         0
-                text69                             1A1A     1A1A       8E         0
-                text68                             1D0C     1D0C       6E         0
-                text67                             1750     1750       FC         0
+                text69                             1A22     1A22       8E         0
+                text68                             1D14     1D14       6E         0
+                text67                             1758     1758       FC         0
                 text66                             29D0     29D0       12         0
                 text65                             29BE     29BE       12         0
-                text64                             1C26     1C26       76         0
-                text63                             27AC     27AC       32         0
-                text62                             1B2A     1B2A       80         0
+                text64                             1C2E     1C2E       76         0
+                text63                             2782     2782       32         0
+                text62                             1B32     1B32       80         0
                 text61                             28E0     28E0       24         0
-                text60                             231E     231E       4C         0
-                text59                             209E     209E       54         0
+                text60                             2326     2326       4C         0
+                text59                             20A6     20A6       54         0
                 text58                             297E     297E       18         0
                 text57                             286A     286A       2A         0
                 text56                             2A04     2A04        A         0
                 text55                             2926     2926       22         0
-                text54                             2042     2042       5C         0
-                text53                             22D2     22D2       4C         0
+                text54                             204A     204A       5C         0
+                text53                             22DA     22DA       4C         0
                 text52                             2894     2894       28         0
                 text51                             2904     2904       22         0
-                text50                              FE4      FE4      264         0
-                text49                             1988     1988       92         0
-                text48                             2196     2196       52         0
-                text47                             2144     2144       52         0
-                text46                             20F2     20F2       52         0
-                text45                             184C     184C       A6         0
-                text44                             2616     2616       42         0
-                text43                             25D4     25D4       42         0
-                text42                             2592     2592       42         0
-                text41                             2550     2550       42         0
-                text40                             23FA     23FA       48         0
-                text39                             250E     250E       42         0
-                text38                             24CC     24CC       42         0
-                text37                             280E     280E       30         0
+                text50                              FEC      FEC      264         0
+                text49                             1990     1990       92         0
+                text48                             219E     219E       52         0
+                text47                             214C     214C       52         0
+                text46                             20FA     20FA       52         0
+                text45                             1854     1854       A6         0
+                text44                             261E     261E       42         0
+                text43                             25DC     25DC       42         0
+                text42                             259A     259A       42         0
+                text41                             2558     2558       42         0
+                text40                             2402     2402       48         0
+                text39                             2516     2516       42         0
+                text38                             24D4     24D4       42         0
+                text37                             27E4     27E4       30         0
                 text36                             29E2     29E2        E         0
-                text35                             2442     2442       46         0
-                text34                             2284     2284       4E         0
-                text33                             2658     2658       40         0
-                text32                             1F78     1F78       66         0
-                text31                             1F12     1F12       66         0
-                text30                             1EAC     1EAC       66         0
-                text29                             1E46     1E46       66         0
-                text28                             23B2     23B2       48         0
-                text27                             270C     270C       3A         0
-                text26                             1DE0     1DE0       66         0
-                text25                             1D7A     1D7A       66         0
-                text24                             27DE     27DE       30         0
-                text23                             26D2     26D2       3A         0
-                text22                             2698     2698       3A         0
-                text21                             2236     2236       4E         0
-                text20                             2996     2996       16         0
-                text19                             2746     2746       34         0
-                text18                             1FDE     1FDE       64         0
-                text17                             1AA8     1AA8       82         0
+                text35                             244A     244A       46         0
+                text34                             228C     228C       4E         0
+                text33                             2660     2660       40         0
+                text32                             1F80     1F80       66         0
+                text31                             1F1A     1F1A       66         0
+                text30                             1EB4     1EB4       66         0
+                text29                             1E4E     1E4E       66         0
+                text28                             23BA     23BA       48         0
+                text27                             2714     2714       3A         0
+                text26                             223E     223E       4E         0
+                text25                             2996     2996       16         0
+                text24                             274E     274E       34         0
+                text23                             1DE8     1DE8       66         0
+                text22                             1D82     1D82       66         0
+                text21                             27B4     27B4       30         0
+                text20                             26DA     26DA       3A         0
+                text19                             26A0     26A0       3A         0
+                text18                             1FE6     1FE6       64         0
+                text17                             1AB0     1AB0       82         0
                 text16                             2948     2948       1C         0
                 text15                             29FA     29FA        A         0
                 text14                             2A0E     2A0E        6         0
-                text13                             21E8     21E8       4E         0
-                text12                             277A     277A       32         0
+                text13                             21F0     21F0       4E         0
+                text12                             2840     2840       2A         0
                 text11                             2964     2964       1A         0
                 text10                             28BC     28BC       24         0
-                text9                              236A     236A       48         0
-                text8                              1C9C     1C9C       70         0
-                text7                              13A8     13A8      156         0
+                text9                              2372     2372       48         0
+                text8                              1CA4     1CA4       70         0
+                text7                              13B0     13B0      156         0
                 text6                              29AC     29AC       12         0
-                text5                              14FE     14FE      146         0
-                text4                              1644     1644      10C         0
-                text3                              18F2     18F2       96         0
-                text2                              1248     1248      160         0
-                text1                              1BAA     1BAA       7C         0
-                text0                              283E     283E       2C         0
-                cinit                              2488     2488       44         0
+                text5                              1506     1506      146         0
+                text4                              164C     164C      10C         0
+                text3                              18FA     18FA       96         0
+                text2                              1250     1250      160         0
+                text1                              1BB2     1BB2       7C         0
+                text0                              2814     2814       2C         0
+                cinit                              2490     2490       44         0
                 idataCOMRAM                        29F0     29F0        A         0
 
         CLASS   CONST          
 
         CLASS   SMALLCONST     
-                smallconst                          F00      F00       E4         0
+                smallconst                          F00      F00       EC         0
 
         CLASS   MEDIUMCONST    
 
@@ -269,8 +269,8 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 reset_vec                      000000  000004  000004         0       0  CODE    
                 bssCOMRAM                      000001  00005F  000060         1       1  COMRAM  
                 bssBANK0                       000060  000045  0000A5        60       1  BANK0   
-                smallconst                     000F00  0000E4  000FE4       780       0  SMALLCON
-                text50                         000FE4  001A30  002A14       7F2       0  CODE    
+                smallconst                     000F00  0000EC  000FEC       780       0  SMALLCON
+                text50                         000FEC  001A28  002A14       7F6       0  CODE    
                 config                         00FFF8  000008  010000      FFF8       0  CONFIG  
 
 
@@ -355,24 +355,24 @@ _RTCCFG                                 (abs)         00F3F
 _RTCCFGbits                             (abs)         00F3F
 _RTCVALH                                (abs)         00F99
 _RTCVALL                                (abs)         00F98
-_Read_RTC                               text67        01750
+_Read_RTC                               text67        01758
 _RtccAlrmTimeDate                       bssBANK0      00060
 _RtccDate                               bssCOMRAM     00022
-_RtccReadDate                           text69        01A1A
-_RtccReadTime                           text68        01D0C
+_RtccReadDate                           text69        01A22
+_RtccReadTime                           text68        01D14
 _RtccTime                               bssCOMRAM     00026
 _RtccTimeDate                           bssBANK0      00068
 _RtccTimeVal                            bssBANK0      00078
 _RtccWrOn                               text6         029AC
-_RtccWriteDate                          text5         014FE
-_RtccWriteTime                          text4         01644
+_RtccWriteDate                          text5         01506
+_RtccWriteTime                          text4         0164C
 _Rtcc_read_TimeDate                     bssBANK0      00070
 _T1CONbits                              (abs)         00FCD
 _TRISA                                  (abs)         00F92
 _TRISB                                  (abs)         00F93
 _TRISBbits                              (abs)         00F93
 _TRISC                                  (abs)         00F94
-_Write_RTC                              text2         01248
+_Write_RTC                              text2         01250
 __CFG_CP0$OFF                           (abs)         00000
 __CFG_CPUDIV$OSC1                       (abs)         00000
 __CFG_DSBOREN$OFF                       (abs)         00000
@@ -459,7 +459,7 @@ __Hrdata                                rdata         00000
 __Hreset_vec                            reset_vec     00000
 __Hrparam                               rparam        00000
 __Hsfr                                  sfr           00000
-__Hsmallconst                           smallconst    00FE4
+__Hsmallconst                           smallconst    00FEC
 __Hspace_0                              (abs)         10000
 __Hspace_1                              (abs)         002F9
 __Hspace_2                              (abs)         00000
@@ -683,7 +683,7 @@ __Ltext9                                text9         00000
 __S0                                    (abs)         10000
 __S1                                    (abs)         000A5
 __S2                                    (abs)         00000
-___awdiv                                text3         018F2
+___awdiv                                text3         018FA
 ___awdiv@counter                        cstackCOMRAM  0002E
 ___awdiv@dividend                       cstackCOMRAM  0002A
 ___awdiv@divisor                        cstackCOMRAM  0002C
@@ -691,12 +691,12 @@ ___awdiv@quotient                       cstackCOMRAM  00030
 ___awdiv@sign                           cstackCOMRAM  0002F
 ___inthi_sp                             stack         00000
 ___intlo_sp                             stack         00000
-___lwdiv                                text54        02042
+___lwdiv                                text54        0204A
 ___lwdiv@counter                        cstackCOMRAM  00030
 ___lwdiv@dividend                       cstackCOMRAM  0002A
 ___lwdiv@divisor                        cstackCOMRAM  0002C
 ___lwdiv@quotient                       cstackCOMRAM  0002E
-___lwmod                                text53        022D2
+___lwmod                                text53        022DA
 ___lwmod@counter                        cstackCOMRAM  00035
 ___lwmod@dividend                       cstackCOMRAM  00031
 ___lwmod@divisor                        cstackCOMRAM  00033
@@ -712,158 +712,158 @@ __activetblptr                          (abs)         00002
 __end_of_Delay100TCYx                   text65        029D0
 __end_of_Delay1KTCYx                    text66        029E2
 __end_of_LCD_INIT_STRING                smallconst    00F0F
-__end_of_Read_RTC                       text67        0184C
-__end_of_RtccReadDate                   text69        01AA8
-__end_of_RtccReadTime                   text68        01D7A
+__end_of_Read_RTC                       text67        01854
+__end_of_RtccReadDate                   text69        01AB0
+__end_of_RtccReadTime                   text68        01D82
 __end_of_RtccWrOn                       text6         029BE
-__end_of_RtccWriteDate                  text5         01644
-__end_of_RtccWriteTime                  text4         01750
-__end_of_Write_RTC                      text2         013A8
-__end_of___awdiv                        text3         01988
-__end_of___lwdiv                        text54        0209E
-__end_of___lwmod                        text53        0231E
+__end_of_RtccWriteDate                  text5         0164C
+__end_of_RtccWriteTime                  text4         01758
+__end_of_Write_RTC                      text2         013B0
+__end_of___awdiv                        text3         01990
+__end_of___lwdiv                        text54        020A6
+__end_of___lwmod                        text53        02326
 __end_of___wmul                         text52        028BC
-__end_of__initialization                cinit         024C2
-__end_of_action_menu_selector           text40        02442
-__end_of_action_menu_selector_0         text44        02658
-__end_of_action_menu_selector_1         text43        02616
-__end_of_action_menu_selector_2         text42        025D4
-__end_of_action_menu_selector_3         text41        02592
-__end_of_action_submenu_selector        text37        0283E
-__end_of_action_submenu_selector_0      text39        02550
-__end_of_action_submenu_selector_1      text38        0250E
+__end_of__initialization                cinit         024CA
+__end_of_action_menu_selector           text40        0244A
+__end_of_action_menu_selector_0         text44        02660
+__end_of_action_menu_selector_1         text43        0261E
+__end_of_action_menu_selector_2         text42        025DC
+__end_of_action_menu_selector_3         text41        0259A
+__end_of_action_submenu_selector        text37        02814
+__end_of_action_submenu_selector_0      text39        02558
+__end_of_action_submenu_selector_1      text38        02516
 __end_of_activity_home                  text57        02894
-__end_of_activity_menu                  text17        01B2A
-__end_of_activity_pin                   text34        022D2
-__end_of_activity_submenu_activation    text32        01FDE
-__end_of_activity_submenu_alarm         text31        01F78
-__end_of_activity_submenu_alarm_tone    text26        01E46
-__end_of_activity_submenu_alarm_volume  text25        01DE0
-__end_of_activity_submenu_clock         text30        01F12
-__end_of_activity_submenu_pin           text29        01EAC
-__end_of_activity_submenu_pin_set       text21        02284
-__end_of_button_A                       text33        02698
-__end_of_button_B                       text18        02042
-__end_of_button_B_menu                  text28        023FA
-__end_of_button_B_submenu_activation    text27        02746
-__end_of_button_B_submenu_alarm_config  text24        0280E
-__end_of_button_B_submenu_alarm_tone    text23        0270C
-__end_of_button_B_submenu_alarm_volume  text22        026D2
-__end_of_button_B_submenu_pin_config    text19        0277A
+__end_of_activity_menu                  text17        01B32
+__end_of_activity_pin                   text34        022DA
+__end_of_activity_submenu_activation    text32        01FE6
+__end_of_activity_submenu_clock         text31        01F80
+__end_of_activity_submenu_pin           text30        01F1A
+__end_of_activity_submenu_pin_set       text26        0228C
+__end_of_activity_submenu_siren         text29        01EB4
+__end_of_activity_submenu_siren_tone    text23        01E4E
+__end_of_activity_submenu_siren_volume  text22        01DE8
+__end_of_button_A                       text33        026A0
+__end_of_button_B                       text18        0204A
+__end_of_button_B_menu                  text28        02402
+__end_of_button_B_submenu_activation    text27        0274E
+__end_of_button_B_submenu_pin_config    text24        02782
+__end_of_button_B_submenu_siren_config  text21        027E4
+__end_of_button_B_submenu_siren_tone    text20        02714
+__end_of_button_B_submenu_siren_volume  text19        026DA
 __end_of_button_C                       text16        02964
 __end_of_button_D                       text15        02A04
 __end_of_button_asterisk                text14        02A14
 __end_of_button_hash                    text10        028E0
-__end_of_button_number                  text8         01D0C
+__end_of_button_number                  text8         01D14
 __end_of_check_home_callback            text55        02948
 __end_of_dpowers                        smallconst    00F0B
-__end_of_home_clock_refresh             text49        01A1A
-__end_of_home_config_refresh            text45        018F2
-__end_of_home_state_refresh             text48        021E8
-__end_of_home_tone_refresh              text47        02196
-__end_of_home_volume_refresh            text46        02144
+__end_of_home_clock_refresh             text49        01A22
+__end_of_home_config_refresh            text45        018FA
+__end_of_home_state_refresh             text48        021F0
+__end_of_home_tone_refresh              text47        0219E
+__end_of_home_volume_refresh            text46        0214C
 __end_of_isdigit                        text51        02926
-__end_of_keyboard_control               text7         014FE
+__end_of_keyboard_control               text7         01506
 __end_of_lcd_comand                     text36        029F0
 __end_of_lcd_gotoxy                     text61        02904
-__end_of_lcd_init                       text62        01BAA
-__end_of_lcd_putc                       text60        0236A
-__end_of_lcd_putrs                      text59        020F2
-__end_of_lcd_send_byte                  text63        027DE
-__end_of_lcd_send_nibble                text64        01C9C
+__end_of_lcd_init                       text62        01BB2
+__end_of_lcd_putc                       text60        02372
+__end_of_lcd_putrs                      text59        020FA
+__end_of_lcd_send_byte                  text63        027B4
+__end_of_lcd_send_nibble                text64        01CA4
 __end_of_lcd_write                      text58        02996
-__end_of_main                           text0         0286A
-__end_of_pin_input_validator            text12        027AC
+__end_of_main                           text0         02840
+__end_of_pin_input_validator            text12        0286A
+__end_of_pin_reset                      text25        029AC
 __end_of_pin_set                        text11        0297E
 __end_of_reset_home_callback            text56        02A0E
-__end_of_reset_pin                      text20        029AC
-__end_of_setup                          text1         01C26
-__end_of_sprintf                        text50        01248
-__end_of_strcat                         text9         023B2
-__end_of_strcmp                         text13        02236
-__end_of_strcpy                         text35        02488
-__initialization                        cinit         02488
+__end_of_setup                          text1         01C2E
+__end_of_sprintf                        text50        01250
+__end_of_strcat                         text9         023BA
+__end_of_strcmp                         text13        0223E
+__end_of_strcpy                         text35        02490
+__initialization                        cinit         02490
 __mediumconst                           mediumconst   00000
 __pbitbssCOMRAM                         bitbssCOMRAM  002F8
 __pbssBANK0                             bssBANK0      00060
 __pbssCOMRAM                            bssCOMRAM     00001
-__pcinit                                cinit         02488
+__pcinit                                cinit         02490
 __pcstackCOMRAM                         cstackCOMRAM  0002A
 __pdataCOMRAM                           dataCOMRAM    0004F
 __pidataCOMRAM                          idataCOMRAM   029F0
 __pnvBANK0                              nvBANK0       0009E
 __pnvCOMRAM                             nvCOMRAM      00059
 __psmallconst                           smallconst    00F00
-__ptext0                                text0         0283E
-__ptext1                                text1         01BAA
+__ptext0                                text0         02814
+__ptext1                                text1         01BB2
 __ptext10                               text10        028BC
 __ptext11                               text11        02964
-__ptext12                               text12        0277A
-__ptext13                               text13        021E8
+__ptext12                               text12        02840
+__ptext13                               text13        021F0
 __ptext14                               text14        02A0E
 __ptext15                               text15        029FA
 __ptext16                               text16        02948
-__ptext17                               text17        01AA8
-__ptext18                               text18        01FDE
-__ptext19                               text19        02746
-__ptext2                                text2         01248
-__ptext20                               text20        02996
-__ptext21                               text21        02236
-__ptext22                               text22        02698
-__ptext23                               text23        026D2
-__ptext24                               text24        027DE
-__ptext25                               text25        01D7A
-__ptext26                               text26        01DE0
-__ptext27                               text27        0270C
-__ptext28                               text28        023B2
-__ptext29                               text29        01E46
-__ptext3                                text3         018F2
-__ptext30                               text30        01EAC
-__ptext31                               text31        01F12
-__ptext32                               text32        01F78
-__ptext33                               text33        02658
-__ptext34                               text34        02284
-__ptext35                               text35        02442
+__ptext17                               text17        01AB0
+__ptext18                               text18        01FE6
+__ptext19                               text19        026A0
+__ptext2                                text2         01250
+__ptext20                               text20        026DA
+__ptext21                               text21        027B4
+__ptext22                               text22        01D82
+__ptext23                               text23        01DE8
+__ptext24                               text24        0274E
+__ptext25                               text25        02996
+__ptext26                               text26        0223E
+__ptext27                               text27        02714
+__ptext28                               text28        023BA
+__ptext29                               text29        01E4E
+__ptext3                                text3         018FA
+__ptext30                               text30        01EB4
+__ptext31                               text31        01F1A
+__ptext32                               text32        01F80
+__ptext33                               text33        02660
+__ptext34                               text34        0228C
+__ptext35                               text35        0244A
 __ptext36                               text36        029E2
-__ptext37                               text37        0280E
-__ptext38                               text38        024CC
-__ptext39                               text39        0250E
-__ptext4                                text4         01644
-__ptext40                               text40        023FA
-__ptext41                               text41        02550
-__ptext42                               text42        02592
-__ptext43                               text43        025D4
-__ptext44                               text44        02616
-__ptext45                               text45        0184C
-__ptext46                               text46        020F2
-__ptext47                               text47        02144
-__ptext48                               text48        02196
-__ptext49                               text49        01988
-__ptext5                                text5         014FE
-__ptext50                               text50        00FE4
+__ptext37                               text37        027E4
+__ptext38                               text38        024D4
+__ptext39                               text39        02516
+__ptext4                                text4         0164C
+__ptext40                               text40        02402
+__ptext41                               text41        02558
+__ptext42                               text42        0259A
+__ptext43                               text43        025DC
+__ptext44                               text44        0261E
+__ptext45                               text45        01854
+__ptext46                               text46        020FA
+__ptext47                               text47        0214C
+__ptext48                               text48        0219E
+__ptext49                               text49        01990
+__ptext5                                text5         01506
+__ptext50                               text50        00FEC
 __ptext51                               text51        02904
 __ptext52                               text52        02894
-__ptext53                               text53        022D2
-__ptext54                               text54        02042
+__ptext53                               text53        022DA
+__ptext54                               text54        0204A
 __ptext55                               text55        02926
 __ptext56                               text56        02A04
 __ptext57                               text57        0286A
 __ptext58                               text58        0297E
-__ptext59                               text59        0209E
+__ptext59                               text59        020A6
 __ptext6                                text6         029AC
-__ptext60                               text60        0231E
+__ptext60                               text60        02326
 __ptext61                               text61        028E0
-__ptext62                               text62        01B2A
-__ptext63                               text63        027AC
-__ptext64                               text64        01C26
+__ptext62                               text62        01B32
+__ptext63                               text63        02782
+__ptext64                               text64        01C2E
 __ptext65                               text65        029BE
 __ptext66                               text66        029D0
-__ptext67                               text67        01750
-__ptext68                               text68        01D0C
-__ptext69                               text69        01A1A
-__ptext7                                text7         013A8
-__ptext8                                text8         01C9C
-__ptext9                                text9         0236A
+__ptext67                               text67        01758
+__ptext68                               text68        01D14
+__ptext69                               text69        01A22
+__ptext7                                text7         013B0
+__ptext8                                text8         01CA4
+__ptext9                                text9         02372
 __ramtop                                ramtop        00F00
 __size_of_Delay100TCYx                  (abs)         00000
 __size_of_Delay1KTCYx                   (abs)         00000
@@ -890,20 +890,20 @@ __size_of_activity_home                 (abs)         00000
 __size_of_activity_menu                 (abs)         00000
 __size_of_activity_pin                  (abs)         00000
 __size_of_activity_submenu_activation   (abs)         00000
-__size_of_activity_submenu_alarm        (abs)         00000
-__size_of_activity_submenu_alarm_tone   (abs)         00000
-__size_of_activity_submenu_alarm_volume (abs)         00000
 __size_of_activity_submenu_clock        (abs)         00000
 __size_of_activity_submenu_pin          (abs)         00000
 __size_of_activity_submenu_pin_set      (abs)         00000
+__size_of_activity_submenu_siren        (abs)         00000
+__size_of_activity_submenu_siren_tone   (abs)         00000
+__size_of_activity_submenu_siren_volume (abs)         00000
 __size_of_button_A                      (abs)         00000
 __size_of_button_B                      (abs)         00000
 __size_of_button_B_menu                 (abs)         00000
 __size_of_button_B_submenu_activation   (abs)         00000
-__size_of_button_B_submenu_alarm_config (abs)         00000
-__size_of_button_B_submenu_alarm_tone   (abs)         00000
-__size_of_button_B_submenu_alarm_volume (abs)         00000
 __size_of_button_B_submenu_pin_config   (abs)         00000
+__size_of_button_B_submenu_siren_config (abs)         00000
+__size_of_button_B_submenu_siren_tone   (abs)         00000
+__size_of_button_B_submenu_siren_volume (abs)         00000
 __size_of_button_C                      (abs)         00000
 __size_of_button_D                      (abs)         00000
 __size_of_button_asterisk               (abs)         00000
@@ -927,9 +927,9 @@ __size_of_lcd_send_nibble               (abs)         00000
 __size_of_lcd_write                     (abs)         00000
 __size_of_main                          (abs)         00000
 __size_of_pin_input_validator           (abs)         00000
+__size_of_pin_reset                     (abs)         00000
 __size_of_pin_set                       (abs)         00000
 __size_of_reset_home_callback           (abs)         00000
-__size_of_reset_pin                     (abs)         00000
 __size_of_setup                         (abs)         00000
 __size_of_sprintf                       (abs)         00000
 __size_of_strcat                        (abs)         00000
@@ -937,25 +937,25 @@ __size_of_strcmp                        (abs)         00000
 __size_of_strcpy                        (abs)         00000
 __smallconst                            smallconst    00F00
 _a                                      bssCOMRAM     00001
-_action_menu_selector                   text40        023FA
-_action_menu_selector_0                 text44        02616
-_action_menu_selector_1                 text43        025D4
-_action_menu_selector_2                 text42        02592
-_action_menu_selector_3                 text41        02550
-_action_submenu_selector                text37        0280E
-_action_submenu_selector_0              text39        0250E
-_action_submenu_selector_1              text38        024CC
+_action_menu_selector                   text40        02402
+_action_menu_selector_0                 text44        0261E
+_action_menu_selector_1                 text43        025DC
+_action_menu_selector_2                 text42        0259A
+_action_menu_selector_3                 text41        02558
+_action_submenu_selector                text37        027E4
+_action_submenu_selector_0              text39        02516
+_action_submenu_selector_1              text38        024D4
 _activity                               bssCOMRAM     00003
 _activity_home                          text57        0286A
-_activity_menu                          text17        01AA8
-_activity_pin                           text34        02284
-_activity_submenu_activation            text32        01F78
-_activity_submenu_alarm                 text31        01F12
-_activity_submenu_alarm_tone            text26        01DE0
-_activity_submenu_alarm_volume          text25        01D7A
-_activity_submenu_clock                 text30        01EAC
-_activity_submenu_pin                   text29        01E46
-_activity_submenu_pin_set               text21        02236
+_activity_menu                          text17        01AB0
+_activity_pin                           text34        0228C
+_activity_submenu_activation            text32        01F80
+_activity_submenu_clock                 text31        01F1A
+_activity_submenu_pin                   text30        01EB4
+_activity_submenu_pin_set               text26        0223E
+_activity_submenu_siren                 text29        01E4E
+_activity_submenu_siren_tone            text23        01DE8
+_activity_submenu_siren_volume          text22        01D82
 _alarm_tone                             bssCOMRAM     00005
 _alarm_volume                           bssCOMRAM     00007
 _anio                                   dataCOMRAM    0004F
@@ -963,19 +963,19 @@ _anio_d                                 nvCOMRAM      00059
 _anio_u                                 nvBANK0       0009E
 _b                                      bssCOMRAM     00009
 _buffer1                                bssBANK0      00080
-_button_A                               text33        02658
-_button_B                               text18        01FDE
-_button_B_menu                          text28        023B2
-_button_B_submenu_activation            text27        0270C
-_button_B_submenu_alarm_config          text24        027DE
-_button_B_submenu_alarm_tone            text23        026D2
-_button_B_submenu_alarm_volume          text22        02698
-_button_B_submenu_pin_config            text19        02746
+_button_A                               text33        02660
+_button_B                               text18        01FE6
+_button_B_menu                          text28        023BA
+_button_B_submenu_activation            text27        02714
+_button_B_submenu_pin_config            text24        0274E
+_button_B_submenu_siren_config          text21        027B4
+_button_B_submenu_siren_tone            text20        026DA
+_button_B_submenu_siren_volume          text19        026A0
 _button_C                               text16        02948
 _button_D                               text15        029FA
 _button_asterisk                        text14        02A0E
 _button_hash                            text10        028BC
-_button_number                          text8         01C9C
+_button_number                          text8         01CA4
 _c                                      bssBANK0      0007C
 _check_home_callback                    text55        02926
 _config_widget                          bssCOMRAM     0000B
@@ -989,30 +989,30 @@ _fecha_u                                nvBANK0       000A0
 _flag                                   bitbssCOMRAM  002F8
 _home_callback                          bssCOMRAM     0000F
 _home_callback_delay                    bssCOMRAM     00011
-_home_clock_refresh                     text49        01988
-_home_config_refresh                    text45        0184C
-_home_state_refresh                     text48        02196
-_home_tone_refresh                      text47        02144
-_home_volume_refresh                    text46        020F2
+_home_clock_refresh                     text49        01990
+_home_config_refresh                    text45        01854
+_home_state_refresh                     text48        0219E
+_home_tone_refresh                      text47        0214C
+_home_volume_refresh                    text46        020FA
 _hora                                   dataCOMRAM    00055
 _hora_d                                 nvCOMRAM      0005B
 _hora_u                                 nvBANK0       000A1
 _i                                      bssCOMRAM     00013
 _isdigit                                text51        02904
-_isdigit$2192                           cstackCOMRAM  0002B
+_isdigit$2191                           cstackCOMRAM  0002B
 _j                                      bssCOMRAM     00015
 _k                                      bssBANK0      0007E
 _key                                    bssCOMRAM     00021
-_keyboard_control                       text7         013A8
+_keyboard_control                       text7         013B0
 _lcd_comand                             text36        029E2
 _lcd_gotoxy                             text61        028E0
-_lcd_init                               text62        01B2A
-_lcd_putc                               text60        0231E
-_lcd_putrs                              text59        0209E
-_lcd_send_byte                          text63        027AC
-_lcd_send_nibble                        text64        01C26
+_lcd_init                               text62        01B32
+_lcd_putc                               text60        02326
+_lcd_putrs                              text59        020A6
+_lcd_send_byte                          text63        02782
+_lcd_send_nibble                        text64        01C2E
 _lcd_write                              text58        0297E
-_main                                   text0         0283E
+_main                                   text0         02814
 _menu_selected                          bssCOMRAM     00017
 _mes                                    dataCOMRAM    00057
 _mes_d                                  nvCOMRAM      0005C
@@ -1022,21 +1022,21 @@ _minuto_d                               nvCOMRAM      0005D
 _minuto_u                               nvBANK0       000A3
 _pin                                    bssBANK0      00094
 _pin_input                              bssBANK0      00099
-_pin_input_validator                    text12        0277A
+_pin_input_validator                    text12        02840
+_pin_reset                              text25        02996
 _pin_set                                text11        02964
 _reset_home_callback                    text56        02A04
-_reset_pin                              text20        02996
 _segundo                                bssCOMRAM     0001B
 _segundo_d                              nvCOMRAM      0005E
 _segundo_u                              nvBANK0       000A4
-_setup                                  text1         01BAA
-_sprintf                                text50        00FE4
+_setup                                  text1         01BB2
+_sprintf                                text50        00FEC
 _state                                  bssCOMRAM     0001D
-_strcat                                 text9         0236A
-_strcmp                                 text13        021E8
-_strcpy                                 text35        02442
+_strcat                                 text9         02372
+_strcmp                                 text13        021F0
+_strcpy                                 text35        0244A
 _submenu_selected                       bssCOMRAM     0001F
-end_of_initialization                   cinit         024C2
+end_of_initialization                   cinit         024CA
 intlevel0                               text          00000
 intlevel1                               text          00000
 intlevel2                               text          00000
@@ -1055,7 +1055,6 @@ lcd_send_nibble@nibble                  cstackCOMRAM  0002B
 lcd_write@column                        cstackCOMRAM  00034
 lcd_write@row                           cstackCOMRAM  00036
 lcd_write@string                        cstackCOMRAM  00038
-pin_input_validator@comparision         cstackCOMRAM  0003A
 sprintf@ap                              cstackCOMRAM  00044
 sprintf@c                               cstackCOMRAM  0004C
 sprintf@f                               cstackCOMRAM  00038
@@ -1067,7 +1066,7 @@ sprintf@width                           cstackCOMRAM  0004A
 stackhi                                 (abs)         00EBF
 stacklo                                 (abs)         000A5
 start                                   init          00000
-start_initialization                    cinit         02488
+start_initialization                    cinit         02490
 strcat@cp                               cstackCOMRAM  0002E
 strcat@from                             cstackCOMRAM  0002C
 strcat@to                               cstackCOMRAM  0002A
@@ -1083,7 +1082,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 683 in file "main.c"
+		line 717 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1118,7 +1117,7 @@ Total ram usage:        0 bytes
 
  *************** function _setup *****************
  Defined at:
-		line 79 in file "main.c"
+		line 677 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1143,7 +1142,7 @@ Total ram usage:        0 bytes
 		_Write_RTC
 		_lcd_comand
 		_lcd_init
-		_reset_pin
+		_pin_reset
  This function is called by:
 		_main
  This function uses a non-reentrant model
@@ -1228,7 +1227,7 @@ Total ram usage:        8 bytes
   wasAlrm         1    5[COMRAM] enum E7121
   wasOn           1    4[COMRAM] enum E7121
  Return value:  Size  Location     Type
-                  1    wreg      enum E7337
+                  1    wreg      enum E7481
  Registers used:
 		wreg, fsr2l, fsr2h, status,2, status,0, cstack
  Tracked objects:
@@ -1265,7 +1264,7 @@ Total ram usage:       11 bytes
   wasAlrm         1    5[COMRAM] enum E7121
   wasOn           1    4[COMRAM] enum E7121
  Return value:  Size  Location     Type
-                  1    wreg      enum E7337
+                  1    wreg      enum E7481
  Registers used:
 		wreg, fsr2l, fsr2h, status,2, status,0, cstack
  Tracked objects:
@@ -1320,7 +1319,7 @@ Total ram usage:        0 bytes
 
  *************** function _keyboard_control *****************
  Defined at:
-		line 628 in file "main.c"
+		line 639 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1356,7 +1355,7 @@ Total ram usage:        1 bytes
 
  *************** function _button_number *****************
  Defined at:
-		line 610 in file "main.c"
+		line 621 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1422,7 +1421,7 @@ Total ram usage:        6 bytes
 
  *************** function _button_hash *****************
  Defined at:
-		line 596 in file "main.c"
+		line 607 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1454,7 +1453,7 @@ Total ram usage:        0 bytes
 
  *************** function _pin_set *****************
  Defined at:
-		line 397 in file "main.c"
+		line 305 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1485,11 +1484,11 @@ Total ram usage:        0 bytes
 
  *************** function _pin_input_validator *****************
  Defined at:
-		line 385 in file "main.c"
+		line 312 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
-  comparision     2   16[COMRAM] int 
+		None
  Return value:  Size  Location     Type
 		None               void
  Registers used:
@@ -1500,10 +1499,10 @@ Total ram usage:        0 bytes
 		Unchanged: 
  Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
       Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
       Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        2 bytes
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    8
  This function calls:
@@ -1549,7 +1548,7 @@ Total ram usage:        6 bytes
 
  *************** function _button_asterisk *****************
  Defined at:
-		line 588 in file "main.c"
+		line 600 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1579,7 +1578,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_D *****************
  Defined at:
-		line 580 in file "main.c"
+		line 593 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1610,7 +1609,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_C *****************
  Defined at:
-		line 570 in file "main.c"
+		line 583 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1641,7 +1640,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_menu *****************
  Defined at:
-		line 272 in file "main.c"
+		line 207 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1674,7 +1673,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_B *****************
  Defined at:
-		line 537 in file "main.c"
+		line 550 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1698,19 +1697,174 @@ Total ram usage:        2 bytes
  This function calls:
 		_button_B_menu
 		_button_B_submenu_activation
-		_button_B_submenu_alarm_config
-		_button_B_submenu_alarm_tone
-		_button_B_submenu_alarm_volume
 		_button_B_submenu_pin_config
+		_button_B_submenu_siren_config
+		_button_B_submenu_siren_tone
+		_button_B_submenu_siren_volume
 		_reset_home_callback
  This function is called by:
 		_keyboard_control
  This function uses a non-reentrant model
 
 
+ *************** function _button_B_submenu_siren_volume *****************
+ Defined at:
+		line 514 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_activity_home
+ This function is called by:
+		_button_B
+ This function uses a non-reentrant model
+
+
+ *************** function _button_B_submenu_siren_tone *****************
+ Defined at:
+		line 532 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_activity_home
+ This function is called by:
+		_button_B
+ This function uses a non-reentrant model
+
+
+ *************** function _button_B_submenu_siren_config *****************
+ Defined at:
+		line 498 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_activity_submenu_siren_tone
+		_activity_submenu_siren_volume
+ This function is called by:
+		_button_B
+ This function uses a non-reentrant model
+
+
+ *************** function _activity_submenu_siren_volume *****************
+ Defined at:
+		line 258 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_action_submenu_selector_0
+		_lcd_init
+		_lcd_write
+ This function is called by:
+		_button_B_submenu_siren_config
+ This function uses a non-reentrant model
+
+
+ *************** function _activity_submenu_siren_tone *****************
+ Defined at:
+		line 269 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_action_submenu_selector_0
+		_lcd_init
+		_lcd_write
+ This function is called by:
+		_button_B_submenu_siren_config
+ This function uses a non-reentrant model
+
+
  *************** function _button_B_submenu_pin_config *****************
  Defined at:
-		line 468 in file "main.c"
+		line 481 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1734,15 +1888,15 @@ Total ram usage:        2 bytes
  This function calls:
 		_activity_home
 		_activity_submenu_pin_set
-		_reset_pin
+		_pin_reset
  This function is called by:
 		_button_B
  This function uses a non-reentrant model
 
 
- *************** function _reset_pin *****************
+ *************** function _pin_reset *****************
  Defined at:
-		line 75 in file "main.c"
+		line 323 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1766,14 +1920,14 @@ Total ram usage:        0 bytes
  This function calls:
 		_strcpy
  This function is called by:
-		_setup
 		_button_B_submenu_pin_config
+		_setup
  This function uses a non-reentrant model
 
 
  *************** function _activity_submenu_pin_set *****************
  Defined at:
-		line 342 in file "main.c"
+		line 292 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1805,164 +1959,9 @@ Total ram usage:        0 bytes
  This function uses a non-reentrant model
 
 
- *************** function _button_B_submenu_alarm_volume *****************
- Defined at:
-		line 501 in file "main.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        2 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    7
- This function calls:
-		_activity_home
- This function is called by:
-		_button_B
- This function uses a non-reentrant model
-
-
- *************** function _button_B_submenu_alarm_tone *****************
- Defined at:
-		line 519 in file "main.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        2 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    7
- This function calls:
-		_activity_home
- This function is called by:
-		_button_B
- This function uses a non-reentrant model
-
-
- *************** function _button_B_submenu_alarm_config *****************
- Defined at:
-		line 485 in file "main.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        2 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    8
- This function calls:
-		_activity_submenu_alarm_tone
-		_activity_submenu_alarm_volume
- This function is called by:
-		_button_B
- This function uses a non-reentrant model
-
-
- *************** function _activity_submenu_alarm_volume *****************
- Defined at:
-		line 363 in file "main.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        0 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    7
- This function calls:
-		_action_submenu_selector_0
-		_lcd_init
-		_lcd_write
- This function is called by:
-		_button_B_submenu_alarm_config
- This function uses a non-reentrant model
-
-
- *************** function _activity_submenu_alarm_tone *****************
- Defined at:
-		line 374 in file "main.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        0 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    7
- This function calls:
-		_action_submenu_selector_0
-		_lcd_init
-		_lcd_write
- This function is called by:
-		_button_B_submenu_alarm_config
- This function uses a non-reentrant model
-
-
  *************** function _button_B_submenu_activation *****************
  Defined at:
-		line 450 in file "main.c"
+		line 463 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1992,7 +1991,7 @@ Total ram usage:        2 bytes
 
  *************** function _button_B_menu *****************
  Defined at:
-		line 427 in file "main.c"
+		line 439 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2015,17 +2014,49 @@ Total ram usage:        2 bytes
  Hardware stack levels required when called:    8
  This function calls:
 		_activity_submenu_activation
-		_activity_submenu_alarm
 		_activity_submenu_clock
 		_activity_submenu_pin
+		_activity_submenu_siren
  This function is called by:
 		_button_B
  This function uses a non-reentrant model
 
 
+ *************** function _activity_submenu_siren *****************
+ Defined at:
+		line 247 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_action_submenu_selector_0
+		_lcd_init
+		_lcd_write
+ This function is called by:
+		_button_B_menu
+ This function uses a non-reentrant model
+
+
  *************** function _activity_submenu_pin *****************
  Defined at:
-		line 332 in file "main.c"
+		line 282 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2057,39 +2088,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_submenu_clock *****************
  Defined at:
-		line 321 in file "main.c"
- Parameters:    Size  Location     Type
-		None
- Auto vars:     Size  Location     Type
-		None
- Return value:  Size  Location     Type
-		None               void
- Registers used:
-		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
- Tracked objects:
-		On entry : 
-		On exit  : 
-		Unchanged: 
- Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
-      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
-Total ram usage:        0 bytes
- Hardware stack levels used:    1
- Hardware stack levels required when called:    7
- This function calls:
-		_action_submenu_selector_0
-		_lcd_init
-		_lcd_write
- This function is called by:
-		_button_B_menu
- This function uses a non-reentrant model
-
-
- *************** function _activity_submenu_alarm *****************
- Defined at:
-		line 353 in file "main.c"
+		line 221 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2121,7 +2120,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_submenu_activation *****************
  Defined at:
-		line 311 in file "main.c"
+		line 234 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2153,7 +2152,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_A *****************
  Defined at:
-		line 403 in file "main.c"
+		line 415 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2186,7 +2185,7 @@ Total ram usage:        2 bytes
 
  *************** function _activity_pin *****************
  Defined at:
-		line 262 in file "main.c"
+		line 196 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2224,12 +2223,12 @@ Total ram usage:        0 bytes
 		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c"
  Parameters:    Size  Location     Type
   to              2    0[COMRAM] PTR unsigned char 
-		 -> pin_input(5), pin(5), 
+		 -> pin(5), pin_input(5), 
   from            2    2[COMRAM] PTR const unsigned char 
-		 -> STR_38(1), STR_19(1), pin_input(5), STR_1(5), 
+		 -> STR_40(5), STR_38(1), STR_14(1), pin_input(5), 
  Auto vars:     Size  Location     Type
   cp              2    4[COMRAM] PTR unsigned char 
-		 -> pin_input(5), pin(5), 
+		 -> pin(5), pin_input(5), 
  Return value:  Size  Location     Type
                   2    0[COMRAM] PTR unsigned char 
  Registers used:
@@ -2248,10 +2247,10 @@ Total ram usage:        6 bytes
  This function calls:
 		Nothing
  This function is called by:
-		_reset_pin
 		_activity_pin
 		_activity_submenu_pin_set
 		_pin_set
+		_pin_reset
  This function uses a non-reentrant model
 
 
@@ -2281,15 +2280,15 @@ Total ram usage:        1 bytes
  This function calls:
 		_lcd_send_byte
  This function is called by:
-		_setup
 		_activity_pin
 		_activity_submenu_pin_set
+		_setup
  This function uses a non-reentrant model
 
 
  *************** function _action_submenu_selector *****************
  Defined at:
-		line 296 in file "main.c"
+		line 181 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2320,7 +2319,7 @@ Total ram usage:        2 bytes
 
  *************** function _action_submenu_selector_1 *****************
  Defined at:
-		line 290 in file "main.c"
+		line 173 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2350,7 +2349,7 @@ Total ram usage:        0 bytes
 
  *************** function _action_submenu_selector_0 *****************
  Defined at:
-		line 284 in file "main.c"
+		line 165 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2375,18 +2374,18 @@ Total ram usage:        0 bytes
 		_lcd_write
  This function is called by:
 		_action_submenu_selector
-		_activity_submenu_activation
 		_activity_submenu_clock
+		_activity_submenu_activation
+		_activity_submenu_siren
+		_activity_submenu_siren_volume
+		_activity_submenu_siren_tone
 		_activity_submenu_pin
-		_activity_submenu_alarm
-		_activity_submenu_alarm_volume
-		_activity_submenu_alarm_tone
  This function uses a non-reentrant model
 
 
  *************** function _action_menu_selector *****************
  Defined at:
-		line 230 in file "main.c"
+		line 139 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2419,7 +2418,7 @@ Total ram usage:        2 bytes
 
  *************** function _action_menu_selector_3 *****************
  Defined at:
-		line 224 in file "main.c"
+		line 131 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2449,7 +2448,7 @@ Total ram usage:        0 bytes
 
  *************** function _action_menu_selector_2 *****************
  Defined at:
-		line 218 in file "main.c"
+		line 123 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2479,7 +2478,7 @@ Total ram usage:        0 bytes
 
  *************** function _action_menu_selector_1 *****************
  Defined at:
-		line 212 in file "main.c"
+		line 115 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2509,7 +2508,7 @@ Total ram usage:        0 bytes
 
  *************** function _action_menu_selector_0 *****************
  Defined at:
-		line 206 in file "main.c"
+		line 107 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2540,7 +2539,7 @@ Total ram usage:        0 bytes
 
  *************** function _home_config_refresh *****************
  Defined at:
-		line 169 in file "main.c"
+		line 376 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2572,7 +2571,7 @@ Total ram usage:        2 bytes
 
  *************** function _home_volume_refresh *****************
  Defined at:
-		line 145 in file "main.c"
+		line 352 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2603,7 +2602,7 @@ Total ram usage:        0 bytes
 
  *************** function _home_tone_refresh *****************
  Defined at:
-		line 157 in file "main.c"
+		line 364 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2634,7 +2633,7 @@ Total ram usage:        0 bytes
 
  *************** function _home_state_refresh *****************
  Defined at:
-		line 133 in file "main.c"
+		line 340 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2665,7 +2664,7 @@ Total ram usage:        0 bytes
 
  *************** function _home_clock_refresh *****************
  Defined at:
-		line 124 in file "main.c"
+		line 331 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2701,9 +2700,9 @@ Total ram usage:        0 bytes
   sp              2   12[COMRAM] PTR unsigned char 
 		 -> buffer1(20), 
   f               2   14[COMRAM] PTR const unsigned char 
-		 -> STR_51(5), STR_50(5), STR_9(7), STR_8(7), 
-		 -> STR_7(7), STR_6(7), STR_5(7), STR_4(7), 
-		 -> STR_3(15), STR_2(15), 
+		 -> STR_51(5), STR_50(5), STR_48(7), STR_47(7), 
+		 -> STR_46(7), STR_45(7), STR_44(7), STR_43(7), 
+		 -> STR_42(15), STR_41(15), 
  Auto vars:     Size  Location     Type
   tmpval          4    0        struct .
   cp              3    0        PTR const unsigned char 
@@ -2867,7 +2866,7 @@ Total ram usage:        7 bytes
 
  *************** function _check_home_callback *****************
  Defined at:
-		line 666 in file "main.c"
+		line 91 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2898,7 +2897,7 @@ Total ram usage:        0 bytes
 
  *************** function _reset_home_callback *****************
  Defined at:
-		line 118 in file "main.c"
+		line 85 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2921,6 +2920,7 @@ Total ram usage:        0 bytes
  This function calls:
 		Nothing
  This function is called by:
+		_check_home_callback
 		_button_A
 		_button_B
 		_button_C
@@ -2928,13 +2928,12 @@ Total ram usage:        0 bytes
 		_button_asterisk
 		_button_hash
 		_button_number
-		_check_home_callback
  This function uses a non-reentrant model
 
 
  *************** function _activity_home *****************
  Defined at:
-		line 254 in file "main.c"
+		line 77 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2959,34 +2958,34 @@ Total ram usage:        0 bytes
 		_lcd_init
 		_lcd_write
  This function is called by:
+		_check_home_callback
 		_pin_set
 		_button_B_submenu_activation
 		_button_B_submenu_pin_config
-		_button_B_submenu_alarm_volume
-		_button_B_submenu_alarm_tone
+		_button_B_submenu_siren_volume
+		_button_B_submenu_siren_tone
 		_button_D
-		_check_home_callback
 		_main
  This function uses a non-reentrant model
 
 
  *************** function _lcd_write *****************
  Defined at:
-		line 70 in file "main.c"
+		line 68 in file "main.c"
  Parameters:    Size  Location     Type
   column          2   10[COMRAM] int 
   row             2   12[COMRAM] int 
-  string          2   14[COMRAM] PTR unsigned char 
-		 -> STR_48(7), STR_47(7), STR_46(5), STR_45(5), 
-		 -> STR_44(5), STR_43(8), STR_42(5), STR_41(8), 
-		 -> STR_40(7), STR_39(11), STR_37(6), STR_36(8), 
-		 -> STR_35(4), STR_34(5), STR_33(6), STR_32(6), 
-		 -> STR_31(3), STR_30(3), STR_29(8), STR_28(2), 
-		 -> STR_27(2), STR_26(2), STR_25(2), STR_24(7), 
-		 -> STR_23(4), STR_22(6), STR_21(8), STR_20(16), 
-		 -> STR_18(4), STR_17(2), STR_16(2), STR_15(2), 
-		 -> STR_14(2), STR_13(2), STR_12(2), STR_11(2), 
-		 -> STR_10(2), buffer1(20), 
+  string          2   14[COMRAM] PTR const unsigned char 
+		 -> buffer1(20), STR_39(11), STR_37(6), STR_36(8), 
+		 -> STR_35(4), STR_34(7), STR_33(7), STR_32(5), 
+		 -> STR_31(5), STR_30(5), STR_29(8), STR_28(5), 
+		 -> STR_27(8), STR_26(7), STR_25(3), STR_24(3), 
+		 -> STR_23(8), STR_22(5), STR_21(6), STR_20(6), 
+		 -> STR_19(7), STR_18(4), STR_17(6), STR_16(8), 
+		 -> STR_15(16), STR_13(2), STR_12(2), STR_11(2), 
+		 -> STR_10(2), STR_9(2), STR_8(2), STR_7(2), 
+		 -> STR_6(2), STR_5(2), STR_4(2), STR_3(2), 
+		 -> STR_2(2), STR_1(4), 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
@@ -3009,26 +3008,26 @@ Total ram usage:        6 bytes
 		_lcd_gotoxy
 		_lcd_putrs
  This function is called by:
-		_home_clock_refresh
-		_home_state_refresh
-		_home_volume_refresh
-		_home_tone_refresh
+		_activity_home
 		_action_menu_selector_0
 		_action_menu_selector_1
 		_action_menu_selector_2
 		_action_menu_selector_3
-		_activity_home
-		_activity_pin
-		_activity_menu
 		_action_submenu_selector_0
 		_action_submenu_selector_1
-		_activity_submenu_activation
+		_activity_pin
+		_activity_menu
 		_activity_submenu_clock
+		_activity_submenu_activation
+		_activity_submenu_siren
+		_activity_submenu_siren_volume
+		_activity_submenu_siren_tone
 		_activity_submenu_pin
 		_activity_submenu_pin_set
-		_activity_submenu_alarm
-		_activity_submenu_alarm_volume
-		_activity_submenu_alarm_tone
+		_home_clock_refresh
+		_home_state_refresh
+		_home_volume_refresh
+		_home_tone_refresh
  This function uses a non-reentrant model
 
 
@@ -3037,16 +3036,16 @@ Total ram usage:        6 bytes
 		line 221 in file "Unimic/unmc_01/sources/unmc_lcd_216.c"
  Parameters:    Size  Location     Type
   ptr             2    8[COMRAM] PTR const unsigned char 
-		 -> STR_49(2), STR_48(7), STR_47(7), STR_46(5), 
-		 -> STR_45(5), STR_44(5), STR_43(8), STR_42(5), 
-		 -> STR_41(8), STR_40(7), STR_39(11), STR_37(6), 
-		 -> STR_36(8), STR_35(4), STR_34(5), STR_33(6), 
-		 -> STR_32(6), STR_31(3), STR_30(3), STR_29(8), 
-		 -> STR_28(2), STR_27(2), STR_26(2), STR_25(2), 
-		 -> STR_24(7), STR_23(4), STR_22(6), STR_21(8), 
-		 -> STR_20(16), STR_18(4), STR_17(2), STR_16(2), 
-		 -> STR_15(2), STR_14(2), STR_13(2), STR_12(2), 
-		 -> STR_11(2), STR_10(2), buffer1(20), 
+		 -> STR_49(2), buffer1(20), STR_39(11), STR_37(6), 
+		 -> STR_36(8), STR_35(4), STR_34(7), STR_33(7), 
+		 -> STR_32(5), STR_31(5), STR_30(5), STR_29(8), 
+		 -> STR_28(5), STR_27(8), STR_26(7), STR_25(3), 
+		 -> STR_24(3), STR_23(8), STR_22(5), STR_21(6), 
+		 -> STR_20(6), STR_19(7), STR_18(4), STR_17(6), 
+		 -> STR_16(8), STR_15(16), STR_13(2), STR_12(2), 
+		 -> STR_11(2), STR_10(2), STR_9(2), STR_8(2), 
+		 -> STR_7(2), STR_6(2), STR_5(2), STR_4(2), 
+		 -> STR_3(2), STR_2(2), STR_1(4), 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
@@ -3168,17 +3167,17 @@ Total ram usage:        1 bytes
 		_lcd_send_byte
 		_lcd_send_nibble
  This function is called by:
-		_setup
 		_activity_home
 		_activity_pin
 		_activity_menu
-		_activity_submenu_activation
 		_activity_submenu_clock
+		_activity_submenu_activation
+		_activity_submenu_siren
+		_activity_submenu_siren_volume
+		_activity_submenu_siren_tone
 		_activity_submenu_pin
 		_activity_submenu_pin_set
-		_activity_submenu_alarm
-		_activity_submenu_alarm_volume
-		_activity_submenu_alarm_tone
+		_setup
  This function uses a non-reentrant model
 
 
@@ -3405,7 +3404,7 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadDate.c
-		_RtccReadDate  		CODE           	1A1A	0000	143
+		_RtccReadDate  		CODE           	1A22	0000	143
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadDate.c estimated size: 143
 
@@ -3415,12 +3414,12 @@ C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c estimated size: 19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
-		_RtccWriteTime 		CODE           	1644	0000	269
+		_RtccWriteTime 		CODE           	164C	0000	269
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c estimated size: 269
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
-		___lwmod       		CODE           	22D2	0000	77
+		___lwmod       		CODE           	22DA	0000	77
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c estimated size: 77
 
@@ -3430,23 +3429,23 @@ C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c estimated size: 19
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c
-		_RtccReadTime  		CODE           	1D0C	0000	111
+		_RtccReadTime  		CODE           	1D14	0000	111
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c estimated size: 111
 
 Unimic/unmc_01/sources/unmc_lcd_216.c
 		_lcd_comand    		CODE           	29E2	0000	15
-		_lcd_putc      		CODE           	231E	0000	77
-		_lcd_putrs     		CODE           	209E	0000	85
-		_lcd_send_byte 		CODE           	27AC	0000	51
+		_lcd_putc      		CODE           	2326	0000	77
+		_lcd_putrs     		CODE           	20A6	0000	85
+		_lcd_send_byte 		CODE           	2782	0000	51
 		_lcd_gotoxy    		CODE           	28E0	0000	37
-		_lcd_send_nibbl		CODE           	1C26	0000	119
-		_lcd_init      		CODE           	1B2A	0000	129
+		_lcd_send_nibbl		CODE           	1C2E	0000	119
+		_lcd_init      		CODE           	1B32	0000	129
 
 Unimic/unmc_01/sources/unmc_lcd_216.c estimated size: 513
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcat.c
-		_strcat        		CODE           	236A	0000	73
+		_strcat        		CODE           	2372	0000	73
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcat.c estimated size: 73
 
@@ -3458,27 +3457,27 @@ C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c estimated si
 shared
 		_dpowers       		SMALLCONST     	0F01	0000	11
 		_LCD_INIT_STRIN		SMALLCONST     	0F0B	0000	5
-		__initializatio		CODE           	2488	0000	59
+		__initializatio		CODE           	2490	0000	59
 
 shared estimated size: 75
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c
-		_strcmp        		CODE           	21E8	0000	79
+		_strcmp        		CODE           	21F0	0000	79
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c estimated size: 79
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
-		_strcpy        		CODE           	2442	0000	71
+		_strcpy        		CODE           	244A	0000	71
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c estimated size: 71
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
-		___lwdiv       		CODE           	2042	0000	93
+		___lwdiv       		CODE           	204A	0000	93
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c estimated size: 93
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
-		___awdiv       		CODE           	18F2	0000	151
+		___awdiv       		CODE           	18FA	0000	151
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c estimated size: 151
 
@@ -3488,69 +3487,69 @@ C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d100tcyx.c estimated size: 19
 
 Unimic/unmc_01/headers\unmc_rtcc_01.h
-		_Read_RTC      		CODE           	1750	0000	253
-		_Write_RTC     		CODE           	1248	0000	353
+		_Read_RTC      		CODE           	1758	0000	253
+		_Write_RTC     		CODE           	1250	0000	353
 
 Unimic/unmc_01/headers\unmc_rtcc_01.h estimated size: 606
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
-		_sprintf       		CODE           	0FE4	0000	613
+		_sprintf       		CODE           	0FEC	0000	613
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c estimated size: 613
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-		_RtccWriteDate 		CODE           	14FE	0000	327
+		_RtccWriteDate 		CODE           	1506	0000	327
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c estimated size: 327
 
 main.c
-		_button_number 		CODE           	1C9C	0000	113
-		_button_B_menu 		CODE           	23B2	0000	73
-		_activity_subme		CODE           	1E46	0000	103
-		_keyboard_contr		CODE           	13A8	0000	343
+		_button_number 		CODE           	1CA4	0000	113
+		_button_B_menu 		CODE           	23BA	0000	73
+		_activity_subme		CODE           	1EB4	0000	103
+		_keyboard_contr		CODE           	13B0	0000	343
+		_activity_subme		CODE           	1DE8	0000	103
 		_reset_home_cal		CODE           	2A04	0000	11
-		_home_clock_ref		CODE           	1988	0000	147
-		_home_state_ref		CODE           	2196	0000	83
-		_activity_subme		CODE           	1DE0	0000	103
-		_button_B_subme		CODE           	2746	0000	53
-		_main          		CODE           	283E	0000	45
-		_action_menu_se		CODE           	2592	0000	67
-		_activity_subme		CODE           	1D7A	0000	103
-		_home_volume_re		CODE           	20F2	0000	83
-		_activity_subme		CODE           	1F78	0000	103
-		_activity_subme		CODE           	2236	0000	79
+		_activity_subme		CODE           	1D82	0000	103
+		_home_clock_ref		CODE           	1990	0000	147
+		_home_state_ref		CODE           	219E	0000	83
+		_button_B_subme		CODE           	274E	0000	53
+		_main          		CODE           	2814	0000	45
+		_action_menu_se		CODE           	259A	0000	67
+		_home_volume_re		CODE           	20FA	0000	83
+		_activity_subme		CODE           	1F80	0000	103
+		_activity_subme		CODE           	223E	0000	79
 		_button_asteris		CODE           	2A0E	0000	7
-		_action_submenu		CODE           	280E	0000	49
-		_activity_pin  		CODE           	2284	0000	79
-		_action_submenu		CODE           	250E	0000	67
-		_action_submenu		CODE           	24CC	0000	67
+		_button_B_subme		CODE           	26DA	0000	59
+		_action_submenu		CODE           	27E4	0000	49
+		_activity_pin  		CODE           	228C	0000	79
+		_action_submenu		CODE           	2516	0000	67
+		_action_submenu		CODE           	24D4	0000	67
+		_button_B_subme		CODE           	27B4	0000	49
+		_button_B_subme		CODE           	26A0	0000	59
 		_activity_home 		CODE           	286A	0000	43
-		_activity_menu 		CODE           	1AA8	0000	131
-		_action_menu_se		CODE           	2616	0000	67
-		_action_menu_se		CODE           	2550	0000	67
-		_button_B_subme		CODE           	26D2	0000	59
+		_activity_menu 		CODE           	1AB0	0000	131
+		_action_menu_se		CODE           	261E	0000	67
+		_action_menu_se		CODE           	2558	0000	67
+		_activity_subme		CODE           	1E4E	0000	103
 		_check_home_cal		CODE           	2926	0000	35
 		_lcd_write     		CODE           	297E	0000	25
 		_pin_set       		CODE           	2964	0000	27
-		_button_B_subme		CODE           	27DE	0000	49
-		_button_B_subme		CODE           	2698	0000	59
-		_reset_pin     		CODE           	2996	0000	23
-		_setup         		CODE           	1BAA	0000	125
-		_action_menu_se		CODE           	23FA	0000	73
-		_button_B_subme		CODE           	270C	0000	59
-		_home_tone_refr		CODE           	2144	0000	83
-		_activity_subme		CODE           	1EAC	0000	103
-		_activity_subme		CODE           	1F12	0000	103
-		_button_A      		CODE           	2658	0000	65
-		_button_B      		CODE           	1FDE	0000	101
+		_setup         		CODE           	1BB2	0000	125
+		_action_menu_se		CODE           	2402	0000	73
+		_button_B_subme		CODE           	2714	0000	59
+		_home_tone_refr		CODE           	214C	0000	83
+		_activity_subme		CODE           	1F1A	0000	103
+		_button_A      		CODE           	2660	0000	65
+		_button_B      		CODE           	1FE6	0000	101
 		_button_C      		CODE           	2948	0000	29
 		_button_D      		CODE           	29FA	0000	11
-		_home_config_re		CODE           	184C	0000	167
+		_home_config_re		CODE           	1854	0000	167
+		_pin_reset     		CODE           	2996	0000	23
 		_button_hash   		CODE           	28BC	0000	37
-		_pin_input_vali		CODE           	277A	0000	51
-		_action_menu_se		CODE           	25D4	0000	67
+		_pin_input_vali		CODE           	2840	0000	43
+		_action_menu_se		CODE           	25DC	0000	67
 
-main.c estimated size: 3437
+main.c estimated size: 3429
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
 		___wmul        		CODE           	2894	0000	41

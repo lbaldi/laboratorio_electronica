@@ -43,13 +43,15 @@ char pin_input[5];
  * #0 HOME
  * #1 PIN ACCESS
  * #2 MENU
- * #3 CLOCK
+ * #3 DATE AND TIME
  * #4 ACTIVATION
  * #5 PIN CONFIG
  * #7 PIN SET
  * #6 SIREN CONFIG
  * #8 SIREN VOLUME SET 
  * #9 SIREN TONE SET
+ * #10 DATE CONFIG
+ * #11 TIME CONFIG
  */
 int activity;
 
@@ -104,7 +106,7 @@ void check_home_callback(void){
 
 //Menu selectors
 
-void action_menu_selector_0(void){
+void menu_selector_0(void){
     
     lcd_write(1,1,">");
     menu_selected = 0;
@@ -112,7 +114,7 @@ void action_menu_selector_0(void){
     
 }
 
-void action_menu_selector_1(void){
+void menu_selector_1(void){
     
     lcd_write(1,2,">");
     menu_selected = 1;
@@ -120,7 +122,7 @@ void action_menu_selector_1(void){
     
 }
 
-void action_menu_selector_2(void){
+void menu_selector_2(void){
     
     lcd_write(9,1,">");
     menu_selected = 2;
@@ -128,7 +130,7 @@ void action_menu_selector_2(void){
     
 }
 
-void action_menu_selector_3(void){
+void menu_selector_3(void){
     
     lcd_write(9,2,">");
     menu_selected = 3;
@@ -136,24 +138,24 @@ void action_menu_selector_3(void){
     
 }
 
-void action_menu_selector(void){
+void menu_selector(void){
     
     switch(menu_selected){
         
         case 0:
-            action_menu_selector_1();
+            menu_selector_1();
             break;
             
         case 1:
-            action_menu_selector_2();
+            menu_selector_2();
             break;
             
         case 2:
-            action_menu_selector_3();
+            menu_selector_3();
             break;
             
         case 3:
-            action_menu_selector_0();
+            menu_selector_0();
             break;
             
     }
@@ -162,7 +164,7 @@ void action_menu_selector(void){
 
 //Submenu selectors
 
-void action_submenu_selector_0(void){
+void submenu_selector_0(void){
     
     lcd_write(9,1,">");
     submenu_selected = 0;
@@ -170,7 +172,7 @@ void action_submenu_selector_0(void){
     
 }
 
-void action_submenu_selector_1(void){
+void submenu_selector_1(void){
     
     lcd_write(9,2,">");
     submenu_selected = 1;
@@ -178,16 +180,16 @@ void action_submenu_selector_1(void){
     
 }
 
-void action_submenu_selector(void){
+void submenu_selector(void){
     
     switch(submenu_selected){
         
         case 0:
-            action_submenu_selector_1();
+            submenu_selector_1();
             break;
             
         case 1:
-            action_submenu_selector_0();
+            submenu_selector_0();
             break;
     }
     
@@ -212,20 +214,55 @@ void activity_menu(void){
     lcd_write(2,2,"Reloj");
     lcd_write(10,1,"Pin");
     lcd_write(10,2,"Alarma");
-    action_menu_selector_0();
+    menu_selector_0();
     
 }
 
-//Submenu time and date configuration
+//Submenu date and time configuration
 
-void activity_submenu_clock(void){
+void activity_submenu_date_and_time(void){
     
     activity = 3;
     lcd_init();
     lcd_write(1,1,"Reloj");
     lcd_write(10,1,"Fecha");
     lcd_write(10,2,"Hora");
-    action_submenu_selector_0();
+    submenu_selector_0();
+    
+}
+
+void activity_submenu_date_config_refresh(void){
+    
+    sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
+    lcd_write(1,2,buffer1); 
+    lcd_gotoxy(1, 2);
+    lcd_comand(0b00001111);    
+    
+}
+
+void activity_submenu_time_config_refresh(void){
+    
+    sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
+    lcd_write(1,2,buffer1); 
+    lcd_gotoxy(1, 2);
+    lcd_comand(0b00001111);   
+    
+}
+
+void activity_submenu_date_config(void){
+    
+    activity = 10;
+    lcd_init();
+    lcd_write(1,1,"Ingrese la fecha");   
+    
+    
+}
+
+void activity_submenu_time_config(void){
+    
+    activity = 11;
+    lcd_init();
+    lcd_write(1,1,"Ingrese la hora");  
     
 }
 
@@ -238,7 +275,7 @@ void activity_submenu_activation(void){
     lcd_write(1,1,"Activar");
     lcd_write(10,1,"Si");
     lcd_write(10,2,"No");
-    action_submenu_selector_0();
+    submenu_selector_0();
     
 }
 
@@ -251,7 +288,7 @@ void activity_submenu_siren(void){
     lcd_write(1,1,"Sirena");
     lcd_write(10,1,"Volumen");
     lcd_write(10,2,"Tono");
-    action_submenu_selector_0();
+    submenu_selector_0();
     
 }
 
@@ -262,7 +299,7 @@ void activity_submenu_siren_volume(void){
     lcd_write(1,1,"Volumen");
     lcd_write(10,1,"Bajo");
     lcd_write(10,2,"Alto");
-    action_submenu_selector_0();
+    submenu_selector_0();
     
 }
 
@@ -273,7 +310,7 @@ void activity_submenu_siren_tone(void){
     lcd_write(1,1,"Tono");
     lcd_write(10,1,"Beep 1");
     lcd_write(10,2,"Beep 2");
-    action_submenu_selector_0();
+    submenu_selector_0();
     
 }
 
@@ -286,7 +323,7 @@ void activity_submenu_pin(void){
     lcd_write(1,1,"Pin");
     lcd_write(10,1,"Cambiar");
     lcd_write(10,2,"Reset");
-    action_submenu_selector_0();
+    submenu_selector_0();
 }
 
 void activity_submenu_pin_set(void){
@@ -426,11 +463,11 @@ void button_A(void){
             break;
             
         case 2:
-            action_menu_selector();
+            menu_selector();
             break;
             
         default: 
-            action_submenu_selector();
+            submenu_selector();
             break;
     }
     
@@ -445,7 +482,7 @@ void button_B_menu(void){
             break;
             
         case 1:
-            activity_submenu_clock();
+            activity_submenu_date_and_time();
             break;
             
         case 2:
@@ -547,6 +584,22 @@ void button_B_submenu_siren_tone(void){
     
 }
 
+void button_B_submenu_date_and_time_config(void){
+    
+    switch(submenu_selected){
+        
+        case 0:
+            activity_submenu_date_config();
+            break;
+            
+        case 1:
+            activity_submenu_time_config();
+            break;
+            
+    }
+    
+}
+
 void button_B(void){
     
     reset_home_callback();
@@ -555,6 +608,10 @@ void button_B(void){
         
         case 2:
             button_B_menu();
+            break;
+            
+        case 3:
+            button_B_submenu_date_and_time_config();
             break;
             
         case 4:
@@ -728,6 +785,12 @@ int main(void){
         if(activity == 0){
             home_clock_refresh();
             home_config_refresh();
+        }
+        else if(activity == 10){
+            activity_submenu_date_config_refresh();
+        }
+        else if(activity == 11){
+            activity_submenu_time_config_refresh();
         }
         
     }

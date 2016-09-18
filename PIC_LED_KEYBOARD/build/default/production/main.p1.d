@@ -3,6 +3,7 @@
  main.c  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/compare.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/pwm.h  \
+Unimic/unmc_01/headers/pin.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/spi.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/EEP.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/pcpwm.h  \

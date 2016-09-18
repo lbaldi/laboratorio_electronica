@@ -12,13 +12,13 @@
 extern "C" {
 #endif
     
-    extern int submenu_selected;
-    
-    void submenu_selector_0(void);
-    void submenu_selector_1(void);
-    void submenu_selector(void);
-    
-    
+extern int submenu_selected;
+
+void submenu_selector_0(void);
+void submenu_selector_1(void);
+void submenu_selector(void);
+
+
 #ifdef	__cplusplus
 }
 #endif

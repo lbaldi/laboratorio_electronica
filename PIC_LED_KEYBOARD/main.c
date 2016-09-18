@@ -31,6 +31,7 @@
 #include <lcd_write.h>
 #include <menu_selector.h>
 #include <submenu_selector.h>
+#include <pin.h>
 
 // Global Variables
 int cursor_horizontal_position;
@@ -109,52 +110,9 @@ void check_home_callback(void){
     
 }
 
-
-//Submenu selectors
-/*
-void submenu_selector_0(void){
-    
-    lcd_write(9,1,">");
-    submenu_selected = 0;
-    lcd_write(9,2," ");
-    
-}
-
-void submenu_selector_1(void){
-    
-    lcd_write(9,2,">");
-    submenu_selected = 1;
-    lcd_write(9,1," ");
-    
-}
-
-void submenu_selector(void){
-    
-    switch(submenu_selected){
-        
-        case 0:
-            submenu_selector_1();
-            break;
-            
-        case 1:
-            submenu_selector_0();
-            break;
-    }
-    
-}
-*/
 //Entrance to configuration: pin and menu activities
 
-void activity_pin(void){
-    
-    activity = 1;
-    strcpy(pin_input, "");
-    lcd_init();
-    lcd_write(1,1,"Ingrese su PIN:");
-    lcd_gotoxy(1,2);
-    lcd_comand(0b00001111);
-    
-}
+
 
 void activity_menu(void){
     
@@ -191,20 +149,6 @@ void activity_submenu_date_and_time(void){
     lcd_write(10,1,"Fecha");
     lcd_write(10,2,"Hora");
     submenu_selector_0();
-    
-}
-
-void activity_submenu_date_config_refresh(void){
-    
-    sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
-    lcd_write(1,2,buffer1);      
-    
-}
-
-void activity_submenu_time_config_refresh(void){
-    
-    sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
-    lcd_write(1,2,buffer1);  
     
 }
 
@@ -319,7 +263,7 @@ void time_set(void){
     
 }
 
-//Submenu alert configuration
+//Submenu siren configuration
 
 void activity_submenu_siren(void){
     
@@ -351,56 +295,7 @@ void activity_submenu_siren_tone(void){
     lcd_write(10,1,"Beep 1");
     lcd_write(10,2,"Beep 2");
     submenu_selector_0();
-    
-}
-
-// Submenu pin
-
-void activity_submenu_pin(void){
-    
-    activity = 5;
-    lcd_init();
-    lcd_write(1,1,"Pin");
-    lcd_write(10,1,"Cambiar");
-    lcd_write(10,2,"Reset");
-    submenu_selector_0();
-}
-
-void activity_submenu_pin_set(void){
-    
-    activity = 6;
-    strcpy(pin_input, "");
-    lcd_init();
-    lcd_write(1,1,"Nuevo PIN:");
-    lcd_gotoxy(1,2);
-    lcd_comand(0b00001111);
-    
-}
-
-// Pin set and reset
-
-void pin_set(void){
-    
-    strcpy(pin, pin_input);
-    activity_home();
-    
-}
-
-void pin_input_validator(void){
-    
-    if( strcmp(pin, pin_input) == 0 ){       
-        activity_menu();        
-    } 
-    else {                
-        activity_pin();        
-    }    
-    
-}
-
-void pin_reset(void){
-    
-    strcpy(pin, "1234");
-    
+   
 }
 
 // Home information refresh

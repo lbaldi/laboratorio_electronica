@@ -10042,7 +10042,19 @@ void submenu_selector_0(void);
 void submenu_selector_1(void);
 void submenu_selector(void);
 
-# 36 "main.c"
+# 15 "Unimic/unmc_01/headers\pin.h"
+extern int activity;
+extern char pin[5];
+extern char pin_input[5];
+
+void activity_pin(void);
+void activity_submenu_pin(void);
+void activity_submenu_pin_set(void);
+void pin_set(void);
+void pin_input_validator(void);
+void pin_reset(void);
+
+# 37 "main.c"
 int cursor_horizontal_position;
 int menu_selected;
 int submenu_selected;
@@ -10053,16 +10065,16 @@ int config_widget_time = 0;
 char pin[5];
 char pin_input[5];
 
-# 52
+# 53
 int state;
 
-# 68
+# 69
 int activity;
 
-# 74
+# 75
 int alarm_volume;
 
-# 80
+# 81
 int alarm_tone;
 
 
@@ -10095,18 +10107,7 @@ activity_home();
 
 }
 
-# 148
-void activity_pin(void){
-
-activity = 1;
-strcpy(pin_input, "");
-lcd_init();
-lcd_write(1,1,"Ingrese su PIN:");
-lcd_gotoxy(1,2);
-lcd_comand(0b00001111);
-
-}
-
+# 117
 void activity_menu(void){
 
 activity = 2;
@@ -10142,20 +10143,6 @@ lcd_write(1,1,"Reloj");
 lcd_write(10,1,"Fecha");
 lcd_write(10,2,"Hora");
 submenu_selector_0();
-
-}
-
-void activity_submenu_date_config_refresh(void){
-
-sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
-lcd_write(1,2,buffer1);
-
-}
-
-void activity_submenu_time_config_refresh(void){
-
-sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
-lcd_write(1,2,buffer1);
 
 }
 
@@ -10302,55 +10289,6 @@ lcd_write(1,1,"Tono");
 lcd_write(10,1,"Beep 1");
 lcd_write(10,2,"Beep 2");
 submenu_selector_0();
-
-}
-
-
-
-void activity_submenu_pin(void){
-
-activity = 5;
-lcd_init();
-lcd_write(1,1,"Pin");
-lcd_write(10,1,"Cambiar");
-lcd_write(10,2,"Reset");
-submenu_selector_0();
-}
-
-void activity_submenu_pin_set(void){
-
-activity = 6;
-strcpy(pin_input, "");
-lcd_init();
-lcd_write(1,1,"Nuevo PIN:");
-lcd_gotoxy(1,2);
-lcd_comand(0b00001111);
-
-}
-
-
-
-void pin_set(void){
-
-strcpy(pin, pin_input);
-activity_home();
-
-}
-
-void pin_input_validator(void){
-
-if( strcmp(pin, pin_input) == 0 ){
-activity_menu();
-}
-else {
-activity_pin();
-}
-
-}
-
-void pin_reset(void){
-
-strcpy(pin, "1234");
 
 }
 

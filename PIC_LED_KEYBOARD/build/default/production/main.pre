@@ -10273,23 +10273,72 @@ cursor_horizontal_position++;
 }
 
 cursor_horizontal_position++;
+lcd_gotoxy(cursor_horizontal_position, 2);
+_delay((unsigned long)((98)*(8000000/4000.0)));
 
 }
 
 void date_set(void){
 
-sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
-lcd_write(1,2,buffer1);
-lcd_gotoxy(cursor_horizontal_position, 2);
+switch(cursor_horizontal_position){
+
+case 1:
+dia = key*10;
+break;
+
+case 2:
+dia += key;
+break;
+
+case 4:
+mes = key*10;
+break;
+
+case 5:
+mes += key;
+break;
+
+case 7:
+anio = key * 10;
+break;
+
+case 8:
+anio += key;
+break;
+
+}
+
+Write_RTC();
+_delay((unsigned long)((98)*(8000000/4000.0)));
+
+}
+
+void time_set(void){
 
 switch(cursor_horizontal_position){
 
 case 1:
-dia+=10;
+hora = key*10;
 break;
 
 case 2:
-dia++;
+hora += key;
+break;
+
+case 4:
+minuto = key*10;
+break;
+
+case 5:
+minuto += key;
+break;
+
+case 7:
+segundo = key * 10;
+break;
+
+case 8:
+segundo += key;
 break;
 
 }
@@ -10486,14 +10535,6 @@ case 2:
 menu_selector();
 break;
 
-case 10:
-cursor_displacement();
-break;
-
-case 11:
-cursor_displacement();
-break;
-
 default:
 submenu_selector();
 break;
@@ -10662,9 +10703,6 @@ case 9:
 button_B_submenu_siren_tone();
 break;
 
-case 10:
-date_set();
-break;
 }
 
 }
@@ -10714,15 +10752,19 @@ activity_home();
 void button_number(void){
 
 reset_home_callback();
+sprintf(buffer1, "%01u", key);
 
 if(activity == 1 || activity == 6){
 lcd_putrs("*");
-sprintf(buffer1, "%01u", key);
 strcat(pin_input, buffer1);
 }
-else {
-sprintf(buffer1,"%01u",key);
-
+else if (activity == 10){
+date_set();
+cursor_displacement();
+}
+else if (activity == 11){
+time_set();
+cursor_displacement();
 }
 
 }

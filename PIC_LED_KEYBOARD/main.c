@@ -32,6 +32,8 @@
 #include <menu_selector.h>
 #include <submenu_selector.h>
 #include <pin.h>
+#include <activation.h>
+#include <siren.h>
 
 // Global Variables
 int cursor_horizontal_position;
@@ -110,9 +112,7 @@ void check_home_callback(void){
     
 }
 
-//Entrance to configuration: pin and menu activities
-
-
+//Entrance to configuration: menu activity
 
 void activity_menu(void){
     
@@ -121,21 +121,8 @@ void activity_menu(void){
     lcd_write(2,1,"Activar");
     lcd_write(2,2,"Reloj");
     lcd_write(10,1,"Pin");
-    lcd_write(10,2,"Alarma");
+    lcd_write(10,2,"Sirena");
     menu_selector_0();
-    
-}
-
-//Submenu alarm activation
-
-void activity_submenu_activation(void){
-    
-    activity = 4;
-    lcd_init();
-    lcd_write(1,1,"Activar");
-    lcd_write(10,1,"Si");
-    lcd_write(10,2,"No");
-    submenu_selector_0();
     
 }
 
@@ -261,41 +248,6 @@ void time_set(void){
     Write_RTC();
     __delay_ms(98);
     
-}
-
-//Submenu siren configuration
-
-void activity_submenu_siren(void){
-    
-    activity = 7;
-    lcd_init();
-    lcd_write(1,1,"Sirena");
-    lcd_write(10,1,"Volumen");
-    lcd_write(10,2,"Tono");
-    submenu_selector_0();
-    
-}
-
-void activity_submenu_siren_volume(void){
-    
-    activity = 8;
-    lcd_init();
-    lcd_write(1,1,"Volumen");
-    lcd_write(10,1,"Bajo");
-    lcd_write(10,2,"Alto");
-    submenu_selector_0();
-    
-}
-
-void activity_submenu_siren_tone(void){
-    
-    activity = 9;
-    lcd_init();
-    lcd_write(1,1,"Tono");
-    lcd_write(10,1,"Beep 1");
-    lcd_write(10,2,"Beep 2");
-    submenu_selector_0();
-   
 }
 
 // Home information refresh

@@ -3,6 +3,7 @@
  main.c  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/compare.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/pwm.h  \
+Unimic/unmc_01/headers/activation.h  \
 Unimic/unmc_01/headers/pin.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/spi.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/EEP.h  \
@@ -16,6 +17,7 @@ Unimic/unmc_01/headers/submenu_selector.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/timers.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/sw_uart.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/io.h  \
+Unimic/unmc_01/headers/siren.h  \
 Unimic/unmc_01/headers/unmc_rtcc_01.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/portb.h  \
 Unimic/unmc_01/headers/lcd_write.h  \

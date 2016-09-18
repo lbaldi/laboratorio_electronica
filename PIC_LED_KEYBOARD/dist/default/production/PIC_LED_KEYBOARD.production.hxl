@@ -1,11 +1,11 @@
 ### HEXMate logfile and output summary ###
 ### Memory Usage ###
  Unused memory ranges:
-  4h - E1E1h
+  4h - E1E7h
   
  dist/default/production\PIC_LED_KEYBOARD.production.hex ranges:
   0h - 3h
-  E1E2h - FFFFh
+  E1E8h - FFFFh
   
 ### Hex Memory Map ###
  Legend:
@@ -20,7 +20,7 @@
   X = Find & delete opcode
   1 = dist/default/production\PIC_LED_KEYBOARD.production.hex
 00000000: 1111------------------------------------------------------------
-0000E1C0: ----------------------------------111111111111111111111111111111
+0000E1C0: ----------------------------------------111111111111111111111111
 0000E200: 1111111111111111111111111111111111111111111111111111111111111111
 0000E240: 1111111111111111111111111111111111111111111111111111111111111111
 0000E280: 1111111111111111111111111111111111111111111111111111111111111111

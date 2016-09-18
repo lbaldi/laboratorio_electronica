@@ -10054,7 +10054,19 @@ void pin_set(void);
 void pin_input_validator(void);
 void pin_reset(void);
 
-# 37 "main.c"
+# 15 "Unimic/unmc_01/headers\activation.h"
+extern int activity;
+
+void activity_submenu_activation(void);
+
+# 15 "Unimic/unmc_01/headers\siren.h"
+extern int activity;
+
+void activity_submenu_siren(void);
+void activity_submenu_siren_volume(void);
+void activity_submenu_siren_tone(void);
+
+# 39 "main.c"
 int cursor_horizontal_position;
 int menu_selected;
 int submenu_selected;
@@ -10065,16 +10077,16 @@ int config_widget_time = 0;
 char pin[5];
 char pin_input[5];
 
-# 53
+# 55
 int state;
 
-# 69
+# 71
 int activity;
 
-# 75
+# 77
 int alarm_volume;
 
-# 81
+# 83
 int alarm_tone;
 
 
@@ -10107,7 +10119,8 @@ activity_home();
 
 }
 
-# 117
+
+
 void activity_menu(void){
 
 activity = 2;
@@ -10115,21 +10128,8 @@ lcd_init();
 lcd_write(2,1,"Activar");
 lcd_write(2,2,"Reloj");
 lcd_write(10,1,"Pin");
-lcd_write(10,2,"Alarma");
+lcd_write(10,2,"Sirena");
 menu_selector_0();
-
-}
-
-
-
-void activity_submenu_activation(void){
-
-activity = 4;
-lcd_init();
-lcd_write(1,1,"Activar");
-lcd_write(10,1,"Si");
-lcd_write(10,2,"No");
-submenu_selector_0();
 
 }
 
@@ -10254,41 +10254,6 @@ break;
 
 Write_RTC();
 _delay((unsigned long)((98)*(8000000/4000.0)));
-
-}
-
-
-
-void activity_submenu_siren(void){
-
-activity = 7;
-lcd_init();
-lcd_write(1,1,"Sirena");
-lcd_write(10,1,"Volumen");
-lcd_write(10,2,"Tono");
-submenu_selector_0();
-
-}
-
-void activity_submenu_siren_volume(void){
-
-activity = 8;
-lcd_init();
-lcd_write(1,1,"Volumen");
-lcd_write(10,1,"Bajo");
-lcd_write(10,2,"Alto");
-submenu_selector_0();
-
-}
-
-void activity_submenu_siren_tone(void){
-
-activity = 9;
-lcd_init();
-lcd_write(1,1,"Tono");
-lcd_write(10,1,"Beep 1");
-lcd_write(10,2,"Beep 2");
-submenu_selector_0();
 
 }
 

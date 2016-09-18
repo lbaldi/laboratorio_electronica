@@ -13,6 +13,8 @@
       <itemPath>Unimic/unmc_01/headers/menu_selector.h</itemPath>
       <itemPath>Unimic/unmc_01/headers/submenu_selector.h</itemPath>
       <itemPath>Unimic/unmc_01/headers/pin.h</itemPath>
+      <itemPath>Unimic/unmc_01/headers/activation.h</itemPath>
+      <itemPath>Unimic/unmc_01/headers/siren.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -27,6 +29,8 @@
       <itemPath>Unimic/unmc_01/sources/menu_selector.c</itemPath>
       <itemPath>Unimic/unmc_01/sources/submenu_selector.c</itemPath>
       <itemPath>Unimic/unmc_01/sources/pin.c</itemPath>
+      <itemPath>Unimic/unmc_01/sources/activation.c</itemPath>
+      <itemPath>Unimic/unmc_01/sources/siren.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

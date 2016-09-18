@@ -98,7 +98,7 @@ bssBANK0 BANK0 1 60 60 44 1
 dataCOMRAM COMRAM 1 4E 4E A 1
 bssCOMRAM COMRAM 1 29 29 25 1
 mediumconst MEDIUMCONST 0 FEEC FEEC 10C 1
-$C:\Users\gonza\AppData\Local\Temp\s1kg.obj
+$C:\Users\gonza\AppData\Local\Temp\s27k.obj
 end_init CODE 0 0 0 4 1
 config CONFIG 0 FFF8 FFF8 8 1
 # %UNUSED Section
@@ -144,16 +144,16 @@ MEDIUMCONST F00-E1E1 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\PIC_LED_KEYBOARD.production.obj
-E1E2 text17 CODE >753:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E1E2 text17 CODE >755:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E1E6 text17 CODE >758:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E1E8 text62 CODE >88:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E1E8 text62 CODE >90:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E1F0 text62 CODE >92:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E1F2 text18 CODE >745:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E1F2 text18 CODE >748:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E1F6 text18 CODE >749:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E1FA text18 CODE >751:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E1E2 text17 CODE >700:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E1E2 text17 CODE >702:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E1E6 text17 CODE >705:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E1E8 text62 CODE >92:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E1E8 text62 CODE >94:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E1F0 text62 CODE >96:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E1F2 text18 CODE >692:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E1F2 text18 CODE >695:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E1F6 text18 CODE >696:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E1FA text18 CODE >698:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 E206 text50 CODE >189:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 E208 text50 CODE >190:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 E212 text50 CODE >191:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
@@ -172,30 +172,30 @@ E23E text11 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\pl
 E242 text11 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
 E246 text11 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
 E248 text11 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
-E24A text28 CODE >453:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E24A text28 CODE >455:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E25E text28 CODE >457:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E260 text64 CODE >71:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E260 text64 CODE >73:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E26A text64 CODE >74:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E276 text64 CODE >76:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E278 text14 CODE >435:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E278 text14 CODE >437:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E28C text14 CODE >438:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E290 text14 CODE >440:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E292 text19 CODE >734:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E292 text19 CODE >737:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E296 text19 CODE >739:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E2A6 text19 CODE >740:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E2AC text19 CODE >743:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E2AE text61 CODE >94:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E2AE text61 CODE >96:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E2B6 text61 CODE >97:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E2BC text61 CODE >99:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E2C4 text61 CODE >100:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E2C8 text61 CODE >101:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E2CC text61 CODE >102:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E2CE text61 CODE >106:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E24A text28 CODE >400:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E24A text28 CODE >402:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E25E text28 CODE >404:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E260 text64 CODE >4:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/lcd_write.c
+E260 text64 CODE >6:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/lcd_write.c
+E26A text64 CODE >7:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/lcd_write.c
+E276 text64 CODE >9:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/lcd_write.c
+E278 text14 CODE >382:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E278 text14 CODE >384:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E28C text14 CODE >385:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E290 text14 CODE >387:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E292 text19 CODE >681:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E292 text19 CODE >684:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E296 text19 CODE >686:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E2A6 text19 CODE >687:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E2AC text19 CODE >690:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E2AE text61 CODE >98:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E2AE text61 CODE >100:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E2B6 text61 CODE >101:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E2BC text61 CODE >103:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E2C4 text61 CODE >104:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E2C8 text61 CODE >105:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E2CC text61 CODE >106:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E2CE text61 CODE >110:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 E2D0 text57 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
 E2D2 text57 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
 E2F0 text57 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\isdigit.c
@@ -212,52 +212,52 @@ E322 text58 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\U
 E32A text58 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
 E332 text58 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
 E33C text58 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
-E33E text63 CODE >80:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E33E text63 CODE >82:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E346 text63 CODE >83:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E34A text63 CODE >84:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E366 text63 CODE >86:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E368 text15 CODE >442:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E368 text15 CODE >444:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E384 text15 CODE >445:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E388 text15 CODE >446:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E38A text15 CODE >448:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E390 text15 CODE >451:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E392 text0 CODE >877:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E392 text0 CODE >879:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E396 text0 CODE >880:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E39C text0 CODE >884:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3A0 text0 CODE >885:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3A4 text0 CODE >886:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3A8 text0 CODE >888:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3B0 text0 CODE >889:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3B4 text0 CODE >890:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3B8 text0 CODE >882:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3BA text0 CODE >897:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3BE text40 CODE >184:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3BE text40 CODE >186:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3C0 text40 CODE >189:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3C4 text40 CODE >190:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3C6 text40 CODE >193:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3CA text40 CODE >195:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3CC text40 CODE >186:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3EC text40 CODE >197:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3EE text30 CODE >680:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3EE text30 CODE >682:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3F0 text30 CODE >685:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3F4 text30 CODE >686:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3F6 text30 CODE >689:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3FA text30 CODE >692:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E3FC text30 CODE >682:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E41C text30 CODE >694:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E41E text24 CODE >628:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E41E text24 CODE >630:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E420 text24 CODE >633:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E424 text24 CODE >634:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E426 text24 CODE >637:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E42A text24 CODE >640:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E42C text24 CODE >630:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E44C text24 CODE >642:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E33E text63 CODE >84:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E33E text63 CODE >86:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E346 text63 CODE >87:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E34A text63 CODE >88:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E366 text63 CODE >90:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E368 text15 CODE >389:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E368 text15 CODE >391:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E384 text15 CODE >392:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E388 text15 CODE >393:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E38A text15 CODE >395:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E390 text15 CODE >398:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E392 text0 CODE >824:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E392 text0 CODE >826:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E396 text0 CODE >827:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E39C text0 CODE >831:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3A0 text0 CODE >832:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3A4 text0 CODE >833:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3A8 text0 CODE >835:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3B0 text0 CODE >836:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3B4 text0 CODE >837:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3B8 text0 CODE >829:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3BA text0 CODE >844:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3BE text40 CODE >21:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E3BE text40 CODE >23:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E3C0 text40 CODE >26:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E3C4 text40 CODE >27:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E3C6 text40 CODE >30:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E3CA text40 CODE >32:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E3CC text40 CODE >23:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E3EC text40 CODE >34:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E3EE text30 CODE >627:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3EE text30 CODE >629:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3F0 text30 CODE >632:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3F4 text30 CODE >633:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3F6 text30 CODE >636:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3FA text30 CODE >639:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E3FC text30 CODE >629:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E41C text30 CODE >641:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E41E text24 CODE >575:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E41E text24 CODE >577:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E420 text24 CODE >580:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E424 text24 CODE >581:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E426 text24 CODE >584:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E42A text24 CODE >587:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E42C text24 CODE >577:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E44C text24 CODE >589:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 E44E text69 CODE >86:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 E450 text69 CODE >88:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 E452 text69 CODE >93:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
@@ -273,126 +273,126 @@ E46C text69 CODE >106:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYB
 E46E text69 CODE >113:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 E476 text69 CODE >114:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 E47E text69 CODE >115:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
-E480 text27 CODE >611:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E480 text27 CODE >613:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E482 text27 CODE >616:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E486 text27 CODE >617:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E488 text27 CODE >620:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E48C text27 CODE >621:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E490 text27 CODE >624:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E492 text27 CODE >613:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4B2 text27 CODE >626:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4B4 text33 CODE >593:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4B4 text33 CODE >595:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4B6 text33 CODE >598:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4BE text33 CODE >602:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4C6 text33 CODE >605:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4C8 text33 CODE >595:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4E8 text33 CODE >607:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4EC text33 CODE >609:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4EE text23 CODE >662:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4EE text23 CODE >664:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4F0 text23 CODE >667:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E4F8 text23 CODE >671:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E500 text23 CODE >674:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E502 text23 CODE >664:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E522 text23 CODE >676:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E526 text23 CODE >678:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E528 text22 CODE >644:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E528 text22 CODE >646:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E52A text22 CODE >649:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E532 text22 CODE >653:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E53A text22 CODE >656:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E53C text22 CODE >646:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E55C text22 CODE >658:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E560 text22 CODE >660:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E562 text13 CODE >760:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E562 text13 CODE >762:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E566 text13 CODE >764:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E56E text13 CODE >765:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E572 text13 CODE >766:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E574 text13 CODE >767:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E57E text13 CODE >768:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E582 text13 CODE >769:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E584 text13 CODE >770:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E598 text13 CODE >771:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E59C text13 CODE >774:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5A0 text39 CODE >545:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5A0 text39 CODE >547:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5A4 text39 CODE >549:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5A6 text39 CODE >552:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5AA text39 CODE >556:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5AC text39 CODE >559:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5B0 text39 CODE >560:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5B2 text39 CODE >563:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5B6 text39 CODE >565:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5B8 text39 CODE >549:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5DE text39 CODE >567:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5E0 text47 CODE >110:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5E0 text47 CODE >112:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E5FC text47 CODE >113:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E604 text47 CODE >114:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E620 text47 CODE >116:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E622 text46 CODE >118:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E622 text46 CODE >120:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E63E text46 CODE >121:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E646 text46 CODE >122:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E662 text46 CODE >124:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E664 text45 CODE >126:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E664 text45 CODE >128:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E680 text45 CODE >129:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E688 text45 CODE >130:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E6A4 text45 CODE >132:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E6A6 text44 CODE >134:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E6A6 text44 CODE >136:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E6C2 text44 CODE >137:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E6CA text44 CODE >138:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E6E6 text44 CODE >140:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E6E8 text42 CODE >168:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E6E8 text42 CODE >170:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E704 text42 CODE >171:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E70C text42 CODE >172:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E728 text42 CODE >174:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E72A text41 CODE >176:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E72A text41 CODE >178:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E746 text41 CODE >179:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E74E text41 CODE >180:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E76A text41 CODE >182:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E76C cinit CODE >1927:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E76C cinit CODE >1929:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E76C cinit CODE >1932:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E76C cinit CODE >2080:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E770 cinit CODE >2081:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E772 cinit CODE >2082:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E772 cinit CODE >2083:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E774 cinit CODE >2084:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E776 cinit CODE >2085:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E778 cinit CODE >2088:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E77A cinit CODE >2091:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E77E cinit CODE >2092:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E780 cinit CODE >2093:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E780 cinit CODE >2094:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E782 cinit CODE >2095:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E784 cinit CODE >2096:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E786 cinit CODE >2101:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E788 cinit CODE >2102:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E78A cinit CODE >2103:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E78C cinit CODE >2104:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E78E cinit CODE >2105:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E790 cinit CODE >2106:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E792 cinit CODE >2107:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E796 cinit CODE >2108:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E79A cinit CODE >2109:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E79A cinit CODE >2110:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E79C cinit CODE >2111:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E7A0 cinit CODE >2112:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E7A2 cinit CODE >2113:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E7A4 cinit CODE >2114:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E7A6 cinit CODE >2120:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E7A6 cinit CODE >2122:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E7A8 cinit CODE >2123:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E7AA cinit CODE >2124:C:\Users\gonza\AppData\Local\Temp\s1kg.
-E7AC cinit CODE >2125:C:\Users\gonza\AppData\Local\Temp\s1kg.
+E480 text27 CODE >558:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E480 text27 CODE >560:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E482 text27 CODE >563:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E486 text27 CODE >564:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E488 text27 CODE >567:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E48C text27 CODE >568:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E490 text27 CODE >571:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E492 text27 CODE >560:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4B2 text27 CODE >573:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4B4 text33 CODE >540:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4B4 text33 CODE >542:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4B6 text33 CODE >545:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4BE text33 CODE >549:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4C6 text33 CODE >552:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4C8 text33 CODE >542:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4E8 text33 CODE >554:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4EC text33 CODE >556:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4EE text23 CODE >609:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4EE text23 CODE >611:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4F0 text23 CODE >614:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E4F8 text23 CODE >618:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E500 text23 CODE >621:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E502 text23 CODE >611:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E522 text23 CODE >623:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E526 text23 CODE >625:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E528 text22 CODE >591:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E528 text22 CODE >593:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E52A text22 CODE >596:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E532 text22 CODE >600:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E53A text22 CODE >603:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E53C text22 CODE >593:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E55C text22 CODE >605:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E560 text22 CODE >607:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E562 text13 CODE >707:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E562 text13 CODE >709:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E566 text13 CODE >711:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E56E text13 CODE >712:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E572 text13 CODE >713:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E574 text13 CODE >714:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E57E text13 CODE >715:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E582 text13 CODE >716:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E584 text13 CODE >717:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E598 text13 CODE >718:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E59C text13 CODE >721:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5A0 text39 CODE >492:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5A0 text39 CODE >494:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5A4 text39 CODE >496:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5A6 text39 CODE >499:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5AA text39 CODE >503:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5AC text39 CODE >506:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5B0 text39 CODE >507:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5B2 text39 CODE >510:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5B6 text39 CODE >512:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5B8 text39 CODE >496:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5DE text39 CODE >514:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E5E0 text47 CODE >5:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E5E0 text47 CODE >7:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E5FC text47 CODE >8:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E604 text47 CODE >9:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E620 text47 CODE >11:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E622 text46 CODE >13:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E622 text46 CODE >15:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E63E text46 CODE >16:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E646 text46 CODE >17:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E662 text46 CODE >19:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E664 text45 CODE >21:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E664 text45 CODE >23:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E680 text45 CODE >24:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E688 text45 CODE >25:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E6A4 text45 CODE >27:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E6A6 text44 CODE >29:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E6A6 text44 CODE >31:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E6C2 text44 CODE >32:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E6CA text44 CODE >33:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E6E6 text44 CODE >35:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E6E8 text42 CODE >5:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E6E8 text42 CODE >7:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E704 text42 CODE >8:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E70C text42 CODE >9:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E728 text42 CODE >11:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E72A text41 CODE >13:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E72A text41 CODE >15:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E746 text41 CODE >16:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E74E text41 CODE >17:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E76A text41 CODE >19:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/submenu_selector.c
+E76C cinit CODE >2433:C:\Users\gonza\AppData\Local\Temp\s27k.
+E76C cinit CODE >2435:C:\Users\gonza\AppData\Local\Temp\s27k.
+E76C cinit CODE >2438:C:\Users\gonza\AppData\Local\Temp\s27k.
+E76C cinit CODE >2586:C:\Users\gonza\AppData\Local\Temp\s27k.
+E770 cinit CODE >2587:C:\Users\gonza\AppData\Local\Temp\s27k.
+E772 cinit CODE >2588:C:\Users\gonza\AppData\Local\Temp\s27k.
+E772 cinit CODE >2589:C:\Users\gonza\AppData\Local\Temp\s27k.
+E774 cinit CODE >2590:C:\Users\gonza\AppData\Local\Temp\s27k.
+E776 cinit CODE >2591:C:\Users\gonza\AppData\Local\Temp\s27k.
+E778 cinit CODE >2594:C:\Users\gonza\AppData\Local\Temp\s27k.
+E77A cinit CODE >2597:C:\Users\gonza\AppData\Local\Temp\s27k.
+E77E cinit CODE >2598:C:\Users\gonza\AppData\Local\Temp\s27k.
+E780 cinit CODE >2599:C:\Users\gonza\AppData\Local\Temp\s27k.
+E780 cinit CODE >2600:C:\Users\gonza\AppData\Local\Temp\s27k.
+E782 cinit CODE >2601:C:\Users\gonza\AppData\Local\Temp\s27k.
+E784 cinit CODE >2602:C:\Users\gonza\AppData\Local\Temp\s27k.
+E786 cinit CODE >2607:C:\Users\gonza\AppData\Local\Temp\s27k.
+E788 cinit CODE >2608:C:\Users\gonza\AppData\Local\Temp\s27k.
+E78A cinit CODE >2609:C:\Users\gonza\AppData\Local\Temp\s27k.
+E78C cinit CODE >2610:C:\Users\gonza\AppData\Local\Temp\s27k.
+E78E cinit CODE >2611:C:\Users\gonza\AppData\Local\Temp\s27k.
+E790 cinit CODE >2612:C:\Users\gonza\AppData\Local\Temp\s27k.
+E792 cinit CODE >2613:C:\Users\gonza\AppData\Local\Temp\s27k.
+E796 cinit CODE >2614:C:\Users\gonza\AppData\Local\Temp\s27k.
+E79A cinit CODE >2615:C:\Users\gonza\AppData\Local\Temp\s27k.
+E79A cinit CODE >2616:C:\Users\gonza\AppData\Local\Temp\s27k.
+E79C cinit CODE >2617:C:\Users\gonza\AppData\Local\Temp\s27k.
+E7A0 cinit CODE >2618:C:\Users\gonza\AppData\Local\Temp\s27k.
+E7A2 cinit CODE >2619:C:\Users\gonza\AppData\Local\Temp\s27k.
+E7A4 cinit CODE >2620:C:\Users\gonza\AppData\Local\Temp\s27k.
+E7A6 cinit CODE >2626:C:\Users\gonza\AppData\Local\Temp\s27k.
+E7A6 cinit CODE >2628:C:\Users\gonza\AppData\Local\Temp\s27k.
+E7A8 cinit CODE >2629:C:\Users\gonza\AppData\Local\Temp\s27k.
+E7AA cinit CODE >2630:C:\Users\gonza\AppData\Local\Temp\s27k.
+E7AC cinit CODE >2631:C:\Users\gonza\AppData\Local\Temp\s27k.
 E7B0 text49 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
 E7B0 text49 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
 E7B8 text49 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
@@ -400,30 +400,30 @@ E7BA text49 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\s
 E7BE text49 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
 E7C4 text49 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
 E7F4 text49 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
-E7F6 text43 CODE >142:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E7F6 text43 CODE >144:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E7F8 text43 CODE >147:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E7FC text43 CODE >148:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E7FE text43 CODE >151:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E802 text43 CODE >152:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E804 text43 CODE >155:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E808 text43 CODE >156:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E80A text43 CODE >159:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E80E text43 CODE >162:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E810 text43 CODE >144:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E83C text43 CODE >164:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E83E text34 CODE >569:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E83E text34 CODE >571:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E840 text34 CODE >574:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E844 text34 CODE >575:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E846 text34 CODE >578:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E84A text34 CODE >579:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E84C text34 CODE >582:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E850 text34 CODE >583:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E852 text34 CODE >586:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E856 text34 CODE >589:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E858 text34 CODE >571:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E884 text34 CODE >591:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E7F6 text43 CODE >37:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E7F6 text43 CODE >39:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E7F8 text43 CODE >42:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E7FC text43 CODE >43:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E7FE text43 CODE >46:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E802 text43 CODE >47:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E804 text43 CODE >50:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E808 text43 CODE >51:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E80A text43 CODE >54:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E80E text43 CODE >57:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E810 text43 CODE >39:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E83C text43 CODE >59:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/menu_selector.c
+E83E text34 CODE >516:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E83E text34 CODE >518:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E840 text34 CODE >521:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E844 text34 CODE >522:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E846 text34 CODE >525:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E84A text34 CODE >526:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E84C text34 CODE >529:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E850 text34 CODE >530:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E852 text34 CODE >533:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E856 text34 CODE >536:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E858 text34 CODE >518:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E884 text34 CODE >538:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 E886 text5 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcat.c
 E886 text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcat.c
 E88E text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcat.c
@@ -460,22 +460,22 @@ E956 text59 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\l
 E95C text59 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
 E95C text59 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
 E964 text59 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwmod.c
-E966 text48 CODE >201:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E966 text48 CODE >203:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E96E text48 CODE >204:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E982 text48 CODE >205:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E986 text48 CODE >206:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E9A2 text48 CODE >207:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E9AC text48 CODE >208:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E9B2 text48 CODE >210:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E9B4 text29 CODE >422:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E9B4 text29 CODE >424:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E9BC text29 CODE >425:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E9D0 text29 CODE >426:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E9D4 text29 CODE >427:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E9F0 text29 CODE >428:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-E9FA text29 CODE >429:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA00 text29 CODE >431:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E966 text48 CODE >148:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E966 text48 CODE >150:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E96E text48 CODE >151:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E982 text48 CODE >152:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E986 text48 CODE >153:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E9A2 text48 CODE >154:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E9AC text48 CODE >155:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E9B2 text48 CODE >157:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E9B4 text29 CODE >369:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E9B4 text29 CODE >371:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E9BC text29 CODE >372:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E9D0 text29 CODE >373:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E9D4 text29 CODE >374:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E9F0 text29 CODE >375:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+E9FA text29 CODE >376:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA00 text29 CODE >378:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 EA02 text16 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c
 EA02 text16 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c
 EA04 text16 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c
@@ -483,37 +483,37 @@ EA08 text16 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\s
 EA0E text16 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c
 EA42 text16 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c
 EA4E text16 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c
-EA50 text12 CODE >290:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA50 text12 CODE >292:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA5A text12 CODE >293:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA62 text12 CODE >294:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA64 text12 CODE >295:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA78 text12 CODE >296:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA7E text12 CODE >299:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA82 text12 CODE >300:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA8C text12 CODE >301:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA9C text12 CODE >303:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA9E text54 CODE >470:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EA9E text54 CODE >472:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EAA6 text54 CODE >473:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EABA text54 CODE >474:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EABC text54 CODE >476:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EAD2 text54 CODE >478:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EAEE text54 CODE >480:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EAF0 text53 CODE >494:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EAF0 text53 CODE >496:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EAF8 text53 CODE >497:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EB0C text53 CODE >498:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EB0E text53 CODE >500:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EB24 text53 CODE >502:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EB40 text53 CODE >504:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EB42 text52 CODE >482:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EB42 text52 CODE >484:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EB4A text52 CODE >485:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EB5E text52 CODE >486:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EB60 text52 CODE >488:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EB76 text52 CODE >490:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EB92 text52 CODE >492:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA50 text12 CODE >237:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA50 text12 CODE >239:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA5A text12 CODE >240:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA62 text12 CODE >241:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA64 text12 CODE >242:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA78 text12 CODE >243:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA7E text12 CODE >246:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA82 text12 CODE >247:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA8C text12 CODE >248:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA9C text12 CODE >250:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA9E text54 CODE >417:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EA9E text54 CODE >419:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EAA6 text54 CODE >420:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EABA text54 CODE >421:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EABC text54 CODE >423:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EAD2 text54 CODE >425:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EAEE text54 CODE >427:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EAF0 text53 CODE >441:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EAF0 text53 CODE >443:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EAF8 text53 CODE >444:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EB0C text53 CODE >445:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EB0E text53 CODE >447:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EB24 text53 CODE >449:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EB40 text53 CODE >451:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EB42 text52 CODE >429:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EB42 text52 CODE >431:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EB4A text52 CODE >432:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EB5E text52 CODE >433:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EB60 text52 CODE >435:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EB76 text52 CODE >437:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EB92 text52 CODE >439:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 EB94 text65 CODE >221:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 EB94 text65 CODE >223:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 EB96 text65 CODE >224:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
@@ -536,54 +536,54 @@ EC34 text60 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\l
 EC3A text60 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
 EC3A text60 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
 EC42 text60 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\lwdiv.c
-EC44 text38 CODE >226:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EC44 text38 CODE >228:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EC4C text38 CODE >229:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EC50 text38 CODE >230:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EC6C text38 CODE >231:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EC88 text38 CODE >232:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ECA4 text38 CODE >233:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ECA8 text38 CODE >235:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ECAA text37 CODE >239:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ECAA text37 CODE >241:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ECB2 text37 CODE >242:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ECB6 text37 CODE >243:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ECD2 text37 CODE >244:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ECEE text37 CODE >245:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED0A text37 CODE >246:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED0E text37 CODE >248:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED10 text36 CODE >412:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED10 text36 CODE >414:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED18 text36 CODE >415:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED1C text36 CODE >416:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED38 text36 CODE >417:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED54 text36 CODE >418:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED70 text36 CODE >419:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED74 text36 CODE >420:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED76 text35 CODE >377:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED76 text35 CODE >379:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED7E text35 CODE >380:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED82 text35 CODE >381:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-ED9E text35 CODE >382:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EDBA text35 CODE >383:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EDD6 text35 CODE >384:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EDDA text35 CODE >386:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EDDC text26 CODE >399:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EDDC text26 CODE >401:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EDE4 text26 CODE >402:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EDE8 text26 CODE >403:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EE04 text26 CODE >404:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EE20 text26 CODE >405:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EE3C text26 CODE >406:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EE40 text26 CODE >408:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EE42 text25 CODE >388:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EE42 text25 CODE >390:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EE4A text25 CODE >391:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EE4E text25 CODE >392:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EE6A text25 CODE >393:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EE86 text25 CODE >394:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EEA2 text25 CODE >395:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EEA6 text25 CODE >397:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EC44 text38 CODE >173:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EC44 text38 CODE >175:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EC4C text38 CODE >176:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EC50 text38 CODE >177:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EC6C text38 CODE >178:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EC88 text38 CODE >179:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ECA4 text38 CODE >180:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ECA8 text38 CODE >182:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ECAA text37 CODE >186:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ECAA text37 CODE >188:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ECB2 text37 CODE >189:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ECB6 text37 CODE >190:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ECD2 text37 CODE >191:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ECEE text37 CODE >192:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED0A text37 CODE >193:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED0E text37 CODE >195:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED10 text36 CODE >359:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED10 text36 CODE >361:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED18 text36 CODE >362:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED1C text36 CODE >363:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED38 text36 CODE >364:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED54 text36 CODE >365:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED70 text36 CODE >366:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED74 text36 CODE >367:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED76 text35 CODE >324:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED76 text35 CODE >326:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED7E text35 CODE >327:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED82 text35 CODE >328:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+ED9E text35 CODE >329:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EDBA text35 CODE >330:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EDD6 text35 CODE >331:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EDDA text35 CODE >333:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EDDC text26 CODE >346:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EDDC text26 CODE >348:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EDE4 text26 CODE >349:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EDE8 text26 CODE >350:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EE04 text26 CODE >351:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EE20 text26 CODE >352:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EE3C text26 CODE >353:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EE40 text26 CODE >355:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EE42 text25 CODE >335:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EE42 text25 CODE >337:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EE4A text25 CODE >338:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EE4E text25 CODE >339:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EE6A text25 CODE >340:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EE86 text25 CODE >341:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EEA2 text25 CODE >342:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EEA6 text25 CODE >344:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 EEA8 text74 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c
 EEA8 text74 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c
 EEAE text74 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c
@@ -602,25 +602,25 @@ EEE4 text74 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\pl
 EEF4 text74 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c
 EF04 text74 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c
 EF14 text74 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadTime.c
-EF16 text21 CODE >696:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF16 text21 CODE >698:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF1A text21 CODE >700:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF1C text21 CODE >703:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF20 text21 CODE >704:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF22 text21 CODE >707:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF26 text21 CODE >708:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF28 text21 CODE >711:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF2C text21 CODE >712:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF2E text21 CODE >715:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF32 text21 CODE >716:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF34 text21 CODE >719:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF38 text21 CODE >720:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF3A text21 CODE >723:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF3E text21 CODE >724:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF40 text21 CODE >727:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF44 text21 CODE >730:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF46 text21 CODE >700:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EF84 text21 CODE >732:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF16 text21 CODE >643:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF16 text21 CODE >645:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF1A text21 CODE >647:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF1C text21 CODE >650:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF20 text21 CODE >651:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF22 text21 CODE >654:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF26 text21 CODE >655:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF28 text21 CODE >658:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF2C text21 CODE >659:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF2E text21 CODE >662:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF32 text21 CODE >663:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF34 text21 CODE >666:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF38 text21 CODE >667:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF3A text21 CODE >670:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF3E text21 CODE >671:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF40 text21 CODE >674:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF44 text21 CODE >677:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF46 text21 CODE >647:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EF84 text21 CODE >679:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 EF86 text70 CODE >25:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 EF88 text70 CODE >27:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 EFA0 text70 CODE >28:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
@@ -631,21 +631,21 @@ EFF2 text70 CODE >33:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBO
 EFF4 text70 CODE >34:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 EFF8 text70 CODE >35:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 EFFA text70 CODE >36:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
-EFFC text3 CODE >776:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-EFFC text3 CODE >778:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F000 text3 CODE >779:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F01A text3 CODE >781:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F02C text3 CODE >782:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F038 text3 CODE >783:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F04C text3 CODE >784:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F04E text3 CODE >785:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F058 text3 CODE >786:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F05C text3 CODE >787:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F060 text3 CODE >788:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F062 text3 CODE >789:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F06C text3 CODE >790:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F070 text3 CODE >791:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F074 text3 CODE >794:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EFFC text3 CODE >723:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+EFFC text3 CODE >725:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F000 text3 CODE >726:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F01A text3 CODE >728:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F02C text3 CODE >729:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F038 text3 CODE >730:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F04C text3 CODE >731:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F04E text3 CODE >732:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F058 text3 CODE >733:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F05C text3 CODE >734:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F060 text3 CODE >735:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F062 text3 CODE >736:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F06C text3 CODE >737:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F070 text3 CODE >738:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F074 text3 CODE >741:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 F078 text68 CODE >119:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 F078 text68 CODE >122:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 F07A text68 CODE >123:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
@@ -668,65 +668,65 @@ F0CA text68 CODE >151:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYB
 F0E6 text68 CODE >153:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 F0EC text68 CODE >150:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 F0F6 text68 CODE >156:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
-F0F8 text32 CODE >264:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F0F8 text32 CODE >266:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F100 text32 CODE >267:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F104 text32 CODE >268:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F120 text32 CODE >269:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F14C text32 CODE >270:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F168 text32 CODE >271:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F172 text32 CODE >272:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F178 text32 CODE >274:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F17A text31 CODE >276:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F17A text31 CODE >278:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F182 text31 CODE >279:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F186 text31 CODE >280:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F1A2 text31 CODE >281:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F1CE text31 CODE >282:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F1EA text31 CODE >283:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F1F4 text31 CODE >284:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F1FA text31 CODE >286:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F1FC text20 CODE >212:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F1FC text20 CODE >214:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F204 text20 CODE >215:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F208 text20 CODE >216:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F224 text20 CODE >217:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F240 text20 CODE >218:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F25C text20 CODE >219:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F278 text20 CODE >220:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F27C text20 CODE >222:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F27E text1 CODE >836:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F27E text1 CODE >838:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F280 text1 CODE >839:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F282 text1 CODE >840:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F284 text1 CODE >841:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F286 text1 CODE >842:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F288 text1 CODE >843:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F28A text1 CODE >844:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F28C text1 CODE >845:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F290 text1 CODE >846:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F294 text1 CODE >847:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F298 text1 CODE >851:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F29C text1 CODE >853:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2A0 text1 CODE >854:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2A4 text1 CODE >855:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2A8 text1 CODE >856:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2AC text1 CODE >857:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2B0 text1 CODE >858:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2B2 text1 CODE >859:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2B6 text1 CODE >860:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2BA text1 CODE >861:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2C0 text1 CODE >862:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2C2 text1 CODE >863:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2C4 text1 CODE >866:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2CC text1 CODE >867:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2D4 text1 CODE >868:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2DC text1 CODE >869:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2E4 text1 CODE >870:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2EC text1 CODE >871:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2F4 text1 CODE >872:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F2FC text1 CODE >873:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F300 text1 CODE >875:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F0F8 text32 CODE >211:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F0F8 text32 CODE >213:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F100 text32 CODE >214:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F104 text32 CODE >215:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F120 text32 CODE >216:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F14C text32 CODE >217:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F168 text32 CODE >218:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F172 text32 CODE >219:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F178 text32 CODE >221:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F17A text31 CODE >223:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F17A text31 CODE >225:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F182 text31 CODE >226:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F186 text31 CODE >227:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F1A2 text31 CODE >228:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F1CE text31 CODE >229:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F1EA text31 CODE >230:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F1F4 text31 CODE >231:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F1FA text31 CODE >233:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F1FC text20 CODE >159:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F1FC text20 CODE >161:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F204 text20 CODE >162:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F208 text20 CODE >163:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F224 text20 CODE >164:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F240 text20 CODE >165:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F25C text20 CODE >166:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F278 text20 CODE >167:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F27C text20 CODE >169:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F27E text1 CODE >783:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F27E text1 CODE >785:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F280 text1 CODE >786:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F282 text1 CODE >787:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F284 text1 CODE >788:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F286 text1 CODE >789:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F288 text1 CODE >790:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F28A text1 CODE >791:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F28C text1 CODE >792:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F290 text1 CODE >793:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F294 text1 CODE >794:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F298 text1 CODE >798:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F29C text1 CODE >800:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2A0 text1 CODE >801:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2A4 text1 CODE >802:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2A8 text1 CODE >803:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2AC text1 CODE >804:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2B0 text1 CODE >805:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2B2 text1 CODE >806:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2B6 text1 CODE >807:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2BA text1 CODE >808:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2C0 text1 CODE >809:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2C2 text1 CODE >810:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2C4 text1 CODE >813:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2CC text1 CODE >814:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2D4 text1 CODE >815:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2DC text1 CODE >816:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2E4 text1 CODE >817:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2EC text1 CODE >818:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2F4 text1 CODE >819:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F2FC text1 CODE >820:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F300 text1 CODE >822:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 F302 text75 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadDate.c
 F302 text75 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadDate.c
 F308 text75 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadDate.c
@@ -750,12 +750,12 @@ F362 text75 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\pl
 F372 text75 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadDate.c
 F37E text75 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadDate.c
 F38E text75 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadDate.c
-F390 text55 CODE >461:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F390 text55 CODE >463:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F3BC text55 CODE >464:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F3D8 text55 CODE >465:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F404 text55 CODE >466:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F420 text55 CODE >468:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F390 text55 CODE >408:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F390 text55 CODE >410:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F3BC text55 CODE >411:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F3D8 text55 CODE >412:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F404 text55 CODE >413:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F420 text55 CODE >415:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 F422 text8 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
 F422 text8 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
 F426 text8 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
@@ -781,64 +781,64 @@ F49C text8 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\aw
 F4A2 text8 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
 F4AC text8 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
 F4B6 text8 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\awdiv.c
-F4B8 text6 CODE >305:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4B8 text6 CODE >307:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4BA text6 CODE >310:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4C6 text6 CODE >311:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4C8 text6 CODE >314:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4D0 text6 CODE >315:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4D2 text6 CODE >318:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4DE text6 CODE >319:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4E0 text6 CODE >322:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4E8 text6 CODE >323:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4EA text6 CODE >326:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4F6 text6 CODE >327:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F4F8 text6 CODE >330:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F500 text6 CODE >333:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F502 text6 CODE >307:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F53A text6 CODE >335:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F53E text6 CODE >336:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F54E text6 CODE >338:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F550 text4 CODE >340:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F550 text4 CODE >342:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F552 text4 CODE >345:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F55E text4 CODE >346:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F560 text4 CODE >349:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F568 text4 CODE >350:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F56A text4 CODE >353:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F576 text4 CODE >354:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F578 text4 CODE >357:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F580 text4 CODE >358:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F582 text4 CODE >361:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F58E text4 CODE >362:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F590 text4 CODE >365:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F598 text4 CODE >368:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F59A text4 CODE >342:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F5D2 text4 CODE >370:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F5D6 text4 CODE >371:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F5E6 text4 CODE >373:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F5E8 text51 CODE >506:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F5E8 text51 CODE >508:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F5F4 text51 CODE >509:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F600 text51 CODE >511:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F604 text51 CODE >513:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F606 text51 CODE >516:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F60A text51 CODE >517:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F614 text51 CODE >518:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F61C text51 CODE >519:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F624 text51 CODE >521:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F626 text51 CODE >524:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F62A text51 CODE >525:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F634 text51 CODE >526:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F63C text51 CODE >527:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F644 text51 CODE >529:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F646 text51 CODE >532:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F64A text51 CODE >533:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F654 text51 CODE >534:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F65C text51 CODE >535:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F664 text51 CODE >539:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F666 text51 CODE >513:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F68C text51 CODE >541:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4B8 text6 CODE >252:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4B8 text6 CODE >254:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4BA text6 CODE >257:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4C6 text6 CODE >258:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4C8 text6 CODE >261:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4D0 text6 CODE >262:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4D2 text6 CODE >265:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4DE text6 CODE >266:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4E0 text6 CODE >269:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4E8 text6 CODE >270:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4EA text6 CODE >273:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4F6 text6 CODE >274:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F4F8 text6 CODE >277:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F500 text6 CODE >280:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F502 text6 CODE >254:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F53A text6 CODE >282:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F53E text6 CODE >283:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F54E text6 CODE >285:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F550 text4 CODE >287:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F550 text4 CODE >289:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F552 text4 CODE >292:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F55E text4 CODE >293:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F560 text4 CODE >296:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F568 text4 CODE >297:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F56A text4 CODE >300:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F576 text4 CODE >301:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F578 text4 CODE >304:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F580 text4 CODE >305:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F582 text4 CODE >308:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F58E text4 CODE >309:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F590 text4 CODE >312:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F598 text4 CODE >315:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F59A text4 CODE >289:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F5D2 text4 CODE >317:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F5D6 text4 CODE >318:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F5E6 text4 CODE >320:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F5E8 text51 CODE >453:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F5E8 text51 CODE >455:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F5F4 text51 CODE >456:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F600 text51 CODE >458:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F604 text51 CODE >460:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F606 text51 CODE >463:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F60A text51 CODE >464:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F614 text51 CODE >465:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F61C text51 CODE >466:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F624 text51 CODE >468:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F626 text51 CODE >471:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F62A text51 CODE >472:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F634 text51 CODE >473:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F63C text51 CODE >474:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F644 text51 CODE >476:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F646 text51 CODE >479:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F64A text51 CODE >480:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F654 text51 CODE >481:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F65C text51 CODE >482:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F664 text51 CODE >486:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F666 text51 CODE >460:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F68C text51 CODE >488:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 F68E text73 CODE >111:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/headers\unmc_rtcc_01.h
 F68E text73 CODE >114:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/headers\unmc_rtcc_01.h
 F69A text73 CODE >115:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/headers\unmc_rtcc_01.h
@@ -940,29 +940,29 @@ F9C8 text10 CODE >107:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\p
 F9CA text10 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
 F9D0 text10 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
 F9D4 text10 CODE >118:C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
-F9D6 text2 CODE >798:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F9D6 text2 CODE >800:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F9DE text2 CODE >802:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-F9F0 text2 CODE >803:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FA02 text2 CODE >804:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FA14 text2 CODE >805:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FA26 text2 CODE >808:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FA2E text2 CODE >810:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FA40 text2 CODE >811:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FA52 text2 CODE >812:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FA64 text2 CODE >813:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FA76 text2 CODE >816:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FA7E text2 CODE >818:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FA90 text2 CODE >819:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FAA2 text2 CODE >820:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FAB4 text2 CODE >821:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FAC6 text2 CODE >824:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FACE text2 CODE >826:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FAE0 text2 CODE >827:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FAF2 text2 CODE >828:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FB04 text2 CODE >829:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FB1A text2 CODE >832:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-FB2A text2 CODE >834:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F9D6 text2 CODE >745:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F9D6 text2 CODE >747:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F9DE text2 CODE >749:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+F9F0 text2 CODE >750:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FA02 text2 CODE >751:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FA14 text2 CODE >752:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FA26 text2 CODE >755:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FA2E text2 CODE >757:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FA40 text2 CODE >758:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FA52 text2 CODE >759:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FA64 text2 CODE >760:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FA76 text2 CODE >763:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FA7E text2 CODE >765:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FA90 text2 CODE >766:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FAA2 text2 CODE >767:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FAB4 text2 CODE >768:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FAC6 text2 CODE >771:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FACE text2 CODE >773:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FAE0 text2 CODE >774:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FAF2 text2 CODE >775:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FB04 text2 CODE >776:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FB1A text2 CODE >779:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+FB2A text2 CODE >781:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 FB2C text7 CODE >74:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/headers\unmc_rtcc_01.h
 FB2C text7 CODE >76:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/headers\unmc_rtcc_01.h
 FB30 text7 CODE >78:C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/headers\unmc_rtcc_01.h
@@ -1074,7 +1074,7 @@ _button_B_submenu_activation E4B4 0 CODE 0 text33 dist/default/production\PIC_LE
 __CFG_T1DIG$ON 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\PIC_LED_KEYBOARD.production.obj
-__mediumconst FEEC 0 MEDIUMCONST 0 mediumconst C:\Users\gonza\AppData\Local\Temp\s1kg.obj
+__mediumconst FEEC 0 MEDIUMCONST 0 mediumconst C:\Users\gonza\AppData\Local\Temp\s27k.obj
 __end_of_activity_submenu_activation ECAA 0 CODE 0 text38 dist/default/production\PIC_LED_KEYBOARD.production.obj
 _button_B_submenu_date_and_time_config E3EE 0 CODE 0 text30 dist/default/production\PIC_LED_KEYBOARD.production.obj
 _check_home_callback E2AE 0 CODE 0 text61 dist/default/production\PIC_LED_KEYBOARD.production.obj
@@ -1086,12 +1086,12 @@ _Delay1KTCYx E214 0 CODE 0 text72 dist/default/production\PIC_LED_KEYBOARD.produ
 __CFG_WPCFG$OFF 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
 __end_of_button_hash E5A0 0 CODE 0 text13 dist/default/production\PIC_LED_KEYBOARD.production.obj
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\PIC_LED_KEYBOARD.production.obj
-___sp 0 0 STACK 2 stack C:\Users\gonza\AppData\Local\Temp\s1kg.obj
+___sp 0 0 STACK 2 stack C:\Users\gonza\AppData\Local\Temp\s27k.obj
 _anio 4E 0 COMRAM 1 dataCOMRAM dist/default/production\PIC_LED_KEYBOARD.production.obj
 _flag 2F8 -299 COMRAM 1 bitbssCOMRAM dist/default/production\PIC_LED_KEYBOARD.production.obj
 _hora 54 0 COMRAM 1 dataCOMRAM dist/default/production\PIC_LED_KEYBOARD.production.obj
 _main E392 0 CODE 0 text0 dist/default/production\PIC_LED_KEYBOARD.production.obj
-start 0 0 CODE 0 init C:\Users\gonza\AppData\Local\Temp\s1kg.obj
+start 0 0 CODE 0 init C:\Users\gonza\AppData\Local\Temp\s27k.obj
 RtccWriteDate@tempDayMonth A 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC_LED_KEYBOARD.production.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
 __end_of_home_clock_refresh F422 0 CODE 0 text55 dist/default/production\PIC_LED_KEYBOARD.production.obj
@@ -1122,11 +1122,11 @@ __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\PIC_LED_KEYBOARD.prod
 __end_of_lcd_putrs EBE8 0 CODE 0 text65 dist/default/production\PIC_LED_KEYBOARD.production.obj
 __end_of_lcd_write E278 0 CODE 0 text64 dist/default/production\PIC_LED_KEYBOARD.production.obj
 _Read_RTC F68E 0 CODE 0 text73 dist/default/production\PIC_LED_KEYBOARD.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\gonza\AppData\Local\Temp\s1kg.obj
-intlevel0 0 0 CODE 0 text C:\Users\gonza\AppData\Local\Temp\s1kg.obj
-intlevel1 0 0 CODE 0 text C:\Users\gonza\AppData\Local\Temp\s1kg.obj
-intlevel2 0 0 CODE 0 text C:\Users\gonza\AppData\Local\Temp\s1kg.obj
-intlevel3 0 0 CODE 0 text C:\Users\gonza\AppData\Local\Temp\s1kg.obj
+__accesstop 60 0 ABS 0 - C:\Users\gonza\AppData\Local\Temp\s27k.obj
+intlevel0 0 0 CODE 0 text C:\Users\gonza\AppData\Local\Temp\s27k.obj
+intlevel1 0 0 CODE 0 text C:\Users\gonza\AppData\Local\Temp\s27k.obj
+intlevel2 0 0 CODE 0 text C:\Users\gonza\AppData\Local\Temp\s27k.obj
+intlevel3 0 0 CODE 0 text C:\Users\gonza\AppData\Local\Temp\s27k.obj
 __size_of_lcd_putrs 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\PIC_LED_KEYBOARD.production.obj
 __size_of_lcd_write 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
@@ -1161,8 +1161,8 @@ _ANCON1 F49 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
 __size_of_activity_submenu_time_config 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
 ___awdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC_LED_KEYBOARD.production.obj
 Delay100TCYx@unit 1 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC_LED_KEYBOARD.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\gonza\AppData\Local\Temp\s1kg.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\gonza\AppData\Local\Temp\s1kg.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\gonza\AppData\Local\Temp\s27k.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\gonza\AppData\Local\Temp\s27k.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\PIC_LED_KEYBOARD.production.obj
 __size_of_home_tone_refresh 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\PIC_LED_KEYBOARD.production.obj
@@ -1282,7 +1282,7 @@ __Hbank14 0 0 ABS 0 bank14 dist/default/production\PIC_LED_KEYBOARD.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\PIC_LED_KEYBOARD.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\PIC_LED_KEYBOARD.production.obj
 __size_of_button_B_submenu_siren_volume 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\gonza\AppData\Local\Temp\s1kg.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\gonza\AppData\Local\Temp\s27k.obj
 __end_of_sprintf FEEC 0 CODE 0 text56 dist/default/production\PIC_LED_KEYBOARD.production.obj
 __size_of_lcd_init 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
 __size_of_lcd_putc 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
@@ -1604,8 +1604,8 @@ _strcpy E7B0 0 CODE 0 text49 dist/default/production\PIC_LED_KEYBOARD.production
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\PIC_LED_KEYBOARD.production.obj
 _RtccAlrmTimeDate 60 0 BANK0 1 bssBANK0 dist/default/production\PIC_LED_KEYBOARD.production.obj
 __end_of_reset_home_callback E1F2 0 CODE 0 text62 dist/default/production\PIC_LED_KEYBOARD.production.obj
-stackhi EBF 0 ABS 0 - C:\Users\gonza\AppData\Local\Temp\s1kg.obj
-stacklo AA 0 ABS 0 - C:\Users\gonza\AppData\Local\Temp\s1kg.obj
+stackhi EBF 0 ABS 0 - C:\Users\gonza\AppData\Local\Temp\s27k.obj
+stacklo AA 0 ABS 0 - C:\Users\gonza\AppData\Local\Temp\s27k.obj
 _button_number EFFC 0 CODE 0 text3 dist/default/production\PIC_LED_KEYBOARD.production.obj
 _lcd_send_nibble EF86 0 CODE 0 text70 dist/default/production\PIC_LED_KEYBOARD.production.obj
 __Lintcode 0 0 CODE 0 intcode dist/default/production\PIC_LED_KEYBOARD.production.obj
@@ -1751,7 +1751,7 @@ __Ltext73 0 0 ABS 0 text73 dist/default/production\PIC_LED_KEYBOARD.production.o
 __Ltext74 0 0 ABS 0 text74 dist/default/production\PIC_LED_KEYBOARD.production.obj
 __Ltext75 0 0 ABS 0 text75 dist/default/production\PIC_LED_KEYBOARD.production.obj
 _activity_submenu_pin ED10 0 CODE 0 text36 dist/default/production\PIC_LED_KEYBOARD.production.obj
-__ramtop F00 0 RAM 0 ramtop C:\Users\gonza\AppData\Local\Temp\s1kg.obj
+__ramtop F00 0 RAM 0 ramtop C:\Users\gonza\AppData\Local\Temp\s27k.obj
 _sprintf FC88 0 CODE 0 text56 dist/default/production\PIC_LED_KEYBOARD.production.obj
 _button_B_submenu_siren_volume E528 0 CODE 0 text22 dist/default/production\PIC_LED_KEYBOARD.production.obj
 __size_of_lcd_send_byte 0 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
@@ -1811,7 +1811,7 @@ __end_of_button_C E2AE 0 CODE 0 text19 dist/default/production\PIC_LED_KEYBOARD.
 __end_of_button_D E1FC 0 CODE 0 text18 dist/default/production\PIC_LED_KEYBOARD.production.obj
 __end_of_dpowers FEF7 0 MEDIUMCONST 0 mediumconst dist/default/production\PIC_LED_KEYBOARD.production.obj
 ?_sprintf D 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC_LED_KEYBOARD.production.obj
-_isdigit$2211 2 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC_LED_KEYBOARD.production.obj
+_isdigit$2235 2 0 COMRAM 1 cstackCOMRAM dist/default/production\PIC_LED_KEYBOARD.production.obj
 _TRISA F92 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
 _TRISB F93 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj
 _TRISC F94 0 ABS 0 - dist/default/production\PIC_LED_KEYBOARD.production.obj

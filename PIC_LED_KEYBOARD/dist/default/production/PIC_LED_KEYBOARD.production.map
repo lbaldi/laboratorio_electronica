@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.34\dat\en_msgs.txt -cs \
   -h+dist/default/production\PIC_LED_KEYBOARD.production.sym \
   --cmf=dist/default/production\PIC_LED_KEYBOARD.production.cmf -z \
-  -Q18F26J50 -oC:\Users\gonza\AppData\Local\Temp\s1kg.6 \
+  -Q18F26J50 -oC:\Users\gonza\AppData\Local\Temp\s27k.6 \
   -Mdist/default/production/PIC_LED_KEYBOARD.production.map -E1 -ver=XC8 \
   -ASTACK=0AAh-0ebfh -pstack=STACK -ACODE=00h-0FFF7h -ACONST=00h-0FFF7h \
   -ASMALLCONST=0F00h-0FFFhx240,0FF00h-0FFF7h -AMEDIUMCONST=0F00h-0FFF7h \
@@ -25,7 +25,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\gonza\AppData\Local\Temp\s1kg.obj \
+  C:\Users\gonza\AppData\Local\Temp\s27k.obj \
   dist/default/production\PIC_LED_KEYBOARD.production.obj 
 
 Object code version is 3.11
@@ -38,7 +38,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\gonza\AppData\Local\Temp\s1kg.obj
+C:\Users\gonza\AppData\Local\Temp\s27k.obj
                 end_init                              0        0        4        0       0
                 config                             FFF8     FFF8        8     FFF8       0
 dist/default/production\PIC_LED_KEYBOARD.production.obj
@@ -1114,7 +1114,7 @@ _hora_d                                         nvCOMRAM      0005A
 _hora_u                                         nvBANK0       000A7
 _i                                              bssCOMRAM     00039
 _isdigit                                        text57        0E2D0
-_isdigit$2211                                   cstackCOMRAM  00002
+_isdigit$2235                                   cstackCOMRAM  00002
 _j                                              bssBANK0      00082
 _k                                              bssBANK0      00084
 _key                                            bssCOMRAM     00045
@@ -1206,13 +1206,13 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 877 in file "main.c"
+		line 824 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
-                  2  505[None  ] int 
+                  2  478[None  ] int 
  Registers used:
 		wreg, fsr0l, fsr0h, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
@@ -1241,7 +1241,7 @@ Total ram usage:        0 bytes
 
  *************** function _setup *****************
  Defined at:
-		line 836 in file "main.c"
+		line 783 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1274,7 +1274,7 @@ Total ram usage:        0 bytes
 
  *************** function _keyboard_control *****************
  Defined at:
-		line 798 in file "main.c"
+		line 745 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1310,7 +1310,7 @@ Total ram usage:        1 bytes
 
  *************** function _button_number *****************
  Defined at:
-		line 776 in file "main.c"
+		line 723 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1346,7 +1346,7 @@ Total ram usage:        0 bytes
 
  *************** function _time_set *****************
  Defined at:
-		line 340 in file "main.c"
+		line 287 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1409,7 +1409,7 @@ Total ram usage:        6 bytes
 
  *************** function _date_set *****************
  Defined at:
-		line 305 in file "main.c"
+		line 252 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1610,7 +1610,7 @@ Total ram usage:        0 bytes
 
  *************** function _cursor_displacement *****************
  Defined at:
-		line 290 in file "main.c"
+		line 237 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1640,7 +1640,7 @@ Total ram usage:        1 bytes
 
  *************** function _button_hash *****************
  Defined at:
-		line 760 in file "main.c"
+		line 707 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1673,7 +1673,7 @@ Total ram usage:        0 bytes
 
  *************** function _pin_set *****************
  Defined at:
-		line 435 in file "main.c"
+		line 382 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1704,7 +1704,7 @@ Total ram usage:        0 bytes
 
  *************** function _pin_input_validator *****************
  Defined at:
-		line 442 in file "main.c"
+		line 389 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1768,7 +1768,7 @@ Total ram usage:        6 bytes
 
  *************** function _button_asterisk *****************
  Defined at:
-		line 753 in file "main.c"
+		line 700 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1798,7 +1798,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_D *****************
  Defined at:
-		line 745 in file "main.c"
+		line 692 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1829,7 +1829,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_C *****************
  Defined at:
-		line 734 in file "main.c"
+		line 681 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1860,7 +1860,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_menu *****************
  Defined at:
-		line 212 in file "main.c"
+		line 159 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1893,7 +1893,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_B *****************
  Defined at:
-		line 696 in file "main.c"
+		line 643 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1930,7 +1930,7 @@ Total ram usage:        2 bytes
 
  *************** function _button_B_submenu_siren_volume *****************
  Defined at:
-		line 644 in file "main.c"
+		line 591 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1960,7 +1960,7 @@ Total ram usage:        2 bytes
 
  *************** function _button_B_submenu_siren_tone *****************
  Defined at:
-		line 662 in file "main.c"
+		line 609 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1990,7 +1990,7 @@ Total ram usage:        2 bytes
 
  *************** function _button_B_submenu_siren_config *****************
  Defined at:
-		line 628 in file "main.c"
+		line 575 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2021,7 +2021,7 @@ Total ram usage:        2 bytes
 
  *************** function _activity_submenu_siren_volume *****************
  Defined at:
-		line 388 in file "main.c"
+		line 335 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2053,7 +2053,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_submenu_siren_tone *****************
  Defined at:
-		line 399 in file "main.c"
+		line 346 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2085,7 +2085,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_B_submenu_pin_config *****************
  Defined at:
-		line 611 in file "main.c"
+		line 558 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2117,7 +2117,7 @@ Total ram usage:        2 bytes
 
  *************** function _pin_reset *****************
  Defined at:
-		line 453 in file "main.c"
+		line 400 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2148,7 +2148,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_submenu_pin_set *****************
  Defined at:
-		line 422 in file "main.c"
+		line 369 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2182,7 +2182,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_B_submenu_date_and_time_config *****************
  Defined at:
-		line 680 in file "main.c"
+		line 627 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2213,7 +2213,7 @@ Total ram usage:        2 bytes
 
  *************** function _activity_submenu_time_config *****************
  Defined at:
-		line 276 in file "main.c"
+		line 223 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2247,7 +2247,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_submenu_date_config *****************
  Defined at:
-		line 264 in file "main.c"
+		line 211 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2281,7 +2281,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_B_submenu_activation *****************
  Defined at:
-		line 593 in file "main.c"
+		line 540 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2311,7 +2311,7 @@ Total ram usage:        2 bytes
 
  *************** function _button_B_menu *****************
  Defined at:
-		line 569 in file "main.c"
+		line 516 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2344,7 +2344,7 @@ Total ram usage:        2 bytes
 
  *************** function _activity_submenu_siren *****************
  Defined at:
-		line 377 in file "main.c"
+		line 324 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2376,7 +2376,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_submenu_pin *****************
  Defined at:
-		line 412 in file "main.c"
+		line 359 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2408,7 +2408,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_submenu_date_and_time *****************
  Defined at:
-		line 239 in file "main.c"
+		line 186 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2440,7 +2440,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_submenu_activation *****************
  Defined at:
-		line 226 in file "main.c"
+		line 173 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2472,7 +2472,7 @@ Total ram usage:        0 bytes
 
  *************** function _button_A *****************
  Defined at:
-		line 545 in file "main.c"
+		line 492 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2505,7 +2505,7 @@ Total ram usage:        2 bytes
 
  *************** function _submenu_selector *****************
  Defined at:
-		line 184 in file "main.c"
+		line 21 in file "Unimic/unmc_01/sources/submenu_selector.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2536,7 +2536,7 @@ Total ram usage:        2 bytes
 
  *************** function _submenu_selector_1 *****************
  Defined at:
-		line 176 in file "main.c"
+		line 13 in file "Unimic/unmc_01/sources/submenu_selector.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2566,7 +2566,7 @@ Total ram usage:        0 bytes
 
  *************** function _submenu_selector_0 *****************
  Defined at:
-		line 168 in file "main.c"
+		line 5 in file "Unimic/unmc_01/sources/submenu_selector.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2590,19 +2590,19 @@ Total ram usage:        0 bytes
  This function calls:
 		_lcd_write
  This function is called by:
-		_submenu_selector
 		_activity_submenu_activation
 		_activity_submenu_date_and_time
 		_activity_submenu_siren
 		_activity_submenu_siren_volume
 		_activity_submenu_siren_tone
 		_activity_submenu_pin
+		_submenu_selector
  This function uses a non-reentrant model
 
 
  *************** function _menu_selector *****************
  Defined at:
-		line 142 in file "main.c"
+		line 37 in file "Unimic/unmc_01/sources/menu_selector.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2635,7 +2635,7 @@ Total ram usage:        2 bytes
 
  *************** function _menu_selector_3 *****************
  Defined at:
-		line 134 in file "main.c"
+		line 29 in file "Unimic/unmc_01/sources/menu_selector.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2665,7 +2665,7 @@ Total ram usage:        0 bytes
 
  *************** function _menu_selector_2 *****************
  Defined at:
-		line 126 in file "main.c"
+		line 21 in file "Unimic/unmc_01/sources/menu_selector.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2695,7 +2695,7 @@ Total ram usage:        0 bytes
 
  *************** function _menu_selector_1 *****************
  Defined at:
-		line 118 in file "main.c"
+		line 13 in file "Unimic/unmc_01/sources/menu_selector.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2725,7 +2725,7 @@ Total ram usage:        0 bytes
 
  *************** function _menu_selector_0 *****************
  Defined at:
-		line 110 in file "main.c"
+		line 5 in file "Unimic/unmc_01/sources/menu_selector.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2749,14 +2749,14 @@ Total ram usage:        0 bytes
  This function calls:
 		_lcd_write
  This function is called by:
-		_menu_selector
 		_activity_menu
+		_menu_selector
  This function uses a non-reentrant model
 
 
  *************** function _activity_pin *****************
  Defined at:
-		line 201 in file "main.c"
+		line 148 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2796,7 +2796,7 @@ Total ram usage:        0 bytes
   to              2    0[COMRAM] PTR unsigned char 
 		 -> pin(5), pin_input(5), 
   from            2    2[COMRAM] PTR const unsigned char 
-		 -> STR_46(5), STR_44(1), STR_14(1), pin_input(5), 
+		 -> STR_34(5), STR_32(1), STR_2(1), pin_input(5), 
  Auto vars:     Size  Location     Type
   cp              2    4[COMRAM] PTR unsigned char 
 		 -> pin(5), pin_input(5), 
@@ -2861,7 +2861,7 @@ Total ram usage:        1 bytes
 
  *************** function _home_config_refresh *****************
  Defined at:
-		line 506 in file "main.c"
+		line 453 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2893,7 +2893,7 @@ Total ram usage:        2 bytes
 
  *************** function _home_volume_refresh *****************
  Defined at:
-		line 482 in file "main.c"
+		line 429 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2924,7 +2924,7 @@ Total ram usage:        0 bytes
 
  *************** function _home_tone_refresh *****************
  Defined at:
-		line 494 in file "main.c"
+		line 441 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2955,7 +2955,7 @@ Total ram usage:        0 bytes
 
  *************** function _home_state_refresh *****************
  Defined at:
-		line 470 in file "main.c"
+		line 417 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -2986,7 +2986,7 @@ Total ram usage:        0 bytes
 
  *************** function _home_clock_refresh *****************
  Defined at:
-		line 461 in file "main.c"
+		line 408 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3022,10 +3022,10 @@ Total ram usage:        0 bytes
   sp              2   12[COMRAM] PTR unsigned char 
 		 -> buffer1(20), 
   f               2   14[COMRAM] PTR const unsigned char 
-		 -> STR_55(5), STR_54(7), STR_53(7), STR_52(7), 
-		 -> STR_51(7), STR_50(7), STR_49(7), STR_48(15), 
-		 -> STR_47(15), STR_31(15), STR_29(15), STR_27(15), 
-		 -> STR_26(15), 
+		 -> STR_43(5), STR_42(7), STR_41(7), STR_40(7), 
+		 -> STR_39(7), STR_38(7), STR_37(7), STR_36(15), 
+		 -> STR_35(15), STR_19(15), STR_17(15), STR_15(15), 
+		 -> STR_14(15), 
  Auto vars:     Size  Location     Type
   tmpval          4    0        struct .
   cp              3    0        PTR const unsigned char 
@@ -3193,7 +3193,7 @@ Total ram usage:        7 bytes
 
  *************** function _check_home_callback *****************
  Defined at:
-		line 94 in file "main.c"
+		line 98 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3224,7 +3224,7 @@ Total ram usage:        0 bytes
 
  *************** function _reset_home_callback *****************
  Defined at:
-		line 88 in file "main.c"
+		line 92 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3260,7 +3260,7 @@ Total ram usage:        0 bytes
 
  *************** function _activity_home *****************
  Defined at:
-		line 80 in file "main.c"
+		line 84 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -3299,21 +3299,21 @@ Total ram usage:        0 bytes
 
  *************** function _lcd_write *****************
  Defined at:
-		line 71 in file "main.c"
+		line 4 in file "Unimic/unmc_01/sources/lcd_write.c"
  Parameters:    Size  Location     Type
   column          2   10[COMRAM] int 
   row             2   12[COMRAM] int 
   string          2   14[COMRAM] PTR const unsigned char 
-		 -> STR_45(11), STR_43(6), STR_42(8), STR_41(4), 
-		 -> STR_40(7), STR_39(7), STR_38(5), STR_37(5), 
-		 -> STR_36(5), STR_35(8), STR_34(5), STR_33(8), 
-		 -> STR_32(7), STR_30(16), STR_28(17), buffer1(20), 
-		 -> STR_25(5), STR_24(6), STR_23(6), STR_22(3), 
-		 -> STR_21(3), STR_20(8), STR_19(7), STR_18(4), 
-		 -> STR_17(6), STR_16(8), STR_15(16), STR_13(2), 
-		 -> STR_12(2), STR_11(2), STR_10(2), STR_9(2), 
-		 -> STR_8(2), STR_7(2), STR_6(2), STR_5(2), 
-		 -> STR_4(2), STR_3(2), STR_2(2), STR_1(4), 
+		 -> STR_56(2), STR_55(2), STR_54(2), STR_53(2), 
+		 -> STR_52(2), STR_51(2), STR_50(2), STR_49(2), 
+		 -> STR_48(2), STR_47(2), STR_46(2), STR_45(2), 
+		 -> STR_33(11), STR_31(6), STR_30(8), STR_29(4), 
+		 -> STR_28(7), STR_27(7), STR_26(5), STR_25(5), 
+		 -> STR_24(5), STR_23(8), STR_22(5), STR_21(8), 
+		 -> STR_20(7), STR_18(16), STR_16(17), buffer1(20), 
+		 -> STR_13(5), STR_12(6), STR_11(6), STR_10(3), 
+		 -> STR_9(3), STR_8(8), STR_7(7), STR_6(4), 
+		 -> STR_5(6), STR_4(8), STR_3(16), STR_1(4), 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
@@ -3337,12 +3337,6 @@ Total ram usage:        6 bytes
 		_lcd_putrs
  This function is called by:
 		_activity_home
-		_menu_selector_0
-		_menu_selector_1
-		_menu_selector_2
-		_menu_selector_3
-		_submenu_selector_0
-		_submenu_selector_1
 		_activity_pin
 		_activity_menu
 		_activity_submenu_activation
@@ -3358,6 +3352,12 @@ Total ram usage:        6 bytes
 		_home_state_refresh
 		_home_volume_refresh
 		_home_tone_refresh
+		_menu_selector_0
+		_menu_selector_1
+		_menu_selector_2
+		_menu_selector_3
+		_submenu_selector_0
+		_submenu_selector_1
 		_activity_submenu_date_config_refresh
 		_activity_submenu_time_config_refresh
  This function uses a non-reentrant model
@@ -3368,16 +3368,16 @@ Total ram usage:        6 bytes
 		line 221 in file "Unimic/unmc_01/sources/unmc_lcd_216.c"
  Parameters:    Size  Location     Type
   ptr             2    8[COMRAM] PTR const unsigned char 
-		 -> STR_56(2), STR_45(11), STR_43(6), STR_42(8), 
-		 -> STR_41(4), STR_40(7), STR_39(7), STR_38(5), 
-		 -> STR_37(5), STR_36(5), STR_35(8), STR_34(5), 
-		 -> STR_33(8), STR_32(7), STR_30(16), STR_28(17), 
-		 -> buffer1(20), STR_25(5), STR_24(6), STR_23(6), 
-		 -> STR_22(3), STR_21(3), STR_20(8), STR_19(7), 
-		 -> STR_18(4), STR_17(6), STR_16(8), STR_15(16), 
-		 -> STR_13(2), STR_12(2), STR_11(2), STR_10(2), 
-		 -> STR_9(2), STR_8(2), STR_7(2), STR_6(2), 
-		 -> STR_5(2), STR_4(2), STR_3(2), STR_2(2), 
+		 -> STR_56(2), STR_55(2), STR_54(2), STR_53(2), 
+		 -> STR_52(2), STR_51(2), STR_50(2), STR_49(2), 
+		 -> STR_48(2), STR_47(2), STR_46(2), STR_45(2), 
+		 -> STR_44(2), STR_33(11), STR_31(6), STR_30(8), 
+		 -> STR_29(4), STR_28(7), STR_27(7), STR_26(5), 
+		 -> STR_25(5), STR_24(5), STR_23(8), STR_22(5), 
+		 -> STR_21(8), STR_20(7), STR_18(16), STR_16(17), 
+		 -> buffer1(20), STR_13(5), STR_12(6), STR_11(6), 
+		 -> STR_10(3), STR_9(3), STR_8(8), STR_7(7), 
+		 -> STR_6(4), STR_5(6), STR_4(8), STR_3(16), 
 		 -> STR_1(4), 
  Auto vars:     Size  Location     Type
 		None
@@ -3400,8 +3400,8 @@ Total ram usage:        2 bytes
  This function calls:
 		_lcd_putc
  This function is called by:
-		_lcd_write
 		_button_number
+		_lcd_write
  This function uses a non-reentrant model
 
 
@@ -3465,13 +3465,13 @@ Total ram usage:        3 bytes
  This function calls:
 		_lcd_send_byte
  This function is called by:
-		_lcd_write
 		_activity_pin
 		_activity_submenu_date_config
 		_activity_submenu_time_config
 		_cursor_displacement
 		_activity_submenu_pin_set
 		_lcd_putc
+		_lcd_write
  This function uses a non-reentrant model
 
 
@@ -3741,6 +3741,13 @@ Total ram usage:       18 bytes
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
+Unimic/unmc_01/sources/submenu_selector.c
+		_submenu_select		CODE           	E3BE	0000	49
+		_submenu_select		CODE           	E6E8	0000	67
+		_submenu_select		CODE           	E72A	0000	67
+
+Unimic/unmc_01/sources/submenu_selector.c estimated size: 183
+
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccReadDate.c
 		_RtccReadDate  		CODE           	F302	0000	143
 
@@ -3856,10 +3863,7 @@ main.c
 		_date_set      		CODE           	F4B8	0000	153
 		_main          		CODE           	E392	0000	45
 		_activity_subme		CODE           	F17A	0000	131
-		_submenu_select		CODE           	E3BE	0000	49
 		_time_set      		CODE           	F550	0000	153
-		_submenu_select		CODE           	E6E8	0000	67
-		_submenu_select		CODE           	E72A	0000	67
 		_home_volume_re		CODE           	EB42	0000	83
 		_activity_subme		CODE           	EC44	0000	103
 		_activity_subme		CODE           	E9B4	0000	79
@@ -3873,8 +3877,6 @@ main.c
 		_cursor_displac		CODE           	EA50	0000	79
 		_activity_subme		CODE           	ED76	0000	103
 		_check_home_cal		CODE           	E2AE	0000	35
-		_menu_selector 		CODE           	E7F6	0000	73
-		_lcd_write     		CODE           	E260	0000	25
 		_pin_set       		CODE           	E278	0000	27
 		_setup         		CODE           	F27E	0000	133
 		_button_B_subme		CODE           	E4B4	0000	59
@@ -3888,15 +3890,25 @@ main.c
 		_button_hash   		CODE           	E562	0000	63
 		_button_B_subme		CODE           	E3EE	0000	49
 		_pin_input_vali		CODE           	E368	0000	43
+
+main.c estimated size: 3634
+
+Unimic/unmc_01/sources/menu_selector.c
+		_menu_selector 		CODE           	E7F6	0000	73
 		_menu_selector_		CODE           	E5E0	0000	67
 		_menu_selector_		CODE           	E622	0000	67
 		_menu_selector_		CODE           	E664	0000	67
 		_menu_selector_		CODE           	E6A6	0000	67
 
-main.c estimated size: 4183
+Unimic/unmc_01/sources/menu_selector.c estimated size: 341
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c
 		___wmul        		CODE           	E316	0000	41
 
 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul16.c estimated size: 41
+
+Unimic/unmc_01/sources/lcd_write.c
+		_lcd_write     		CODE           	E260	0000	25
+
+Unimic/unmc_01/sources/lcd_write.c estimated size: 25
 

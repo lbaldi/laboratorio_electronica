@@ -25,12 +25,15 @@
 #include <unmc_lcd_216.h>
 #include <unmc_rtcc_01.h>
 #include <unmc_config_01.h>
-#include <unmc_inout_02.h>
 #include <unmc_inout_01.h>
+#include <unmc_inout_02.h>
+
+#include <lcd_write.h>
+#include <menu_selector.h>
+#include <submenu_selector.h>
 
 // Global Variables
 int cursor_horizontal_position;
-int state;
 int menu_selected;
 int submenu_selected;
 int home_callback;
@@ -39,6 +42,14 @@ int config_widget;
 int config_widget_time = 0;
 char pin[5];
 char pin_input[5];
+
+
+/*ALARM STATE
+ * #0: DISABLED
+ * #1: ENABLED
+ * #2: ACTIVATED
+ */
+int state;
 
 /* ACTIVITIES
  * #0 HOME
@@ -56,24 +67,17 @@ char pin_input[5];
  */
 int activity;
 
-/* VOLUMEN
+/* VOLUME
  * #0 LOW
  * #1 HIGH
  */
 int alarm_volume;
 
-/* VOLUMEN
+/* TONE
  * #0 BEEP 1
  * #1 BEEP 2
  */
 int alarm_tone;
-
-void lcd_write(int column, int row, const char* string){
-    
-    lcd_gotoxy(column, row);
-    lcd_putrs(string);
-    
-}
 
 //Home and home callback
 
@@ -105,66 +109,9 @@ void check_home_callback(void){
     
 }
 
-//Menu selectors
-
-void menu_selector_0(void){
-    
-    lcd_write(1,1,">");
-    menu_selected = 0;
-    lcd_write(9,2," ");
-    
-}
-
-void menu_selector_1(void){
-    
-    lcd_write(1,2,">");
-    menu_selected = 1;
-    lcd_write(1,1," ");
-    
-}
-
-void menu_selector_2(void){
-    
-    lcd_write(9,1,">");
-    menu_selected = 2;
-    lcd_write(1,2," ");
-    
-}
-
-void menu_selector_3(void){
-    
-    lcd_write(9,2,">");
-    menu_selected = 3;
-    lcd_write(9,1," ");
-    
-}
-
-void menu_selector(void){
-    
-    switch(menu_selected){
-        
-        case 0:
-            menu_selector_1();
-            break;
-            
-        case 1:
-            menu_selector_2();
-            break;
-            
-        case 2:
-            menu_selector_3();
-            break;
-            
-        case 3:
-            menu_selector_0();
-            break;
-            
-    }
-    
-}
 
 //Submenu selectors
-
+/*
 void submenu_selector_0(void){
     
     lcd_write(9,1,">");
@@ -195,7 +142,7 @@ void submenu_selector(void){
     }
     
 }
-
+*/
 //Entrance to configuration: pin and menu activities
 
 void activity_pin(void){

@@ -8,6 +8,10 @@
       <itemPath>Unimic/unmc_01/headers/unmc_inout_01.h</itemPath>
       <itemPath>Unimic/unmc_01/headers/unmc_lcd_216.h</itemPath>
       <itemPath>Unimic/unmc_01/headers/unmc_rtcc_01.h</itemPath>
+      <itemPath>Unimic/unmc_01/headers/unmc_inout_02.h</itemPath>
+      <itemPath>Unimic/unmc_01/headers/lcd_write.h</itemPath>
+      <itemPath>Unimic/unmc_01/headers/menu_selector.h</itemPath>
+      <itemPath>Unimic/unmc_01/headers/submenu_selector.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -18,6 +22,9 @@
                    projectFiles="true">
       <itemPath>main.c</itemPath>
       <itemPath>Unimic/unmc_01/sources/unmc_lcd_216.c</itemPath>
+      <itemPath>Unimic/unmc_01/sources/lcd_write.c</itemPath>
+      <itemPath>Unimic/unmc_01/sources/menu_selector.c</itemPath>
+      <itemPath>Unimic/unmc_01/sources/submenu_selector.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

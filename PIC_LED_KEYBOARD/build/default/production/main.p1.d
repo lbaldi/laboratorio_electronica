@@ -9,12 +9,15 @@
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/capture.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/sw_spi.h  \
 Unimic/unmc_01/headers/unmc_lcd_216.h  \
+Unimic/unmc_01/headers/menu_selector.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/i2c.h  \
+Unimic/unmc_01/headers/submenu_selector.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/timers.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/sw_uart.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/io.h  \
 Unimic/unmc_01/headers/unmc_rtcc_01.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/portb.h  \
+Unimic/unmc_01/headers/lcd_write.h  \
 Unimic/unmc_01/headers/unmc_inout_01.h  \
 Unimic/unmc_01/headers/unmc_inout_02.h  \
 ../../../../../Program\ Files\ (x86)/Microchip/xc8/v1.34/include/plib/delays.h  \

@@ -10023,9 +10023,27 @@ anio=anio_d*10+anio_u;
 # 14 "Unimic/unmc_01/headers\unmc_inout_02.h"
 char key;
 
-# 32 "main.c"
+# 15 "Unimic/unmc_01/headers\lcd_write.h"
+void lcd_write(int column, int row, const char* string);
+
+# 15 "Unimic/unmc_01/headers\menu_selector.h"
+extern int menu_selected;
+
+void menu_selector_0(void);
+void menu_selector_1(void);
+void menu_selector_2(void);
+void menu_selector_3(void);
+void menu_selector(void);
+
+# 15 "Unimic/unmc_01/headers\submenu_selector.h"
+extern int submenu_selected;
+
+void submenu_selector_0(void);
+void submenu_selector_1(void);
+void submenu_selector(void);
+
+# 36 "main.c"
 int cursor_horizontal_position;
-int state;
 int menu_selected;
 int submenu_selected;
 int home_callback;
@@ -10035,21 +10053,17 @@ int config_widget_time = 0;
 char pin[5];
 char pin_input[5];
 
-# 57
+# 52
+int state;
+
+# 68
 int activity;
 
-# 63
+# 74
 int alarm_volume;
 
-# 69
+# 80
 int alarm_tone;
-
-void lcd_write(int column, int row, const char* string){
-
-lcd_gotoxy(column, row);
-lcd_putrs(string);
-
-}
 
 
 
@@ -10081,99 +10095,7 @@ activity_home();
 
 }
 
-
-
-void menu_selector_0(void){
-
-lcd_write(1,1,">");
-menu_selected = 0;
-lcd_write(9,2," ");
-
-}
-
-void menu_selector_1(void){
-
-lcd_write(1,2,">");
-menu_selected = 1;
-lcd_write(1,1," ");
-
-}
-
-void menu_selector_2(void){
-
-lcd_write(9,1,">");
-menu_selected = 2;
-lcd_write(1,2," ");
-
-}
-
-void menu_selector_3(void){
-
-lcd_write(9,2,">");
-menu_selected = 3;
-lcd_write(9,1," ");
-
-}
-
-void menu_selector(void){
-
-switch(menu_selected){
-
-case 0:
-menu_selector_1();
-break;
-
-case 1:
-menu_selector_2();
-break;
-
-case 2:
-menu_selector_3();
-break;
-
-case 3:
-menu_selector_0();
-break;
-
-}
-
-}
-
-
-
-void submenu_selector_0(void){
-
-lcd_write(9,1,">");
-submenu_selected = 0;
-lcd_write(9,2," ");
-
-}
-
-void submenu_selector_1(void){
-
-lcd_write(9,2,">");
-submenu_selected = 1;
-lcd_write(9,1," ");
-
-}
-
-void submenu_selector(void){
-
-switch(submenu_selected){
-
-case 0:
-submenu_selector_1();
-break;
-
-case 1:
-submenu_selector_0();
-break;
-}
-
-}
-
-
-
+# 148
 void activity_pin(void){
 
 activity = 1;

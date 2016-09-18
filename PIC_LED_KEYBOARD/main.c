@@ -29,6 +29,7 @@
 #include <unmc_inout_01.h>
 
 // Global Variables
+int cursor_horizontal_position;
 int state;
 int menu_selected;
 int submenu_selected;
@@ -74,7 +75,7 @@ void lcd_write(int column, int row, const char* string){
     
 }
 
-//Home callback
+//Home and home callback
 
 void activity_home(void){
     
@@ -195,6 +196,8 @@ void submenu_selector(void){
     
 }
 
+//Entrance to configuration: pin and menu activities
+
 void activity_pin(void){
     
     activity = 1;
@@ -218,6 +221,19 @@ void activity_menu(void){
     
 }
 
+//Submenu alarm activation
+
+void activity_submenu_activation(void){
+    
+    activity = 4;
+    lcd_init();
+    lcd_write(1,1,"Activar");
+    lcd_write(10,1,"Si");
+    lcd_write(10,2,"No");
+    submenu_selector_0();
+    
+}
+
 //Submenu date and time configuration
 
 void activity_submenu_date_and_time(void){
@@ -234,18 +250,14 @@ void activity_submenu_date_and_time(void){
 void activity_submenu_date_config_refresh(void){
     
     sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
-    lcd_write(1,2,buffer1); 
-    lcd_gotoxy(1, 2);
-    lcd_comand(0b00001111);    
+    lcd_write(1,2,buffer1);      
     
 }
 
 void activity_submenu_time_config_refresh(void){
     
     sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
-    lcd_write(1,2,buffer1); 
-    lcd_gotoxy(1, 2);
-    lcd_comand(0b00001111);   
+    lcd_write(1,2,buffer1);  
     
 }
 
@@ -253,8 +265,11 @@ void activity_submenu_date_config(void){
     
     activity = 10;
     lcd_init();
-    lcd_write(1,1,"Ingrese la fecha");   
-    
+    lcd_write(1,1,"Ingrese la fecha");       
+    sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
+    lcd_write(1,2,buffer1);
+    lcd_gotoxy(1, 2);
+    lcd_comand(0b00001111);
     
 }
 
@@ -262,20 +277,49 @@ void activity_submenu_time_config(void){
     
     activity = 11;
     lcd_init();
-    lcd_write(1,1,"Ingrese la hora");  
+    lcd_write(1,1,"Ingrese la hora"); 
+    sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
+    lcd_write(1,2,buffer1); 
+    lcd_gotoxy(1, 2);
+    lcd_comand(0b00001111);
     
 }
 
-//Submenu alarm activation
+//Date and time set
 
-void activity_submenu_activation(void){
+void cursor_displacement(void){
     
-    activity = 4;
-    lcd_init();
-    lcd_write(1,1,"Activar");
-    lcd_write(10,1,"Si");
-    lcd_write(10,2,"No");
-    submenu_selector_0();
+    if(cursor_horizontal_position == 8){
+        cursor_horizontal_position = 0;
+    }
+    else if (cursor_horizontal_position == 2 || cursor_horizontal_position == 5){
+        cursor_horizontal_position++;
+    }
+    
+    cursor_horizontal_position++;
+    
+}
+
+void date_set(void){  
+    
+    sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
+    lcd_write(1,2,buffer1);    
+    lcd_gotoxy(cursor_horizontal_position, 2);
+    
+    switch(cursor_horizontal_position){
+        
+        case 1:            
+            dia+=10;
+            break;
+            
+        case 2:            
+            dia++;
+            break;
+            
+    }
+    
+    Write_RTC();
+    __delay_ms(98);
     
 }
 
@@ -363,7 +407,7 @@ void pin_reset(void){
     
 }
 
-// Home information
+// Home information refresh
 
 void home_clock_refresh(void){
     
@@ -464,6 +508,14 @@ void button_A(void){
             
         case 2:
             menu_selector();
+            break;
+            
+        case 10:
+            cursor_displacement();
+            break;
+            
+        case 11:
+            cursor_displacement();
             break;
             
         default: 
@@ -633,12 +685,17 @@ void button_B(void){
         case 9:
             button_B_submenu_siren_tone();
             break;
+            
+        case 10:
+            date_set();
+            break;
     }
     
 }
 
 void button_C(void){
     
+    cursor_horizontal_position == 0;
     reset_home_callback();
     
     if(activity != 0 && activity != 1){
@@ -649,6 +706,7 @@ void button_C(void){
 
 void button_D(void){
     
+    cursor_horizontal_position == 0;
     reset_home_callback();    
     activity_home();
     
@@ -667,10 +725,12 @@ void button_hash(void){
     
     if(activity == 1){
         pin_input_validator();
-    }
-    
-    if(activity == 6){
+    }    
+    else if(activity == 6){
         pin_set();
+    }
+    else if(activity == 10 || activity == 11){        
+        activity_home();
     }
     
 }
@@ -683,7 +743,7 @@ void button_number(void){
         lcd_putrs("*");        
         sprintf(buffer1, "%01u", key);
         strcat(pin_input, buffer1);        
-    } 
+    }      
     else {        
         sprintf(buffer1,"%01u",key);
         // Nothing printed on display
@@ -765,6 +825,7 @@ void setup(void){
     config_widget = 0;
     menu_selected = 0;
     submenu_selected = 0;
+    cursor_horizontal_position = 1;
     alarm_volume = 0;
     alarm_tone = 0;
     pin_reset();
@@ -785,13 +846,7 @@ int main(void){
         if(activity == 0){
             home_clock_refresh();
             home_config_refresh();
-        }
-        else if(activity == 10){
-            activity_submenu_date_config_refresh();
-        }
-        else if(activity == 11){
-            activity_submenu_time_config_refresh();
-        }
+        }       
         
     }
     

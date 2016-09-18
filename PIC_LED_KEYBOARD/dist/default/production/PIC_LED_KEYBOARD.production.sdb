@@ -142,105 +142,105 @@ RTCCPTR_MASK_YEAR 3
 [v _RtccWriteTime RtccWriteTime `(E7481  1 e 1 0 ]
 "21 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWrOn.c
 [v _RtccWrOn RtccWrOn `(v  1 e 0 0 ]
-"70 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+"71 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 [v _lcd_write lcd_write `(v  1 e 0 0 ]
-"79
+"80
 [v _activity_home activity_home `(v  1 e 0 0 ]
-"87
+"88
 [v _reset_home_callback reset_home_callback `(v  1 e 0 0 ]
-"93
+"94
 [v _check_home_callback check_home_callback `(v  1 e 0 0 ]
-"109
+"110
 [v _menu_selector_0 menu_selector_0 `(v  1 e 0 0 ]
-"117
+"118
 [v _menu_selector_1 menu_selector_1 `(v  1 e 0 0 ]
-"125
+"126
 [v _menu_selector_2 menu_selector_2 `(v  1 e 0 0 ]
-"133
+"134
 [v _menu_selector_3 menu_selector_3 `(v  1 e 0 0 ]
-"141
+"142
 [v _menu_selector menu_selector `(v  1 e 0 0 ]
-"167
+"168
 [v _submenu_selector_0 submenu_selector_0 `(v  1 e 0 0 ]
-"175
+"176
 [v _submenu_selector_1 submenu_selector_1 `(v  1 e 0 0 ]
-"183
+"184
 [v _submenu_selector submenu_selector `(v  1 e 0 0 ]
-"198
+"201
 [v _activity_pin activity_pin `(v  1 e 0 0 ]
-"209
+"212
 [v _activity_menu activity_menu `(v  1 e 0 0 ]
-"223
-[v _activity_submenu_date_and_time activity_submenu_date_and_time `(v  1 e 0 0 ]
-"234
-[v _activity_submenu_date_config_refresh activity_submenu_date_config_refresh `(v  1 e 0 0 ]
-"243
-[v _activity_submenu_time_config_refresh activity_submenu_time_config_refresh `(v  1 e 0 0 ]
-"252
-[v _activity_submenu_date_config activity_submenu_date_config `(v  1 e 0 0 ]
-"261
-[v _activity_submenu_time_config activity_submenu_time_config `(v  1 e 0 0 ]
-"271
+"226
 [v _activity_submenu_activation activity_submenu_activation `(v  1 e 0 0 ]
-"284
+"239
+[v _activity_submenu_date_and_time activity_submenu_date_and_time `(v  1 e 0 0 ]
+"264
+[v _activity_submenu_date_config activity_submenu_date_config `(v  1 e 0 0 ]
+"276
+[v _activity_submenu_time_config activity_submenu_time_config `(v  1 e 0 0 ]
+"290
+[v _cursor_displacement cursor_displacement `(v  1 e 0 0 ]
+"303
+[v _date_set date_set `(v  1 e 0 0 ]
+"328
 [v _activity_submenu_siren activity_submenu_siren `(v  1 e 0 0 ]
-"295
+"339
 [v _activity_submenu_siren_volume activity_submenu_siren_volume `(v  1 e 0 0 ]
-"306
+"350
 [v _activity_submenu_siren_tone activity_submenu_siren_tone `(v  1 e 0 0 ]
-"319
+"363
 [v _activity_submenu_pin activity_submenu_pin `(v  1 e 0 0 ]
-"329
+"373
 [v _activity_submenu_pin_set activity_submenu_pin_set `(v  1 e 0 0 ]
-"342
+"386
 [v _pin_set pin_set `(v  1 e 0 0 ]
-"349
+"393
 [v _pin_input_validator pin_input_validator `(v  1 e 0 0 ]
-"360
+"404
 [v _pin_reset pin_reset `(v  1 e 0 0 ]
-"368
+"412
 [v _home_clock_refresh home_clock_refresh `(v  1 e 0 0 ]
-"377
+"421
 [v _home_state_refresh home_state_refresh `(v  1 e 0 0 ]
-"389
+"433
 [v _home_volume_refresh home_volume_refresh `(v  1 e 0 0 ]
-"401
+"445
 [v _home_tone_refresh home_tone_refresh `(v  1 e 0 0 ]
-"413
+"457
 [v _home_config_refresh home_config_refresh `(v  1 e 0 0 ]
-"452
+"496
 [v _button_A button_A `(v  1 e 0 0 ]
-"476
+"528
 [v _button_B_menu button_B_menu `(v  1 e 0 0 ]
-"500
+"552
 [v _button_B_submenu_activation button_B_submenu_activation `(v  1 e 0 0 ]
-"518
+"570
 [v _button_B_submenu_pin_config button_B_submenu_pin_config `(v  1 e 0 0 ]
-"535
-[v _button_B_submenu_siren_config button_B_submenu_siren_config `(v  1 e 0 0 ]
-"551
-[v _button_B_submenu_siren_volume button_B_submenu_siren_volume `(v  1 e 0 0 ]
-"569
-[v _button_B_submenu_siren_tone button_B_submenu_siren_tone `(v  1 e 0 0 ]
 "587
-[v _button_B_submenu_date_and_time_config button_B_submenu_date_and_time_config `(v  1 e 0 0 ]
+[v _button_B_submenu_siren_config button_B_submenu_siren_config `(v  1 e 0 0 ]
 "603
+[v _button_B_submenu_siren_volume button_B_submenu_siren_volume `(v  1 e 0 0 ]
+"621
+[v _button_B_submenu_siren_tone button_B_submenu_siren_tone `(v  1 e 0 0 ]
+"639
+[v _button_B_submenu_date_and_time_config button_B_submenu_date_and_time_config `(v  1 e 0 0 ]
+"655
 [v _button_B button_B `(v  1 e 0 0 ]
-"640
-[v _button_C button_C `(v  1 e 0 0 ]
-"650
-[v _button_D button_D `(v  1 e 0 0 ]
-"657
-[v _button_asterisk button_asterisk `(v  1 e 0 0 ]
-"664
-[v _button_hash button_hash `(v  1 e 0 0 ]
-"678
-[v _button_number button_number `(v  1 e 0 0 ]
 "696
+[v _button_C button_C `(v  1 e 0 0 ]
+"707
+[v _button_D button_D `(v  1 e 0 0 ]
+"715
+[v _button_asterisk button_asterisk `(v  1 e 0 0 ]
+"722
+[v _button_hash button_hash `(v  1 e 0 0 ]
+"738
+[v _button_number button_number `(v  1 e 0 0 ]
+"756
 [v _keyboard_control keyboard_control `(v  1 e 0 0 ]
-"734
+"794
 [v _setup setup `(v  1 e 0 0 ]
-"774
+"835
 [v _main main `(i  1 e 2 0 ]
 "74 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/headers\unmc_rtcc_01.h
 [v _Write_RTC Write_RTC `(v  1 e 0 0 ]
@@ -278,7 +278,7 @@ RTCCPTR_MASK_YEAR 3
 [v _ANCON0 ANCON0 `VEuc  1 e 1 @3912 ]
 "2577
 [v _ANCON1 ANCON1 `VEuc  1 e 1 @3913 ]
-[s S377 . 1 `uc 1 RA0 1 0 :1:0 
+[s S383 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -288,7 +288,7 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 RA7 1 0 :1:7 
 ]
 "5344
-[s S386 . 1 `uc 1 AN0 1 0 :1:0 
+[s S392 . 1 `uc 1 AN0 1 0 :1:0 
 `uc 1 AN1 1 0 :1:1 
 `uc 1 AN2 1 0 :1:2 
 `uc 1 AN3 1 0 :1:3 
@@ -297,10 +297,10 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 OSC2 1 0 :1:6 
 `uc 1 OSC1 1 0 :1:7 
 ]
-[s S395 . 1 `uc 1 . 1 0 :5:0 
+[s S401 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_SS1 1 0 :1:5 
 ]
-[s S398 . 1 `uc 1 C1INA 1 0 :1:0 
+[s S404 . 1 `uc 1 C1INA 1 0 :1:0 
 `uc 1 C2INA 1 0 :1:1 
 `uc 1 VREF_MINUS 1 0 :1:2 
 `uc 1 VREF_PLUS 1 0 :1:3 
@@ -309,36 +309,36 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 CLKO 1 0 :1:6 
 `uc 1 CLKI 1 0 :1:7 
 ]
-[s S407 . 1 `uc 1 . 1 0 :2:0 
+[s S413 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 CVREF_MINUS 1 0 :1:2 
 `uc 1 C1INB 1 0 :1:3 
 `uc 1 . 1 0 :1:4 
 `uc 1 HLVDIN 1 0 :1:5 
 ]
-[s S413 . 1 `uc 1 RP0 1 0 :1:0 
+[s S419 . 1 `uc 1 RP0 1 0 :1:0 
 `uc 1 RP1 1 0 :1:1 
 `uc 1 C2INB 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 RCV 1 0 :1:5 
 ]
-[s S419 . 1 `uc 1 ULPWU 1 0 :1:0 
+[s S425 . 1 `uc 1 ULPWU 1 0 :1:0 
 `uc 1 . 1 0 :4:1 
 `uc 1 RP2 1 0 :1:5 
 ]
-[s S423 . 1 `uc 1 . 1 0 :5:0 
+[s S429 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LVDIN 1 0 :1:5 
 ]
-[s S426 . 1 `uc 1 . 1 0 :4:0 
+[s S432 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 RA4 1 0 :1:4 
 ]
-[s S429 . 1 `uc 1 . 1 0 :7:0 
+[s S435 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 RJPU 1 0 :1:7 
 ]
-[s S432 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+[s S438 . 1 `uc 1 ULPWUIN 1 0 :1:0 
 ]
-[u S434 . 1 `S377 1 . 1 0 `S386 1 . 1 0 `S395 1 . 1 0 `S398 1 . 1 0 `S407 1 . 1 0 `S413 1 . 1 0 `S419 1 . 1 0 `S423 1 . 1 0 `S426 1 . 1 0 `S429 1 . 1 0 `S432 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES434  1 e 1 @3968 ]
-[s S504 . 1 `uc 1 RC0 1 0 :1:0 
+[u S440 . 1 `S383 1 . 1 0 `S392 1 . 1 0 `S401 1 . 1 0 `S404 1 . 1 0 `S413 1 . 1 0 `S419 1 . 1 0 `S425 1 . 1 0 `S429 1 . 1 0 `S432 1 . 1 0 `S435 1 . 1 0 `S438 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES440  1 e 1 @3968 ]
+[s S510 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -348,17 +348,17 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 RC7 1 0 :1:7 
 ]
 "5857
-[s S513 . 1 `uc 1 T1OSO 1 0 :1:0 
+[s S519 . 1 `uc 1 T1OSO 1 0 :1:0 
 `uc 1 T1OSI 1 0 :1:1 
 `uc 1 AN11 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 D_MINUS 1 0 :1:4 
 `uc 1 D_PLUS 1 0 :1:5 
 ]
-[s S520 . 1 `uc 1 . 1 0 :1:0 
+[s S526 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_UOE 1 0 :1:1 
 ]
-[s S523 . 1 `uc 1 T1CK 1 0 :1:0 
+[s S529 . 1 `uc 1 T1CK 1 0 :1:0 
 `uc 1 nUOE 1 0 :1:1 
 `uc 1 CTPLS 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -367,35 +367,35 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 TX1 1 0 :1:6 
 `uc 1 RX1 1 0 :1:7 
 ]
-[s S532 . 1 `uc 1 RP11 1 0 :1:0 
+[s S538 . 1 `uc 1 RP11 1 0 :1:0 
 `uc 1 RP12 1 0 :1:1 
 `uc 1 RP13 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 CK1 1 0 :1:6 
 `uc 1 DT1 1 0 :1:7 
 ]
-[s S539 . 1 `uc 1 . 1 0 :6:0 
+[s S545 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RP17 1 0 :1:6 
 `uc 1 SDO1 1 0 :1:7 
 ]
-[s S543 . 1 `uc 1 . 1 0 :7:0 
+[s S549 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 RP18 1 0 :1:7 
 ]
-[s S546 . 1 `uc 1 . 1 0 :1:0 
+[s S552 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 CCP2 1 0 :1:1 
 ]
-[s S549 . 1 `uc 1 . 1 0 :2:0 
+[s S555 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 PA1 1 0 :1:2 
 ]
-[s S552 . 1 `uc 1 . 1 0 :1:0 
+[s S558 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 PA2 1 0 :1:1 
 ]
-[s S555 . 1 `uc 1 . 1 0 :3:0 
+[s S561 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 RC3 1 0 :1:3 
 ]
-[u S558 . 1 `S504 1 . 1 0 `S513 1 . 1 0 `S520 1 . 1 0 `S523 1 . 1 0 `S532 1 . 1 0 `S539 1 . 1 0 `S543 1 . 1 0 `S546 1 . 1 0 `S549 1 . 1 0 `S552 1 . 1 0 `S555 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES558  1 e 1 @3970 ]
-[s S302 . 1 `uc 1 LATA0 1 0 :1:0 
+[u S564 . 1 `S510 1 . 1 0 `S519 1 . 1 0 `S526 1 . 1 0 `S529 1 . 1 0 `S538 1 . 1 0 `S545 1 . 1 0 `S549 1 . 1 0 `S552 1 . 1 0 `S555 1 . 1 0 `S558 1 . 1 0 `S561 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES564  1 e 1 @3970 ]
+[s S308 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -405,32 +405,32 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 LATA7 1 0 :1:7 
 ]
 "6274
-[s S311 . 1 `uc 1 LA0 1 0 :1:0 
+[s S317 . 1 `uc 1 LA0 1 0 :1:0 
 ]
-[s S313 . 1 `uc 1 . 1 0 :1:0 
+[s S319 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LA1 1 0 :1:1 
 ]
-[s S316 . 1 `uc 1 . 1 0 :2:0 
+[s S322 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LA2 1 0 :1:2 
 ]
-[s S319 . 1 `uc 1 . 1 0 :3:0 
+[s S325 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LA3 1 0 :1:3 
 ]
-[s S322 . 1 `uc 1 . 1 0 :4:0 
+[s S328 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LA4 1 0 :1:4 
 ]
-[s S325 . 1 `uc 1 . 1 0 :5:0 
+[s S331 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LA5 1 0 :1:5 
 ]
-[s S328 . 1 `uc 1 . 1 0 :6:0 
+[s S334 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LA6 1 0 :1:6 
 ]
-[s S331 . 1 `uc 1 . 1 0 :7:0 
+[s S337 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LA7 1 0 :1:7 
 ]
-[u S334 . 1 `S302 1 . 1 0 `S311 1 . 1 0 `S313 1 . 1 0 `S316 1 . 1 0 `S319 1 . 1 0 `S322 1 . 1 0 `S325 1 . 1 0 `S328 1 . 1 0 `S331 1 . 1 0 ]
-[v _LATAbits LATAbits `VES334  1 e 1 @3977 ]
-[s S221 . 1 `uc 1 LATB0 1 0 :1:0 
+[u S340 . 1 `S308 1 . 1 0 `S317 1 . 1 0 `S319 1 . 1 0 `S322 1 . 1 0 `S325 1 . 1 0 `S328 1 . 1 0 `S331 1 . 1 0 `S334 1 . 1 0 `S337 1 . 1 0 ]
+[v _LATAbits LATAbits `VES340  1 e 1 @3977 ]
+[s S227 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -440,51 +440,51 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 LATB7 1 0 :1:7 
 ]
 "6401
-[s S230 . 1 `uc 1 LB0 1 0 :1:0 
+[s S236 . 1 `uc 1 LB0 1 0 :1:0 
 ]
-[s S232 . 1 `uc 1 . 1 0 :1:0 
+[s S238 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LB1 1 0 :1:1 
 ]
-[s S235 . 1 `uc 1 . 1 0 :2:0 
+[s S241 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LB2 1 0 :1:2 
 ]
-[s S238 . 1 `uc 1 . 1 0 :3:0 
+[s S244 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LB3 1 0 :1:3 
 ]
-[s S241 . 1 `uc 1 . 1 0 :4:0 
+[s S247 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LB4 1 0 :1:4 
 ]
-[s S244 . 1 `uc 1 . 1 0 :5:0 
+[s S250 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LB5 1 0 :1:5 
 ]
-[s S247 . 1 `uc 1 . 1 0 :6:0 
+[s S253 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LB6 1 0 :1:6 
 ]
-[s S250 . 1 `uc 1 . 1 0 :7:0 
+[s S256 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LB7 1 0 :1:7 
 ]
-[u S253 . 1 `S221 1 . 1 0 `S230 1 . 1 0 `S232 1 . 1 0 `S235 1 . 1 0 `S238 1 . 1 0 `S241 1 . 1 0 `S244 1 . 1 0 `S247 1 . 1 0 `S250 1 . 1 0 ]
-[v _LATBbits LATBbits `VES253  1 e 1 @3978 ]
-[s S1607 . 1 `uc 1 ALRMPTR 1 0 :2:0 
+[u S259 . 1 `S227 1 . 1 0 `S236 1 . 1 0 `S238 1 . 1 0 `S241 1 . 1 0 `S244 1 . 1 0 `S247 1 . 1 0 `S250 1 . 1 0 `S253 1 . 1 0 `S256 1 . 1 0 ]
+[v _LATBbits LATBbits `VES259  1 e 1 @3978 ]
+[s S1613 . 1 `uc 1 ALRMPTR 1 0 :2:0 
 `uc 1 AMASK 1 0 :4:2 
 `uc 1 CHIME 1 0 :1:6 
 `uc 1 ALRMEN 1 0 :1:7 
 ]
 "6740
-[s S1612 . 1 `uc 1 ALRMPTR0 1 0 :1:0 
+[s S1618 . 1 `uc 1 ALRMPTR0 1 0 :1:0 
 `uc 1 ALRMPTR1 1 0 :1:1 
 `uc 1 AMASK0 1 0 :1:2 
 `uc 1 AMASK1 1 0 :1:3 
 `uc 1 AMASK2 1 0 :1:4 
 `uc 1 AMASK3 1 0 :1:5 
 ]
-[u S1619 . 1 `S1607 1 . 1 0 `S1612 1 . 1 0 ]
-[v _ALRMCFGbits ALRMCFGbits `VES1619  1 e 1 @3985 ]
+[u S1625 . 1 `S1613 1 . 1 0 `S1618 1 . 1 0 ]
+[v _ALRMCFGbits ALRMCFGbits `VES1625  1 e 1 @3985 ]
 "6794
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "6850
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-[s S1150 . 1 `uc 1 TRISB0 1 0 :1:0 
+[s S1156 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
 `uc 1 TRISB3 1 0 :1:3 
@@ -494,8 +494,8 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 TRISB7 1 0 :1:7 
 ]
 "6867
-[u S1159 . 1 `S1150 1 . 1 0 ]
-[v _TRISBbits TRISBbits `VES1159  1 e 1 @3987 ]
+[u S1165 . 1 `S1156 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES1165  1 e 1 @3987 ]
 "6911
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
 "7055
@@ -601,7 +601,7 @@ RTCCPTR_MASK_YEAR 3
 ]
 [u S670 . 1 `S657 1 . 1 0 `S663 1 . 1 0 ]
 [v _OSCCONbits OSCCONbits `VES670  1 e 1 @4051 ]
-[s S1414 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S1420 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -611,7 +611,7 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "14949
-[s S1423 . 1 `uc 1 . 1 0 :1:0 
+[s S1429 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -620,37 +620,39 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S1432 . 1 `uc 1 . 1 0 :6:0 
+[s S1438 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S1449 . 1 `S1414 1 . 1 0 `S1423 1 . 1 0 `S1432 1 . 1 0 `S1423 1 . 1 0 `S1432 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES1449  1 e 1 @4082 ]
+[u S1455 . 1 `S1420 1 . 1 0 `S1429 1 . 1 0 `S1438 1 . 1 0 `S1429 1 . 1 0 `S1438 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES1455  1 e 1 @4082 ]
 "354 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
 [v _dpowers dpowers `C[5]ui  1 s 10 dpowers ]
 "32 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-[v _state state `i  1 e 2 0 ]
+[v _cursor_horizontal_position cursor_horizontal_position `i  1 e 2 0 ]
 "33
-[v _menu_selected menu_selected `i  1 e 2 0 ]
+[v _state state `i  1 e 2 0 ]
 "34
-[v _submenu_selected submenu_selected `i  1 e 2 0 ]
+[v _menu_selected menu_selected `i  1 e 2 0 ]
 "35
-[v _home_callback home_callback `i  1 e 2 0 ]
+[v _submenu_selected submenu_selected `i  1 e 2 0 ]
 "36
-[v _home_callback_delay home_callback_delay `i  1 e 2 0 ]
+[v _home_callback home_callback `i  1 e 2 0 ]
 "37
-[v _config_widget config_widget `i  1 e 2 0 ]
+[v _home_callback_delay home_callback_delay `i  1 e 2 0 ]
 "38
-[v _config_widget_time config_widget_time `i  1 e 2 0 ]
+[v _config_widget config_widget `i  1 e 2 0 ]
 "39
-[v _pin pin `[5]uc  1 e 5 0 ]
+[v _config_widget_time config_widget_time `i  1 e 2 0 ]
 "40
+[v _pin pin `[5]uc  1 e 5 0 ]
+"41
 [v _pin_input pin_input `[5]uc  1 e 5 0 ]
-"56
+"57
 [v _activity activity `i  1 e 2 0 ]
-"62
+"63
 [v _alarm_volume alarm_volume `i  1 e 2 0 ]
-"68
+"69
 [v _alarm_tone alarm_tone `i  1 e 2 0 ]
 "14 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/headers\unmc_inout_02.h
 [v _key key `uc  1 e 1 0 ]
@@ -706,15 +708,90 @@ RTCCPTR_MASK_YEAR 3
 [v _buffer1 buffer1 `[20]uc  1 e 20 0 ]
 "16 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 [v _LCD_INIT_STRING LCD_INIT_STRING `C[4]uc  1 e 4 0 ]
-"774 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+"835 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"800
+"855
 } 0
-"734
+"794
 [v _setup setup `(v  1 e 0 0 ]
 {
-"772
+"833
+} 0
+"756
+[v _keyboard_control keyboard_control `(v  1 e 0 0 ]
+{
+"792
+} 0
+"738
+[v _button_number button_number `(v  1 e 0 0 ]
+{
+"752
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcat.c
+[v _strcat strcat `(*.39uc  1 e 2 0 ]
+{
+"15
+[v strcat@cp cp `*.39uc  1 a 2 4 ]
+"8
+[v strcat@to to `*.39uc  1 p 2 0 ]
+[v strcat@from from `*.39Cuc  1 p 2 2 ]
+"26
+} 0
+"722 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+[v _button_hash button_hash `(v  1 e 0 0 ]
+{
+"736
+} 0
+"386
+[v _pin_set pin_set `(v  1 e 0 0 ]
+{
+"391
+} 0
+"393
+[v _pin_input_validator pin_input_validator `(v  1 e 0 0 ]
+{
+"402
+} 0
+"33 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+{
+"35
+[v strcmp@r r `c  1 a 1 5 ]
+"33
+[v strcmp@s1 s1 `*.39Cuc  1 p 2 0 ]
+[v strcmp@s2 s2 `*.39Cuc  1 p 2 2 ]
+"42
+} 0
+"715 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+[v _button_asterisk button_asterisk `(v  1 e 0 0 ]
+{
+"720
+} 0
+"707
+[v _button_D button_D `(v  1 e 0 0 ]
+{
+"713
+} 0
+"696
+[v _button_C button_C `(v  1 e 0 0 ]
+{
+"705
+} 0
+"212
+[v _activity_menu activity_menu `(v  1 e 0 0 ]
+{
+"222
+} 0
+"655
+[v _button_B button_B `(v  1 e 0 0 ]
+{
+"694
+} 0
+"303
+[v _date_set date_set `(v  1 e 0 0 ]
+{
+"324
 } 0
 "74 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/headers\unmc_rtcc_01.h
 [v _Write_RTC Write_RTC `(v  1 e 0 0 ]
@@ -737,9 +814,9 @@ RTCCPTR_MASK_YEAR 3
 "34 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteTime.c
 [v _RtccWriteTime RtccWriteTime `(E7481  1 e 1 0 ]
 {
-[s S1527 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S1533 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
 "36
-[s S1530 . 2 `uc 1 b0 1 0 :1:0 
+[s S1536 . 2 `uc 1 b0 1 0 :1:0 
 `uc 1 b1 1 0 :1:1 
 `uc 1 b2 1 0 :1:2 
 `uc 1 b3 1 0 :1:3 
@@ -756,10 +833,10 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 b14 1 1 :1:6 
 `uc 1 b15 1 1 :1:7 
 ]
-[u S1547 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1527 1 byte 2 0 `S1530 1 bits 2 0 ]
-[v RtccWriteTime@tempHourWDay tempHourWDay `S1547  1 a 2 9 ]
+[u S1553 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1533 1 byte 2 0 `S1536 1 bits 2 0 ]
+[v RtccWriteTime@tempHourWDay tempHourWDay `S1553  1 a 2 9 ]
 "37
-[v RtccWriteTime@tempMinSec tempMinSec `S1547  1 a 2 7 ]
+[v RtccWriteTime@tempMinSec tempMinSec `S1553  1 a 2 7 ]
 "40
 [v RtccWriteTime@wasWrEn wasWrEn `E7121  1 a 1 6 ]
 "42
@@ -776,9 +853,9 @@ RTCCPTR_MASK_YEAR 3
 "35 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\plib\rtcc\RtccWriteDate.c
 [v _RtccWriteDate RtccWriteDate `(E7481  1 e 1 0 ]
 {
-[s S1527 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[s S1533 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
 "37
-[s S1530 . 2 `uc 1 b0 1 0 :1:0 
+[s S1536 . 2 `uc 1 b0 1 0 :1:0 
 `uc 1 b1 1 0 :1:1 
 `uc 1 b2 1 0 :1:2 
 `uc 1 b3 1 0 :1:3 
@@ -795,12 +872,12 @@ RTCCPTR_MASK_YEAR 3
 `uc 1 b14 1 1 :1:6 
 `uc 1 b15 1 1 :1:7 
 ]
-[u S1547 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1527 1 byte 2 0 `S1530 1 bits 2 0 ]
-[v RtccWriteDate@tempHourWDay tempHourWDay `S1547  1 a 2 11 ]
+[u S1553 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1533 1 byte 2 0 `S1536 1 bits 2 0 ]
+[v RtccWriteDate@tempHourWDay tempHourWDay `S1553  1 a 2 11 ]
 "38
-[v RtccWriteDate@tempDayMonth tempDayMonth `S1547  1 a 2 9 ]
+[v RtccWriteDate@tempDayMonth tempDayMonth `S1553  1 a 2 9 ]
 "39
-[v RtccWriteDate@tempYear tempYear `S1547  1 a 2 6 ]
+[v RtccWriteDate@tempYear tempYear `S1553  1 a 2 6 ]
 "41
 [v RtccWriteDate@wasWrEn wasWrEn `E7121  1 a 1 8 ]
 "43
@@ -819,210 +896,145 @@ RTCCPTR_MASK_YEAR 3
 {
 "46
 } 0
-"696 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-[v _keyboard_control keyboard_control `(v  1 e 0 0 ]
-{
-"732
-} 0
-"678
-[v _button_number button_number `(v  1 e 0 0 ]
-{
-"692
-} 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcat.c
-[v _strcat strcat `(*.39uc  1 e 2 0 ]
-{
-"15
-[v strcat@cp cp `*.39uc  1 a 2 4 ]
-"8
-[v strcat@to to `*.39uc  1 p 2 0 ]
-[v strcat@from from `*.39Cuc  1 p 2 2 ]
-"26
-} 0
-"664 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-[v _button_hash button_hash `(v  1 e 0 0 ]
-{
-"676
-} 0
-"342
-[v _pin_set pin_set `(v  1 e 0 0 ]
-{
-"347
-} 0
-"349
-[v _pin_input_validator pin_input_validator `(v  1 e 0 0 ]
-{
-"358
-} 0
-"33 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcmp.c
-[v _strcmp strcmp `(i  1 e 2 0 ]
-{
-"35
-[v strcmp@r r `c  1 a 1 5 ]
-"33
-[v strcmp@s1 s1 `*.39Cuc  1 p 2 0 ]
-[v strcmp@s2 s2 `*.39Cuc  1 p 2 2 ]
-"42
-} 0
-"657 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-[v _button_asterisk button_asterisk `(v  1 e 0 0 ]
-{
-"662
-} 0
-"650
-[v _button_D button_D `(v  1 e 0 0 ]
-{
-"655
-} 0
-"640
-[v _button_C button_C `(v  1 e 0 0 ]
-{
-"648
-} 0
-"209
-[v _activity_menu activity_menu `(v  1 e 0 0 ]
-{
-"219
-} 0
-"603
-[v _button_B button_B `(v  1 e 0 0 ]
-{
-"638
-} 0
-"551
+"603 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 [v _button_B_submenu_siren_volume button_B_submenu_siren_volume `(v  1 e 0 0 ]
 {
-"567
+"619
 } 0
-"569
+"621
 [v _button_B_submenu_siren_tone button_B_submenu_siren_tone `(v  1 e 0 0 ]
 {
-"585
-} 0
-"535
-[v _button_B_submenu_siren_config button_B_submenu_siren_config `(v  1 e 0 0 ]
-{
-"549
-} 0
-"295
-[v _activity_submenu_siren_volume activity_submenu_siren_volume `(v  1 e 0 0 ]
-{
-"304
-} 0
-"306
-[v _activity_submenu_siren_tone activity_submenu_siren_tone `(v  1 e 0 0 ]
-{
-"315
-} 0
-"518
-[v _button_B_submenu_pin_config button_B_submenu_pin_config `(v  1 e 0 0 ]
-{
-"533
-} 0
-"360
-[v _pin_reset pin_reset `(v  1 e 0 0 ]
-{
-"364
-} 0
-"329
-[v _activity_submenu_pin_set activity_submenu_pin_set `(v  1 e 0 0 ]
-{
-"338
+"637
 } 0
 "587
-[v _button_B_submenu_date_and_time_config button_B_submenu_date_and_time_config `(v  1 e 0 0 ]
+[v _button_B_submenu_siren_config button_B_submenu_siren_config `(v  1 e 0 0 ]
 {
 "601
 } 0
-"261
+"339
+[v _activity_submenu_siren_volume activity_submenu_siren_volume `(v  1 e 0 0 ]
+{
+"348
+} 0
+"350
+[v _activity_submenu_siren_tone activity_submenu_siren_tone `(v  1 e 0 0 ]
+{
+"359
+} 0
+"570
+[v _button_B_submenu_pin_config button_B_submenu_pin_config `(v  1 e 0 0 ]
+{
+"585
+} 0
+"404
+[v _pin_reset pin_reset `(v  1 e 0 0 ]
+{
+"408
+} 0
+"373
+[v _activity_submenu_pin_set activity_submenu_pin_set `(v  1 e 0 0 ]
+{
+"382
+} 0
+"639
+[v _button_B_submenu_date_and_time_config button_B_submenu_date_and_time_config `(v  1 e 0 0 ]
+{
+"653
+} 0
+"276
 [v _activity_submenu_time_config activity_submenu_time_config `(v  1 e 0 0 ]
 {
-"267
+"286
 } 0
-"252
+"264
 [v _activity_submenu_date_config activity_submenu_date_config `(v  1 e 0 0 ]
 {
-"259
+"274
 } 0
-"500
+"552
 [v _button_B_submenu_activation button_B_submenu_activation `(v  1 e 0 0 ]
 {
-"516
+"568
 } 0
-"476
+"528
 [v _button_B_menu button_B_menu `(v  1 e 0 0 ]
 {
-"498
+"550
 } 0
-"284
+"328
 [v _activity_submenu_siren activity_submenu_siren `(v  1 e 0 0 ]
 {
-"293
+"337
 } 0
-"319
+"363
 [v _activity_submenu_pin activity_submenu_pin `(v  1 e 0 0 ]
 {
-"327
+"371
 } 0
-"223
+"239
 [v _activity_submenu_date_and_time activity_submenu_date_and_time `(v  1 e 0 0 ]
 {
-"232
+"248
 } 0
-"271
+"226
 [v _activity_submenu_activation activity_submenu_activation `(v  1 e 0 0 ]
 {
-"280
+"235
 } 0
-"452
+"496
 [v _button_A button_A `(v  1 e 0 0 ]
 {
-"474
+"526
 } 0
-"183
+"184
 [v _submenu_selector submenu_selector `(v  1 e 0 0 ]
 {
-"196
+"197
 } 0
-"175
+"176
 [v _submenu_selector_1 submenu_selector_1 `(v  1 e 0 0 ]
 {
-"181
+"182
 } 0
-"167
+"168
 [v _submenu_selector_0 submenu_selector_0 `(v  1 e 0 0 ]
 {
-"173
+"174
 } 0
-"141
+"142
 [v _menu_selector menu_selector `(v  1 e 0 0 ]
 {
-"163
+"164
 } 0
-"133
+"134
 [v _menu_selector_3 menu_selector_3 `(v  1 e 0 0 ]
 {
-"139
+"140
 } 0
-"125
+"126
 [v _menu_selector_2 menu_selector_2 `(v  1 e 0 0 ]
 {
-"131
+"132
 } 0
-"117
+"118
 [v _menu_selector_1 menu_selector_1 `(v  1 e 0 0 ]
 {
-"123
+"124
 } 0
-"109
+"110
 [v _menu_selector_0 menu_selector_0 `(v  1 e 0 0 ]
 {
-"115
+"116
 } 0
-"198
+"290
+[v _cursor_displacement cursor_displacement `(v  1 e 0 0 ]
+{
+"301
+} 0
+"201
 [v _activity_pin activity_pin `(v  1 e 0 0 ]
 {
-"207
+"210
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\strcpy.c
 [v _strcpy strcpy `(*.39uc  1 e 2 0 ]
@@ -1034,70 +1046,38 @@ RTCCPTR_MASK_YEAR 3
 [v strcpy@from from `*.35Cuc  1 p 2 2 ]
 "24
 } 0
-"413 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+"189 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
+[v _lcd_comand lcd_comand `(v  1 e 0 0 ]
+{
+[v lcd_comand@d d `uc  1 a 1 wreg ]
+[v lcd_comand@d d `uc  1 a 1 wreg ]
+[v lcd_comand@d d `uc  1 a 1 4 ]
+"191
+} 0
+"457 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 [v _home_config_refresh home_config_refresh `(v  1 e 0 0 ]
 {
-"448
+"492
 } 0
-"389
+"433
 [v _home_volume_refresh home_volume_refresh `(v  1 e 0 0 ]
 {
-"399
+"443
 } 0
-"401
+"445
 [v _home_tone_refresh home_tone_refresh `(v  1 e 0 0 ]
 {
-"411
+"455
 } 0
-"377
+"421
 [v _home_state_refresh home_state_refresh `(v  1 e 0 0 ]
 {
-"387
+"431
 } 0
-"368
+"412
 [v _home_clock_refresh home_clock_refresh `(v  1 e 0 0 ]
 {
-"375
-} 0
-"93
-[v _check_home_callback check_home_callback `(v  1 e 0 0 ]
-{
-"105
-} 0
-"87
-[v _reset_home_callback reset_home_callback `(v  1 e 0 0 ]
-{
-"91
-} 0
-"79
-[v _activity_home activity_home `(v  1 e 0 0 ]
-{
-"85
-} 0
-"119 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
-[v _lcd_init lcd_init `(v  1 e 0 0 ]
-{
-"120
-[v lcd_init@i i `uc  1 a 1 4 ]
-"156
-} 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
-[v _Delay1KTCYx Delay1KTCYx `(v  1 e 0 0 ]
-{
-[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
-[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
-[v Delay1KTCYx@unit unit `uc  1 a 1 0 ]
-"13
-} 0
-"243 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
-[v _activity_submenu_time_config_refresh activity_submenu_time_config_refresh `(v  1 e 0 0 ]
-{
-"250
-} 0
-"234
-[v _activity_submenu_date_config_refresh activity_submenu_date_config_refresh `(v  1 e 0 0 ]
-{
-"241
+"419
 } 0
 "492 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\doprnt.c
 [v _sprintf sprintf `(i  1 e 2 0 ]
@@ -1160,13 +1140,28 @@ RTCCPTR_MASK_YEAR 3
 [v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
 "31
 } 0
-"70 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+"94 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+[v _check_home_callback check_home_callback `(v  1 e 0 0 ]
+{
+"106
+} 0
+"88
+[v _reset_home_callback reset_home_callback `(v  1 e 0 0 ]
+{
+"92
+} 0
+"80
+[v _activity_home activity_home `(v  1 e 0 0 ]
+{
+"86
+} 0
+"71
 [v _lcd_write lcd_write `(v  1 e 0 0 ]
 {
 [v lcd_write@column column `i  1 p 2 10 ]
 [v lcd_write@row row `i  1 p 2 12 ]
 [v lcd_write@string string `*.35Cuc  1 p 2 14 ]
-"75
+"76
 } 0
 "221 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 [v _lcd_putrs lcd_putrs `(v  1 e 0 0 ]
@@ -1195,13 +1190,12 @@ RTCCPTR_MASK_YEAR 3
 [v lcd_gotoxy@x x `uc  1 a 1 5 ]
 "168
 } 0
-"189
-[v _lcd_comand lcd_comand `(v  1 e 0 0 ]
+"119
+[v _lcd_init lcd_init `(v  1 e 0 0 ]
 {
-[v lcd_comand@d d `uc  1 a 1 wreg ]
-[v lcd_comand@d d `uc  1 a 1 wreg ]
-[v lcd_comand@d d `uc  1 a 1 4 ]
-"191
+"120
+[v lcd_init@i i `uc  1 a 1 4 ]
+"156
 } 0
 "86
 [v _lcd_send_byte lcd_send_byte `(v  1 e 0 0 ]
@@ -1228,6 +1222,14 @@ RTCCPTR_MASK_YEAR 3
 [v Delay100TCYx@unit unit `uc  1 a 1 wreg ]
 [v Delay100TCYx@unit unit `uc  1 a 1 wreg ]
 [v Delay100TCYx@unit unit `uc  1 a 1 0 ]
+"13
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic18\d1ktcyx.c
+[v _Delay1KTCYx Delay1KTCYx `(v  1 e 0 0 ]
+{
+[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay1KTCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay1KTCYx@unit unit `uc  1 a 1 0 ]
 "13
 } 0
 "111 C:\Users\gonza\unimic\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/headers\unmc_rtcc_01.h

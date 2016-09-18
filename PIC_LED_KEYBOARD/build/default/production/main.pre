@@ -10024,6 +10024,7 @@ anio=anio_d*10+anio_u;
 char key;
 
 # 32 "main.c"
+int cursor_horizontal_position;
 int state;
 int menu_selected;
 int submenu_selected;
@@ -10034,13 +10035,13 @@ int config_widget_time = 0;
 char pin[5];
 char pin_input[5];
 
-# 56
+# 57
 int activity;
 
-# 62
+# 63
 int alarm_volume;
 
-# 68
+# 69
 int alarm_tone;
 
 void lcd_write(int column, int row, const char* string){
@@ -10171,6 +10172,8 @@ break;
 
 }
 
+
+
 void activity_pin(void){
 
 activity = 1;
@@ -10196,6 +10199,19 @@ menu_selector_0();
 
 
 
+void activity_submenu_activation(void){
+
+activity = 4;
+lcd_init();
+lcd_write(1,1,"Activar");
+lcd_write(10,1,"Si");
+lcd_write(10,2,"No");
+submenu_selector_0();
+
+}
+
+
+
 void activity_submenu_date_and_time(void){
 
 activity = 3;
@@ -10211,8 +10227,6 @@ void activity_submenu_date_config_refresh(void){
 
 sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
 lcd_write(1,2,buffer1);
-lcd_gotoxy(1, 2);
-lcd_comand(0b00001111);
 
 }
 
@@ -10220,8 +10234,6 @@ void activity_submenu_time_config_refresh(void){
 
 sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
 lcd_write(1,2,buffer1);
-lcd_gotoxy(1, 2);
-lcd_comand(0b00001111);
 
 }
 
@@ -10230,7 +10242,10 @@ void activity_submenu_date_config(void){
 activity = 10;
 lcd_init();
 lcd_write(1,1,"Ingrese la fecha");
-
+sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
+lcd_write(1,2,buffer1);
+lcd_gotoxy(1, 2);
+lcd_comand(0b00001111);
 
 }
 
@@ -10239,19 +10254,48 @@ void activity_submenu_time_config(void){
 activity = 11;
 lcd_init();
 lcd_write(1,1,"Ingrese la hora");
+sprintf(buffer1,"%02u:%02u:%02u",hora,minuto,segundo);
+lcd_write(1,2,buffer1);
+lcd_gotoxy(1, 2);
+lcd_comand(0b00001111);
 
 }
 
 
 
-void activity_submenu_activation(void){
+void cursor_displacement(void){
 
-activity = 4;
-lcd_init();
-lcd_write(1,1,"Activar");
-lcd_write(10,1,"Si");
-lcd_write(10,2,"No");
-submenu_selector_0();
+if(cursor_horizontal_position == 8){
+cursor_horizontal_position = 0;
+}
+else if (cursor_horizontal_position == 2 || cursor_horizontal_position == 5){
+cursor_horizontal_position++;
+}
+
+cursor_horizontal_position++;
+
+}
+
+void date_set(void){
+
+sprintf(buffer1,"%02u/%02u/%02u",dia,mes,anio);
+lcd_write(1,2,buffer1);
+lcd_gotoxy(cursor_horizontal_position, 2);
+
+switch(cursor_horizontal_position){
+
+case 1:
+dia+=10;
+break;
+
+case 2:
+dia++;
+break;
+
+}
+
+Write_RTC();
+_delay((unsigned long)((98)*(8000000/4000.0)));
 
 }
 
@@ -10442,6 +10486,14 @@ case 2:
 menu_selector();
 break;
 
+case 10:
+cursor_displacement();
+break;
+
+case 11:
+cursor_displacement();
+break;
+
 default:
 submenu_selector();
 break;
@@ -10609,12 +10661,17 @@ break;
 case 9:
 button_B_submenu_siren_tone();
 break;
+
+case 10:
+date_set();
+break;
 }
 
 }
 
 void button_C(void){
 
+cursor_horizontal_position == 0;
 reset_home_callback();
 
 if(activity != 0 && activity != 1){
@@ -10625,6 +10682,7 @@ activity_menu();
 
 void button_D(void){
 
+cursor_horizontal_position == 0;
 reset_home_callback();
 activity_home();
 
@@ -10644,9 +10702,11 @@ reset_home_callback();
 if(activity == 1){
 pin_input_validator();
 }
-
-if(activity == 6){
+else if(activity == 6){
 pin_set();
+}
+else if(activity == 10 || activity == 11){
+activity_home();
 }
 
 }
@@ -10741,6 +10801,7 @@ home_callback_delay = 50;
 config_widget = 0;
 menu_selected = 0;
 submenu_selected = 0;
+cursor_horizontal_position = 1;
 alarm_volume = 0;
 alarm_tone = 0;
 pin_reset();
@@ -10761,12 +10822,6 @@ keyboard_control();
 if(activity == 0){
 home_clock_refresh();
 home_config_refresh();
-}
-else if(activity == 10){
-activity_submenu_date_config_refresh();
-}
-else if(activity == 11){
-activity_submenu_time_config_refresh();
 }
 
 }

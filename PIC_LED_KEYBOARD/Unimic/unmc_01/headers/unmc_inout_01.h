@@ -11,6 +11,13 @@
  *
  *********************************************************************/
 //
+
+///** B U Z Z E R ****************************************************/
+#define BUZZ           LATCbits.LATC7
+#define BUZZ_On        BUZZ = 1;
+#define BUZZ_Off       BUZZ = 0;
+#define BUZZ_Toggle    BUZZ = !BUZZ;
+
 ///** L E D **********************************************************/
 
 //#define LED_1           LATBbits.LATB2

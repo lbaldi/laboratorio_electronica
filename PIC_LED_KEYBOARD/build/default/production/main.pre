@@ -8676,7 +8676,7 @@ extern volatile __bit nWRITE1 @ (((unsigned) &SSP1STAT)*8) + 2;
 
 extern volatile __bit nWRITE2 @ (((unsigned) &SSP2STAT)*8) + 2;
 
-# 2008 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\adc.h"
+# 2008 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\adc.h"
 union ADCResult
 {
 int lr;
@@ -8703,13 +8703,13 @@ void SetChanADC(unsigned char );
 # 2100
 void SelChanConvADC( unsigned char );
 
-# 202 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\ancomp.h"
+# 202 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\ancomp.h"
 void Close_ancomp1( void );
 void Open_ancomp1(unsigned char config);
 void Close_ancomp2( void );
 void Open_ancomp2(unsigned char config);
 
-# 236 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\spi.h"
+# 236 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\spi.h"
 void OpenSPI1( unsigned char sync_mode,
 unsigned char bus_mode,
 unsigned char smp_phase );
@@ -8735,7 +8735,7 @@ void putsSPI2( unsigned char *wrptr );
 
 unsigned char ReadSPI2( void );
 
-# 414 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\can2510.h"
+# 414 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\can2510.h"
 void CAN2510Initialize(  unsigned int configuration,
  unsigned char brp,
  unsigned char interruptFlags,
@@ -8842,7 +8842,7 @@ unsigned char CAN2510DataRead(  unsigned char bufferNum,
  unsigned char *numBytes,
  unsigned char *data );
 
-# 64 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\capture.h"
+# 64 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\capture.h"
 union capstatus
 {
 
@@ -8881,7 +8881,7 @@ void OpenCapture2 ( unsigned char config);
 unsigned int ReadCapture2 (void);
 void CloseCapture2 (void);
 
-# 385 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\compare.h"
+# 385 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\compare.h"
 void OpenCompare1(unsigned char config,unsigned int period);
 void CloseCompare1(void);
 
@@ -8889,14 +8889,14 @@ void CloseCompare1(void);
 void OpenCompare2(unsigned char config, unsigned int period);
 void CloseCompare2(void);
 
-# 374 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\ctmu.h"
+# 374 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\ctmu.h"
 void OpenCTMU(unsigned char config1,unsigned char config2,unsigned char config3);
 
 # 379
 void CurrentControlCTMU(unsigned char config);
 void CloseCTMU(void);
 
-# 49 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\dpslp.h"
+# 49 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\dpslp.h"
 typedef union
 {
 struct
@@ -9370,7 +9370,7 @@ struct
 } bits;
 } QWORD_VAL;
 
-# 113 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\flash.h"
+# 113 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\flash.h"
 extern void ReadFlash(unsigned long startaddr, unsigned int num_bytes, unsigned char *flash_array);
 
 # 120
@@ -9383,7 +9383,7 @@ extern void WriteBytesFlash(unsigned long startaddr, unsigned int num_bytes, uns
 
 extern void WriteWordFlash(unsigned long startaddr, unsigned int data);
 
-# 244 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\i2c.h"
+# 244 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\i2c.h"
 void OpenI2C1( unsigned char sync_mode, unsigned char slew );
 
 # 264
@@ -9423,7 +9423,7 @@ unsigned char address,
 unsigned char *rdptr,
 unsigned char length );
 
-# 200 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\mwire.h"
+# 200 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\mwire.h"
 void OpenMwire1( unsigned char sync_mode );
 
 
@@ -9436,7 +9436,7 @@ signed char WriteMwire1( unsigned char data_out );
 # 234
 void getsMwire1( unsigned char *rdptr, unsigned char length );
 
-# 126 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\portb.h"
+# 126 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\portb.h"
 void OpenPORTB( unsigned char config);
 
 # 176
@@ -9451,7 +9451,7 @@ void OpenRB2INT( unsigned char config);
 # 230
 void OpenRB3INT( unsigned char config);
 
-# 85 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\pwm.h"
+# 85 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\pwm.h"
 union PWMDC
 {
 unsigned int lpwm;
@@ -9475,7 +9475,7 @@ void SetDCPWM2( unsigned int duty_cycle);
 # 492
 void ClosePWM2 (void);
 
-# 16 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\reset.h"
+# 16 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\reset.h"
 char isMCLR(void);
 void StatusReset(void);
 char isPOR(void);
@@ -9493,7 +9493,7 @@ char isWDTWU(void);
 
 char isLVD(void);
 
-# 43 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\rtcc.h"
+# 43 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\rtcc.h"
 typedef union _WORD_VAL
 {
 unsigned int Val;
@@ -9669,7 +9669,7 @@ void Open_RTCC(void);
 void Close_RTCC(void);
 unsigned char update_RTCC(void);
 
-# 97 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\sw_i2c.h"
+# 97 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\sw_i2c.h"
 void SWStopI2C ( void );
 void SWStartI2C ( void );
 void SWRestartI2C ( void );
@@ -9682,7 +9682,7 @@ signed char SWWriteI2C(  unsigned char data_out );
 signed char SWGetsI2C(  unsigned char *rdptr,  unsigned char length );
 signed char SWPutsI2C(  unsigned char *wrptr );
 
-# 84 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\sw_spi.h"
+# 84 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\sw_spi.h"
 void OpenSWSPI(void);
 
 
@@ -9694,7 +9694,7 @@ void SetCSSWSPI(void);
 
 void ClearCSSWSPI(void);
 
-# 47 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\sw_uart.h"
+# 47 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\sw_uart.h"
 void OpenUART(void);
 
 unsigned char ReadUART(void);
@@ -9710,7 +9710,7 @@ extern void DelayRXBitUART (void);
 extern void DelayRXHalfBitUART(void);
 extern void DelayTXBitUART (void);
 
-# 36 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\timers.h"
+# 36 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\timers.h"
 union Timers
 {
 unsigned int lt;
@@ -9746,7 +9746,7 @@ void CloseTimer4 (void);
 # 1179
 void SetTmrCCPSrc( unsigned char );
 
-# 200 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\usart.h"
+# 200 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\usart.h"
 union USART1
 {
 unsigned char val;
@@ -9799,7 +9799,7 @@ void baud1USART ( unsigned char baudconfig);
 # 665
 void baud2USART ( unsigned char baudconfig);
 
-# 87 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\xlcd.h"
+# 87 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\xlcd.h"
 void OpenXLCD( unsigned char);
 
 # 92
@@ -9834,7 +9834,7 @@ extern void DelayFor18TCY(void);
 extern void DelayPORXLCD(void);
 extern void DelayXLCD(void);
 
-# 13 "../../../../../Program Files (x86)/Microchip/xc8/v1.34/include/plib\delays.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.34\include\plib\delays.h"
 void Delay1TCYx(unsigned char);
 
 # 19
@@ -10035,13 +10035,13 @@ int config_widget_time = 0;
 char pin[5];
 char pin_input[5];
 
-# 57
+# 58
 int activity;
 
-# 63
+# 64
 int alarm_volume;
 
-# 69
+# 70
 int alarm_tone;
 
 void lcd_write(int column, int row, const char* string){
@@ -10061,6 +10061,13 @@ lcd_write(1,1,"X28");
 
 }
 
+void activity_triggered_alarm(void){
+activity = 12;
+lcd_init();
+lcd_write(4,1,"¡ATENCION!");
+lcd_write(1,2,"ALARMA DISPARADA");
+}
+
 void reset_home_callback(void){
 
 home_callback = home_callback_delay;
@@ -10074,7 +10081,12 @@ home_callback--;
 
 if(home_callback == 0){
 reset_home_callback();
+
+if(state == 2){
+activity_triggered_alarm();
+} else {
 activity_home();
+}
 }
 
 }
@@ -10418,6 +10430,7 @@ activity_home();
 void pin_input_validator(void){
 
 if( strcmp(pin, pin_input) == 0 ){
+state = 0;
 activity_menu();
 }
 else {
@@ -10533,6 +10546,10 @@ break;
 
 case 2:
 menu_selector();
+break;
+
+case 12:
+activity_pin();
 break;
 
 default:
@@ -10703,6 +10720,10 @@ case 9:
 button_B_submenu_siren_tone();
 break;
 
+case 12:
+activity_pin();
+break;
+
 }
 
 }
@@ -10712,7 +10733,10 @@ void button_C(void){
 cursor_horizontal_position == 0;
 reset_home_callback();
 
-if(activity != 0 && activity != 1){
+if(activity == 12){
+activity_pin();
+}
+else if (activity != 0 && activity != 1){
 activity_menu();
 }
 
@@ -10720,16 +10744,24 @@ activity_menu();
 
 void button_D(void){
 
+if(state == 2){
+activity_pin();
+} else{
 cursor_horizontal_position == 0;
 reset_home_callback();
 activity_home();
+}
 
 }
 
 void button_asterisk(void){
 
-reset_home_callback();
+if(state == 1){
 
+state = 2;
+activity_triggered_alarm();
+
+}
 
 }
 
@@ -10864,6 +10896,10 @@ keyboard_control();
 if(activity == 0){
 home_clock_refresh();
 home_config_refresh();
+}
+
+if (state == 2){
+LATCbits.LATC7 = !LATCbits.LATC7;;
 }
 
 }

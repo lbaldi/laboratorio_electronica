@@ -53,6 +53,7 @@ char pin_input[5];
  * #9 SIREN TONE SET
  * #10 DATE CONFIG
  * #11 TIME CONFIG
+ * #12 TRIGGERED ALARM
  */
 int activity;
 
@@ -85,6 +86,13 @@ void activity_home(void){
     
 }
 
+void activity_triggered_alarm(void){
+    activity = 12;
+    lcd_init();
+    lcd_write(4,1,"¡ATENCION!");
+    lcd_write(1,2,"ALARMA DISPARADA");
+}
+
 void reset_home_callback(void){    
     
     home_callback = home_callback_delay;
@@ -97,8 +105,13 @@ void check_home_callback(void){
         home_callback--;
         
         if(home_callback == 0){            
-            reset_home_callback();            
-            activity_home();            
+            reset_home_callback();
+            
+            if(state == 2){
+                activity_triggered_alarm();
+            } else {
+                activity_home();
+            }
         }
         
     }
@@ -441,7 +454,8 @@ void pin_set(void){
 
 void pin_input_validator(void){
     
-    if( strcmp(pin, pin_input) == 0 ){       
+    if( strcmp(pin, pin_input) == 0 ){
+        state = 0;
         activity_menu();        
     } 
     else {                
@@ -545,7 +559,7 @@ void home_config_refresh(void){
 void button_A(void){
     
     reset_home_callback();
-    
+        
     switch(activity){
         
         case 0:
@@ -558,6 +572,10 @@ void button_A(void){
         case 2:
             menu_selector();
             break; 
+            
+        case 12:
+            activity_pin();
+            break;
             
         default: 
             submenu_selector();
@@ -725,7 +743,11 @@ void button_B(void){
             
         case 9:
             button_B_submenu_siren_tone();
-            break;      
+            break;     
+            
+        case 12:
+            activity_pin();
+            break;
             
     }
     
@@ -736,7 +758,10 @@ void button_C(void){
     cursor_horizontal_position == 0;
     reset_home_callback();
     
-    if(activity != 0 && activity != 1){
+    if(activity == 12){
+        activity_pin();
+    }
+    else if (activity != 0 && activity != 1){
         activity_menu();
     }
     
@@ -744,17 +769,25 @@ void button_C(void){
 
 void button_D(void){
     
-    cursor_horizontal_position == 0;
-    reset_home_callback();    
-    activity_home();
+    if(state == 2){
+        activity_pin();
+    } else{
+        cursor_horizontal_position == 0;
+        reset_home_callback();    
+        activity_home();
+    }
     
 }
 
 void button_asterisk(void){
+  
+    if(state == 1){
+        
+        state = 2;
+        activity_triggered_alarm();
     
-    reset_home_callback();    
-    // lcd_putrs("*");
-    
+    }
+ 
 }
 
 void button_hash(void){
@@ -888,7 +921,11 @@ int main(void){
         if(activity == 0){
             home_clock_refresh();
             home_config_refresh();
-        }       
+        }
+        
+        if (state == 2){
+            BUZZ_Toggle;
+        }
         
     }
     

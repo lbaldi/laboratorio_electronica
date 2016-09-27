@@ -89,7 +89,7 @@ void activity_home(void){
 void activity_triggered_alarm(void){
     activity = 12;
     lcd_init();
-    lcd_write(4,1,"¡ATENCION!");
+    lcd_write(1,1,"    ATENCION    ");
     lcd_write(1,2,"ALARMA DISPARADA");
 }
 
@@ -892,8 +892,6 @@ void setup(void){
     Write_RTC();
     lcd_init();
     lcd_comand(0b00001100);     //Display=on / Cursor=off / Blink=off
-    LED_2_On;
-    LED_3_On;
     
     // Setup Global Variables
     home_callback_delay = 50;
@@ -925,7 +923,13 @@ int main(void){
         
         if (state == 2){
             BUZZ_Toggle;
+            LED_3_Toggle;
+        } else {
+            BUZZ_Off;
+            LED_3_Off;
         }
+        
+        
         
     }
     

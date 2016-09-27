@@ -244,7 +244,7 @@ RTCCPTR_MASK_YEAR 3
 [v _keyboard_control keyboard_control `(v  1 e 0 0 ]
 "869
 [v _setup setup `(v  1 e 0 0 ]
-"910
+"908
 [v _main main `(i  1 e 2 0 ]
 "74 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/headers\unmc_rtcc_01.h
 [v _Write_RTC Write_RTC `(v  1 e 0 0 ]
@@ -747,15 +747,15 @@ RTCCPTR_MASK_YEAR 3
 [v _buffer1 buffer1 `[20]uc  1 e 20 0 ]
 "16 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\Unimic/unmc_01/sources/unmc_lcd_216.c
 [v _LCD_INIT_STRING LCD_INIT_STRING `C[4]uc  1 e 4 0 ]
-"910 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
+"908 D:\BITBUCKET\laboratorio_electronica\PIC_LED_KEYBOARD\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"934
+"938
 } 0
 "869
 [v _setup setup `(v  1 e 0 0 ]
 {
-"908
+"906
 } 0
 "831
 [v _keyboard_control keyboard_control `(v  1 e 0 0 ]

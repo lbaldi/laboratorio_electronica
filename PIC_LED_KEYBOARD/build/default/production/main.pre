@@ -10064,7 +10064,7 @@ lcd_write(1,1,"X28");
 void activity_triggered_alarm(void){
 activity = 12;
 lcd_init();
-lcd_write(4,1,"¡ATENCION!");
+lcd_write(1,1,"    ATENCION    ");
 lcd_write(1,2,"ALARMA DISPARADA");
 }
 
@@ -10867,8 +10867,6 @@ T1CONbits.T1OSCEN=1;
 Write_RTC();
 lcd_init();
 lcd_comand(0b00001100);
-LATBbits.LATB1 = 1;;
-LATBbits.LATB0 = 1;;
 
 
 home_callback_delay = 50;
@@ -10900,7 +10898,13 @@ home_config_refresh();
 
 if (state == 2){
 LATCbits.LATC7 = !LATCbits.LATC7;;
+LATBbits.LATB0 = !LATBbits.LATB0;;
+} else {
+LATCbits.LATC7 = 0;;
+LATBbits.LATB0 = 0;;
 }
+
+
 
 }
 

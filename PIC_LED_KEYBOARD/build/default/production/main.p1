@@ -8395,9 +8395,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 91: lcd_init();
 "91
 [e ( _lcd_init ..  ]
-[; ;main.c: 92: lcd_write(4,1,"¡ATENCION!");
+[; ;main.c: 92: lcd_write(1,1,"    ATENCION    ");
 "92
-[e ( _lcd_write (3 , , -> 4 `i -> 1 `i :s 2C ]
+[e ( _lcd_write (3 , , -> 1 `i -> 1 `i :s 2C ]
 [; ;main.c: 93: lcd_write(1,2,"ALARMA DISPARADA");
 "93
 [e ( _lcd_write (3 , , -> 1 `i -> 2 `i :s 3C ]
@@ -10653,103 +10653,112 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 894: lcd_comand(0b00001100);
 "894
 [e ( _lcd_comand (1 -> -> 12 `i `uc ]
-[; ;main.c: 895: LATBbits.LATB1 = 1;;
-"895
-[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
-[; ;main.c: 896: LATBbits.LATB0 = 1;;
-"896
-[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
-[; ;main.c: 899: home_callback_delay = 50;
-"899
+[; ;main.c: 897: home_callback_delay = 50;
+"897
 [e = _home_callback_delay -> 50 `i ]
-[; ;main.c: 900: config_widget = 0;
-"900
+[; ;main.c: 898: config_widget = 0;
+"898
 [e = _config_widget -> 0 `i ]
-[; ;main.c: 901: menu_selected = 0;
-"901
+[; ;main.c: 899: menu_selected = 0;
+"899
 [e = _menu_selected -> 0 `i ]
-[; ;main.c: 902: submenu_selected = 0;
-"902
+[; ;main.c: 900: submenu_selected = 0;
+"900
 [e = _submenu_selected -> 0 `i ]
-[; ;main.c: 903: cursor_horizontal_position = 1;
-"903
+[; ;main.c: 901: cursor_horizontal_position = 1;
+"901
 [e = _cursor_horizontal_position -> 1 `i ]
-[; ;main.c: 904: alarm_volume = 0;
-"904
+[; ;main.c: 902: alarm_volume = 0;
+"902
 [e = _alarm_volume -> 0 `i ]
-[; ;main.c: 905: alarm_tone = 0;
-"905
+[; ;main.c: 903: alarm_tone = 0;
+"903
 [e = _alarm_tone -> 0 `i ]
-[; ;main.c: 906: pin_reset();
-"906
+[; ;main.c: 904: pin_reset();
+"904
 [e ( _pin_reset ..  ]
-[; ;main.c: 908: }
-"908
+[; ;main.c: 906: }
+"906
 [e :UE 1269 ]
 }
-"910
+"908
 [v _main `(i ~T0 @X0 1 ef ]
 {
-[; ;main.c: 910: int main(void){
+[; ;main.c: 908: int main(void){
 [e :U _main ]
 [f ]
-[; ;main.c: 912: setup();
-"912
+[; ;main.c: 910: setup();
+"910
 [e ( _setup ..  ]
-[; ;main.c: 913: activity_home();
-"913
+[; ;main.c: 911: activity_home();
+"911
 [e ( _activity_home ..  ]
-[; ;main.c: 915: while(1){
-"915
+[; ;main.c: 913: while(1){
+"913
 [e :U 1272 ]
 {
-[; ;main.c: 917: check_home_callback();
-"917
+[; ;main.c: 915: check_home_callback();
+"915
 [e ( _check_home_callback ..  ]
-[; ;main.c: 918: Read_RTC();
-"918
+[; ;main.c: 916: Read_RTC();
+"916
 [e ( _Read_RTC ..  ]
-[; ;main.c: 919: keyboard_control();
-"919
+[; ;main.c: 917: keyboard_control();
+"917
 [e ( _keyboard_control ..  ]
-[; ;main.c: 921: if(activity == 0){
-"921
+[; ;main.c: 919: if(activity == 0){
+"919
 [e $ ! == _activity -> 0 `i 1274  ]
 {
-[; ;main.c: 922: home_clock_refresh();
-"922
+[; ;main.c: 920: home_clock_refresh();
+"920
 [e ( _home_clock_refresh ..  ]
-[; ;main.c: 923: home_config_refresh();
-"923
+[; ;main.c: 921: home_config_refresh();
+"921
 [e ( _home_config_refresh ..  ]
-"924
+"922
 }
 [e :U 1274 ]
-[; ;main.c: 924: }
-[; ;main.c: 926: if (state == 2){
-"926
+[; ;main.c: 922: }
+[; ;main.c: 924: if (state == 2){
+"924
 [e $ ! == _state -> 2 `i 1275  ]
 {
-[; ;main.c: 927: LATCbits.LATC7 = !LATCbits.LATC7;;
-"927
+[; ;main.c: 925: LATCbits.LATC7 = !LATCbits.LATC7;;
+"925
 [e = . . _LATCbits 0 7 -> -> ! != -> . . _LATCbits 0 7 `i -> -> -> 0 `i `Vuc `i `i `uc ]
-"928
+[; ;main.c: 926: LATBbits.LATB0 = !LATBbits.LATB0;;
+"926
+[e = . . _LATBbits 0 0 -> -> ! != -> . . _LATBbits 0 0 `i -> -> -> 0 `i `Vuc `i `i `uc ]
+"927
 }
+[; ;main.c: 927: } else {
+[e $U 1276  ]
 [e :U 1275 ]
+{
+[; ;main.c: 928: LATCbits.LATC7 = 0;;
+"928
+[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
+[; ;main.c: 929: LATBbits.LATB0 = 0;;
+"929
+[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 "930
 }
+[e :U 1276 ]
+"934
+}
 [e :U 1271 ]
-"915
+"913
 [e $U 1272  ]
 [e :U 1273 ]
-[; ;main.c: 928: }
 [; ;main.c: 930: }
-[; ;main.c: 932: return 0;
-"932
+[; ;main.c: 934: }
+[; ;main.c: 936: return 0;
+"936
 [e ) -> 0 `i ]
 [e $UE 1270  ]
-[; ;main.c: 934: }
-"934
+[; ;main.c: 938: }
+"938
 [e :UE 1270 ]
 }
 [p f _sprintf 8422404 ]
@@ -10802,7 +10811,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [a 55C 84 79 78 79 58 49 0 ]
 [a 41C 66 101 101 112 32 49 0 ]
 [a 58C 42 0 ]
-[a 2C 161 65 84 69 78 67 73 79 78 33 0 ]
+[a 2C 32 32 32 32 65 84 69 78 67 73 79 78 32 32 32 32 0 ]
 [a 5C 32 0 ]
 [a 7C 32 0 ]
 [a 9C 32 0 ]

@@ -42,12 +42,12 @@
 #define DSS_A_On       DSS_A = 1;
 #define DSS_A_Off      DSS_A = 0;
 
-#define DSS_TEN           LATCbits.LATC7
+#define DSS_TEN           LATBbits.LATB0
 #define DSS_TEN_On        DSS_TEN = 0;
 #define DSS_TEN_Off       DSS_TEN = 1;
 #define DSS_TEN_Toggle    DSS_TEN = !DSS_TEN;
 
-#define DSS_UNIT          LATCbits.LATC6
+#define DSS_UNIT          LATCbits.LATC7
 #define DSS_UNIT_On       DSS_UNIT = 0;
 #define DSS_UNIT_Off      DSS_UNIT = 1;
 #define DSS_UNIT_Toggle   DSS_UNIT = !DSS_UNIT;

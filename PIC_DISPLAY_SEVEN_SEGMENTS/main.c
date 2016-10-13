@@ -23,6 +23,8 @@
 #include <unmc_config_01.h>
 #include <unmc_inout_01.h>
 
+int temperatura = 0;
+
 void setup(void){  
     
     OSCTUNEbits.INTSRC=1;       //setea el oscilador de 32768 para el RTC
@@ -34,18 +36,19 @@ void setup(void){
     OSCCONbits.SCS1=0;
     TRISA = 0b11110000;
     TRISB = 0;
-    TRISC = 0b00000111;
+    TRISC = 0b00100111;
     //TRISAbits.TRISA0=1;
     //TRISBbits.TRISB0=0;
     //TRISCbits.TRISC0=0;
-    ANCON0=0b11111111;          // Config AN7 to AN0 Digital Ports
+    ANCON0=0b11111110;          // Config AN7 to AN0 Digital Ports
     //ANCON1=0b10010111;        // Config AN11 Analog Port
     ANCON1=0b11111111;          // Config AN12 to AN8 Digital Ports
-    ADCON0=0b00101101;          // Control AN11 Analog Port
+    ADCON0=0b01000000;          // Control AN11 Analog Port
     ADCON1=0b00010000;          // Config Analog Port
     RTCCFGbits.RTCEN=1;
     RTCCFGbits.RTCWREN=1;
     T1CONbits.T1OSCEN=1;
+
     
 }
 
@@ -184,30 +187,48 @@ void number_to_segment(int number){
     }
 }
 
+void imprimir_temperatura(void){
+    
+    int decena = temperatura / 10;
+    int unidad = temperatura % 10;
+    
+    DSS_TEN_On;    
+    number_to_segment(decena);
+    __delay_ms(14);
+    DSS_TEN_Off; 
+    
+    DSS_UNIT_On;         
+    number_to_segment(unidad);
+    __delay_ms(14);
+    DSS_UNIT_Off;
+  
+}
+
+void leer_temperatura(void){
+    ADCON0bits.ADON = 1;
+    ADCON0bits.GO = 1;
+    unsigned int voltage;
+    while (ADCON0bits.GO)
+    {
+        __delay_ms(1);
+        voltage = *(int*) ADRESH;
+        //if (voltage == 10) ADCON0bits.GO = 0;
+    }
+    ADCON0bits.ADON = 0;
+    
+    temperatura = (int)(0.588 * ADRESH);
+    //temperatura = ADRESH;
+}
 
 int main(void){
     
     setup();
-    
-    int unit = 3;
-    int ten = 2;
-    
-    DSS_UNIT_On;
-    DSS_TEN_Off;
-    
+        
     while(1){
-   
-        if(DSS_UNIT == 0){
-            number_to_segment(unit);
-        }else{
-            number_to_segment(ten);
-        }
         
-        DSS_UNIT_Toggle;
-        DSS_TEN_Toggle;
-
-        __delay_ms(98);
-        
+        leer_temperatura();
+        imprimir_temperatura();
+    
     }
     
     return 0;

@@ -23,7 +23,7 @@
 #include <unmc_config_01.h>
 #include <unmc_inout_01.h>
 
-unsigned int temp = 0;
+int temp = 0;
 
 void setup(void){  
     
@@ -47,7 +47,7 @@ void setup(void){
     
 }
 
-void segment_A(void){
+void segment_a(void){
     
     DSS_A_On;
     __delay_ms(1);
@@ -55,7 +55,7 @@ void segment_A(void){
     
 }
 
-void segment_B(void){
+void segment_b(void){
     
     DSS_B_On;
     __delay_ms(1);
@@ -63,7 +63,7 @@ void segment_B(void){
     
 }
 
-void segment_C(void){
+void segment_c(void){
     
     DSS_C_On;
     __delay_ms(1);
@@ -71,7 +71,7 @@ void segment_C(void){
     
 }
 
-void segment_D(void){
+void segment_d(void){
     
     DSS_D_On;
     __delay_ms(1);
@@ -79,7 +79,7 @@ void segment_D(void){
     
 }
 
-void segment_E(void){
+void segment_e(void){
     
     DSS_E_On;
     __delay_ms(1);
@@ -87,7 +87,7 @@ void segment_E(void){
     
 }
 
-void segment_F(void){
+void segment_f(void){
     
     DSS_F_On;
     __delay_ms(1);
@@ -95,7 +95,7 @@ void segment_F(void){
     
 }
 
-void segment_G(void){
+void segment_g(void){
     
     DSS_G_On;
     __delay_ms(1);
@@ -105,100 +105,100 @@ void segment_G(void){
 
 void number_0(void){
     
-    segment_A();
-    segment_B();
-    segment_C();
-    segment_D();
-    segment_E();
-    segment_F();
+    segment_a();
+    segment_b();
+    segment_c();
+    segment_d();
+    segment_e();
+    segment_f();
     
 }
 
 void number_1(void){
     
-    segment_B();
-    segment_C();
+    segment_b();
+    segment_c();
     
 }
 
 void number_2(void){
     
-    segment_A();
-    segment_B();
-    segment_D();
-    segment_E();
-    segment_G();
+    segment_a();
+    segment_b();
+    segment_d();
+    segment_e();
+    segment_g();
     
 }
 
 void number_3(void){
     
-    segment_A();
-    segment_B();
-    segment_C();
-    segment_D();
-    segment_G();
+    segment_a();
+    segment_b();
+    segment_c();
+    segment_d();
+    segment_g();
     
 }
 
 void number_4(void){
     
-    segment_B();
-    segment_C();
-    segment_F();
-    segment_G();
+    segment_b();
+    segment_c();
+    segment_f();
+    segment_g();
     
 }
 
 void number_5(void){
     
-    segment_A();
-    segment_C();
-    segment_D();
-    segment_F();
-    segment_G();
+    segment_a();
+    segment_c();
+    segment_d();
+    segment_f();
+    segment_g();
     
 }
 
 void number_6(void){
     
-    segment_A();
-    segment_C();
-    segment_D();
-    segment_E();
-    segment_F();
-    segment_G();
+    segment_a();
+    segment_c();
+    segment_d();
+    segment_e();
+    segment_f();
+    segment_g();
     
 }
 
 void number_7(void){
     
-    segment_A();
-    segment_B();
-    segment_C();
+    segment_a();
+    segment_b();
+    segment_c();
     
 }
 
 void number_8(void){
     
-    segment_A();
-    segment_B();
-    segment_C();
-    segment_D();
-    segment_E();
-    segment_F();
-    segment_G();
+    segment_a();
+    segment_b();
+    segment_c();
+    segment_d();
+    segment_e();
+    segment_f();
+    segment_g();
     
 }
 
 void number_9(void){
     
-    segment_A();
-    segment_B();
-    segment_C();
-    segment_D();
-    segment_F();
-    segment_G();  
+    segment_a();
+    segment_b();
+    segment_c();
+    segment_d();
+    segment_f();
+    segment_g();  
     
 }
 
@@ -246,27 +246,51 @@ void read_temp(void){
     ADCON0bits.ADON = 1;    //Encendido de conversor analogica/digital
     ADCON0bits.GO = 1;      //Comienzo de conversion analogica/digital
     
-    unsigned int voltage;
+    int voltage;
     
     while (ADCON0bits.GO);    
     __delay_ms(1);
-    voltage = (unsigned int) ADRESH;       
+    voltage = (int) ADRESH;       
     
     ADCON0bits.ADON = 0;    //Fin de conversión analogica/digital  
     
-    temp = (int)(1.94 * voltage - 48);
+    //Caso de limite excedido (fuera del rango 0 a 100)
+    if(voltage < 25 || voltage > 76){
+        
+        temp = -1;
+        
+    } else {
+        
+        temp = (int)(1.94 * voltage - 48);
+        
+    }
     
 }
 
-void write_temp(){    
+void write_temp(void){
     
-    DSS_UNIT_On;
-    number_to_segment(temp % 10);
-    DSS_UNIT_Off;
-    
-    DSS_TEN_On;
-    number_to_segment(temp / 10);
-    DSS_TEN_Off;
+    //Caso de limite excedido (fuera del rango 0 a 100)
+    if(temp == -1){
+        
+        DSS_UNIT_On;
+        segment_g();
+        DSS_UNIT_Off;
+        
+        DSS_TEN_On;
+        segment_g();
+        DSS_TEN_Off;
+        
+    } else {
+        
+        DSS_UNIT_On;
+        number_to_segment(temp % 10);
+        DSS_UNIT_Off;
+        
+        DSS_TEN_On;
+        number_to_segment(temp / 10);
+        DSS_TEN_Off; 
+        
+    }
     
 }
 
@@ -281,6 +305,6 @@ int main(void){
         
     }
     
-    return 0;    
+    return 0;  
     
 }

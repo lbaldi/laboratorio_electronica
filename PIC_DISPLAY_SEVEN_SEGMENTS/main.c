@@ -1,6 +1,6 @@
 /*******************************************************************************
  *
- *                Unimic 01 Version 1.1   6 September 2016
+ *                Unimic 01 Version 1.1   18 october 2016
  *
  *******************************************************************************
  * FileName:        main.c
@@ -23,137 +23,189 @@
 #include <unmc_config_01.h>
 #include <unmc_inout_01.h>
 
-int temperatura = 0;
+unsigned int temp = 0;
 
 void setup(void){  
     
-    OSCTUNEbits.INTSRC=1;       //setea el oscilador de 32768 para el RTC
-    OSCTUNEbits.PLLEN=0;        //desactiva PLL
-    OSCCONbits.IRCF0=1;         //selecciona el clock en 8MHz
+    OSCTUNEbits.INTSRC=1;      
+    OSCTUNEbits.PLLEN=0;       
+    OSCCONbits.IRCF0=1;         
     OSCCONbits.IRCF1=1;
     OSCCONbits.IRCF2=1;
-    OSCCONbits.SCS0=0;          //oscilator INTRC
+    OSCCONbits.SCS0=0;          
     OSCCONbits.SCS1=0;
-    TRISA = 0b11110000;
+    TRISA = 0b11110001;
     TRISB = 0;
     TRISC = 0b00100111;
-    //TRISAbits.TRISA0=1;
-    //TRISBbits.TRISB0=0;
-    //TRISCbits.TRISC0=0;
-    ANCON0=0b11111110;          // Config AN7 to AN0 Digital Ports
-    //ANCON1=0b10010111;        // Config AN11 Analog Port
-    ANCON1=0b11111111;          // Config AN12 to AN8 Digital Ports
-    ADCON0=0b01000000;          // Control AN11 Analog Port
-    ADCON1=0b00010000;          // Config Analog Port
+    ANCON0=0b11111110;          
+    ANCON1=0b11111111;          
+    ADCON0=0b01000000;          
+    ADCON1=0b00111000;          
     RTCCFGbits.RTCEN=1;
     RTCCFGbits.RTCWREN=1;
     T1CONbits.T1OSCEN=1;
+    
+}
 
+void segment_A(void){
+    
+    DSS_A_On;
+    __delay_ms(1);
+    DSS_A_Off;
+    
+}
+
+void segment_B(void){
+    
+    DSS_B_On;
+    __delay_ms(1);
+    DSS_B_Off;
+    
+}
+
+void segment_C(void){
+    
+    DSS_C_On;
+    __delay_ms(1);
+    DSS_C_Off;
+    
+}
+
+void segment_D(void){
+    
+    DSS_D_On;
+    __delay_ms(1);
+    DSS_D_Off;
+    
+}
+
+void segment_E(void){
+    
+    DSS_E_On;
+    __delay_ms(1);
+    DSS_E_Off;
+    
+}
+
+void segment_F(void){
+    
+    DSS_F_On;
+    __delay_ms(1);
+    DSS_F_Off;
+    
+}
+
+void segment_G(void){
+    
+    DSS_G_On;
+    __delay_ms(1);
+    DSS_G_Off;
     
 }
 
 void number_0(void){
-    DSS_A_On;
-    DSS_B_On;
-    DSS_C_On;
-    DSS_D_On;
-    DSS_E_On;
-    DSS_F_On;
-    DSS_G_Off;
+    
+    segment_A();
+    segment_B();
+    segment_C();
+    segment_D();
+    segment_E();
+    segment_F();
+    
 }
 
 void number_1(void){
-    DSS_A_Off;
-    DSS_B_On;
-    DSS_C_On;
-    DSS_D_Off;
-    DSS_E_Off;
-    DSS_F_Off;
-    DSS_G_Off;
+    
+    segment_B();
+    segment_C();
+    
 }
 
 void number_2(void){
-    DSS_A_On;
-    DSS_B_On;
-    DSS_C_Off;
-    DSS_D_On;
-    DSS_E_On;
-    DSS_F_Off;
-    DSS_G_On;
+    
+    segment_A();
+    segment_B();
+    segment_D();
+    segment_E();
+    segment_G();
+    
 }
 
 void number_3(void){
-    DSS_A_On;
-    DSS_B_On;
-    DSS_C_On;
-    DSS_D_On;
-    DSS_E_Off;
-    DSS_F_Off;
-    DSS_G_On;
+    
+    segment_A();
+    segment_B();
+    segment_C();
+    segment_D();
+    segment_G();
+    
 }
 
 void number_4(void){
-    DSS_A_Off;
-    DSS_B_On;
-    DSS_C_On;
-    DSS_D_Off;
-    DSS_E_Off;
-    DSS_F_On;
-    DSS_G_On;
+    
+    segment_B();
+    segment_C();
+    segment_F();
+    segment_G();
+    
 }
 
 void number_5(void){
-    DSS_A_On;
-    DSS_B_Off;
-    DSS_C_On;
-    DSS_D_On;
-    DSS_E_Off;
-    DSS_F_On;
-    DSS_G_On;
+    
+    segment_A();
+    segment_C();
+    segment_D();
+    segment_F();
+    segment_G();
+    
 }
 
 void number_6(void){
-    DSS_A_On;
-    DSS_B_Off;
-    DSS_C_On;
-    DSS_D_On;
-    DSS_E_On;
-    DSS_F_On;
-    DSS_G_On;
+    
+    segment_A();
+    segment_C();
+    segment_D();
+    segment_E();
+    segment_F();
+    segment_G();
+    
 }
 
 void number_7(void){
-    DSS_A_On;
-    DSS_B_On;
-    DSS_C_On;
-    DSS_D_Off;
-    DSS_E_Off;
-    DSS_F_Off;
-    DSS_G_Off;
+    
+    segment_A();
+    segment_B();
+    segment_C();
+    
 }
 
 void number_8(void){
-    DSS_A_On;
-    DSS_B_On;
-    DSS_C_On;
-    DSS_D_On;
-    DSS_E_On;
-    DSS_F_On;
-    DSS_G_On;
+    
+    segment_A();
+    segment_B();
+    segment_C();
+    segment_D();
+    segment_E();
+    segment_F();
+    segment_G();
+    
 }
 
 void number_9(void){
-    DSS_A_On;
-    DSS_B_On;
-    DSS_C_On;
-    DSS_D_On;
-    DSS_E_Off;
-    DSS_F_On;
-    DSS_G_On;
+    
+    segment_A();
+    segment_B();
+    segment_C();
+    segment_D();
+    segment_F();
+    segment_G();  
+    
 }
 
 void number_to_segment(int number){
+    
     switch(number){
+        
         case 0:
             number_0();
             break;
@@ -184,53 +236,51 @@ void number_to_segment(int number){
         case 9:
             number_9();
             break;
+            
     }
+    
 }
 
-void imprimir_temperatura(void){
+void read_temp(void){
     
-    int decena = temperatura / 10;
-    int unidad = temperatura % 10;
+    ADCON0bits.ADON = 1;    //Encendido de conversor analogica/digital
+    ADCON0bits.GO = 1;      //Comienzo de conversion analogica/digital
     
-    DSS_TEN_On;    
-    number_to_segment(decena);
-    __delay_ms(14);
-    DSS_TEN_Off; 
-    
-    DSS_UNIT_On;         
-    number_to_segment(unidad);
-    __delay_ms(14);
-    DSS_UNIT_Off;
-  
-}
-
-void leer_temperatura(void){
-    ADCON0bits.ADON = 1;
-    ADCON0bits.GO = 1;
     unsigned int voltage;
-    while (ADCON0bits.GO)
-    {
-        __delay_ms(1);
-        voltage = *(int*) ADRESH;
-        //if (voltage == 10) ADCON0bits.GO = 0;
-    }
-    ADCON0bits.ADON = 0;
     
-    temperatura = (int)(0.588 * ADRESH);
-    //temperatura = ADRESH;
+    while (ADCON0bits.GO);    
+    __delay_ms(1);
+    voltage = (unsigned int) ADRESH;       
+    
+    ADCON0bits.ADON = 0;    //Fin de conversión analogica/digital  
+    
+    temp = (int)(1.94 * voltage - 48);
+    
+}
+
+void write_temp(){    
+    
+    DSS_UNIT_On;
+    number_to_segment(temp % 10);
+    DSS_UNIT_Off;
+    
+    DSS_TEN_On;
+    number_to_segment(temp / 10);
+    DSS_TEN_Off;
+    
 }
 
 int main(void){
     
     setup();
-        
+    
     while(1){
         
-        leer_temperatura();
-        imprimir_temperatura();
-    
+        read_temp();
+        write_temp();       
+        
     }
     
-    return 0;
+    return 0;    
     
 }
